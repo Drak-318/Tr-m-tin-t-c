@@ -29,8 +29,12 @@ def extract_doc_info(title):
         t=m.group(1).strip()
         return t[0].upper()+t[1:].lower(),m.group(2).upper().rstrip(".,;:)")
     for t in FALLBACK_TYPES:
-        if t.casefold() in low and any(x in low for x in ("ban hành","quy định","về việc","sửa đổi","bổ sung","bãi bỏ","phê duyệt","hướng dẫn","số ","2026","lấy ý kiến")):
-            n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9\-/]*)",title,re.I)
+        # Fallback classification is only valid when the document type leads
+        # the title. Searching anywhere caused "pháp luật" to become "Luật".
+        if re.match(r"^\s*(?:dự thảo\s+)?" + re.escape(t) + r"\b", title, re.I) and any(
+            x in low for x in ("ban hành","quy định","về việc","sửa đổi","bổ sung","bãi bỏ","phê duyệt","hướng dẫn","số ","2026","lấy ý kiến")
+        ):
+            n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9\\-/]*)",title,re.I)
             return t,n.group(1).upper().rstrip(".,;:)") if n else "Đang cập nhật"
     return None,None
 

@@ -1,6 +1,6 @@
 import unittest
 from scanner.collectors import SourceFetchError
-from scanner.collectors import parse_feed, _deduplicate_items, find_next_page
+from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items
 from bs4 import BeautifulSoup
 
 class CollectorTests(unittest.TestCase):
@@ -24,6 +24,22 @@ class CollectorTests(unittest.TestCase):
         soup=BeautifulSoup('<a rel="next" href="/list?page=2">Next</a>',"html.parser")
         self.assertEqual(find_next_page(soup,"https://example.gov.vn/list",{}),
                          "https://example.gov.vn/list?page=2")
+
+    def test_table_document_row_extracts_number_and_issue_date(self):
+        html="""<table><tbody><tr>
+          <td>123-KL/TW</td><td><a href="/van-ban/123">Kết luận của Bộ Chính trị về công tác</a></td>
+          <td>13/11/2026</td><td>13/11/2026</td>
+        </tr></tbody></table>"""
+        items,_=parse_html_items(html,"https://dangcongsan.vn/van-ban-cua-dang",{
+            "item_selector":"table tr","title_selector":"td:nth-child(2) a",
+            "link_selector":"td:nth-child(2) a","document_number_selector":"td:nth-child(1)",
+            "issue_date_selector":"td:nth-child(3)"
+        })
+        self.assertEqual(len(items),1)
+        self.assertEqual(items[0]["doc_number"],"123-KL/TW")
+        self.assertEqual(items[0]["doc_type"],"Kết luận")
+        self.assertEqual(items[0]["issue_date"],"13/11/2026")
+        self.assertIn("ngày 13/11/2026",items[0]["title"])
 
     def test_detail_page_labelled_issue_date_has_priority(self):
         from scanner.collectors import extract_detail_date

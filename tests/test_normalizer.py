@@ -18,6 +18,14 @@ class NormalizerTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(extract_doc_info(title),(typ,num))
 
+    def test_phrase_phap_luat_is_not_misclassified_as_luat(self):
+        title="Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến tìm hiểu pháp luật"
+        self.assertEqual(extract_doc_info(title),(None,None))
+
+    def test_luat_at_title_start_is_still_recognized(self):
+        self.assertEqual(extract_doc_info("Luật số 12/2026/QH16 về ..."),
+                         ("Luật","12/2026/QH16"))
+
     def test_reject_menu_links(self): self.assertEqual(extract_doc_info("Trang chủ"),(None,None))
 
     def test_canonical_url_removes_tracking(self):

@@ -79,7 +79,31 @@ def parse_html_items(html,page_url,config):
             link_node=container.select_one(link_selector) if link_selector else (title_node if getattr(title_node,"name",None)=="a" else container.find("a",href=True))
             if not link_node: continue
             title=clean_title(title_node.get_text(" ",strip=True)); href=link_node.get("href","")
-            if title and href: results.append({"title":title,"link":canonicalize_url(urljoin(page_url,href)),"published_date":_date_from_container(container,soup)})
+            if not title or not href:
+                continue
+            item={"title":title,"link":canonicalize_url(urljoin(page_url,href)),
+                  "published_date":_date_from_container(container,soup)}
+            number_selector=config.get("document_number_selector")
+            issue_date_selector=config.get("issue_date_selector")
+            number_node=container.select_one(number_selector) if number_selector else None
+            date_node=container.select_one(issue_date_selector) if issue_date_selector else None
+            if number_node:
+                number=clean_title(number_node.get_text(" ",strip=True))
+                if number:
+                    item["doc_number"]=number
+                    suffix=re.search(r"-([A-ZĐƯƠĂÂÊÔ]+)(?:/|$)",number,re.I)
+                    type_by_suffix={"KL":"Kết luận","NQ":"Nghị quyết","KH":"Kế hoạch","HD":"Hướng dẫn",
+                                    "CT":"Chỉ thị","QD":"Quyết định","QĐ":"Quyết định","CV":"Công văn",
+                                    "TB":"Thông báo","QC":"Quy chế"}
+                    if suffix and suffix.group(1).upper() in type_by_suffix:
+                        item["doc_type"]=type_by_suffix[suffix.group(1).upper()]
+            if date_node:
+                issue_date=clean_title(date_node.get_text(" ",strip=True))
+                if issue_date:
+                    item["issue_date"]=issue_date
+                    item["title"]=f"{title} ngày {issue_date}"
+                    item["published_date"]=issue_date
+            results.append(item)
         return results,soup
     for anchor in soup.find_all("a",href=True):
         title=clean_title(anchor.get("aria-label") or anchor.get("title") or anchor.get_text(" ",strip=True)); href=anchor.get("href","").strip()
