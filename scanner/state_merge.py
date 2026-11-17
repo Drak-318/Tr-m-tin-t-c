@@ -65,9 +65,15 @@ def merge_state_files(local_dir, repo_root="."):
 
     relations_path = root / "data/document_relationships.json"
     local_relations_path = local_root / "data/document_relationships.json"
-    relations = merge_relationships(
-        _read(relations_path, []), _read(local_relations_path, [])
-    )
+    remote_relations = [
+        row for row in _read(relations_path, [])
+        if row.get("source_doc_number") and row.get("source_doc_number") != "Đang cập nhật"
+    ]
+    local_relations = [
+        row for row in _read(local_relations_path, [])
+        if row.get("source_doc_number") and row.get("source_doc_number") != "Đang cập nhật"
+    ]
+    relations = merge_relationships(remote_relations, local_relations)
     _write(relations_path, relations)
 
     cursor_path = root / "data/relationship_scan_state.json"
