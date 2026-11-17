@@ -1,4 +1,5 @@
 import time
+import re
 from types import SimpleNamespace
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
@@ -85,6 +86,82 @@ def parse_html_items(html,page_url,config):
         if len(title)>=18 and href and not href.startswith(("javascript:","mailto:","#")):
             results.append({"title":title,"link":canonicalize_url(urljoin(page_url,href)),"published_date":_date_from_container(anchor.parent or anchor,soup)})
     return results,soup
+
+def extract_detail_date(html):
+    """Extract a labelled issue date first, then a page publication/update date."""
+    from .normalizer import parse_date
+    soup=BeautifulSoup(html,"html.parser")
+    text=soup.get_text(" ",strip=True)
+
+    # Only labelled dates count as issue dates; do not mistake arbitrary dates
+    # in legal references or article body text for the current document's issue date.
+    issue_patterns=(
+        r"(?:ngày\s*ban\s*hành|ngày\s*ký\s*ban\s*hành|ngày\s*ký|ban\s*hành\s*ngày)\s*[:：]?\s*(\d{1,2}[/-]\d{1,2}[/-]\d{4})",
+    )
+    for pattern in issue_patterns:
+        match=re.search(pattern,text,re.I)
+        if match:
+            parsed=parse_date(match.group(1))
+            if parsed:
+                return {"date":parsed.strftime("%Y-%m-%d"),"basis":"issue_date_detail",
+                        "evidence":match.group(0)[:180]}
+
+    published_keys={
+        "article:published_time","datepublished","dc.date.issued","dcterms.issued",
+        "publishdate","pubdate","date",
+    }
+    updated_keys={"article:modified_time","datemodified","last-modified","og:updated_time"}
+    published=[]; updated=[]
+    for node in soup.find_all("meta"):
+        key=(node.get("property") or node.get("name") or node.get("itemprop") or "").strip().lower()
+        value=(node.get("content") or "").strip()
+        if not key or not value:
+            continue
+        if key in published_keys:
+            published.append((key,value))
+        elif key in updated_keys:
+            updated.append((key,value))
+    for node in soup.find_all("time"):
+        value=(node.get("datetime") or node.get_text(" ",strip=True)).strip()
+        if value:
+            published.append(("time",value))
+    for basis,values in (("source_posted_date_detail",published),("source_updated_date_detail",updated)):
+        for key,value in values:
+            parsed=parse_date(value)
+            if parsed:
+                return {"date":parsed.strftime("%Y-%m-%d"),"basis":basis,
+                        "evidence":f"{key}={value}"[:180]}
+
+    # Visible labels for publication dates are a last-resort fallback.
+    posted_match=re.search(r"(?:ngày\s*đăng|đăng\s*ngày|cập\s*nhật\s*ngày)\s*[:：]?\s*(\d{1,2}[/-]\d{1,2}[/-]\d{4})",text,re.I)
+    if posted_match:
+        parsed=parse_date(posted_match.group(1))
+        if parsed:
+            return {"date":parsed.strftime("%Y-%m-%d"),"basis":"source_posted_date_detail",
+                    "evidence":posted_match.group(0)[:180]}
+    return {"date":"","basis":"unknown","evidence":""}
+
+
+def verify_document_detail_date(url,config=None):
+    """Fetch one document detail page and return date evidence without scan-time fallback."""
+    from urllib.parse import urlsplit
+    parsed=urlsplit(str(url or ""))
+    if parsed.scheme not in {"http","https"} or not parsed.netloc:
+        return {"date":"","basis":"fetch_error","evidence":"","error":"URL không hợp lệ"}
+    settings=dict(config or {})
+    settings.setdefault("timeout_connect",6)
+    settings.setdefault("timeout_read",12)
+    session=make_session()
+    try:
+        response=fetch_response(session,url,settings)
+        result=extract_detail_date(response.text)
+        result["final_url"]=canonicalize_url(response.url)
+        return result
+    except SourceFetchError as exc:
+        return {"date":"","basis":"fetch_error","evidence":"","error":f"{exc.kind}: {exc}"[:350]}
+    finally:
+        session.close()
+
 
 def find_next_page(soup,page_url,config):
     selector=config.get("pagination_selector"); candidates=soup.select(selector) if selector else soup.select('a[rel~="next"]')

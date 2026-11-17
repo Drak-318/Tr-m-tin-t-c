@@ -72,8 +72,11 @@ def enqueue_review_documents(docs):
         current["link"]=url
         current.setdefault("first_seen",now)
         current["last_seen"]=now
-        current["status"]="pending"
         current["attempts"]=int(current.get("attempts",0))
+        if current.get("verification_status") in {"date_found","excluded_old","already_seen","verified_included","needs_manual_review","manual_review"}:
+            current["status"]=current.get("status") or current.get("verification_status")
+        else:
+            current["status"]="pending"
         items[url]=current
     queue["updated_at"]=now
     _write_json(REVIEW_QUEUE_PATH,queue)
@@ -83,6 +86,34 @@ def enqueue_review_documents(docs):
 def load_review_queue():
     queue=_read_json(REVIEW_QUEUE_PATH,{"version":1,"items":{}})
     return queue.get("items",{})
+
+def update_review_document(link,updates):
+    url=canonicalize_url(link)
+    if not url:
+        return False
+    queue=_read_json(REVIEW_QUEUE_PATH,{"version":1,"items":{}})
+    current=queue.setdefault("items",{}).get(url)
+    if current is None:
+        return False
+    current.update(updates)
+    current["last_checked"]=datetime.now(timezone.utc).isoformat(timespec="seconds")
+    queue["updated_at"]=current["last_checked"]
+    _write_json(REVIEW_QUEUE_PATH,queue)
+    return True
+
+
+def pending_review_documents(limit=10,max_attempts=3):
+    items=load_review_queue()
+    eligible=[]
+    for url,row in items.items():
+        status=row.get("status","pending")
+        attempts=int(row.get("attempts",0))
+        if status in {"pending","fetch_error","not_found"} and attempts<max_attempts:
+            eligible.append({**row,"link":url})
+    eligible.sort(key=lambda row:(int(row.get("attempts",0)),str(row.get("first_seen",""))))
+    return eligible[:max(0,int(limit))]
+
+
 
 
 def enqueue_sheets_export(payload):
