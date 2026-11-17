@@ -2,6 +2,7 @@ import requests
 
 from .config import WEB_APP_URL
 
+
 def _post(payload, timeout=45):
     response = requests.post(WEB_APP_URL, json=payload, timeout=timeout)
     response.raise_for_status()
@@ -13,19 +14,34 @@ def _post(payload, timeout=45):
         raise RuntimeError(data.get("message", "Apps Script error"))
     return data
 
+
 def get_sources_and_memory():
+    """Read the complete source list on every run; a URL is enough to include a row."""
     data = _post({"action": "get_sources"}, timeout=45)
     if data.get("status") != "ok":
         raise RuntimeError(f"Cannot get sources: {data}")
-    sources = [
-        source for source in (data.get("sources") or [])
-        if source.get("url") and source.get("name")
-    ]
+
+    sources = []
+    for raw in data.get("sources") or []:
+        url = str(raw.get("url") or "").strip()
+        if not url:
+            continue
+        row = raw.get("row")
+        name = str(raw.get("name") or "").strip() or f"Nguồn dòng {row or '?'}"
+        sources.append({
+            **raw,
+            "name": name,
+            "url": url,
+            "group": str(raw.get("group") or "Văn Bản TW").strip(),
+        })
+
     links = set(str(value).strip() for value in data.get("existingLinks", []) if value)
     numbers = set(str(value).strip().upper() for value in data.get("existingNumbers", []) if value)
     return sources, links, numbers
 
+
 def save_results_in_batches(new_docs, source_status, batch_size=50):
+    """Send every new document in batches; source status is always sent."""
     batches = [new_docs[i:i + batch_size] for i in range(0, len(new_docs), batch_size)]
     if not batches:
         result = _post({
@@ -41,4 +57,5 @@ def save_results_in_batches(new_docs, source_status, batch_size=50):
         })
         added += int(result.get("added", len(batch)))
         print(f"[SHEETS] Đã đồng bộ lô {index + 1}/{len(batches)}: {len(batch)} văn bản.")
+
     return added
