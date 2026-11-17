@@ -31,7 +31,7 @@ def extract_doc_info(title):
     for t in FALLBACK_TYPES:
         # Fallback classification is only valid when the document type leads
         # the title. Searching anywhere caused "pháp luật" to become "Luật".
-        if re.match(r"^\\s*(?:dự thảo\\s+)?" + re.escape(t) + r"\\b", title, re.I) and any(
+        if re.match(r"^\s*(?:dự thảo\s+)?" + re.escape(t) + r"\b", title, re.I) and any(
             x in low for x in ("ban hành","quy định","về việc","sửa đổi","bổ sung","bãi bỏ","phê duyệt","hướng dẫn","số ","2026","lấy ý kiến")
         ):
             n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9\\-/]*)",title,re.I)
