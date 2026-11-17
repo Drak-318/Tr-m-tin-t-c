@@ -74,7 +74,7 @@ def is_too_old(title,doc_number="",max_days=60,published_date=None,now=None):
     number = str(doc_number or "").strip()
     # A year embedded in the current document number is stronger than years
     # mentioned in the title as references to older instruments.
-    year_match = re.search(r"(?:^|/)(20\\d{2})(?:/|$)", number)
+    year_match = re.search(r"(?:^|/)(20\d{2})(?:/|$)", number)
     if year_match:
         number_year = int(year_match.group(1))
         if number_year < current.year:
