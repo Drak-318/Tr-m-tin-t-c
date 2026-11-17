@@ -111,6 +111,12 @@ def merge_state_files(local_dir, repo_root="."):
         export_items = list(remote_export.get("items", []))
     _write(export_path, {"version": 1, "items": export_items})
 
+    # Preserve the one-time migration marker across the workflow's reset-to-main merge.
+    bootstrap_path = root / "data/sheets_bootstrap.json"
+    local_bootstrap_path = local_root / "data/sheets_bootstrap.json"
+    if local_bootstrap_path.exists():
+        _write(bootstrap_path, _read(local_bootstrap_path, {}))
+
     return {
         "documents": len(merge_seen_documents(remote_seen, local_seen)["documents"]),
         "history": len(merge_scan_history(_read(history_path, []), [])),
