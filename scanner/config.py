@@ -2,12 +2,10 @@ import json
 import os
 from pathlib import Path
 
-WEB_APP_URL = os.getenv("SHEETS_WEB_APP_URL", "").strip()
-if not WEB_APP_URL:
-    raise RuntimeError(
-        "Thiếu GitHub Secret SHEETS_WEB_APP_URL. "
-        "Hãy thêm URL Apps Script Web App trong Settings > Secrets and variables > Actions."
-    )
+# Apps Script Web App endpoint supplied by the repository owner.
+# SHEETS_WEB_APP_URL in GitHub Actions can override this value if redeployed.
+DEFAULT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxwx2aahfkilC3IOWUZtb1jfRuG1dWTNfEsPA0_WDFWB2xzmqBMyEhJloZKpafLnRVi_A/exec"
+WEB_APP_URL = os.getenv("SHEETS_WEB_APP_URL", "").strip() or DEFAULT_WEB_APP_URL
 
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "source_config.json"
 DEFAULT_SOURCE_CONFIG = {
