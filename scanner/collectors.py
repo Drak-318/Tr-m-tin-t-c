@@ -92,8 +92,15 @@ def find_next_page(soup,page_url,config):
     for node in candidates:
         label=clean_title(node.get_text(" ",strip=True)).lower(); rel=" ".join(node.get("rel",[])).lower()
         if selector or "next" in rel or label in {"sau","tiếp","tiếp theo","next","›","»"}:
-            href=node.get("href","")
-            if href: return canonicalize_url(urljoin(page_url,href))
+            href=str(node.get("href","") or "").strip()
+            # ASP.NET pager controls may use javascript:__doPostBack rather than a
+            # navigable URL. Never pass script pseudo-URLs to requests; keep the
+            # successfully parsed current page instead of failing the whole source.
+            if not href or href.startswith("#") or href.lower().startswith(("javascript:", "mailto:")):
+                continue
+            if urlsplit(href).scheme and urlsplit(href).scheme not in {"http", "https"}:
+                continue
+            return canonicalize_url(urljoin(page_url,href))
     return None
 
 def fetch_response(session,url,config):
