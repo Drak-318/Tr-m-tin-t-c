@@ -10,6 +10,8 @@ STATE_FILES = (
     "data/scan_history.json",
     "data/document_relationships.json",
     "data/relationship_scan_state.json",
+    "data/review_queue.json",
+    "data/sheets_export_queue.json",
 )
 
 
@@ -80,6 +82,35 @@ def merge_state_files(local_dir, repo_root="."):
     local_cursor_path = local_root / "data/relationship_scan_state.json"
     if local_cursor_path.exists():
         _write(cursor_path, _read(local_cursor_path, {"next_candidate": 0}))
+
+    # Merge review records by canonical URL; keep pending items and accumulated evidence.
+    review_path = root / "data/review_queue.json"
+    local_review_path = local_root / "data/review_queue.json"
+    remote_review = _read(review_path, {"version": 1, "items": {}})
+    local_review = _read(local_review_path, {"version": 1, "items": {}})
+    review_items = dict(remote_review.get("items", {}))
+    for url, row in local_review.get("items", {}).items():
+        current = dict(review_items.get(url, {}))
+        current.update(row)
+        current["attempts"] = max(int(current.get("attempts", 0)), int(row.get("attempts", 0)))
+        review_items[url] = current
+    _write(review_path, {"version": 1, "items": review_items,
+                         "updated_at": max(str(remote_review.get("updated_at", "")), str(local_review.get("updated_at", "")))})
+
+    # Export jobs are retained until Apps Script explicitly confirms them.
+    export_path = root / "data/sheets_export_queue.json"
+    local_export_path = local_root / "data/sheets_export_queue.json"
+    remote_export = _read(export_path, {"version": 1, "items": []})
+    local_export = _read(local_export_path, {"version": 1, "items": []})
+    export_items = []
+    export_seen = set()
+    for row in list(remote_export.get("items", [])) + list(local_export.get("items", [])):
+        key = json.dumps(row, ensure_ascii=False, sort_keys=True)
+        if key not in export_seen:
+            export_seen.add(key)
+            export_items.append(row)
+    _write(export_path, {"version": 1, "items": export_items})
+
     return {
         "documents": len(merge_seen_documents(remote_seen, local_seen)["documents"]),
         "history": len(merge_scan_history(_read(history_path, []), [])),
