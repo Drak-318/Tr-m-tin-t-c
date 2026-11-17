@@ -158,12 +158,13 @@ def main():
 
     new_docs.sort(key=lambda d:(d["priority"],d["title"].casefold()))
     print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Chưa rõ ngày {totals['unknown_date']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']} | Có nguồn dự phòng {totals['fallback_sources']}")
-    # GitHub is authoritative: persist memory and review queue before any external export.
-    record_documents(state,accepted_for_memory)
+    # Queue export and review work before marking documents as seen. This prevents
+    # a crash between memory-write and export-queue-write from losing new records.
     review_total=enqueue_review_documents(review_docs) if review_docs else len(load_review_queue())
     export_payload={"new_docs":new_docs,"source_status":source_status,"review_docs":review_docs}
     if new_docs or source_status or review_docs:
         enqueue_sheets_export(export_payload)
+    record_documents(state,accepted_for_memory)
     saved=0
     pending_exports=load_sheets_export_queue()
     if WEB_APP_URL and pending_exports:
