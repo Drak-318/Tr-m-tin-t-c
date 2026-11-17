@@ -6,13 +6,13 @@ import sys
 import time
 from datetime import datetime, timezone
 
-from scanner.config import load_source_config, config_for_source
+from scanner.config import load_source_config, config_for_source, WEB_APP_URL
 from scanner.collectors import scan_source
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date,
 )
-from scanner.sheets import get_sources_and_memory, save_results_in_batches
+from scanner.sheets import get_sources_and_memory, save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
 from scanner.persistent_memory import load_state, is_seen, record_documents, append_history
 
@@ -51,7 +51,7 @@ def main():
 
     results_by_index={}
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures={pool.submit(scan_source,s,config_for_source(s,config_data)):(i,s) for i,s in enumerate(sources)}
+        futures={pool.submit(scan_source,s,config_for_source(s,config_data),fetch_source_via_apps_script if WEB_APP_URL else None):(i,s) for i,s in enumerate(sources)}
         for future in concurrent.futures.as_completed(futures):
             i,s=futures[future]
             try: result=future.result()
