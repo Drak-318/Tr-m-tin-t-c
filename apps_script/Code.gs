@@ -1,5 +1,5 @@
 /**
- * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V11
+ * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V12
  * Vai trò: API nhận dữ liệu duy nhất từ GitHub Actions.
  * Không chạy bộ quét nguồn độc lập tại Apps Script để tránh hai bộ quét ghi trùng.
  *
@@ -26,7 +26,7 @@ function jsonOutput_(obj) {
 }
 
 function doGet() {
-  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "11.0"});
+  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "12.0"});
 }
 
 function doPost(e) {
