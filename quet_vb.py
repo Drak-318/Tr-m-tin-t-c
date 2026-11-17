@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Trạm Tin Tức - quét toàn bộ nguồn, tối đa 5 nguồn cùng lúc."""
-
+"""Trạm Tin Tức - quét toàn bộ nguồn, tối đa 5 nguồn đồng thời."""
 import concurrent.futures
 import os
 import sys
@@ -11,202 +10,100 @@ from scanner.config import load_source_config, config_for_source
 from scanner.collectors import scan_source
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
+    classify_document, document_identity, is_too_old,
 )
 from scanner.sheets import get_sources_and_memory, save_results_in_batches
 from scanner.source_registry import load_sources_from_csv
+from scanner.persistent_memory import load_state, is_seen, record_documents, append_history
 
-# Đây là số nguồn chạy ĐỒNG THỜI, không phải giới hạn tổng số nguồn.
-MAX_WORKERS = 5
-SAVE_BATCH_SIZE = 10
-
+MAX_WORKERS=5
+SAVE_BATCH_SIZE=10
+MAX_AGE_DAYS=60
 
 def utc_now():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
-
 def append_step_summary(lines):
-    summary_path = os.getenv("GITHUB_STEP_SUMMARY")
-    if summary_path:
-        with open(summary_path, "a", encoding="utf-8") as handle:
-            handle.write("\n".join(lines) + "\n")
-
+    path=os.getenv("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path,"a",encoding="utf-8") as f: f.write("\n".join(lines)+"\n")
 
 def main():
-    started_at = time.monotonic()
-    print("=" * 70)
-    print(f"TRẠM TIN TỨC | BẮT ĐẦU: {utc_now()}")
-    print("=" * 70)
+    started=time.monotonic()
+    print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {utc_now()}"); print("="*70)
+    config_data=load_source_config()
+    sheet_sources,existing_links,_existing_numbers=get_sources_and_memory()
+    csv_sources=load_sources_from_csv()
+    if csv_sources: sources=csv_sources; registry_name="GitHub: danh_sach_nguon.csv"
+    else: sources=sheet_sources; registry_name="Google Sheets (dự phòng)"
+    if not sources: raise RuntimeError("Không có nguồn đang bật trong CSV hoặc Google Sheets.")
+    state=load_state()
+    print(f"[INIT] Nguồn: {registry_name} | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
+    print(f"[INIT] Bộ nhớ GitHub: {len(state['documents'])} văn bản | {len(state['urls'])} URL | Sheets: {len(existing_links)} URL")
 
-    config_data = load_source_config()
-    sheet_sources, existing_links, existing_numbers = get_sources_and_memory()
-    csv_sources = load_sources_from_csv()
-    if csv_sources:
-        sources = csv_sources
-        registry_name = "GitHub: danh_sach_nguon.csv"
-    else:
-        sources = sheet_sources
-        registry_name = "Google Sheets (chế độ dự phòng; CSV chưa có URL)"
-    total_sources = len(sources)
-
-    print(f"[INIT] Danh sách nguồn: {registry_name}")
-    print(f"[INIT] Tổng số nguồn cần quét: {total_sources}")
-    print(f"[INIT] Số nguồn chạy đồng thời tối đa: {MAX_WORKERS}")
-    print(f"[INIT] Bộ nhớ URL: {len(existing_links)} | Số hiệu: {len(existing_numbers)}")
-
-    if not sources:
-        raise RuntimeError(
-            "Không tìm thấy nguồn nào đang bật trong danh_sach_nguon.csv "
-            "và cũng không có nguồn dự phòng từ Google Sheets."
-        )
-
-    # Đưa TẤT CẢ nguồn vào hàng đợi. ThreadPoolExecutor chỉ giới hạn 5 tác vụ
-    # hoạt động cùng lúc; các nguồn còn lại tự lần lượt được xử lý.
-    results_by_index = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {
-            executor.submit(
-                scan_source, source, config_for_source(source, config_data)
-            ): (i, source)
-            for i, source in enumerate(sources)
-        }
-
+    results_by_index={}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures={pool.submit(scan_source,s,config_for_source(s,config_data)):(i,s) for i,s in enumerate(sources)}
         for future in concurrent.futures.as_completed(futures):
-            index, source = futures[future]
-            try:
-                result = future.result()
-            except Exception as exc:
-                result = {
-                    "items": [],
-                    "status": f"Lỗi: {type(exc).__name__}"[:45],
-                    "http_status": None,
-                    "pages": 0,
-                    "duration": 0,
-                    "error": str(exc)[:300],
-                }
-            results_by_index[index] = (source, result)
-            print(
-                f"[{index + 1}/{total_sources}] {source.get('name')}: "
-                f"{len(result['items'])} mục | {result['status']} | "
-                f"{result['duration']}s | HTTP {result['http_status']}"
-            )
+            i,s=futures[future]
+            try: result=future.result()
+            except Exception as exc: result={"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":None,"pages":0,"duration":0,"error":str(exc)[:300]}
+            results_by_index[i]=(s,result)
+            print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s")
 
-    new_docs, source_status = [], []
-    seen_links, seen_numbers = set(existing_links), set(existing_numbers)
-    total_items = recognized_items = kept_items = failed_sources = 0
-    recognized_by_source = {}
-
-    for index in range(total_sources):
-        source, result = results_by_index[index]
-        source_name = source.get("name", "Nguồn không tên")
-        group = source.get("group", "Văn Bản TW")
-        total_items += len(result["items"])
-        recognized_for_source = 0
-        kept_for_source = 0
-
+    new_docs=[]; source_status=[]; accepted_for_memory=[]
+    totals={"items":0,"recognized":0,"old":0,"duplicate":0,"kept":0,"failed":0}
+    recognized_by_source={}
+    seen_sheet_links=set(existing_links)
+    for i in range(len(sources)):
+        source,result=results_by_index[i]; name=source.get("name","Nguồn không tên"); group=source.get("group","Văn Bản TW")
+        totals["items"]+=len(result["items"]); recognized=0
         for item in result["items"]:
-            title = item["title"]
-            link = canonicalize_url(item["link"])
-            doc_type, doc_number = extract_doc_info(title)
-            if not doc_type:
-                continue
+            title=item["title"]; link=canonicalize_url(item["link"]); pub=item.get("published_date")
+            doc_type,number=extract_doc_info(title)
+            if not doc_type: continue
+            recognized+=1; totals["recognized"]+=1
+            if is_too_old(title,number,MAX_AGE_DAYS,pub):
+                totals["old"]+=1; continue
+            category=classify_document(title,name,doc_type,number,link)
+            keep,priority=classify_and_score(title,name,doc_type,number,group,pub)
+            if not keep: continue
+            totals["kept"]+=1
+            identity=document_identity(number,title,name,link)
+            if link in seen_sheet_links or is_seen(state,identity,link):
+                totals["duplicate"]+=1; continue
+            doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
+                 "link":link,"fingerprint":make_fingerprint(number,title),"category":category,
+                 "published_date":pub or ""}
+            new_docs.append(doc); accepted_for_memory.append({**doc,"identity":identity})
+            seen_sheet_links.add(link)
+        recognized_by_source[i]=recognized
+        if result["error"]: totals["failed"]+=1
+        status=result["status"]
+        if not result["error"] and result["items"]: status="Hoạt động" if recognized else "Đã truy cập, chưa nhận diện văn bản"
+        if source.get("row") is not None: source_status.append({"row":source["row"],"count":recognized,"status":status[:45]})
 
-            recognized_for_source += 1
-            recognized_items += 1
-            keep, priority = classify_and_score(
-                title, source_name, doc_type, doc_number, group
-            )
-            if not keep:
-                continue
+    new_docs.sort(key=lambda d:(d["priority"],d["title"].casefold()))
+    print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']}")
+    # Chỉ ghi vào bộ nhớ bền vững sau khi Google Sheets xác nhận đồng bộ thành công.
+    saved=save_results_in_batches(new_docs,source_status,SAVE_BATCH_SIZE)
+    record_documents(state,accepted_for_memory)
+    duration=round(time.monotonic()-started,2)
+    summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
+             "older_than_60_days":totals["old"],"duplicates":totals["duplicate"],"new_to_sheets":saved,
+             "failed_sources":totals["failed"],"duration_seconds":duration}
+    append_history(summary)
+    report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
+            f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
+            f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Loại do trùng: **{totals['duplicate']}**",
+            f"- Văn bản mới đồng bộ Google Sheets: **{saved}**",f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",
+            f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",f"- Thời gian: **{duration} giây**","",
+            "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái |","|---|---:|---:|---|"]
+    for i in range(len(sources)):
+        s,r=results_by_index[i]; report.append(f"| {s.get('name','')[:50]} | {len(r['items'])} | {recognized_by_source[i]} | {r['status']} |")
+    append_step_summary(report); print(f"[DONE] Hoàn tất trong {duration} giây.")
 
-            kept_for_source += 1
-            if link in seen_links:
-                continue
-            if doc_number != "Đang cập nhật" and doc_number in seen_numbers:
-                continue
-
-            seen_links.add(link)
-            if doc_number != "Đang cập nhật":
-                seen_numbers.add(doc_number)
-
-            new_docs.append({
-                "priority": priority,
-                "doc_type": doc_type,
-                "agency": source_name,
-                "title": title,
-                "doc_number": doc_number,
-                "link": link,
-                "fingerprint": make_fingerprint(doc_number, title),
-            })
-
-        kept_items += kept_for_source
-        recognized_by_source[index] = recognized_for_source
-
-        if result["error"]:
-            failed_sources += 1
-        status = result["status"]
-        if not result["error"] and result["items"]:
-            status = "Hoạt động" if recognized_for_source else "Đã truy cập, chưa nhận diện văn bản"
-
-        # Chỉ cập nhật trạng thái trong Sheet với nguồn còn có số dòng Sheet.
-        # Nguồn quản lý từ CSV GitHub không có row tương ứng trong Sheet.
-        if source.get("row") is not None:
-            source_status.append({
-                "row": source.get("row"),
-                "count": recognized_for_source,
-                "status": status[:45],
-            })
-
-    new_docs.sort(key=lambda doc: (doc["priority"], doc["title"].casefold()))
-
-    print("-" * 70)
-    print(f"[RESULT] Nguồn đã xử lý: {len(results_by_index)}/{total_sources}")
-    print(f"[RESULT] Tổng mục thu thập: {total_items}")
-    print(f"[RESULT] Mục nhận diện là văn bản: {recognized_items}")
-    print(f"[RESULT] Mục đạt điều kiện phân loại: {kept_items}")
-    print(f"[RESULT] Văn bản mới sau chống trùng: {len(new_docs)}")
-    print(f"[RESULT] Nguồn lỗi: {failed_sources}/{total_sources}")
-
-    # Gửi toàn bộ kết quả; hàm Sheets tự chia lô nhỏ để giảm timeout.
-    # Trạng thái nguồn vẫn được cập nhật khi không có văn bản mới.
-    saved = save_results_in_batches(new_docs, source_status, SAVE_BATCH_SIZE)
-    duration = round(time.monotonic() - started_at, 2)
-
-    report = [
-        "## Kết quả quét Trạm Tin Tức",
-        f"- Thời điểm hoàn tất: {utc_now()}",
-        f"- Danh sách nguồn: **{registry_name}**",
-        f"- Tổng nguồn trong danh sách: **{total_sources}**",
-        f"- Số nguồn xử lý xong: **{len(results_by_index)}/{total_sources}**",
-        f"- Số nguồn chạy đồng thời tối đa: **{MAX_WORKERS}**",
-        f"- Tổng mục thu thập: **{total_items}**",
-        f"- Mục nhận diện là văn bản: **{recognized_items}**",
-        f"- Mục đạt điều kiện phân loại: **{kept_items}**",
-        f"- Văn bản mới ghi về Google Sheets: **{saved}**",
-        f"- Nguồn gặp lỗi: **{failed_sources}/{total_sources}**",
-        f"- Thời gian chạy: **{duration} giây**",
-        "",
-        "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái | Thời gian |",
-        "|---|---:|---:|---|---:|",
-    ]
-
-    for index in range(total_sources):
-        source, result = results_by_index[index]
-        report.append(
-            f"| {source.get('name', '')[:50]} | {len(result['items'])} | "
-            f"{recognized_by_source[index]} | {result['status']} | "
-            f"{result['duration']}s |"
-        )
-
-    append_step_summary(report)
-    print(f"[DONE] Hoàn tất trong {duration} giây.")
-    if failed_sources:
-        print("[WARNING] Có nguồn lỗi; xem GitHub Actions Summary và log.")
-    print("=" * 70)
-
-
-if __name__ == "__main__":
-    try:
-        main()
+if __name__=="__main__":
+    try: main()
     except Exception as exc:
-        print(f"[FATAL] {type(exc).__name__}: {exc}", file=sys.stderr)
-        raise
+        print(f"[FATAL] {type(exc).__name__}: {exc}",file=sys.stderr); raise
