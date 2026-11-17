@@ -53,29 +53,37 @@ jobs:
           SHEETS_API_TOKEN: ${{ secrets.SHEETS_API_TOKEN }}
         run: python quet_vb.py
 
-      - name: Save persistent anti-duplicate memory
+      - name: Save persistent scanner memory
         if: always()
         run: |
-          if [[ -n "$(git status --porcelain data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json)" ]]; then
+          MEMORY_FILES="data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json"
+          if [[ -n "$(git status --porcelain $MEMORY_FILES)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json
-            git commit -m "Update scanner memory [skip ci]"
+            mkdir -p /tmp/scanner-memory-local
+            for file in $MEMORY_FILES; do
+              if [[ -f "$file" ]]; then
+                mkdir -p "/tmp/scanner-memory-local/$(dirname "$file")"
+                cp "$file" "/tmp/scanner-memory-local/$file"
+              fi
+            done
 
-            # Rebase bộ nhớ lên nhánh mới nhất để tránh lỗi non-fast-forward
-            # khi có commit cấu hình/mã nguồn trong lúc lượt quét đang chạy.
+            # Merge JSON state onto the newest main instead of rebasing conflicting JSON blobs.
             for attempt in 1 2 3; do
               git fetch origin main
-              if ! git rebase origin/main; then
-                git rebase --abort || true
-                echo "Không thể rebase bộ nhớ do xung đột; giữ nguyên dữ liệu trên remote."
-                exit 1
-              fi
-              if git push origin HEAD:main; then
-                echo "Đã lưu bộ nhớ bền vững lên main."
+              git reset --hard origin/main
+              python -m scanner.state_merge --local-dir /tmp/scanner-memory-local --repo-root .
+              git add $MEMORY_FILES
+              if git diff --cached --quiet; then
+                echo "Không có thay đổi bộ nhớ cần lưu."
                 exit 0
               fi
-              echo "Push bộ nhớ thất bại lần ${attempt}/3; sẽ lấy main mới nhất và thử lại."
+              git commit -m "Merge persistent scanner memory [skip ci]"
+              if git push origin HEAD:main; then
+                echo "Đã hợp nhất và lưu bộ nhớ quét lên main."
+                exit 0
+              fi
+              echo "Push bộ nhớ thất bại lần ${attempt}/3; thử lấy main mới nhất."
               sleep $((attempt * 3))
             done
             echo "Không thể lưu bộ nhớ sau 3 lần thử."
