@@ -38,6 +38,9 @@ function doPost(e) {
 
     const data = JSON.parse(e.postData.contents);
     const expectedToken = PropertiesService.getScriptProperties().getProperty("SHEETS_API_TOKEN");
+    if (data.action === "fetch_source" && !expectedToken) {
+      return jsonOutput_({status: "error", message: "Chưa cấu hình token xác thực cho chức năng lấy nguồn."});
+    }
     if (expectedToken && String(data.token || "") !== expectedToken) {
       return jsonOutput_({status: "error", message: "API token không hợp lệ."});
     }
