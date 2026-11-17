@@ -34,7 +34,8 @@ def extract_document_references(text):
     for match in REFERENCE_RE.finditer(content):
         start, end = match.span()
         context = content[max(0, start - 110):min(len(content), end + 110)]
-        folded = context.casefold()
+        # Classify from the lead-in only; later clauses may describe a different cited act.
+        folded = content[max(0, start - 110):start].casefold()
         relation = "dan_chieu"
         for label, phrases in RELATION_RULES:
             if any(phrase in folded for phrase in phrases):
