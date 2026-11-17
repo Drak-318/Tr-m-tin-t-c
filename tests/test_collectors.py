@@ -1,6 +1,7 @@
 import unittest
 from scanner.collectors import SourceFetchError
-from scanner.collectors import parse_feed, _deduplicate_items
+from scanner.collectors import parse_feed, _deduplicate_items, find_next_page
+from bs4 import BeautifulSoup
 
 class CollectorTests(unittest.TestCase):
     def test_parse_rss_feed(self):
@@ -14,6 +15,15 @@ class CollectorTests(unittest.TestCase):
         with self.assertRaises(SourceFetchError) as ctx:
             parse_feed(b"<rss><channel><item>")
         self.assertEqual(ctx.exception.kind,"PARSER")
+
+    def test_javascript_pager_is_not_returned_as_url(self):
+        soup=BeautifulSoup('<a href="javascript:__doPostBack(\'pager\',\'10\')">Next</a>',"html.parser")
+        self.assertIsNone(find_next_page(soup,"https://example.gov.vn/list",{"follow_pagination":True}))
+
+    def test_real_next_page_url_is_preserved(self):
+        soup=BeautifulSoup('<a rel="next" href="/list?page=2">Next</a>',"html.parser")
+        self.assertEqual(find_next_page(soup,"https://example.gov.vn/list",{}),
+                         "https://example.gov.vn/list?page=2")
 
     def test_deduplicate_preserves_fallback_provenance(self):
         items=[{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/a",
