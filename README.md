@@ -149,3 +149,13 @@ Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong G
 Lưu ý: Google Sheets vẫn được dùng để lưu kết quả và bộ nhớ chống trùng. Vì API Apps Script hiện tại trả danh sách nguồn cùng bộ nhớ trong một phản hồi, lượt chạy vẫn gọi API để lấy bộ nhớ chống trùng; tuy nhiên, khi CSV đã được điền, danh sách CSV mới là danh sách quyết định nguồn nào được quét.
 
 Danh sách GitHub hiện có 64 dòng nguồn từ danh sách bạn gửi. Chưa xóa danh sách cũ trong Google Sheets; nên giữ làm bản đối chiếu dự phòng cho đến khi lượt quét mới hoạt động ổn định.
+
+
+## 11. Bộ nhớ chống trùng và nguyên tắc ngày tháng
+
+- `data/seen_documents.json` là bộ nhớ bền vững của GitHub, được cập nhật sau khi đồng bộ Google Sheets thành công. `data/scan_history.json` lưu lịch sử tối đa 1.000 lượt quét gần nhất.
+- Chống trùng theo URL chuẩn hóa và định danh số hiệu kèm ký hiệu cơ quan ban hành; với nhóm địa phương, bổ sung địa danh nhận diện được từ tiêu đề/tên nguồn. Không dùng số hiệu đơn lẻ làm khóa duy nhất.
+- Bộ lọc 60 ngày ưu tiên ngày ban hành ghi rõ trong tiêu đề; nếu không có thì dùng ngày đăng từ RSS/Atom hoặc ngày hiển thị cạnh bài trong danh sách nguồn. Ngày hiệu lực không được dùng thay ngày ban hành.
+- Một bài đăng lại có ngày đăng mới nhưng tiêu đề thể hiện ngày ban hành cũ sẽ bị loại. Nếu website không cung cấp ngày ban hành và ngày đăng đáng tin cậy, bộ lọc chưa thể xác định chắc chắn tuổi văn bản; trường hợp này cần cải thiện bộ đọc chi tiết riêng theo từng website.
+- Phân nhóm nhận diện gồm: Dự thảo, Văn bản Đảng, Công văn, Văn bản quy phạm pháp luật, Văn bản địa phương và Văn bản khác. Công văn được ưu tiên riêng; không coi công văn là văn bản quy phạm pháp luật.
+- Lịch quét tự động vẫn đặt 2 lần/giờ theo cron. Tuy nhiên, GitHub Actions có thể trì hoãn hoặc bỏ lỡ lượt theo lịch; cần theo dõi lịch sử workflow để xác nhận lượt thực tế, không chỉ dựa vào cấu hình cron.
