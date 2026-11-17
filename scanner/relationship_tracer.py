@@ -23,7 +23,8 @@ RELATION_RULES = (
     ("huong_dan", ("hướng dẫn thi hành", "hướng dẫn thực hiện", "hướng dẫn")),
     ("quy_dinh_chi_tiet", ("quy định chi tiết", "quy định cụ thể")),
     ("can_cu", ("căn cứ", "theo quy định tại", "quy định tại")),
-    ("trien_khai", ("triển khai", "tổ chức thực hiện", "thực hiện")),
+    ("trien_khai", ("triển khai", "tổ chức thực hiện")),
+    ("thuc_hien", ("thực hiện",)),
 )
 
 
@@ -54,10 +55,24 @@ def extract_document_references(text):
 
 def _article_text(html):
     soup = BeautifulSoup(html, "html.parser")
-    for node in soup(["script", "style", "noscript", "nav", "footer", "header", "form"]):
+    for node in soup(["script", "style", "noscript", "nav", "footer", "header", "form", "aside"]):
         node.decompose()
-    candidates = soup.select("article, main, [role='main'], .article-content, .content-detail, .detail-content")
-    node = max(candidates, key=lambda item: len(item.get_text(" ", strip=True))) if candidates else soup.body or soup
+    noise = re.compile(r"sidebar|related|recommend|popular|most[-_ ]?view|footer|header|menu|breadcrumb|widget|banner|advert|comment|social|share|pagination|news[-_ ]?list|list[-_ ]?news", re.I)
+    for node in list(soup.find_all(True)):
+        marker = " ".join([str(node.get("id") or ""), " ".join(node.get("class") or [])])
+        if noise.search(marker):
+            node.decompose()
+    selectors = (
+        "article", "main", "[role='main']", ".article-content", ".content-detail",
+        ".detail-content", ".news-detail", ".detail-news", ".entry-content",
+        ".post-content", ".news-content", ".main-content", "#main-content"
+    )
+    candidates = soup.select(", ".join(selectors))
+    if candidates:
+        node = max(candidates, key=lambda item: len(item.get_text(" ", strip=True)))
+    else:
+        blocks = soup.find_all("div")
+        node = max(blocks, key=lambda item: len(item.get_text(" ", strip=True))) if blocks else soup.body or soup
     return node.get_text(" ", strip=True)[:120000]
 
 
