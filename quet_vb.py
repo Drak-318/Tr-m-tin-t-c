@@ -74,7 +74,7 @@ def main():
                 totals["duplicate"]+=1; continue
             doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
                  "link":link,"fingerprint":make_fingerprint(number,title),"category":category,
-                 "published_date":pub or ""}
+                 "identity":identity,"published_date":pub or ""}
             new_docs.append(doc); accepted_for_memory.append({**doc,"identity":identity})
             seen_sheet_links.add(link)
         recognized_by_source[i]=recognized
