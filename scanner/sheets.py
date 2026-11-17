@@ -62,3 +62,11 @@ def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=Non
         added+=int(result.get("added",len(batch)))
         print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
     return added
+
+
+def fetch_source_via_apps_script(url, source_name=""):
+    """Fetch one configured source through Apps Script's Google-hosted UrlFetchApp."""
+    result = _post({"action":"fetch_source","url":url,"source_name":source_name},timeout=75)
+    if result.get("status") != "ok":
+        raise RuntimeError(result.get("message","Apps Script source fetch failed"))
+    return result
