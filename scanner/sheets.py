@@ -3,11 +3,15 @@ import requests
 
 from .config import WEB_APP_URL
 
+API_TOKEN = __import__("os").getenv("SHEETS_API_TOKEN", "").strip()
+
 def _post(payload,timeout=90):
     last_error=None
     for attempt in range(1,4):
         try:
-            response=requests.post(WEB_APP_URL,json=payload,timeout=(15,timeout))
+            request_payload=dict(payload)
+            if API_TOKEN: request_payload["token"]=API_TOKEN
+            response=requests.post(WEB_APP_URL,json=request_payload,timeout=(15,timeout))
             response.raise_for_status()
             try: data=response.json()
             except ValueError as exc: raise RuntimeError(f"Apps Script trả về dữ liệu không phải JSON: {response.text[:300]}") from exc
@@ -32,18 +36,20 @@ def get_sources_and_memory():
         sources.append({**raw,"name":name,"url":url,"group":str(raw.get("group") or "Văn Bản TW").strip()})
     links=set(str(v).strip() for v in data.get("existingLinks",[]) if v)
     numbers=set(str(v).strip().upper() for v in data.get("existingNumbers",[]) if v)
-    return sources,links,numbers
+    identities=set(str(v).strip() for v in data.get("existingIdentities",[]) if v)
+    return sources,links,numbers,identities
 
 def save_results_in_batches(new_docs,source_status,batch_size=10):
     batches=[new_docs[i:i+batch_size] for i in range(0,len(new_docs),batch_size)]
     if not batches:
-        result=_post({"action":"save_results","new_docs":[],"source_status":source_status},timeout=90)
+        result=_post({"action":"save_results","new_docs":[],"source_status":source_status,"refresh_radar":False},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu dữ liệu: {result}")
         return int(result.get("added",0))
     added=0
     for index,batch in enumerate(batches):
-        statuses=source_status if index==len(batches)-1 else []
-        result=_post({"action":"save_results","new_docs":batch,"source_status":statuses},timeout=90)
+        is_last=index==len(batches)-1
+        statuses=source_status if is_last else []
+        result=_post({"action":"save_results","new_docs":batch,"source_status":statuses,"refresh_radar":is_last},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu lô {index+1}: {result}")
         added+=int(result.get("added",len(batch)))
         print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
