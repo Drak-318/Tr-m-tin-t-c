@@ -46,6 +46,27 @@ class PersistentMemoryTests(unittest.TestCase):
         self.assertEqual(len(queue), 1)
         self.assertEqual(next(iter(queue.values()))["title"], "Văn bản A cập nhật")
 
+    def test_review_verification_status_is_not_reset_by_next_scan(self):
+        memory.enqueue_review_documents([{"link":"https://example.gov.vn/a","title":"Văn bản A"}])
+        memory.update_review_document("https://example.gov.vn/a",{
+            "verification_status":"date_found","status":"verified_included","document_date":"2026-11-10"
+        })
+        memory.enqueue_review_documents([{"link":"https://example.gov.vn/a","title":"Văn bản A"}])
+        row=memory.load_review_queue()["https://example.gov.vn/a"]
+        self.assertEqual(row["status"],"verified_included")
+        self.assertEqual(row["verification_status"],"date_found")
+
+    def test_pending_review_documents_limits_retries(self):
+        memory.enqueue_review_documents([
+            {"link":"https://example.gov.vn/a","title":"A"},
+            {"link":"https://example.gov.vn/b","title":"B"},
+        ])
+        memory.update_review_document("https://example.gov.vn/b",{
+            "status":"manual_review","attempts":3
+        })
+        self.assertEqual([r["link"] for r in memory.pending_review_documents(limit=10,max_attempts=3)],
+                         ["https://example.gov.vn/a"])
+
     def test_export_queue_survives_until_explicit_clear(self):
         memory.enqueue_sheets_export({"new_docs": [{"link": "https://example.gov.vn/a"}]})
         self.assertEqual(len(memory.load_sheets_export_queue()), 1)
