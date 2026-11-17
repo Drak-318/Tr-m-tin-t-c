@@ -169,5 +169,21 @@
     "relationship_matched_in_scan_index": 17,
     "sources": 87,
     "unknown_date": 744
+  },
+  {
+    "collected": 4068,
+    "duplicates": 146,
+    "duration_seconds": 268.63,
+    "failed_sources": 18,
+    "fallback_sources": 7,
+    "finished_at": "2026-11-17 11:47:18 UTC",
+    "new_to_sheets": 10,
+    "older_than_60_days": 107,
+    "recognized": 1014,
+    "relationship_ambiguous": 3,
+    "relationship_candidates": 52,
+    "relationship_matched_in_scan_index": 17,
+    "sources": 88,
+    "unknown_date": 751
   }
 ]
