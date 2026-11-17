@@ -1,4 +1,5 @@
 import time
+import re
 from types import SimpleNamespace
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
