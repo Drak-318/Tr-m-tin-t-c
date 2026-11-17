@@ -3,7 +3,7 @@ import requests
 from .config import WEB_APP_URL
 
 
-def _post(payload, timeout=45):
+def _post(payload, timeout=90):
     response = requests.post(WEB_APP_URL, json=payload, timeout=timeout)
     response.raise_for_status()
     try:
@@ -17,7 +17,7 @@ def _post(payload, timeout=45):
 
 def get_sources_and_memory():
     """Read the complete source list on every run; a URL is enough to include a row."""
-    data = _post({"action": "get_sources"}, timeout=45)
+    data = _post({"action": "get_sources"}, timeout=90)
     if data.get("status") != "ok":
         raise RuntimeError(f"Cannot get sources: {data}")
 
