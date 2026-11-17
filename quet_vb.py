@@ -12,7 +12,7 @@ from scanner.config import load_source_config, config_for_source, WEB_APP_URL
 from scanner.collectors import scan_source
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
-    classify_document, document_identity, is_too_old, has_document_date,
+    classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
@@ -125,6 +125,9 @@ def main():
             doc_type,number=extract_doc_info(title)
             if not doc_type: continue
             recognized+=1; totals["recognized"]+=1
+            # Apply explicit document-number year rules before putting undated old instruments in review.
+            if is_too_old(title,number,MAX_AGE_DAYS,pub):
+                totals["old"]+=1; continue
             if not has_document_date(title,pub):
                 totals["unknown_date"]+=1
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
@@ -132,8 +135,6 @@ def main():
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
                                     "reason":"Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản."})
                 continue
-            if is_too_old(title,number,MAX_AGE_DAYS,pub):
-                totals["old"]+=1; continue
             category=classify_document(title,name,doc_type,number,link)
             keep,priority=classify_and_score(title,name,doc_type,number,group,pub)
             if not keep: continue
@@ -141,9 +142,12 @@ def main():
             identity=document_identity(number,title,name,link)
             if is_seen(state,identity,link):
                 totals["duplicate"]+=1; continue
+            resolved_date,date_basis=resolve_document_date(title,pub)
             doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
                  "link":link,"fingerprint":make_fingerprint(number,title),"category":category,
-                 "identity":identity,"published_date":pub or ""}
+                 "identity":identity,"published_date":pub or "",
+                 "document_date":resolved_date.strftime("%Y-%m-%d") if resolved_date else "",
+                 "date_basis":date_basis,"source_published_date":item.get("source_published_date","")}
             new_docs.append(doc); accepted_for_memory.append({**doc,"identity":identity})
         recognized_by_source[i]=recognized
         if result["error"] and not result.get("fallback_used"): totals["failed"]+=1
