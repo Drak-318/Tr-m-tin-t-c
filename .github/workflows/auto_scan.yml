@@ -47,6 +47,12 @@ jobs:
           python -m compileall -q scanner quet_vb.py
           python -m unittest discover -s tests -v
 
+      - name: One-time migration of existing Sheets dedupe memory
+        env:
+          SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
+          SHEETS_API_TOKEN: ${{ secrets.SHEETS_API_TOKEN }}
+        run: python scripts/bootstrap_sheets_memory.py
+
       - name: Run full-source scanner
         env:
           SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
@@ -56,7 +62,7 @@ jobs:
       - name: Save persistent scanner memory
         if: always()
         run: |
-          MEMORY_FILES="data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json data/review_queue.json data/sheets_export_queue.json"
+          MEMORY_FILES="data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json data/review_queue.json data/sheets_export_queue.json data/sheets_bootstrap.json"
           if [[ -n "$(git status --porcelain $MEMORY_FILES)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
