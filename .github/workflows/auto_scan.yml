@@ -73,7 +73,9 @@ jobs:
               git fetch origin main
               git reset --hard origin/main
               python -m scanner.state_merge --local-dir /tmp/scanner-memory-local --repo-root .
-              git add $MEMORY_FILES
+              for file in $MEMORY_FILES; do
+                if [[ -f "$file" ]]; then git add "$file"; fi
+              done
               if git diff --cached --quiet; then
                 echo "Không có thay đổi bộ nhớ cần lưu."
                 exit 0
