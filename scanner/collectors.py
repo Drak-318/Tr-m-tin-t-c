@@ -1,4 +1,5 @@
 import time
+from types import SimpleNamespace
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
 from urllib.parse import urlsplit
@@ -110,8 +111,8 @@ def fetch_response(session,url,config):
     except requests.exceptions.RequestException as exc:
         raise SourceFetchError("REQUEST",str(exc),url=url) from exc
 
-def _collect_primary(session,base_url,config,max_items,max_pages):
-    response=fetch_response(session,base_url,config); page_count=1; items=[]; feed_used=False
+def _collect_primary(session,base_url,config,max_items,max_pages,initial_response=None):
+    response=initial_response or fetch_response(session,base_url,config); page_count=1; items=[]; feed_used=False
     content_type=(response.headers.get("Content-Type") or "").lower(); body_start=response.text[:500].lower()
     is_feed="rss" in content_type or "atom" in content_type or "<rss" in body_start or "<feed" in body_start
     mode=str(config.get("mode","auto")).lower()
@@ -144,7 +145,23 @@ def _deduplicate_items(items,max_items):
                 unique[link]={**item,"title":title,"link":link}
     return list(unique.values())[:max_items]
 
-def scan_source(source,config):
+def _resolve_aggregator_links(session,items,config):
+    resolved=[]
+    timeout=(int(config.get("timeout_connect",8)),int(config.get("timeout_read",18)))
+    for item in items:
+        link=item.get("link","")
+        if urlsplit(link).hostname not in {"news.google.com","news.googleusercontent.com"}:
+            resolved.append(item); continue
+        try:
+            response=session.get(link,timeout=timeout,allow_redirects=True)
+            final_url=canonicalize_url(response.url)
+            if response.ok and urlsplit(final_url).hostname not in {"news.google.com","news.googleusercontent.com"}:
+                resolved.append({**item,"link":final_url,"link_resolved_from_aggregator":True})
+        except requests.exceptions.RequestException:
+            continue
+    return resolved
+
+def scan_source(source,config,fallback_fetcher=None):
     started=time.monotonic(); session=make_session(); base_url=source["url"].strip()
     max_items=max(1,int(config.get("max_items",200))); max_pages=max(1,min(int(config.get("max_pages",1)),10))
     items=[]; page_count=0; errors=[]; fallback_used=False; http_status=None
@@ -154,8 +171,32 @@ def scan_source(source,config):
         except SourceFetchError as exc:
             errors.append(f"{exc.kind}: {exc}")
             http_status=exc.http_status
-        # Explicitly configured RSS fallbacks supplement a failed/empty primary source.
-        # Their feed dates are aggregator publication dates, NOT official issue dates.
+            # Use Google's fetch infrastructure only after a real primary transport failure.
+            # An accessible page with zero matches is not treated as a network failure.
+            if fallback_fetcher and config.get("apps_script_fallback",True):
+                try:
+                    remote=fallback_fetcher(base_url,source.get("name",""))
+                    remote_status=int(remote.get("http_status",0))
+                    if remote.get("status")=="ok" and 200 <= remote_status < 300 and remote.get("body"):
+                        initial=SimpleNamespace(
+                            url=remote.get("final_url") or base_url,
+                            status_code=remote_status,
+                            headers={"Content-Type":remote.get("content_type","text/html")},
+                            text=remote["body"],
+                            content=remote["body"].encode("utf-8",errors="replace"),
+                        )
+                        items,page_count,http_status=_collect_primary(
+                            session,base_url,config,max_items,max_pages,initial_response=initial
+                        )
+                        if items:
+                            fallback_used=True
+                            for item in items: item["retrieval_method"]="apps_script"
+                    else:
+                        errors.append(f"Apps Script: {remote.get('message') or 'Không lấy được nội dung'}")
+                except Exception as remote_exc:
+                    errors.append(f"Apps Script: {type(remote_exc).__name__}: {remote_exc}")
+        # RSS aggregator is a discovery-only fallback; its publication date is never
+        # treated as an official issue date and its redirect URL is never stored as source URL.
         if not items:
             for feed_url in config.get("fallback_feed_urls",[])[:3]:
                 try:
@@ -166,17 +207,20 @@ def scan_source(source,config):
                             item["source_published_date"]=item.get("published_date")
                             item["published_date"]=None
                             item["date_source"]="fallback_aggregator"
-                        items.extend(fallback_items)
-                        fallback_used=True
-                        break
+                        fallback_items=_resolve_aggregator_links(session,fallback_items,config)
+                        if fallback_items:
+                            items.extend(fallback_items)
+                            fallback_used=True
+                            break
                 except SourceFetchError as exc:
                     errors.append(f"Fallback {exc.kind}: {exc}")
         final_items=_deduplicate_items(items,max_items)
         if final_items:
-            status="Hoạt động (dự phòng)" if fallback_used else "Hoạt động"
+            methods={item.get("retrieval_method") for item in final_items if item.get("retrieval_method")}
+            status="Hoạt động qua Apps Script" if "apps_script" in methods else ("Hoạt động (dự phòng)" if fallback_used else "Hoạt động")
             return {"items":final_items,"status":status,"http_status":http_status,"pages":page_count,
                     "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],
-                    "fallback_used":fallback_used}
+                    "fallback_used":fallback_used,"retrieval_method":"apps_script" if "apps_script" in methods else ("aggregator" if fallback_used else "direct")}
         if errors:
             primary_kind=errors[0].split(":",1)[0]
             return {"items":[],"status":f"Lỗi: {primary_kind}"[:45],"http_status":http_status,"pages":page_count,
