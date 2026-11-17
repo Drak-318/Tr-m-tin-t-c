@@ -121,7 +121,7 @@ def scan_source(source, config):
         page_count += 1
         content_type = (response.headers.get("Content-Type") or "").lower()
         body_start = response.text[:500].lower()
-        is_feed = "xml" in content_type or "rss" in content_type or "<rss" in body_start or "<feed" in body_start
+        is_feed = "rss" in content_type or "atom" in content_type or "<rss" in body_start or "<feed" in body_start
 
         if mode == "rss" or (mode == "auto" and is_feed):
             items = parse_feed(response.content, max_items=max_items)
