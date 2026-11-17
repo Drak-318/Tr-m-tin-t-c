@@ -72,13 +72,26 @@ def main():
                 local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
                                          "agency":source.get("name","")})
     relation_path=Path("data/document_relationships.json")
+    cursor_path=Path("data/relationship_scan_state.json")
     try:
         existing_relations=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
         if not isinstance(existing_relations,list): existing_relations=[]
     except Exception:
         existing_relations=[]
+    try:
+        cursor_state=json.loads(cursor_path.read_text(encoding="utf-8")) if cursor_path.exists() else {}
+        cursor=max(0,int(cursor_state.get("next_candidate",0)))
+    except Exception:
+        cursor_state={}; cursor=0
+    if local_candidates:
+        cursor %= len(local_candidates)
+        rotated=local_candidates[cursor:]+local_candidates[:cursor]
+        selected=rotated[:8]
+        next_cursor=(cursor+len(selected)) % len(local_candidates)
+    else:
+        selected=[]; next_cursor=0
     discovered_relations=collect_local_document_relations(
-        local_candidates,
+        selected,
         fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
         limit=8,
     )
@@ -87,7 +100,8 @@ def main():
         json.dumps(merge_relationships(existing_relations,discovered_relations),ensure_ascii=False,indent=2),
         encoding="utf-8",
     )
-    print(f"[RELATIONS] Đã kiểm tra tối đa {min(8,len(local_candidates))} trang địa phương; phát hiện {len(discovered_relations)} quan hệ ứng viên; tổng lưu {len(merge_relationships(existing_relations,discovered_relations))}.")
+    cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
+    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ ứng viên; tổng lưu {len(merge_relationships(existing_relations,discovered_relations))}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
