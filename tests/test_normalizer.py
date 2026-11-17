@@ -26,6 +26,10 @@ class NormalizerTests(unittest.TestCase):
         self.assertEqual(extract_doc_info("Luật số 12/2026/QH16 về ..."),
                          ("Luật","12/2026/QH16"))
 
+    def test_official_letter_number_with_vv_is_classified_as_cong_van(self):
+        title="Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến tìm hiểu pháp luật"
+        self.assertEqual(extract_doc_info(title),("Công văn","10582/SGDĐT-VP"))
+
     def test_reject_menu_links(self): self.assertEqual(extract_doc_info("Trang chủ"),(None,None))
 
     def test_canonical_url_removes_tracking(self):
