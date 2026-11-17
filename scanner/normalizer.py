@@ -86,8 +86,8 @@ def document_identity(doc_number,title,agency="",link=""):
         locality = ""
         if local_authority:
             context = f"{title} {agency}"
-            match = re.search(r"(?:tỉnh|thành phố|TP\\.?|quận|huyện|thị xã)\\s+([^,;()]+)", context, re.I)
+            match = re.search(r"(?:tỉnh|thành phố|TP\.?|quận|huyện|thị xã )\s+([^,;()]+)", context, re.I)
             if match:
-                locality = re.sub(r"\\s+", " ", match.group(1)).strip().casefold()
+                locality = re.sub(r"\s+", " ", match.group(1)).strip().casefold()
         return f"number:{n}|issuer:{issuer or clean_title(title).casefold()[:90]}|locality:{locality}"
     return f"url:{canonicalize_url(link)}"
