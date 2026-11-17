@@ -18,11 +18,12 @@ REFERENCE_RE = re.compile(
     r"\s+(?:số\s*)?(?P<number>\d+(?:/\d{4})?[/-][A-ZĐƯƠĂÂÊÔ0-9/-]+)",
     re.IGNORECASE,
 )
+# More specific legal relationships take precedence over generic "thực hiện".
 RELATION_RULES = (
-    ("trien_khai", ("triển khai", "tổ chức thực hiện", "thực hiện")),
     ("huong_dan", ("hướng dẫn thi hành", "hướng dẫn thực hiện", "hướng dẫn")),
     ("quy_dinh_chi_tiet", ("quy định chi tiết", "quy định cụ thể")),
     ("can_cu", ("căn cứ", "theo quy định tại", "quy định tại")),
+    ("trien_khai", ("triển khai", "tổ chức thực hiện", "thực hiện")),
 )
 
 
