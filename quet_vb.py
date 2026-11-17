@@ -69,8 +69,12 @@ def main():
     for source,result in results_by_index.values():
         if str(source.get("group","")).strip().casefold() in {"địa phương","công an"}:
             for item in result.get("items",[]):
-                local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
-                                         "agency":source.get("name","")})
+                item_type,item_number=extract_doc_info(item.get("title",""))
+                # Exclude local news posts; trace only identifiable legal-document titles.
+                if item_type and item_number and item_number != "Đang cập nhật":
+                    local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
+                                             "agency":source.get("name",""),"doc_type":item_type,
+                                             "doc_number":item_number})
     local_candidates.sort(key=lambda row: row.get("link",""))
     relation_path=Path("data/document_relationships.json")
     cursor_path=Path("data/relationship_scan_state.json")
