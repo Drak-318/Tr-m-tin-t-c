@@ -158,7 +158,7 @@ def main():
 
     # Recheck a small, bounded batch of previously undated documents on their detail pages.
     # This is deliberately limited per run so source collection remains the priority.
-    review_candidates=pending_review_documents(limit=10,max_attempts=3)
+    review_candidates=pending_review_documents(limit=20,max_attempts=3)
     detail_stats={"checked":0,"dated":0,"new":0,"old":0,"errors":0}
     def check_review_item(row):
         return row,verify_document_detail_date(row.get("link",""),{"timeout_connect":6,"timeout_read":12})
@@ -209,7 +209,7 @@ def main():
                 detail_stats["errors"]+=1 if result.get("error") else 0
                 state_name="fetch_error" if result.get("error") else "not_found"
                 final_status="manual_review" if attempts>=3 else state_name
-                update.update({"status":final_status,"verification_status":state_name})
+                update.update({"status":final_status,"verification_status":"manual_review" if attempts>=3 else state_name})
             update_review_document(row.get("link",""),update)
     if detail_stats["checked"]:
         print(f"[DATE-RECHECK] Kiểm tra {detail_stats['checked']} trang chi tiết | "
