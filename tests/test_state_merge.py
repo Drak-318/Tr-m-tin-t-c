@@ -21,6 +21,19 @@ class StateMergeTests(unittest.TestCase):
         b = {"finished_at":"2026-11-02T00:00:00Z","collected":20}
         self.assertEqual(merge_scan_history([a],[a,b]),[a,b])
 
+
+    def test_export_queue_acknowledgement_clears_previous_jobs(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)/"repo"; local=Path(temp)/"local"
+            (root/"data").mkdir(parents=True); (local/"data").mkdir(parents=True)
+            (root/"data/sheets_export_queue.json").write_text(
+                json.dumps({"version":1,"items":[{"queued_at":"old","new_docs":[1]}]}),encoding="utf-8")
+            (local/"data/sheets_export_queue.json").write_text(
+                json.dumps({"version":1,"items":[]}),encoding="utf-8")
+            merge_state_files(local,root)
+            result=json.loads((root/"data/sheets_export_queue.json").read_text(encoding="utf-8"))
+            self.assertEqual(result["items"],[])
+
     def test_merge_state_files_keeps_remote_and_local_relationships(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)/"repo"; local=Path(temp)/"local"
