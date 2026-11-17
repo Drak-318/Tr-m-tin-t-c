@@ -51,8 +51,10 @@ def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=Non
     if not batches:
         result=_post({"action":"save_results","new_docs":[],"source_status":source_status,"refresh_radar":False,"review_docs":review_docs},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu dữ liệu: {result}")
-        return int(result.get("added",0))
+        return {"added":int(result.get("added",0)),
+                "review_added":int(result.get("sent_to_date_review",0))}
     added=0
+    review_added=0
     for index,batch in enumerate(batches):
         is_last=index==len(batches)-1
         statuses=source_status if is_last else []
@@ -60,8 +62,10 @@ def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=Non
                       "review_docs":review_docs if is_last else []},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu lô {index+1}: {result}")
         added+=int(result.get("added",len(batch)))
-        print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
-    return added
+        review_added+=int(result.get("sent_to_date_review",0))
+        print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản; "
+              f"{int(result.get('sent_to_date_review',0))} hồ sơ cần xác minh ngày mới.")
+    return {"added":added,"review_added":review_added}
 
 
 def fetch_source_via_apps_script(url, source_name=""):
