@@ -17,7 +17,7 @@ from scanner.normalizer import (
 from scanner.sheets import get_sources_and_memory, save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
 from scanner.persistent_memory import load_state, is_seen, record_documents, append_history
-from scanner.relationship_tracer import collect_local_document_relations, merge_relationships
+from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
 MAX_WORKERS=5
 SAVE_BATCH_SIZE=10
@@ -96,13 +96,21 @@ def main():
         fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
         limit=8,
     )
-    relation_path.parent.mkdir(parents=True,exist_ok=True)
-    relation_path.write_text(
-        json.dumps(merge_relationships(existing_relations,discovered_relations),ensure_ascii=False,indent=2),
-        encoding="utf-8",
+    known_documents=list(state.get("documents",{}).values())
+    for source,result in results_by_index.values():
+        for item in result.get("items",[]):
+            doc_type,doc_number=extract_doc_info(item.get("title",""))
+            if doc_type and doc_number and doc_number != "Đang cập nhật":
+                known_documents.append({"title":item.get("title",""),"doc_type":doc_type,
+                                        "doc_number":doc_number,"agency":source.get("name",""),
+                                        "link":item.get("link","")})
+    relation_rows=resolve_reference_candidates(
+        merge_relationships(existing_relations,discovered_relations),known_documents
     )
+    relation_path.parent.mkdir(parents=True,exist_ok=True)
+    relation_path.write_text(json.dumps(relation_rows,ensure_ascii=False,indent=2),encoding="utf-8")
     cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
-    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ ứng viên; tổng lưu {len(merge_relationships(existing_relations,discovered_relations))}.")
+    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {sum(1 for row in relation_rows if row.get('resolution_status')=='found_in_scan_index')}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
