@@ -80,4 +80,14 @@ class NormalizerTests(unittest.TestCase):
         b=document_identity("12/2026/QĐ-STC","Quyết định 12/2026/QĐ-STC","", "https://b.vn")
         self.assertNotEqual(a,b)
 
+    def test_same_local_number_different_provinces_not_same_key(self):
+        a=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND của UBND tỉnh An Giang","", "https://a.vn")
+        b=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND của UBND tỉnh Đồng Nai","", "https://b.vn")
+        self.assertNotEqual(a,b)
+
+    def test_local_number_without_locality_keeps_different_sources_separate(self):
+        a=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND","https://a.vn")
+        b=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND","https://b.vn")
+        self.assertNotEqual(a,b)
+
 if __name__=="__main__": unittest.main()
