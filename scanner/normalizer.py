@@ -91,3 +91,12 @@ def document_identity(doc_number,title,agency="",link=""):
                 locality=re.sub("[ ]+"," ",match.group(1)).strip().casefold()
         return f"number:{n}|issuer:{issuer or clean_title(title).casefold()[:90]}|locality:{locality}"
     return f"url:{canonicalize_url(link)}"
+
+
+def make_fingerprint(doc_number,title):
+    """Stable compact fingerprint; never used alone when an official number exists."""
+    import hashlib
+    number=str(doc_number or "").strip().upper()
+    normalized=re.sub(r"[^0-9a-zA-ZÀ-ỹ]+"," ",clean_title(title).casefold()).strip()
+    raw=(number+"|"+normalized[:240]).encode("utf-8")
+    return hashlib.sha256(raw).hexdigest()
