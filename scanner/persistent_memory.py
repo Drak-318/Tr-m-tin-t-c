@@ -27,7 +27,7 @@ def _read_json(path, default):
 def _write_json(path, value):
     path.parent.mkdir(parents=True,exist_ok=True)
     temp=path.with_suffix(path.suffix+".tmp")
-    temp.write_text(json.dumps(value,ensure_ascii=False,indent=2,sort_keys=True)+"\\n",encoding="utf-8")
+    temp.write_text(json.dumps(value,ensure_ascii=False,indent=2,sort_keys=True)+"\n",encoding="utf-8")
     temp.replace(path)
 
 
