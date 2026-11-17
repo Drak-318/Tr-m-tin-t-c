@@ -1,6 +1,6 @@
 # Trạm Tin Tức
 
-Bộ quét văn bản pháp luật tự động. GitHub Actions là bộ máy thu thập và xử lý website. Google Sheets là nơi quản lý danh sách nguồn, lưu bộ nhớ chống trùng và nhận kết quả.
+Bộ quét văn bản pháp luật tự động. GitHub quản lý danh sách nguồn tại `danh_sach_nguon.csv`; GitHub Actions tự động thu thập và xử lý website; Google Sheets tiếp tục nhận kết quả và lưu bộ nhớ chống trùng.
 
 ## 1. Hệ thống có tự chạy không?
 
@@ -17,8 +17,8 @@ Bạn không cần bấm `Run workflow` mỗi lần. Nút này chỉ dùng khi m
 **Có. Không giới hạn tổng số nguồn ở 5.**
 
 Mỗi lượt chạy thực hiện:
-1. Đọc lại toàn bộ các dòng có URL trong cột B của sheet `Nguồn Quét Văn Bản`.
-2. Đưa toàn bộ nguồn vào hàng đợi quét.
+1. Đọc toàn bộ URL đang bật trong file `danh_sach_nguon.csv` trên GitHub.
+2. Đưa toàn bộ nguồn trong CSV vào hàng đợi quét.
 3. Chạy tối đa 5 nguồn cùng một thời điểm.
 4. Khi một nguồn hoàn tất, hệ thống tự lấy nguồn tiếp theo cho đến khi xử lý hết danh sách.
 
@@ -28,12 +28,12 @@ Mỗi website mặc định được đọc trang nguồn đã nhập. Việc qu
 
 ## 3. Thêm nguồn mới có tự nhận không?
 
-**Có.** Bạn thêm tên nguồn ở cột A và URL ở cột B trong sheet `Nguồn Quét Văn Bản`. Ở lượt chạy kế tiếp, GitHub sẽ đọc lại danh sách và tự nhận nguồn mới.
+**Có.** Bạn thêm một dòng vào file `danh_sach_nguon.csv` trên GitHub, điền tên, URL, nhóm và để `enabled=true`. Ở lượt chạy theo lịch tiếp theo, hệ thống tự đọc file và nhận nguồn mới.
 
 - Không cần sửa mã Python khi thêm một URL thông thường.
-- Không cần bấm Run workflow nếu chờ đến lịch tự động.
-- Nếu chỉ nhập URL mà chưa nhập tên, hệ thống vẫn nhận nguồn và tạm đặt tên theo số dòng.
-- Nguồn mới được quét ở lượt kế tiếp, tối đa khoảng 30 phút sau lịch chạy gần nhất (có thể trễ hơn do GitHub xếp hàng).
+- Không cần bấm Run workflow.
+- Muốn tạm ngừng nguồn, đổi `enabled=true` thành `enabled=false`.
+- Nguồn mới được quét ở lượt kế tiếp theo lịch tự động; GitHub có thể khởi chạy trễ do hàng đợi.
 
 ## 4. Kết quả có tự ghi vào Google Sheets không?
 
@@ -48,7 +48,7 @@ Quy trình tự động:
 6. Ghi URL/số hiệu vào `_Bộ Nhớ Văn Bản` để tránh thêm lại.
 7. Cập nhật số mục và trạng thái của từng nguồn trong `Nguồn Quét Văn Bản`.
 
-Dữ liệu được gửi theo từng lô tối đa 50 văn bản để tránh một yêu cầu quá lớn. Trạng thái nguồn vẫn được gửi kể cả khi lượt quét không tìm thấy văn bản mới.
+Dữ liệu được gửi theo từng lô tối đa 10 văn bản và thời gian chờ phản hồi tối đa 90 giây để giảm nguy cơ timeout. Trạng thái nguồn vẫn được gửi kể cả khi lượt quét không tìm thấy văn bản mới.
 
 ## 5. Bảng Google Sheets có tự định dạng không?
 
@@ -136,7 +136,7 @@ python quet_vb.py
 
 ## Quản lý danh sách nguồn bằng GitHub
 
-Danh sách nguồn chính được chuẩn bị tại `danh_sach_nguon.csv` ở thư mục gốc repository.
+Danh sách nguồn chính hiện được lưu tại `danh_sach_nguon.csv` ở thư mục gốc repository. File đã được điền 64 URL do người dùng cung cấp.
 
 Các cột:
 - `name`: tên nguồn.
@@ -144,8 +144,8 @@ Các cột:
 - `group`: nhóm nguồn, ví dụ `Văn Bản TW` hoặc `Văn Bản địa phương`.
 - `enabled`: `true` để quét; `false` để tạm bỏ qua.
 
-Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong GitHub. Nếu CSV chưa có URL, hệ thống tạm dùng danh sách Google Sheets làm phương án dự phòng để không làm gián đoạn hoạt động trong giai đoạn chuyển đổi.
+Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong GitHub. Nếu CSV chưa có URL, hệ thống tạm dùng danh sách Google Sheets làm phương án dự phòng.
 
 Lưu ý: Google Sheets vẫn được dùng để lưu kết quả và bộ nhớ chống trùng. Vì API Apps Script hiện tại trả danh sách nguồn cùng bộ nhớ trong một phản hồi, lượt chạy vẫn gọi API để lấy bộ nhớ chống trùng; tuy nhiên, khi CSV đã được điền, danh sách CSV mới là danh sách quyết định nguồn nào được quét.
 
-Chưa xóa danh sách nguồn cũ trong Google Sheets cho đến khi đối chiếu đủ số lượng và URL đã chuyển sang CSV.
+Danh sách GitHub hiện có 64 dòng nguồn từ danh sách bạn gửi. Chưa xóa danh sách cũ trong Google Sheets; nên giữ làm bản đối chiếu dự phòng cho đến khi lượt quét mới hoạt động ổn định.
