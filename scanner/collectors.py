@@ -1,6 +1,7 @@
 import time
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
+from urllib.parse import urlsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -9,11 +10,22 @@ from urllib3.util.retry import Retry
 
 from .normalizer import clean_title, canonicalize_url
 
-HEADERS = {"User-Agent":"Mozilla/5.0 (compatible; TramTinTucBot/2.0)","Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language":"vi-VN,vi;q=0.9,en-US;q=0.8"}
+HEADERS = {"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
+           "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+           "Accept-Language":"vi-VN,vi;q=0.9,en-US;q=0.8"}
+
+class SourceFetchError(RuntimeError):
+    def __init__(self, kind, message, http_status=None, url=None):
+        super().__init__(message)
+        self.kind=kind
+        self.http_status=http_status
+        self.url=url
 
 def make_session():
     session=requests.Session()
-    retry=Retry(total=2,connect=2,read=2,status=2,backoff_factor=0.6,status_forcelist=(429,500,502,503,504),allowed_methods=frozenset(["GET"]),respect_retry_after_header=True)
+    retry=Retry(total=2,connect=2,read=2,status=2,backoff_factor=0.6,
+                status_forcelist=(429,500,502,503,504),
+                allowed_methods=frozenset(["GET"]),respect_retry_after_header=True)
     adapter=HTTPAdapter(max_retries=retry,pool_connections=10,pool_maxsize=10)
     session.mount("http://",adapter); session.mount("https://",adapter); session.headers.update(HEADERS)
     return session
@@ -31,7 +43,8 @@ def parse_feed(content,max_items=200):
             if tag=="title" and not title: title="".join(child.itertext()).strip()
             elif tag=="link" and not link: link=(child.attrib.get("href") or child.text or "").strip()
             elif tag in date_tags and not published: published="".join(child.itertext()).strip()
-        if title and link: results.append({"title":clean_title(title),"link":canonicalize_url(link),"published_date":published or None})
+        if title and link:
+            results.append({"title":clean_title(title),"link":canonicalize_url(link),"published_date":published or None})
         if len(results)>=max_items: break
     return results
 
@@ -80,41 +93,97 @@ def find_next_page(soup,page_url,config):
 
 def fetch_response(session,url,config):
     timeout=(int(config.get("timeout_connect",8)),int(config.get("timeout_read",18)))
-    response=session.get(url,timeout=timeout,allow_redirects=True); response.raise_for_status(); return response
+    try:
+        response=session.get(url,timeout=timeout,allow_redirects=True)
+        response.raise_for_status()
+        return response
+    except requests.exceptions.SSLError as exc:
+        raise SourceFetchError("SSL",f"Không xác minh được chứng chỉ TLS: {exc}",url=url) from exc
+    except requests.exceptions.HTTPError as exc:
+        response=getattr(exc,"response",None)
+        status=response.status_code if response is not None else None
+        raise SourceFetchError("HTTP",f"Website trả HTTP {status}: {exc}",http_status=status,url=url) from exc
+    except requests.exceptions.Timeout as exc:
+        raise SourceFetchError("TIMEOUT",f"Hết thời gian chờ: {exc}",url=url) from exc
+    except requests.exceptions.ConnectionError as exc:
+        raise SourceFetchError("CONNECTION",f"Lỗi kết nối: {exc}",url=url) from exc
+    except requests.exceptions.RequestException as exc:
+        raise SourceFetchError("REQUEST",str(exc),url=url) from exc
+
+def _collect_primary(session,base_url,config,max_items,max_pages):
+    response=fetch_response(session,base_url,config); page_count=1; items=[]; feed_used=False
+    content_type=(response.headers.get("Content-Type") or "").lower(); body_start=response.text[:500].lower()
+    is_feed="rss" in content_type or "atom" in content_type or "<rss" in body_start or "<feed" in body_start
+    mode=str(config.get("mode","auto")).lower()
+    if mode=="rss" or (mode=="auto" and is_feed):
+        items=parse_feed(response.content,max_items); feed_used=True
+    elif mode=="auto":
+        soup=BeautifulSoup(response.text,"html.parser"); feed_url=discover_feed_url(soup,response.url)
+        if feed_url:
+            try:
+                fr=fetch_response(session,feed_url,config); items=parse_feed(fr.content,max_items); feed_used=True
+            except SourceFetchError:
+                pass
+    if not feed_used:
+        page_url,html=response.url,response.text; seen_pages={canonicalize_url(page_url)}
+        while True:
+            page_items,soup=parse_html_items(html,page_url,config); items.extend(page_items)
+            if len(items)>=max_items or page_count>=max_pages: break
+            next_url=find_next_page(soup,page_url,config)
+            if not next_url or next_url in seen_pages: break
+            seen_pages.add(next_url); nr=fetch_response(session,next_url,config); page_url,html=nr.url,nr.text; page_count+=1
+    return items,page_count,response.status_code
+
+def _deduplicate_items(items,max_items):
+    unique={}
+    for item in items:
+        title=clean_title(item.get("title")); link=canonicalize_url(item.get("link"))
+        if title and link:
+            old=unique.get(link)
+            if old is None or (not old.get("published_date") and item.get("published_date")):
+                unique[link]={**item,"title":title,"link":link}
+    return list(unique.values())[:max_items]
 
 def scan_source(source,config):
     started=time.monotonic(); session=make_session(); base_url=source["url"].strip()
-    mode=str(config.get("mode","auto")).lower(); max_items=max(1,int(config.get("max_items",200))); max_pages=max(1,min(int(config.get("max_pages",1)),10))
-    items=[]; page_count=0; feed_used=False
+    max_items=max(1,int(config.get("max_items",200))); max_pages=max(1,min(int(config.get("max_pages",1)),10))
+    items=[]; page_count=0; errors=[]; fallback_used=False; http_status=None
     try:
-        response=fetch_response(session,base_url,config); page_count+=1
-        content_type=(response.headers.get("Content-Type") or "").lower(); body_start=response.text[:500].lower()
-        is_feed="rss" in content_type or "atom" in content_type or "<rss" in body_start or "<feed" in body_start
-        if mode=="rss" or (mode=="auto" and is_feed):
-            items=parse_feed(response.content,max_items); feed_used=True
-        elif mode=="auto":
-            soup=BeautifulSoup(response.text,"html.parser"); feed_url=discover_feed_url(soup,response.url)
-            if feed_url:
+        try:
+            items,page_count,http_status=_collect_primary(session,base_url,config,max_items,max_pages)
+        except SourceFetchError as exc:
+            errors.append(f"{exc.kind}: {exc}")
+            http_status=exc.http_status
+        # Explicitly configured RSS fallbacks supplement a failed/empty primary source.
+        # Their feed dates are aggregator publication dates, NOT official issue dates.
+        if not items:
+            for feed_url in config.get("fallback_feed_urls",[])[:3]:
                 try:
-                    fr=fetch_response(session,feed_url,config); items=parse_feed(fr.content,max_items); feed_used=True
-                except Exception: items=[]
-        if not feed_used:
-            page_url,html=response.url,response.text; seen_pages={canonicalize_url(page_url)}
-            while True:
-                page_items,soup=parse_html_items(html,page_url,config); items.extend(page_items)
-                if len(items)>=max_items or page_count>=max_pages: break
-                next_url=find_next_page(soup,page_url,config)
-                if not next_url or next_url in seen_pages: break
-                seen_pages.add(next_url); nr=fetch_response(session,next_url,config); page_url,html=nr.url,nr.text; page_count+=1
-        unique={}
-        for item in items:
-            title=clean_title(item.get("title")); link=canonicalize_url(item.get("link"))
-            if title and link:
-                old=unique.get(link)
-                if old is None or (not old.get("published_date") and item.get("published_date")):
-                    unique[link]={"title":title,"link":link,"published_date":item.get("published_date")}
-        final_items=list(unique.values())[:max_items]
-        return {"items":final_items,"status":"Hoạt động" if final_items else "Không tìm thấy mục","http_status":response.status_code,"pages":page_count,"duration":round(time.monotonic()-started,2),"error":""}
+                    response=fetch_response(session,feed_url,config)
+                    fallback_items=parse_feed(response.content,max_items)
+                    if fallback_items:
+                        for item in fallback_items:
+                            item["source_published_date"]=item.get("published_date")
+                            item["published_date"]=None
+                            item["date_source"]="fallback_aggregator"
+                        items.extend(fallback_items)
+                        fallback_used=True
+                        break
+                except SourceFetchError as exc:
+                    errors.append(f"Fallback {exc.kind}: {exc}")
+        final_items=_deduplicate_items(items,max_items)
+        if final_items:
+            status="Hoạt động (dự phòng)" if fallback_used else "Hoạt động"
+            return {"items":final_items,"status":status,"http_status":http_status,"pages":page_count,
+                    "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],
+                    "fallback_used":fallback_used}
+        if errors:
+            primary_kind=errors[0].split(":",1)[0]
+            return {"items":[],"status":f"Lỗi: {primary_kind}"[:45],"http_status":http_status,"pages":page_count,
+                    "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],"fallback_used":False}
+        return {"items":[],"status":"Đã truy cập, chưa tìm thấy mục","http_status":http_status,"pages":page_count,
+                "duration":round(time.monotonic()-started,2),"error":"","fallback_used":False}
     except Exception as exc:
-        return {"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":None,"pages":page_count,"duration":round(time.monotonic()-started,2),"error":str(exc)[:300]}
+        return {"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":http_status,"pages":page_count,
+                "duration":round(time.monotonic()-started,2),"error":str(exc)[:500],"fallback_used":fallback_used}
     finally: session.close()

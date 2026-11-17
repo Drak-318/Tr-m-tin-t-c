@@ -1,0 +1,19 @@
+import unittest
+from scanner.collectors import parse_feed, _deduplicate_items
+
+class CollectorTests(unittest.TestCase):
+    def test_parse_rss_feed(self):
+        xml=b"""<rss><channel><item><title>Thong tu 12/2026/TT-BTC</title><link>https://example.gov.vn/vb/12</link><pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
+        items=parse_feed(xml)
+        self.assertEqual(len(items),1)
+        self.assertEqual(items[0]["link"],"https://example.gov.vn/vb/12")
+        self.assertIsNotNone(items[0]["published_date"])
+
+    def test_deduplicate_preserves_fallback_provenance(self):
+        items=[{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/a",
+                "published_date":None,"source_published_date":"2026-11-16","date_source":"fallback_aggregator"}]
+        result=_deduplicate_items(items,20)
+        self.assertEqual(result[0]["date_source"],"fallback_aggregator")
+        self.assertIsNone(result[0]["published_date"])
+
+if __name__=="__main__": unittest.main()

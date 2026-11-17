@@ -55,18 +55,22 @@ def main():
         for future in concurrent.futures.as_completed(futures):
             i,s=futures[future]
             try: result=future.result()
-            except Exception as exc: result={"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":None,"pages":0,"duration":0,"error":str(exc)[:300]}
+            except Exception as exc: result={"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":None,"pages":0,"duration":0,"error":str(exc)[:500],"fallback_used":False}
             results_by_index[i]=(s,result)
-            print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s")
+            detail=f" | Chi tiết: {result['error']}" if result.get("error") else ""
+            fallback=" | Có dùng nguồn dự phòng" if result.get("fallback_used") else ""
+            print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{detail}")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
-    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0}
+    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
     recognized_by_source={}
     seen_sheet_links=set(existing_links)
     seen_sheet_identities=set(existing_identities)
     for i in range(len(sources)):
         source,result=results_by_index[i]; name=source.get("name","Nguồn không tên"); group=source.get("group","Văn Bản TW")
-        totals["items"]+=len(result["items"]); recognized=0
+        totals["items"]+=len(result["items"])
+        if result.get("fallback_used"): totals["fallback_sources"]+=1
+        recognized=0
         for item in result["items"]:
             title=item["title"]; link=canonicalize_url(item["link"]); pub=item.get("published_date")
             doc_type,number=extract_doc_info(title)
@@ -75,7 +79,8 @@ def main():
             if not has_document_date(title,pub):
                 totals["unknown_date"]+=1
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
-                                    "published_date":"","reason":"Không tìm thấy ngày ban hành hoặc ngày đăng đáng tin cậy; cần kiểm tra thủ công."})
+                                    "published_date":"","source_published_date":item.get("source_published_date",""),
+                                    "reason":"Chưa có ngày ban hành xác minh được; ngày từ nguồn tổng hợp không được dùng thay ngày ban hành."})
                 continue
             if is_too_old(title,number,MAX_AGE_DAYS,pub):
                 totals["old"]+=1; continue
@@ -93,26 +98,27 @@ def main():
             seen_sheet_links.add(link)
             seen_sheet_identities.add(identity)
         recognized_by_source[i]=recognized
-        if result["error"]: totals["failed"]+=1
+        if result["error"] and not result.get("fallback_used"): totals["failed"]+=1
         status=result["status"]
         if not result["error"] and result["items"]: status="Hoạt động" if recognized else "Đã truy cập, chưa nhận diện văn bản"
+        if result.get("fallback_used"): status="Hoạt động qua nguồn dự phòng"
         if source.get("row") is not None: source_status.append({"row":source["row"],"count":recognized,"status":status[:45]})
 
     new_docs.sort(key=lambda d:(d["priority"],d["title"].casefold()))
-    print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Chưa rõ ngày {totals['unknown_date']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']}")
-    # Chỉ ghi vào bộ nhớ bền vững sau khi Google Sheets xác nhận đồng bộ thành công.
+    print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Chưa rõ ngày {totals['unknown_date']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']} | Có nguồn dự phòng {totals['fallback_sources']}")
     saved=save_results_in_batches(new_docs,source_status,SAVE_BATCH_SIZE,review_docs)
     record_documents(state,accepted_for_memory)
     duration=round(time.monotonic()-started,2)
     summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
-             "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],"new_to_sheets":saved,
-             "failed_sources":totals["failed"],"duration_seconds":duration}
+             "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
+             "new_to_sheets":saved,"failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"duration_seconds":duration}
     append_history(summary)
     report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
-            f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",f"- Loại do trùng: **{totals['duplicate']}**",
-            f"- Văn bản mới đồng bộ Google Sheets: **{saved}**",f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",
-            f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",f"- Thời gian: **{duration} giây**","",
+            f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",
+            f"- Loại do trùng: **{totals['duplicate']}**",f"- Văn bản mới đồng bộ Google Sheets: **{saved}**",
+            f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
+            f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",f"- Thời gian: **{duration} giây**","",
             "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái |","|---|---:|---:|---|"]
     for i in range(len(sources)):
         s,r=results_by_index[i]; report.append(f"| {s.get('name','')[:50]} | {len(r['items'])} | {recognized_by_source[i]} | {r['status']} |")
