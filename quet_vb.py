@@ -166,13 +166,17 @@ def main():
         enqueue_sheets_export(export_payload)
     record_documents(state,accepted_for_memory)
     saved=0
+    review_saved=0
     pending_exports=load_sheets_export_queue()
     if WEB_APP_URL and pending_exports:
         try:
             for payload in pending_exports:
-                saved+=save_results_in_batches(payload.get("new_docs",[]),payload.get("source_status",[]),SAVE_BATCH_SIZE,payload.get("review_docs",[]))
+                export_result=save_results_in_batches(payload.get("new_docs",[]),payload.get("source_status",[]),SAVE_BATCH_SIZE,payload.get("review_docs",[]))
+                saved+=export_result["added"]
+                review_saved+=export_result["review_added"]
             clear_sheets_export_queue()
-            print(f"[SHEETS] Đã xác nhận xuất {len(pending_exports)} gói dữ liệu.")
+            print(f"[SHEETS] Đã xác nhận xuất {len(pending_exports)} gói dữ liệu: "
+                  f"{saved} văn bản mới, {review_saved} hồ sơ xác minh ngày mới.")
         except Exception as exc:
             print(f"[SHEETS] Chưa xuất được dữ liệu; đã giữ hàng đợi trên GitHub để thử lại: {type(exc).__name__}: {exc}")
     else:
@@ -180,7 +184,7 @@ def main():
     duration=round(time.monotonic()-started,2)
     summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
-             "new_to_sheets":saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
+             "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
              "relationship_ambiguous":relation_ambiguous,"duration_seconds":duration}
@@ -189,6 +193,7 @@ def main():
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
             f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",
             f"- Loại do trùng: **{totals['duplicate']}**",f"- Văn bản mới được Google Sheets xác nhận: **{saved}**",
+             f"- Hồ sơ xác minh ngày mới được Google Sheets xác nhận: **{review_saved}**",
              f"- Gói chờ xuất sang Sheets trên GitHub: **{len(load_sheets_export_queue())}**",
              f"- Hồ sơ chờ xác minh ngày trên GitHub: **{review_total}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
