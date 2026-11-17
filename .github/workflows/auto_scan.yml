@@ -1,21 +1,36 @@
-name: Tu Dong Quet Van Ban Phap Luat
+name: Tram Tin Tuc - Auto Scanner
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
+concurrency:
+  group: tram-tin-tuc-full-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
 jobs:
-  build:
+  scan:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 urllib3
-      - name: Run scanner
+        run: pip install -r requirements.txt
+
+      - name: Run full-source scanner
+        env:
+          SHEETS_WEB_APP_URL: \${{ secrets.SHEETS_WEB_APP_URL }}
         run: python quet_vb.py
