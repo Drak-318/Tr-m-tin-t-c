@@ -20,5 +20,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile modules
         run: python -m compileall -q scanner quet_vb.py
+      - name: Check Apps Script JavaScript syntax
+        run: node --check < apps_script/Code.gs
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
