@@ -1,5 +1,5 @@
 import unittest
-from scanner.relationship_tracer import extract_document_references, merge_relationships, resolve_reference_candidates
+from scanner.relationship_tracer import extract_document_references, merge_relationships, resolve_reference_candidates, _article_text
 
 class RelationshipTracerTests(unittest.TestCase):
     def test_extracts_decree_and_circular_with_relation_types(self):
@@ -16,6 +16,17 @@ class RelationshipTracerTests(unittest.TestCase):
         self.assertEqual(refs[0]["referenced_doc_number"], "22/QĐ-UBND")
         self.assertEqual(refs[0]["relation_type"], "can_cu")
         self.assertIn("Căn cứ", refs[0]["evidence_excerpt"])
+
+    def test_article_text_excludes_related_sidebar(self):
+        html = """<html><body><main class='main-content'><p>Triển khai Nghị định số 123/2026/NĐ-CP.</p></main>
+        <aside class='related-news'><p>Hướng dẫn Thông tư số 99/2026/TT-BTC.</p></aside></body></html>"""
+        text = _article_text(html)
+        self.assertIn("123/2026/NĐ-CP",text)
+        self.assertNotIn("99/2026/TT-BTC",text)
+
+    def test_generic_thuc_hien_is_not_mislabeled_as_trien_khai(self):
+        refs = extract_document_references("Kiểm tra công tác thực hiện Quyết định số 22/2026/QĐ-TTg.")
+        self.assertEqual(refs[0]["relation_type"],"thuc_hien")
 
     def test_resolves_exact_reference_to_one_known_document(self):
         relation = {"referenced_doc_type":"Nghị định","referenced_doc_number":"123/2026/NĐ-CP"}
