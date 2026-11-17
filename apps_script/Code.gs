@@ -42,6 +42,11 @@ function doPost(e) {
       return jsonOutput_({status: "error", message: "API token không hợp lệ."});
     }
 
+    // Fetching a public source is read-only; do not hold the spreadsheet write lock.
+    if (data.action === "fetch_source") {
+      return jsonOutput_(fetchSource_(SpreadsheetApp.getActiveSpreadsheet(), data));
+    }
+
     if (!lock.tryLock(25000)) {
       return jsonOutput_({status: "error", message: "Hệ thống đang xử lý lượt đồng bộ khác. Hãy thử lại."});
     }
@@ -58,6 +63,79 @@ function doPost(e) {
     return jsonOutput_({status: "error", message: String(err && err.stack ? err.stack : err)});
   } finally {
     try { lock.releaseLock(); } catch (ignored) {}
+  }
+}
+
+/**
+ * Read-only source proxy. Only HTTPS hosts already present in the source registry
+ * are allowed; this endpoint cannot be used as an arbitrary URL fetch proxy.
+ */
+function fetchSource_(ss, data) {
+  const rawUrl = String(data.url || "").trim();
+  if (!/^https:\/\//i.test(rawUrl)) {
+    return {status: "error", message: "Chỉ chấp nhận URL HTTPS."};
+  }
+  let parsed;
+  try { parsed = new URL(rawUrl); }
+  catch (err) { return {status: "error", message: "URL không hợp lệ."}; }
+  const host = String(parsed.hostname || "").toLowerCase();
+  if (!host || parsed.username || parsed.password || parsed.port ||
+      host === "localhost" || /^\d+(\.\d+){3}$/.test(host) ||
+      host.endsWith(".local") || host.endsWith(".internal")) {
+    return {status: "error", message: "Địa chỉ nguồn không được phép."};
+  }
+
+  const sourceSheet = ss.getSheetByName(CONFIG.SHEET_SOURCES);
+  if (!sourceSheet || sourceSheet.getLastRow() < 2) {
+    return {status: "error", message: "Không có danh sách nguồn để xác thực."};
+  }
+  const values = sourceSheet.getRange(2, 2, sourceSheet.getLastRow() - 1, 1).getDisplayValues();
+  const allowedHosts = new Set();
+  values.forEach(row => {
+    try {
+      const sourceUrl = new URL(String(row[0] || "").trim());
+      if (sourceUrl.protocol === "https:") allowedHosts.add(sourceUrl.hostname.toLowerCase());
+    } catch (ignored) {}
+  });
+  if (!allowedHosts.has(host)) {
+    return {status: "error", message: "Tên miền không nằm trong danh sách nguồn đã cấu hình."};
+  }
+
+  try {
+    const response = UrlFetchApp.fetch(rawUrl, {
+      method: "get",
+      followRedirects: true,
+      muteHttpExceptions: true,
+      validateHttpsCertificates: true,
+      headers: {
+        "User-Agent": "Mozilla/5.0 (compatible; TramTinTuc/1.0)",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8"
+      }
+    });
+    const statusCode = response.getResponseCode();
+    const headers = response.getHeaders();
+    const contentType = String(headers["Content-Type"] || headers["content-type"] || "");
+    const body = response.getContentText();
+    if (body.length > 400000) {
+      return {status: "error", http_status: statusCode, message: "Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt."};
+    }
+    if (statusCode < 200 || statusCode >= 300) {
+      return {status: "error", http_status: statusCode, message: "Website nguồn trả HTTP " + statusCode};
+    }
+    if (!/(text\/html|application\/xhtml|application\/xml|text\/xml|rss|atom)/i.test(contentType) &&
+        !/^\s*<(?:!doctype\s+html|html|rss|feed)/i.test(body)) {
+      return {status: "error", http_status: statusCode, message: "Kiểu dữ liệu không phải HTML/XML."};
+    }
+    return {
+      status: "ok",
+      http_status: statusCode,
+      content_type: contentType || "text/html",
+      final_url: rawUrl,
+      body: body
+    };
+  } catch (err) {
+    return {status: "error", message: "UrlFetchApp: " + String(err && err.message ? err.message : err)};
   }
 }
 
