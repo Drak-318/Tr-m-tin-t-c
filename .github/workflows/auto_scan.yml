@@ -11,6 +11,8 @@ on:
       - 'scanner/**'
       - 'tests/**'
       - 'requirements.txt'
+      - 'source_config.json'
+      - 'danh_sach_nguon.csv'
       - '.github/workflows/auto_scan.yml'
 
 concurrency:
@@ -59,5 +61,23 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/seen_documents.json data/scan_history.json
             git commit -m "Update scanner memory [skip ci]"
-            git push
+
+            # Rebase bộ nhớ lên nhánh mới nhất để tránh lỗi non-fast-forward
+            # khi có commit cấu hình/mã nguồn trong lúc lượt quét đang chạy.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "Không thể rebase bộ nhớ do xung đột; giữ nguyên dữ liệu trên remote."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                echo "Đã lưu bộ nhớ bền vững lên main."
+                exit 0
+              fi
+              echo "Push bộ nhớ thất bại lần ${attempt}/3; sẽ lấy main mới nhất và thử lại."
+              sleep $((attempt * 3))
+            done
+            echo "Không thể lưu bộ nhớ sau 3 lần thử."
+            exit 1
           fi
