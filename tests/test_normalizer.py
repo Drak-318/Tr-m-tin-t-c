@@ -20,11 +20,15 @@ class NormalizerTests(unittest.TestCase):
 
     def test_phrase_phap_luat_is_not_misclassified_as_luat(self):
         title="Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến tìm hiểu pháp luật"
-        self.assertEqual(extract_doc_info(title),(None,None))
+        self.assertNotEqual(extract_doc_info(title)[0],"Luật")
 
     def test_luat_at_title_start_is_still_recognized(self):
         self.assertEqual(extract_doc_info("Luật số 12/2026/QH16 về ..."),
                          ("Luật","12/2026/QH16"))
+
+    def test_official_letter_number_with_vv_is_classified_as_cong_van(self):
+        title="Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến tìm hiểu pháp luật"
+        self.assertEqual(extract_doc_info(title),("Công văn","10582/SGDĐT-VP"))
 
     def test_reject_menu_links(self): self.assertEqual(extract_doc_info("Trang chủ"),(None,None))
 
