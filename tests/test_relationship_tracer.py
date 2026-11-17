@@ -19,10 +19,12 @@ class RelationshipTracerTests(unittest.TestCase):
 
     def test_article_text_excludes_related_sidebar(self):
         html = """<html><body><main class='main-content'><p>Triển khai Nghị định số 123/2026/NĐ-CP.</p></main>
-        <aside class='related-news'><p>Hướng dẫn Thông tư số 99/2026/TT-BTC.</p></aside></body></html>"""
+        <aside class='related-news'><p>Hướng dẫn Thông tư số 99/2026/TT-BTC.</p></aside>
+        <div class='sidebar-related'><p>Thông tư số 88/2026/TT-BTC.</p></div></body></html>"""
         text = _article_text(html)
         self.assertIn("123/2026/NĐ-CP",text)
         self.assertNotIn("99/2026/TT-BTC",text)
+        self.assertNotIn("88/2026/TT-BTC",text)
 
     def test_generic_thuc_hien_is_not_mislabeled_as_trien_khai(self):
         refs = extract_document_references("Kiểm tra công tác thực hiện Quyết định số 22/2026/QĐ-TTg.")
