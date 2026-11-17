@@ -26,40 +26,55 @@ JUNK_KEYWORDS = [
     "tin tức", "video", "thư viện", "chi tiết", "cơ sở dữ liệu", "xây dựng pháp luật"
 ]
 
+# Từ khóa nhận diện văn bản Địa phương
 LOCAL_KEYWORDS = [
     "ubnd", "ủy ban nhân dân", "hđnd", "hội đồng nhân dân", "qđ-ubnd", "nq-hđnd", 
     "ct-ubnd", "kh-ubnd", "tỉnh ", "thành phố ", "tp.", "tp ", "sở "
 ]
 
+# Từ khóa 7 chủ đề trọng tâm dành riêng cho văn bản Địa phương
 LOCAL_TOPIC_KEYWORDS = [
+    # 1. Đất đai, nhà ở, bồi thường
     "đất đai", "bảng giá đất", "thu hồi đất", "giao đất", "cho thuê đất", "bồi thường", 
     "tái định cư", "sổ đỏ", "giấy chứng nhận quyền sử dụng đất", "nhà ở", "nhà ở xã hội", 
     "tách thửa", "hợp thửa", "hạn mức đất", "quy hoạch sử dụng đất",
+    # 2. Cán bộ, công chức, viên chức, tinh giản
     "cán bộ", "công chức", "viên chức", "người hoạt động không chuyên trách", 
     "tuyển dụng", "nâng ngạch", "thăng hạng", "tinh giản biên chế", "kỷ luật", "đánh giá xếp loại",
+    # 3. Thi đua, khen thưởng
     "thi đua", "khen thưởng", "bằng khen", "danh hiệu", "huân chương", "huy chương", "kỷ niệm chương",
+    # 4. Lao động, tiền lương, phụ cấp, BHXH
     "tiền lương", "mức lương", "lương tối thiểu", "phụ cấp", "trợ cấp", "chế độ chính sách", 
     "lao động", "việc làm", "bảo hiểm xã hội", "bhxh", "bảo hiểm y tế", "bhyt", "người có công", "an sinh",
+    # 5. Thuế, phí, lệ phí, hóa đơn
     "thuế", "lệ phí", "mức thu phí", "miễn giảm", "hóa đơn", "hộ kinh doanh", "tiền sử dụng đất",
+    # 6. Giao thông, xử phạt vi phạm hành chính
     "giao thông", "xử phạt", "vi phạm hành chính", "giấy phép lái xe", "đăng kiểm", "bến xe", "vận tải",
+    # 7. Giáo dục, y tế, học phí, khám chữa bệnh
     "giáo dục", "học phí", "tuyển sinh", "giáo viên", "y tế", "khám chữa bệnh", "bệnh viện", "dịch bệnh"
 ]
 
-def check_date_is_too_old(title, max_days=60):
-    # Tìm chuỗi "ngày DD/MM/YYYY" hoặc "ngày DD-MM-YYYY"
-    match = re.search(r'(?:ngày|ngay)\s*(\d{1,2})[/-](\d{1,2})[/-](\d{4})', title.lower())
+def check_date_is_too_old(title, doc_num="", max_days=60):
+    current_year = str(datetime.now().year)
+    # Nếu số hiệu văn bản chính đã mang năm hiện tại (/2026/) thì chỉ xét ngày ở vế đầu (trước chữ sửa đổi/bãi bỏ)
+    title_lower = title.lower()
+    main_clause = re.split(
+        r'sửa đổi|bổ sung|bãi bỏ|thay thế|hướng dẫn|thi hành|kèm theo|theo nghị|theo quyết|theo thông|của nghị|của quyết|của thông',
+        title_lower
+    )[0]
+
+    match = re.search(r'(?:ngày|ngay)\s*(\d{1,2})[/-](\d{1,2})[/-](\d{4})', main_clause)
     if match:
         try:
             day, month, year = int(match.group(1)), int(match.group(2)), int(match.group(3))
             doc_date = datetime(year, month, day)
             if (datetime.now() - doc_date).days > max_days:
-                return True # Quá cũ
+                return True
         except:
             pass
-    return False # Không có ngày hoặc ngày còn mới -> Cho qua
+    return False
 
 def extract_doc_info(title):
-    # Lọc rác (Menu, danh mục)
     if any(junk in title.lower() for junk in JUNK_KEYWORDS):
         return None, None
         
@@ -67,17 +82,15 @@ def extract_doc_info(title):
     if m:
         return m.group(1).capitalize(), m.group(2).upper()
         
-    # Yêu cầu chặt chẽ hơn: Nếu dùng Keyword để dò thì trong tên phải chứa các từ khóa hành động cụ thể để tránh rác
     for kw in ["Nghị định", "Thông tư", "Quyết định", "Nghị quyết", "Công văn", "Chỉ thị", "Luật", "Dự thảo"]:
         if kw.lower() in title.lower():
-            if any(action in title.lower() for action in ["ban hành", "quy định", "về việc", "sửa đổi", "bổ sung", "phê duyệt", "số "]):
-                num_m = re.search(r"([0-9]+/[0-9]{4}/[A-ZĐƯƠĂÂÊÔ0-9\-]+|[0-9]+/[A-ZĐƯƠĂÂÊÔ0-9\-]+)", title, re.I)
+            if any(action in title.lower() for action in ["ban hành", "quy định", "về việc", "sửa đổi", "bổ sung", "phê duyệt", "số ", "2026"]):
+                num_m = re.search(r"([0-9]+/[0-9]{4}/[A-ZĐƯƠĂÂÊÔ0-9\-]+|[0-9]+/[A-ZĐƯƠĂÂÊÔ0-9\-]+|[0-9]+/[0-9]{4})", title, re.I)
                 return kw, (num_m.group(1).upper() if num_m else "Đang cập nhật")
     return None, None
 
 def classify_and_filter(title, agency, doc_type, doc_num, group):
-    # Nếu kiểm tra tiêu đề thấy đã ban hành quá 60 ngày -> Vứt bỏ
-    if check_date_is_too_old(title, max_days=60):
+    if check_date_is_too_old(title, doc_num, max_days=60):
         return False, 99
 
     text_check = f"{title} {agency} {doc_num}".lower()
@@ -113,7 +126,7 @@ def main():
         group = src.get("group", "Văn Bản TW")
         found_items = 0
         try:
-            r = requests.get(url, headers=HEADERS, timeout=6, verify=False)
+            r = requests.get(url, headers=HEADERS, timeout=8, verify=False)
             if r.status_code != 200:
                 source_status.append({"row": row, "count": 0, "status": f"Lỗi ({r.status_code})"})
                 continue
@@ -165,9 +178,10 @@ def main():
             source_status.append({"row": row, "count": 0, "status": "Lỗi kết nối"})
             print(f"[LỖI] {name}: {str(e)[:60]}")
 
+    # Sắp xếp ưu tiên: Văn bản Trung ương lên đầu, Địa phương xuống dưới
     new_docs.sort(key=lambda x: x["priority"])
 
-    print(f"2. Phát hiện {len(new_docs)} văn bản mới (Đã lọc ngày <60 & Xóa menu rác). Đang đồng bộ...")
+    print(f"2. Phát hiện {len(new_docs)} văn bản mới. Đang đồng bộ về Google Sheet...")
     save_resp = requests.post(WEB_APP_URL, json={
         "action": "save_results",
         "new_docs": new_docs[:50],
