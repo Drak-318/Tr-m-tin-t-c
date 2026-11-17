@@ -102,13 +102,13 @@ def merge_state_files(local_dir, repo_root="."):
     local_export_path = local_root / "data/sheets_export_queue.json"
     remote_export = _read(export_path, {"version": 1, "items": []})
     local_export = _read(local_export_path, {"version": 1, "items": []})
-    export_items = []
-    export_seen = set()
-    for row in list(remote_export.get("items", [])) + list(local_export.get("items", [])):
-        key = json.dumps(row, ensure_ascii=False, sort_keys=True)
-        if key not in export_seen:
-            export_seen.add(key)
-            export_items.append(row)
+    # The scanner workflow is serialized; its local queue is a complete snapshot
+    # including all pre-run jobs plus this run's additions/acknowledgements.
+    # Treat it as authoritative so successfully exported jobs can actually be cleared.
+    if local_export_path.exists():
+        export_items = list(local_export.get("items", []))
+    else:
+        export_items = list(remote_export.get("items", []))
     _write(export_path, {"version": 1, "items": export_items})
 
     return {
