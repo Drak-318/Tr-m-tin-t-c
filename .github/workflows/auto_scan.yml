@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   scan:
@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,5 +39,16 @@ jobs:
 
       - name: Run full-source scanner
         env:
-          SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
+          SHEETS_WEB_APP_URL: \${{ secrets.SHEETS_WEB_APP_URL }}
         run: python quet_vb.py
+
+      - name: Save persistent anti-duplicate memory
+        if: always()
+        run: |
+          if [[ -n "$(git status --porcelain data/seen_documents.json data/scan_history.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/seen_documents.json data/scan_history.json
+            git commit -m "Update scanner memory [skip ci]"
+            git push
+          fi
