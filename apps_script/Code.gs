@@ -130,6 +130,7 @@ function formatBatchRows_(sheet, startRow, numRows, batchIndex) {
 function saveResults_(ss, data) {
   const resultSheet = ss.getSheetByName(CONFIG.SHEET_RESULTS);
   if (!resultSheet) throw new Error('Không tìm thấy sheet "' + CONFIG.SHEET_RESULTS + '".');
+  if (!String(resultSheet.getRange(1, 8).getDisplayValue() || "").trim()) resultSheet.getRange(1, 8).setValue("Nhóm văn bản");
   const memory = ensureMemorySheet_(ss);
   const now = Utilities.formatDate(new Date(), CONFIG.TIMEZONE, "dd/MM/yyyy HH:mm:ss");
   const incoming = Array.isArray(data.new_docs) ? data.new_docs : [];
