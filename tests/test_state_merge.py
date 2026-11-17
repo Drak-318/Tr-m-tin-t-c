@@ -34,6 +34,16 @@ class StateMergeTests(unittest.TestCase):
             result=json.loads((root/"data/sheets_export_queue.json").read_text(encoding="utf-8"))
             self.assertEqual(result["items"],[])
 
+    def test_bootstrap_marker_is_persisted_after_memory_merge(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)/"repo"; local=Path(temp)/"local"
+            (root/"data").mkdir(parents=True); (local/"data").mkdir(parents=True)
+            marker={"completed_at":"2026-11-17T12:00:00Z","urls":937}
+            (local/"data/sheets_bootstrap.json").write_text(json.dumps(marker),encoding="utf-8")
+            merge_state_files(local,root)
+            saved=json.loads((root/"data/sheets_bootstrap.json").read_text(encoding="utf-8"))
+            self.assertEqual(saved,marker)
+
     def test_merge_state_files_keeps_remote_and_local_relationships(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)/"repo"; local=Path(temp)/"local"
