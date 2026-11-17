@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Trạm Tin Tức - quét toàn bộ nguồn, tối đa 5 nguồn đồng thời."""
 import concurrent.futures
+import json
+from pathlib import Path
 import os
 import sys
 import time
@@ -15,6 +17,7 @@ from scanner.normalizer import (
 from scanner.sheets import get_sources_and_memory, save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
 from scanner.persistent_memory import load_state, is_seen, record_documents, append_history
+from scanner.relationship_tracer import collect_local_document_relations, merge_relationships
 
 MAX_WORKERS=5
 SAVE_BATCH_SIZE=10
@@ -60,6 +63,31 @@ def main():
             detail=f" | Chi tiết: {result['error']}" if result.get("error") else ""
             fallback=" | Có dùng nguồn dự phòng" if result.get("fallback_used") else ""
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{detail}")
+
+    # Trace references from a bounded sample of local authority detail pages.
+    local_candidates=[]
+    for source,result in results_by_index.values():
+        if str(source.get("group","")).strip().casefold() in {"địa phương","công an"}:
+            for item in result.get("items",[]):
+                local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
+                                         "agency":source.get("name","")})
+    relation_path=Path("data/document_relationships.json")
+    try:
+        existing_relations=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
+        if not isinstance(existing_relations,list): existing_relations=[]
+    except Exception:
+        existing_relations=[]
+    discovered_relations=collect_local_document_relations(
+        local_candidates,
+        fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
+        limit=8,
+    )
+    relation_path.parent.mkdir(parents=True,exist_ok=True)
+    relation_path.write_text(
+        json.dumps(merge_relationships(existing_relations,discovered_relations),ensure_ascii=False,indent=2),
+        encoding="utf-8",
+    )
+    print(f"[RELATIONS] Đã kiểm tra tối đa {min(8,len(local_candidates))} trang địa phương; phát hiện {len(discovered_relations)} quan hệ ứng viên; tổng lưu {len(merge_relationships(existing_relations,discovered_relations))}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
