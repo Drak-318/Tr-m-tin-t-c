@@ -123,6 +123,10 @@ def main():
         for item in result["items"]:
             title=item["title"]; link=canonicalize_url(item["link"]); pub=item.get("published_date")
             doc_type,number=extract_doc_info(title)
+            # Structured source rows may provide the official number/type in
+            # separate table columns instead of embedding them in the link text.
+            doc_type=item.get("doc_type") or doc_type
+            number=item.get("doc_number") or number
             if not doc_type: continue
             recognized+=1; totals["recognized"]+=1
             # Apply explicit document-number year rules before putting undated old instruments in review.
