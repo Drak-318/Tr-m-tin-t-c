@@ -81,6 +81,10 @@ def main():
     try:
         existing_relations=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
         if not isinstance(existing_relations,list): existing_relations=[]
+        existing_relations=[
+            row for row in existing_relations
+            if row.get("source_doc_number") and row.get("source_doc_number") != "Đang cập nhật"
+        ]
     except Exception:
         existing_relations=[]
     try:
