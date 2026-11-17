@@ -34,8 +34,16 @@ def main():
     config_data=load_source_config()
     sheet_sources,existing_links,_existing_numbers,existing_identities=get_sources_and_memory()
     csv_sources=load_sources_from_csv()
-    if csv_sources: sources=csv_sources; registry_name="GitHub: danh_sach_nguon.csv"
-    else: sources=sheet_sources; registry_name="Google Sheets (dự phòng)"
+    if csv_sources:
+        sheet_rows={canonicalize_url(s["url"]):s for s in sheet_sources}
+        sources=[]
+        for source in csv_sources:
+            matched=sheet_rows.get(canonicalize_url(source["url"]))
+            sources.append({**source,"row":matched.get("row") if matched else None})
+        registry_name="GitHub: danh_sach_nguon.csv (đối chiếu dòng Google Sheets để cập nhật trạng thái)"
+    else:
+        sources=sheet_sources
+        registry_name="Google Sheets (dự phòng)"
     if not sources: raise RuntimeError("Không có nguồn đang bật trong CSV hoặc Google Sheets.")
     state=load_state()
     print(f"[INIT] Nguồn: {registry_name} | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
