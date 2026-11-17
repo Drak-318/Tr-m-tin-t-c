@@ -68,7 +68,16 @@ def enqueue_review_documents(docs):
         if not url:
             continue
         current=items.get(url,{})
+        previous=dict(current)
         current.update({k:v for k,v in doc.items() if v not in (None,"")})
+        # A fresh scan can rediscover the same URL without a date. Do not let
+        # that weaker listing data erase stronger evidence already verified
+        # from the detail page in an earlier pass.
+        verified_states={"date_found","excluded_old","already_seen","verified_included","needs_manual_review","manual_review"}
+        if previous.get("verification_status") in verified_states:
+            for field in ("verified_date","date_basis","date_evidence","last_checked","last_error","verification_status","status"):
+                if previous.get(field) not in (None,""):
+                    current[field]=previous[field]
         current["link"]=url
         current.setdefault("first_seen",now)
         current["last_seen"]=now

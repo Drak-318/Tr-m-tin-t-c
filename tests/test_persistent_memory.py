@@ -56,6 +56,21 @@ class PersistentMemoryTests(unittest.TestCase):
         self.assertEqual(row["status"],"verified_included")
         self.assertEqual(row["verification_status"],"date_found")
 
+    def test_verified_date_evidence_is_not_overwritten_by_undated_rescan(self):
+        link="https://example.gov.vn/a"
+        memory.enqueue_review_documents([{"link":link,"title":"Kết luận số 123-KL/TW","date_basis":"unknown"}])
+        memory.update_review_document(link,{
+            "verification_status":"date_found","status":"verified_included",
+            "verified_date":"2026-11-13","date_basis":"issue_date_detail",
+            "date_evidence":"Ngày ban hành: 13/11/2026"
+        })
+        memory.enqueue_review_documents([{"link":link,"title":"Kết luận số 123-KL/TW","date_basis":"unknown"}])
+        row=memory.load_review_queue()[link]
+        self.assertEqual(row["status"],"verified_included")
+        self.assertEqual(row["verified_date"],"2026-11-13")
+        self.assertEqual(row["date_basis"],"issue_date_detail")
+        self.assertEqual(row["date_evidence"],"Ngày ban hành: 13/11/2026")
+
     def test_pending_review_documents_limits_retries(self):
         memory.enqueue_review_documents([
             {"link":"https://example.gov.vn/a","title":"A"},
