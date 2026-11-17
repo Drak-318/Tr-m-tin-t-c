@@ -75,12 +75,10 @@ function fetchSource_(ss, data) {
   if (!/^https:\/\//i.test(rawUrl)) {
     return {status: "error", message: "Chỉ chấp nhận URL HTTPS."};
   }
-  let parsed;
-  try { parsed = new URL(rawUrl); }
-  catch (err) { return {status: "error", message: "URL không hợp lệ."}; }
-  const host = String(parsed.hostname || "").toLowerCase();
-  if (!host || parsed.username || parsed.password || parsed.port ||
-      host === "localhost" || /^\d+(\.\d+){3}$/.test(host) ||
+  const parsed = rawUrl.match(/^https:\/\/([^\/?#:]+)(?::(\d+))?/i);
+  if (!parsed) return {status: "error", message: "URL không hợp lệ."};
+  const host = String(parsed[1] || "").toLowerCase();
+  if (!host || parsed[2] || host === "localhost" || /^\d+(\.\d+){3}$/.test(host) ||
       host.endsWith(".local") || host.endsWith(".internal")) {
     return {status: "error", message: "Địa chỉ nguồn không được phép."};
   }
@@ -92,10 +90,8 @@ function fetchSource_(ss, data) {
   const values = sourceSheet.getRange(2, 2, sourceSheet.getLastRow() - 1, 1).getDisplayValues();
   const allowedHosts = new Set();
   values.forEach(row => {
-    try {
-      const sourceUrl = new URL(String(row[0] || "").trim());
-      if (sourceUrl.protocol === "https:") allowedHosts.add(sourceUrl.hostname.toLowerCase());
-    } catch (ignored) {}
+    const match = String(row[0] || "").trim().match(/^https:\/\/([^\/?#:]+)/i);
+    if (match) allowedHosts.add(match[1].toLowerCase());
   });
   if (!allowedHosts.has(host)) {
     return {status: "error", message: "Tên miền không nằm trong danh sách nguồn đã cấu hình."};
