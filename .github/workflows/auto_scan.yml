@@ -47,6 +47,7 @@ jobs:
           python -m compileall -q scanner quet_vb.py
           python -m unittest discover -s tests -v
 
+      # Import legacy dedupe keys once; subsequent scans read only GitHub state.
       - name: One-time migration of existing Sheets dedupe memory
         env:
           SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
