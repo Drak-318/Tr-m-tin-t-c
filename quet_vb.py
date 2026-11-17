@@ -17,7 +17,7 @@ from scanner.source_registry import load_sources_from_csv
 
 # Đây là số nguồn chạy ĐỒNG THỜI, không phải giới hạn tổng số nguồn.
 MAX_WORKERS = 5
-SAVE_BATCH_SIZE = 50
+SAVE_BATCH_SIZE = 10
 
 
 def utc_now():
@@ -55,8 +55,8 @@ def main():
 
     if not sources:
         raise RuntimeError(
-            "Google Sheets không trả về nguồn nào có URL. "
-            "Kiểm tra sheet 'Nguồn Quét Văn Bản', cột B."
+            "Không tìm thấy nguồn nào đang bật trong danh_sach_nguon.csv "
+            "và cũng không có nguồn dự phòng từ Google Sheets."
         )
 
     # Đưa TẤT CẢ nguồn vào hàng đợi. ThreadPoolExecutor chỉ giới hạn 5 tác vụ
@@ -166,7 +166,7 @@ def main():
     print(f"[RESULT] Văn bản mới sau chống trùng: {len(new_docs)}")
     print(f"[RESULT] Nguồn lỗi: {failed_sources}/{total_sources}")
 
-    # Gửi toàn bộ kết quả; hàm Sheets tự chia lô 50 văn bản/lần.
+    # Gửi toàn bộ kết quả; hàm Sheets tự chia lô nhỏ để giảm timeout.
     # Trạng thái nguồn vẫn được cập nhật khi không có văn bản mới.
     saved = save_results_in_batches(new_docs, source_status, SAVE_BATCH_SIZE)
     duration = round(time.monotonic() - started_at, 2)
