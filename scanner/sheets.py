@@ -39,17 +39,19 @@ def get_sources_and_memory():
     identities=set(str(v).strip() for v in data.get("existingIdentities",[]) if v)
     return sources,links,numbers,identities
 
-def save_results_in_batches(new_docs,source_status,batch_size=10):
+def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=None):
+    review_docs=review_docs or []
     batches=[new_docs[i:i+batch_size] for i in range(0,len(new_docs),batch_size)]
     if not batches:
-        result=_post({"action":"save_results","new_docs":[],"source_status":source_status,"refresh_radar":False},timeout=90)
+        result=_post({"action":"save_results","new_docs":[],"source_status":source_status,"refresh_radar":False,"review_docs":review_docs},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu dữ liệu: {result}")
         return int(result.get("added",0))
     added=0
     for index,batch in enumerate(batches):
         is_last=index==len(batches)-1
         statuses=source_status if is_last else []
-        result=_post({"action":"save_results","new_docs":batch,"source_status":statuses,"refresh_radar":is_last},timeout=90)
+        result=_post({"action":"save_results","new_docs":batch,"source_status":statuses,"refresh_radar":is_last,
+                      "review_docs":review_docs if is_last else []},timeout=90)
         if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu lô {index+1}: {result}")
         added+=int(result.get("added",len(batch)))
         print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
