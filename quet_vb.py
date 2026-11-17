@@ -110,7 +110,9 @@ def main():
     relation_path.parent.mkdir(parents=True,exist_ok=True)
     relation_path.write_text(json.dumps(relation_rows,ensure_ascii=False,indent=2),encoding="utf-8")
     cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
-    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {sum(1 for row in relation_rows if row.get('resolution_status')=='found_in_scan_index')}.")
+    relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
+    relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
+    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
@@ -162,14 +164,20 @@ def main():
     duration=round(time.monotonic()-started,2)
     summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
-             "new_to_sheets":saved,"failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"duration_seconds":duration}
+             "new_to_sheets":saved,"failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],
+             "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
+             "relationship_ambiguous":relation_ambiguous,"duration_seconds":duration}
     append_history(summary)
     report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
             f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",
             f"- Loại do trùng: **{totals['duplicate']}**",f"- Văn bản mới đồng bộ Google Sheets: **{saved}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
-            f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",f"- Thời gian: **{duration} giây**","",
+            f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",
+            f"- Quan hệ văn bản địa phương đã ghi nhận: **{len(relation_rows)}**",
+            f"- Dẫn chiếu tìm thấy trong kho quét: **{relation_matched}**",
+            f"- Dẫn chiếu có nhiều văn bản trùng số hiệu: **{relation_ambiguous}**",
+            f"- Thời gian: **{duration} giây**","",
             "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái |","|---|---:|---:|---|"]
     for i in range(len(sources)):
         s,r=results_by_index[i]; report.append(f"| {s.get('name','')[:50]} | {len(r['items'])} | {recognized_by_source[i]} | {r['status']} |")
