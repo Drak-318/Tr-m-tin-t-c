@@ -148,6 +148,9 @@ def verify_document_detail_date(url,config=None):
     parsed=urlsplit(str(url or ""))
     if parsed.scheme not in {"http","https"} or not parsed.netloc:
         return {"date":"","basis":"fetch_error","evidence":"","error":"URL không hợp lệ"}
+    if parsed.hostname in {"news.google.com","news.googleusercontent.com"}:
+        return {"date":"","basis":"fetch_error","evidence":"",
+                "error":"Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News."}
     settings=dict(config or {})
     settings.setdefault("timeout_connect",6)
     settings.setdefault("timeout_read",12)
