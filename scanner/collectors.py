@@ -34,7 +34,11 @@ def make_session():
 def local_name(tag): return tag.rsplit("}",1)[-1].lower()
 
 def parse_feed(content,max_items=200):
-    root=ET.fromstring(content); results=[]
+    try:
+        root=ET.fromstring(content)
+    except ET.ParseError as exc:
+        raise SourceFetchError("PARSER",f"RSS/Atom không đúng định dạng XML: {exc}") from exc
+    results=[]
     date_tags={"pubdate","published","updated","date","created","issued"}
     for node in root.iter():
         if local_name(node.tag) not in {"item","entry"}: continue
