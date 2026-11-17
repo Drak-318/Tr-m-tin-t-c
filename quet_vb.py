@@ -24,20 +24,26 @@ LOCAL_KEYWORDS = [
     "ct-ubnd", "kh-ubnd", "tỉnh ", "thành phố ", "tp.", "tp ", "sở "
 ]
 
-# Từ khóa chủ đề trọng tâm dành riêng cho văn bản Địa phương
+# Từ khóa 7 chủ đề trọng tâm dành riêng cho văn bản Địa phương
 LOCAL_TOPIC_KEYWORDS = [
-    # Đất đai, nhà ở, bồi thường
+    # 1. Đất đai, nhà ở, bồi thường
     "đất đai", "bảng giá đất", "thu hồi đất", "giao đất", "cho thuê đất", "bồi thường", 
     "tái định cư", "sổ đỏ", "giấy chứng nhận quyền sử dụng đất", "nhà ở", "nhà ở xã hội", 
     "tách thửa", "hợp thửa", "hạn mức đất", "quy hoạch sử dụng đất",
-    # Cán bộ, công chức, viên chức, tinh giản
+    # 2. Cán bộ, công chức, viên chức, tinh giản
     "cán bộ", "công chức", "viên chức", "người hoạt động không chuyên trách", 
     "tuyển dụng", "nâng ngạch", "thăng hạng", "tinh giản biên chế", "kỷ luật", "đánh giá xếp loại",
-    # Thi đua, khen thưởng
+    # 3. Thi đua, khen thưởng
     "thi đua", "khen thưởng", "bằng khen", "danh hiệu", "huân chương", "huy chương", "kỷ niệm chương",
-    # Lao động, tiền lương, phụ cấp, BHXH
+    # 4. Lao động, tiền lương, phụ cấp, BHXH
     "tiền lương", "mức lương", "lương tối thiểu", "phụ cấp", "trợ cấp", "chế độ chính sách", 
-    "lao động", "việc làm", "bảo hiểm xã hội", "bhxh", "bảo hiểm y tế", "bhyt", "người có công", "an sinh"
+    "lao động", "việc làm", "bảo hiểm xã hội", "bhxh", "bảo hiểm y tế", "bhyt", "người có công", "an sinh",
+    # 5. Thuế, phí, lệ phí, hóa đơn
+    "thuế", "lệ phí", "mức thu phí", "miễn giảm", "hóa đơn", "hộ kinh doanh", "tiền sử dụng đất",
+    # 6. Giao thông, xử phạt vi phạm hành chính
+    "giao thông", "xử phạt", "vi phạm hành chính", "giấy phép lái xe", "đăng kiểm", "bến xe", "vận tải",
+    # 7. Giáo dục, y tế, học phí, khám chữa bệnh
+    "giáo dục", "học phí", "tuyển sinh", "giáo viên", "y tế", "khám chữa bệnh", "bệnh viện", "dịch bệnh"
 ]
 
 def extract_doc_info(title):
@@ -55,17 +61,17 @@ def classify_and_filter(title, agency, doc_type, doc_num, group):
     is_local = (group.lower() == "địa phương") or any(lk in text_check for lk in LOCAL_KEYWORDS)
 
     if is_local:
-        # Nếu là văn bản Địa phương: Bắt buộc phải thuộc 1 trong 4 chủ đề quan tâm
+        # Văn bản Địa phương: Bắt buộc phải thuộc 1 trong 7 chủ đề quan tâm
         if not any(tk in text_check for tk in LOCAL_TOPIC_KEYWORDS):
-            return False, 99  # Loại bỏ văn bản địa phương không thuộc chủ đề trọng tâm
-        return True, 2        # Giữ lại với độ ưu tiên 2 (xếp sau Trung ương)
+            return False, 99
+        return True, 20
     else:
-        # Nếu là văn bản Trung ương: Lấy toàn bộ và gán độ ưu tiên 1 (xếp trên cùng)
+        # Văn bản Trung ương: Lấy toàn bộ và xếp ưu tiên lên trên cùng
         type_priority = {
             "Luật": 1, "Nghị quyết": 2, "Nghị định": 3, "Thông tư": 4, 
             "Quyết định": 5, "Chỉ thị": 6, "Công văn": 7
         }.get(doc_type, 8)
-        return True, 1 * 10 + type_priority  # Mức 11 -> 18 (luôn nhỏ hơn mức 20 của địa phương)
+        return True, 10 + type_priority
 
 def main():
     print("1. Đang lấy danh sách nguồn từ Google Sheet...")
@@ -86,7 +92,6 @@ def main():
         group = src.get("group", "Văn Bản TW")
         found_items = 0
         try:
-            # Giảm timeout xuống 6s để lướt nhanh qua các link lỗi
             r = requests.get(url, headers=HEADERS, timeout=6, verify=False)
             if r.status_code != 200:
                 source_status.append({"row": row, "count": 0, "status": f"Lỗi ({r.status_code})"})
@@ -113,7 +118,6 @@ def main():
                 if not doc_type:
                     continue
                 
-                # Áp dụng bộ lọc chủ đề & phân loại Trung ương / Địa phương
                 keep, priority_score = classify_and_filter(title, name, doc_type, doc_num, group)
                 if not keep:
                     continue
@@ -140,10 +144,10 @@ def main():
             source_status.append({"row": row, "count": 0, "status": "Lỗi kết nối"})
             print(f"[LỖI] {name}: {str(e)[:60]}")
 
-    # SẮP XẾP ƯU TIÊN: Văn bản Trung ương (Luật -> Nghị định -> Thông tư...) lên đầu, Địa phương xuống dưới
+    # Sắp xếp ưu tiên: Văn bản Trung ương lên đầu, Địa phương xuống dưới
     new_docs.sort(key=lambda x: x["priority"])
 
-    print(f"2. Phát hiện {len(new_docs)} văn bản mới (đã ưu tiên TW lên đầu). Đang đồng bộ về Google Sheet...")
+    print(f"2. Phát hiện {len(new_docs)} văn bản mới. Đang đồng bộ về Google Sheet...")
     save_resp = requests.post(WEB_APP_URL, json={
         "action": "save_results",
         "new_docs": new_docs[:50],
