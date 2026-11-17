@@ -13,6 +13,7 @@ from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
 )
 from scanner.sheets import get_sources_and_memory, save_results_in_batches
+from scanner.source_registry import load_sources_from_csv
 
 # Đây là số nguồn chạy ĐỒNG THỜI, không phải giới hạn tổng số nguồn.
 MAX_WORKERS = 5
@@ -37,9 +38,17 @@ def main():
     print("=" * 70)
 
     config_data = load_source_config()
-    sources, existing_links, existing_numbers = get_sources_and_memory()
+    sheet_sources, existing_links, existing_numbers = get_sources_and_memory()
+    csv_sources = load_sources_from_csv()
+    if csv_sources:
+        sources = csv_sources
+        registry_name = "GitHub: danh_sach_nguon.csv"
+    else:
+        sources = sheet_sources
+        registry_name = "Google Sheets (chế độ dự phòng; CSV chưa có URL)"
     total_sources = len(sources)
 
+    print(f"[INIT] Danh sách nguồn: {registry_name}")
     print(f"[INIT] Tổng số nguồn cần quét: {total_sources}")
     print(f"[INIT] Số nguồn chạy đồng thời tối đa: {MAX_WORKERS}")
     print(f"[INIT] Bộ nhớ URL: {len(existing_links)} | Số hiệu: {len(existing_numbers)}")
@@ -138,11 +147,14 @@ def main():
         if not result["error"] and result["items"]:
             status = "Hoạt động" if recognized_for_source else "Đã truy cập, chưa nhận diện văn bản"
 
-        source_status.append({
-            "row": source.get("row"),
-            "count": recognized_for_source,
-            "status": status[:45],
-        })
+        # Chỉ cập nhật trạng thái trong Sheet với nguồn còn có số dòng Sheet.
+        # Nguồn quản lý từ CSV GitHub không có row tương ứng trong Sheet.
+        if source.get("row") is not None:
+            source_status.append({
+                "row": source.get("row"),
+                "count": recognized_for_source,
+                "status": status[:45],
+            })
 
     new_docs.sort(key=lambda doc: (doc["priority"], doc["title"].casefold()))
 
@@ -162,6 +174,7 @@ def main():
     report = [
         "## Kết quả quét Trạm Tin Tức",
         f"- Thời điểm hoàn tất: {utc_now()}",
+        f"- Danh sách nguồn: **{registry_name}**",
         f"- Tổng nguồn trong danh sách: **{total_sources}**",
         f"- Số nguồn xử lý xong: **{len(results_by_index)}/{total_sources}**",
         f"- Số nguồn chạy đồng thời tối đa: **{MAX_WORKERS}**",
