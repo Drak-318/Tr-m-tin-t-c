@@ -1,11 +1,17 @@
 import time
+import os
 import requests
 
 from .config import WEB_APP_URL
 
-API_TOKEN = __import__("os").getenv("SHEETS_API_TOKEN", "").strip()
+API_TOKEN = os.getenv("SHEETS_API_TOKEN", "").strip()
 
 def _post(payload,timeout=90):
+    if not WEB_APP_URL:
+        raise RuntimeError(
+            "Thiếu SHEETS_WEB_APP_URL. Hãy cấu hình URL Apps Script trong GitHub Actions Secrets "
+            "hoặc biến môi trường của máy chạy; không đặt URL trong mã nguồn."
+        )
     last_error=None
     for attempt in range(1,4):
         try:

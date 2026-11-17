@@ -2,10 +2,9 @@ import json
 import os
 from pathlib import Path
 
-# Apps Script Web App endpoint supplied by the repository owner.
-# SHEETS_WEB_APP_URL in GitHub Actions can override this value if redeployed.
-DEFAULT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxwx2aahfkilC3IOWUZtb1jfRuG1dWTNfEsPA0_WDFWB2xzmqBMyEhJloZKpafLnRVi_A/exec"
-WEB_APP_URL = os.getenv("SHEETS_WEB_APP_URL", "").strip() or DEFAULT_WEB_APP_URL
+# Endpoint chỉ được lấy từ GitHub Actions Secret hoặc biến môi trường tại máy chạy.
+# Không lưu URL triển khai Apps Script trong repository công khai.
+WEB_APP_URL = os.getenv("SHEETS_WEB_APP_URL", "").strip()
 
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "source_config.json"
 DEFAULT_SOURCE_CONFIG = {
