@@ -10,7 +10,7 @@ from scanner.config import load_source_config, config_for_source
 from scanner.collectors import scan_source
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
-    classify_document, document_identity, is_too_old,
+    classify_document, document_identity, is_too_old, has_document_date,
 )
 from scanner.sheets import get_sources_and_memory, save_results_in_batches
 from scanner.source_registry import load_sources_from_csv
@@ -59,8 +59,8 @@ def main():
             results_by_index[i]=(s,result)
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s")
 
-    new_docs=[]; source_status=[]; accepted_for_memory=[]
-    totals={"items":0,"recognized":0,"old":0,"duplicate":0,"kept":0,"failed":0}
+    new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
+    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0}
     recognized_by_source={}
     seen_sheet_links=set(existing_links)
     seen_sheet_identities=set(existing_identities)
@@ -72,6 +72,11 @@ def main():
             doc_type,number=extract_doc_info(title)
             if not doc_type: continue
             recognized+=1; totals["recognized"]+=1
+            if not has_document_date(title,pub):
+                totals["unknown_date"]+=1
+                review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
+                                    "published_date":"","reason":"Không tìm thấy ngày ban hành hoặc ngày đăng đáng tin cậy; cần kiểm tra thủ công."})
+                continue
             if is_too_old(title,number,MAX_AGE_DAYS,pub):
                 totals["old"]+=1; continue
             category=classify_document(title,name,doc_type,number,link)
@@ -94,18 +99,18 @@ def main():
         if source.get("row") is not None: source_status.append({"row":source["row"],"count":recognized,"status":status[:45]})
 
     new_docs.sort(key=lambda d:(d["priority"],d["title"].casefold()))
-    print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']}")
+    print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Chưa rõ ngày {totals['unknown_date']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']}")
     # Chỉ ghi vào bộ nhớ bền vững sau khi Google Sheets xác nhận đồng bộ thành công.
-    saved=save_results_in_batches(new_docs,source_status,SAVE_BATCH_SIZE)
+    saved=save_results_in_batches(new_docs,source_status,SAVE_BATCH_SIZE,review_docs)
     record_documents(state,accepted_for_memory)
     duration=round(time.monotonic()-started,2)
     summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
-             "older_than_60_days":totals["old"],"duplicates":totals["duplicate"],"new_to_sheets":saved,
+             "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],"new_to_sheets":saved,
              "failed_sources":totals["failed"],"duration_seconds":duration}
     append_history(summary)
     report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
-            f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Loại do trùng: **{totals['duplicate']}**",
+            f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",f"- Loại do trùng: **{totals['duplicate']}**",
             f"- Văn bản mới đồng bộ Google Sheets: **{saved}**",f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",
             f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",f"- Thời gian: **{duration} giây**","",
             "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái |","|---|---:|---:|---|"]
