@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "finished_at": "2026-11-17 08:35:16 UTC",
+    "sources": 64,
+    "collected": 2637,
+    "recognized": 709,
+    "older_than_60_days": 65,
+    "unknown_date": 533,
+    "duplicates": 108,
+    "new_to_sheets": 3,
+    "failed_sources": 12,
+    "duration_seconds": 168.73
+  }
+]
