@@ -60,5 +60,18 @@
     "failed_sources": 12,
     "fallback_sources": 0,
     "duration_seconds": 75.15
+  },
+  {
+    "finished_at": "2026-11-17 10:08:03 UTC",
+    "sources": 64,
+    "collected": 2990,
+    "recognized": 790,
+    "older_than_60_days": 84,
+    "unknown_date": 585,
+    "duplicates": 121,
+    "new_to_sheets": 0,
+    "failed_sources": 12,
+    "fallback_sources": 0,
+    "duration_seconds": 86.04
   }
 ]
