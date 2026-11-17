@@ -9,37 +9,59 @@
   },
   "sources": {
     "https://congan.daklak.gov.vn/canh-bao-toi-pham": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Acongan.daklak.gov.vn%20(c%C3%B4ng%20an%20OR%20c%E1%BA%A3nh%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Acongan.daklak.gov.vn%20(c%C3%B4ng%20an%20OR%20c%E1%BA%A3nh%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://congan.quangtri.gov.vn/category/canh-bao-toi-pham": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Acongan.quangtri.gov.vn%20(c%C3%B4ng%20an%20OR%20c%E1%BA%A3nh%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Acongan.quangtri.gov.vn%20(c%C3%B4ng%20an%20OR%20c%E1%BA%A3nh%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://www.toaan.gov.vn/webcenter/portal/tatc/home": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Atoaan.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Atoaan.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Avbpq.toaan.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avbpq.toaan.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20b%C3%A1o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://vibonline.com.vn/du-thao-dang-lay-y-kien": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Avibonline.com.vn%20(d%E1%BB%B1%20th%E1%BA%A3o%20OR%20l%E1%BA%A5y%20%C3%BD%20ki%E1%BA%BFn)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avibonline.com.vn%20(d%E1%BB%B1%20th%E1%BA%A3o%20OR%20l%E1%BA%A5y%20%C3%BD%20ki%E1%BA%BFn)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://phapluat.gov.vn/danh-sach-van-ban-qppl": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20t%C6%B0)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(v%C4%83n%20b%E1%BA%A3n%20OR%20ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20t%C6%B0)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://phapluat.gov.vn/du-thao-vbqppl": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(d%E1%BB%B1%20th%E1%BA%A3o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(d%E1%BB%B1%20th%E1%BA%A3o)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%20(ph%C3%A1p%20lu%E1%BA%ADt%20v%E1%BB%ABa%20ban%20h%C3%A0nh%20OR%20v%C4%83n%20b%E1%BA%A3n)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%20(ph%C3%A1p%20lu%E1%BA%ADt%20v%E1%BB%ABa%20ban%20h%C3%A0nh%20OR%20v%C4%83n%20b%E1%BA%A3n)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fhoi-dap-phap-luat%20(h%E1%BB%8Fi%20%C4%91%C3%A1p%20ph%C3%A1p%20lu%E1%BA%ADt)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fhoi-dap-phap-luat%20(h%E1%BB%8Fi%20%C4%91%C3%A1p%20ph%C3%A1p%20lu%E1%BA%ADt)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
     "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fma-so-thue%20(ph%C3%A1p%20lu%E1%BA%ADt%20thu%E1%BA%BF)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fma-so-thue%20(ph%C3%A1p%20lu%E1%BA%ADt%20thu%E1%BA%BF)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     },
-    "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247": {
-      "fallback_feed_urls": ["https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Flao-dong-tien-luong%20(lao%20%C4%91%E1%BB%99ng%20OR%20ti%E1%BB%81n%20l%C6%B0%C6%A1ng)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"]
+    "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl": {
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Flao-dong-tien-luong%20(lao%20%C4%91%E1%BB%99ng%20OR%20ti%E1%BB%81n%20l%C6%B0%C6%A1ng)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     }
   }
 }
