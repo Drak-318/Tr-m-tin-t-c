@@ -34,5 +34,18 @@
     "new_to_sheets": 1,
     "failed_sources": 11,
     "duration_seconds": 59.89
+  },
+  {
+    "finished_at": "2026-11-17 09:50:45 UTC",
+    "sources": 64,
+    "collected": 3744,
+    "recognized": 1142,
+    "older_than_60_days": 86,
+    "unknown_date": 914,
+    "duplicates": 135,
+    "new_to_sheets": 7,
+    "failed_sources": 1,
+    "fallback_sources": 11,
+    "duration_seconds": 106.04
   }
 ]
