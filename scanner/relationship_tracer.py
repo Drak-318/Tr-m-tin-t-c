@@ -130,3 +130,47 @@ def merge_relationships(existing, incoming, limit=5000):
         if key[0] and key[1]:
             merged[key] = row
     return list(merged.values())[-limit:]
+
+
+def resolve_reference_candidates(relations, known_documents):
+    """Match cited numbers against known records; never resolve by number alone if ambiguous."""
+    index = {}
+    for document in known_documents or []:
+        number = str(document.get("doc_number") or "").strip().upper()
+        title = clean_title(document.get("title", ""))
+        doc_type, extracted_number = extract_doc_info(title)
+        number = number if number and number != "ĐANG CẬP NHẬT" else (extracted_number or "")
+        doc_type = document.get("doc_type") or doc_type or ""
+        if not number:
+            continue
+        index.setdefault((number, str(doc_type).casefold()), []).append({
+            "title": title,
+            "doc_number": number,
+            "doc_type": doc_type,
+            "agency": clean_title(document.get("agency", "")),
+            "link": canonicalize_url(document.get("link", "")),
+        })
+
+    resolved = []
+    for relation in relations or []:
+        key = (
+            str(relation.get("referenced_doc_number", "")).strip().upper(),
+            str(relation.get("referenced_doc_type", "")).casefold(),
+        )
+        matches = index.get(key, [])
+        # Collapse duplicate records that point to the same canonical URL.
+        unique = {}
+        for match in matches:
+            identity = match["link"] or (match["agency"] + "|" + match["title"])
+            unique[identity] = match
+        matches = list(unique.values())
+        row = dict(relation)
+        row["matched_documents"] = matches[:5]
+        if len(matches) == 1:
+            row["resolution_status"] = "found_in_scan_index"
+        elif len(matches) > 1:
+            row["resolution_status"] = "ambiguous_multiple_matches"
+        else:
+            row["resolution_status"] = "not_found_in_scan_index"
+        resolved.append(row)
+    return resolved
