@@ -150,19 +150,23 @@ def _deduplicate_items(items,max_items):
     return list(unique.values())[:max_items]
 
 def _resolve_aggregator_links(session,items,config):
-    resolved=[]
-    timeout=(int(config.get("timeout_connect",8)),int(config.get("timeout_read",18)))
-    for item in items:
-        link=item.get("link","")
-        if urlsplit(link).hostname not in {"news.google.com","news.googleusercontent.com"}:
-            resolved.append(item); continue
+    from concurrent.futures import ThreadPoolExecutor
+    resolved=[item for item in items if urlsplit(item.get("link","")).hostname not in
+              {"news.google.com","news.googleusercontent.com"}]
+    aggregator_items=[item for item in items if urlsplit(item.get("link","")).hostname in
+                      {"news.google.com","news.googleusercontent.com"}][:30]
+    def resolve(item):
         try:
-            response=session.get(link,timeout=timeout,allow_redirects=True)
+            response=session.get(item.get("link",""),timeout=(4,8),allow_redirects=True)
             final_url=canonicalize_url(response.url)
             if response.ok and urlsplit(final_url).hostname not in {"news.google.com","news.googleusercontent.com"}:
-                resolved.append({**item,"link":final_url,"link_resolved_from_aggregator":True})
+                return {**item,"link":final_url,"link_resolved_from_aggregator":True}
         except requests.exceptions.RequestException:
-            continue
+            pass
+        return None
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        for item in pool.map(resolve,aggregator_items):
+            if item: resolved.append(item)
     return resolved
 
 def scan_source(source,config,fallback_fetcher=None):
