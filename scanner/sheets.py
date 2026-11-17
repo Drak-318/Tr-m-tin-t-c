@@ -6,14 +6,14 @@ from .config import WEB_APP_URL
 
 API_TOKEN = os.getenv("SHEETS_API_TOKEN", "").strip()
 
-def _post(payload,timeout=90):
+def _post(payload,timeout=90,attempts=3):
     if not WEB_APP_URL:
         raise RuntimeError(
             "Thiếu SHEETS_WEB_APP_URL. Hãy cấu hình URL Apps Script trong GitHub Actions Secrets "
             "hoặc biến môi trường của máy chạy; không đặt URL trong mã nguồn."
         )
     last_error=None
-    for attempt in range(1,4):
+    for attempt in range(1,max(1,int(attempts))+1):
         try:
             request_payload=dict(payload)
             if API_TOKEN: request_payload["token"]=API_TOKEN
@@ -25,7 +25,7 @@ def _post(payload,timeout=90):
             return data
         except (requests.Timeout,requests.ConnectionError) as exc:
             last_error=exc
-            if attempt<3:
+            if attempt<max(1,int(attempts)):
                 wait=attempt*5
                 print(f"[SHEETS] Kết nối Google Sheets lỗi lần {attempt}/3; thử lại sau {wait}s.")
                 time.sleep(wait)
@@ -66,7 +66,7 @@ def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=Non
 
 def fetch_source_via_apps_script(url, source_name=""):
     """Fetch one configured source through Apps Script's Google-hosted UrlFetchApp."""
-    result = _post({"action":"fetch_source","url":url,"source_name":source_name},timeout=75)
+    result = _post({"action":"fetch_source","url":url,"source_name":source_name},timeout=45,attempts=1)
     if result.get("status") != "ok":
         raise RuntimeError(result.get("message","Apps Script source fetch failed"))
     return result
