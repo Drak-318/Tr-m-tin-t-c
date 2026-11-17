@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime
 from scanner.normalizer import (
     canonicalize_url, extract_doc_info, classify_and_score,
-    classify_document, document_identity, is_too_old,
+    classify_document, document_identity, is_too_old, make_fingerprint,
 )
 
 class NormalizerTests(unittest.TestCase):
@@ -41,6 +41,9 @@ class NormalizerTests(unittest.TestCase):
 
     def test_recent_publication_date_used_when_issue_date_unknown(self):
         self.assertFalse(is_too_old("Công văn 1234/VPCP-KTTH về việc triển khai","1234/VPCP-KTTH",60,"2026-11-10",now=datetime(2026,11,17)))
+
+    def test_fingerprint_is_stable(self):
+        self.assertEqual(make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"),make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"))
 
     def test_same_number_different_issuer_not_same_key(self):
         a=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","", "https://a.vn")
