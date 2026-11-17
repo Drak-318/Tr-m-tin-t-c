@@ -1,5 +1,14 @@
 {
   "documents": {
+    "number:11436/VPCP-CĐS|issuer:VPCP-CĐS|locality:": {
+      "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
+      "category": "Công văn",
+      "doc_number": "11436/VPCP-CĐS",
+      "first_seen": "2026-11-17T08:38:46+00:00",
+      "last_seen": "2026-11-17T08:38:46+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNG5CdkVsZUpwMk8zNlhvR1A4Tll0YWhVZ2FhaGFxLU5XRmxpWGgybWJva1IzQ1NlRUoyZHVzU0xVTDhaOENvbmRaN1p2TWw0WlFodlJncWdRNy1pdGZpY1RrWFlCeFVQY2JlMkNOT0tWa3kxWmMxSFhzWGJyMF9oYm1EMWlZR0VTR1JyMW44RTdBY1hHS0RXVmZKYTJORDdYdXVFdEV5MG1IOVMtc1pEOTJyWmR6MXlZakhvY2tHR2ZQSXJmSGdGbFEyY3JzRnlHRGhYeHEyMVA?oc=5",
+      "title": "về triển khai thực hiện Công văn số 11436/VPCP-CĐS ngày 09/11/2026 của Văn phòng Chính phủ - sontaythuong.quangngai.gov.vn"
+    },
     "number:22-CTR/TU|issuer:TU|locality:": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
       "category": "Dự thảo",
@@ -29,6 +38,7 @@
     }
   },
   "urls": {
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNG5CdkVsZUpwMk8zNlhvR1A4Tll0YWhVZ2FhaGFxLU5XRmxpWGgybWJva1IzQ1NlRUoyZHVzU0xVTDhaOENvbmRaN1p2TWw0WlFodlJncWdRNy1pdGZpY1RrWFlCeFVQY2JlMkNOT0tWa3kxWmMxSFhzWGJyMF9oYm1EMWlZR0VTR1JyMW44RTdBY1hHS0RXVmZKYTJORDdYdXVFdEV5MG1IOVMtc1pEOTJyWmR6MXlZakhvY2tHR2ZQSXJmSGdGbFEyY3JzRnlHRGhYeHEyMVA?oc=5": "number:11436/VPCP-CĐS|issuer:VPCP-CĐS|locality:",
     "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeUMyNFVraHVST2hsNVRBMGhIOXpjcGlfRlQ5N1g0MVNsMkR5eDRkZlJFdkI0T3l4YmZZckYtVDNUd1RIc0N5VV9lWURQWkxQUVplcXVKQ01hTjBrSDZvUHRFbHQwZ3RveVkyNmpOQU5qR1EyVDNjVkplaExBSEc5UEh2Mkk?oc=5": "number:22-CTR/TU|issuer:TU|locality:",
     "https://sonnmt.haiphong.gov.vn/dich-vu-cong/quyet-dinh-so-4553-qd-ubnd-ngay-30-10-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-phe-duyet-quy-1011159": "number:4553/QĐ-UBND|issuer:QĐ-UBND|locality:hải phòng phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực đất đai thực hiện trong khu thương mại tự do thuộc thẩm quyền giải quyết của sở nông nghiệp và môi trường sở nông nghiệp và môi trường hải phòng",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-49-2026-tt-bnnmt-ngay-31-10-2026-quy-dinh-ve-kiem-soat-giet-mo-va-kiem-tra-ve-sinh-t-1003799": "number:49/2026/TT-BNNMT|issuer:TT-BNNMT|locality:"
