@@ -123,6 +123,11 @@ def document_identity(doc_number,title,agency="",link=""):
             match=re.search(r"(?:tỉnh|thành phố|TP[.]?|quận|huyện|thị xã)[ ]+([^,;()]+)",context,re.I)
             if match:
                 locality=re.sub("[ ]+"," ",match.group(1)).strip().casefold()
+            # When locality is absent, do not collapse same-number local acts
+            # from unrelated issuers/portals; retain them for manual verification.
+            if not locality:
+                host=urlsplit(link).hostname or clean_title(agency).casefold()[:90] or "unknown"
+                locality="unresolved-source:"+host.casefold()
         return f"number:{n}|issuer:{issuer or clean_title(title).casefold()[:90]}|locality:{locality}"
     return f"url:{canonicalize_url(link)}"
 
