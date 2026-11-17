@@ -51,8 +51,8 @@ def extract_issue_date(title):
     return parse_date("/".join(m.groups())) if m else None
 
 def is_too_old(title,doc_number="",max_days=60,published_date=None,now=None):
-    # Ngày đăng nguồn ưu tiên để nhận ra bài đăng lại; thiếu mới dùng ngày ban hành.
-    d=parse_date(published_date) or extract_issue_date(title)
+    # Ngày ban hành ghi rõ trong tiêu đề ưu tiên hơn ngày đăng lại trên website.
+    d=extract_issue_date(title) or parse_date(published_date)
     return bool(d and ((now or datetime.utcnow())-d).days>max_days)
 
 def classify_document(title,agency="",doc_type="",doc_number="",source_url=""):
