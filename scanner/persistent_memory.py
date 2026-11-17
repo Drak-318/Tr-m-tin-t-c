@@ -73,7 +73,7 @@ def enqueue_review_documents(docs):
         current.setdefault("first_seen",now)
         current["last_seen"]=now
         current["attempts"]=int(current.get("attempts",0))
-        if current.get("verification_status") in {"date_found","excluded_old","already_seen","verified_included"}:
+        if current.get("verification_status") in {"date_found","excluded_old","already_seen","verified_included","needs_manual_review"}:
             current["status"]=current.get("verification_status")
         else:
             current["status"]="pending"
