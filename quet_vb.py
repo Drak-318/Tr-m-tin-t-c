@@ -9,7 +9,7 @@ import time
 from datetime import datetime, timezone
 
 from scanner.config import load_source_config, config_for_source, WEB_APP_URL
-from scanner.collectors import scan_source
+from scanner.collectors import scan_source, verify_document_detail_date
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
@@ -17,7 +17,7 @@ from scanner.normalizer import (
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
 from scanner.persistent_memory import (load_state, is_seen, record_documents, append_history,
-    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue)
+    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
 MAX_WORKERS=5
@@ -155,6 +155,66 @@ def main():
         if not result["error"] and result["items"]: status="Hoạt động" if recognized else "Đã truy cập, chưa nhận diện văn bản"
         if result.get("fallback_used"): status="Hoạt động qua nguồn dự phòng"
         if source.get("row") is not None: source_status.append({"row":source["row"],"count":recognized,"status":status[:45]})
+
+    # Recheck a small, bounded batch of previously undated documents on their detail pages.
+    # This is deliberately limited per run so source collection remains the priority.
+    review_candidates=pending_review_documents(limit=10,max_attempts=3)
+    detail_stats={"checked":0,"dated":0,"new":0,"old":0,"errors":0}
+    def check_review_item(row):
+        return row,verify_document_detail_date(row.get("link",""),{"timeout_connect":6,"timeout_read":12})
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        for row,result in pool.map(check_review_item,review_candidates):
+            detail_stats["checked"]+=1
+            attempts=int(row.get("attempts",0))+1
+            update={"attempts":attempts,"last_error":result.get("error",""),
+                    "date_evidence":result.get("evidence","")}
+            if result.get("date"):
+                detail_stats["dated"]+=1
+                date_value=result["date"]
+                basis=result.get("basis","unknown")
+                title=row.get("title","")
+                number=row.get("doc_number","")
+                agency=row.get("agency","")
+                doc_type,extracted_number=extract_doc_info(title)
+                if (not number or number=="Đang cập nhật") and extracted_number:
+                    number=extracted_number
+                update.update({"verified_date":date_value,"date_basis":basis,
+                               "verification_status":"date_found"})
+                if is_too_old(title,number,MAX_AGE_DAYS,date_value):
+                    detail_stats["old"]+=1
+                    update.update({"status":"excluded_old","verification_status":"excluded_old"})
+                elif not doc_type:
+                    update.update({"status":"manual_review","verification_status":"needs_manual_review"})
+                else:
+                    category=classify_document(title,agency,doc_type,number,row.get("link",""))
+                    keep,priority=classify_and_score(title,agency,doc_type,number,"Văn Bản TW",date_value)
+                    identity=document_identity(number,title,agency,row.get("link",""))
+                    if not keep:
+                        detail_stats["old"]+=1
+                        update.update({"status":"excluded_old","verification_status":"excluded_old"})
+                    elif is_seen(state,identity,row.get("link","")):
+                        update.update({"status":"already_seen","verification_status":"already_seen"})
+                    else:
+                        doc={"priority":priority,"doc_type":doc_type,"agency":agency,"title":title,
+                             "doc_number":number,"link":canonicalize_url(row.get("link","")),
+                             "fingerprint":make_fingerprint(number,title),"category":category,
+                             "identity":identity,"published_date":date_value,
+                             "document_date":date_value,"date_basis":basis,
+                             "date_evidence":result.get("evidence","")}
+                        new_docs.append(doc)
+                        accepted_for_memory.append(doc)
+                        detail_stats["new"]+=1
+                        update.update({"status":"verified_included","verification_status":"verified_included"})
+            else:
+                detail_stats["errors"]+=1 if result.get("error") else 0
+                state_name="fetch_error" if result.get("error") else "not_found"
+                final_status="manual_review" if attempts>=3 else state_name
+                update.update({"status":final_status,"verification_status":state_name})
+            update_review_document(row.get("link",""),update)
+    if detail_stats["checked"]:
+        print(f"[DATE-RECHECK] Kiểm tra {detail_stats['checked']} trang chi tiết | "
+              f"Tìm thấy ngày {detail_stats['dated']} | Đưa vào danh sách mới {detail_stats['new']} | "
+              f"Quá hạn {detail_stats['old']} | Lỗi/chưa rõ {detail_stats['errors']}.")
 
     new_docs.sort(key=lambda d:(d["priority"],d["title"].casefold()))
     print(f"[RESULT] Thu thập {totals['items']} | Nhận diện {totals['recognized']} | Quá 60 ngày {totals['old']} | Chưa rõ ngày {totals['unknown_date']} | Trùng {totals['duplicate']} | Gửi mới {len(new_docs)} | Nguồn lỗi {totals['failed']} | Có nguồn dự phòng {totals['fallback_sources']}")
