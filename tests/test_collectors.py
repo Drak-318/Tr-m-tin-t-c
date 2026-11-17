@@ -25,6 +25,26 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(find_next_page(soup,"https://example.gov.vn/list",{}),
                          "https://example.gov.vn/list?page=2")
 
+    def test_detail_page_labelled_issue_date_has_priority(self):
+        from scanner.collectors import extract_detail_date
+        html='<html><body><div>Ngày ban hành: 10/11/2026</div><meta property="article:published_time" content="2026-11-16T10:00:00+07:00"></body></html>'
+        result=extract_detail_date(html)
+        self.assertEqual(result["date"],"2026-11-10")
+        self.assertEqual(result["basis"],"issue_date_detail")
+
+    def test_detail_page_meta_date_is_labelled_as_source_posted_date(self):
+        from scanner.collectors import extract_detail_date
+        html='<html><head><meta property="article:published_time" content="2026-11-16T10:00:00+07:00"></head></html>'
+        result=extract_detail_date(html)
+        self.assertEqual(result["date"],"2026-11-16")
+        self.assertEqual(result["basis"],"source_posted_date_detail")
+
+    def test_arbitrary_old_citation_date_is_not_used_as_issue_date(self):
+        from scanner.collectors import extract_detail_date
+        html='<html><body>Nghị định 320/2025/NĐ-CP ngày 15/12/2025 được sửa đổi.</body></html>'
+        result=extract_detail_date(html)
+        self.assertEqual(result["basis"],"unknown")
+
     def test_deduplicate_preserves_fallback_provenance(self):
         items=[{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/a",
                 "published_date":None,"source_published_date":"2026-11-16","date_source":"fallback_aggregator"}]
