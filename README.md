@@ -22,11 +22,11 @@ GitHub không dùng Apps Script để quét website. Apps Script chỉ đóng va
 
 ## Cấu hình GitHub
 
-Khuyến nghị vào Settings > Secrets and variables > Actions > New repository secret:
+Trước khi chạy, bắt buộc vào Settings > Secrets and variables > Actions > New repository secret:
 - Name: SHEETS_WEB_APP_URL
-- Value: URL Web App hiện đang dùng cho Google Sheets.
+- Value: URL Apps Script Web App dùng làm API đọc/ghi Google Sheets.
 
-Nếu chưa tạo secret, mã vẫn có URL tương thích cũ làm giá trị dự phòng. Nên chuyển sang secret và sau đó xóa URL dự phòng khỏi scanner/config.py nếu muốn quản lý endpoint hoàn toàn bằng GitHub Secrets.
+Không đặt URL này trực tiếp trong mã nguồn. Vì URL Web App cũ từng xuất hiện trong repository công khai và Apps Script hiện xử lý cả thao tác ghi dữ liệu, nên nên tạo một deployment Web App mới, kiểm tra quyền truy cập phù hợp, rồi lưu URL mới vào secret. Không tiếp tục dùng URL cũ đã bị công khai.
 
 ## Cấu hình nguồn đặc biệt
 
