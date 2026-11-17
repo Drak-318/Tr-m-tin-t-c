@@ -30,6 +30,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:10582/SGDĐT-VP|issuer:SGDĐT-VP|locality:hồ chí minh trường trung - tiểu học pétrus ký - văn bản": {
+      "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "10582/SGDĐT-VP",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-10582-SGDDT-VP-V-v-huong-ung-Cuoc-thi-truc-tuyen-Tim-hieu-phap-luat-ve-bao-ve-bi-mat-nha-nuoc-tren-dia-ban-Thanh-pho-Ho-Chi-Minh-1322/",
+      "title": "Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến “Tìm hiểu pháp luật về bảo vệ bí mật nhà nước” trên địa bàn Thành phố Hồ Chí Minh"
+    },
     "number:106-KL/TW|issuer:TW|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -221,6 +230,24 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "number:1794/UBND-VHXH|issuer:UBND-VHXH|locality:unresolved-source:news.google.com": {
+      "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
+      "category": "Công văn",
+      "doc_number": "1794/UBND-VHXH",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ0VEMklwRTJZWHFGQmVBT3ZHd2dOS3daWlBFcjVYWkJqSmFiVDBLZUN5dEVTM09xdHhDWHRHVWpsRi1TV1VjQ0FaVC1oYVhnb1ZNdjRWMU52R25hNjhFTjAzSzR1M3FhWGVXcDI1Zl91RVBDTHEteVlaQmtNbDFXeURhelo4VTlCWWloSndQNFdpMWYybG42Zi1kNUNkU195dlhLRldkanhla25JMEFzUkFwSUpCYlYwbnVxZGdRRW5LYm9fV2UwUDhWSU5Qdw?oc=5",
+      "title": "Công văn số 1794/UBND-VHXH ngày 17/11/2026 của UBND xã Quan Thành - Cổng thông tin điện tử Nghệ An"
+    },
+    "number:1797/UBND-VHXH|issuer:UBND-VHXH|locality:unresolved-source:news.google.com": {
+      "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
+      "category": "Công văn",
+      "doc_number": "1797/UBND-VHXH",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMG1TX3MxSXlmczNMVlZrakZYWWtZdVR6cEJUcXR2Y1N4eW5GVEUtR3VDSkE0U3NhV1gwc015dHJfVEw5ZWNxYXd1Z0ZvbEQ3UkNGSFBlSG5qSW5pN2FkWnNJZ0FQRGlPbjRaQ255VkpYcE9tcU5QdmtiYTV2T3VUTzV0aS1udUJiODhiM01YYkpsQjVORVZjVjFvMkREbkNsemxZQmgycWFxYkl2aXdTeFJzWmpEZUdLdHdfUFhFVFl4UVhnbWRYbV9RcjBNZw?oc=5",
+      "title": "Công văn số 1797/UBND-VHXH ngày 17/11/2026 của UBND xã Quan Thành - Cổng thông tin điện tử Nghệ An"
     },
     "number:18-HD/BTGTW|issuer:BTGTW|locality:": {
       "agency": "Tư liệu Văn kiện Đảng - Trang chủ",
@@ -516,6 +543,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:410/KH-UBND|issuer:KH-UBND|locality:unresolved-source:news.google.com": {
+      "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
+      "category": "Văn bản địa phương",
+      "doc_number": "410/KH-UBND",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUWdGVlJqWWVTb01JMFhPWHRHODF0T0dGVTh4NUpxMXkxVHUtR29heUVqaXpDRHJlZHFQeHpZRTNJNHJIOC1xYWQtUmpTWm5QM2ctMEQzcGFHaEZFOWVrYUI4ejd2dDYtaDB4MVFXQVVFZGE4MzFIQjV6NzdXZ3p4VjhaNDZ5RmJxMUEyckRXUzMydGdxSmZDY1RxamRWVHNBNnA5QjdkX0VLQ0RYTUlCbjFnMzNoUFJRa3VOSlcxZkRsVnU5NTNYNFh3?oc=5",
+      "title": "Kế hoạch số 410/KH-UBND ngày 17/11/2026 của UBND xã Quan Thành - Cổng thông tin điện tử Nghệ An"
+    },
     "number:411/KH-UBND|issuer:KH-UBND|locality:thực hiện cam kết tham gia chương trình kế hoạch hóa gia đình toàn cầu đến năm 2030": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -771,6 +807,15 @@
       "link": "http://hdnd.danang.gov.vn/chi-tiet-tin/group/158/nid/24025/thong-bao-ve-viec-moi-bao-gia-goi-thau-cung-cap-dich-vu-ho-tro-dieu-hanh-ky-hop-hdnd-thanh-pho-da-nang",
       "title": "Thông báo về việc mời báo giá gói thầu cung cấp dịch vụ hỗ trợ điều hành kỳ họp HĐND thành phố Đà Nẵng"
     },
+    "url:https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": {
+      "agency": "Công an TP. Cần Thơ",
+      "category": "Văn bản khác",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html",
+      "title": "Công an xã Châu Thành tuyên truyền giáo dục kiến thức pháp luật về trật tự, an toàn giao thông đường bộ và hướng dẫn kỹ năng lái xe an toàn"
+    },
     "url:https://congan.daklak.gov.vn/canh-bao-toi-pham/cong-an-xa-son-thanh-canh-bao-thu-doan-gia-danh-can-bo-huong-dan-cap-nhat-vneid-de-lua-dao-14626.html": {
       "agency": "Công an Đắk Lắk - Cảnh báo tội phạm",
       "category": "Văn bản khác",
@@ -799,6 +844,15 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-17T22:54:41+00:00",
+      "last_seen": "2026-11-17T22:54:41+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219",
+      "title": "Nghị quyết về kế hoạch đầu tư công trung hạn giai đoạn 2026 - 2030 nguồn vốn ngân sách địa phương tỉnh Thanh Hóa (đợt 2)"
     },
     "url:https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-chuyen-ke-hoach-so-2026-kh-ksbt-ngay-27-10-2026-cua-trung-tam-kiem-soat-benh-tat-tinh-tap-huan-truc-tuyen-huong-.html": {
       "agency": "UBND xã Lý Sơn",
@@ -1173,10 +1227,12 @@
     "https://chinhphu.vn/he-thong-van-ban?classid=189&mode=1": "legacy_sheet_url:https://chinhphu.vn/he-thong-van-ban?classid=189&mode=1",
     "https://cm.pek.edu.vn/vi/laws/detail/Ke-hoach-so-10714-KH-SGDDT-To-chuc-Hoi-thi-Kheo-tay-ky-thuat-lan-14-cap-Thanh-pho-Nam-hoc-2026-2027-1321/": "number:10714/KH-SGDĐT|issuer:KH-SGDĐT|locality:năm học 2026 - 2027 trường trung - tiểu học pétrus ký - văn bản",
     "https://cm.pek.edu.vn/vi/laws/detail/Ke-hoach-so-606-KH-UBND-Trien-khai-thuc-hien-Ket-luan-so-56-KL-TW-ngay-4-thang-6-nam-2026-cua-Bo-Chinh-tri-ve-viec-tiep-tuc-thuc-hien-Chi-thi-so-48-CT-TW-ngay-22-thang-10-nam-2010-cua-Bo-Chinh-tri-khoa-X-ve-tang-cuong-su-lanh-dao-cua-1359/": "number:606/KH-UBND|issuer:KH-UBND|locality:unresolved-source:cm.pek.edu.vn",
+    "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-10582-SGDDT-VP-V-v-huong-ung-Cuoc-thi-truc-tuyen-Tim-hieu-phap-luat-ve-bao-ve-bi-mat-nha-nuoc-tren-dia-ban-Thanh-pho-Ho-Chi-Minh-1322/": "number:10582/SGDĐT-VP|issuer:SGDĐT-VP|locality:hồ chí minh trường trung - tiểu học pétrus ký - văn bản",
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-2182-CAP-OCTP-ngay-20-10-2026-cua-Cong-an-phuongh-Phu-loi-V-v-phoi-hop-trien-khai-thuc-hien-cam-ket-ve-viec-hoc-sinh-chap-hanh-nghiem-chinh-phap-luat-1335": "legacy_sheet_url:https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-2182-CAP-OCTP-ngay-20-10-2026-cua-Cong-an-phuongh-Phu-loi-V-v-phoi-hop-trien-khai-thuc-hien-cam-ket-ve-viec-hoc-sinh-chap-hanh-nghiem-chinh-phap-luat-1335",
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-2182-CAP-OCTP-ngay-20-10-2026-cua-Cong-an-phuongh-Phu-loi-V-v-phoi-hop-trien-khai-thuc-hien-cam-ket-ve-viec-hoc-sinh-chap-hanh-nghiem-chinh-phap-luat-1335/": "number:2182/CAP|issuer:CAP|locality:",
     "https://congan.camau.gov.vn/ch26/1619.html": "legacy_sheet_url:https://congan.camau.gov.vn/ch26/1619.html",
     "https://congan.camau.gov.vn/ch26/td26.html": "legacy_sheet_url:https://congan.camau.gov.vn/ch26/td26.html",
+    "https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": "url:https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html",
     "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/cong-tac-kiem-tra-giam-sat-va-thi-hanh-ky-luat-cua-dang-o-dang-bo-cong-an-thanh-pho-can-tho-nam-2026-nhiem-vu-trong-tam-nam-2027-12072.html": "legacy_sheet_url:https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/cong-tac-kiem-tra-giam-sat-va-thi-hanh-ky-luat-cua-dang-o-dang-bo-cong-an-thanh-pho-can-tho-nam-2026-nhiem-vu-trong-tam-nam-2027-12072.html",
     "https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/": "legacy_sheet_url:https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/",
     "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/": "legacy_sheet_url:https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/",
@@ -1220,6 +1276,7 @@
     "https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G": "legacy_sheet_url:https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G",
     "https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat": "legacy_sheet_url:https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat",
     "https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281": "legacy_sheet_url:https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219",
     "https://haiphong.gov.vn/?pageid=27205&p_cate=41838": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27205&p_cate=41838",
     "https://haiphong.gov.vn/?pageid=27218&p_steering=129235": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27218&p_steering=129235",
     "https://haiphong.gov.vn/?pageid=27218&p_steering=129330": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27218&p_steering=129330",
@@ -1739,14 +1796,17 @@
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaTR2Vm5abDJjYzF0bV91LWxhZEFkdlBRXzNnT0NFdVV3dTBBQmVZRlBxbnUxRjl2OWhYYVBlMkNlM3p1UzZ3cEJpVDFCLUpjRHZCUVd2RkwwcC1lb2lCOUctdEdjVHVGMXhfMjBSVTllbVl4ZUJuMVk0bTRlcm1fMlBVRERSckVGTDdzN2VBMnltWTVJU2NKbGYxQ0p4X2pwME5wcFJSeW5QMnhqVWp2NXc5dF9ORURVb29IX2VHWHdhcUlKcG9jbw?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaTR2Vm5abDJjYzF0bV91LWxhZEFkdlBRXzNnT0NFdVV3dTBBQmVZRlBxbnUxRjl2OWhYYVBlMkNlM3p1UzZ3cEJpVDFCLUpjRHZCUVd2RkwwcC1lb2lCOUctdEdjVHVGMXhfMjBSVTllbVl4ZUJuMVk0bTRlcm1fMlBVRERSckVGTDdzN2VBMnltWTVJU2NKbGYxQ0p4X2pwME5wcFJSeW5QMnhqVWp2NXc5dF9ORURVb29IX2VHWHdhcUlKcG9jbw?oc=5",
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVlc0eTNleUZQR0Y1eUFSb1lSU192RTVyWmE4LTQxSVMwYi12ZFlYcXVqMVVRcXFGMHYtQ1VQR2VnaDV3UGM0aDhnMXVOZk1vYU15QVdsMHA5SE45T1BONzRGVFpoNlU1VUtIdFNMdTR4TkJzNXZXTkJkUzZmRzdqUVJWU29zMmhVSklWRTFBc0s5Wi02SmVIMXBKUWlZM0VQeUZSSTdLX0VnUWNrSzFyQ0hvMkZUZXdDdVIxWnd0UTMxaEtzRDhob2JB?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMiygFBVV95cUxOVlc0eTNleUZQR0Y1eUFSb1lSU192RTVyWmE4LTQxSVMwYi12ZFlYcXVqMVVRcXFGMHYtQ1VQR2VnaDV3UGM0aDhnMXVOZk1vYU15QVdsMHA5SE45T1BONzRGVFpoNlU1VUtIdFNMdTR4TkJzNXZXTkJkUzZmRzdqUVJWU29zMmhVSklWRTFBc0s5Wi02SmVIMXBKUWlZM0VQeUZSSTdLX0VnUWNrSzFyQ0hvMkZUZXdDdVIxWnd0UTMxaEtzRDhob2JB?oc=5",
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQXZKalJncnRyTXBlckpRaldtLWJ3b21BZk1vUDBCN1FrSzR6SEZpNHNqTmdMcXRVOHN6T0tXZVFzTDFqMjVpcG00SWxrVGFGalFES21ZVlZ2ZHYxbWVjQmU3VHVGNGR4Qzdsa0VnNkFENXJVZWVvMXFETE92X1BkV19YakduMEdhVUprYnFkZzJ4VlFNZlJ4Tjg0a2RmTDNheTY2YldiVW1udDF2SG8wRkhBTjFYUjJTLVRaR3VmN3RwVTRTN0kzbUdB?oc=5": "number:226-TB/ĐU|issuer:ĐU|locality:",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUWdGVlJqWWVTb01JMFhPWHRHODF0T0dGVTh4NUpxMXkxVHUtR29heUVqaXpDRHJlZHFQeHpZRTNJNHJIOC1xYWQtUmpTWm5QM2ctMEQzcGFHaEZFOWVrYUI4ejd2dDYtaDB4MVFXQVVFZGE4MzFIQjV6NzdXZ3p4VjhaNDZ5RmJxMUEyckRXUzMydGdxSmZDY1RxamRWVHNBNnA5QjdkX0VLQ0RYTUlCbjFnMzNoUFJRa3VOSlcxZkRsVnU5NTNYNFh3?oc=5": "number:410/KH-UBND|issuer:KH-UBND|locality:unresolved-source:news.google.com",
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxQang4b1dIMXJGcGdYTDhuTkFrbmtxVy05RHdEWXZJUlZsb1l6Rm1NMmpNWkhjOVhta1dQNUNPbUFBM2NLUWwtRkJpU3hBV2syYXBQM1lWalZfLXRldjBJcm85Tzl6Sm1tQW5kcF9vWGNPby1icUtJa2tmdko5WC1jR0VDMy12anRrb0xDaElscmdLMEVZWG05aVZoVllGZ0U0cVQwMEhGbHZNX0x4VjlUOVZFbEdDQTdFZnJtTENob2RyYzY4R2VsYlVR?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMiygFBVV95cUxQang4b1dIMXJGcGdYTDhuTkFrbmtxVy05RHdEWXZJUlZsb1l6Rm1NMmpNWkhjOVhta1dQNUNPbUFBM2NLUWwtRkJpU3hBV2syYXBQM1lWalZfLXRldjBJcm85Tzl6Sm1tQW5kcF9vWGNPby1icUtJa2tmdko5WC1jR0VDMy12anRrb0xDaElscmdLMEVZWG05aVZoVllGZ0U0cVQwMEhGbHZNX0x4VjlUOVZFbEdDQTdFZnJtTENob2RyYzY4R2VsYlVR?oc=5",
     "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdjBuakdYMWMtSFB0Y241SGNnWXpROVNfUVlpa3U5bEVwd3FRWnJjdmtseDZxVU56d3E2amFQdkkwUkZYRHlvNEdDTU9UTHZ6d2J3NkMtS3djUnA0ay1GZ2VmMGRMUjdWR2RZOGhUYTRnbERJaEZCd2c2NklwQy1WQ2N5X1B4ZHNWN3d6SWppOERTU0ZkM1YzSTEyVU92MnhMc1liNXZkM3ZTWHp1STB4bU9TMDdZM2R4dUFmRHo5cm84UjVMRDIwLWFlaw?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMiywFBVV95cUxOdjBuakdYMWMtSFB0Y241SGNnWXpROVNfUVlpa3U5bEVwd3FRWnJjdmtseDZxVU56d3E2amFQdkkwUkZYRHlvNEdDTU9UTHZ6d2J3NkMtS3djUnA0ay1GZ2VmMGRMUjdWR2RZOGhUYTRnbERJaEZCd2c2NklwQy1WQ2N5X1B4ZHNWN3d6SWppOERTU0ZkM1YzSTEyVU92MnhMc1liNXZkM3ZTWHp1STB4bU9TMDdZM2R4dUFmRHo5cm84UjVMRDIwLWFlaw?oc=5",
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQXZWeVlyT1hNTDNpd09XNC1CaTY1eXRsVWN4UEVXMC1jNEtSRkMyYndXZE1PZm5JSW03eF9wQU55ZVQ2VU5YdjV1Q09taVNaajgwWml5ZkR3MVR1T3V3czF0Uk1pTVlQS1dFbTFTRGVqckozZWlUd1Zld0R1V2FqU0VDRklTaGtoVVJsLW5LejBwWlA0NDc2T21Cbm5WRzdLeWZtTllfNk14LThCaC1tb2tIZTFjMlZHX05jNEk0OW9oRlY0T1BiZG5BREE?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizAFBVV95cUxNQXZWeVlyT1hNTDNpd09XNC1CaTY1eXRsVWN4UEVXMC1jNEtSRkMyYndXZE1PZm5JSW03eF9wQU55ZVQ2VU5YdjV1Q09taVNaajgwWml5ZkR3MVR1T3V3czF0Uk1pTVlQS1dFbTFTRGVqckozZWlUd1Zld0R1V2FqU0VDRklTaGtoVVJsLW5LejBwWlA0NDc2T21Cbm5WRzdLeWZtTllfNk14LThCaC1tb2tIZTFjMlZHX05jNEk0OW9oRlY0T1BiZG5BREE?oc=5",
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5",
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnoteGdlRFZJMS02SWxXbnIzcS1VUk5HTm94UHRydVZfN0ZnXzlLRGpZSERkVml6b1BBdjNNOTlzaEJHR2xjeHFISlR5VGJzV3NXV3c2bHpPUUMyXzEzUW1yRm5OQldyY2stb1lTYll1OGxvOFBialJqclV6S2pUd1pfaDF5R0tfelJ4MjdwMmJQYjZDTE9pV3BLd2g3OW1QWl9lX2xXZkVXN01pYzNCd00xU3Z2bDZZdlBwU1dnUGd0Ung4dXpWek5GSnI?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnoteGdlRFZJMS02SWxXbnIzcS1VUk5HTm94UHRydVZfN0ZnXzlLRGpZSERkVml6b1BBdjNNOTlzaEJHR2xjeHFISlR5VGJzV3NXV3c2bHpPUUMyXzEzUW1yRm5OQldyY2stb1lTYll1OGxvOFBialJqclV6S2pUd1pfaDF5R0tfelJ4MjdwMmJQYjZDTE9pV3BLd2g3OW1QWl9lX2xXZkVXN01pYzNCd00xU3Z2bDZZdlBwU1dnUGd0Ung4dXpWek5GSnI?oc=5",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ0VEMklwRTJZWHFGQmVBT3ZHd2dOS3daWlBFcjVYWkJqSmFiVDBLZUN5dEVTM09xdHhDWHRHVWpsRi1TV1VjQ0FaVC1oYVhnb1ZNdjRWMU52R25hNjhFTjAzSzR1M3FhWGVXcDI1Zl91RVBDTHEteVlaQmtNbDFXeURhelo4VTlCWWloSndQNFdpMWYybG42Zi1kNUNkU195dlhLRldkanhla25JMEFzUkFwSUpCYlYwbnVxZGdRRW5LYm9fV2UwUDhWSU5Qdw?oc=5": "number:1794/UBND-VHXH|issuer:UBND-VHXH|locality:unresolved-source:news.google.com",
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNV2FhS2tyenN1YkpuR0NDQ1VBdlZDMmdfaXJuTjgwWFpucmt5TmtLbFBXRTRKRUZCMlBjUzBmam1FZGUxcFFZV2l4RkhTX04yUXhKc1NPQWpPMHdLSHlYa2dGQllKM1FsNWJ5XzVYYlBZaFVxWWZTV182NFBTYUYxZ2pIeDVJOGtFbEpUdjBBWnk4OXNrZE1xbnBSaEIycUEwMmpMb0J3U0ZHd0RRZTdJc2lYMnNWeTZXWkVmRDBYdnNOdXMteFlyWjFtTmltdw?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizgFBVV95cUxNV2FhS2tyenN1YkpuR0NDQ1VBdlZDMmdfaXJuTjgwWFpucmt5TmtLbFBXRTRKRUZCMlBjUzBmam1FZGUxcFFZV2l4RkhTX04yUXhKc1NPQWpPMHdLSHlYa2dGQllKM1FsNWJ5XzVYYlBZaFVxWWZTV182NFBTYUYxZ2pIeDVJOGtFbEpUdjBBWnk4OXNrZE1xbnBSaEIycUEwMmpMb0J3U0ZHd0RRZTdJc2lYMnNWeTZXWkVmRDBYdnNOdXMteFlyWjFtTmltdw?oc=5",
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQUZpbXVEY194Z082Y3NZY2RFcHdXX0lHMHdTLWljd0txRXVqSVpESzNoLVpUaTVkdkZtc0RHTHhISTJNNmJMSWxFaFh5djd2THVNSjNFNkdBVDAzbDhhVkg3eXhCUWt4ZlhuRFJ3M1FWVFlveFBuR0ZuNl9TRHFteWREUFBXZW5WNlJZLWxXNVZYc2hqQnpjaVNtRTZocnRVYzZUOV9VaEhfRDNvQmFpeV9RV1RRMWI3ZWduaVNDOHlMOXJvVzZmaWJqLWR4QQ?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizgFBVV95cUxOQUZpbXVEY194Z082Y3NZY2RFcHdXX0lHMHdTLWljd0txRXVqSVpESzNoLVpUaTVkdkZtc0RHTHhISTJNNmJMSWxFaFh5djd2THVNSjNFNkdBVDAzbDhhVkg3eXhCUWt4ZlhuRFJ3M1FWVFlveFBuR0ZuNl9TRHFteWREUFBXZW5WNlJZLWxXNVZYc2hqQnpjaVNtRTZocnRVYzZUOV9VaEhfRDNvQmFpeV9RV1RRMWI3ZWduaVNDOHlMOXJvVzZmaWJqLWR4QQ?oc=5",
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMHByRFItVDJxZEFCRFVZNmJLa2h6bW0xd1lsVUpUcXhMUjJKTUozdHNqUGs3eXpKQ1YyVWRFeUVMd2VIdWJENVlXU1BwUEcxczhqaHJYNk90M09KY3hrNEJ5MzlUUFBaeDROM2JzcG1BMng0Y1BTa0QxdEhoSWRybGppMUEtSi1FdGo5eWF5SHczSFZHR1lRaUMySFNQUGNPSXhCaHBuTnNHYTBuZG1oVGZ2UHFROHlubXFNX2pIRUNKdndYUV9LQTZVV1pOQQ?oc=5": "legacy_sheet_url:https://news.google.com/rss/articles/CBMizgFBVV95cUxPMHByRFItVDJxZEFCRFVZNmJLa2h6bW0xd1lsVUpUcXhMUjJKTUozdHNqUGs3eXpKQ1YyVWRFeUVMd2VIdWJENVlXU1BwUEcxczhqaHJYNk90M09KY3hrNEJ5MzlUUFBaeDROM2JzcG1BMng0Y1BTa0QxdEhoSWRybGppMUEtSi1FdGo5eWF5SHczSFZHR1lRaUMySFNQUGNPSXhCaHBuTnNHYTBuZG1oVGZ2UHFROHlubXFNX2pIRUNKdndYUV9LQTZVV1pOQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMG1TX3MxSXlmczNMVlZrakZYWWtZdVR6cEJUcXR2Y1N4eW5GVEUtR3VDSkE0U3NhV1gwc015dHJfVEw5ZWNxYXd1Z0ZvbEQ3UkNGSFBlSG5qSW5pN2FkWnNJZ0FQRGlPbjRaQ255VkpYcE9tcU5QdmtiYTV2T3VUTzV0aS1udUJiODhiM01YYkpsQjVORVZjVjFvMkREbkNsemxZQmgycWFxYkl2aXdTeFJzWmpEZUdLdHdfUFhFVFl4UVhnbWRYbV9RcjBNZw?oc=5": "number:1797/UBND-VHXH|issuer:UBND-VHXH|locality:unresolved-source:news.google.com",
     "https://news.google.com/rss/articles/cbmi-afbvv95cuxnx2vtdhztcm9pazuzmuw3d2qwmnfkshz6r1rrtzb0sdczbhn4vfdzujrnejvwlvjrswtrd3u1ctk2tlk1mnlwqnhvni1oqmjma0ptt2tpv2tymzf4luvju0txs3h0eld6chnkmgu4cfdwutlvwvbechvkcenoqkfkttbwvjdynlfqy0vqcfdzckdlau1oqxdtdg8yeunvoxptzjljui1frw9tsvhnrjhty2fpc0jrz0rmqknim05qmmlacxp3zjzubgxyrgljqvrhz2rpzeezwkhbtjk5ukjyvflkshj5tumyzdjnegluewnhre9umgcynw": "legacy_sheet_url:https://news.google.com/rss/articles/cbmi-afbvv95cuxnx2vtdhztcm9pazuzmuw3d2qwmnfkshz6r1rrtzb0sdczbhn4vfdzujrnejvwlvjrswtrd3u1ctk2tlk1mnlwqnhvni1oqmjma0ptt2tpv2tymzf4luvju0txs3h0eld6chnkmgu4cfdwutlvwvbechvkcenoqkfkttbwvjdynlfqy0vqcfdzckdlau1oqxdtdg8yeunvoxptzjljui1frw9tsvhnrjhty2fpc0jrz0rmqknim05qmmlacxp3zjzubgxyrgljqvrhz2rpzeezwkhbtjk5ukjyvflkshj5tumyzdjnegluewnhre9umgcynw",
     "https://news.google.com/rss/articles/cbmi-afbvv95cuxqrzbvz3lqrkz4zgixcgo1n3r1b3nlcg5faxhiekgwwhzdshnxmhp5nnm1duliehztzvbsmtvrswrxdtzpztyxajblcmfzmlfny19pvmlvewfkref5qzm5q0ptsznib1ruqzkwsejurhpcadk5dm1mqm9ruvzoajzly0jyndh2tgzwy19nsev5rez4sm95znhkvnlzc2laqvhxzfv3qk5qvtnlqu04vunurenmqkjfcgkwam5px1nkrnrsuk1rm3bhtei1egiycwnjz3dpexhytwfwq0mzai1rqwgty25gevhrnmhluulfamzjdy1bymg0va": "legacy_sheet_url:https://news.google.com/rss/articles/cbmi-afbvv95cuxqrzbvz3lqrkz4zgixcgo1n3r1b3nlcg5faxhiekgwwhzdshnxmhp5nnm1duliehztzvbsmtvrswrxdtzpztyxajblcmfzmlfny19pvmlvewfkref5qzm5q0ptsznib1ruqzkwsejurhpcadk5dm1mqm9ruvzoajzly0jyndh2tgzwy19nsev5rez4sm95znhkvnlzc2laqvhxzfv3qk5qvtnlqu04vunurenmqkjfcgkwam5px1nkrnrsuk1rm3bhtei1egiycwnjz3dpexhytwfwq0mzai1rqwgty25gevhrnmhluulfamzjdy1bymg0va",
     "https://news.google.com/rss/articles/cbmi-afbvv95cuxqzm0yq3pjemlrmwlly0jycdb3amlkc1lizfjra0jqm0n4ofzhog5oltbrsxbkd3hhvhbobi1xy0jwmldpt0vyn2eydwxpnmdqrhzvrf9hsnhfuendukdjoe5lq3p1z2pmstgtqvnxu2rybg81bdn1rjzyrfvjwk0zzvg4vmv6rklvmhvhx3jorfbvvtdeagdottr6ntb3dxfvmffwvkcznnm5aw93ynzivkj6edvndwe0njzmynjpqw9imwrtvljneenbs3rhsu5ab3lbrzfqr0dxnff4cvrxcvjot1jptwo3whmycedgexharfzzdne0vw": "legacy_sheet_url:https://news.google.com/rss/articles/cbmi-afbvv95cuxqzm0yq3pjemlrmwlly0jycdb3amlkc1lizfjra0jqm0n4ofzhog5oltbrsxbkd3hhvhbobi1xy0jwmldpt0vyn2eydwxpnmdqrhzvrf9hsnhfuendukdjoe5lq3p1z2pmstgtqvnxu2rybg81bdn1rjzyrfvjwk0zzvg4vmv6rklvmhvhx3jorfbvvtdeagdottr6ntb3dxfvmffwvkcznnm5aw93ynzivkj6edvndwe0njzmynjpqw9imwrtvljneenbs3rhsu5ab3lbrzfqr0dxnff4cvrxcvjot1jptwo3whmycedgexharfzzdne0vw",
