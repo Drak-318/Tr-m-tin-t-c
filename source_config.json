@@ -62,6 +62,15 @@
       "fallback_feed_urls": [
         "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Flao-dong-tien-luong%20(lao%20%C4%91%E1%BB%99ng%20OR%20ti%E1%BB%81n%20l%C6%B0%C6%A1ng)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
       ]
+    },
+    "https://dangcongsan.vn/van-ban-cua-dang?menuId=6825579653d58aefae04bfb5": {
+      "item_selector": "table tr",
+      "title_selector": "td:nth-child(2) a[href]",
+      "link_selector": "td:nth-child(2) a[href]",
+      "document_number_selector": "td:nth-child(1)",
+      "issue_date_selector": "td:nth-child(3)",
+      "max_pages": 3,
+      "max_items": 200
     }
   }
 }
