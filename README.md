@@ -132,3 +132,20 @@ pip install -r requirements.txt
 export SHEETS_WEB_APP_URL="URL_WEB_APP_CUA_BAN"
 python quet_vb.py
 ```
+
+
+## Quản lý danh sách nguồn bằng GitHub
+
+Danh sách nguồn chính được chuẩn bị tại `danh_sach_nguon.csv` ở thư mục gốc repository.
+
+Các cột:
+- `name`: tên nguồn.
+- `url`: URL cần quét (bắt buộc).
+- `group`: nhóm nguồn, ví dụ `Văn Bản TW` hoặc `Văn Bản địa phương`.
+- `enabled`: `true` để quét; `false` để tạm bỏ qua.
+
+Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong GitHub. Nếu CSV chưa có URL, hệ thống tạm dùng danh sách Google Sheets làm phương án dự phòng để không làm gián đoạn hoạt động trong giai đoạn chuyển đổi.
+
+Lưu ý: Google Sheets vẫn được dùng để lưu kết quả và bộ nhớ chống trùng. Vì API Apps Script hiện tại trả danh sách nguồn cùng bộ nhớ trong một phản hồi, lượt chạy vẫn gọi API để lấy bộ nhớ chống trùng; tuy nhiên, khi CSV đã được điền, danh sách CSV mới là danh sách quyết định nguồn nào được quét.
+
+Chưa xóa danh sách nguồn cũ trong Google Sheets cho đến khi đối chiếu đủ số lượng và URL đã chuyển sang CSV.
