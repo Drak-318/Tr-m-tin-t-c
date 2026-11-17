@@ -18,6 +18,28 @@ HEADERS = {
 
 DOC_REGEX = re.compile(r"(Luật|Nghị định|Thông tư|Quyết định|Nghị quyết|Chỉ thị|Công văn|Kết luận|Hướng dẫn)\s+(?:số\s*)?([0-9]+(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9\-]+)", re.IGNORECASE)
 
+# Từ khóa nhận diện văn bản Địa phương (cấp Tỉnh/Thành phố/Sở/UBND/HĐND)
+LOCAL_KEYWORDS = [
+    "ubnd", "ủy ban nhân dân", "hđnd", "hội đồng nhân dân", "qđ-ubnd", "nq-hđnd", 
+    "ct-ubnd", "kh-ubnd", "tỉnh ", "thành phố ", "tp.", "tp ", "sở "
+]
+
+# Từ khóa chủ đề trọng tâm dành riêng cho văn bản Địa phương
+LOCAL_TOPIC_KEYWORDS = [
+    # Đất đai, nhà ở, bồi thường
+    "đất đai", "bảng giá đất", "thu hồi đất", "giao đất", "cho thuê đất", "bồi thường", 
+    "tái định cư", "sổ đỏ", "giấy chứng nhận quyền sử dụng đất", "nhà ở", "nhà ở xã hội", 
+    "tách thửa", "hợp thửa", "hạn mức đất", "quy hoạch sử dụng đất",
+    # Cán bộ, công chức, viên chức, tinh giản
+    "cán bộ", "công chức", "viên chức", "người hoạt động không chuyên trách", 
+    "tuyển dụng", "nâng ngạch", "thăng hạng", "tinh giản biên chế", "kỷ luật", "đánh giá xếp loại",
+    # Thi đua, khen thưởng
+    "thi đua", "khen thưởng", "bằng khen", "danh hiệu", "huân chương", "huy chương", "kỷ niệm chương",
+    # Lao động, tiền lương, phụ cấp, BHXH
+    "tiền lương", "mức lương", "lương tối thiểu", "phụ cấp", "trợ cấp", "chế độ chính sách", 
+    "lao động", "việc làm", "bảo hiểm xã hội", "bhxh", "bảo hiểm y tế", "bhyt", "người có công", "an sinh"
+]
+
 def extract_doc_info(title):
     m = DOC_REGEX.search(title)
     if m:
@@ -27,6 +49,23 @@ def extract_doc_info(title):
             num_m = re.search(r"([0-9]+/[0-9]{4}/[A-ZĐƯƠĂÂÊÔ0-9\-]+|[0-9]+/[A-ZĐƯƠĂÂÊÔ0-9\-]+)", title, re.I)
             return kw, (num_m.group(1).upper() if num_m else "Đang cập nhật")
     return None, None
+
+def classify_and_filter(title, agency, doc_type, doc_num, group):
+    text_check = f"{title} {agency} {doc_num}".lower()
+    is_local = (group.lower() == "địa phương") or any(lk in text_check for lk in LOCAL_KEYWORDS)
+
+    if is_local:
+        # Nếu là văn bản Địa phương: Bắt buộc phải thuộc 1 trong 4 chủ đề quan tâm
+        if not any(tk in text_check for tk in LOCAL_TOPIC_KEYWORDS):
+            return False, 99  # Loại bỏ văn bản địa phương không thuộc chủ đề trọng tâm
+        return True, 2        # Giữ lại với độ ưu tiên 2 (xếp sau Trung ương)
+    else:
+        # Nếu là văn bản Trung ương: Lấy toàn bộ và gán độ ưu tiên 1 (xếp trên cùng)
+        type_priority = {
+            "Luật": 1, "Nghị quyết": 2, "Nghị định": 3, "Thông tư": 4, 
+            "Quyết định": 5, "Chỉ thị": 6, "Công văn": 7
+        }.get(doc_type, 8)
+        return True, 1 * 10 + type_priority  # Mức 11 -> 18 (luôn nhỏ hơn mức 20 của địa phương)
 
 def main():
     print("1. Đang lấy danh sách nguồn từ Google Sheet...")
@@ -44,9 +83,11 @@ def main():
         url = src["url"]
         name = src["name"]
         row = src["row"]
+        group = src.get("group", "Văn Bản TW")
         found_items = 0
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20, verify=False)
+            # Giảm timeout xuống 6s để lướt nhanh qua các link lỗi
+            r = requests.get(url, headers=HEADERS, timeout=6, verify=False)
             if r.status_code != 200:
                 source_status.append({"row": row, "count": 0, "status": f"Lỗi ({r.status_code})"})
                 continue
@@ -55,7 +96,7 @@ def main():
             items = []
             if "<rss" in content_text[:500].lower() or "<feed" in content_text[:500].lower() or "news.google.com/rss" in url:
                 root = ET.fromstring(r.content)
-                for item in root.findall(".//item")[:20]:
+                for item in root.findall(".//item")[:25]:
                     t = item.findtext("title") or ""
                     l = item.findtext("link") or ""
                     items.append((t.strip(), l.strip()))
@@ -71,6 +112,12 @@ def main():
                 doc_type, doc_num = extract_doc_info(title)
                 if not doc_type:
                     continue
+                
+                # Áp dụng bộ lọc chủ đề & phân loại Trung ương / Địa phương
+                keep, priority_score = classify_and_filter(title, name, doc_type, doc_num, group)
+                if not keep:
+                    continue
+
                 found_items += 1
                 if link in existing_links or (doc_num != "Đang cập nhật" and doc_num in existing_numbers):
                     continue
@@ -79,6 +126,7 @@ def main():
                     existing_numbers.add(doc_num)
                 fp = f"[{doc_num}] {title[:50].lower()}"
                 new_docs.append({
+                    "priority": priority_score,
                     "doc_type": doc_type,
                     "agency": name,
                     "title": title,
@@ -87,12 +135,15 @@ def main():
                     "fingerprint": fp
                 })
             source_status.append({"row": row, "count": found_items, "status": "Hoạt động"})
-            print(f"[OK] {name}: thấy {found_items} mục văn bản.")
+            print(f"[OK] {name}: thấy {found_items} mục văn bản đạt chuẩn.")
         except Exception as e:
             source_status.append({"row": row, "count": 0, "status": "Lỗi kết nối"})
-            print(f"[LỖI] {name}: {str(e)[:80]}")
+            print(f"[LỖI] {name}: {str(e)[:60]}")
 
-    print(f"2. Phát hiện {len(new_docs)} văn bản mới. Đang đồng bộ về Google Sheet...")
+    # SẮP XẾP ƯU TIÊN: Văn bản Trung ương (Luật -> Nghị định -> Thông tư...) lên đầu, Địa phương xuống dưới
+    new_docs.sort(key=lambda x: x["priority"])
+
+    print(f"2. Phát hiện {len(new_docs)} văn bản mới (đã ưu tiên TW lên đầu). Đang đồng bộ về Google Sheet...")
     save_resp = requests.post(WEB_APP_URL, json={
         "action": "save_results",
         "new_docs": new_docs[:50],
