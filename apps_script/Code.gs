@@ -194,9 +194,47 @@ function saveResults_(ss, data) {
     });
   }
 
+  const reviewDocs = Array.isArray(data.review_docs) ? data.review_docs : [];
+  const reviewAdded = saveReviewDocs_(ss, reviewDocs, now);
   if (data.refresh_radar === true && fresh.length) updateMissingDocumentRadar_(ss);
   SpreadsheetApp.flush();
-  return {status: "saved", added: fresh.length, skipped_duplicates: incoming.length - fresh.length};
+  return {status: "saved", added: fresh.length, skipped_duplicates: incoming.length - fresh.length, sent_to_date_review: reviewAdded};
+}
+
+
+function saveReviewDocs_(ss, docs, now) {
+  if (!docs || !docs.length) return 0;
+  const name = "Cần xác minh ngày";
+  let sheet = ss.getSheetByName(name);
+  if (!sheet) sheet = ss.insertSheet(name);
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1, 1, 1, 7).setValues([[
+      "Thời điểm phát hiện", "Nguồn", "Tiêu đề", "Số hiệu",
+      "Liên kết", "Ngày đăng nguồn", "Lý do cần xác minh"
+    ]]).setFontWeight("bold").setBackground("#fce8b2").setWrap(true);
+  }
+  const seen = new Set();
+  if (sheet.getLastRow() >= 2) {
+    sheet.getRange(2, 5, sheet.getLastRow() - 1, 1).getDisplayValues().forEach(r => {
+      if (r[0]) seen.add(normalizeUrl_(r[0]));
+    });
+  }
+  const rows = [];
+  docs.forEach(d => {
+    const link = normalizeUrl_(d.link || "");
+    if (!link || seen.has(link)) return;
+    seen.add(link);
+    rows.push([now, String(d.agency || ""), String(d.title || ""),
+      String(d.doc_number || ""), String(d.link || ""),
+      String(d.published_date || ""), String(d.reason || "Không xác định được ngày.")]);
+  });
+  if (rows.length) {
+    const start = sheet.getLastRow() + 1;
+    sheet.getRange(start, 1, rows.length, 7).setValues(rows)
+      .setWrap(true).setVerticalAlignment("middle");
+    sheet.getRange(start, 5, rows.length, 1).setFontColor("#1155cc");
+  }
+  return rows.length;
 }
 
 function cleanAgency_(value) {
