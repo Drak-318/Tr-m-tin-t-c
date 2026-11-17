@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime
 from scanner.normalizer import (
     canonicalize_url, extract_doc_info, classify_and_score,
-    classify_document, document_identity, is_too_old, make_fingerprint,
+    classify_document, document_identity, is_too_old, make_fingerprint, has_document_date,
 )
 
 class NormalizerTests(unittest.TestCase):
@@ -38,6 +38,12 @@ class NormalizerTests(unittest.TestCase):
 
     def test_old_issue_date_wins_over_recent_repost_date(self):
         self.assertTrue(is_too_old("Quyết định ban hành ngày 01/01/2024", "12/QĐ-UBND", 60, "2026-11-17", now=datetime(2026,11,17)))
+
+    def test_missing_date_is_not_treated_as_verified_recent(self):
+        self.assertFalse(has_document_date("Công văn 1234/VPCP-KTTH về việc triển khai",None))
+
+    def test_title_issue_date_is_a_reliable_date(self):
+        self.assertTrue(has_document_date("Quyết định ban hành ngày 10/11/2026",None))
 
     def test_recent_publication_date_used_when_issue_date_unknown(self):
         self.assertFalse(is_too_old("Công văn 1234/VPCP-KTTH về việc triển khai","1234/VPCP-KTTH",60,"2026-11-10",now=datetime(2026,11,17)))
