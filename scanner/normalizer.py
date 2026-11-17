@@ -82,12 +82,12 @@ def document_identity(doc_number,title,agency="",link=""):
         parts=n.split("/")
         issuer=parts[-1] if len(parts)>1 else ""
         issuer=re.sub(r"\d{4}","",issuer).strip("-")
-        local_authority = any(x in issuer for x in ("UBND", "HĐND", "SNV", "STC", "SXD", "SGD", "SYT", "CAT", "CA"))
-        locality = ""
+        local_authority=any(x in issuer for x in ("UBND","HĐND","SNV","STC","SXD","SGD","SYT","CAT","CA"))
+        locality=""
         if local_authority:
-            context = f"{title} {agency}"
-            match = re.search(r"(?:tỉnh|thành phố|TP\.?|quận|huyện|thị xã )\s+([^,;()]+)", context, re.I)
+            context=f"{title} {agency}"
+            match=re.search(r"(?:tỉnh|thành phố|TP[.]?|quận|huyện|thị xã)[ ]+([^,;()]+)",context,re.I)
             if match:
-                locality = re.sub(r"\s+", " ", match.group(1)).strip().casefold()
+                locality=re.sub("[ ]+"," ",match.group(1)).strip().casefold()
         return f"number:{n}|issuer:{issuer or clean_title(title).casefold()[:90]}|locality:{locality}"
     return f"url:{canonicalize_url(link)}"
