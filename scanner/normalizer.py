@@ -24,6 +24,11 @@ def is_draft_title(title):
 def extract_doc_info(title):
     title=clean_title(title); low=title.casefold()
     if not title or any(low==j or (len(low)<55 and j in low) for j in JUNK_EXACT): return None,None
+    # Many administrative official letters use "Văn bản số ... V/v"
+    # without spelling out "Công văn" in the title.
+    letter=re.search(r"(?:văn bản\\s+)?(?:số\\s*[:：]?\\s*)?([0-9]+(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+)\\s+V/v\\b",title,re.I)
+    if letter:
+        return "Công văn",letter.group(1).upper().rstrip(".,;:)")
     m=DOC_REGEX.search(title)
     if m:
         t=m.group(1).strip()
