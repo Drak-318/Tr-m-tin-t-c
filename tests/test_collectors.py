@@ -45,6 +45,12 @@ class CollectorTests(unittest.TestCase):
         result=extract_detail_date(html)
         self.assertEqual(result["basis"],"unknown")
 
+    def test_google_news_link_is_not_used_as_source_date(self):
+        from scanner.collectors import verify_document_detail_date
+        result=verify_document_detail_date("https://news.google.com/rss/articles/example")
+        self.assertEqual(result["basis"],"fetch_error")
+        self.assertIn("không dùng ngày Google News",result["error"])
+
     def test_deduplicate_preserves_fallback_provenance(self):
         items=[{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/a",
                 "published_date":None,"source_published_date":"2026-11-16","date_source":"fallback_aggregator"}]
