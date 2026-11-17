@@ -1,11 +1,11 @@
 {
   "defaults": {
     "mode": "auto",
-    "max_pages": 1,
+    "max_pages": 3,
     "max_items": 200,
     "timeout_connect": 8,
     "timeout_read": 18,
-    "follow_pagination": false
+    "follow_pagination": true
   },
   "sources": {
     "https://congan.daklak.gov.vn/canh-bao-toi-pham": {

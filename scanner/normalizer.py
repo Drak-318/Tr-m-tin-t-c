@@ -50,10 +50,44 @@ def extract_issue_date(title):
     m=re.search(r"\b(?:ngày|ngay)\s*(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b",title,re.I)
     return parse_date("/".join(m.groups())) if m else None
 
+def resolve_document_date(title, source_date=None):
+    """Return the best available date and its evidence basis; never invent a scan date."""
+    issue_date = extract_issue_date(clean_title(title))
+    if issue_date:
+        return issue_date, "issue_date"
+    posted_date = parse_date(source_date)
+    if posted_date:
+        return posted_date, "source_posted_date"
+    return None, "unknown"
+
+
+def is_amendment_title(title):
+    low = clean_title(title).casefold()
+    return any(term in low for term in (
+        "sửa đổi", "sửa đổi, bổ sung", "bổ sung", "thay thế", "bãi bỏ",
+        "điều chỉnh", "amendment",
+    ))
+
+
 def is_too_old(title,doc_number="",max_days=60,published_date=None,now=None):
-    # Ngày ban hành ghi rõ trong tiêu đề ưu tiên hơn ngày đăng lại trên website.
-    d=extract_issue_date(title) or parse_date(published_date)
-    return bool(d and ((now or datetime.utcnow())-d).days>max_days)
+    current = now or datetime.utcnow()
+    number = str(doc_number or "").strip()
+    # A year embedded in the current document number is stronger than years
+    # mentioned in the title as references to older instruments.
+    year_match = re.search(r"(?:^|/)(20\d{2})(?:/|$)", number)
+    if year_match:
+        number_year = int(year_match.group(1))
+        if number_year < current.year:
+            if is_draft_title(title):
+                return False
+            evidence_date, _ = resolve_document_date(title, published_date)
+            if is_amendment_title(title) and evidence_date and evidence_date.year == current.year:
+                return False
+            return True
+        if number_year > current.year:
+            return False
+    d, _basis = resolve_document_date(title, published_date)
+    return bool(d and (current-d).days>max_days)
 
 def classify_document(title,agency="",doc_type="",doc_number="",source_url=""):
     s=f"{title} {agency} {doc_number} {source_url}".casefold()

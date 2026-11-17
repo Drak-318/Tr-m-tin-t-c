@@ -48,6 +48,30 @@ class NormalizerTests(unittest.TestCase):
     def test_recent_publication_date_used_when_issue_date_unknown(self):
         self.assertFalse(is_too_old("Công văn 1234/VPCP-KTTH về việc triển khai","1234/VPCP-KTTH",60,"2026-11-10",now=datetime(2026,11,17)))
 
+    def test_old_year_in_document_number_is_excluded(self):
+        self.assertTrue(is_too_old("Nghị định 320/2025/NĐ-CP", "320/2025/NĐ-CP", 60,
+                                   "2026-11-17", now=datetime(2026,11,17)))
+
+    def test_current_year_draft_amending_old_instrument_is_retained(self):
+        self.assertFalse(is_too_old("Dự thảo Nghị định sửa đổi Nghị định 320/2025/NĐ-CP",
+                                    "320/2025/NĐ-CP", 60, None, now=datetime(2026,11,17)))
+
+    def test_current_year_amendment_of_old_instrument_is_retained(self):
+        self.assertFalse(is_too_old("Nghị định 141/2026/NĐ-CP sửa đổi Nghị định 320/2025/NĐ-CP",
+                                    "141/2026/NĐ-CP", 60, "2026-11-10", now=datetime(2026,11,17)))
+
+    def test_source_date_is_labelled_as_fallback(self):
+        from scanner.normalizer import resolve_document_date
+        date, basis = resolve_document_date("Công văn 1234/VPCP-KTTH", "2026-11-10")
+        self.assertEqual(date.strftime("%Y-%m-%d"), "2026-11-10")
+        self.assertEqual(basis, "source_posted_date")
+
+    def test_unknown_date_has_no_fabricated_date(self):
+        from scanner.normalizer import resolve_document_date
+        date, basis = resolve_document_date("Công văn 1234/VPCP-KTTH", None)
+        self.assertIsNone(date)
+        self.assertEqual(basis, "unknown")
+
     def test_fingerprint_is_stable(self):
         self.assertEqual(make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"),make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"))
 
