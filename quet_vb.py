@@ -71,6 +71,7 @@ def main():
             for item in result.get("items",[]):
                 local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
                                          "agency":source.get("name","")})
+    local_candidates.sort(key=lambda row: row.get("link",""))
     relation_path=Path("data/document_relationships.json")
     cursor_path=Path("data/relationship_scan_state.json")
     try:
