@@ -32,7 +32,7 @@ def main():
     started=time.monotonic()
     print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {utc_now()}"); print("="*70)
     config_data=load_source_config()
-    sheet_sources,existing_links,_existing_numbers=get_sources_and_memory()
+    sheet_sources,existing_links,_existing_numbers,existing_identities=get_sources_and_memory()
     csv_sources=load_sources_from_csv()
     if csv_sources: sources=csv_sources; registry_name="GitHub: danh_sach_nguon.csv"
     else: sources=sheet_sources; registry_name="Google Sheets (dự phòng)"
@@ -55,6 +55,7 @@ def main():
     totals={"items":0,"recognized":0,"old":0,"duplicate":0,"kept":0,"failed":0}
     recognized_by_source={}
     seen_sheet_links=set(existing_links)
+    seen_sheet_identities=set(existing_identities)
     for i in range(len(sources)):
         source,result=results_by_index[i]; name=source.get("name","Nguồn không tên"); group=source.get("group","Văn Bản TW")
         totals["items"]+=len(result["items"]); recognized=0
@@ -70,13 +71,14 @@ def main():
             if not keep: continue
             totals["kept"]+=1
             identity=document_identity(number,title,name,link)
-            if link in seen_sheet_links or is_seen(state,identity,link):
+            if link in seen_sheet_links or identity in seen_sheet_identities or is_seen(state,identity,link):
                 totals["duplicate"]+=1; continue
             doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
                  "link":link,"fingerprint":make_fingerprint(number,title),"category":category,
                  "identity":identity,"published_date":pub or ""}
             new_docs.append(doc); accepted_for_memory.append({**doc,"identity":identity})
             seen_sheet_links.add(link)
+            seen_sheet_identities.add(identity)
         recognized_by_source[i]=recognized
         if result["error"]: totals["failed"]+=1
         status=result["status"]
