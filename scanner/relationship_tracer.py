@@ -94,10 +94,10 @@ def collect_local_document_relations(candidates, fallback_fetcher=None, limit=8)
         url = canonicalize_url(candidate.get("link", ""))
         if not url:
             continue
+        inspected += 1
         body = fetch_detail_text(url, fallback_fetcher=fallback_fetcher)
         if not body:
             continue
-        inspected += 1
         title = clean_title(candidate.get("title", ""))
         own_type, own_number = extract_doc_info(title)
         for reference in extract_document_references(title + " " + body):
