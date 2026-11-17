@@ -38,11 +38,13 @@ def save_results_in_batches(new_docs,source_status,batch_size=10):
     batches=[new_docs[i:i+batch_size] for i in range(0,len(new_docs),batch_size)]
     if not batches:
         result=_post({"action":"save_results","new_docs":[],"source_status":source_status},timeout=90)
+        if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu dữ liệu: {result}")
         return int(result.get("added",0))
     added=0
     for index,batch in enumerate(batches):
         statuses=source_status if index==len(batches)-1 else []
         result=_post({"action":"save_results","new_docs":batch,"source_status":statuses},timeout=90)
+        if result.get("status")!="saved": raise RuntimeError(f"Apps Script chưa xác nhận lưu lô {index+1}: {result}")
         added+=int(result.get("added",len(batch)))
         print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
     return added
