@@ -1,4 +1,5 @@
 import unittest
+from scanner.collectors import SourceFetchError
 from scanner.collectors import parse_feed, _deduplicate_items
 
 class CollectorTests(unittest.TestCase):
@@ -8,6 +9,11 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(len(items),1)
         self.assertEqual(items[0]["link"],"https://example.gov.vn/vb/12")
         self.assertIsNotNone(items[0]["published_date"])
+
+    def test_malformed_xml_is_reported_as_parser_error(self):
+        with self.assertRaises(SourceFetchError) as ctx:
+            parse_feed(b"<rss><channel><item>")
+        self.assertEqual(ctx.exception.kind,"PARSER")
 
     def test_deduplicate_preserves_fallback_provenance(self):
         items=[{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/a",
