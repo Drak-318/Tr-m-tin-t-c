@@ -1,61 +1,48 @@
+import time
 import requests
 
 from .config import WEB_APP_URL
 
-
-def _post(payload, timeout=90):
-    response = requests.post(WEB_APP_URL, json=payload, timeout=timeout)
-    response.raise_for_status()
-    try:
-        data = response.json()
-    except ValueError as exc:
-        raise RuntimeError(f"Apps Script returned non-JSON: {response.text[:300]}") from exc
-    if data.get("status") == "error":
-        raise RuntimeError(data.get("message", "Apps Script error"))
-    return data
-
+def _post(payload,timeout=90):
+    last_error=None
+    for attempt in range(1,4):
+        try:
+            response=requests.post(WEB_APP_URL,json=payload,timeout=(15,timeout))
+            response.raise_for_status()
+            try: data=response.json()
+            except ValueError as exc: raise RuntimeError(f"Apps Script trả về dữ liệu không phải JSON: {response.text[:300]}") from exc
+            if data.get("status")=="error": raise RuntimeError(data.get("message","Apps Script error"))
+            return data
+        except (requests.Timeout,requests.ConnectionError) as exc:
+            last_error=exc
+            if attempt<3:
+                wait=attempt*5
+                print(f"[SHEETS] Kết nối Google Sheets lỗi lần {attempt}/3; thử lại sau {wait}s.")
+                time.sleep(wait)
+    raise RuntimeError(f"Không thể kết nối Apps Script sau 3 lần thử: {last_error}")
 
 def get_sources_and_memory():
-    """Read the complete source list on every run; a URL is enough to include a row."""
-    data = _post({"action": "get_sources"}, timeout=90)
-    if data.get("status") != "ok":
-        raise RuntimeError(f"Cannot get sources: {data}")
-
-    sources = []
+    data=_post({"action":"get_sources"},timeout=90)
+    if data.get("status")!="ok": raise RuntimeError(f"Không lấy được danh sách nguồn: {data}")
+    sources=[]
     for raw in data.get("sources") or []:
-        url = str(raw.get("url") or "").strip()
-        if not url:
-            continue
-        row = raw.get("row")
-        name = str(raw.get("name") or "").strip() or f"Nguồn dòng {row or '?'}"
-        sources.append({
-            **raw,
-            "name": name,
-            "url": url,
-            "group": str(raw.get("group") or "Văn Bản TW").strip(),
-        })
+        url=str(raw.get("url") or "").strip()
+        if not url: continue
+        row=raw.get("row"); name=str(raw.get("name") or "").strip() or f"Nguồn dòng {row or '?'}"
+        sources.append({**raw,"name":name,"url":url,"group":str(raw.get("group") or "Văn Bản TW").strip()})
+    links=set(str(v).strip() for v in data.get("existingLinks",[]) if v)
+    numbers=set(str(v).strip().upper() for v in data.get("existingNumbers",[]) if v)
+    return sources,links,numbers
 
-    links = set(str(value).strip() for value in data.get("existingLinks", []) if value)
-    numbers = set(str(value).strip().upper() for value in data.get("existingNumbers", []) if value)
-    return sources, links, numbers
-
-
-def save_results_in_batches(new_docs, source_status, batch_size=50):
-    """Send every new document in batches; source status is always sent."""
-    batches = [new_docs[i:i + batch_size] for i in range(0, len(new_docs), batch_size)]
+def save_results_in_batches(new_docs,source_status,batch_size=10):
+    batches=[new_docs[i:i+batch_size] for i in range(0,len(new_docs),batch_size)]
     if not batches:
-        result = _post({
-            "action": "save_results", "new_docs": [], "source_status": source_status,
-        })
-        return int(result.get("added", 0))
-
-    added = 0
-    for index, batch in enumerate(batches):
-        statuses = source_status if index == len(batches) - 1 else []
-        result = _post({
-            "action": "save_results", "new_docs": batch, "source_status": statuses,
-        })
-        added += int(result.get("added", len(batch)))
-        print(f"[SHEETS] Đã đồng bộ lô {index + 1}/{len(batches)}: {len(batch)} văn bản.")
-
+        result=_post({"action":"save_results","new_docs":[],"source_status":source_status},timeout=90)
+        return int(result.get("added",0))
+    added=0
+    for index,batch in enumerate(batches):
+        statuses=source_status if index==len(batches)-1 else []
+        result=_post({"action":"save_results","new_docs":batch,"source_status":statuses},timeout=90)
+        added+=int(result.get("added",len(batch)))
+        print(f"[SHEETS] Đã đồng bộ lô {index+1}/{len(batches)}: {len(batch)} văn bản.")
     return added
