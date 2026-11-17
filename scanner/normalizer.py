@@ -100,3 +100,8 @@ def make_fingerprint(doc_number,title):
     normalized=re.sub(r"[^0-9a-zA-ZÀ-ỹ]+"," ",clean_title(title).casefold()).strip()
     raw=(number+"|"+normalized[:240]).encode("utf-8")
     return hashlib.sha256(raw).hexdigest()
+
+
+def has_document_date(title,published_date=None):
+    """True only when an issue date or a source publication date is available."""
+    return bool(extract_issue_date(clean_title(title)) or parse_date(published_date))
