@@ -59,6 +59,9 @@ def _article_text(html):
         node.decompose()
     noise = re.compile(r"sidebar|related|recommend|popular|most[-_ ]?view|footer|header|menu|breadcrumb|widget|banner|advert|comment|social|share|pagination|news[-_ ]?list|list[-_ ]?news", re.I)
     for node in list(soup.find_all(True)):
+        # Decomposing a parent can leave its former children in this snapshot.
+        if getattr(node, "attrs", None) is None:
+            continue
         marker = " ".join([str(node.get("id") or ""), " ".join(node.get("class") or [])])
         if noise.search(marker):
             node.decompose()
