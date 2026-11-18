@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "last_watchdog_at": null,
+  "scheduled_for": null,
+  "workflow_run_id": null,
+  "action": "not_started",
+  "reason": "Chờ lượt watchdog đầu tiên."
+}
