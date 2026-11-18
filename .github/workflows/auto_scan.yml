@@ -1,5 +1,7 @@
 name: Tram Tin Tuc - Auto Scanner
 
+# Scheduled every 30 minutes (UTC); GitHub may delay scheduled events under load.
+
 on:
   schedule:
     - cron: "7,37 * * * *"
@@ -46,13 +48,6 @@ jobs:
         run: |
           python -m compileall -q scanner quet_vb.py
           python -m unittest discover -s tests -v
-
-      # Import legacy dedupe keys once; subsequent scans read only GitHub state.
-      - name: One-time migration of existing Sheets dedupe memory
-        env:
-          SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
-          SHEETS_API_TOKEN: ${{ secrets.SHEETS_API_TOKEN }}
-        run: python scripts/bootstrap_sheets_memory.py
 
       - name: Run full-source scanner
         env:
