@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Trạm Tin Tức - quét toàn bộ nguồn, tối đa 5 nguồn đồng thời."""
+"""Trạm Tin Tức - quét toàn bộ hoặc nhóm nguồn ưu tiên, tối đa 5 nguồn đồng thời."""
 import concurrent.futures
 import json
 from pathlib import Path
