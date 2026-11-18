@@ -75,3 +75,12 @@ def filter_priority_sources(sources, priority_urls):
     present = {normalize(source.get("url")) for source in selected}
     missing = sorted(allowed - present)
     return selected, missing
+
+
+def filter_non_priority_sources(sources, priority_urls):
+    """Return every enabled source except explicitly configured priority URLs."""
+    def normalize(value):
+        return str(value or "").strip().rstrip("/").lower()
+
+    excluded = {normalize(url) for url in priority_urls if normalize(url)}
+    return [source for source in sources if normalize(source.get("url")) not in excluded]
