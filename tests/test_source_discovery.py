@@ -36,11 +36,11 @@ class SourceDiscoveryTests(unittest.TestCase):
             '<a href="/van-ban">Văn bản</a>',
             "https://example.gov.vn/", "Cổng", "Văn Bản TW"
         )
-        discovery.record_candidates(rows)
-        self.assertEqual(len(discovery.pending_candidates()), 1)
-        self.assertEqual(discovery.active_sources(), [])
+        discovery.record_candidates(rows, path=self.path)
+        self.assertEqual(len(discovery.pending_candidates(path=self.path)), 1)
+        self.assertEqual(discovery.active_sources(path=self.path), [])
         url = rows[0]["url"]
-        discovery.update_candidate(url, {"status": "active", "validated_document_count": 3})
+        discovery.update_candidate(url, {"status": "active", "validated_document_count": 3}, path=self.path)
         self.assertEqual(discovery.pending_candidates(), [])
         self.assertEqual(discovery.active_sources()[0]["url"], url)
 
