@@ -285,7 +285,7 @@ def _resolve_aggregator_links(session,items,config=None):
     resolved=[item for item in items if urlsplit(item.get("link","")).hostname not in
               {"news.google.com","news.googleusercontent.com"}]
     aggregator_items=[item for item in items if urlsplit(item.get("link","")).hostname in
-                      {"news.google.com","news.googleusercontent.com"}][:30]
+                      {"news.google.com","news.googleusercontent.com"}][:60]
     settings = dict(config or {})
     allowed_domains = tuple(str(x).lower().lstrip(".") for x in settings.get("allowed_final_domains", []))
     def resolve(item):

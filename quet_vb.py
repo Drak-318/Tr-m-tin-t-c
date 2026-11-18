@@ -64,17 +64,18 @@ def main():
     for _source, _result in results_by_index.values():
         discovered_candidates.extend(_result.get("discovered_candidates", []))
     discovered_added=record_candidates(discovered_candidates)
-    discovery_checked=0
     discovery_activated=0
-    for candidate in pending_candidates(limit=3):
-        discovery_checked+=1
+    candidates_to_check=pending_candidates(limit=10)
+    discovery_checked=len(candidates_to_check)
+
+    def validate_source_candidate(candidate):
         candidate_source={
             "name":candidate.get("name","Nguồn tự phát hiện"),
             "url":candidate["url"],
             "group":candidate.get("group","Văn Bản TW"),
         }
         candidate_config=config_for_source(candidate_source,config_data)
-        candidate_config.update({"max_pages":3,"max_items":120,"follow_pagination":True})
+        candidate_config.update({"max_pages":2,"max_items":80,"follow_pagination":True})
         validation=scan_source(candidate_source,candidate_config,None)
         recognized_items=[]
         for candidate_item in validation.get("items",[]):
@@ -82,24 +83,31 @@ def main():
             candidate_number=candidate_item.get("doc_number") or extract_doc_info(candidate_item.get("title",""))[1]
             if candidate_type and candidate_number and candidate_number!="Đang cập nhật":
                 recognized_items.append(candidate_item)
-        attempts=int(candidate.get("attempts",0))+1
-        if len(recognized_items)>=3:
-            update_candidate(candidate["url"],{
-                "status":"active","attempts":attempts,
-                "validated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                "validated_document_count":len(recognized_items),
-                "sample_titles":[x.get("title","") for x in recognized_items[:3]],
-                "last_error":"",
-            })
-            discovery_activated+=1
-        else:
-            reason=validation.get("error") or (
-                f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
-            )
-            update_candidate(candidate["url"],{
-                "attempts":attempts,"last_error":str(reason)[:350],
-                "last_validation_status":validation.get("status",""),
-            })
+        return candidate,validation,recognized_items
+
+    # Validate candidates concurrently, but never exceed the scanner's global
+    # five-worker limit. This drains the discovery queue faster without
+    # creating an unbounded burst of requests to public portals.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        for candidate,validation,recognized_items in pool.map(validate_source_candidate,candidates_to_check):
+            attempts=int(candidate.get("attempts",0))+1
+            if len(recognized_items)>=3:
+                update_candidate(candidate["url"],{
+                    "status":"active","attempts":attempts,
+                    "validated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                    "validated_document_count":len(recognized_items),
+                    "sample_titles":[x.get("title","") for x in recognized_items[:3]],
+                    "last_error":"",
+                })
+                discovery_activated+=1
+            else:
+                reason=validation.get("error") or (
+                    f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
+                )
+                update_candidate(candidate["url"],{
+                    "attempts":attempts,"last_error":str(reason)[:350],
+                    "last_validation_status":validation.get("status",""),
+                })
     if discovered_added or discovery_checked:
         print(f"[SOURCE-DISCOVERY] Phát hiện {discovered_added} link danh mục mới | "
               f"Kiểm tra {discovery_checked} | Kích hoạt {discovery_activated} nguồn. "

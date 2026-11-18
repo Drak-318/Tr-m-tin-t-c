@@ -86,9 +86,9 @@
         "https://news.google.com/rss/search?q=site%3Avimda.moh.gov.vn%2Fvan-ban-phap-quy%20(th%C3%B4ng%20t%C6%B0%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
       ]
     },
-    "https://news.google.com/rss/search?q=(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22)%20(site%3Achinhphu.vn%20OR%20site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Aquochoi.vn%20OR%20site%3Adangcongsan.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Asav.gov.vn)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi": {
+    "https://news.google.com/rss/search?q=site%3Agov.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
       "mode": "rss",
-      "max_items": 100,
+      "max_items": 60,
       "allowed_final_domains": [
         "chinhphu.vn",
         "moj.gov.vn",
@@ -97,12 +97,35 @@
         "moh.gov.vn",
         "mae.gov.vn",
         "moit.gov.vn",
-        "quochoi.vn",
-        "dangcongsan.vn",
+        "sbv.gov.vn",
+        "sav.gov.vn",
         "vbpl.vn",
         "phapluat.gov.vn",
-        "sbv.gov.vn",
-        "sav.gov.vn"
+        "ppd.gov.vn",
+        "baohiemxahoi.gov.vn",
+        "thanhtra.gov.vn",
+        "mps.gov.vn",
+        "moc.gov.vn",
+        "bvhttdl.gov.vn",
+        "moha.gov.vn",
+        "mfa.gov.vn",
+        "mod.gov.vn",
+        "mic.gov.vn",
+        "baochinhphu.vn"
+      ]
+    },
+    "https://news.google.com/rss/search?q=site%3Aquochoi.vn%20(%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Ph%C3%A1p%20l%E1%BB%87nh%22%20OR%20%22V%C4%83n%20b%E1%BA%A3n%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 60,
+      "allowed_final_domains": [
+        "quochoi.vn"
+      ]
+    },
+    "https://news.google.com/rss/search?q=site%3Adangcongsan.vn%20(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22Quy%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22%20OR%20%22H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 60,
+      "allowed_final_domains": [
+        "dangcongsan.vn"
       ]
     }
   }
