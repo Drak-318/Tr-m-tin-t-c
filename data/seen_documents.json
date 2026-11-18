@@ -2990,6 +2990,15 @@
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
       "title": "V/v triển khai thực hiện Nghị định số 372/2026/NĐ-CP của Chính phủ quy định về hoạt động định danh, xác thực, truy xuất nguồn gốc sản phẩm, hàng hóa"
     },
+    "number:3982/UBND-KT|issuer:UBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành": {
+      "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
+      "category": "Công văn",
+      "doc_number": "3982/UBND-KT",
+      "first_seen": "2026-11-18T14:16:39+00:00",
+      "last_seen": "2026-11-18T14:16:39+00:00",
+      "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12145839",
+      "title": "V/v triển khai thực hiện Thông tư số 46/2026/TT-BNNMT quy định Kiến trúc dữ liệu, Khung quản trị, quản lý dữ liệu và Từ điển dữ liệu lĩnh vực giảm nghèo"
+    },
     "number:399/2026/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
       "category": "Văn bản quy phạm pháp luật",
@@ -6624,6 +6633,7 @@
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123738": "number:2184/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124082": "number:2189/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380": "number:394/2026/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12145839": "number:3982/UBND-KT|issuer:UBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành",
     "https://www.quangninh.gov.vn/so/sogiaoducdaotao/Trang/Catalog.aspx?Cat=76": "legacy_sheet_url:https://www.quangninh.gov.vn/so/sogiaoducdaotao/Trang/Catalog.aspx?Cat=76",
     "https://www.quangninh.gov.vn/so/sogiaoducdaotao/Trang/Catalog.aspx?Cat=90": "legacy_sheet_url:https://www.quangninh.gov.vn/so/sogiaoducdaotao/Trang/Catalog.aspx?Cat=90",
     "https://www.sav.gov.vn/bai-viet/quoc-hoi-giao-kiem-toan-nha-nuoc-nghien-cuu-de-xuat-sua-doi-luat-kiem-toan-nha-nuoc": "legacy_sheet_url:https://www.sav.gov.vn/bai-viet/quoc-hoi-giao-kiem-toan-nha-nuoc-nghien-cuu-de-xuat-sua-doi-luat-kiem-toan-nha-nuoc",
