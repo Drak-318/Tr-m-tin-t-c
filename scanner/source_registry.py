@@ -42,4 +42,21 @@ def load_sources_from_csv(path=REGISTRY_PATH):
                 "row": None,
                 "registry_line": line_no,
             })
+    # Sources discovered in earlier scans are activated only after live validation.
+    from .source_discovery import active_sources
+    known = {url.rstrip("/").lower() for url in (row["url"] for row in sources)}
+    for discovered in active_sources():
+        url = (discovered.get("url") or "").strip()
+        parsed = urlparse(url)
+        canonical = url.rstrip("/").lower()
+        if parsed.scheme in {"http", "https"} and parsed.netloc and canonical not in known:
+            sources.append({
+                "name": discovered.get("name") or f"Nguồn tự phát hiện: {parsed.netloc}",
+                "url": url,
+                "group": discovered.get("group") or "Văn Bản TW",
+                "row": None,
+                "registry_line": None,
+                "discovered": True,
+            })
+            known.add(canonical)
     return sources
