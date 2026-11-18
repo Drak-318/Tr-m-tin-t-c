@@ -134,8 +134,8 @@ def main():
             else:
                 doc_type="Văn bản khác"
         identity=document_identity(number,title,agency,review_url)
-        if is_seen(state,identity,review_url):
-            continue
+        # Do not use the old imported seen-memory to suppress backfill here:
+        # the Sheets API will idempotently skip rows already in the final table.
         keep,priority=classify_and_score(title,agency,doc_type,number,"Văn Bản TW",row.get("verified_date") or None)
         if not keep:
             continue
