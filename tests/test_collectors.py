@@ -4,6 +4,34 @@ from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, p
 from bs4 import BeautifulSoup
 
 class CollectorTests(unittest.TestCase):
+
+    def test_rss_feed_supplements_partial_primary_listing(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        from scanner.collectors import scan_source
+
+        feed = b"""<rss><channel>
+          <item><title>Thong tu 12/2026/TT-BTC ve phi</title>
+            <link>https://example.gov.vn/vb/12</link>
+            <pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate></item>
+        </channel></rss>"""
+        response = SimpleNamespace(content=feed, url="https://news.google.com/rss", status_code=200)
+        fake_session = SimpleNamespace(close=lambda: None)
+        primary = ([{"title":"Nghi dinh 1/2026/ND-CP","link":"https://example.gov.vn/vb/1","published_date":None}], 1, 200)
+        with patch("scanner.collectors.make_session", return_value=fake_session), \
+             patch("scanner.collectors._collect_primary", return_value=primary), \
+             patch("scanner.collectors.fetch_response", return_value=response):
+            result = scan_source(
+                {"name":"Example","url":"https://example.gov.vn/list"},
+                {"max_items":100,"max_pages":3,"fallback_feed_urls":["https://news.google.com/rss"]}
+            )
+        self.assertEqual(len(result["items"]), 2)
+        self.assertTrue(result["feed_supplement_used"])
+        self.assertFalse(result["fallback_used"])
+        supplement = next(item for item in result["items"] if item["link"].endswith("/12"))
+        self.assertIsNone(supplement["published_date"])
+        self.assertEqual(supplement["date_source"], "fallback_aggregator")
+
     def test_parse_rss_feed(self):
         xml=b"""<rss><channel><item><title>Thong tu 12/2026/TT-BTC</title><link>https://example.gov.vn/vb/12</link><pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
         items=parse_feed(xml)
