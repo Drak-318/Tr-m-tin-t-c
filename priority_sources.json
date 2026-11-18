@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "description": "Nguồn ưu tiên được quét nhanh mỗi 5 phút; danh sách chính vẫn do danh_sach_nguon.csv quản lý.",
+  "urls": [
+    "https://luatvietnam.vn/van-ban-moi.html",
+    "https://chinhphu.vn/he-thong-van-ban",
+    "https://baochinhphu.vn/chi-dao-dieu-hanh.htm",
+    "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi",
+    "https://news.google.com/rss/search?q=site%3Aluatvietnam.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi",
+    "https://news.google.com/rss/search?q=site%3Achinhphu.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20c%E1%BB%A7a%20Th%E1%BB%A7%20t%C6%B0%E1%BB%9Bng%22)%20when%3A10d&hl=vi&gl=VN&ceid=VN:vi",
+    "https://phapluat.gov.vn/danh-sach-van-ban-qppl",
+    "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh",
+    "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat",
+    "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat",
+    "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl",
+    "https://vbpl.vn/",
+    "https://phapluat.gov.vn/he-thong-van-ban-phap-luat"
+  ]
+}
