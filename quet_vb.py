@@ -113,6 +113,7 @@ def main():
     print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
+    existing_review_urls=set(load_review_queue())
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
     recognized_by_source={}
     for i in range(len(sources)):
@@ -129,17 +130,30 @@ def main():
             number=item.get("doc_number") or number
             if not doc_type: continue
             recognized+=1; totals["recognized"]+=1
-            # Apply explicit document-number year rules before putting undated old instruments in review.
-            if is_too_old(title,number,MAX_AGE_DAYS,pub):
-                totals["old"]+=1; continue
+            category=classify_document(title,name,doc_type,number,link)
             if not has_document_date(title,pub):
+                # Không loại văn bản chỉ vì thiếu ngày. Đưa vào bảng kết quả
+                # ngay ở lượt phát hiện đầu tiên và đồng thời lưu hàng đợi
+                # GitHub để hậu kiểm/xác minh ngày ở các lượt sau.
                 totals["unknown_date"]+=1
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
                                     "published_date":"","source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
-                                    "reason":"Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản."})
+                                    "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm."})
+                if link not in existing_review_urls and not is_seen(state,document_identity(number,title,name,link),link):
+                    keep,priority=classify_and_score(title,name,doc_type,number,group,None)
+                    if keep:
+                        identity=document_identity(number,title,name,link)
+                        new_docs.append({"priority":priority,"doc_type":doc_type,"agency":name,"title":title,
+                                         "doc_number":number,"link":link,"fingerprint":make_fingerprint(number,title),
+                                         "category":category,"identity":identity,"published_date":"",
+                                         "document_date":"","date_basis":"unknown",
+                                         "date_status":"Chưa xác minh ngày - giữ lại hậu kiểm"})
+                        totals["kept"]+=1
                 continue
-            category=classify_document(title,name,doc_type,number,link)
+            # Có ngày thì mới áp dụng bộ lọc 60 ngày; ưu tiên ngày ban hành.
+            if is_too_old(title,number,MAX_AGE_DAYS,pub):
+                totals["old"]+=1; continue
             keep,priority=classify_and_score(title,name,doc_type,number,group,pub)
             if not keep: continue
             totals["kept"]+=1
