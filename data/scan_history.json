@@ -335,5 +335,25 @@
     "review_to_sheets": 5,
     "sources": 89,
     "unknown_date": 620
+  },
+  {
+    "collected": 3894,
+    "duplicates": 145,
+    "duration_seconds": 293.04,
+    "failed_sources": 22,
+    "fallback_sources": 3,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-18 01:03:31 UTC",
+    "new_to_sheets": 12,
+    "older_than_60_days": 93,
+    "pending_sheets_exports": 0,
+    "recognized": 915,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 154,
+    "relationship_matched_in_scan_index": 44,
+    "review_queue_total": 881,
+    "review_to_sheets": 11,
+    "sources": 89,
+    "unknown_date": 634
   }
 ]
