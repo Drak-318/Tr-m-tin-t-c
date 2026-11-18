@@ -148,6 +148,15 @@ def extract_doc_info(title):
         }
         if code in suffix_types:
             return suffix_types[code],number
+    # Some government portals list only an administrative dispatch number,
+    # e.g. 11560/VPCP-CN, followed by a separate date. Recognize common issuer
+    # prefixes as official letters instead of accidentally reading the date.
+    dispatch = re.search(
+        r"(?<![0-9])([0-9]{1,7}/(?:VPCP|BTC|BTP|BXD|BCT|BNV|BGDĐT|BYT|BCA|BQP|BHXH|TCT|TCHQ|TTCP|TAND|VKSND)(?:-[A-ZĐƯƠĂÂÊÔ0-9]+)+)(?![A-ZĐƯƠĂÂÊÔ0-9])",
+        title, re.I
+    )
+    if dispatch:
+        return "Công văn", dispatch.group(1).upper().rstrip(".,;:)")
     return None,None
 
 def parse_date(value):
@@ -239,23 +248,30 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
 
 def document_identity(doc_number,title,agency="",link=""):
     n=str(doc_number or "").strip().upper()
-    if n and n!="ĐANG CẬP NHẬT":
+    # A date-like fragment such as "11/2026" is not a legal-document number.
+    # Without an issuing-code suffix, fall back to the canonical URL rather
+    # than risking a false duplicate across unrelated documents.
+    if n and n!="ĐANG CẬP NHẬT" and re.search(r"/[A-ZĐƯƠĂÂÊÔ]{1,}", n):
         parts=n.split("/")
         issuer=parts[-1] if len(parts)>1 else ""
         issuer=re.sub(r"\d{4}","",issuer).strip("-")
-        local_authority=any(x in issuer for x in ("UBND","HĐND","SNV","STC","SXD","SGD","SYT","CAT","CA"))
+        agency_clean=clean_title(agency).casefold()
+        local_authority=(
+            any(x in issuer for x in ("UBND","HĐND","SNV","STC","SXD","SGD","SYT","CAT","CA"))
+            or bool(re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\\s|công an )",agency_clean))
+        )
         locality=""
         if local_authority:
             context=f"{title} {agency}"
             match=re.search(r"(?:tỉnh|thành phố|TP[.]?|quận|huyện|thị xã)[ ]+([^,;()]+)",context,re.I)
             if match:
                 locality=re.sub("[ ]+"," ",match.group(1)).strip().casefold()
-            # When locality is absent, do not collapse same-number local acts
-            # from unrelated issuers/portals; retain them for manual verification.
             if not locality:
-                host=urlsplit(link).hostname or clean_title(agency).casefold()[:90] or "unknown"
+                host=urlsplit(link).hostname or agency_clean[:90] or "unknown"
                 locality="unresolved-source:"+host.casefold()
-        return f"number:{n}|issuer:{issuer or clean_title(title).casefold()[:90]}|locality:{locality}"
+        if not issuer:
+            issuer=agency_clean[:90] or clean_title(title).casefold()[:90]
+        return f"number:{n}|issuer:{issuer}|locality:{locality}"
     return f"url:{canonicalize_url(link)}"
 
 
