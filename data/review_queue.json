@@ -1671,17 +1671,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Cac-so-ban-nganh/cong-bo-va-trien-khai-thuc-hien-quyet-dinh-so-3858-qd-ubnd-ve-ban-hanh-danh-muc-song-suoi-kenh-rach-noi-tinh-tren-dia-ban-thanh-pho-dong-nai-64911.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "3858/QĐ-UBND",
       "first_seen": "2026-11-18T04:12:43+00:00",
       "identity": "number:3858/QĐ-UBND|issuer:QĐ-UBND|locality:trên địa bàn thành phố đồng nai ubnd tỉnh đồng nai - chỉ đạo điều hành",
+      "last_checked": "2026-11-18T16:23:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Cac-so-ban-nganh/cong-bo-va-trien-khai-thuc-hien-quyet-dinh-so-3858-qd-ubnd-ve-ban-hanh-danh-muc-song-suoi-kenh-rach-noi-tinh-tren-dia-ban-thanh-pho-dong-nai-64911.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Công bố và triển khai thực hiện Quyết định số 3858/QĐ-UBND về ban hành Danh mục sông, suối, kênh, rạch nội tỉnh trên địa bàn thành phố Đồng Nai"
+      "status": "not_found",
+      "title": "Công bố và triển khai thực hiện Quyết định số 3858/QĐ-UBND về ban hành Danh mục sông, suối, kênh, rạch nội tỉnh trên địa bàn thành phố Đồng Nai",
+      "verification_status": "not_found"
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/ve-viec-cho-thue-nha-dat-do-trung-tam-dich-vu-tong-hop-xa-phuoc-son-quan-ly-khai-thac-doi-voi-03-co-so-nha-dat-doi-du-cac-diem-truong-duoc-chuyen-giao-theo-quyet-dinh-so-3339-qd-ubnd-lan-2-64887.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -1876,17 +1880,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cho-thue-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-cac-hang-muc-cong-trinh-cong-cong-va-the-duc-the-thao-thuoc-du-an-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64913.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-18T04:12:43+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cho-thue-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-cac-hang-muc-cong-trinh-cong-cong-va-the-duc-the-thao-thuoc-du-an-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64913.html",
+      "last_checked": "2026-11-18T16:23:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cho-thue-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-cac-hang-muc-cong-trinh-cong-cong-va-the-duc-the-thao-thuoc-du-an-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64913.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về việc cho thuê đất để sử dụng vào mục đích đầu tư xây dựng các hạng mục công trình công cộng và thể dục thể thao thuộc dự án Khu dân cư tại phường Nhơn Trạch, thành phố Đồng Nai"
+      "status": "not_found",
+      "title": "Quyết định về việc cho thuê đất để sử dụng vào mục đích đầu tư xây dựng các hạng mục công trình công cộng và thể dục thể thao thuộc dự án Khu dân cư tại phường Nhơn Trạch, thành phố Đồng Nai",
+      "verification_status": "not_found"
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-giao-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64912.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -4551,20 +4559,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8732-ct-doanh-nghiep-nop-thue-toi-thieu-toan-cau-theo-ma-tieu-muc-1058-186-115836-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 16/11/2026",
       "doc_number": "8732/CT",
       "exported_at": "2026-11-18T02:01:42+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T02:01:34+00:00",
       "identity": "number:8732/CT|issuer:CT|locality:",
-      "last_checked": "2026-11-18T02:01:42+00:00",
+      "last_checked": "2026-11-18T16:23:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T02:12:16+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8732-ct-doanh-nghiep-nop-thue-toi-thieu-toan-cau-theo-ma-tieu-muc-1058-186-115836-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Công văn 8732/CT: Doanh nghiệp nộp thuế tối thiểu toàn cầu theo mã tiểu mục 1058"
+      "status": "verified_included",
+      "title": "Công văn 8732/CT: Doanh nghiệp nộp thuế tối thiểu toàn cầu theo mã tiểu mục 1058",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-16"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-412-2026-nd-cp-vut-rac-thai-sinh-hoat-khong-dung-noi-quy-dinh-tai-chung-cu-bi-phat-den-1-trieu-dong-186-115861-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -6162,20 +6174,24 @@
     },
     "https://mae.gov.vn/van-ban-phap-luat-926.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 16/11/2026",
       "doc_number": "118/2014/NĐ-CP",
       "exported_at": "2026-11-18T01:14:27+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:14:10+00:00",
       "identity": "number:118/2014/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-18T01:14:27+00:00",
+      "last_checked": "2026-11-18T16:23:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://mae.gov.vn/van-ban-phap-luat-926.htm",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "113/2026/VBHN-TT-BNNMT"
+      "status": "manual_review",
+      "title": "113/2026/VBHN-TT-BNNMT",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-16"
     },
     "https://mae.gov.vn/xay-dung-thi-hanh-phap-luat/-22979.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
@@ -14763,19 +14779,22 @@
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0NKY3gwcVBtN2V5bEdkamRZcjRVTldoTkNKeS05X2FVWmh5M3c0N1dsSzRIanRma2JwWXZzZUw2WUlQSXdSZWJTYjBWRU0wczczV3p5MUlqdVFuODA5c0dHb1R4c0YwV3ZqV0dBLUwxcjVmb2FBV2tmemRpMURnUFI3bWxLdHBJWkJ1OE9nUEJWNXBDRXVxZkVfV2poX0dqTUdHR0xlMTh6eEEyemlyMGJpaEhlZnBmY0JZSzFaaFJQcVVqZ25SN3RKNDA?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "150/2026/QĐ-UBND",
       "exported_at": "2026-11-18T01:14:27+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:14:10+00:00",
-      "last_checked": "2026-11-18T01:14:27+00:00",
+      "last_checked": "2026-11-18T16:23:04+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0NKY3gwcVBtN2V5bEdkamRZcjRVTldoTkNKeS05X2FVWmh5M3c0N1dsSzRIanRma2JwWXZzZUw2WUlQSXdSZWJTYjBWRU0wczczV3p5MUlqdVFuODA5c0dHb1R4c0YwV3ZqV0dBLUwxcjVmb2FBV2tmemRpMURnUFI3bWxLdHBJWkJ1OE9nUEJWNXBDRXVxZkVfV2poX0dqTUdHR0xlMTh6eEEyemlyMGJpaEhlZnBmY0JZSzFaaFJQcVVqZ25SN3RKNDA?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 150/2026/QĐ-UBND xét chọn cộng tác viên dân số Gia Lai - Thư Viện Pháp Luật"
+      "status": "fetch_error",
+      "title": "Quyết định 150/2026/QĐ-UBND xét chọn cộng tác viên dân số Gia Lai - Thư Viện Pháp Luật",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -17829,6 +17848,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T16:08:16+00:00",
+  "updated_at": "2026-11-18T16:23:04+00:00",
   "version": 1
 }
