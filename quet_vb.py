@@ -199,7 +199,8 @@ def main():
         cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
         relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
         relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
-        print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")    else:
+        print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")
+    else:
         relation_path=Path("data/document_relationships.json")
         try:
             relation_rows=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
