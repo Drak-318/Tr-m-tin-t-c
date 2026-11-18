@@ -145,6 +145,42 @@
       "fallback_feed_urls": [
         "https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
       ]
+    },
+    "https://vanban.chinhphu.vn/he-thong-van-ban?classid=1&mode=1&orggroupid=2": {
+      "max_pages": 3,
+      "max_items": 180,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "allowed_final_domains": [
+        "vanban.chinhphu.vn"
+      ],
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avanban.chinhphu.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
+    },
+    "https://mst.gov.vn/van-ban-phap-luat.htm": {
+      "max_pages": 3,
+      "max_items": 180,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "allowed_final_domains": [
+        "mst.gov.vn"
+      ],
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Amst.gov.vn%2Fvan-ban-phap-luat%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
+    },
+    "https://vbpq.mof.gov.vn": {
+      "max_pages": 3,
+      "max_items": 180,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "allowed_final_domains": [
+        "vbpq.mof.gov.vn"
+      ],
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avbpq.mof.gov.vn%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     }
   }
 }
