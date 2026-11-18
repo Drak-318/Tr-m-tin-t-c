@@ -1,8 +1,8 @@
 {
   "defaults": {
     "mode": "auto",
-    "max_pages": 3,
-    "max_items": 200,
+    "max_pages": 5,
+    "max_items": 250,
     "timeout_connect": 8,
     "timeout_read": 18,
     "follow_pagination": true
@@ -69,8 +69,8 @@
       "link_selector": "td:nth-child(2) a[href]",
       "document_number_selector": "td:nth-child(1)",
       "issue_date_selector": "td:nth-child(3)",
-      "max_pages": 3,
-      "max_items": 200
+      "max_pages": 6,
+      "max_items": 250
     }
   }
 }
