@@ -1607,18 +1607,18 @@
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
     "matched_documents": [
       {
-        "agency": "Văn bản Đảng - vbtc.dcs.vn",
-        "doc_number": "224-QĐ/TW",
-        "doc_type": "Quy định",
-        "link": "https://vbtc.dcs.vn/page/Project/LawLibrary/Home/LegalDocument/detail/6ad8d9514f241526cd0e6ce2?categoryId=680c7fe9814c45ee260a58e2&folderId=680c7fe9814c45ee260a58e2",
-        "title": "Quy định số 224-QĐ/TW, ngày 14/10/2026 của Ban Chấp hành Trung ương về đảng viên tham gia hoạt động đầu tư kinh doanh"
-      },
-      {
         "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
         "doc_number": "224-QĐ/TW",
         "doc_type": "Quy định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122684",
         "title": "Kế hoạch triển khai thực hiện Chương trình hành động số 47-CTr/TU ngày 30/10/2026 của Ban Chấp hành Đảng bộ tỉnh về thực hiện Quy định số 224-QĐ/TW, ngày 14/10/2026 của Ban Chấp hành Trung ương Đảng về đảng viên tham gia hoạt động đầu tư kinh doanh"
+      },
+      {
+        "agency": "Văn bản Đảng - vbtc.dcs.vn",
+        "doc_number": "224-QĐ/TW",
+        "doc_type": "Quy định",
+        "link": "https://vbtc.dcs.vn/page/Project/LawLibrary/Home/LegalDocument/detail/6ad8d9514f241526cd0e6ce2?categoryId=680c7fe9814c45ee260a58e2&folderId=680c7fe9814c45ee260a58e2",
+        "title": "Quy định số 224-QĐ/TW, ngày 14/10/2026 của Ban Chấp hành Trung ương về đảng viên tham gia hoạt động đầu tư kinh doanh"
       }
     ],
     "referenced_doc_number": "224-QĐ/TW",
@@ -2647,6 +2647,62 @@
     "source_doc_number": "5651/QĐ-UBND",
     "source_doc_title": "Quyết định số 5651/QĐ-UBND ngày 28/8/2026 Về việc bãi bỏ Quyết định số 11/2024/QĐ-UBND ngày 10/6/2024 của Ủy ban nhân dân tỉnh Bình Dương ban hành Quy định phân cấp, phối hợp quản lý nhà nước về hành nghề Y, Dược tư nhân trên địa bàn tỉnh Bình Dương",
     "source_url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/quyet-dinh-so-5651qd-ubnd-ngay-2882026-ve-viec-bai-bo-quyet-dinh-so-112024qd-ub-c4639-76255.aspx",
+    "verification_status": "candidate_needs_verification"
+  },
+  {
+    "evidence_excerpt": "Quyết định số 5652/QĐ-UBND ngày 28/8/2026 Về việc bãi bỏ Quyết định số 22/2019/QĐ-UBND ngày 16/8/2009 của Ủy ban nhân dân tỉnh Bà Rịa – Vũng Tàu quy định về đối tượng, mức hỗ trợ từ Quỷ khám, chữa",
+    "evidence_url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/quyet-dinh-so-5652qd-ubnd-ngay-2882026-ve-viec-bai-bo-quyet-dinh-so-222019qd-ub-c4639-76260.aspx",
+    "matched_documents": [],
+    "referenced_doc_number": "22/2019/QĐ-UBND",
+    "referenced_doc_type": "Quyết Định",
+    "relation_type": "dan_chieu",
+    "resolution_status": "not_found_in_scan_index",
+    "source_agency": "Medinet TP.HCM",
+    "source_doc_number": "5652/QĐ-UBND",
+    "source_doc_title": "Quyết định số 5652/QĐ-UBND ngày 28/8/2026 Về việc bãi bỏ Quyết định số 22/2019/QĐ-UBND ngày 16/8/2009 của Ủy ban nhân dân tỉnh Bà Rịa – Vũng Tàu quy định về đối tượng, mức hỗ trợ từ Quỷ khám, chữa bệnh cho người nghèo trên địa bàn tỉnh Bà Rịa – Vũng Tàu (trước sắp xếp)",
+    "source_url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/quyet-dinh-so-5652qd-ubnd-ngay-2882026-ve-viec-bai-bo-quyet-dinh-so-222019qd-ub-c4639-76260.aspx",
+    "verification_status": "candidate_needs_verification"
+  },
+  {
+    "evidence_excerpt": "Bãi bỏ Nghị quyết số 127/2016/NQ-HĐND (TP.HCM cũ) và Nghị quyết số 48/2017/NQ-HĐND (Bà Rịa - Vũng Tàu cũ) về mức giá và chính sách hỗ trợ điều trị Methadone để chuẩn bị cho việc áp dụng các qu",
+    "evidence_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-1272016nq-hdnd-tphcm-cu-va-nghi-quyet-so-482017nq-hdnd-ba-c1291-74992.aspx",
+    "matched_documents": [],
+    "referenced_doc_number": "48/2017/NQ-HĐND",
+    "referenced_doc_type": "Nghị Quyết",
+    "relation_type": "dan_chieu",
+    "resolution_status": "not_found_in_scan_index",
+    "source_agency": "Medinet TP.HCM",
+    "source_doc_number": "127/2016/NQ-HĐND",
+    "source_doc_title": "Bãi bỏ Nghị quyết số 127/2016/NQ-HĐND (TP.HCM cũ) và Nghị quyết số 48/2017/NQ-HĐND (Bà Rịa - Vũng Tàu cũ) về mức giá và chính sách hỗ trợ điều trị Methadone để chuẩn bị cho việc áp dụng các quy định mới đồng bộ trên toàn Thành phố sau sáp nhập.",
+    "source_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-1272016nq-hdnd-tphcm-cu-va-nghi-quyet-so-482017nq-hdnd-ba-c1291-74992.aspx",
+    "verification_status": "candidate_needs_verification"
+  },
+  {
+    "evidence_excerpt": "Bãi bỏ Nghị quyết số 25/2014/NQ-HĐND (về thu hút nhân lực y tế dự phòng) và Nghị quyết số 64/2006/NQ-HĐND (về phụ cấp trạm y tế) của HĐND TPHCM trước sáp nhập This question is for testing whether you are a human vis",
+    "evidence_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-252014nq-hdnd-ve-thu-hut-nhan-luc-y-te-du-phong-va-nghi-qu-c1291-74990.aspx",
+    "matched_documents": [],
+    "referenced_doc_number": "64/2006/NQ-HĐND",
+    "referenced_doc_type": "Nghị Quyết",
+    "relation_type": "dan_chieu",
+    "resolution_status": "not_found_in_scan_index",
+    "source_agency": "Medinet TP.HCM",
+    "source_doc_number": "25/2014/NQ-HĐND",
+    "source_doc_title": "Bãi bỏ Nghị quyết số 25/2014/NQ-HĐND (về thu hút nhân lực y tế dự phòng) và Nghị quyết số 64/2006/NQ-HĐND (về phụ cấp trạm y tế) của HĐND TPHCM trước sáp nhập",
+    "source_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-252014nq-hdnd-ve-thu-hut-nhan-luc-y-te-du-phong-va-nghi-qu-c1291-74990.aspx",
+    "verification_status": "candidate_needs_verification"
+  },
+  {
+    "evidence_excerpt": "Bãi bỏ Nghị quyết số 39/2010/NQ-HĐND (hỗ trợ Ban Bảo vệ chăm sóc sức khỏe cán bộ) và Nghị quyết số 23/2023/NQ-HĐND (hỗ trợ nhân viên ngành y tế) của tỉnh Bình Dương This question is for testing whether you are a human visito",
+    "evidence_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-392010nq-hdnd-ho-tro-ban-bao-ve-cham-soc-suc-khoe-can-bo-v-c1291-74991.aspx",
+    "matched_documents": [],
+    "referenced_doc_number": "23/2023/NQ-HĐND",
+    "referenced_doc_type": "Nghị Quyết",
+    "relation_type": "dan_chieu",
+    "resolution_status": "not_found_in_scan_index",
+    "source_agency": "Medinet TP.HCM",
+    "source_doc_number": "39/2010/NQ-HĐND",
+    "source_doc_title": "Bãi bỏ Nghị quyết số 39/2010/NQ-HĐND (hỗ trợ Ban Bảo vệ chăm sóc sức khỏe cán bộ) và Nghị quyết số 23/2023/NQ-HĐND (hỗ trợ nhân viên ngành y tế) của tỉnh Bình Dương",
+    "source_url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-392010nq-hdnd-ho-tro-ban-bao-ve-cham-soc-suc-khoe-can-bo-v-c1291-74991.aspx",
     "verification_status": "candidate_needs_verification"
   }
 ]
