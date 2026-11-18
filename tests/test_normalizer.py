@@ -167,6 +167,22 @@ class NormalizerTests(unittest.TestCase):
         self.assertTrue(health)
         self.assertTrue(education)
 
+
+    def test_central_instrument_found_on_local_portal_is_kept(self):
+        keep, score = classify_and_score(
+            "Nghị định 23/2026/NĐ-CP quy định về chính sách thuế",
+            "Đoàn ĐBQH và HĐND tỉnh Ninh Bình", "Nghị định", "23/2026/NĐ-CP", "Địa phương"
+        )
+        self.assertTrue(keep)
+        self.assertNotEqual(score, 30)
+
+    def test_local_individual_land_certificate_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định cấp giấy chứng nhận quyền sử dụng đất cho ông Nguyễn Văn A",
+            "UBND tỉnh An Giang", "Quyết định", "", "Địa phương"
+        )
+        self.assertFalse(keep)
+
     def test_fingerprint_is_stable(self):
         self.assertEqual(make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"),make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"))
 
