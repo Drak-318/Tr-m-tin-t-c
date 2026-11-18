@@ -12264,18 +12264,21 @@
     },
     "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPaGZ2MFlmUXF1ZzBSQ3YtRFkzZUxwQ1YwZ1BrVklVWHk4YmEyY2dkSTJ6WkplaFpfaTlSb3BLSUtvVWszdm5BZTR6RHE4S00tYVgtYWZLanR4SFNtbHlzVEhTWWRzUUF3Qm50bjhXZEdqNXFCb2FzelhnSzdPd2xsajNfb18wZkRLMFBQZzdsR1JuRm02dmJZZ1pfTzVfZFgtcmd2QmIzSXB2d1FtTkZ4X0tRd1N5SHNtLWNkUXVUVF9FSDZyeGRtWUxjN2xJQTlhWnJGNjRCQU5pUWVEWEdxVXdtX25CejFBSVFXODNXdGZPTUFKV3MtOEdFYWNnZEFIenNhbmFvTlk?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T14:07:59+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPaGZ2MFlmUXF1ZzBSQ3YtRFkzZUxwQ1YwZ1BrVklVWHk4YmEyY2dkSTJ6WkplaFpfaTlSb3BLSUtvVWszdm5BZTR6RHE4S00tYVgtYWZLanR4SFNtbHlzVEhTWWRzUUF3Qm50bjhXZEdqNXFCb2FzelhnSzdPd2xsajNfb18wZkRLMFBQZzdsR1JuRm02dmJZZ1pfTzVfZFgtcmd2QmIzSXB2d1FtTkZ4X0tRd1N5SHNtLWNkUXVUVF9FSDZyeGRtWUxjN2xJQTlhWnJGNjRCQU5pUWVEWEdxVXdtX25CejFBSVFXODNXdGZPTUFKV3MtOEdFYWNnZEFIenNhbmFvTlk?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông tư 95 2026 BGDĐT: Trường đại học không được thu thêm lệ phí xét tuyển với thí sinh đã nộp trên hệ thống chung - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Thông tư 95 2026 BGDĐT: Trường đại học không được thu thêm lệ phí xét tuyển với thí sinh đã nộp trên hệ thống chung - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYkhJX3F2OFFCYmZubDU4UUhzZzY0bWM1LWpWWlBMdExsaWZBN0MwcUNTME55bHdZTHFvajJxRXZRTjFvVmJPdFhtclpkVFdCVFhZTGlpeUFBb2o4bVZBLVotN05PREg1eXNwXzJWTXo0MnhKcWhZbDJTVW9QWmpoNl9aaGdBZ3pfTVE?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -12519,18 +12522,21 @@
     },
     "https://news.google.com/rss/articles/CBMimgFBVV95cUxQS25hRTM3b000cDY5VThGek9wcXhIaWNocVo3ZEtjaFh2MGlLSmhpVm4yVFg3ZFBYbmdEemxCYjFRakdwWTIyYUItcGl4MkFseEUxZFg1NzNvOV9CR3BWYnFQLWUtUlg5MmxpeEdPS2VLVld5Y2pZOUpLOGQtVEtnUDRZX09NX0EyaEdubTlIalk1eGh0MjJDbVB3?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "05/2026/TT-NHNN",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T14:07:59+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQS25hRTM3b000cDY5VThGek9wcXhIaWNocVo3ZEtjaFh2MGlLSmhpVm4yVFg3ZFBYbmdEemxCYjFRakdwWTIyYUItcGl4MkFseEUxZFg1NzNvOV9CR3BWYnFQLWUtUlg5MmxpeEdPS2VLVld5Y2pZOUpLOGQtVEtnUDRZX09NX0EyaEdubTlIalk1eGh0MjJDbVB3?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Hạn mức chi trả bảo hiểm tiền mới nhất theo Thông tư 05/2026/TT-NHNN? - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Hạn mức chi trả bảo hiểm tiền mới nhất theo Thông tư 05/2026/TT-NHNN? - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFNlQWZEOVNWSXZDUW5GS1hHWlNsMnp3YUNFNUFIbFRKYTdxdjRmbzJQV3pTZWJXbmM0RURuSldrb0pkQmJZSkVfTnFxU2xrU0ZyUnFxaGxzZkpoT1RlVUpMelhFN1JzQVVSZzVSeUhJeG8tZE84eExCbkpHSUVVZlpvcUJaTHI1alBBRkVlU0FKWnNheGd4SFF4Y3B2UQ?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
@@ -12752,18 +12758,21 @@
     },
     "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1Y4TkdqdEdMcEl6S2VoLVNkdThoSUp1LXp5X1NDSHE0NDh2MUVkOHlmczRTTGgySlNnNTcxVEVhUDlvZThnMWg3b0sxZFktbVZhLVBXT3FpVUo5T3ZGMzdkdU9ZalNtMW9iOFI4TXZkMk9mS2RZUENTMzVYZk81R2ZNeUdmcC1VcXU0Smo1aWx4WkNWV3FKd1hMVjh6UFBoWEtiOERPalphSXVwb1ZMckhR?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:11+00:00",
+      "last_checked": "2026-11-18T14:07:59+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1Y4TkdqdEdMcEl6S2VoLVNkdThoSUp1LXp5X1NDSHE0NDh2MUVkOHlmczRTTGgySlNnNTcxVEVhUDlvZThnMWg3b0sxZFktbVZhLVBXT3FpVUo5T3ZGMzdkdU9ZalNtMW9iOFI4TXZkMk9mS2RZUENTMzVYZk81R2ZNeUdmcC1VcXU0Smo1aWx4WkNWV3FKd1hMVjh6UFBoWEtiOERPalphSXVwb1ZMckhR?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "[Đang cập nhật] Danh sách Nghị định ban hành năm 2026 - LuatVietnam"
+      "status": "fetch_error",
+      "title": "[Đang cập nhật] Danh sách Nghị định ban hành năm 2026 - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaENHczdnQUxTcFRWTkV2ajExMzQ5dUxERGlWUW1iSXZOa0ItUklYd0Zfb1lmYmp2OGUtczA2bXV6Mkt3N0NCSllTQmZ2U1pkZVdWdHV2U3hzZU1xbjluMHoxd2tENTdUSmdOYUlmUmNZWWE5ZkMwdFBBZFB6X0RmQ2tuaW9HQzZycHFWQjU4MllwUnE2ckxaOEVpUGpIUmxLZWllYjBrM1dmQ1hzQjVrSmRtZw?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
@@ -12912,18 +12921,21 @@
     },
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLXhJSXRZcjEyQVN3Y2U1dHlxc1hhTGxONllvSndEWDBBd2k1Q0ZTZ0xEdHlWdkVmZ0o2MDZwR3VEUlpydTEzUVN0REw5aTg0Qm4xNUZHaS1KREY4aFZGY2drY1hVSXAtQmdXb2NiWVZna1BteVFvTWF4RVcyVEtQbEF1ekZDbnhJYnAzMVFlOFlWSk56bnVEQWZ4TWRvOWVSWGtuVGt5Vnd0QnVMblA2SG1ueW1JSGI2dnc?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "29/2026/TT-BNV",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T14:07:59+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLXhJSXRZcjEyQVN3Y2U1dHlxc1hhTGxONllvSndEWDBBd2k1Q0ZTZ0xEdHlWdkVmZ0o2MDZwR3VEUlpydTEzUVN0REw5aTg0Qm4xNUZHaS1KREY4aFZGY2drY1hVSXAtQmdXb2NiWVZna1BteVFvTWF4RVcyVEtQbEF1ekZDbnhJYnAzMVFlOFlWSk56bnVEQWZ4TWRvOWVSWGtuVGt5Vnd0QnVMblA2SG1ueW1JSGI2dnc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông tư 29/2026/TT-BNV: Quy định chuyển đổi vị trí công tác Bộ Nội vụ - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Thông tư 29/2026/TT-BNV: Quy định chuyển đổi vị trí công tác Bộ Nội vụ - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbzFVLWhkT1dZV21NcVlZWkJ3NVBZeHhfaGtiZnkxMEJPM3B3VzZ4NXA5b0Ixam5VNEN6MDFBNUh3ZXBqT09MaWNtM3JXZWxWUnBBdEUtWElnQWVjSWVKZkVjY0VGV0U3c1hnMDZiajJJY3l2Y0FmOE1FOE1ndE90RUhDY3NnMXNfQnlPSmtReXVBQlBoeHpUYUE2RDRpMDFGVmppc1hpbUdCQVo5bzdvNWZjNjZHSDNGRVhr?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -13000,18 +13012,21 @@
     },
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxPc2RQZWpjUy1qMjh4NzRhSXJzb01CSms5bEp6TnhZRFF2N2s3R0w0WkY5Y1pWZlRkM3kzYTdFQy00dHRwbzFSYkRfZ0FlX3hGLS1uUTE3Z05YVE54c3J2bE82R2hhOUZvSTR0S2VPb21lS09zWEJNMDk5a0M5czN4TVNPNmdsUTlOcHVPYlA0RUdMX2w1V0pwOEFPZk5DSUtxTmsxUl9VRWVXdzc2akczVlJWeWNGQzNncGM3Rw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "16-CT/TW",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:08+00:00",
+      "last_checked": "2026-11-18T14:07:59+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPc2RQZWpjUy1qMjh4NzRhSXJzb01CSms5bEp6TnhZRFF2N2s3R0w0WkY5Y1pWZlRkM3kzYTdFQy00dHRwbzFSYkRfZ0FlX3hGLS1uUTE3Z05YVE54c3J2bE82R2hhOUZvSTR0S2VPb21lS09zWEJNMDk5a0M5czN4TVNPNmdsUTlOcHVPYlA0RUdMX2w1V0pwOEFPZk5DSUtxTmsxUl9VRWVXdzc2akczVlJWeWNGQzNncGM3Rw?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Chỉ thị 16-CT/TW 2026 đẩy mạnh và nâng tầm công tác đối ngoại nhân dân - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Chỉ thị 16-CT/TW 2026 đẩy mạnh và nâng tầm công tác đối ngoại nhân dân - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeHl4X2d1cUozR25oXzl0Y2JMblB5WUkzWHZ6VEZSRUxMR0dNTUN5Q2Y2ekN5VGdNalBYX0RJZFNGYW9aUW9obnA0bE5BTmdDSHFUVHlYYXM1SzlseURwOU9iZ1RzTTFXMmZMMjA1UGxYczVWVHRJd1lwMUZiWTNhbXlfQkxneHY5U1pqd1ZYMExDTlJjQzJnUFBVNkVUeFh2Y2hWaDJmY19ockZOSWZQekRwclFIeWhEekQ3Sg?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -17280,6 +17295,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T13:53:09+00:00",
+  "updated_at": "2026-11-18T14:07:59+00:00",
   "version": 1
 }
