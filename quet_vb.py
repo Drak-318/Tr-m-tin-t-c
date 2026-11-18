@@ -297,12 +297,13 @@ def main():
                 # across all sources in this run and across prior review-queue URLs.
                 totals["unknown_date"]+=1
                 identity=document_identity(number,title,name,link)
-                if link not in existing_review_urls:
+                if link not in existing_review_urls and identity not in review_identity_seen:
                     review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
                                     "identity":identity,"published_date":"",
                                     "source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
                                         "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm.","source_group":group})
+                    review_identity_seen.add(identity)
                 if (link not in existing_review_urls
                         and not seen_index.contains(identity,link)
                         and not output_index.contains(identity,link)
