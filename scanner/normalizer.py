@@ -8,6 +8,88 @@ JUNK_EXACT = ["phổ biến giáo dục pháp luật","tuyên truyền phổ bi�
 CENTRAL_SIGNALS = ["nđ-cp","nq-cp","qđ-ttg","ct-ttg","vbhn-","/tw","-tw","qh15","qh16","ubtvqh","tt-b","tt-nhnn","tt-ktnn","tt-ttcp","tt-vpcp","qđ-b","qđ-nhnn","chính phủ","thủ tướng","quốc hội","bộ ","ngân hàng nhà nước","kiểm toán nhà nước"]
 LOCAL_KEYWORDS = ["ubnd","ủy ban nhân dân","hđnd","hội đồng nhân dân","qđ-ubnd","nq-hđnd","ct-ubnd","kh-ubnd","tỉnh ","thành phố ","sở "]
 
+# Local documents are retained only when they concern a policy or issue with
+# broad public relevance. These are deliberately topic-based, not document-type
+# based: a local resolution or decision can still be important.
+LOCAL_RELEVANCE_TOPICS = (
+    "đất đai", "thu hồi đất", "bồi thường", "hỗ trợ", "tái định cư",
+    "bảng giá đất", "giá đất", "quy hoạch sử dụng đất", "kế hoạch sử dụng đất",
+    "đấu giá quyền sử dụng đất", "y tế", "khám chữa bệnh", "khám bệnh",
+    "chữa bệnh", "bảo hiểm y tế", "viện phí", "giá dịch vụ y tế",
+    "giá dịch vụ khám", "dược", "giáo dục", "đào tạo", "tuyển sinh",
+    "học phí", "giáo viên", "học sinh", "trường học", "đấu thầu",
+    "lựa chọn nhà thầu", "mua sắm công", "đầu tư công", "cán bộ",
+    "công chức", "viên chức", "tiền lương", "phụ cấp", "vị trí việc làm",
+    "tổ chức bộ máy", "cải cách hành chính", "thủ tục hành chính",
+    "thuế", "phí", "lệ phí", "miễn giảm", "trợ cấp", "an sinh",
+    "bảo hiểm xã hội", "người lao động", "nhà ở", "nhà ở xã hội",
+    "chính sách", "chương trình hỗ trợ", "hỗ trợ người dân",
+)
+
+PERSONAL_OR_ONE_OFF_PATTERNS = (
+    r"\bthu hồi đất\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân|tổ chức)\b",
+    r"\b(?:giao đất|cho thuê đất)\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân)\b",
+    r"\b(?:thửa đất số|tờ bản đồ số)\b",
+)
+
+def is_local_scope(group="", agency="", source_url=""):
+    """Infer local scope from source metadata as well as its configured group.
+
+    Some local portals were accidentally labelled 'Văn Bản TW' in the CSV;
+    the issuing/source agency name therefore acts as a second signal.
+    """
+    g = clean_title(group).casefold()
+    a = clean_title(agency).casefold()
+    if g in {"địa phương", "văn bản địa phương", "công an"}:
+        return True
+    if re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\s|văn phòng ubnd|đảng bộ tỉnh)", a):
+        return True
+    if a.startswith("công an "):
+        return True
+    if any(x in a for x in ("tỉnh ", "thành phố ", "tp. ", "quận ", "huyện ", "thị xã ", "xã ", "phường ")):
+        return True
+    if a.startswith(("đà nẵng ", "hải phòng ", "tp.hcm", "tp. hồ chí minh", "huế -", "thanh khê ")):
+        return True
+    return False
+
+def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
+    """Reject individual administrative outcomes, not generally applicable rules."""
+    text = clean_title(f"{title} {doc_type} {doc_number}").casefold()
+    kind = clean_title(doc_type).casefold()
+    is_decision = kind == "quyết định"
+
+    award_action = re.search(r"\b(?:khen thưởng|truy tặng|tặng bằng khen)\b", text, re.I)
+    award_recipient = re.search(r"\b(?:cho ông|cho bà|cho cá nhân|các cá nhân|tập thể|đơn vị)\b", text, re.I)
+    if award_action and (is_decision or award_recipient):
+        return True
+
+    # A decision imposing a fine on one case is excluded. General decrees or
+    # circulars that regulate sanctioning regimes remain in the collection.
+    if is_decision and re.search(r"\b(?:xử phạt|phạt tiền)\b", text, re.I):
+        return True
+
+    # Individual certificates/appointments are case outcomes, not public policy.
+    if is_decision and re.search(
+        r"\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\b.{0,100}\b(?:ông|bà|cá nhân)\b",
+        text, re.I
+    ):
+        return True
+    if is_decision and re.search(
+        r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng(?: tốt nghiệp)?|giấy chứng nhận|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân|hộ gia đình)\b",
+        text, re.I
+    ):
+        return True
+
+    return any(re.search(pattern, text, re.I) for pattern in PERSONAL_OR_ONE_OFF_PATTERNS)
+
+def is_relevant_local_document(title, doc_type="", doc_number=""):
+    """True only for locally issued items on the user's selected public-interest topics."""
+    text = clean_title(f"{title} {doc_type} {doc_number}").casefold()
+    if is_personal_or_one_off_document(title, doc_type, doc_number):
+        return False
+    return any(topic in text for topic in LOCAL_RELEVANCE_TOPICS)
+
+
 def canonicalize_url(url):
     try:
         p=urlsplit(str(url).strip())
@@ -102,14 +184,32 @@ def classify_document(title,agency="",doc_type="",doc_number="",source_url=""):
 
 def classify_and_score(title,agency,doc_type,doc_number,group,published_date=None):
     if is_too_old(title,doc_number,60,published_date): return False,99
+
+    # Individual/case-specific outcomes are not useful to this collection,
+    # regardless of whether they come from a central or local portal.
+    if is_personal_or_one_off_document(title,doc_type,doc_number):
+        return False,98
+
+    local_scope = is_local_scope(group,agency)
+    document_signals = f"{title} {doc_number}".casefold()
+    central_document = (
+        any(x in document_signals for x in CENTRAL_SIGNALS)
+        or bool(re.search(r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTG|/CT-TTG|/TT-[A-ZĐ0-9-]+|/QH[0-9]+|/VBHN-[A-Z0-9-]+)$", str(doc_number), re.I))
+    )
+    # A local portal may publish or link to a central instrument. The
+    # instrument's own issuer/number takes precedence over the portal's region.
+    if local_scope and not central_document:
+        if not is_relevant_local_document(title,doc_type,doc_number):
+            return False,97
+        return True,30
+
     c=classify_document(title,agency,doc_type,doc_number)
     if c=="Dự thảo": return True,12
     if c=="Văn bản Đảng": return True,13
     if c=="Công văn": return True,14
     s=f"{title} {agency} {doc_number}".casefold()
-    if any(x in s for x in CENTRAL_SIGNALS) or doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất"}:
+    if central_document or any(x in s for x in CENTRAL_SIGNALS) or doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất"}:
         return True,10+{"Luật":1,"Nghị quyết":2,"Nghị định":3,"Thông tư":4,"Văn bản hợp nhất":5,"Quyết định":6,"Chỉ thị":7}.get(doc_type,9)
-    if str(group or "").strip().casefold() in {"địa phương","văn bản địa phương"} or any(x in s for x in LOCAL_KEYWORDS): return True,30
     return True,20
 
 def document_identity(doc_number,title,agency="",link=""):
