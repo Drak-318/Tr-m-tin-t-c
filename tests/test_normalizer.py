@@ -96,6 +96,77 @@ class NormalizerTests(unittest.TestCase):
         self.assertIsNone(date)
         self.assertEqual(basis, "unknown")
 
+
+    def test_local_land_compensation_policy_is_kept(self):
+        keep, score = classify_and_score(
+            "Quyết định 12/2026/QĐ-UBND ban hành chính sách bồi thường, hỗ trợ khi thu hồi đất",
+            "UBND tỉnh An Giang", "Quyết định", "12/2026/QĐ-UBND", "Văn Bản TW"
+        )
+        self.assertTrue(keep)
+        self.assertEqual(score, 30)
+
+    def test_local_land_price_table_is_kept(self):
+        keep, _ = classify_and_score(
+            "Quyết định ban hành bảng giá đất trên địa bàn tỉnh",
+            "UBND tỉnh Đồng Nai", "Quyết định", "", "Địa phương"
+        )
+        self.assertTrue(keep)
+
+    def test_local_personal_land_recovery_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định thu hồi đất của hộ ông Nguyễn Văn A để thực hiện dự án",
+            "UBND tỉnh An Giang", "Quyết định", "12/QĐ-UBND", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_individual_award_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định về việc khen thưởng cho các cá nhân có thành tích",
+            "UBND tỉnh An Giang", "Quyết định", "", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_individual_fine_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định xử phạt vi phạm hành chính đối với Công ty ABC",
+            "UBND tỉnh An Giang", "Quyết định", "", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_individual_certificate_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định cấp chứng chỉ hành nghề cho ông Nguyễn Văn A",
+            "Sở Y tế tỉnh An Giang", "Quyết định", "", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_unrelated_administrative_decision_is_excluded(self):
+        keep, _ = classify_and_score(
+            "Quyết định phê duyệt kết quả tuyển chọn một cá nhân",
+            "UBND tỉnh An Giang", "Quyết định", "", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_mislabelled_local_source_is_still_filtered(self):
+        keep, _ = classify_and_score(
+            "Quyết định khen thưởng tập thể",
+            "Sở Nội vụ Gia Lai", "Quyết định", "", "Văn Bản TW"
+        )
+        self.assertFalse(keep)
+
+    def test_central_rule_on_administrative_penalties_is_kept(self):
+        keep, _ = classify_and_score(
+            "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực thuế",
+            "Chính phủ", "Nghị định", "99/2026/NĐ-CP", "Văn Bản TW"
+        )
+        self.assertTrue(keep)
+
+    def test_local_health_and_education_policy_are_kept(self):
+        health = classify_and_score("Quyết định về chính sách hỗ trợ viện phí", "UBND tỉnh", "Quyết định", "", "Địa phương")[0]
+        education = classify_and_score("Nghị quyết về mức học phí năm học mới", "HĐND tỉnh", "Nghị quyết", "", "Địa phương")[0]
+        self.assertTrue(health)
+        self.assertTrue(education)
+
     def test_fingerprint_is_stable(self):
         self.assertEqual(make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"),make_fingerprint("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND"))
 
