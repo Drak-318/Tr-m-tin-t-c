@@ -15,7 +15,7 @@ from scanner.normalizer import (
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
-from scanner.source_registry import load_sources_from_csv
+from scanner.source_registry import load_sources_from_csv, filter_priority_sources
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
     enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document)
@@ -35,19 +35,44 @@ def append_step_summary(lines):
 
 def main():
     started=time.monotonic()
-    print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {utc_now()}"); print("="*70)
+    started_at=utc_now()
+    profile=os.getenv("SCAN_PROFILE","full").strip().lower() or "full"
+    if profile not in {"full","priority"}:
+        raise RuntimeError(f"SCAN_PROFILE không hợp lệ: {profile}")
+    print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {started_at} | PROFILE: {profile}"); print("="*70)
     config_data=load_source_config()
     sources=load_sources_from_csv()
     if not sources: raise RuntimeError("Không có nguồn đang bật trong danh_sach_nguon.csv trên GitHub.")
+    if profile == "priority":
+        priority_path=Path("priority_sources.json")
+        if not priority_path.exists():
+            raise RuntimeError("Thiếu priority_sources.json; không thể chạy lượt quét ưu tiên.")
+        priority_data=json.loads(priority_path.read_text(encoding="utf-8"))
+        priority_urls=priority_data.get("urls",[]) if isinstance(priority_data,dict) else priority_data
+        sources,missing_priority=filter_priority_sources(sources,priority_urls)
+        if missing_priority:
+            print(f"[PRIORITY-WARNING] {len(missing_priority)} URL ưu tiên chưa có trong danh sách nguồn: " +
+                  "; ".join(missing_priority[:8]))
+        if not sources:
+            raise RuntimeError("Không tìm thấy nguồn ưu tiên nào đang bật trong danh_sach_nguon.csv.")
     state=load_state()
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
-    print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
+    print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Profile: {profile} | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
     print(f"[INIT] Bộ nhớ GitHub: {len(state['documents'])} văn bản | {len(state['urls'])} URL")
+
+    def scan_one(source):
+        source_config=config_for_source(source,config_data)
+        if profile == "priority":
+            source_config["max_pages"]=min(max(1,int(source_config.get("max_pages",1))),2)
+            source_config["max_items"]=min(max(1,int(source_config.get("max_items",200))),120)
+            source_config["timeout_connect"]=min(max(3,int(source_config.get("timeout_connect",8))),6)
+            source_config["timeout_read"]=min(max(5,int(source_config.get("timeout_read",18))),12)
+        return scan_source(source,source_config,fetch_source_via_apps_script if WEB_APP_URL else None)
 
     results_by_index={}
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures={pool.submit(scan_source,s,config_for_source(s,config_data),fetch_source_via_apps_script if WEB_APP_URL else None):(i,s) for i,s in enumerate(sources)}
+        futures={pool.submit(scan_one,s):(i,s) for i,s in enumerate(sources)}
         for future in concurrent.futures.as_completed(futures):
             i,s=futures[future]
             try: result=future.result()
@@ -58,119 +83,132 @@ def main():
             feed_note=" | Có bổ sung RSS" if result.get("feed_supplement_used") else ""
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{feed_note}{detail}")
 
-    # Learn new listing/category URLs from the pages already scanned. A URL
-    # is not activated until a live validation scan finds at least 3 documents.
-    discovered_candidates=[]
-    for _source, _result in results_by_index.values():
-        discovered_candidates.extend(_result.get("discovered_candidates", []))
-    discovered_added=record_candidates(discovered_candidates)
-    discovery_activated=0
-    candidates_to_check=pending_candidates(limit=10)
-    discovery_checked=len(candidates_to_check)
-
-    def validate_source_candidate(candidate):
-        candidate_source={
-            "name":candidate.get("name","Nguồn tự phát hiện"),
-            "url":candidate["url"],
-            "group":candidate.get("group","Văn Bản TW"),
-        }
-        candidate_config=config_for_source(candidate_source,config_data)
-        candidate_config.update({"max_pages":2,"max_items":80,"follow_pagination":True})
-        validation=scan_source(candidate_source,candidate_config,None)
-        recognized_items=[]
-        for candidate_item in validation.get("items",[]):
-            candidate_type=candidate_item.get("doc_type") or extract_doc_info(candidate_item.get("title",""))[0]
-            candidate_number=candidate_item.get("doc_number") or extract_doc_info(candidate_item.get("title",""))[1]
-            if candidate_type and candidate_number and candidate_number!="Đang cập nhật":
-                recognized_items.append(candidate_item)
-        return candidate,validation,recognized_items
-
-    # Validate candidates concurrently, but never exceed the scanner's global
-    # five-worker limit. This drains the discovery queue faster without
-    # creating an unbounded burst of requests to public portals.
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        for candidate,validation,recognized_items in pool.map(validate_source_candidate,candidates_to_check):
-            attempts=int(candidate.get("attempts",0))+1
-            if len(recognized_items)>=3:
-                update_candidate(candidate["url"],{
-                    "status":"active","attempts":attempts,
-                    "validated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                    "validated_document_count":len(recognized_items),
-                    "sample_titles":[x.get("title","") for x in recognized_items[:3]],
-                    "last_error":"",
-                })
-                discovery_activated+=1
-            else:
-                reason=validation.get("error") or (
-                    f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
-                )
-                update_candidate(candidate["url"],{
-                    "attempts":attempts,"last_error":str(reason)[:350],
-                    "last_validation_status":validation.get("status",""),
-                })
-    if discovered_added or discovery_checked:
-        print(f"[SOURCE-DISCOVERY] Phát hiện {discovered_added} link danh mục mới | "
-              f"Kiểm tra {discovery_checked} | Kích hoạt {discovery_activated} nguồn. "
-              "Nguồn mới sẽ tham gia từ lượt quét tiếp theo.")
-
-    # Trace references from a bounded sample of local authority detail pages.
-    local_candidates=[]
-    for source,result in results_by_index.values():
-        if str(source.get("group","")).strip().casefold() in {"địa phương","công an"}:
-            for item in result.get("items",[]):
-                item_type,item_number=extract_doc_info(item.get("title",""))
-                # Exclude local news posts; trace only identifiable legal-document titles.
-                if item_type and item_number and item_number != "Đang cập nhật":
-                    local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
-                                             "agency":source.get("name",""),"doc_type":item_type,
-                                             "doc_number":item_number})
-    local_candidates.sort(key=lambda row: row.get("link",""))
-    relation_path=Path("data/document_relationships.json")
-    cursor_path=Path("data/relationship_scan_state.json")
-    try:
-        existing_relations=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
-        if not isinstance(existing_relations,list): existing_relations=[]
-        existing_relations=[
-            row for row in existing_relations
-            if row.get("source_doc_number") and row.get("source_doc_number") != "Đang cập nhật"
-        ]
-    except Exception:
-        existing_relations=[]
-    try:
-        cursor_state=json.loads(cursor_path.read_text(encoding="utf-8")) if cursor_path.exists() else {}
-        cursor=max(0,int(cursor_state.get("next_candidate",0)))
-    except Exception:
-        cursor_state={}; cursor=0
-    if local_candidates:
-        cursor %= len(local_candidates)
-        rotated=local_candidates[cursor:]+local_candidates[:cursor]
-        selected=rotated[:8]
-        next_cursor=(cursor+len(selected)) % len(local_candidates)
+    if profile == "full":
+        # Learn new listing/category URLs from the pages already scanned. A URL
+        # is not activated until a live validation scan finds at least 3 documents.
+        discovered_candidates=[]
+        for _source, _result in results_by_index.values():
+            discovered_candidates.extend(_result.get("discovered_candidates", []))
+        discovered_added=record_candidates(discovered_candidates)
+        discovery_activated=0
+        candidates_to_check=pending_candidates(limit=10)
+        discovery_checked=len(candidates_to_check)
+    
+        def validate_source_candidate(candidate):
+            candidate_source={
+                "name":candidate.get("name","Nguồn tự phát hiện"),
+                "url":candidate["url"],
+                "group":candidate.get("group","Văn Bản TW"),
+            }
+            candidate_config=config_for_source(candidate_source,config_data)
+            candidate_config.update({"max_pages":2,"max_items":80,"follow_pagination":True})
+            validation=scan_source(candidate_source,candidate_config,None)
+            recognized_items=[]
+            for candidate_item in validation.get("items",[]):
+                candidate_type=candidate_item.get("doc_type") or extract_doc_info(candidate_item.get("title",""))[0]
+                candidate_number=candidate_item.get("doc_number") or extract_doc_info(candidate_item.get("title",""))[1]
+                if candidate_type and candidate_number and candidate_number!="Đang cập nhật":
+                    recognized_items.append(candidate_item)
+            return candidate,validation,recognized_items
+    
+        # Validate candidates concurrently, but never exceed the scanner's global
+        # five-worker limit. This drains the discovery queue faster without
+        # creating an unbounded burst of requests to public portals.
+        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+            for candidate,validation,recognized_items in pool.map(validate_source_candidate,candidates_to_check):
+                attempts=int(candidate.get("attempts",0))+1
+                if len(recognized_items)>=3:
+                    update_candidate(candidate["url"],{
+                        "status":"active","attempts":attempts,
+                        "validated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                        "validated_document_count":len(recognized_items),
+                        "sample_titles":[x.get("title","") for x in recognized_items[:3]],
+                        "last_error":"",
+                    })
+                    discovery_activated+=1
+                else:
+                    reason=validation.get("error") or (
+                        f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
+                    )
+                    update_candidate(candidate["url"],{
+                        "attempts":attempts,"last_error":str(reason)[:350],
+                        "last_validation_status":validation.get("status",""),
+                    })
+        if discovered_added or discovery_checked:
+            print(f"[SOURCE-DISCOVERY] Phát hiện {discovered_added} link danh mục mới | "
+                  f"Kiểm tra {discovery_checked} | Kích hoạt {discovery_activated} nguồn. "
+                  "Nguồn mới sẽ tham gia từ lượt quét tiếp theo.")
     else:
-        selected=[]; next_cursor=0
-    discovered_relations=collect_local_document_relations(
-        selected,
-        fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
-        limit=8,
-    )
-    known_documents=list(state.get("documents",{}).values())
-    for source,result in results_by_index.values():
-        for item in result.get("items",[]):
-            doc_type,doc_number=extract_doc_info(item.get("title",""))
-            if doc_type and doc_number and doc_number != "Đang cập nhật":
-                known_documents.append({"title":item.get("title",""),"doc_type":doc_type,
-                                        "doc_number":doc_number,"agency":source.get("name",""),
-                                        "link":item.get("link","")})
-    relation_rows=resolve_reference_candidates(
-        merge_relationships(existing_relations,discovered_relations),known_documents
-    )
-    relation_path.parent.mkdir(parents=True,exist_ok=True)
-    relation_path.write_text(json.dumps(relation_rows,ensure_ascii=False,indent=2),encoding="utf-8")
-    cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
-    relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
-    relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
-    print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")
-
+        discovered_added=0
+        discovery_activated=0
+        discovery_checked=0
+    if profile == "full":
+        # Trace references from a bounded sample of local authority detail pages.
+        local_candidates=[]
+        for source,result in results_by_index.values():
+            if str(source.get("group","")).strip().casefold() in {"địa phương","công an"}:
+                for item in result.get("items",[]):
+                    item_type,item_number=extract_doc_info(item.get("title",""))
+                    # Exclude local news posts; trace only identifiable legal-document titles.
+                    if item_type and item_number and item_number != "Đang cập nhật":
+                        local_candidates.append({"title":item.get("title",""),"link":item.get("link",""),
+                                                 "agency":source.get("name",""),"doc_type":item_type,
+                                                 "doc_number":item_number})
+        local_candidates.sort(key=lambda row: row.get("link",""))
+        relation_path=Path("data/document_relationships.json")
+        cursor_path=Path("data/relationship_scan_state.json")
+        try:
+            existing_relations=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
+            if not isinstance(existing_relations,list): existing_relations=[]
+            existing_relations=[
+                row for row in existing_relations
+                if row.get("source_doc_number") and row.get("source_doc_number") != "Đang cập nhật"
+            ]
+        except Exception:
+            existing_relations=[]
+        try:
+            cursor_state=json.loads(cursor_path.read_text(encoding="utf-8")) if cursor_path.exists() else {}
+            cursor=max(0,int(cursor_state.get("next_candidate",0)))
+        except Exception:
+            cursor_state={}; cursor=0
+        if local_candidates:
+            cursor %= len(local_candidates)
+            rotated=local_candidates[cursor:]+local_candidates[:cursor]
+            selected=rotated[:8]
+            next_cursor=(cursor+len(selected)) % len(local_candidates)
+        else:
+            selected=[]; next_cursor=0
+        discovered_relations=collect_local_document_relations(
+            selected,
+            fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
+            limit=8,
+        )
+        known_documents=list(state.get("documents",{}).values())
+        for source,result in results_by_index.values():
+            for item in result.get("items",[]):
+                doc_type,doc_number=extract_doc_info(item.get("title",""))
+                if doc_type and doc_number and doc_number != "Đang cập nhật":
+                    known_documents.append({"title":item.get("title",""),"doc_type":doc_type,
+                                            "doc_number":doc_number,"agency":source.get("name",""),
+                                            "link":item.get("link","")})
+        relation_rows=resolve_reference_candidates(
+            merge_relationships(existing_relations,discovered_relations),known_documents
+        )
+        relation_path.parent.mkdir(parents=True,exist_ok=True)
+        relation_path.write_text(json.dumps(relation_rows,ensure_ascii=False,indent=2),encoding="utf-8")
+        cursor_path.write_text(json.dumps({"next_candidate":next_cursor},indent=2),encoding="utf-8")
+        relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
+        relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
+        print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")    else:
+        relation_path=Path("data/document_relationships.json")
+        try:
+            relation_rows=json.loads(relation_path.read_text(encoding="utf-8")) if relation_path.exists() else []
+            if not isinstance(relation_rows,list):
+                relation_rows=[]
+        except Exception:
+            relation_rows=[]
+        relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
+        relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     existing_review=load_review_queue()
     existing_review_urls=set(existing_review)
@@ -290,7 +328,7 @@ def main():
 
     # Recheck a small, bounded batch of previously undated documents on their detail pages.
     # This is deliberately limited per run so source collection remains the priority.
-    review_candidates=pending_review_documents(limit=40,max_attempts=3,retry_manual_after_days=7)
+    review_candidates=pending_review_documents(limit=5 if profile == "priority" else 40,max_attempts=3,retry_manual_after_days=7)
     detail_stats={"checked":0,"dated":0,"new":0,"old":0,"errors":0}
     def check_review_item(row):
         return row,verify_document_detail_date(row.get("link",""),{"timeout_connect":6,"timeout_read":12})
@@ -383,7 +421,10 @@ def main():
     else:
         print(f"[SHEETS] Bỏ qua xuất dữ liệu; hàng đợi GitHub còn {len(pending_exports)} gói.")
     duration=round(time.monotonic()-started,2)
-    summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
+    summary={"started_at":started_at,"finished_at":utc_now(),"scan_profile":profile,
+             "trigger":os.getenv("SCAN_TRIGGER",os.getenv("GITHUB_EVENT_NAME","manual")),
+             "run_id":os.getenv("GITHUB_RUN_ID",""),"run_attempt":os.getenv("GITHUB_RUN_ATTEMPT",""),
+             "sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
@@ -395,7 +436,10 @@ def main():
              "discovered_sources_pending":len(pending_candidates(limit=500)),
              "duration_seconds":duration}
     append_history(summary)
-    report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
+    report=["## Kết quả quét Trạm Tin Tức",f"- Profile: **{profile}**",
+             f"- Trigger: **{os.getenv('SCAN_TRIGGER',os.getenv('GITHUB_EVENT_NAME','manual'))}**",
+             f"- Run ID: **{os.getenv('GITHUB_RUN_ID','local')}**",
+             f"- Bắt đầu: **{started_at}**",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
             f"- Loại do quá 60 ngày: **{totals['old']}**",f"- Chuyển sang danh sách cần xác minh ngày: **{totals['unknown_date']}**",
             f"- Loại do trùng: **{totals['duplicate']}**",f"- Văn bản mới được Google Sheets xác nhận: **{saved}**",
