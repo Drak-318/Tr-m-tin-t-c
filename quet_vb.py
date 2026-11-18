@@ -53,15 +53,6 @@ def main():
         if missing_priority:
             print(f"[PRIORITY-WARNING] {len(missing_priority)} URL ưu tiên chưa có trong danh sách nguồn: " +
                   "; ".join(missing_priority[:8]))
-        retry_rows=pending_source_retries(limit=10)
-        existing_urls={str(row.get("url","")).rstrip("/").lower() for row in sources}
-        for retry in retry_rows:
-            retry_url=str(retry.get("url","")).rstrip("/").lower()
-            if retry_url and retry_url not in existing_urls:
-                sources.append({"name":retry.get("name") or "Nguồn cần quét bù",
-                                "url":retry.get("url"),"group":retry.get("group") or "Văn Bản TW",
-                                "row":None,"retry_source":True})
-                existing_urls.add(retry_url)
         if not sources:
             raise RuntimeError("Không tìm thấy nguồn ưu tiên hoặc nguồn lỗi cần quét bù.")
     elif profile == "remaining":
