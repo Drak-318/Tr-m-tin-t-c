@@ -835,12 +835,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "117/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 117/2026/TT-BTC của Bộ trưởng Bộ Tài chính quy định miễn, giảm một số khoản phí, lệ phí để triển khai Nghị quyết số 66.22/2026/NQ-CP ngày 09 tháng 7 năm 2026 của Chính phủ về phát triển công dân số",
@@ -915,12 +922,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
         "title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "398/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
+        "title": "398/2026/NĐ-CP 29/10/2026"
       }
     ],
     "referenced_doc_number": "398/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "117/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 117/2026/TT-BTC của Bộ trưởng Bộ Tài chính quy định miễn, giảm một số khoản phí, lệ phí để triển khai Nghị quyết số 66.22/2026/NQ-CP ngày 09 tháng 7 năm 2026 của Chính phủ về phát triển công dân số",
@@ -1002,11 +1016,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093042",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "117/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 117/2026/TT-BTC của Bộ trưởng Bộ Tài chính quy định miễn, giảm một số khoản phí, lệ phí để triển khai Nghị quyết số 66.22/2026/NQ-CP ngày 09 tháng 7 năm 2026 của Chính phủ về phát triển công dân số",
@@ -1066,11 +1088,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093042",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "117/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 117/2026/TT-BTC của Bộ trưởng Bộ Tài chính quy định miễn, giảm một số khoản phí, lệ phí để triển khai Nghị quyết số 66.22/2026/NQ-CP ngày 09 tháng 7 năm 2026 của Chính phủ về phát triển công dân số",
@@ -1087,12 +1117,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "165/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 165/2026/TT-BTC ngày 31/10/2026 của Bộ trưởng Bộ Tài chính về việc hướng dẫn một số nội dung về chế độ báo cáo, công bố thông tin trên thị trường tài sản mã hóa",
@@ -1167,12 +1204,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
         "title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "398/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
+        "title": "398/2026/NĐ-CP 29/10/2026"
       }
     ],
     "referenced_doc_number": "398/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "165/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 165/2026/TT-BTC ngày 31/10/2026 của Bộ trưởng Bộ Tài chính về việc hướng dẫn một số nội dung về chế độ báo cáo, công bố thông tin trên thị trường tài sản mã hóa",
@@ -1254,11 +1298,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093084",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "165/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 165/2026/TT-BTC ngày 31/10/2026 của Bộ trưởng Bộ Tài chính về việc hướng dẫn một số nội dung về chế độ báo cáo, công bố thông tin trên thị trường tài sản mã hóa",
@@ -1318,11 +1370,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093084",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "165/2026/TT-BTC",
     "source_doc_title": "V/v triển khai Thông tư số 165/2026/TT-BTC ngày 31/10/2026 của Bộ trưởng Bộ Tài chính về việc hướng dẫn một số nội dung về chế độ báo cáo, công bố thông tin trên thị trường tài sản mã hóa",
@@ -1353,12 +1413,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "200/2026/NĐ-CP",
     "source_doc_title": "V/v tham mưu tổ chức thực hiện Nghị định số 200/2026/NĐ-CP và Thông tư số 138/2026/TT-BTC",
@@ -1433,12 +1500,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
         "title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "398/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
+        "title": "398/2026/NĐ-CP 29/10/2026"
       }
     ],
     "referenced_doc_number": "398/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "200/2026/NĐ-CP",
     "source_doc_title": "V/v tham mưu tổ chức thực hiện Nghị định số 200/2026/NĐ-CP và Thông tư số 138/2026/TT-BTC",
@@ -1506,11 +1580,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093460",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "200/2026/NĐ-CP",
     "source_doc_title": "V/v tham mưu tổ chức thực hiện Nghị định số 200/2026/NĐ-CP và Thông tư số 138/2026/TT-BTC",
@@ -1570,11 +1652,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093460",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "200/2026/NĐ-CP",
     "source_doc_title": "V/v tham mưu tổ chức thực hiện Nghị định số 200/2026/NĐ-CP và Thông tư số 138/2026/TT-BTC",
@@ -1627,11 +1717,19 @@
   {
     "evidence_excerpt": "ịch bản tăng trưởng quý IV, cả năm 2026 16-11-2026 Nguyễn Phước Thiện 6 3943/UBND-KT V/v triển khai thực hiện Nghị định số 387/2026/NĐ-CP của Chính phủ quy định nội dung, cơ chế, chính sách thực hiện Chương trình mục tiêu quốc gia phát triển văn h",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "387/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219965&classid=1&orggroupid=2",
+        "title": "387/2026/NĐ-CP 12/10/2026"
+      }
+    ],
     "referenced_doc_number": "387/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "372/2026/NĐ-CP",
     "source_doc_title": "V/v triển khai thực hiện Nghị định số 372/2026/NĐ-CP của Chính phủ quy định về hoạt động định danh, xác thực, truy xuất nguồn gốc sản phẩm, hàng hóa",
@@ -1712,12 +1810,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
         "title": "V/v triển khai thực hiện Nghị định số 372/2026/NĐ-CP của Chính phủ quy định về hoạt động định danh, xác thực, truy xuất nguồn gốc sản phẩm, hàng hóa"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "372/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219673&classid=1&orggroupid=2",
+        "title": "372/2026/NĐ-CP 29/09/2026"
       }
     ],
     "referenced_doc_number": "372/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "224-QĐ/TW",
     "source_doc_title": "Kế hoạch triển khai thực hiện Chương trình hành động số 47-CTr/TU ngày 30/10/2026 của Ban Chấp hành Đảng bộ tỉnh về thực hiện Quy định số 224-QĐ/TW, ngày 14/10/2026 của Ban Chấp hành Trung ương Đảng về đảng viên tham gia hoạt động đầu tư kinh doanh",
@@ -1741,11 +1846,19 @@
   {
     "evidence_excerpt": "ịch bản tăng trưởng quý IV, cả năm 2026 16-11-2026 Nguyễn Phước Thiện 6 3943/UBND-KT V/v triển khai thực hiện Nghị định số 387/2026/NĐ-CP của Chính phủ quy định nội dung, cơ chế, chính sách thực hiện Chương trình mục tiêu quốc gia phát triển văn h",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122684",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "387/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219965&classid=1&orggroupid=2",
+        "title": "387/2026/NĐ-CP 12/10/2026"
+      }
+    ],
     "referenced_doc_number": "387/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "224-QĐ/TW",
     "source_doc_title": "Kế hoạch triển khai thực hiện Chương trình hành động số 47-CTr/TU ngày 30/10/2026 của Ban Chấp hành Đảng bộ tỉnh về thực hiện Quy định số 224-QĐ/TW, ngày 14/10/2026 của Ban Chấp hành Trung ương Đảng về đảng viên tham gia hoạt động đầu tư kinh doanh",
@@ -1840,12 +1953,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "398/2026/NĐ-CP",
     "source_doc_title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp",
@@ -1993,11 +2113,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "398/2026/NĐ-CP",
     "source_doc_title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp",
@@ -2057,11 +2185,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "398/2026/NĐ-CP",
     "source_doc_title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp",
@@ -2092,12 +2228,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2184/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2184/QĐ-TTg ngày 11/11/2026 của Thủ tướng Chính phủ về việc sửa đổi, bổ sung một số điều của Quyết định số 352/QĐ-TTg ngày 27/02/2026 của Thủ tướng Chính phủ phê duyệt Kế hoạch vay, trả nợ công năm 2026",
@@ -2136,12 +2279,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
         "title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "398/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
+        "title": "398/2026/NĐ-CP 29/10/2026"
       }
     ],
     "referenced_doc_number": "398/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2184/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2184/QĐ-TTg ngày 11/11/2026 của Thủ tướng Chính phủ về việc sửa đổi, bổ sung một số điều của Quyết định số 352/QĐ-TTg ngày 27/02/2026 của Thủ tướng Chính phủ phê duyệt Kế hoạch vay, trả nợ công năm 2026",
@@ -2245,11 +2395,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123738",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2184/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2184/QĐ-TTg ngày 11/11/2026 của Thủ tướng Chính phủ về việc sửa đổi, bổ sung một số điều của Quyết định số 352/QĐ-TTg ngày 27/02/2026 của Thủ tướng Chính phủ phê duyệt Kế hoạch vay, trả nợ công năm 2026",
@@ -2309,11 +2467,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123738",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2184/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2184/QĐ-TTg ngày 11/11/2026 của Thủ tướng Chính phủ về việc sửa đổi, bổ sung một số điều của Quyết định số 352/QĐ-TTg ngày 27/02/2026 của Thủ tướng Chính phủ phê duyệt Kế hoạch vay, trả nợ công năm 2026",
@@ -2330,12 +2496,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124380",
         "title": "V/v triển khai Nghị định số 394/2026/NĐ-CP ngày 23/10/2026 của Chính phủ quy định một số nội dung đặc thù về cơ chế quản lý tài chính đối với doanh nghiệp kinh doanh xổ số"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "394/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220096&classid=1&orggroupid=2",
+        "title": "394/2026/NĐ-CP 23/10/2026"
       }
     ],
     "referenced_doc_number": "394/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2189/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2189/QĐ-TTg ngày 12/11/2026 của Thủ tướng Chính phủ về việc bổ sung có mục tiêu từ ngân sách trung ương cho các địa phương để thực hiện các chính sách an sinh xã hội năm 2025 - 2026",
@@ -2388,12 +2561,19 @@
         "doc_type": "Nghị định",
         "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689",
         "title": "V/v triển khai Nghị định số 398/2026/NĐ-CP của Chính phủ quy định chi tiết Nghị quyết số 43/2026/QH16 về giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp đối với cá nhân và doanh nghiệp"
+      },
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "398/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
+        "title": "398/2026/NĐ-CP 29/10/2026"
       }
     ],
     "referenced_doc_number": "398/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "found_in_scan_index",
+    "resolution_status": "ambiguous_multiple_matches",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2189/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2189/QĐ-TTg ngày 12/11/2026 của Thủ tướng Chính phủ về việc bổ sung có mục tiêu từ ngân sách trung ương cho các địa phương để thực hiện các chính sách an sinh xã hội năm 2025 - 2026",
@@ -2497,11 +2677,19 @@
   {
     "evidence_excerpt": "ới 179 người nộp thuế, phát sinh trước ngày 01/7/2020 13-11-2026 Trần Văn Dũng 11 3910/UBND-KT V/v triển khai Quyết định số 50/2026/QĐ-TTg ngày 02 tháng 11 năm 2026 của Thủ tướng Chính phủ về tín dụng đối với học sinh, sinh viên 13-11-2026 Trần Văn",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124082",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "50/2026/QĐ-TTG",
+        "doc_type": "Quyết định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220195&classid=1&orggroupid=2",
+        "title": "50/2026/QĐ-TTg 02/11/2026"
+      }
+    ],
     "referenced_doc_number": "50/2026/QĐ-TTG",
     "referenced_doc_type": "Quyết Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2189/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2189/QĐ-TTg ngày 12/11/2026 của Thủ tướng Chính phủ về việc bổ sung có mục tiêu từ ngân sách trung ương cho các địa phương để thực hiện các chính sách an sinh xã hội năm 2025 - 2026",
@@ -2561,11 +2749,19 @@
   {
     "evidence_excerpt": "chế tự chủ tài chính của đơn vị sự nghiệp công lập 12-11-2026 Nguyễn Minh Tuấn 18 3873/UBND-KT V/v triển khai Nghị quyết số 45/2026/NQ-CP của Chính phủ ban hành quy định về thuế tiêu thụ đặc biệt đối với xăng 11-11-2026 Trần Văn Dũng 19 14879/VPUB",
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12124082",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "45/2026/NQ-CP",
+        "doc_type": "Nghị quyết",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
+        "title": "45/2026/NQ-CP 31/10/2026"
+      }
+    ],
     "referenced_doc_number": "45/2026/NQ-CP",
     "referenced_doc_type": "Nghị Quyết",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
     "source_doc_number": "2189/QĐ-TTG",
     "source_doc_title": "V/v triển khai Quyết định số 2189/QĐ-TTg ngày 12/11/2026 của Thủ tướng Chính phủ về việc bổ sung có mục tiêu từ ngân sách trung ương cho các địa phương để thực hiện các chính sách an sinh xã hội năm 2025 - 2026",
@@ -2701,11 +2897,19 @@
   {
     "evidence_excerpt": "Bộ luật Lao động số 45/2019/QH14 Số ký hiệu: 8443/SNV-LĐVL Ngày ban hành: 28/10/2026 V/v triển khai thực hiện Nghị định số 393/2026/NĐ-CP ngày 20/10/2026 của Chính phủ Số ký hiệu: 8225/SNV-LĐVL Ngày ban hành: 21/10/2026 V/v triển khai Thông tư số ",
     "evidence_url": "https://snv.gialai.gov.vn:/vi/laws/detail/Trien-khai-thuc-hien-Thong-tu-so-05-2026-TT-BDTTG-ngay-14-8-2026-cua-Bo-truong-Bo-Dan-toc-va-Ton-giao-2614/",
-    "matched_documents": [],
+    "matched_documents": [
+      {
+        "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+        "doc_number": "393/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220059&classid=1&orggroupid=2",
+        "title": "393/2026/NĐ-CP 20/10/2026"
+      }
+    ],
     "referenced_doc_number": "393/2026/NĐ-CP",
     "referenced_doc_type": "Nghị Định",
     "relation_type": "trien_khai",
-    "resolution_status": "not_found_in_scan_index",
+    "resolution_status": "found_in_scan_index",
     "source_agency": "Sở Nội vụ Gia Lai",
     "source_doc_number": "05/2026/TT-BDTTG",
     "source_doc_title": "Triển khai thực hiện Thông tư số 05/2026/TT-BDTTG ngày 14/8/2026 của Bộ trưởng Bộ Dân tộc và Tôn giáo",
