@@ -10625,18 +10625,21 @@
     },
     "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOU256Um5la3pFVEFINU9uV3laYUVxc3ZIUnZoVURtZEZfTnRtbjhjV2VMaXJWcy1mS2JKWjJaLTFYaE5lT2Z0QlgyWUZhOGhSTHduZGsycER5ZlU5TGx5NnVFRzlockRvUkg5S09LWEJyV20tclQwb3pHQWxXQU5PQW1CdWZKUmNEWjMxaFc4TTJRRDB0dmxPVVltZjlCWnc5ODdFVEQ3VzIxZ0VaMHB4TjFLZERvcGdVa0NYTEJ1M2VFWUNFVUk4aDQ5X3lLNmlxZ1lmUmRpU1dxZHE3NzdvbjR3R3BRNThWdUR1akVOT3F1RzJEWGc?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "3318/QĐ-BTC",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:10+00:00",
+      "last_checked": "2026-11-18T13:53:09+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOU256Um5la3pFVEFINU9uV3laYUVxc3ZIUnZoVURtZEZfTnRtbjhjV2VMaXJWcy1mS2JKWjJaLTFYaE5lT2Z0QlgyWUZhOGhSTHduZGsycER5ZlU5TGx5NnVFRzlockRvUkg5S09LWEJyV20tclQwb3pHQWxXQU5PQW1CdWZKUmNEWjMxaFc4TTJRRDB0dmxPVVltZjlCWnc5ODdFVEQ3VzIxZ0VaMHB4TjFLZERvcGdVa0NYTEJ1M2VFWUNFVUk4aDQ5X3lLNmlxZ1lmUmRpU1dxZHE3NzdvbjR3R3BRNThWdUR1akVOT3F1RzJEWGc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Quyết định 3318/QĐ-BTC: Đăng ký sử dụng, xử lý hóa đơn điện tử sai không phụ thuộc địa giới hành chính - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Quyết định 3318/QĐ-BTC: Đăng ký sử dụng, xử lý hóa đơn điện tử sai không phụ thuộc địa giới hành chính - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPSktpbUR1QzJYSmRIRGtkZ0RSRzVtSy1CWjFDTTBxcU5ERW5CcHFZVkI5NDhqYkRmTnc0cUxQZGJyOWNTQTJyVV9OS1RQVEZTNXZZUURoU1pldl9hc1g5Q291UjRyMDg2X1BXR0JIVE1rNDBTaWVkSHhkenBwTGdJZ2R5RDhkYlM2NkdWMGduVzRuY3QyWm5aSGUxTzNhYmhuMWxRMnVMaHAwN0FvNTZxMmdyc04yWkdUTThJS09oUUdFQVgyYnk5c1NtdVpxOTdmdVI1ZktVVGxQM2JrVEg2UzB3bGN1V05iTy1kSFpTa1czR1R1bUE?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -11416,18 +11419,21 @@
     },
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOcEVkUnBBTDllbmo1ZlFNRFliaDBuak9CMkF3X2NlX2R5TDNJM2JMX0VlbXFtNEk5ckpZLTA2WFY1TDY2MkNzQ1QzRVNsTk1HUURCV2l1dmJIdjMzRVRHdVlCLW4yMHg4UF82bGxoLThUa3Bzb1E?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "08/NQ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:08+00:00",
+      "last_checked": "2026-11-18T13:53:09+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOcEVkUnBBTDllbmo1ZlFNRFliaDBuak9CMkF3X2NlX2R5TDNJM2JMX0VlbXFtNEk5ckpZLTA2WFY1TDY2MkNzQ1QzRVNsTk1HUURCV2l1dmJIdjMzRVRHdVlCLW4yMHg4UF82bGxoLThUa3Bzb1E?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Nghị quyết số 08/NQ-CP ban hành Chương trình hành động thực hiện Nghị quyết số 24-NQ/TW của Ban Chấp hành Trung ương Đảng khóa XI về Chủ động ứng phó với biến đổi khí hậu, tăng cường quản lý tài nguyên và bảo vệ môi trường. - Cổng Thông tin điện tử Chính phủ"
+      "status": "fetch_error",
+      "title": "Nghị quyết số 08/NQ-CP ban hành Chương trình hành động thực hiện Nghị quyết số 24-NQ/TW của Ban Chấp hành Trung ương Đảng khóa XI về Chủ động ứng phó với biến đổi khí hậu, tăng cường quản lý tài nguyên và bảo vệ môi trường. - Cổng Thông tin điện tử Chính phủ",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yY2lhNl9OWGdrMzhTM3hQT2pEQ0tVOVNpTHRVbnVtUHVnaWFFckhqaDBHWlBaWjZCaWRlS0E1M1JXVEM3MUE4M0JEc1VRdmRWTVNMNmlWNDlyMXlOMmV4TVYwd3FEWEpuRjB5UERsdGdBWGZUVk5McnlYeHB0XzQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -11766,18 +11772,21 @@
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NTS1HVXg2UlEyVVk3MmtkUE5YbEVtMVItOVFZckdZN2NDZjlXZHl0N3pWNHMtYUNhdjdtblJHY0Q1MU50TWNBeURmWFN5QjVjRGZMUWN4TmZfVlRGMTJRRmJGdldvUVNCcVgtUTFQVzlueVVXeXYyQ0dMWGZHdw?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "26/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:08+00:00",
+      "last_checked": "2026-11-18T13:53:09+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NTS1HVXg2UlEyVVk3MmtkUE5YbEVtMVItOVFZckdZN2NDZjlXZHl0N3pWNHMtYUNhdjdtblJHY0Q1MU50TWNBeURmWFN5QjVjRGZMUWN4TmZfVlRGMTJRRmJGdldvUVNCcVgtUTFQVzlueVVXeXYyQ0dMWGZHdw?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Nghị định số 26/2026/NĐ-CP quy định chi tiết và hướng dẫn thi hành một số điều của Luật Hóa chất về quản lý hoạt động hóa chất và hóa chất nguy hiểm trong sản phẩm, hàng hóa - Cổng Thông tin điện tử Chính phủ"
+      "status": "fetch_error",
+      "title": "Nghị định số 26/2026/NĐ-CP quy định chi tiết và hướng dẫn thi hành một số điều của Luật Hóa chất về quản lý hoạt động hóa chất và hóa chất nguy hiểm trong sản phẩm, hàng hóa - Cổng Thông tin điện tử Chính phủ",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kSm15b0FqWWI0M1JWcWU4ck93dk55VmJQaWxoQ2NRNkViM0pVWGdlT0ZrSllHNlp2Y1l6ZUV6dHUwVzg0bGxfNEpVT1Rqa1VJUjBXdVZDUno5OU9wWVppcXFSMWdKWFI2Y3VKZWE4T3NXcDlZQkgtSVQ1cDVaZw?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -11799,18 +11808,21 @@
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5VcUE1Zm9YTE5hM0hERDY2a01sM0Q4d2RKX1RjYWc2VDNvRVptdXFaZGdVZm1nd2wwR3BpR0NCNUNZSVNzVlJ4TGFReUhZZEdTaUMzWTl4S1hXQnYtRThLUkUybjJtN2dvMzRUWjBSOGo5WFE1Yy0zZDBJdkZQQQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "20/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:08+00:00",
+      "last_checked": "2026-11-18T13:53:09+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5VcUE1Zm9YTE5hM0hERDY2a01sM0Q4d2RKX1RjYWc2VDNvRVptdXFaZGdVZm1nd2wwR3BpR0NCNUNZSVNzVlJ4TGFReUhZZEdTaUMzWTl4S1hXQnYtRThLUkUybjJtN2dvMzRUWjBSOGo5WFE1Yy0zZDBJdkZQQQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Nghị định số 20/2026/NĐ-CP quy định chi tiết và hướng dẫn thi hành một số điều của Nghị quyết số 198/2025/QH15 ngày 17 tháng 5 năm 2025 của Quốc hội về một số cơ chế, chính sách đặc biệt phát triển kinh tế tư nhân - Cổng Thông tin điện tử Chính phủ"
+      "status": "fetch_error",
+      "title": "Nghị định số 20/2026/NĐ-CP quy định chi tiết và hướng dẫn thi hành một số điều của Nghị quyết số 198/2025/QH15 ngày 17 tháng 5 năm 2025 của Quốc hội về một số cơ chế, chính sách đặc biệt phát triển kinh tế tư nhân - Cổng Thông tin điện tử Chính phủ",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE9mRmRsbWtMajh0MGROaS1hUlZhQTg0MHBPcEpIZWV6UXg3QTZTZ0pYRHNITVUxemdnSVVvN21rMnFoMDZFOERVMEJEb0FMek1CWFRlbXM2WjhXQU1FejFjbTRLTnB4VUEzV1VqcnZQajQtb2FZcFhBdUNiaVR2QQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -12002,18 +12014,21 @@
     },
     "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdVlHS194WEE2SFN2S1dkVERKMHhndkg4YmEta19FbktLbDg1MWFlZ0hXTkQyblM4cDFWMFhibXJNWDZsOFltVzZZQnpTQXI1dkQ2OWhVaFNDV0Y1d3M2TDF3SUxpcmJ2VXRBNnRhQkZNM1R2U2N0TFpzeWV5RDVjOU5HMUVwQXdVMHNhRzY2d0xEbUNZb0Z4V3lZamxiYXBkN3VEZjdQV0IxSWpHRHdFTG9xS2dLVkdnNEUtZHBqeE12eUM3WHRMdnpPblNwWjVTeUVEaEQzYTg4bFVTQzBaVFlQQUpqTHozYnkyLWFGem5GX3NkT0RVN0VUdmsyRUNITHc5NQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "37/2026/TT-BKHCN",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T13:53:09+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdVlHS194WEE2SFN2S1dkVERKMHhndkg4YmEta19FbktLbDg1MWFlZ0hXTkQyblM4cDFWMFhibXJNWDZsOFltVzZZQnpTQXI1dkQ2OWhVaFNDV0Y1d3M2TDF3SUxpcmJ2VXRBNnRhQkZNM1R2U2N0TFpzeWV5RDVjOU5HMUVwQXdVMHNhRzY2d0xEbUNZb0Z4V3lZamxiYXBkN3VEZjdQV0IxSWpHRHdFTG9xS2dLVkdnNEUtZHBqeE12eUM3WHRMdnpPblNwWjVTeUVEaEQzYTg4bFVTQzBaVFlQQUpqTHozYnkyLWFGem5GX3NkT0RVN0VUdmsyRUNITHc5NQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông tư 37/2026/TT-BKHCN quy định điều kiện dự thi, yêu cầu đạt bài thi chứng chỉ vô tuyến điện nghiệp dư thế nào? - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Thông tư 37/2026/TT-BKHCN quy định điều kiện dự thi, yêu cầu đạt bài thi chứng chỉ vô tuyến điện nghiệp dư thế nào? - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMihAJBVV95cUxQd1JabHB6UWFwb3FibDdBV3BwQU5oQmVSaS1lOXdVal9BYVZ2WjR3bk9RaE9DRjEzZWFQSFJXaGJyQzJsaWJMYzlXaWpGMS1pRy1Ic0FRQzI0S1RBbTJlVDNGbXA2RHJwQ1R5WUFNQXFYSWNiTlZWRmtsNnhnMEgwcnNJWk5BUDBYeERNSDBEc0dUNDl1c0hpWUpYTFNDSE04RHByall1aWtQbl9SLWFCWjVYVU9kOFVka3J5c0FUUHhJR3ZBOTZGa3F0ZDhwQzF4QnFWZkwyVnlkRDFPenBmWWhXQUJDTWpFUFVFcEQxM3U1VlZpMEZkdlpQUTZYaDZOWkNLbA?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -17265,6 +17280,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T13:37:50+00:00",
+  "updated_at": "2026-11-18T13:53:09+00:00",
   "version": 1
 }
