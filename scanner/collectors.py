@@ -267,7 +267,15 @@ def _collect_primary(session,base_url,config,max_items,max_pages,initial_respons
             if len(items)>=max_items or page_count>=max_pages: break
             next_url=find_next_page(soup,page_url,config)
             if not next_url or next_url in seen_pages: break
-            seen_pages.add(next_url); nr=fetch_response(session,next_url,config); page_url,html=nr.url,nr.text; page_count+=1
+            seen_pages.add(next_url)
+            try:
+                nr=fetch_response(session,next_url,config)
+            except SourceFetchError as exc:
+                # Keep documents already collected from earlier pages; the failed
+                # page is recorded so the source can be retried on a later run.
+                config.setdefault("_partial_errors",[]).append(f"Pagination {exc.kind}: {exc}")
+                break
+            page_url,html=nr.url,nr.text; page_count+=1
     return items,page_count,response.status_code
 
 def _deduplicate_items(items,max_items):
@@ -315,6 +323,7 @@ def scan_source(source,config,fallback_fetcher=None):
     try:
         try:
             items,page_count,http_status=_collect_primary(session,base_url,config,max_items,max_pages,discovery_sink=discovered_candidates)
+            errors.extend(config.get("_partial_errors",[]))
         except SourceFetchError as exc:
             errors.append(f"{exc.kind}: {exc}")
             http_status=exc.http_status
