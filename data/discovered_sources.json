@@ -1,0 +1,2611 @@
+{
+  "items": {
+    "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban": {
+      "attempts": 1,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_error": "",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - Lấy ý kiến về dự thảo văn bản QPPL",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "sample_titles": [
+        "Lấy ý kiến đối với dự thảo Quyết định sửa đổi, bổ sung Quyết định số 10/2026/QĐ-UBND",
+        "Lấy ý kiến đối với dự thảo Quyết định sửa đổi, bổ sung Quyết định số 10/2026/QĐ-UBND",
+        "Lấy ý kiến đối với dự thảo Quyết định sửa đổi, bổ sung Quyết định số 09/2026/QĐ-CTUBND"
+      ],
+      "status": "active",
+      "updated_at": "2026-11-18T02:01:06+00:00",
+      "url": "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban",
+      "validated_at": "2026-11-18T02:01:06+00:00",
+      "validated_document_count": 15
+    },
+    "http://vpubnd.daklak.gov.vn/van-ban.html?TypeId=2&CurrentPage=1&FieldId=33": {
+      "attempts": 1,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_error": "Chỉ nhận diện 0 văn bản có số hiệu; cần ít nhất 3.",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "last_validation_status": "Hoạt động",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Giấy mời họp",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "updated_at": "2026-11-18T02:01:08+00:00",
+      "url": "http://vpubnd.daklak.gov.vn/van-ban.html?TypeId=2&CurrentPage=1&FieldId=33"
+    },
+    "https://bvhttdl.gov.vn/van-ban-du-thao": {
+      "attempts": 1,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_error": "Chỉ nhận diện 0 văn bản có số hiệu; cần ít nhất 3.",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "last_validation_status": "Hoạt động",
+      "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Góp ý dự thảo",
+      "origin_url": "https://bvhttdl.gov.vn/van-ban-quan-ly.htm",
+      "status": "pending",
+      "updated_at": "2026-11-18T02:01:09+00:00",
+      "url": "https://bvhttdl.gov.vn/van-ban-du-thao"
+    },
+    "https://bvhttdl.gov.vn/van-ban-quan-ly": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản",
+      "origin_url": "https://bvhttdl.gov.vn/van-ban-quan-ly.htm",
+      "status": "pending",
+      "url": "https://bvhttdl.gov.vn/van-ban-quan-ly"
+    },
+    "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=1": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản pháp quy",
+      "origin_url": "https://bvhttdl.gov.vn/van-ban-quan-ly.htm",
+      "status": "pending",
+      "url": "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=1"
+    },
+    "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=2": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://bvhttdl.gov.vn/van-ban-quan-ly.htm",
+      "status": "pending",
+      "url": "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=2"
+    },
+    "https://chinhphu.vn/du-thao-vbqppl/du-thao-thong-tu-quy-dinh-ve-viec-thong-tin-bao-cao-ve-cong-tac-kiem-dich-y-te-7966": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - Click vào đây để gửi góp ý - Dự thảo Thông tư quy định về việc thông ti",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://chinhphu.vn/du-thao-vbqppl/du-thao-thong-tu-quy-dinh-ve-viec-thong-tin-bao-cao-ve-cong-tac-kiem-dich-y-te-7966"
+    },
+    "https://congan.daklak.gov.vn/laws/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - VĂN BẢN",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/"
+    },
+    "https://congan.daklak.gov.vn/laws/Bo-luat-Luat/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - LUẬT",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Bo-luat-Luat/"
+    },
+    "https://congan.daklak.gov.vn/laws/Bo-luat/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - BỘ LUẬT",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Bo-luat/"
+    },
+    "https://congan.daklak.gov.vn/laws/Chuong-trinh-hanh-dong/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - CHƯƠNG TRÌNH HÀNH ĐỘNG",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Chuong-trinh-hanh-dong/"
+    },
+    "https://congan.daklak.gov.vn/laws/Hien-phap/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - HIẾN PHÁP",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Hien-phap/"
+    },
+    "https://congan.daklak.gov.vn/laws/Kiem-tra-giam-sat-va-ky-luat-Dang/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - KIỂM TRA, GIÁM SÁT VÀ KỶ LUẬT CỦA ĐẢNG",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Kiem-tra-giam-sat-va-ky-luat-Dang/"
+    },
+    "https://congan.daklak.gov.vn/laws/Nghi-Quyet/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - NGHỊ QUYẾT",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Nghi-Quyet/"
+    },
+    "https://congan.daklak.gov.vn/laws/Nghi-dinh/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - NGHỊ ĐỊNH",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Nghi-dinh/"
+    },
+    "https://congan.daklak.gov.vn/laws/Quyet-dinh/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - QUYẾT ĐỊNH",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Quyet-dinh/"
+    },
+    "https://congan.daklak.gov.vn/laws/Thong-tu-lien-tich/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - THÔNG TƯ LIÊN TỊCH",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Thong-tu-lien-tich/"
+    },
+    "https://congan.daklak.gov.vn/laws/Thong-tu/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - THÔNG TƯ",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Thong-tu/"
+    },
+    "https://congan.daklak.gov.vn/laws/Van-ban-tuyen-truyen-phap-luat/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Đắk Lắk - Cảnh báo tội phạm - VĂN BẢN TUYÊN TRUYỀN PHÁP LUẬT",
+      "origin_url": "https://congan.daklak.gov.vn/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.daklak.gov.vn/laws/Van-ban-tuyen-truyen-phap-luat/"
+    },
+    "https://congan.hochiminhcity.gov.vn/wps/portal/Home/van-ban-phap-quy": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an TP.HCM - Văn bản pháp quy",
+      "origin_url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu",
+      "status": "pending",
+      "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/van-ban-phap-quy"
+    },
+    "https://congan.quangtri.gov.vn/category/cai-cach-hanh-chinh/truyen-thong-du-thao-van-ban-quy-phajm-phap-luat/": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Công an Quảng Trị - Cảnh báo tội phạm - Truyền thông dự thảo văn bản quy phạm pháp luật",
+      "origin_url": "https://congan.quangtri.gov.vn/category/canh-bao-toi-pham/",
+      "status": "pending",
+      "url": "https://congan.quangtri.gov.vn/category/cai-cach-hanh-chinh/truyen-thong-du-thao-van-ban-quy-phajm-phap-luat/"
+    },
+    "https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đà Nẵng - Trang chủ tiếng Anh - GÓP Ý DỰ THẢO VB QUY PHẠM PHÁP LUẬT",
+      "origin_url": "https://danang.gov.vn/en/trang-chu",
+      "status": "pending",
+      "url": "https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat"
+    },
+    "https://danang.gov.vn/web/dng/van-ban-chi-dao-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đà Nẵng - Trang chủ tiếng Anh - VĂN BẢN CHỈ ĐẠO ĐIỀU HÀNH",
+      "origin_url": "https://danang.gov.vn/en/trang-chu",
+      "status": "pending",
+      "url": "https://danang.gov.vn/web/dng/van-ban-chi-dao-dieu-hanh"
+    },
+    "https://dangcongsan.vn/van-ban-cua-dang": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản Đảng",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng - Văn bản của Đảng",
+      "origin_url": "https://dangcongsan.vn/van-ban-cua-dang?menuId=6825579653d58aefae04bfb5",
+      "status": "pending",
+      "url": "https://dangcongsan.vn/van-ban-cua-dang"
+    },
+    "https://dangcongsan.vn/van-ban-cua-dang/chi-thi-so-16-ct-tw-ngay-02-11-2026-cua-ban-bi-thu-ve-day-manh-va-nang-tam-cong-tac-doi-ngoai-nhan-dan.html?menuId=6825579653d58aefae04bfb5": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản Đảng",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng - Chỉ thị của Ban Bí thư về đẩy mạnh và nâng tầm công tác đối ngoại nhân ",
+      "origin_url": "https://dangcongsan.vn/van-ban-cua-dang?menuId=6825579653d58aefae04bfb5",
+      "status": "pending",
+      "url": "https://dangcongsan.vn/van-ban-cua-dang/chi-thi-so-16-ct-tw-ngay-02-11-2026-cua-ban-bi-thu-ve-day-manh-va-nang-tam-cong-tac-doi-ngoai-nhan-dan.html?menuId=6825579653d58aefae04bfb5"
+    },
+    "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-89-kh-btgtw-ngay-14-11-2026-cua-ban-tuyen-giao-trung-uong-ve-to-chuc-cac-hoat-dong-ky-niem-80-nam-ngay-toan-.html?menuId=6825579653d58aefae04bfb5": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản Đảng",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng - Kế hoạch của Ban Tuyên giáo Trung ương về tổ chức các hoạt động kỷ niệm",
+      "origin_url": "https://dangcongsan.vn/van-ban-cua-dang?menuId=6825579653d58aefae04bfb5",
+      "status": "pending",
+      "url": "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-89-kh-btgtw-ngay-14-11-2026-cua-ban-tuyen-giao-trung-uong-ve-to-chuc-cac-hoat-dong-ky-niem-80-nam-ngay-toan-.html?menuId=6825579653d58aefae04bfb5"
+    },
+    "https://dangcongsan.vn/van-ban-cua-dang/nghi-quyet-so-32-nq-tw-ngay-06-11-2026-cua-bo-chinh-tri-ve-doi-moi-cong-tac-thanh-tra-dap-ung-yeu-cau-phat-trien-dat-nuo.html?menuId=6825579653d58aefae04bfb5": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản Đảng",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng - Nghị quyết của Bộ Chính trị về đổi mới công tác thanh tra đáp ứng yêu c",
+      "origin_url": "https://dangcongsan.vn/van-ban-cua-dang?menuId=6825579653d58aefae04bfb5",
+      "status": "pending",
+      "url": "https://dangcongsan.vn/van-ban-cua-dang/nghi-quyet-so-32-nq-tw-ngay-06-11-2026-cua-bo-chinh-tri-ve-doi-moi-cong-tac-thanh-tra-dap-ung-yeu-cau-phat-trien-dat-nuo.html?menuId=6825579653d58aefae04bfb5"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/bang-so-sanh-thuyet-minh-du-thao-tt-ktdl.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - bang-so-sanh-thuyet-minh-du-thao-tt-ktdl.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/bang-so-sanh-thuyet-minh-du-thao-tt-ktdl.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-nq-dat-doi-du.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-nq-dat-doi-du.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-nq-dat-doi-du.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-to-trinh-bo-truong-ban-hanh-thong-tu.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-to-trinh-bo-truong-ban-hanh-thong-tu.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-to-trinh-bo-truong-ban-hanh-thong-tu.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-tt-ban-hanh-dmhhxknkvn-theo-ahtn-2028.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-tt-ban-hanh-dmhhxknkvn-theo-ahtn-2028.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-tt-ban-hanh-dmhhxknkvn-theo-ahtn-2028.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-ttrcp-dat-doi-du.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-ttrcp-dat-doi-du.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang10/du-thao-ttrcp-dat-doi-du.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang11/du-thao-thong-tu-lan-2-.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-thong-tu-lan-2-.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang11/du-thao-thong-tu-lan-2-.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang11/du-thao-thong-tu.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - du-thao-thong-tu.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/2026/Thang11/du-thao-thong-tu.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/5.baocaorasoatchutruongcuadang_vanbanqpplnqcpvnpost-04.11.2026-1-.docx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Chính phủ - Dự thảo văn bản quy phạm pháp luật - 5.baocaorasoatchutruongcuadang_vanbanqpplnqcpvnpost-04.11.2026-1-.docx",
+      "origin_url": "https://chinhphu.vn/du-thao-vbqppl",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/duthaovbpl/5.baocaorasoatchutruongcuadang_vanbanqpplnqcpvnpost-04.11.2026-1-.docx"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/113-vbhn-bnnmt.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/113-vbhn-bnnmt.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/114-vbhn-bnnmt.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/114-vbhn-bnnmt.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/115-vbhn-bnnmt.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/115-vbhn-bnnmt.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/11814_vpcp-qhdp_16112026_2-signed.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/11814_vpcp-qhdp_16112026_2-signed.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/21-vbhn-bvhttdl.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/21-vbhn-bvhttdl.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/22-vbhn-bvhttdl.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/22-vbhn-bvhttdl.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/2233_qdttg_14112026-signed.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/2233_qdttg_14112026-signed.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/2236_qdttg_14112026-signed.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/2236_qdttg_14112026-signed.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/413_2026_ndcp_14112026-signed-1-.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/413_2026_ndcp_14112026-signed-1-.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/46-byt-kem.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/46-byt-kem.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/46-byt.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/46-byt.signed.pdf"
+    },
+    "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/586_tb-vpcp_15112026-signed.signed.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hệ thống Văn bản Chính phủ - Tài liệu đính kèm",
+      "origin_url": "https://chinhphu.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/586_tb-vpcp_15112026-signed.signed.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_35_2026_IZLOr0pHYUbyIUNO.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_35_2026_IZLOr0pHYUbyIUNO.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_37_2026_0Jrf9U-QkGWK4c-0.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_37_2026_0Jrf9U-QkGWK4c-0.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_38_2026_bFm8yT0vLkWCC7mS.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_38_2026_bFm8yT0vLkWCC7mS.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_87_SA1lkYLqGULT9HoP.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_87_SA1lkYLqGULT9HoP.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_88_53fdA44cRkWH2hB4.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_88_53fdA44cRkWH2hB4.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_89_bCJn3H5fT0KvvSIq.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_89_bCJn3H5fT0KvvSIq.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_90_TUSDtoK1wUmfmw3h.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_90_TUSDtoK1wUmfmw3h.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_91_mg-JXIWAUA1EjVXf.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_91_mg-JXIWAUA1EjVXf.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_93_1_gq1a1dG06UGiqTCO.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_93_1_gq1a1dG06UGiqTCO.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_94_IwOg8A-z10uDsYM6.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-10/NQ_94_IwOg8A-z10uDsYM6.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-11/NQ 36_kKhwtov-lUCwjZL3.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Danh mục văn bản",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/VanBan/2026-11/NQ 36_kKhwtov-lUCwjZL3.pdf"
+    },
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/default.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Văn bản - tài liệu",
+      "origin_url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt",
+      "status": "pending",
+      "url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/default.aspx"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/110250-du-thao-luat-xin-y-kien": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Dự thảo luật xin ý kiến",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/110250-du-thao-luat-xin-y-kien"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/111250-du-thao-nghi-quyet-xin-y-kien": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Dự thảo nghị quyết xin ý kiến",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/111250-du-thao-nghi-quyet-xin-y-kien"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/151250-van-ban-tuyen-truyen": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Văn bản tuyên truyền",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/151250-van-ban-tuyen-truyen"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/156250-van-ban-lay-y-kien-nhan-dan": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Văn bản lấy ý kiến Nhân dân",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/156250-van-ban-lay-y-kien-nhan-dan"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/7250-van-ban-moi": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Văn bản mới",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/7250-van-ban-moi"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/ban-van-hoa-xa-hoi/ban-van-hoa-xa-hoi-tham-tra-bao-cao-du-thao-nghi-quyet-trinh-ky-hop-thu-10-hdnd-tinh-khoa-xv.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - BAN VĂN HÓA – XÃ HỘI: THẨM TRA BÁO CÁO, DỰ THẢO NGHỊ QUYẾT TRÌNH KỲ HỌP THỨ 10 HĐND TỈ",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/ban-van-hoa-xa-hoi/ban-van-hoa-xa-hoi-tham-tra-bao-cao-du-thao-nghi-quyet-trinh-ky-hop-thu-10-hdnd-tinh-khoa-xv.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-gop-y-vao-du-thao-luat-cong-nghiep-cong-nghe-so-va-luat-hoa-chat-sua-doi.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Lấy ý kiến góp ý vào dự thảo Luật Công nghiệp công nghệ số và Luật Hóa chất (sửa đổi)",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-gop-y-vao-du-thao-luat-cong-nghiep-cong-nghe-so-va-luat-hoa-chat-sua-doi.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-nha-giao.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Lấy ý kiến Nhân dân góp ý vào dự thảo Luật Nhà giáo",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-nha-giao.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-quang-cao.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Lấy ý kiến Nhân dân góp ý vào dự thảo Luật sửa đổi, bổ sung một số điều của Luật Quảng",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-quang-cao.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-tieu-chuan-va-quy-chuan-ky-thuat.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Lấy ý kiến Nhân dân góp ý vào dự thảo Luật sửa đổi, bổ sung một số điều của Luật tiêu ",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-tieu-chuan-va-quy-chuan-ky-thuat.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-viec-lam-sua-doi.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Lấy ý kiến Nhân dân góp ý vào dự thảo Luật Việc làm (sửa đổi)",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/du-thao-luat-xin-y-kien/lay-y-kien-nhan-dan-gop-y-vao-du-thao-luat-viec-lam-sua-doi.html"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên - Văn bản - Nghị quyết",
+      "origin_url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong",
+      "status": "pending",
+      "url": "https://ddbqhhdnd.hungyen.gov.vn/van-ban"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban.html?CurrentPage=1": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - «",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban.html?CurrentPage=1"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban.html?CurrentPage=2": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - 2",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban.html?CurrentPage=2"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-326-quy-dinh-ve-dinh-danh-dia-diem-429.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-326-quy-dinh-ve-dinh-danh-dia-diem-429.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-327-2026-nd-cp-430.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-327-2026-nd-cp-430.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-329-2026-nd-cp-ngay-19-8-2026-cua-chinh-phu-quy-dinh-ve-luc-luong-bao-ve-an-ninh-mang-431.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-329-2026-nd-cp-ngay-19-8-2026-cua-chinh-phu-quy-dinh-ve-luc-luong-bao-ve-an-ninh-mang-431.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-331-2026-nd-cp-ngay-19-8-2026-cua-chinh-phu-ve-bao-ve-an-ninh-mang-doi-voi-he-thong-thong-tin-432.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-331-2026-nd-cp-ngay-19-8-2026-cua-chinh-phu-ve-bao-ve-an-ninh-mang-doi-voi-he-thong-thong-tin-432.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-332-2026-nd-cp-chinh-phu-quy-dinh-ve-hoat-dong-kinh-doanh-san-pham-dich-vu-an-ninh-mang-434.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-332-2026-nd-cp-chinh-phu-quy-dinh-ve-hoat-dong-kinh-doanh-san-pham-dich-vu-an-ninh-mang-434.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-333-2026-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-an-ninh-mang-435.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/nghi-dinh-so-333-2026-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-an-ninh-mang-435.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ban-hanh-danh-muc-thong-tin-phai-duoc-cong-khai-va-danh-muc-thong-tin-cong-dan-duoc-tiep-can-co-dieu-kien-cua-uy-ban-nhan-dan-xa-ea-mdroh-539.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ban-hanh-danh-muc-thong-tin-phai-duoc-cong-khai-va-danh-muc-thong-tin-cong-dan-duoc-tiep-can-co-dieu-kien-cua-uy-ban-nhan-dan-xa-ea-mdroh-539.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ve-viec-cong-nhan-nguoi-co-uy-tin-trong-vung-dong-bao-dan-toc-thieu-so-tren-dia-ban-xa-ea-mdroh-553.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ve-viec-cong-nhan-nguoi-co-uy-tin-trong-vung-dong-bao-dan-toc-thieu-so-tren-dia-ban-xa-ea-mdroh-553.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ve-viec-phan-cong-don-vi-dau-moi-tiep-nhan-yeu-cau-cung-cap-thong-tin-theo-luat-tiep-can-thong-tin-541.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/quyet-dinh-ve-viec-phan-cong-don-vi-dau-moi-tiep-nhan-yeu-cau-cung-cap-thong-tin-theo-luat-tiep-can-thong-tin-541.html"
+    },
+    "https://eamdroh.daklak.gov.vn/van-ban/thong-bao-cong-khai-thong-tin-dau-moi-tiep-nhan-yeu-cau-cung-cap-thong-tin-cua-uy-ban-nhan-dan-xa-ea-mdroh-540.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND Ea Mdroh - Văn bản - Xem",
+      "origin_url": "https://eamdroh.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://eamdroh.daklak.gov.vn/van-ban/thong-bao-cong-khai-thong-tin-dau-moi-tiep-nhan-yeu-cau-cung-cap-thong-tin-cua-uy-ban-nhan-dan-xa-ea-mdroh-540.html"
+    },
+    "https://haiphong.gov.vn/he-thong-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hải Phòng - Văn bản quy phạm pháp luật - Hệ Thống Văn Bản",
+      "origin_url": "https://haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://haiphong.gov.vn/he-thong-van-ban"
+    },
+    "https://haiphong.gov.vn/van-ban-chinh-sach": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Hải Phòng - Văn bản quy phạm pháp luật - Văn bản chính sách",
+      "origin_url": "https://haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://haiphong.gov.vn/van-ban-chinh-sach"
+    },
+    "https://laichau.gov.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - Văn bản pháp quy",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://laichau.gov.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat"
+    },
+    "https://laichau.gov.vn/he-thong-van-ban/xac-nhan-dang-ky-sua-doi-bo-sung-noi-dung-hoat-dong-ban-hang-da-cap-tai-dia-phuong-cong-ty-tnhh-seacret-2.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - Xác nhận đăng ký sửa đổi, bổ sung nội dung hoạt động bán hàng đa cấp tại địa phương (Công ty TNHH S",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://laichau.gov.vn/he-thong-van-ban/xac-nhan-dang-ky-sua-doi-bo-sung-noi-dung-hoat-dong-ban-hang-da-cap-tai-dia-phuong-cong-ty-tnhh-seacret-2.html"
+    },
+    "https://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - Lấy ý kiến nhân dân về dự thảo văn bản",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban"
+    },
+    "https://laichau.gov.vn/van-ban-quy-pham-phap-luat?categoryId=14595045": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - Văn bản quy phạm pháp luật",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://laichau.gov.vn/van-ban-quy-pham-phap-luat?categoryId=14595045"
+    },
+    "https://luatvietnam.vn/ban-tin-luatvietnam/diem-tin-van-ban-moi-c220-article.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Điểm tin văn bản mới",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/ban-tin-luatvietnam/diem-tin-van-ban-moi-c220-article.html"
+    },
+    "https://luatvietnam.vn/ban-tin-luatvietnam/van-ban-cap-nhat-hang-tuan-c219-article.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản hàng tuần",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/ban-tin-luatvietnam/van-ban-cap-nhat-hang-tuan-c219-article.html"
+    },
+    "https://luatvietnam.vn/dich-vu/phan-tich-van-ban.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Phân tích văn bản",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/dich-vu/phan-tich-van-ban.html"
+    },
+    "https://luatvietnam.vn/du-thao.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Dự thảo",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/du-thao.html"
+    },
+    "https://luatvietnam.vn/tin-van-ban-moi-c186-article.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Tin văn bản mới",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/tin-van-ban-moi-c186-article.html"
+    },
+    "https://luatvietnam.vn/van-ban-cua-dang.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban-cua-dang.html"
+    },
+    "https://luatvietnam.vn/van-ban-hop-nhat.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban-hop-nhat.html"
+    },
+    "https://luatvietnam.vn/van-ban-luat-viet-nam.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban-luat-viet-nam.html"
+    },
+    "https://luatvietnam.vn/van-ban-moi.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản mới",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html?PageSize=20&PageIndex=2",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban-moi.html"
+    },
+    "https://luatvietnam.vn/van-ban-uy-ban-nhan-dan.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Văn bản UBND",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban-uy-ban-nhan-dan.html"
+    },
+    "https://luatvietnam.vn/van-ban/tim-kiem.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban/tim-kiem.html"
+    },
+    "https://luatvietnam.vn/van-ban/tim-kiem.html?AdvancedSearch=1": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Tìm nâng cao",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-ban/tim-kiem.html?AdvancedSearch=1"
+    },
+    "https://luatvietnam.vn/van-hoa/van-ban-hop-nhat-21-2026-vbhn-tt-bvhttdl-2026-quy-dinh-to-chuc-thi-lien-hoan-van-nghe-quan-chung-456790-d5.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "LuatVietnam - Văn bản mới - Tổng quan",
+      "origin_url": "https://luatvietnam.vn/van-ban-moi.html",
+      "status": "pending",
+      "url": "https://luatvietnam.vn/van-hoa/van-ban-hop-nhat-21-2026-vbhn-tt-bvhttdl-2026-quy-dinh-to-chuc-thi-lien-hoan-van-nghe-quan-chung-456790-d5.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-cap-kinh-phi-ho-tro-mai-tang-phi-cho-ong-vo-dinh-hai.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Cấp kinh phí hỗ trợ mai táng phí cho ông Võ Đình Hải",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-cap-kinh-phi-ho-tro-mai-tang-phi-cho-ong-vo-dinh-hai.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-dieu-chinh-muc-tro-cap-xa-hoi-hang-thang-cho-ba-pham-thi-o.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Điều chỉnh mức trợ cấp xã hội hằng tháng cho bà Phạm Thị Ở",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-dieu-chinh-muc-tro-cap-xa-hoi-hang-thang-cho-ba-pham-thi-o.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-dieu-chinh-muc-tro-cap-xa-hoi-hang-thang-cho-ong-bui-van-be.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Điều chỉnh mức trợ cấp xã hội hằng tháng cho ông Bùi Văn Bé",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-dieu-chinh-muc-tro-cap-xa-hoi-hang-thang-cho-ong-bui-van-be.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-ho-tro-kinh-phi-cham-soc-nguoi-khuyet-tat-dac-biet-nang-doi-voi-ba-phu-thi-hoa.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Thôi hỗ trợ kinh phí chăm sóc người khuyết tật đặc biệt nặng đối với bà Phù Thị Hoa",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-ho-tro-kinh-phi-cham-soc-nguoi-khuyet-tat-dac-biet-nang-doi-voi-ba-phu-thi-hoa.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-huong-tro-giup-xa-hoi-hang-thang-doi-voi-ba-bui-thi-tho.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Thôi hưởng trợ giúp xã hội hằng tháng đối với bà Bùi Thị Thơ",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-huong-tro-giup-xa-hoi-hang-thang-doi-voi-ba-bui-thi-tho.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-huong-tro-giup-xa-hoi-hang-thang-doi-voi-ba-tran-thi-thai.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Thôi hưởng trợ giúp xã hội hằng tháng đối với bà Trần Thị Thải",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-thoi-huong-tro-giup-xa-hoi-hang-thang-doi-voi-ba-tran-thi-thai.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-tro-cap-xa-hoi-hang-thang-cho-ong-tran-thanh-hoang.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Q/đ Trợ cấp xã hội hằng tháng cho ông Trần Thành Hoàng",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/q-d-tro-cap-xa-hoi-hang-thang-cho-ong-tran-thanh-hoang.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/qd-ve-viec-kien-toan-thanh-vien-hoi-dong-thi-dua-khen-thuong-dac-khu-ly-son.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - QĐ Về việc kiện toàn thành viên Hội đồng Thi đua, khen thưởng đặc khu Lý Sơn",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/qd-ve-viec-kien-toan-thanh-vien-hoi-dong-thi-dua-khen-thuong-dac-khu-ly-son.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/thong-bao-cong-khai-duong-day-nong-day-them-hoc-them.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Thông báo công khai đường dây nóng dạy thêm, học thêm",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/thong-bao-cong-khai-duong-day-nong-day-them-hoc-them.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-bao-cao-ket-qua-hoat-dong-cua-doi-cong-tac-xa-hoi-tinh-nguyen-nam-2026.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Về việc báo cáo kết quả hoạt động của Đội Công tác Xã hội tình nguyện năm 2026",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-bao-cao-ket-qua-hoat-dong-cua-doi-cong-tac-xa-hoi-tinh-nguyen-nam-2026.html"
+    },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-trien-khai-bao-cao-thong-ke-ky-dau-nam-hoc-2026-2027.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Về việc triển khai báo cáo thống kê kỳ đầu năm học 2026-2027",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-trien-khai-bao-cao-thong-ke-ky-dau-nam-hoc-2026-2027.html"
+    },
+    "https://lyson.quangngai.gov.vn/van-ban-du-thao": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND xã Lý Sơn - Văn bản dự thảo",
+      "origin_url": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son",
+      "status": "pending",
+      "url": "https://lyson.quangngai.gov.vn/van-ban-du-thao"
+    },
+    "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/913/101-2026-VBHN-TT-BNNMT.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 101-2026-VBHN-TT-BNNMT.pdf",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/913/101-2026-VBHN-TT-BNNMT.pdf"
+    },
+    "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/914/110-2026-VBHN-TT-BNNMT.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 110-2026-VBHN-TT-BNNMT.pdf",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/914/110-2026-VBHN-TT-BNNMT.pdf"
+    },
+    "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/915/111-2026-VBHN-TT-BNNMT.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 111-2026-VBHN-TT-BNNMT.pdf",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/915/111-2026-VBHN-TT-BNNMT.pdf"
+    },
+    "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/925/112-2026-VBHN-TT-BNNMT.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 112-2026-VBHN-TT-BNNMT.pdf",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/925/112-2026-VBHN-TT-BNNMT.pdf"
+    },
+    "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/926/113-2026-VBHN-TT-BNNMT.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 113-2026-VBHN-TT-BNNMT.pdf",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/noidung/Lists/VBQPPL/Attachments/926/113-2026-VBHN-TT-BNNMT.pdf"
+    },
+    "https://mae.gov.vn/uy-ban-thuong-vu-quoc-hoi-cho-y-kien-hoan-thien-du-thao-luat-dat-dai-23422.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Xem thêm >",
+      "origin_url": "https://mae.gov.vn/",
+      "status": "pending",
+      "url": "https://mae.gov.vn/uy-ban-thuong-vu-quoc-hoi-cho-y-kien-hoan-thien-du-thao-luat-dat-dai-23422.htm"
+    },
+    "https://mae.gov.vn/van-ban-dieu-hanh.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-dieu-hanh.htm"
+    },
+    "https://mae.gov.vn/van-ban-du-thao.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - Góp ý dự thảo",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-du-thao.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-913.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 101/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-913.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-914.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 110/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-914.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-915.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 111/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-915.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-916.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - 102/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-916.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-917.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - 103/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-917.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-918.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - 104/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-918.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-925.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 112/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-925.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat-926.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật - 113/2026/VBHN-TT-BNNMT",
+      "origin_url": "https://mae.gov.vn/van-ban-phap-luat.htm",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat-926.htm"
+    },
+    "https://mae.gov.vn/van-ban-phap-luat.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Nông nghiệp và Môi trường - Văn bản quy phạm pháp luật",
+      "origin_url": "https://mae.gov.vn/",
+      "status": "pending",
+      "url": "https://mae.gov.vn/van-ban-phap-luat.htm"
+    },
+    "https://medinet.hochiminhcity.gov.vn/thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te-vb4639.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Văn bản của Sở Y tế",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te-vb4639.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat-vb1291.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Văn bản pháp luật",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat-vb1291.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-vb4638.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Văn bản QLNN về Y tế",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-vb4638.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-c4638-44093.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Lời hiệu triệu phòng, chống dịch COVID-19 của Bộ trưởng Bộ Y tế Nguyễn Thanh Long",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-c4638-44093.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-c4638-52113.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - Thư của Bộ trưởng Bộ Y tế nhân ngày Nhà giáo Việt Nam 2021",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-c4638-52113.aspx"
+    },
+    "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-c4638-31679.aspx": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Medinet TP.HCM - V/v triển khai cài đặt và sử dụng ứng dụng BlueZone",
+      "origin_url": "https://medinet.hochiminhcity.gov.vn/Default.aspx",
+      "status": "pending",
+      "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-c4638-31679.aspx"
+    },
+    "https://moit.gov.vn/bao-ve-moi-truong/van-ban-ve-moi-truong": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Văn bản về môi trường",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/bao-ve-moi-truong/van-ban-ve-moi-truong"
+    },
+    "https://moit.gov.vn/bo-cong-thuong-ho-tro-dia-phuong-trien-khai-chinh-quyen-hai-cap/van-ban-tra-loi-cac-dia-phuong": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Văn bản trả lời các địa phương",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/bo-cong-thuong-ho-tro-dia-phuong-trien-khai-chinh-quyen-hai-cap/van-ban-tra-loi-cac-dia-phuong"
+    },
+    "https://moit.gov.vn/du-thao-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Dự thảo văn bản",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/du-thao-van-ban"
+    },
+    "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Văn bản điều hành",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh"
+    },
+    "https://moit.gov.vn/van-ban-phap-luat/van-ban-hop-nhat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Văn bản hợp nhất",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-hop-nhat"
+    },
+    "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Văn bản pháp quy",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy"
+    },
+    "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-van-trien-khai-nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-nam-2026.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Bộ Công Thương - Văn bản pháp luật - Bộ Công Thương triển khai thực hiện Nghị quyết Phiên họp Chính phủ thường kỳ tháng ",
+      "origin_url": "https://moit.gov.vn/van-ban-phap-luat",
+      "status": "pending",
+      "url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-van-trien-khai-nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-nam-2026.html"
+    },
+    "https://nghean.gov.vn/van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Nghệ An - Văn bản",
+      "origin_url": "https://nghean.gov.vn/van-ban-chi-dao-dieu-hanh",
+      "status": "pending",
+      "url": "https://nghean.gov.vn/van-ban-quy-pham-phap-luat"
+    },
+    "https://qldd.mae.gov.vn/danh-sach-van-ban-du-thao.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cục Quản lý đất đai - Văn bản dự thảo",
+      "origin_url": "https://qldd.mae.gov.vn/",
+      "status": "pending",
+      "url": "https://qldd.mae.gov.vn/danh-sach-van-ban-du-thao.htm"
+    },
+    "https://qldd.mae.gov.vn/danh-sach-van-ban.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cục Quản lý đất đai - Văn bản quy phạm pháp luật",
+      "origin_url": "https://qldd.mae.gov.vn/",
+      "status": "pending",
+      "url": "https://qldd.mae.gov.vn/danh-sach-van-ban.htm"
+    },
+    "https://qldd.mae.gov.vn/van-ban-252.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cục Quản lý đất đai - Văn bản hợp nhất quy trình và Định mức kinh tế - kỹ thuật xây dựng cơ sở dữ liệu tài nguyên và môi",
+      "origin_url": "https://qldd.mae.gov.vn/",
+      "status": "pending",
+      "url": "https://qldd.mae.gov.vn/van-ban-252.htm"
+    },
+    "https://qldd.mae.gov.vn/van-ban-chi-dao-dieu-hanh.htm": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cục Quản lý đất đai - Danh mục văn bản",
+      "origin_url": "https://qldd.mae.gov.vn/",
+      "status": "pending",
+      "url": "https://qldd.mae.gov.vn/van-ban-chi-dao-dieu-hanh.htm"
+    },
+    "https://qlvb.laichau.gov.vn/qlvbdh_lcu/main": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Lai Châu - E-Office",
+      "origin_url": "https://laichau.gov.vn/he-thong-van-ban",
+      "status": "pending",
+      "url": "https://qlvb.laichau.gov.vn/qlvbdh_lcu/main"
+    },
+    "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/DefaultMetro?login=&redirectto=qlvb%2Fvbpq.nsf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Điện Biên (VB Trung ương) - Đăng nhập",
+      "origin_url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/DefaultMetro?login=&redirectto=qlvb%2Fvbpq.nsf"
+    },
+    "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/byLoaiTaiLieuHop?OpenView=&RestrictToCategory=T%C3%A0i+li%E1%BB%87u+h%E1%BB%8Dp": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Điện Biên (VB Trung ương) - Tài liệu họp",
+      "origin_url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/byLoaiTaiLieuHop?OpenView=&RestrictToCategory=T%C3%A0i+li%E1%BB%87u+h%E1%BB%8Dp"
+    },
+    "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf?open=&rand=0%2C359578850995651": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Điện Biên (VB Trung ương) - Trang chủ",
+      "origin_url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf?open=&rand=0%2C359578850995651"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/byNam?OpenView=&RestrictToCategory=2026": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Trang chủ",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/byNam?OpenView=&RestrictToCategory=2026"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=BQL+Khu+kinh+t%E1%BA%BF+t%E1%BB%89nh%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - BQL Khu kinh tế tỉnh",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=BQL+Khu+kinh+t%E1%BA%BF+t%E1%BB%89nh%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=H%C4%90ND+t%E1%BB%89nh%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=H%C4%90ND+t%E1%BB%89nh%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+C%C3%B4ng+th%C6%B0%C6%A1ng%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Công thương",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+C%C3%B4ng+th%C6%B0%C6%A1ng%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Gi%C3%A1o+d%E1%BB%A5c+v%C3%A0+%C4%90%C3%A0o+t%E1%BA%A1o%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Giáo dục và Đào tạo",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Gi%C3%A1o+d%E1%BB%A5c+v%C3%A0+%C4%90%C3%A0o+t%E1%BA%A1o%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Khoa+h%E1%BB%8Dc+v%C3%A0+C%C3%B4ng+ngh%E1%BB%87%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Khoa học và Công nghệ",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Khoa+h%E1%BB%8Dc+v%C3%A0+C%C3%B4ng+ngh%E1%BB%87%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+N%C3%B4ng+nghi%E1%BB%87p+v%C3%A0+M%C3%B4i+tr%C6%B0%E1%BB%9Dng%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Nông nghiệp và Môi trường",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+N%C3%B4ng+nghi%E1%BB%87p+v%C3%A0+M%C3%B4i+tr%C6%B0%E1%BB%9Dng%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+N%E1%BB%99i+V%E1%BB%A5%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Nội Vụ",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+N%E1%BB%99i+V%E1%BB%A5%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Ngo%E1%BA%A1i+v%E1%BB%A5%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Ngoại vụ",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+Ngo%E1%BA%A1i+v%E1%BB%A5%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+T%C3%A0i+ch%C3%ADnh%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Sở Tài chính",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=S%E1%BB%9F+T%C3%A0i+ch%C3%ADnh%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=UBND+t%E1%BB%89nh%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - UBND tỉnh",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=UBND+t%E1%BB%89nh%2A"
+    },
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=V%C4%83n+ph%C3%B2ng+UBND+t%E1%BB%89nh%2A": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Cổng QPPL Hà Tĩnh - Văn phòng UBND tỉnh",
+      "origin_url": "https://qppl.hatinh.gov.vn/vbpq.nsf/DefaultMetro?OpenForm=",
+      "status": "pending",
+      "url": "https://qppl.hatinh.gov.vn/vbpq.nsf/bycoquanbanhanh?OpenView=&RestrictToCategory=V%C4%83n+ph%C3%B2ng+UBND+t%E1%BB%89nh%2A"
+    },
+    "https://sbv.gov.vn/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
+      "origin_url": "https://sbv.gov.vn/vi/trang-chu",
+      "status": "pending",
+      "url": "https://sbv.gov.vn/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke"
+    },
+    "https://sbv.gov.vn/vi/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
+      "origin_url": "https://sbv.gov.vn/vi/trang-chu",
+      "status": "pending",
+      "url": "https://sbv.gov.vn/vi/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke"
+    },
+    "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL",
+      "origin_url": "https://sbv.gov.vn/vi/trang-chu",
+      "status": "pending",
+      "url": "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1"
+    },
+    "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính",
+      "origin_url": "https://sbv.gov.vn/vi/trang-chu",
+      "status": "pending",
+      "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh"
+    },
+    "https://sgddt.dongnai.gov.vn/he-thong-van-ban/trien-khai-to-chuc-cac-hoat-dong-huong-ung-ngay-truyen-thong-nganh-khi-tuong-th/vbct/9/1987": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Giáo dục và Đào tạo Đồng Nai - Triển khai tổ chức các hoạt động hưởng ứng Ngày truyền thống ngành Khí tượng Thủy văn ",
+      "origin_url": "https://sgddt.dongnai.gov.vn/homegd6",
+      "status": "pending",
+      "url": "https://sgddt.dongnai.gov.vn/he-thong-van-ban/trien-khai-to-chuc-cac-hoat-dong-huong-ung-ngay-truyen-thong-nganh-khi-tuong-th/vbct/9/1987"
+    },
+    "https://sgddt.dongnai.gov.vn/he-thong-van-ban/vbplus/9/0/0/0": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Giáo dục và Đào tạo Đồng Nai - HỆ THỐNG VĂN BẢN",
+      "origin_url": "https://sgddt.dongnai.gov.vn/homegd6",
+      "status": "pending",
+      "url": "https://sgddt.dongnai.gov.vn/he-thong-van-ban/vbplus/9/0/0/0"
+    },
+    "https://sgddt.dongnai.gov.vn/tin-tuc-su-kien/bo-giao-duc-va-dao-tao-rut-ngan-thoi-gian-cong-nhan-van-bang-do-co-so-nuoc-ngoa/ct/18/1980": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Giáo dục và Đào tạo Đồng Nai - Bộ giáo dục và đào tạo rút ngắn thời gian công nhận văn bằng do cơ sở nước ngoài cấp",
+      "origin_url": "https://sgddt.dongnai.gov.vn/homegd6",
+      "status": "pending",
+      "url": "https://sgddt.dongnai.gov.vn/tin-tuc-su-kien/bo-giao-duc-va-dao-tao-rut-ngan-thoi-gian-cong-nhan-van-bang-do-co-so-nuoc-ngoa/ct/18/1980"
+    },
+    "https://sgddt.dongnai.gov.vn/van-ban/vbplus/0/0/0/0": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Giáo dục và Đào tạo Đồng Nai - Xem thêm",
+      "origin_url": "https://sgddt.dongnai.gov.vn/homegd6",
+      "status": "pending",
+      "url": "https://sgddt.dongnai.gov.vn/van-ban/vbplus/0/0/0/0"
+    },
+    "https://sonnmt.haiphong.gov.vn/he-thong-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Hệ thống văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/he-thong-van-ban"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-49-2026-tt-bnnmt-ngay-31-10-2026-quy-dinh-ve-kiem-soat-giet-mo-va-kiem-tra-ve-sinh-t-1003799": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-49-2026-tt-bnnmt-ngay-31-10-2026-quy-dinh-ve-kiem-soat-giet-mo-va-kiem-tra-ve-sinh-t-1003799"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-danh-muc-vat-the-thuoc-dien-kiem-dich-thuc-vat-danh-muc-vat-t-996694": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-danh-muc-vat-the-thuoc-dien-kiem-dich-thuc-vat-danh-muc-vat-t-996694"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-dieu-kien-trong-cham-soc-cao-s-996702": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-dieu-kien-trong-cham-soc-cao-s-996702"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-yeu-cau-doi-voi-vat-the-thuoc--996679": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-yeu-cau-doi-voi-vat-the-thuoc--996679"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat--996684": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat--996684"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thanh-lap-cap-nhat-bo-ban-do-chuan-bien-gioi-quoc-gi-996743": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thanh-lap-cap-nhat-bo-ban-do-chuan-bien-gioi-quoc-gi-996743"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thu-nhan-va-xu-ly-du-lieu-anh-so-tu-tau-bay-khong-ng-996737": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thu-nhan-va-xu-ly-du-lieu-anh-so-tu-tau-bay-khong-ng-996737"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-dinh-muc-kinh-te-ky-thuat-xay-dung-co-so-du-lieu-nen-dia-l-996725": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-dinh-muc-kinh-te-ky-thuat-xay-dung-co-so-du-lieu-nen-dia-l-996725"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-do-trong-luc-chi-tiet-996732": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-do-trong-luc-chi-tiet-996732"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-kiem-dich-thuc-vat-noi-dia-996698": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+      "status": "pending",
+      "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-kiem-dich-thuc-vat-noi-dia-996698"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/gop-y-du-thao-van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Góp ý dự thảo văn bản quy phạm pháp luật",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/gop-y-du-thao-van-ban-quy-pham-phap-luat"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Văn bản quản lý nhà nước",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/van-ban-quy-pham-phap-luat"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/web/snv/he-thong-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Hệ thống văn bản",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/he-thong-van-ban"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-chi-dao-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Danh mục văn bản",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-chi-dao-dieu-hanh"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-phu-vu-bau-cu-khoa-xvi": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Văn bản phục vụ bầu cử",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-phu-vu-bau-cu-khoa-xvi"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Nội vụ TP.HCM - Văn bản quy phạm pháp luật",
+      "origin_url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu",
+      "status": "pending",
+      "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/van-ban-quy-pham-phap-luat"
+    },
+    "https://soxaydung.haiphong.gov.vn/he-thong-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Hệ thống văn bản",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/he-thong-van-ban"
+    },
+    "https://soxaydung.haiphong.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-phap-nam-1992": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Lấy ý kiến nhân dân về Dự thảo sửa đổi Hiến pháp năm 1992",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-phap-nam-1992"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - VĂN BẢN CHỈ ĐẠO ĐIỀU HÀNH",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban-hanh-chinh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Văn bản hành chính",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban-hanh-chinh"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Văn bản quy phạm pháp luật",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban-quy-pham-phap-luat"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-to-chuc-lay-y-kien-ve-du-thao-sua-doi-hien-phap-nam-1992-nganh-xay-dung-hai-phong-420711": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-to-chuc-lay-y-kien-ve-du-thao-sua-doi-hien-phap-nam-1992-nganh-xay-dung-hai-phong-420711"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-to-chuc-lay-y-kien-ve-du-thao-sua-doi-hien-phap-nam-1992-tren-dia-ban-thanh-pho-hai-pho-420712": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-to-chuc-lay-y-kien-ve-du-thao-sua-doi-hien-phap-nam-1992-tren-dia-ban-thanh-pho-hai-pho-420712"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-ve-cong-tac-tu-tuong-thuc-hien-sua-doi-bo-sung-hien-phap-nam-1992-420713": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Danh mục văn bản",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-ve-cong-tac-tu-tuong-thuc-hien-sua-doi-bo-sung-hien-phap-nam-1992-420713"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban/thong-tri-cua-ban-thuong-vu-thanh-uy-ve-viec-to-chuc-lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-420714": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Thông tri của Ban Thường vụ Thành ủy về việc tổ chức lấy ý kiến nhân dân về Dự thảo sửa đổi ",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban/thong-tri-cua-ban-thuong-vu-thanh-uy-ve-viec-to-chuc-lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-420714"
+    },
+    "https://soxaydung.haiphong.gov.vn/van-ban/toan-van-du-thao-sua-doi-hien-phap-nam-1992-420716": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Xây dựng TP. Hải Phòng - Toàn văn dự thảo sửa đổi Hiến pháp năm 1992",
+      "origin_url": "https://soxaydung.haiphong.gov.vn/van-ban",
+      "status": "pending",
+      "url": "https://soxaydung.haiphong.gov.vn/van-ban/toan-van-du-thao-sua-doi-hien-phap-nam-1992-420716"
+    },
+    "https://stp.angiang.gov.vn/du-thao-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - Danh mục văn bản",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/du-thao-van-ban"
+    },
+    "https://stp.angiang.gov.vn/index.php/an-giang-ket-noi-hoi-nghi-tap-huan-nghiep-vu-kiem-tra-ra-soat-he-thong-hoa-va-xu-ly-van-ban-quy-pham-phap-luat": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - An Giang: Kết nối hội nghị tập huấn nghiệp vụ kiểm tra, rà soát, hệ thống hóa và xử lý văn bản quy",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/index.php/an-giang-ket-noi-hoi-nghi-tap-huan-nghiep-vu-kiem-tra-ra-soat-he-thong-hoa-va-xu-ly-van-ban-quy-pham-phap-luat"
+    },
+    "https://stp.angiang.gov.vn/index.php/hoi-nghi-quan-triet-trien-khai-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-tro-giup-phap-ly-va-gop-y-du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - Danh mục văn bản",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/index.php/hoi-nghi-quan-triet-trien-khai-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-tro-giup-phap-ly-va-gop-y-du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu"
+    },
+    "https://stp.angiang.gov.vn/index.php/ve-viec-trien-khai-van-ban-cua-uy-ban-nhan-dan-tinh-va-uy-ban-mttq-viet-nam-tinh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - Về việc triển khai văn bản của Ủy ban nhân dân tỉnh và Ủy ban MTTQ Việt Nam tỉnh",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/index.php/ve-viec-trien-khai-van-ban-cua-uy-ban-nhan-dan-tinh-va-uy-ban-mttq-viet-nam-tinh"
+    },
+    "https://stp.angiang.gov.vn/van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - Văn bản pháp quy",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/van-ban"
+    },
+    "https://stp.angiang.gov.vn/van-ban-can-biet": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Sở Tư pháp An Giang - Văn bản cần biết",
+      "origin_url": "https://stp.angiang.gov.vn/index.php/trang-chu",
+      "status": "pending",
+      "url": "https://stp.angiang.gov.vn/van-ban-can-biet"
+    },
+    "https://thankhe.hungyen.gov.vn/cate-vb-van-ban-ban-hanh-vb215.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Thanh Khê - Chính sách pháp luật về trợ giúp pháp lý - VĂN BẢN BAN HÀNH",
+      "origin_url": "https://thankhe.hungyen.gov.vn/chuyen-muc-chinh-sach-phap-luat-ve-tro-giup-phap-ly-c223-1.html",
+      "status": "pending",
+      "url": "https://thankhe.hungyen.gov.vn/cate-vb-van-ban-ban-hanh-vb215.html"
+    },
+    "https://thankhe.hungyen.gov.vn/van-ban-du-thao.html": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Thanh Khê - Chính sách pháp luật về trợ giúp pháp lý - van-ban-du-thao.html",
+      "origin_url": "https://thankhe.hungyen.gov.vn/chuyen-muc-chinh-sach-phap-luat-ve-tro-giup-phap-ly-c223-1.html",
+      "status": "pending",
+      "url": "https://thankhe.hungyen.gov.vn/van-ban-du-thao.html"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/nghi-quyet-cua-chinh-phu?categoryId=102000095": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Nghị quyết của Chính phủ",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/nghi-quyet-cua-chinh-phu?categoryId=102000095"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-chi-dao-dieu-hanh?categoryId=102000094": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-chi-dao-dieu-hanh?categoryId=102000094"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản Đảng",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Trang chủ - Văn bản của Đảng",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/chi-thi-so-16-ct-tw-ngay-02-11-2026-cua-ban-bi-thu-ve-day-manh-va-nang-tam-cong-tac-doi-ngoai-nhan-dan.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về đẩy mạnh và nâng tầm công tác đối ngoại nhân dân",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/chi-thi-so-16-ct-tw-ngay-02-11-2026-cua-ban-bi-thu-ve-day-manh-va-nang-tam-cong-tac-doi-ngoai-nhan-dan.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/huong-dan-so-19-hd-btgtw-ngay-04-11-2026-cua-ban-tuyen-giao-trung-uong-tuyen-truyen-ky-niem-950-nam-quoc-tu-giam-quoc-ho.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Tuyên truyền kỷ niệm 950 năm Quốc Tử Giám - Quốc học Việt Nam (1076 - 2026)",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/huong-dan-so-19-hd-btgtw-ngay-04-11-2026-cua-ban-tuyen-giao-trung-uong-tuyen-truyen-ky-niem-950-nam-quoc-tu-giam-quoc-ho.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/ket-luan-so-112-kl-tw-ngay-28-10-2026-cua-bo-chinh-tri-ve-quy-hoach-tong-the-thanh-pho-ho-chi-minh-giai-doan-2025-2050-t.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về Quy hoạch tổng thể Thành phố Hồ Chí Minh giai đoạn 2025 - 2050, tầm nhìn 100 năm",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/ket-luan-so-112-kl-tw-ngay-28-10-2026-cua-bo-chinh-tri-ve-quy-hoach-tong-the-thanh-pho-ho-chi-minh-giai-doan-2025-2050-t.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-32-nq-tw-ngay-06-11-2026-cua-bo-chinh-tri-ve-doi-moi-cong-tac-thanh-tra-dap-ung-yeu-cau-phat-trien-dat-nuo.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về đổi mới công tác thanh tra đáp ứng yêu cầu phát triển đất nước trong giai đoạn mới",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-32-nq-tw-ngay-06-11-2026-cua-bo-chinh-tri-ve-doi-moi-cong-tac-thanh-tra-dap-ung-yeu-cau-phat-trien-dat-nuo.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quy-dinh-so-228-qd-tw-ngay-03-11-2026-cua-ban-bi-thu-ve-sinh-hoat-dang-truc-tuyen.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về sinh hoạt đảng trực tuyến",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quy-dinh-so-228-qd-tw-ngay-03-11-2026-cua-ban-bi-thu-ve-sinh-hoat-dang-truc-tuyen.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-657-qd-tw-ngay-26-10-2026-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-nha-xuat-ban-chinh-tri.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về chức năng, nhiệm vụ, tổ chức bộ máy của Nhà xuất bản Chính trị quốc gia Sự thật",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-657-qd-tw-ngay-26-10-2026-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-nha-xuat-ban-chinh-tri.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-658-qd-tw-ngay-29-10-2026-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-ban-tuyen-giao-trung-u.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về chức năng, nhiệm vụ, tổ chức bộ máy của Ban Tuyên giáo Trung ương",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-658-qd-tw-ngay-29-10-2026-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-cua-ban-tuyen-giao-trung-u.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-762-qd-vptw-ngay-31-10-2026-cua-van-phong-trung-uong-dang-ve-viec-ban-hanh-quy-trinh-dien-tu-giai-quyet-th.html?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Về việc ban hành Quy trình điện tử giải quyết thủ tục Thu, nộp đảng phí",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-762-qd-vptw-ngay-31-10-2026-cua-van-phong-trung-uong-dang-ve-viec-ban-hanh-quy-trinh-dien-tu-giai-quyet-th.html?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang?categoryId=102000092": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Văn bản của Đảng",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang?categoryId=102000092"
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat?categoryId=102000093": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Tư liệu Văn kiện Đảng - Văn bản quy phạm pháp luật",
+      "origin_url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang",
+      "status": "pending",
+      "url": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat?categoryId=102000093"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Dự thảo Nghị định về phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính, điều ki",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh?download=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - 1 File đính kèm",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh?download=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh?follow=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Theo dõi",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh?follow=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Danh mục văn bản",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo?download=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - 5 File đính kèm",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo?download=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo?follow=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Theo dõi",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-sua-doi-ve-toc-va-khoang-cach-toan-cua-xe-tren-duong-bo?follow=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Danh mục văn bản",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao?download=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - 4 File đính kèm",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao?download=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao?follow=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Theo dõi",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-quy-dinh-quan-ly-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao?follow=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Dự thảo Thông tư về quản lý chất lượng thuốc cổ truyền, vị thuốc cổ truyền, dược ",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu?download=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - 8 File đính kèm",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu?download=yes"
+    },
+    "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu?follow=yes": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "VIB Online - Dự thảo đang lấy ý kiến - Theo dõi",
+      "origin_url": "https://vibonline.com.vn/du-thao-dang-lay-y-kien",
+      "status": "pending",
+      "url": "https://vibonline.com.vn/du_thao/du-thao-thong-tu-ve-quan-ly-chat-luong-thuoc-co-truyen-vi-thuoc-co-truyen-duoc-lieu?follow=yes"
+    },
+    "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/146_2026_QÐ_UBND.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Tải về",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/146_2026_QÐ_UBND.pdf"
+    },
+    "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/3721_QÐ_UBND.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Tải về",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/3721_QÐ_UBND.pdf"
+    },
+    "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/3725_QÐ_UBND.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Tải về",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/3725_QÐ_UBND.pdf"
+    },
+    "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/481_KH_UBND.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Tải về",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/481_KH_UBND.pdf"
+    },
+    "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/571_TB_UBND.pdf": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Tải về",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/571_TB_UBND.pdf"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=&FieldId=0&TypeId=15&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - TUYÊN TRUYỀN PHÁP LUẬT",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=&FieldId=0&TypeId=15&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=&FieldId=32&TypeId=0&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - KẾ HOẠCH - QUY HOẠCH",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=&FieldId=32&TypeId=0&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=C%C3%B4ng+khai&FieldId=0&TypeId=0&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - CÔNG KHAI TÀI CHÍNH",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?Keyword=C%C3%B4ng+khai&FieldId=0&TypeId=0&Search=T%C3%ACm+V%C4%83n+B%E1%BA%A3n"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=2": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Văn bản của tỉnh",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=2"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=4": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=4"
+    },
+    "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=8": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Văn phòng UBND tỉnh Đắk Lắk - Đấu giá - đấu thầu",
+      "origin_url": "https://vpubnd.daklak.gov.vn/van-ban.html",
+      "status": "pending",
+      "url": "https://vpubnd.daklak.gov.vn/van-ban.html?TypeId=8"
+    },
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=1": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 1",
+      "origin_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh",
+      "status": "pending",
+      "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=1"
+    },
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=2": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
+      "origin_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh",
+      "status": "pending",
+      "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=2"
+    },
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=3": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 3",
+      "origin_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh",
+      "status": "pending",
+      "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=3"
+    },
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4500": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
+      "origin_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh",
+      "status": "pending",
+      "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4500"
+    },
+    "https://www.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "TP.HCM - Văn bản dự thảo - Văn bản chỉ đạo điều hành",
+      "origin_url": "https://www.hochiminhcity.gov.vn/van-ban-du-thao",
+      "status": "pending",
+      "url": "https://www.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh"
+    },
+    "https://www.hochiminhcity.gov.vn/van-ban-cong-khai-ngan-sach-nha-nuoc": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Địa phương",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "TP.HCM - Văn bản dự thảo - Văn bản công khai ngân sách nhà nước",
+      "origin_url": "https://www.hochiminhcity.gov.vn/van-ban-du-thao",
+      "status": "pending",
+      "url": "https://www.hochiminhcity.gov.vn/van-ban-cong-khai-ngan-sach-nha-nuoc"
+    },
+    "https://www.sav.gov.vn/chi-tiet-gop-y-du-thao-van-ban/68fa0aaf-9f91-4b9c-c52b-08df3bc75679": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Xem góp ý",
+      "origin_url": "https://www.sav.gov.vn/vi",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/chi-tiet-gop-y-du-thao-van-ban/68fa0aaf-9f91-4b9c-c52b-08df3bc75679"
+    },
+    "https://www.sav.gov.vn/chi-tiet-gop-y-du-thao-van-ban/e3d447c9-35d0-43c9-ed6d-08df447c4705": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Xem góp ý",
+      "origin_url": "https://www.sav.gov.vn/vi",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/chi-tiet-gop-y-du-thao-van-ban/e3d447c9-35d0-43c9-ed6d-08df447c4705"
+    },
+    "https://www.sav.gov.vn/du-thao-van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Xem thêm",
+      "origin_url": "https://www.sav.gov.vn/vi",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/du-thao-van-ban"
+    },
+    "https://www.sav.gov.vn/page/dangbokiemtoannhanuoc/van-ban?pageNumber=1&pageSize=10": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Văn bản - Văn bản - Tài liệu",
+      "origin_url": "https://www.sav.gov.vn/vi/van-ban?pageNumber=1&pageSize=10",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/page/dangbokiemtoannhanuoc/van-ban?pageNumber=1&pageSize=10"
+    },
+    "https://www.sav.gov.vn/van-ban": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Văn bản - Văn bản QPPL",
+      "origin_url": "https://www.sav.gov.vn/vi/van-ban?pageNumber=1&pageSize=10",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/van-ban"
+    },
+    "https://www.sav.gov.vn/van-ban-dieu-hanh": {
+      "attempts": 0,
+      "first_seen": "2026-11-18T02:00:57+00:00",
+      "group": "Văn Bản TW",
+      "last_seen": "2026-11-18T02:00:57+00:00",
+      "name": "Kiểm toán Nhà nước - Văn bản - Văn bản điều hành",
+      "origin_url": "https://www.sav.gov.vn/vi/van-ban?pageNumber=1&pageSize=10",
+      "status": "pending",
+      "url": "https://www.sav.gov.vn/van-ban-dieu-hanh"
+    }
+  },
+  "updated_at": "2026-11-18T02:01:09+00:00",
+  "version": 1
+}
