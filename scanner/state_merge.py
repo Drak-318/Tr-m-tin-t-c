@@ -13,6 +13,7 @@ STATE_FILES = (
     "data/review_queue.json",
     "data/sheets_export_queue.json",
     "data/discovered_sources.json",
+    "data/source_retry_queue.json",
 )
 
 
@@ -127,6 +128,22 @@ def merge_state_files(local_dir, repo_root="."):
     _write(discovered_path, {"version": 1, "items": discovered_items,
                              "updated_at": max(str(remote_discovered.get("updated_at", "")),
                                                str(local_discovered.get("updated_at", "")))})
+
+    # Merge failed-source retry state by the latest event timestamp.
+    retry_path = root / "data/source_retry_queue.json"
+    local_retry_path = local_root / "data/source_retry_queue.json"
+    remote_retry = _read(retry_path, {"version": 1, "items": {}})
+    local_retry = _read(local_retry_path, {"version": 1, "items": {}})
+    retry_items = dict(remote_retry.get("items", {}))
+    for url, row in local_retry.get("items", {}).items():
+        current = retry_items.get(url)
+        local_time = str(row.get("recovered_at") or row.get("last_failed_at") or "")
+        remote_time = str((current or {}).get("recovered_at") or (current or {}).get("last_failed_at") or "")
+        if current is None or local_time >= remote_time:
+            retry_items[url] = row
+    _write(retry_path, {"version": 1, "items": retry_items,
+                        "updated_at": max(str(remote_retry.get("updated_at", "")),
+                                          str(local_retry.get("updated_at", "")))} )
 
     # Preserve the one-time migration marker across the workflow's reset-to-main merge.
     bootstrap_path = root / "data/sheets_bootstrap.json"
