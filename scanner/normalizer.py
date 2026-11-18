@@ -134,9 +134,12 @@ def extract_doc_info(title):
         number=number_match.group(1).upper().rstrip(".,;:)")
         components=number.split("/")
         suffix=components[-1] if components else ""
-        if suffix.isdigit() and len(components)>1:
-            suffix=components[-2]
-        code=suffix.split("-")[0].upper()
+        if suffix.upper()=="TW" and len(components)>1:
+            code=components[-2].split("-")[-1].upper()
+        else:
+            if suffix.isdigit() and len(components)>1:
+                suffix=components[-2]
+            code=suffix.split("-")[0].upper()
         suffix_types={
             "NĐ":"Nghị định","TT":"Thông tư","QĐ":"Quyết định","QD":"Quyết định",
             "NQ":"Nghị quyết","KL":"Kết luận","KH":"Kế hoạch","HD":"Hướng dẫn",
