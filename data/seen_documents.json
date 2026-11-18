@@ -144,6 +144,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:123-KL/TW|issuer:TW|locality:": {
+      "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
+      "category": "Văn bản Đảng",
+      "doc_number": "123-KL/TW",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dangcongsan.vn/van-ban-cua-dang/ket-luan-so-123-kl-tw-ngay-13-11-2026-cua-bo-chinh-tri-ve-tinh-hinh-ket-qua-thuc-hien-ket-luan-so-107-kl-tw-ngay-17-10-2.html?menuId=6825579653d58aefae04bfb5",
+      "title": "Kết luận của Bộ Chính trị về tình hình, kết quả thực hiện Kết luận số 107-KL/TW, ngày 17/10/2026 của Bộ Chính trị; tiến độ hoàn thiện cơ sở dữ liệu vị trí việc làm và phương án biên chế giai đoạn 2027-2030 ngày 13/11/2026"
+    },
     "number:12760/SXD-QLN|issuer:SXD-QLN|locality:hải phòng": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -449,6 +458,24 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:300-TB/BTCTW|issuer:BTCTW|locality:": {
+      "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
+      "category": "Văn bản Đảng",
+      "doc_number": "300-TB/BTCTW",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dangcongsan.vn/van-ban-cua-dang/thong-bao-so-300-tb-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-ket-luan-cua-dong-chi-uy-vien-bo-chinh-tri-bi-th.html?menuId=6825579653d58aefae04bfb5",
+      "title": "Thông báo kết luận của đồng chí Ủy viên Bộ Chính trị, Bí thư Trung ương Đảng, Trưởng Ban Tổ chức Trung ương về đánh giá kết quả bước đầu thực hiện Kết luận số 107-KL/TW và tiếp tục triển khai các nhiệm vụ trọng tâm ngày 17/11/2026"
+    },
+    "number:301-TB/BTCTW|issuer:BTCTW|locality:": {
+      "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
+      "category": "Văn bản Đảng",
+      "doc_number": "301-TB/BTCTW",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dangcongsan.vn/van-ban-cua-dang/thong-bao-so-301-tb-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-viec-trien-khai-mot-so-nhiem-vu-thuc-hien-ket-lu.html?menuId=6825579653d58aefae04bfb5",
+      "title": "Thông báo của Ban Tổ chức Trung ương về việc triển khai một số nhiệm vụ thực hiện Kết luận 107-KL/TW và Hướng dẫn 07-HD/BTCTW ngày 17/11/2026"
+    },
     "number:3085/CV/ĐU|issuer:ĐU|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -741,6 +768,24 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:84-KH/BTCTW|issuer:BTCTW|locality:": {
+      "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
+      "category": "Văn bản Đảng",
+      "doc_number": "84-KH/BTCTW",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-84-kh-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-cao-diem-hoan-thanh-cac-nhiem-vu-trong-tam-ve-vi-t.html?menuId=6825579653d58aefae04bfb5",
+      "title": "Kế hoạch số 84-KH/BTCTW ngày 17/11/2026 của Ban Tổ chức Trung ương về cao điểm hoàn thành các nhiệm vụ trọng tâm về vị trí việc làm và phương án biên chế giai đoạn 2027-2031 (từ ngày 16 đến 30/11/2026) ngày 17/11/2026"
+    },
+    "number:89-KH/BTGTW|issuer:BTGTW|locality:": {
+      "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
+      "category": "Văn bản Đảng",
+      "doc_number": "89-KH/BTGTW",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-89-kh-btgtw-ngay-14-11-2026-cua-ban-tuyen-giao-trung-uong-ve-to-chuc-cac-hoat-dong-ky-niem-80-nam-ngay-toan-.html?menuId=6825579653d58aefae04bfb5",
+      "title": "Kế hoạch của Ban Tuyên giáo Trung ương về tổ chức các hoạt động kỷ niệm 80 năm Ngày Toàn quốc kháng chiến ngày 14/11/2026"
+    },
     "number:93/2026/TT-BGDĐT|issuer:TT-BGDĐT|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -853,6 +898,96 @@
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219",
       "title": "Nghị quyết về kế hoạch đầu tư công trung hạn giai đoạn 2026 - 2030 nguồn vốn ngân sách địa phương tỉnh Thanh Hóa (đợt 2)"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2220": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2220",
+      "title": "Nghị quyết về đề nghị điều chỉnh kế hoạch đầu tư công nguồn vốn ngân sách nhà nước năm 2026, tỉnh Thanh Hóa (đợt 3)"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2221": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2221",
+      "title": "Nghị quyết của HĐND tỉnh về việc đặt tên đường, phố trên địa bàn phường Bỉm Sơn, tỉnh Thanh Hóa"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2222": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2222",
+      "title": "Nghị quyết phê duyệt Danh mục các khu đất thực hiện đấu thầu dự án đầu tư có sử dụng đất trên địa bàn tỉnh Thanh Hóa năm 2026 (đợt 2)"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2224": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2224",
+      "title": "Nghị quyết Danh mục công trình, dự án phải thu hồi đất và quyết định chủ trương chuyển mục đích sử dụng rừng trên địa bàn tỉnh Thanh Hóa đợt 5, năm 2026"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2225": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2225",
+      "title": "Nghị quyết về phân bổ dự toán chi thường xuyên từ nguồn ngân sách trung ương thực hiện Chương trình mục tiêu quốc gia xây dựng nông thôn mới, giảm nghèo bền vững và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi giai đoạn 2026 - 2035, giai đoạn I từ năm 2026 đến năm 2030 (đợt 2)"
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2226": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2226",
+      "title": "Nghị quyết về việc đề nghị ban hành Nghị quyết quy định mức thù lao hằng tháng của cộng tác viên dân số thôn, bản, tổ dân phố trên địa bàn tỉnh Thanh Hóa."
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2227": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2227",
+      "title": "Nghị quyết về việc đề nghị ban hành Nghị quyết của Hội đồng nhân dân tỉnh phân cấp cho Hội đồng nhân dân cấp xã quyết định phân bổ chi tiết, điều chỉnh danh mục dự án đầu tư công trung hạn, hằng năm thực hiện Chương trình mục tiêu quốc gia phát triển văn hóa - xã hội, nông thôn, dân tộc và miền núi giai đoạn 2026 - 2035."
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2231": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2231",
+      "title": "Nghị quyết về việc đề nghị ban hành Nghị quyết quy định chế độ mua sắm, thủ tục cấp phát phù hiệu, cờ hiệu, cấp hiệu, biển hiệu và trang phục đối với công chức làm việc tại Chi cục Quản lý thị trường Thanh Hóa thuộc Sở Công Thương tỉnh Thanh Hóa."
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2232": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2232",
+      "title": "Nghị quyết về việc đề nghị ban hành Nghị quyết của HĐND tỉnh quy định mức tối đa, mức tối thiểu của hệ số điều chỉnh mức biến động thị trường về giá đất trên địa bàn tỉnh Thanh Hóa."
+    },
+    "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2235": {
+      "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
+      "category": "Văn bản Đảng",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T00:14:57+00:00",
+      "last_seen": "2026-11-18T00:14:57+00:00",
+      "link": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2235",
+      "title": "Nghị quyết về việc đề nghị ban hành Nghị quyết của HĐND tỉnh quy định một số chế độ, chính sách đối với cán bộ thuộc diện Bộ Chính trị, Ban Bí thư, Ban Thường vụ Tỉnh ủy quản lý trên địa bàn tỉnh Thanh Hóa"
     },
     "url:https://lyson.quangngai.gov.vn/danh-muc-cot-phai/he-thong-van-ban/van-ban-huyen-ly-son/van-ban-ubnd-huyen/ve-viec-chuyen-ke-hoach-so-2026-kh-ksbt-ngay-27-10-2026-cua-trung-tam-kiem-soat-benh-tat-tinh-tap-huan-truc-tuyen-huong-.html": {
       "agency": "UBND xã Lý Sơn",
@@ -1276,7 +1411,22 @@
     "https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G": "legacy_sheet_url:https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G",
     "https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat": "legacy_sheet_url:https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat",
     "https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281": "legacy_sheet_url:https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281",
+    "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-84-kh-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-cao-diem-hoan-thanh-cac-nhiem-vu-trong-tam-ve-vi-t.html?menuId=6825579653d58aefae04bfb5": "number:84-KH/BTCTW|issuer:BTCTW|locality:",
+    "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-89-kh-btgtw-ngay-14-11-2026-cua-ban-tuyen-giao-trung-uong-ve-to-chuc-cac-hoat-dong-ky-niem-80-nam-ngay-toan-.html?menuId=6825579653d58aefae04bfb5": "number:89-KH/BTGTW|issuer:BTGTW|locality:",
+    "https://dangcongsan.vn/van-ban-cua-dang/ket-luan-so-123-kl-tw-ngay-13-11-2026-cua-bo-chinh-tri-ve-tinh-hinh-ket-qua-thuc-hien-ket-luan-so-107-kl-tw-ngay-17-10-2.html?menuId=6825579653d58aefae04bfb5": "number:123-KL/TW|issuer:TW|locality:",
+    "https://dangcongsan.vn/van-ban-cua-dang/thong-bao-so-300-tb-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-ket-luan-cua-dong-chi-uy-vien-bo-chinh-tri-bi-th.html?menuId=6825579653d58aefae04bfb5": "number:300-TB/BTCTW|issuer:BTCTW|locality:",
+    "https://dangcongsan.vn/van-ban-cua-dang/thong-bao-so-301-tb-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-viec-trien-khai-mot-so-nhiem-vu-thuc-hien-ket-lu.html?menuId=6825579653d58aefae04bfb5": "number:301-TB/BTCTW|issuer:BTCTW|locality:",
     "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2219",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2220": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2220",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2221": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2221",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2222": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2222",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2224": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2224",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2225": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2225",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2226": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2226",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2227": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2227",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2231": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2231",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2232": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2232",
+    "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2235": "url:https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2235",
     "https://haiphong.gov.vn/?pageid=27205&p_cate=41838": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27205&p_cate=41838",
     "https://haiphong.gov.vn/?pageid=27218&p_steering=129235": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27218&p_steering=129235",
     "https://haiphong.gov.vn/?pageid=27218&p_steering=129330": "legacy_sheet_url:https://haiphong.gov.vn/?pageid=27218&p_steering=129330",
