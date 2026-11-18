@@ -60,3 +60,18 @@ def load_sources_from_csv(path=REGISTRY_PATH):
             })
             known.add(canonical)
     return sources
+
+
+def filter_priority_sources(sources, priority_urls):
+    """Return only explicitly configured priority sources and report missing URLs."""
+    def normalize(value):
+        return str(value or "").strip().rstrip("/").lower()
+
+    allowed = {normalize(url) for url in priority_urls if normalize(url)}
+    selected = [
+        source for source in sources
+        if normalize(source.get("url")) in allowed
+    ]
+    present = {normalize(source.get("url")) for source in selected}
+    missing = sorted(allowed - present)
+    return selected, missing
