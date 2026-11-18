@@ -10262,49 +10262,58 @@
     },
     "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVWFYRGFUQ2pvQ2Y5c3luX0I3dUx3U081VW1zWjhuNEhvcUxTOGhvNmJ2Mm40RGJlVWZKcDlDekc5WVhkeTUxbkhhTUJRMFB2bTEtTjhLQjNaRjBSYzh1WDlJdU50SjV0bjZnWUctTUd1X3N6MFhvTU1WU2hlZFFUYU9HaHZRQk9qMmkwUGtkTnZkakd0anN0TWZ5U0h2ZkZyWk12MWYyYXpiZlBER3pFdzlMLTA5X0ZxdDRfbUFpeF82M1FIaUdwOTdrTFk1WmlyZGI2RWIzSnVaUGdYd0tUQjljWUJVUkFLbkF5akpEc25zUQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "103/2026/TT-BTC",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T13:37:50+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVWFYRGFUQ2pvQ2Y5c3luX0I3dUx3U081VW1zWjhuNEhvcUxTOGhvNmJ2Mm40RGJlVWZKcDlDekc5WVhkeTUxbkhhTUJRMFB2bTEtTjhLQjNaRjBSYzh1WDlJdU50SjV0bjZnWUctTUd1X3N6MFhvTU1WU2hlZFFUYU9HaHZRQk9qMmkwUGtkTnZkakd0anN0TWZ5U0h2ZkZyWk12MWYyYXpiZlBER3pFdzlMLTA5X0ZxdDRfbUFpeF82M1FIaUdwOTdrTFk1WmlyZGI2RWIzSnVaUGdYd0tUQjljWUJVUkFLbkF5akpEc25zUQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông tư 103/2026/TT-BTC hướng dẫn xác định giá trị tài sản khi cổ phần hóa doanh nghiệp như thế nào? - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Thông tư 103/2026/TT-BTC hướng dẫn xác định giá trị tài sản khi cổ phần hóa doanh nghiệp như thế nào? - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQajRDQ1dXaGR4SUIxV0UyVVEtZ0tQRnlwQmNGZzhTOVNoTzBET3loVmUxOUpPM0g1ZHNsOWl4bzgzSVl2aHROQXZxUmg0TUVyR0thQmF1NjJ3dmNtVjR5S01SdUlZQmRRT2k2WTFuMWRlLUh4Mks1SGJTaWFOdjE4aHNYV1hONTdfRVZpTGZJa20tU1dOTkphdGZUSmpXM1pMY3RDeW5rMDczRm44Tk5BS0gxVDRqUFFyRFh1a0dyTDRrOXJfMWJjWWtqd1Q2SlpkeXQ2XzQzZkRBQnVfaUZiZnlNcFdMb2tOS2RKaXZHUGlndw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "54/2026/TT-BGDĐT",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:09+00:00",
+      "last_checked": "2026-11-18T13:37:50+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQajRDQ1dXaGR4SUIxV0UyVVEtZ0tQRnlwQmNGZzhTOVNoTzBET3loVmUxOUpPM0g1ZHNsOWl4bzgzSVl2aHROQXZxUmg0TUVyR0thQmF1NjJ3dmNtVjR5S01SdUlZQmRRT2k2WTFuMWRlLUh4Mks1SGJTaWFOdjE4aHNYV1hONTdfRVZpTGZJa20tU1dOTkphdGZUSmpXM1pMY3RDeW5rMDczRm44Tk5BS0gxVDRqUFFyRFh1a0dyTDRrOXJfMWJjWWtqd1Q2SlpkeXQ2XzQzZkRBQnVfaUZiZnlNcFdMb2tOS2RKaXZHUGlndw?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông tư 54/2026/TT-BGDĐT quy định về chương trình đào tạo các trình độ của giáo dục đại học ra sao? - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Thông tư 54/2026/TT-BGDĐT quy định về chương trình đào tạo các trình độ của giáo dục đại học ra sao? - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOVFdfMUYwVm5iTW9nZGdtajBNQ1ZZbjN4SGswbzRlam40LTBFZEE0bERsOTNDbnU3MU1PUjBYandtbUdNX0hSamxfZ0UxUkJURDk1SU5hQjNOWUpTOXBpQng1WTBLWlF5LTJPQTRQY19GVzdpODBqTXp4MExNMUEwR21qdDUtSE5yZ1dBWTZycnpoR1NnemlmWUpBVGlnMWFTektEVGZnWV9OeDNkR1dMaENneFhvcjdYd0lleDN4Z2FoLVYxeHRRSVB1NnZLNG0zSTNxYmxmLUlZVVpSajZsQVlEc01WRnlXa0tsblN4WlpjU28?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "2101/QĐ-TTG",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:10+00:00",
+      "last_checked": "2026-11-18T13:37:50+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOVFdfMUYwVm5iTW9nZGdtajBNQ1ZZbjN4SGswbzRlam40LTBFZEE0bERsOTNDbnU3MU1PUjBYandtbUdNX0hSamxfZ0UxUkJURDk1SU5hQjNOWUpTOXBpQng1WTBLWlF5LTJPQTRQY19GVzdpODBqTXp4MExNMUEwR21qdDUtSE5yZ1dBWTZycnpoR1NnemlmWUpBVGlnMWFTektEVGZnWV9OeDNkR1dMaENneFhvcjdYd0lleDN4Z2FoLVYxeHRRSVB1NnZLNG0zSTNxYmxmLUlZVVpSajZsQVlEc01WRnlXa0tsblN4WlpjU28?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 2101/QĐ-TTg năm 2026 bãi bỏ Quyết định 970/QĐ-TTg về Danh mục dịch vụ sự nghiệp công cơ bản, thiết yếu sử dụng ngân sách nhà nước thuộc lĩnh vực Tài chính do Thủ tướng Chính phủ ban hành - THƯ VIỆN PHÁP LUẬT"
+      "status": "fetch_error",
+      "title": "Quyết định 2101/QĐ-TTg năm 2026 bãi bỏ Quyết định 970/QĐ-TTg về Danh mục dịch vụ sự nghiệp công cơ bản, thiết yếu sử dụng ngân sách nhà nước thuộc lĩnh vực Tài chính do Thủ tướng Chính phủ ban hành - THƯ VIỆN PHÁP LUẬT",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOcTZJb3VpQS1xcC1NbnozT0RGRHRpNkxTT1VKbGRFM3pabXA0SVA0cU1iTkhzbDNkdkpzVHRpQk1rOTktcU00Q1BoUjltemFabE84UWV0SEY2QW45Y1BtQTE2YmRXSld4Zl95ZEdrVjYyVXpHWS1sSjNWU3E3SlNENWFjclRwbGlmY1h0ZlQ2LWdXYWFFV0NIbzJ0SlJLLTZpbTRSeWlPUm1FNm05cVR5SWlHenJIcGE3VmJwYWNsVmxjSTBUVGYzWGdxLTZ1RnhLT0M3eU53eDBIUVpJRGZLZ2NOOF9lN2trS1ZLeGRpV2Z1ZGs?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -10419,18 +10428,21 @@
     },
     "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOLW9GX3hoZ1RoeFlNY1JZaXV2N1lOUzBLLWxuTGk5aDBKbVV3X2JBeDV6R1RBeTZKY3FZYjNYNjRuM3FHNnl1WEd0bmcycU90T0FXSlFNdzF6M1lUbjN1d3oxSi1zNV9uNzJQUWV6Q0pmclRsUEVKc1hpR0xFenNtVUVZU1RfYm9Jam9UOU9FcURaYUhzbDdCaEwyQVpReHNPY056UDFZNVNxUXcyU2RiYXdOWTNvcHU1bE9ZWEdJRjdUU3pSQ1hhNTJtREhKMFliNkhoMDJPVkhrR1ZBZUczczRzblJXMWY0LUNSLWtEeGpla1hJ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "317/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:08+00:00",
+      "last_checked": "2026-11-18T13:37:50+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOLW9GX3hoZ1RoeFlNY1JZaXV2N1lOUzBLLWxuTGk5aDBKbVV3X2JBeDV6R1RBeTZKY3FZYjNYNjRuM3FHNnl1WEd0bmcycU90T0FXSlFNdzF6M1lUbjN1d3oxSi1zNV9uNzJQUWV6Q0pmclRsUEVKc1hpR0xFenNtVUVZU1RfYm9Jam9UOU9FcURaYUhzbDdCaEwyQVpReHNPY056UDFZNVNxUXcyU2RiYXdOWTNvcHU1bE9ZWEdJRjdUU3pSQ1hhNTJtREhKMFliNkhoMDJPVkhrR1ZBZUczczRzblJXMWY0LUNSLWtEeGpla1hJ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Nghị định 317/2026/NĐ-CP quy định hồ sơ, thủ tục xét cấp học bổng từ Quỹ Học bổng Quốc gia như thế nào? - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Nghị định 317/2026/NĐ-CP quy định hồ sơ, thủ tục xét cấp học bổng từ Quỹ Học bổng Quốc gia như thế nào? - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi9AFBVV95cUxORll3ZzduMlBET0RRd242NVA2eFdoQzFrUnFVeFlOdE9EckdfUTNYcTRUQ29kMTRuel9lcUJFMDkzVFRWLVZUX3JSUmxmaFFtaDVNZl9pSHYwQmUwVVM0UjVhb2MxU2ZVdDhrRHhhMnpPQVdJYzJXTkozT0FqcERrbkpKaG4zZnVFbWQyS2FEYTJJQ1BEUVpEajlzT180Q1FJMWJoOTVvUWFpcnpVUmROdU9RMEpJNUYxb3Vad3VfX1YtWGp4ZG02d0hwZjVndXZRRFY3N0FOb3FpX0dvbFVsWXlpY0FwWE1BOTI4akc5YndKQ1Q2?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
@@ -10538,18 +10550,21 @@
     },
     "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbHAzMk85a0tlenlBOVk1Qk1hQzYxSHI0UElCR1V4R0pmT0FFdHlra2Jpckl3NDBRSFM2QUh1TG85dXZFUERqQ2VrYURDZkxFVF9Jc3p6SkZHZF9QWkJnT3F6U1R3UDM3U2o4R0NLcDZxVTJaTDdLUnA2UDFZdEFybkkwZTdqN2ZSZVo1MTA3S3IteFJRX2lpU3NoSDB6NjBhemtuMnktbjNmcjRLVF9xcGxlQmhoUUdZTUZEUHhlV2dfS3NiMDhudVZXQ3R3SHY4Qnpqd2VtUmVDaWhRMEx1TXR0U2lQck9vR1dCazRtNEVJZnh2?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "3517/QĐ-BYT",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-18T00:16:10+00:00",
+      "last_checked": "2026-11-18T13:37:50+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbHAzMk85a0tlenlBOVk1Qk1hQzYxSHI0UElCR1V4R0pmT0FFdHlra2Jpckl3NDBRSFM2QUh1TG85dXZFUERqQ2VrYURDZkxFVF9Jc3p6SkZHZF9QWkJnT3F6U1R3UDM3U2o4R0NLcDZxVTJaTDdLUnA2UDFZdEFybkkwZTdqN2ZSZVo1MTA3S3IteFJRX2lpU3NoSDB6NjBhemtuMnktbjNmcjRLVF9xcGxlQmhoUUdZTUZEUHhlV2dfS3NiMDhudVZXQ3R3SHY4Qnpqd2VtUmVDaWhRMEx1TXR0U2lQck9vR1dCazRtNEVJZnh2?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Quyết định 3517/QĐ-BYT: Các đơn vị thuộc Bộ Y tế phải lập danh sách kê khai tài sản trước 19/11/2026 - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Quyết định 3517/QĐ-BYT: Các đơn vị thuộc Bộ Y tế phải lập danh sách kê khai tài sản trước 19/11/2026 - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNekhPclctV2Y0bkQ2WkdWSnFsdHlzTEx2aHVkcFd5Wndlc1NudDhtV3EyRzQ4RDVpbFpFM0p3MUpVZ1kxampHa2VKdGdFTFJyME5KRVEyS2I4ZmdyUkcyYVNpbG1BWGg0YnBKVnByMzBtZms1RzR0a29RWFRGNUtkS1NjdEdmOGZwQmpkTzI4dUd3MzFJbjRPRjROdFZYWUNDeHVUUGxqemp4YmZMelZ6cmU4cWlyWGtKWW0wSEZuS1BueEx0YjhLT2d5MEJMMzRrQzFVR2xHY3QwSkppOWJLcDJRUl80REZYNjJscjBKZy12cVBYd0E?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -17250,6 +17265,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T13:29:01+00:00",
+  "updated_at": "2026-11-18T13:37:50+00:00",
   "version": 1
 }
