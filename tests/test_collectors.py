@@ -1,5 +1,5 @@
 import unittest
-from scanner.collectors import SourceFetchError
+from scanner.collectors import SourceFetchError, _resolve_aggregator_links
 from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items
 from bs4 import BeautifulSoup
 
