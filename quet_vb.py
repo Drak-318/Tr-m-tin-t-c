@@ -236,6 +236,7 @@ def main():
             review_row.get("doc_number",""), review_row.get("title",""),
             review_row.get("agency",""), review_url
         ))
+    existing_review_identity=set(review_identity_seen)
     backfilled_review_docs=0
     # Đưa các hồ sơ chưa rõ ngày đã tích lũy từ những lượt quét trước vào
     # bảng kết quả một lần; không để chúng chỉ nằm trong hàng đợi nội bộ.
@@ -307,7 +308,7 @@ def main():
                 if (link not in existing_review_urls
                         and not seen_index.contains(identity,link)
                         and not output_index.contains(identity,link)
-                        and identity not in review_identity_seen):
+                        and identity not in existing_review_identity):
                     keep,priority=classify_and_score(title,name,doc_type,number,group,None)
                     if keep:
                         new_docs.append({"priority":priority,"doc_type":doc_type,"agency":name,"title":title,
