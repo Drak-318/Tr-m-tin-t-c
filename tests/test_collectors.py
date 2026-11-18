@@ -1,5 +1,5 @@
 import unittest
-from scanner.collectors import SourceFetchError, _resolve_aggregator_links
+from scanner.collectors import SourceFetchError, _resolve_aggregator_links, _collect_primary
 from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items
 from bs4 import BeautifulSoup
 
@@ -60,6 +60,31 @@ class CollectorTests(unittest.TestCase):
         self.assertIn("https://example.gov.vn/old-failure", urls)
         self.assertNotIn("https://example.gov.vn/recent-failure", urls)
         self.assertNotIn("https://example.gov.vn/human-review", urls)
+
+    def test_keeps_first_page_items_when_next_page_fails(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+
+        html = """<html><body>
+          <a href="/van-ban/1">Nghị định 1/2026/NĐ-CP quy định về thủ tục hành chính</a>
+          <a rel="next" href="/van-ban?page=2">Trang tiếp</a>
+        </body></html>"""
+        first = SimpleNamespace(
+            url="https://example.gov.vn/van-ban", status_code=200,
+            headers={"Content-Type":"text/html"}, text=html, content=html.encode("utf-8")
+        )
+        config = {"mode":"html","follow_pagination":True}
+        with patch("scanner.collectors.fetch_response",
+                   side_effect=SourceFetchError("HTTP","HTTP 503",http_status=503)):
+            items, pages, status = _collect_primary(
+                SimpleNamespace(), "https://example.gov.vn/van-ban", config, 100, 3,
+                initial_response=first
+            )
+        self.assertEqual(status, 200)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(pages, 1)
+        self.assertTrue(config["_partial_errors"])
+        self.assertIn("HTTP 503", config["_partial_errors"][0])
 
     def test_parse_rss_feed(self):
         xml=b"""<rss><channel><item><title>Thong tu 12/2026/TT-BTC</title><link>https://example.gov.vn/vb/12</link><pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
