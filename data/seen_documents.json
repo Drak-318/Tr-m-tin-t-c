@@ -2369,6 +2369,15 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219965&classid=1&orggroupid=2",
       "title": "387/2026/NĐ-CP 12/10/2026"
     },
+    "number:387/2026/NĐ-CP|issuer:NĐ-CP|locality:đồng tháp - văn bản chỉ đạo điều hành": {
+      "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "387/2026/NĐ-CP",
+      "first_seen": "2026-11-18T13:17:54+00:00",
+      "last_seen": "2026-11-18T13:17:54+00:00",
+      "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12106714",
+      "title": "V/v triển khai thực hiện Nghị định số 387/2026/NĐ-CP của Chính phủ quy định nội dung, cơ chế, chính sách thực hiện Chương trình mục tiêu quốc gia phát triển văn hóa – xã hội, nông thôn, dân tộc và miền núi giai đoạn 2026-2035"
+    },
     "number:387/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản pháp quy",
       "category": "Văn bản quy phạm pháp luật",
@@ -5788,6 +5797,7 @@
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093042": "number:15334/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093084": "number:165/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093460": "number:15339/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành",
+    "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12106714": "number:387/2026/NĐ-CP|issuer:NĐ-CP|locality:đồng tháp - văn bản chỉ đạo điều hành",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151": "number:3970/UBND-TCDNC|issuer:UBND-TCDNC|locality:đồng tháp - văn bản chỉ đạo điều hành",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122684": "number:224-QĐ/TW|issuer:TW|locality:về thực hiện quy định số 224-qđ/tw",
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12123689": "number:15424/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành",
