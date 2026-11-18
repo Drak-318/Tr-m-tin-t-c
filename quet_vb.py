@@ -359,7 +359,12 @@ def main():
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
-             "relationship_ambiguous":relation_ambiguous,"duration_seconds":duration}
+             "relationship_ambiguous":relation_ambiguous,
+             "discovered_source_candidates_added":discovered_added,
+             "discovered_sources_checked":discovery_checked,
+             "discovered_sources_activated":discovery_activated,
+             "discovered_sources_pending":len(pending_candidates(limit=500)),
+             "duration_seconds":duration}
     append_history(summary)
     report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
@@ -370,6 +375,10 @@ def main():
              f"- Hồ sơ chờ xác minh ngày trên GitHub: **{review_total}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
             f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",
+            f"- Nguồn mới phát hiện: **{discovered_added}**",
+            f"- Nguồn mới đã kiểm tra: **{discovery_checked}**",
+            f"- Nguồn mới được kích hoạt cho lượt sau: **{discovery_activated}**",
+            f"- Nguồn mới còn chờ kiểm tra: **{len(pending_candidates(limit=500))}**",
             f"- Quan hệ văn bản địa phương đã ghi nhận: **{len(relation_rows)}**",
             f"- Dẫn chiếu tìm thấy trong kho quét: **{relation_matched}**",
             f"- Dẫn chiếu có nhiều văn bản trùng số hiệu: **{relation_ambiguous}**",
