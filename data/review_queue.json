@@ -1230,18 +1230,21 @@
     },
     "https://dbnd.cantho.gov.vn/?pageid=37009&p_steering=53908": {
       "agency": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:15+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-18T00:16:15+00:00",
+      "last_checked": "2026-11-18T14:58:28+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37009&p_steering=53908 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://dbnd.cantho.gov.vn/?pageid=37009&p_steering=53908",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "về việc phân bổ dự toán chi thường xuyên ngân sách nhà nước thực hiện các Chương trình mục tiêu quốc gia năm 2026 về phát triển văn hóa và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi trên địa bàn thành phố Cần Thơ"
+      "status": "fetch_error",
+      "title": "về việc phân bổ dự toán chi thường xuyên ngân sách nhà nước thực hiện các Chương trình mục tiêu quốc gia năm 2026 về phát triển văn hóa và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi trên địa bàn thành phố Cần Thơ",
+      "verification_status": "fetch_error"
     },
     "https://dbndthanhhoa.gov.vn/portal/home/van-ban/details.aspx?v=2196": {
       "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết",
@@ -1927,18 +1930,21 @@
     },
     "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-quyet-dinh-quy-dinh-han-muc-giao-dat-nong-nghiep-cho-ho-gia-dinh-ca-nhan-dang-su-dung-dat-do-tu-khai-hoang-khong-co-tranh-chap-tren-dia-ban-thanh-pho-dong-nai-64910.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:15+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-18T00:16:15+00:00",
+      "last_checked": "2026-11-18T14:58:28+00:00",
+      "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-quyet-dinh-quy-dinh-han-muc-giao-dat-nong-nghiep-cho-ho-gia-dinh-ca-nhan-dang-su-dung-dat-do-tu-khai-hoang-khong-co-tranh-chap-tren-dia-ban-thanh-pho-dong-nai-64910.html",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "pending",
-      "title": "Thông cáo báo chí về Quyết định quy định hạn mức giao đất nông nghiệp cho hộ gia đình, cá nhân đang sử dụng đất do tự khai hoang, không có tranh chấp trên địa bàn thành phố Đồng Nai"
+      "status": "not_found",
+      "title": "Thông cáo báo chí về Quyết định quy định hạn mức giao đất nông nghiệp cho hộ gia đình, cá nhân đang sử dụng đất do tự khai hoang, không có tranh chấp trên địa bàn thành phố Đồng Nai",
+      "verification_status": "not_found"
     },
     "https://dongnai.gov.vn/vi/news/van-ban-hoi-dong-nhan-dan/nghi-quyet-bai-bo-mot-so-nghi-quyet-ve-an-ninh-trat-tu-tren-dia-ban-thanh-pho-dong-nai-64892.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -3410,19 +3416,22 @@
     },
     "https://luatvietnam.vn/chinh-sach/van-ban-hop-nhat-22-2026-vbhn-tt-bvhttdl-2026-quy-dinh-ho-tro-xay-dung-gia-dinh-hanh-phuc-456804-d5.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "22/2026/VBHN-TT-BVHTTDL",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-18T00:16:10+00:00",
+      "last_checked": "2026-11-18T14:58:28+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/chinh-sach/van-ban-hop-nhat-22-2026-vbhn-tt-bvhttdl-2026-quy-dinh-ho-tro-xay-dung-gia-dinh-hanh-phuc-456804-d5.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Văn bản hợp nhất 22/2026/VBHN-TT-BVHTTDL do Bộ Văn hóa, Thể thao và Du lịch ban hành hợp nhất Thông tư quy định chi tiết hoạt động hỗ trợ xây dựng gia đình hạnh phúc, phát triển bền vững tại cộng đồng"
+      "status": "not_found",
+      "title": "Văn bản hợp nhất 22/2026/VBHN-TT-BVHTTDL do Bộ Văn hóa, Thể thao và Du lịch ban hành hợp nhất Thông tư quy định chi tiết hoạt động hỗ trợ xây dựng gia đình hạnh phúc, phát triển bền vững tại cộng đồng",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-135-2026-qd-ubnd-tuyen-quang-bai-bo-quyet-dinh-quy-pham-phap-luat-chuc-nang-nhiem-vu-chi-cuc-456801-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -3600,19 +3609,22 @@
     },
     "https://luatvietnam.vn/dat-dai/quyet-dinh-83-2026-qd-ubnd-phu-tho-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-phat-trien-quy-dat-vinh-phuc-456806-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "83/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-18T00:16:14+00:00",
+      "last_checked": "2026-11-18T14:58:28+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/dat-dai/quyet-dinh-83-2026-qd-ubnd-phu-tho-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-phat-trien-quy-dat-vinh-phuc-456806-d2.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 83/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Phú Thọ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Trung tâm Phát triển quỹ đất khu vực Vĩnh Phúc"
+      "status": "not_found",
+      "title": "Quyết định 83/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Phú Thọ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Trung tâm Phát triển quỹ đất khu vực Vĩnh Phúc",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/dau-tu/du-thao-luat-dau-tu-cong-sua-doi-lan-5-172405-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
@@ -3854,19 +3866,22 @@
     },
     "https://luatvietnam.vn/giao-duc/quyet-dinh-99-2026-qd-ubnd-tp-ho-chi-minh-danh-muc-trang-cap-do-dung-hoc-sinh-dan-toc-noi-tru-456805-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "99/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-18T00:16:14+00:00",
+      "last_checked": "2026-11-18T14:58:28+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-99-2026-qd-ubnd-tp-ho-chi-minh-danh-muc-trang-cap-do-dung-hoc-sinh-dan-toc-noi-tru-456805-d2.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 99/2026/QĐ-UBND của Ủy ban nhân dân Thành phố Hồ Chí Minh quy định danh mục trang cấp đồ dùng cá nhân, học phẩm cho học sinh trường phổ thông dân tộc nội trú và cơ sở giáo dục phổ thông thực hiện nhiệm vụ giáo dục học sinh dân tộc nội trú trên địa bàn Thành phố Hồ Chí Minh"
+      "status": "not_found",
+      "title": "Quyết định 99/2026/QĐ-UBND của Ủy ban nhân dân Thành phố Hồ Chí Minh quy định danh mục trang cấp đồ dùng cá nhân, học phẩm cho học sinh trường phổ thông dân tộc nội trú và cơ sở giáo dục phổ thông thực hiện nhiệm vụ giáo dục học sinh dân tộc nội trú trên địa bàn Thành phố Hồ Chí Minh",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/hanh-chinh/ke-hoach-445-kh-ubnd-thanh-hoa-2026-thi-diem-danh-gia-cham-diem-cai-cach-thu-tuc-hanh-chinh-456599-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -17469,6 +17484,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T14:43:19+00:00",
+  "updated_at": "2026-11-18T14:58:28+00:00",
   "version": 1
 }
