@@ -467,5 +467,29 @@
     "review_to_sheets": 0,
     "sources": 95,
     "unknown_date": 150
+  },
+  {
+    "collected": 3678,
+    "discovered_source_candidates_added": 17,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 10,
+    "discovered_sources_pending": 274,
+    "duplicates": 385,
+    "duration_seconds": 241.31,
+    "failed_sources": 23,
+    "fallback_sources": 3,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-18 04:12:49 UTC",
+    "new_to_sheets": 37,
+    "older_than_60_days": 105,
+    "pending_sheets_exports": 0,
+    "recognized": 841,
+    "relationship_ambiguous": 6,
+    "relationship_candidates": 160,
+    "relationship_matched_in_scan_index": 47,
+    "review_queue_total": 892,
+    "review_to_sheets": 4,
+    "sources": 98,
+    "unknown_date": 151
   }
 ]
