@@ -314,13 +314,17 @@ def scan_source(source,config,fallback_fetcher=None):
                         errors.append(f"Apps Script: {remote.get('message') or 'Không lấy được nội dung'}")
                 except Exception as remote_exc:
                     errors.append(f"Apps Script: {type(remote_exc).__name__}: {remote_exc}")
-        # RSS aggregator is a discovery-only fallback; its publication date is never
-        # treated as an official issue date and its redirect URL is never stored as source URL.
-        if not items:
-            for feed_url in config.get("fallback_feed_urls",[])[:3]:
+        # RSS aggregators supplement incomplete listings, not only completely
+        # failed sources. Their publication dates remain provenance only.
+        primary_item_count=len(items)
+        feed_supplement_used=False
+        feed_urls=config.get("fallback_feed_urls",[])[:3]
+        if feed_urls and len(items)<max_items:
+            feed_budget=min(60,max_items-len(items))
+            for feed_url in feed_urls:
                 try:
                     response=fetch_response(session,feed_url,config)
-                    fallback_items=parse_feed(response.content,max_items)
+                    fallback_items=parse_feed(response.content,feed_budget)
                     if fallback_items:
                         for item in fallback_items:
                             item["source_published_date"]=item.get("published_date")
@@ -329,17 +333,29 @@ def scan_source(source,config,fallback_fetcher=None):
                         fallback_items=_resolve_aggregator_links(session,fallback_items,config)
                         if fallback_items:
                             items.extend(fallback_items)
-                            fallback_used=True
-                            break
+                            if primary_item_count:
+                                feed_supplement_used=True
+                            else:
+                                fallback_used=True
+                            feed_budget=max(0,min(60,max_items-len(items)))
+                            if feed_budget<=0:
+                                break
                 except SourceFetchError as exc:
                     errors.append(f"Fallback {exc.kind}: {exc}")
         final_items=_deduplicate_items(items,max_items)
         if final_items:
             methods={item.get("retrieval_method") for item in final_items if item.get("retrieval_method")}
-            status="Hoạt động qua Apps Script" if "apps_script" in methods else ("Hoạt động (dự phòng)" if fallback_used else "Hoạt động")
+            status="Hoạt động qua Apps Script" if "apps_script" in methods else (
+                "Hoạt động + RSS bổ sung" if feed_supplement_used else
+                ("Hoạt động (dự phòng)" if fallback_used else "Hoạt động")
+            )
             return {"items":final_items,"status":status,"http_status":http_status,"pages":page_count,
                     "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],
-                    "fallback_used":fallback_used,"retrieval_method":"apps_script" if "apps_script" in methods else ("aggregator" if fallback_used else "direct")}
+                    "fallback_used":fallback_used,"feed_supplement_used":feed_supplement_used,
+                    "primary_item_count":primary_item_count,
+                    "retrieval_method":"apps_script" if "apps_script" in methods else (
+                        "direct+aggregator" if feed_supplement_used else ("aggregator" if fallback_used else "direct")
+                    )}
         if errors:
             primary_kind=errors[0].split(":",1)[0]
             return {"items":[],"status":f"Lỗi: {primary_kind}"[:45],"http_status":http_status,"pages":page_count,
