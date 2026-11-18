@@ -1898,17 +1898,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-giao-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64912.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-18T04:12:43+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-giao-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64912.html",
+      "last_checked": "2026-11-18T16:38:07+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-giao-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64912.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về việc giao đất để sử dụng vào mục đích đầu tư xây dựng Khu dân cư tại phường Nhơn Trạch, thành phố Đồng Nai"
+      "status": "not_found",
+      "title": "Quyết định về việc giao đất để sử dụng vào mục đích đầu tư xây dựng Khu dân cư tại phường Nhơn Trạch, thành phố Đồng Nai",
+      "verification_status": "not_found"
     },
     "https://dongnai.gov.vn/vi/news/quoc-hoi-hoi-dong-nhan-dan/nghi-quyet-quy-dinh-chinh-sach-ho-tro-cac-ho-gia-dinh-ca-nhan-co-long-be-nuoi-thuy-san-be-de-o-bi-giai-toa-tren-cac-tuyen-song-thuoc-phuong-tran-bien-va-phuong-long-hung-thanh-pho-dong-nai-64881.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -4580,20 +4584,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-412-2026-nd-cp-vut-rac-thai-sinh-hoat-khong-dung-noi-quy-dinh-tai-chung-cu-bi-phat-den-1-trieu-dong-186-115861-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 14/11/2026",
       "doc_number": "412/2026/NĐ-CP",
       "exported_at": "2026-11-18T08:44:31+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T08:44:24+00:00",
       "identity": "number:412/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-18T08:44:31+00:00",
+      "last_checked": "2026-11-18T16:38:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T08:44:24+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-412-2026-nd-cp-vut-rac-thai-sinh-hoat-khong-dung-noi-quy-dinh-tai-chung-cu-bi-phat-den-1-trieu-dong-186-115861-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Nghị định 412/2026/NĐ-CP: Vứt rác thải sinh hoạt không đúng nơi quy định tại chung cư bị phạt đến 1 triệu đồng"
+      "status": "already_seen",
+      "title": "Nghị định 412/2026/NĐ-CP: Vứt rác thải sinh hoạt không đúng nơi quy định tại chung cư bị phạt đến 1 triệu đồng",
+      "verification_status": "already_seen",
+      "verified_date": "2026-11-14"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-336-nq-cp-yeu-cau-bo-tri-ngan-sach-cho-cong-tac-nhan-tai-dat-khoang-01-gdp-hang-nam-186-115823-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -16562,17 +16570,21 @@
     },
     "https://soxaydung.haiphong.gov.vn/tin-tuc/quyet-dinh-ve-quy-dinh-dac-diem-kinh-te-ky-thuat-cua-hang-hoa-dich-vu-thuoc-danh-muc-hang-hoa-di-1011487": {
       "agency": "Sở Xây dựng TP. Hải Phòng",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "97/2026/QĐ-UBND",
       "first_seen": "2026-11-18T04:12:43+00:00",
       "identity": "number:97/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hải phòng - quyết định số 97/2026/qđ-ubnd sở xây dựng tp. hải phòng",
+      "last_checked": "2026-11-18T16:38:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://soxaydung.haiphong.gov.vn/tin-tuc/quyet-dinh-ve-quy-dinh-dac-diem-kinh-te-ky-thuat-cua-hang-hoa-dich-vu-thuoc-danh-muc-hang-hoa-di-1011487",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về quy định đặc điểm kinh tế - kỹ thuật của hàng hoá, dịch vụ thuộc danh mục hàng hoá, dịch vụ đặc thù lĩnh vực giao thông vận tải thực hiện kê khai giá trên địa bàn thành phố Hải Phòng - Quyết định số 97/2026/QĐ-UBND"
+      "status": "not_found",
+      "title": "Quyết định về quy định đặc điểm kinh tế - kỹ thuật của hàng hoá, dịch vụ thuộc danh mục hàng hoá, dịch vụ đặc thù lĩnh vực giao thông vận tải thực hiện kê khai giá trên địa bàn thành phố Hải Phòng - Quyết định số 97/2026/QĐ-UBND",
+      "verification_status": "not_found"
     },
     "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-to-chuc-lay-y-kien-ve-du-thao-sua-doi-hien-phap-nam-1992-nganh-xay-dung-hai-phong-420711": {
       "agency": "Sở Xây dựng TP. Hải Phòng",
@@ -17551,37 +17563,45 @@
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12772": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 17/11/2026",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T08:44:31+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T08:44:24+00:00",
       "identity": "url:https://vpubnd.daklak.gov.vn/Documents/Detail/12772",
-      "last_checked": "2026-11-18T08:44:31+00:00",
+      "last_checked": "2026-11-18T16:38:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12772",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định ban hành Quy định về thẩm quyền trong quản lý dự án đầu tư xây dựng, quản lý chi phí đầu tư xây dựng, cấp giấy phép xây dựng và quản lý trật tự xây dựng trên địa bàn tỉnh Đắk Lắk"
+      "status": "verified_included",
+      "title": "Quyết định ban hành Quy định về thẩm quyền trong quản lý dự án đầu tư xây dựng, quản lý chi phí đầu tư xây dựng, cấp giấy phép xây dựng và quản lý trật tự xây dựng trên địa bàn tỉnh Đắk Lắk",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-17"
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12773": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 17/11/2026",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T08:44:31+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T08:44:24+00:00",
       "identity": "url:https://vpubnd.daklak.gov.vn/Documents/Detail/12773",
-      "last_checked": "2026-11-18T08:44:31+00:00",
+      "last_checked": "2026-11-18T16:38:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12773",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định quy định hệ số điều chỉnh tăng thêm tiền lương để làm cơ sở xác định chi phí tiền lương, chi phí nhân công trong giá, đơn giá sản phẩm, dịch vụ công sử dụng kinh phí ngân sách nhà nước do doanh nghiệp thực hiện trên địa bàn tỉnh Đắk Lắk"
+      "status": "verified_included",
+      "title": "Quyết định quy định hệ số điều chỉnh tăng thêm tiền lương để làm cơ sở xác định chi phí tiền lương, chi phí nhân công trong giá, đơn giá sản phẩm, dịch vụ công sử dụng kinh phí ngân sách nhà nước do doanh nghiệp thực hiện trên địa bàn tỉnh Đắk Lắk",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-17"
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12775": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
@@ -17848,6 +17868,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T16:23:04+00:00",
+  "updated_at": "2026-11-18T16:38:08+00:00",
   "version": 1
 }
