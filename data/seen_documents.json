@@ -1404,6 +1404,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220286",
       "title": "2221/QĐ-TTg 13/11/2026"
     },
+    "number:2222/QĐ-TTG|issuer:QĐ-TTG|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản khác",
+      "doc_number": "2222/QĐ-TTG",
+      "first_seen": "2026-11-18T09:18:13+00:00",
+      "last_seen": "2026-11-18T09:18:13+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220314",
+      "title": "2222/QĐ-TTg 13/11/2026"
+    },
     "number:2223/QĐ-TTG|issuer:QĐ-TTG|locality:": {
       "agency": "Hệ thống Văn bản Chính phủ",
       "category": "Văn bản khác",
@@ -2351,6 +2360,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220265",
       "title": "407/2026/NĐ-CP 12/11/2026"
     },
+    "number:4072/QĐ-UBND|issuer:QĐ-UBND|locality:khánh hòa phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực thủy sản và kiểm ngư thuộc thẩm quyền giải quyết của ủy ban nhân dân tỉnh": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "4072/QĐ-UBND",
+      "first_seen": "2026-11-18T09:18:13+00:00",
+      "last_seen": "2026-11-18T09:18:13+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4072-qd-ubnd-khanh-hoa-2026-phe-duyet-quy-trinh-thu-tuc-hanh-chinh-thuy-san-kiem-ngu-456876-d2.html",
+      "title": "Quyết định 4072/QĐ-UBND của Ủy ban nhân dân tỉnh Khánh Hòa phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực thủy sản và kiểm ngư thuộc thẩm quyền giải quyết của Ủy ban nhân dân tỉnh, Sở Nông nghiệp và Môi trường, Ủy ban nhân dân cấp xã được thực hiện không phụ thuộc vào địa giới hành chính trên địa bàn tỉnh Khánh Hòa"
+    },
     "number:409/2026/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
       "category": "Văn bản quy phạm pháp luật",
@@ -2923,6 +2941,15 @@
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://luatvietnam.vn/thong-tin/quyet-dinh-69-2026-qd-ubnd-cao-bang-quy-che-phoi-hop-quan-ly-van-hanh-cum-thong-tin-dien-tu-cua-khau-456776-d2.html",
       "title": "Quyết định 69/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Cao Bằng ban hành quy chế phối hợp quản lý, vận hành cụm thông tin điện tử tại khu vực cửa khẩu biên giới trên địa bàn tỉnh Cao Bằng"
+    },
+    "number:70/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cao bằng ban hành quy định định mức kinh tế - kỹ thuật đăng ký đất đai": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "70/2026/QĐ-UBND",
+      "first_seen": "2026-11-18T09:18:13+00:00",
+      "last_seen": "2026-11-18T09:18:13+00:00",
+      "link": "https://luatvietnam.vn/dat-dai/quyet-dinh-70-2026-qd-ubnd-cao-bang-quy-dinh-dinh-muc-kinh-te-ky-thuat-dang-ky-dat-dai-456871-d2.html",
+      "title": "Quyết định 70/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Cao Bằng ban hành Quy định định mức kinh tế - kỹ thuật đăng ký đất đai, tài sản gắn liền với đất, lập hồ sơ địa chính, cấp giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất trên địa bàn tỉnh Cao Bằng"
     },
     "number:70/2026/TT-BKHCN|issuer:TT-BKHCN|locality:": {
       "agency": "Hệ thống Văn bản Chính phủ",
@@ -4017,6 +4044,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220308": "url:https://chinhphu.vn/?pageid=27160&docid=220308",
     "https://chinhphu.vn/?pageid=27160&docid=220311": "number:70/2026/TT-BKHCN|issuer:TT-BKHCN|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220312": "number:168/2026/TT-BTC|issuer:TT-BTC|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220314": "number:2222/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
@@ -4383,6 +4411,7 @@
     "https://luatvietnam.vn/dat-dai/quyet-dinh-161-2026-qd-ubnd-ha-noi-quy-che-phoi-hop-chia-se-thong-tin-du-lieu-nha-o-va-bds-456816-d2.html": "number:161/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội quy định về quy chế phối hợp chia sẻ",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-3694-qd-ubnd-dak-lak-2026-phe-duyet-tai-cau-truc-quy-trinh-thu-tuc-dat-dai-456609-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dat-dai/quyet-dinh-3694-qd-ubnd-dak-lak-2026-phe-duyet-tai-cau-truc-quy-trinh-thu-tuc-dat-dai-456609-d2.html",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-6301-qd-ubnd-ha-noi-2026-duyet-ke-hoach-thuc-hien-nghi-quyet-96-2026-nq-hdnd-ve-dat-dai-xay-dung-456826-d2.html": "number:6301/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội phê duyệt kế hoạch triển khai thực hiện nghị quyết 96/2026/nq-hđnd ngày 04/11/2026 của hội đồng nhân dân thành phố quy định cơ chế",
+    "https://luatvietnam.vn/dat-dai/quyet-dinh-70-2026-qd-ubnd-cao-bang-quy-dinh-dinh-muc-kinh-te-ky-thuat-dang-ky-dat-dai-456871-d2.html": "number:70/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cao bằng ban hành quy định định mức kinh tế - kỹ thuật đăng ký đất đai",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-83-2026-qd-ubnd-phu-tho-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-phat-trien-quy-dat-vinh-phuc-456806-d2.html": "number:83/2026/QĐ-UBND|issuer:QĐ-UBND|locality:phú thọ quy định chức năng",
     "https://luatvietnam.vn/dau-thau/quyet-dinh-7567-qd-ubnd-tp-hcm-2026-phe-duyet-khu-vuc-khong-dau-gia-khai-thac-khoang-san-nhom-iv-456372-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dau-thau/quyet-dinh-7567-qd-ubnd-tp-hcm-2026-phe-duyet-khu-vuc-khong-dau-gia-khai-thac-khoang-san-nhom-iv-456372-d2.html",
     "https://luatvietnam.vn/dau-thau/quyet-dinh-7569-qd-ubnd-tp-ho-chi-minh-2026-phe-duyet-khu-vuc-khong-dau-gia-quyen-khai-thac-khoang-san-456373-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dau-thau/quyet-dinh-7569-qd-ubnd-tp-ho-chi-minh-2026-phe-duyet-khu-vuc-khong-dau-gia-quyen-khai-thac-khoang-san-456373-d2.html",
@@ -4416,6 +4445,7 @@
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-3713-qd-ubnd-dak-lak-2026-phe-duyet-quy-trinh-noi-bo-lien-thong-thu-tuc-dien-luc-456617-d2.html": "number:3713/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk về việc phê duyệt quy trình nội bộ liên thông trong giải quyết thủ tục hành chính lĩnh vực điện lực thuộc phạm vi chức năng quản lý của sở công thương thực hiện tiếp nhận",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4015-qd-ubnd-khanh-hoa-2026-duyet-quy-trinh-noi-bo-thu-tuc-kinh-doanh-bao-hiem-456290-d2.html": "legacy_sheet_url:https://luatvietnam.vn/hanh-chinh/quyet-dinh-4015-qd-ubnd-khanh-hoa-2026-duyet-quy-trinh-noi-bo-thu-tuc-kinh-doanh-bao-hiem-456290-d2.html",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4061-qd-ubnd-khanh-hoa-2026-phe-duyet-quy-trinh-noi-bo-thu-tuc-hanh-chinh-chong-tham-nhung-456686-d2.html": "number:4061/QĐ-UBND|issuer:QĐ-UBND|locality:khánh hòa về việc phê duyệt quy trình nội bộ giải quyết thủ tục hành chính trong lĩnh vực phòng",
+    "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4072-qd-ubnd-khanh-hoa-2026-phe-duyet-quy-trinh-thu-tuc-hanh-chinh-thuy-san-kiem-ngu-456876-d2.html": "number:4072/QĐ-UBND|issuer:QĐ-UBND|locality:khánh hòa phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực thủy sản và kiểm ngư thuộc thẩm quyền giải quyết của ủy ban nhân dân tỉnh",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4906-qd-ubnd-nghe-an-2026-phe-duyet-phuong-an-don-gian-hoa-thu-tuc-hanh-chinh-duong-sat-456850-d2.html": "number:4906/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an phê duyệt phương án đơn giản hóa thủ tục hành chính trong lĩnh vực đường sắt thuộc phạm vi chức năng quản lý của sở xây dựng luatvietnam - văn bản mới",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-5072-qd-ubnd-an-giang-2026-phe-duyet-quy-trinh-noi-bo-thu-tuc-hanh-chinh-cong-tac-dan-toc-456276-d2.html": "legacy_sheet_url:https://luatvietnam.vn/hanh-chinh/quyet-dinh-5072-qd-ubnd-an-giang-2026-phe-duyet-quy-trinh-noi-bo-thu-tuc-hanh-chinh-cong-tac-dan-toc-456276-d2.html",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-5102-qd-ubnd-an-giang-2026-phe-duyet-quy-trinh-noi-bo-thu-tuc-ung-pho-su-co-tran-dau-456564-d2.html": "legacy_sheet_url:https://luatvietnam.vn/hanh-chinh/quyet-dinh-5102-qd-ubnd-an-giang-2026-phe-duyet-quy-trinh-noi-bo-thu-tuc-ung-pho-su-co-tran-dau-456564-d2.html",
