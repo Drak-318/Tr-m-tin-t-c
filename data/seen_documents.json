@@ -171,6 +171,15 @@
       "link": "https://luatvietnam.vn/dat-dai/van-ban-hop-nhat-09-2026-vbhn-qd-ubnd-2026-quy-dinh-bang-gia-tinh-le-phi-truoc-ba-nha-tai-lai-chau-456090-d5.html",
       "title": "Văn bản hợp nhất 09/2026/VBHN-QĐ-UBND do Ủy ban nhân dân tỉnh Lai Châu ban hành hợp nhất Quyết định quy định bảng giá tính lệ phí trước bạ đối với nhà trên địa bàn tỉnh Lai Châu"
     },
+    "number:10/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:lai châu ban hành hợp nhất quyết định ban hành quy định một số nội dung quản lý nhà nước về giá trên địa bàn tỉnh lai châu luatvietnam - văn bản mới - văn bản hợp nhất": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "10/2026/VBHN-QĐ-UBND",
+      "first_seen": "2026-11-18T15:56:56+00:00",
+      "last_seen": "2026-11-18T15:56:56+00:00",
+      "link": "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-10-2026-vbhn-qd-ubnd-2026-quy-dinh-quan-ly-nha-nuoc-ve-gia-tai-lai-chau-456909-d5.html",
+      "title": "Văn bản hợp nhất 10/2026/VBHN-QĐ-UBND do Ủy ban nhân dân tỉnh Lai Châu ban hành hợp nhất Quyết định ban hành Quy định một số nội dung quản lý Nhà nước về giá trên địa bàn tỉnh Lai Châu"
+    },
     "number:100/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh ban hành quy định về sử dụng cần trục tháp tại các công trường xây dựng trên địa bàn thành phố hồ chí minh luatvietnam - văn bản mới": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -964,6 +973,15 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "number:14444/KHSYT|issuer:KHSYT|locality:unresolved-source:medinet.hochiminhcity.gov.vn": {
+      "agency": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
+      "category": "Văn bản địa phương",
+      "doc_number": "14444/KHSYT",
+      "first_seen": "2026-11-18T15:56:56+00:00",
+      "last_seen": "2026-11-18T15:56:56+00:00",
+      "link": "https://medinet.hochiminhcity.gov.vn/chuyen-muc/vv-trien-khai-ke-hoach-so-14444khsyt-ve-ket-noi-benh-vien-voi-tram-y-te-giai-do-c1013-76295.aspx",
+      "title": "V/v triển khai Kế hoạch số 14444/KHSYT về kết nối bệnh viện với Trạm Y tế giai đoạn 2026–2030 7/10/2026"
     },
     "number:146/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk ban hành quy định phân cấp quản lý và thực hiện các nội dung liên quan đến quản lý": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -4859,6 +4877,15 @@
       "link": "https://lyson.quangngai.gov.vn/upload/2006771/20261103/Hướng%20dẫn%20thực%20hiện%20giáo%20dục%20hướng%20nghiệp.pdf",
       "title": "Hướng dẫn thực hiện giáo dục hướng nghiệp.pdf"
     },
+    "url:https://medinet.hochiminhcity.gov.vn/chuyen-muc/quyet-dinh-ve-viec-phan-cong-cac-benh-vien-ket-noi-ho-tro-tram-y-te-tren-dia-ba-c1013-76235.aspx": {
+      "agency": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T15:56:56+00:00",
+      "last_seen": "2026-11-18T15:56:56+00:00",
+      "link": "https://medinet.hochiminhcity.gov.vn/chuyen-muc/quyet-dinh-ve-viec-phan-cong-cac-benh-vien-ket-noi-ho-tro-tram-y-te-tren-dia-ba-c1013-76235.aspx",
+      "title": "Quyết định về việc phân công các bệnh viện kết nối, hỗ trợ Trạm Y tế trên địa bàn Thành phố Hồ Chí Minh giai đoạn 2026 - 2030 29/9/2026"
+    },
     "url:https://medinet.hochiminhcity.gov.vn/kham-suc-khoe/tien-do-chuong-trinh-kham-suc-khoe-toan-dan-da-co-hon-95-trieu-nguoi-duoc-kham-c16680-76495.aspx": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -5910,6 +5937,7 @@
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-1838-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-456565-d1.html": "legacy_sheet_url:https://luatvietnam.vn/tai-chinh/quyet-dinh-1838-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-456565-d1.html",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-68-2026-qd-ubnd-cao-bang-quan-ly-nha-nuoc-ve-gia-tren-dia-ban-456531-d2.html": "legacy_sheet_url:https://luatvietnam.vn/tai-chinh/quyet-dinh-68-2026-qd-ubnd-cao-bang-quan-ly-nha-nuoc-ve-gia-tren-dia-ban-456531-d2.html",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-828-qd-lmhtxvn-2026-gia-han-du-an-thuc-day-tai-chinh-toan-dien-va-phat-trien-kinh-te-hop-tac-456254-d1.html": "legacy_sheet_url:https://luatvietnam.vn/tai-chinh/quyet-dinh-828-qd-lmhtxvn-2026-gia-han-du-an-thuc-day-tai-chinh-toan-dien-va-phat-trien-kinh-te-hop-tac-456254-d1.html",
+    "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-10-2026-vbhn-qd-ubnd-2026-quy-dinh-quan-ly-nha-nuoc-ve-gia-tai-lai-chau-456909-d5.html": "number:10/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:lai châu ban hành hợp nhất quyết định ban hành quy định một số nội dung quản lý nhà nước về giá trên địa bàn tỉnh lai châu luatvietnam - văn bản mới - văn bản hợp nhất",
     "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-116-2026-vbhn-tt-nhnn-2026-quy-dinh-ve-thong-tin-giam-sat-quy-tin-dung-va-tai-chinh-vi-mo-452463-d5.html": "number:116/2026/VBHN-TT-NHNN|issuer:VBHN-TT-NHNN|locality:",
     "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-117-2026-vbhn-nd-nhnn-2026-quan-ly-hoat-dong-kinh-doanh-vang-453226-d5.html": "number:117/2026/VBHN-NĐ-NHNN|issuer:VBHN-NĐ-NHNN|locality:",
     "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-118-2026-vbhn-tt-nhnn-2026-quy-dinh-tieu-huy-tien-cua-ngan-hang-nha-nuoc-453724-d5.html": "number:118/2026/VBHN-TT-NHNN|issuer:VBHN-TT-NHNN|locality:",
@@ -6094,6 +6122,8 @@
     "https://mae.gov.vn/van-ban-phap-luat.htm": "legacy_sheet_url:https://mae.gov.vn/van-ban-phap-luat.htm",
     "https://mae.gov.vn/video/video-649.htm": "legacy_sheet_url:https://mae.gov.vn/video/video-649.htm",
     "https://mae.gov.vn/xay-dung-thi-hanh-phap-luat/-22979.htm": "legacy_sheet_url:https://mae.gov.vn/xay-dung-thi-hanh-phap-luat/-22979.htm",
+    "https://medinet.hochiminhcity.gov.vn/chuyen-muc/quyet-dinh-ve-viec-phan-cong-cac-benh-vien-ket-noi-ho-tro-tram-y-te-tren-dia-ba-c1013-76235.aspx": "url:https://medinet.hochiminhcity.gov.vn/chuyen-muc/quyet-dinh-ve-viec-phan-cong-cac-benh-vien-ket-noi-ho-tro-tram-y-te-tren-dia-ba-c1013-76235.aspx",
+    "https://medinet.hochiminhcity.gov.vn/chuyen-muc/vv-trien-khai-ke-hoach-so-14444khsyt-ve-ket-noi-benh-vien-voi-tram-y-te-giai-do-c1013-76295.aspx": "number:14444/KHSYT|issuer:KHSYT|locality:unresolved-source:medinet.hochiminhcity.gov.vn",
     "https://medinet.hochiminhcity.gov.vn/hoat-dong-dang-doan-the/trao-quyet-dinh-kien-toan-ban-chap-hanh-dang-bo-so-y-te-thanh-pho-ho-chi-minh-c4718-75270.aspx": "legacy_sheet_url:https://medinet.hochiminhcity.gov.vn/hoat-dong-dang-doan-the/trao-quyet-dinh-kien-toan-ban-chap-hanh-dang-bo-so-y-te-thanh-pho-ho-chi-minh-c4718-75270.aspx",
     "https://medinet.hochiminhcity.gov.vn/kham-suc-khoe/tien-do-chuong-trinh-kham-suc-khoe-toan-dan-da-co-hon-95-trieu-nguoi-duoc-kham-c16680-76495.aspx": "legacy_sheet_url:https://medinet.hochiminhcity.gov.vn/kham-suc-khoe/tien-do-chuong-trinh-kham-suc-khoe-toan-dan-da-co-hon-95-trieu-nguoi-duoc-kham-c16680-76495.aspx",
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-ve-cac-mau-van-ban-theo-nghi-dinh-302020nd-cp-c4722-31473.aspx": "legacy_sheet_url:https://medinet.hochiminhcity.gov.vn/tai-ve/tai-ve-cac-mau-van-ban-theo-nghi-dinh-302020nd-cp-c4722-31473.aspx",
