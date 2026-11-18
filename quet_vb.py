@@ -15,10 +15,10 @@ from scanner.normalizer import (
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
-from scanner.source_registry import load_sources_from_csv, filter_priority_sources
+from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
-    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document)
+    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document, pending_source_retries, record_source_scan_result)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
 MAX_WORKERS=5
@@ -37,24 +37,37 @@ def main():
     started=time.monotonic()
     started_at=utc_now()
     profile=os.getenv("SCAN_PROFILE","full").strip().lower() or "full"
-    if profile not in {"full","priority"}:
+    if profile not in {"full","priority","remaining"}:
         raise RuntimeError(f"SCAN_PROFILE không hợp lệ: {profile}")
     print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {started_at} | PROFILE: {profile}"); print("="*70)
     config_data=load_source_config()
     sources=load_sources_from_csv()
     if not sources: raise RuntimeError("Không có nguồn đang bật trong danh_sach_nguon.csv trên GitHub.")
+    priority_path=Path("priority_sources.json")
+    if not priority_path.exists():
+        raise RuntimeError("Thiếu priority_sources.json; không thể phân chia nhóm nguồn.")
+    priority_data=json.loads(priority_path.read_text(encoding="utf-8"))
+    priority_urls=priority_data.get("urls",[]) if isinstance(priority_data,dict) else priority_data
     if profile == "priority":
-        priority_path=Path("priority_sources.json")
-        if not priority_path.exists():
-            raise RuntimeError("Thiếu priority_sources.json; không thể chạy lượt quét ưu tiên.")
-        priority_data=json.loads(priority_path.read_text(encoding="utf-8"))
-        priority_urls=priority_data.get("urls",[]) if isinstance(priority_data,dict) else priority_data
         sources,missing_priority=filter_priority_sources(sources,priority_urls)
         if missing_priority:
             print(f"[PRIORITY-WARNING] {len(missing_priority)} URL ưu tiên chưa có trong danh sách nguồn: " +
                   "; ".join(missing_priority[:8]))
+        retry_rows=pending_source_retries(limit=10)
+        existing_urls={str(row.get("url","")).rstrip("/").lower() for row in sources}
+        for retry in retry_rows:
+            retry_url=str(retry.get("url","")).rstrip("/").lower()
+            if retry_url and retry_url not in existing_urls:
+                sources.append({"name":retry.get("name") or "Nguồn cần quét bù",
+                                "url":retry.get("url"),"group":retry.get("group") or "Văn Bản TW",
+                                "row":None,"retry_source":True})
+                existing_urls.add(retry_url)
         if not sources:
-            raise RuntimeError("Không tìm thấy nguồn ưu tiên nào đang bật trong danh_sach_nguon.csv.")
+            raise RuntimeError("Không tìm thấy nguồn ưu tiên hoặc nguồn lỗi cần quét bù.")
+    elif profile == "remaining":
+        sources=filter_non_priority_sources(sources,priority_urls)
+        if not sources:
+            raise RuntimeError("Không còn nguồn ngoài nhóm ưu tiên để quét.")
     state=load_state()
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
@@ -83,7 +96,7 @@ def main():
             feed_note=" | Có bổ sung RSS" if result.get("feed_supplement_used") else ""
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{feed_note}{detail}")
 
-    if profile == "full":
+    if profile in {"full","remaining"}:
         # Learn new listing/category URLs from the pages already scanned. A URL
         # is not activated until a live validation scan finds at least 3 documents.
         discovered_candidates=[]
@@ -211,6 +224,8 @@ def main():
         relation_matched=sum(1 for row in relation_rows if row.get("resolution_status")=="found_in_scan_index")
         relation_ambiguous=sum(1 for row in relation_rows if row.get("resolution_status")=="ambiguous_multiple_matches")
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
+    for source,result in results_by_index.values():
+        record_source_scan_result(source,result)
     existing_review=load_review_queue()
     existing_review_urls=set(existing_review)
     # Undated documents are tracked by identity in the review queue as well as
@@ -282,11 +297,12 @@ def main():
                 # across all sources in this run and across prior review-queue URLs.
                 totals["unknown_date"]+=1
                 identity=document_identity(number,title,name,link)
-                review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
+                if link not in existing_review_urls:
+                    review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
                                     "identity":identity,"published_date":"",
                                     "source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
-                                    "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm.","source_group":group})
+                                        "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm.","source_group":group})
                 if (link not in existing_review_urls
                         and not seen_index.contains(identity,link)
                         and not output_index.contains(identity,link)
@@ -440,7 +456,7 @@ def main():
              "failed_source_details":failed_source_details,
              "collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
-             "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
+             "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,"source_retry_queue_pending":len(pending_source_retries(limit=10000)),
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
              "relationship_ambiguous":relation_ambiguous,
@@ -460,6 +476,7 @@ def main():
              f"- Hồ sơ xác minh ngày mới được Google Sheets xác nhận: **{review_saved}**",
              f"- Gói chờ xuất sang Sheets trên GitHub: **{len(load_sheets_export_queue())}**",
              f"- Hồ sơ chờ xác minh ngày trên GitHub: **{review_total}**",
+            f"- Nguồn đang chờ quét bù: **{len(pending_source_retries(limit=10000))}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
             f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",
             f"- Nguồn mới phát hiện: **{discovered_added}**",
