@@ -185,6 +185,7 @@ def main():
                                          "document_date":"","date_basis":"unknown",
                                          "date_status":"Chưa xác minh ngày - giữ lại hậu kiểm"})
                         totals["kept"]+=1
+                        existing_review_urls.add(link)
                 continue
             # Có ngày thì mới áp dụng bộ lọc 60 ngày; ưu tiên ngày ban hành.
             if is_too_old(title,number,MAX_AGE_DAYS,pub):
