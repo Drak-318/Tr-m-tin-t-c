@@ -27,14 +27,14 @@ LOCAL_RELEVANCE_TOPICS = (
 )
 
 PERSONAL_OR_ONE_OFF_PATTERNS = (
-    r"\\bkhen thưởng\\b", r"\\btruy tặng\\b", r"\\btặng bằng khen\\b",
-    r"\\bquyết định xử phạt\\b", r"\\bxử phạt vi phạm hành chính đối với\\b",
-    r"\\bphạt tiền đối với\\b",
-    r"\\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\\b.{0,100}\\b(?:ông|bà|cá nhân)\\b",
-    r"\\b(?:cấp|cấp lại|thu hồi)\\b.{0,100}\\b(?:chứng chỉ|bằng tốt nghiệp|giấy phép hành nghề)\\b.{0,80}\\b(?:cho ông|cho bà|cá nhân)\\b",
-    r"\\bthu hồi đất\\b.{0,180}\\b(?:ông|bà|hộ gia đình|cá nhân|tổ chức)\\b",
-    r"\\b(?:giao đất|cho thuê đất)\\b.{0,180}\\b(?:ông|bà|hộ gia đình|cá nhân)\\b",
-    r"\\b(?:thửa đất số|tờ bản đồ số)\\b",
+    r"\bkhen thưởng\b", r"\btruy tặng\b", r"\btặng bằng khen\b",
+    r"\bquyết định xử phạt\b", r"\bxử phạt vi phạm hành chính đối với\b",
+    r"\bphạt tiền đối với\b",
+    r"\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\b.{0,100}\b(?:ông|bà|cá nhân)\b",
+    r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng tốt nghiệp|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân)\b",
+    r"\bthu hồi đất\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân|tổ chức)\b",
+    r"\b(?:giao đất|cho thuê đất)\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân)\b",
+    r"\b(?:thửa đất số|tờ bản đồ số)\b",
 )
 
 def is_local_scope(group="", agency="", source_url=""):
@@ -47,9 +47,9 @@ def is_local_scope(group="", agency="", source_url=""):
     a = clean_title(agency).casefold()
     if g in {"địa phương", "văn bản địa phương", "công an"}:
         return True
-    if re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\\s|văn phòng ubnd|đảng bộ tỉnh)", a):
+    if re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\s|văn phòng ubnd|đảng bộ tỉnh)", a):
         return True
-    if re.search(r"^(?:công an)\\s+(?:tp\\.?|thành phố|tỉnh|quận|huyện)", a):
+    if a.startswith("công an "):
         return True
     if any(x in a for x in ("tỉnh ", "thành phố ", "tp. ", "quận ", "huyện ", "thị xã ", "xã ", "phường ")):
         return True
