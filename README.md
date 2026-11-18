@@ -8,7 +8,7 @@ Bộ quét văn bản pháp luật tự động. GitHub quản lý danh sách ng
 - Quét nhanh nhóm nguồn ưu tiên mỗi 5 phút.
 - Quét toàn bộ danh sách nguồn mỗi 30 phút.
 - Watchdog kiểm tra tình trạng và kích hoạt lượt quét bù mỗi 10 phút khi phát hiện lịch quét bị bỏ lỡ.
-- Trạng thái watchdog được ghi tại `data/scheduler_health.json`; lỗi từng nguồn được lưu trong `data/scan_history.json` để truy nguyên.
+- Trạng thái watchdog được ghi tại `data/scheduler_health.json`; lỗi từng nguồn được lưu trong `data/scan_history.json` và `data/source_retry_queue.json` để tự quét bù.
 
 GitHub Actions có thể bắt đầu trễ hơn lịch dự kiến; đây không phải bộ hẹn giờ chính xác từng giây.
 
@@ -122,7 +122,8 @@ Danh sách `sources` hiện để trống vì chưa có bản xuất thực tế
 
 - Lịch GitHub có thể bị trễ do hàng đợi của GitHub.
 - Mỗi lượt chạy có giới hạn 25 phút. Nếu danh sách nguồn lớn hoặc nhiều website phản hồi chậm, cần xem Summary để xác định nguồn gây chậm.
-- Một nguồn lỗi không làm dừng các nguồn còn lại.
+- Một nguồn lỗi không làm dừng các nguồn còn lại. Nếu lỗi ở trang phân trang sau khi đã lấy được một phần danh sách, các văn bản đã thu thập vẫn được xử lý và đồng bộ; lỗi nguồn được đưa vào `data/source_retry_queue.json` để các lượt ưu tiên sau tự thử lại. Khi nguồn hoạt động trở lại, trạng thái hàng đợi được đánh dấu đã phục hồi.
+- Văn bản nhận diện được nhưng thiếu ngày ban hành/ngày đăng đáng tin cậy vẫn được đưa sang Google Sheets và lưu trong `data/review_queue.json`; hệ thống hậu kiểm trang chi tiết, giữ lại bằng chứng và thử lại khi gặp lỗi. Không có ngày thì không áp dụng bộ lọc 60 ngày. Bộ nhớ URL/định danh ngăn văn bản đó bị xuất lặp ở các lượt sau.
 - Mặc định quét trang nguồn đã nhập; muốn đọc thêm trang phân trang phải cấu hình riêng.
 - Cơ chế chống trùng hiện tương thích với bộ nhớ số hiệu cũ. Trường hợp nhiều cơ quan dùng cùng số hiệu cần nâng cấp khóa chống trùng theo tổ hợp cơ quan + số hiệu.
 - Việc nhận diện phụ thuộc vào tiêu đề và cấu trúc website; không thể cam kết nhận diện đúng 100% mọi trang nếu chưa kiểm tra từng nguồn.
