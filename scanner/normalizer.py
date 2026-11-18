@@ -258,7 +258,7 @@ def document_identity(doc_number,title,agency="",link=""):
         agency_clean=clean_title(agency).casefold()
         local_authority=(
             any(x in issuer for x in ("UBND","HĐND","SNV","STC","SXD","SGD","SYT","CAT","CA"))
-            or bool(re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\\s|công an )",agency_clean))
+            or bool(re.search(r"^(?:ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\s|công an )",agency_clean))
         )
         locality=""
         if local_authority:
