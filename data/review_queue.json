@@ -1033,17 +1033,21 @@
     },
     "https://danang.gov.vn/en/web/dng/-/da-nang-tang-cuong-quan-ly-tau-ca-bao-dam-an-toan-cho-ngu-dan": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "11795/UBND-SNNMT",
       "first_seen": "2026-11-18T01:14:10+00:00",
       "identity": "number:11795/UBND-SNNMT|issuer:UBND-SNNMT|locality:unresolved-source:danang.gov.vn",
+      "last_checked": "2026-11-18T16:08:16+00:00",
+      "last_error": "",
       "last_seen": "2026-11-18T04:12:43+00:00",
       "link": "https://danang.gov.vn/en/web/dng/-/da-nang-tang-cuong-quan-ly-tau-ca-bao-dam-an-toan-cho-ngu-dan",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Đà Nẵng tăng cường quản lý tàu cá, bảo đảm an toàn cho ngư dân"
+      "status": "not_found",
+      "title": "Đà Nẵng tăng cường quản lý tàu cá, bảo đảm an toàn cho ngư dân",
+      "verification_status": "not_found"
     },
     "https://dangcongsan.vn/co-quan-dang-trung-uong/huong-dan-kiem-diem-danh-gia-xep-loai-nam-2026.html": {
       "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng - Văn bản của Đảng",
@@ -9428,19 +9432,22 @@
     },
     "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUTVUbDI4RFdCQXFfdGlNdkVRbExvTkVSVzkxU0FsQldSQjN6TjdTQVZDeDF0RlRoM2RVT0xLa0RZUnZTeDhkSWJJWXVzWDZHQlNRZDlHdjNaVk14UmJaQ1NhOEp3alJ5am95Y0N1SzFibU9KRVQtSEdrVnRSTFMwVDFOVU5UemtJQWR1MnREelJ5YV9kVUY0Wk9kdnpoczN1dFdVRnlRNHQ5RUlKTGZUYWZxWnZYaWU5eVFhR3Z5bG9jYkViNXdMLVZYZ0JKemRjUDZJUngtVlNneFptbUpWRlVDVHM?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "93/2026/QĐ-UBND",
       "exported_at": "2026-11-18T01:09:59+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:09:50+00:00",
-      "last_checked": "2026-11-18T01:09:59+00:00",
+      "last_checked": "2026-11-18T16:08:13+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:09:50+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUTVUbDI4RFdCQXFfdGlNdkVRbExvTkVSVzkxU0FsQldSQjN6TjdTQVZDeDF0RlRoM2RVT0xLa0RZUnZTeDhkSWJJWXVzWDZHQlNRZDlHdjNaVk14UmJaQ1NhOEp3alJ5am95Y0N1SzFibU9KRVQtSEdrVnRSTFMwVDFOVU5UemtJQWR1MnREelJ5YV9kVUY0Wk9kdnpoczN1dFdVRnlRNHQ5RUlKTGZUYWZxWnZYaWU5eVFhR3Z5bG9jYkViNXdMLVZYZ0JKemRjUDZJUngtVlNneFptbUpWRlVDVHM?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 93/2026/QĐ-UBND Định mức kinh tế kỹ thuật điều tra đánh giá đất đai Hồ Chí Minh - Thư Viện Pháp Luật"
+      "status": "fetch_error",
+      "title": "Quyết định 93/2026/QĐ-UBND Định mức kinh tế kỹ thuật điều tra đánh giá đất đai Hồ Chí Minh - Thư Viện Pháp Luật",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMW1CaEp5RTVhVXNZODk2Nl9JRWQyZHVKb0x6bEJKZHpYQ0tVcDF1dUVfcThaTmlQLUFJR3NwWFN3OHZKdlRDRUlqbFFiS1gxdlpjMDF0WmptYng5dFhBT3dVc0VqbkdjZE4yX2F4WmZwSy1HZWNQa0VnRGY0dE9HaHk4UE9TM0wtUXdGZV9KNHNKZVFZVjB4Q0lvOElnMFE3elFGbmUyUVhzVWwyengxanhyVW5tWVVBZEZUdzBLXzBGV3pxLTJIWF9mdllhUzNGRWRTYTlXeGJhSzhWbnZMRk9DbklHZw?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -9482,19 +9489,22 @@
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdnY0kwYTRzd1NaYjdjeW5La0NVUm5BMmlHWjNxZXYyN253bjBuMU42LTBLZXlqN2ZZM2NNTlBOLXY3ZGxxTm1hSWJFMHRwbm84dnNwTjVfXzZZVmNQSjVKV25wTDRsTk02RkxLZkZ5bTMwRENaNktPTFNoemxJLUM0S3BaRUxoNUFZd1NEWTVPNC1QNENnN2wyNm9TZ3VybDFKREdyM21LR2xBRFpyazJtTE45ZGw3d09Icnl0cG4wYS1JMnpibFlEZ3dUbXVhdUxuVUdDb1JyVmNFRjVJVlJzUlljdw?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "2025/QĐ-UBND",
       "exported_at": "2026-11-18T01:09:59+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:09:50+00:00",
-      "last_checked": "2026-11-18T01:09:59+00:00",
+      "last_checked": "2026-11-18T16:08:13+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:09:50+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdnY0kwYTRzd1NaYjdjeW5La0NVUm5BMmlHWjNxZXYyN253bjBuMU42LTBLZXlqN2ZZM2NNTlBOLXY3ZGxxTm1hSWJFMHRwbm84dnNwTjVfXzZZVmNQSjVKV25wTDRsTk02RkxLZkZ5bTMwRENaNktPTFNoemxJLUM0S3BaRUxoNUFZd1NEWTVPNC1QNENnN2wyNm9TZ3VybDFKREdyM21LR2xBRFpyazJtTE45ZGw3d09Icnl0cG4wYS1JMnpibFlEZ3dUbXVhdUxuVUdDb1JyVmNFRjVJVlJzUlljdw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 2025/QĐ-UBND 2026 bổ sung Bảng giá tính lệ phí trước bạ đối với ô tô Lạng Sơn - Thư Viện Pháp Luật"
+      "status": "fetch_error",
+      "title": "Quyết định 2025/QĐ-UBND 2026 bổ sung Bảng giá tính lệ phí trước bạ đối với ô tô Lạng Sơn - Thư Viện Pháp Luật",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWmN1SHZaejU5dGJYZnBGRWpRdUVELU5vd1ZNdU5YMXhHTmpIdDlRTjVUV3lYMEx2WWNtM29WMGRfX2tsTHhNOFFRdTNQc1RQbnFtcmZEZ3hnSjBkVC02eHJ0c244dkNFbEgtbmdGQjNtYmpxZTB6Z0lzb3lueHlQZUdRNC1WenhfdEVDUUhxUmxJWVJzb1cyNWZSLVZmcTAtekNIRHpRT0hrSGh2UlEwaTR5WWJIaFVLQl9nZlVzdFo3WklHd04ydkltWjhMRlk4SE9XdmNBWHBwcHU0SnVpa1FvZ0tMZw?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -11798,19 +11808,22 @@
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yY2lhNl9OWGdrMzhTM3hQT2pEQ0tVOVNpTHRVbnVtUHVnaWFFckhqaDBHWlBaWjZCaWRlS0E1M1JXVEM3MUE4M0JEc1VRdmRWTVNMNmlWNDlyMXlOMmV4TVYwd3FEWEpuRjB5UERsdGdBWGZUVk5McnlYeHB0XzQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "110/2026/NĐ-CP",
       "exported_at": "2026-11-18T01:03:31+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:03:22+00:00",
-      "last_checked": "2026-11-18T01:03:31+00:00",
+      "last_checked": "2026-11-18T16:08:13+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yY2lhNl9OWGdrMzhTM3hQT2pEQ0tVOVNpTHRVbnVtUHVnaWFFckhqaDBHWlBaWjZCaWRlS0E1M1JXVEM3MUE4M0JEc1VRdmRWTVNMNmlWNDlyMXlOMmV4TVYwd3FEWEpuRjB5UERsdGdBWGZUVk5McnlYeHB0XzQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Nghị định số 110/2026/NĐ-CP quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường về trách nhiệm tái chế sản phẩm, bao bì và trách nhiệm xử lý chất thải của nhà sản xuất, nhập khẩu - Cổng Thông tin điện tử Chính phủ"
+      "status": "fetch_error",
+      "title": "Nghị định số 110/2026/NĐ-CP quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường về trách nhiệm tái chế sản phẩm, bao bì và trách nhiệm xử lý chất thải của nhà sản xuất, nhập khẩu - Cổng Thông tin điện tử Chính phủ",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTE0zSXhCT182VVh2TmpDZVVHWWQtVnNjWDlpb3laZ1hqVTg2djI4TWZYYTJWd3BiRFIwSnRSM1ZxUGphQkFPb3pWbV80UjNRdWZDdTFoRnhid2RvbEdIamJYUmEwLXU1SXpyUmRHS01VVlhieHQwR1hfWVZXcjhZU2c?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -13989,19 +14002,22 @@
     },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN3FyaTRQejg2T2VFWHo5aEVkdFU0SmtRTzd4aTlwLWtYbktnWDRaY2RvaTJfOU5qNUNxdWptMkFiTFk1UzRMZHZkU3Nfc2pJSlY5RmVfYjVJUEZjdVpLUzhQTVB3aFdOeHNaWl9WV1BBakpna1JfeUhqcjh3cmdKRG9SRDN1U29NOUxiejhqVHR3VHk0dkotYUFnYkZMWTBudVM5VTVYLURoZVBMcGItUmdEN0hRSzRjUmVFQ1h5QzlTaHFRTVhr?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "3893/QĐ-UBND",
       "exported_at": "2026-11-18T01:09:59+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:09:50+00:00",
-      "last_checked": "2026-11-18T01:09:59+00:00",
+      "last_checked": "2026-11-18T16:08:13+00:00",
+      "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:09:50+00:00",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN3FyaTRQejg2T2VFWHo5aEVkdFU0SmtRTzd4aTlwLWtYbktnWDRaY2RvaTJfOU5qNUNxdWptMkFiTFk1UzRMZHZkU3Nfc2pJSlY5RmVfYjVJUEZjdVpLUzhQTVB3aFdOeHNaWl9WV1BBakpna1JfeUhqcjh3cmdKRG9SRDN1U29NOUxiejhqVHR3VHk0dkotYUFnYkZMWTBudVM5VTVYLURoZVBMcGItUmdEN0hRSzRjUmVFQ1h5QzlTaHFRTVhr?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 3893/QĐ-UBND Phú Thọ 2026 phê duyệt Quy hoạch chung xã Bao La đến 2050 - LuatVietnam"
+      "status": "fetch_error",
+      "title": "Quyết định 3893/QĐ-UBND Phú Thọ 2026 phê duyệt Quy hoạch chung xã Bao La đến 2050 - LuatVietnam",
+      "verification_status": "fetch_error"
     },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSHRzUDBoNnJVRDYzZ2JpYVBqWHY4SUV5dGlGcWpUTEZ3LTJfbVJjdjM1bkNhX1ZJTTJUdXVqenFhdzc3a0hxbHFVTWZxX0JMSWlSanlxelJ1RzJRRFRfQ2lvSXlLRDI2aVN1MjB1QTNVZEFVRE9mbWhEZlNiNFFPbmRZSzBKRWhVTl96eUN6NndzVTFhc0V2WUhHbmRpYmZySUp1bEhnQzVRMFd2VDlRczloQWdHTjZzRmN5bVpWbWhqMkpFZlow?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -17813,6 +17829,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-18T15:56:56+00:00",
+  "updated_at": "2026-11-18T16:08:16+00:00",
   "version": 1
 }
