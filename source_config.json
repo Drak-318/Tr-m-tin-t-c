@@ -71,6 +71,20 @@
       "issue_date_selector": "td:nth-child(3)",
       "max_pages": 6,
       "max_items": 250
+    },
+    "https://vnpa.moh.gov.vn/he-thong-van-ban/": {
+      "max_pages": 5,
+      "max_items": 250,
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avnpa.moh.gov.vn%2Fhe-thong-van-ban%20(v%C4%83n%20b%E1%BA%A3n%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20th%C3%B4ng%20t%C6%B0)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
+    },
+    "https://vimda.moh.gov.vn/van-ban-phap-quy": {
+      "max_pages": 5,
+      "max_items": 250,
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avimda.moh.gov.vn%2Fvan-ban-phap-quy%20(th%C3%B4ng%20t%C6%B0%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     }
   }
 }
