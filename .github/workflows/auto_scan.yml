@@ -8,16 +8,7 @@ on:
     - cron: "7,37 * * * *"
     - cron: "22,52 * * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'quet_vb.py'
-      - 'scanner/**'
-      - 'tests/**'
-      - 'requirements.txt'
-      - 'source_config.json'
-      - 'danh_sach_nguon.csv'
-      - '.github/workflows/auto_scan.yml'
+  # Push trigger tạm tắt trong lúc triển khai nâng cấp đồng bộ.
 
 permissions:
   contents: write
