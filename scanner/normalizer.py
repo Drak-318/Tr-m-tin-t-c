@@ -27,11 +27,6 @@ LOCAL_RELEVANCE_TOPICS = (
 )
 
 PERSONAL_OR_ONE_OFF_PATTERNS = (
-    r"\bkhen thưởng\b", r"\btruy tặng\b", r"\btặng bằng khen\b",
-    r"\bquyết định xử phạt\b", r"\bxử phạt vi phạm hành chính đối với\b",
-    r"\bphạt tiền đối với\b",
-    r"\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\b.{0,100}\b(?:ông|bà|cá nhân)\b",
-    r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng(?: tốt nghiệp)?|giấy chứng nhận|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân|hộ gia đình)\b",
     r"\bthu hồi đất\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân|tổ chức)\b",
     r"\b(?:giao đất|cho thuê đất)\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân)\b",
     r"\b(?:thửa đất số|tờ bản đồ số)\b",
@@ -60,6 +55,31 @@ def is_local_scope(group="", agency="", source_url=""):
 def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
     """Reject individual administrative outcomes, not generally applicable rules."""
     text = clean_title(f"{title} {doc_type} {doc_number}").casefold()
+    kind = clean_title(doc_type).casefold()
+    is_decision = kind == "quyết định"
+
+    award_action = re.search(r"\b(?:khen thưởng|truy tặng|tặng bằng khen)\b", text, re.I)
+    award_recipient = re.search(r"\b(?:cho ông|cho bà|cho cá nhân|các cá nhân|tập thể|đơn vị)\b", text, re.I)
+    if award_action and (is_decision or award_recipient):
+        return True
+
+    # A decision imposing a fine on one case is excluded. General decrees or
+    # circulars that regulate sanctioning regimes remain in the collection.
+    if is_decision and re.search(r"\b(?:xử phạt|phạt tiền)\b", text, re.I):
+        return True
+
+    # Individual certificates/appointments are case outcomes, not public policy.
+    if is_decision and re.search(
+        r"\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\b.{0,100}\b(?:ông|bà|cá nhân)\b",
+        text, re.I
+    ):
+        return True
+    if is_decision and re.search(
+        r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng(?: tốt nghiệp)?|giấy chứng nhận|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân|hộ gia đình)\b",
+        text, re.I
+    ):
+        return True
+
     return any(re.search(pattern, text, re.I) for pattern in PERSONAL_OR_ONE_OFF_PATTERNS)
 
 def is_relevant_local_document(title, doc_type="", doc_number=""):
