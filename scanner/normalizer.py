@@ -123,6 +123,31 @@ def extract_doc_info(title):
         ):
             n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9/-]*)",title,re.I)
             return t,n.group(1).upper().rstrip(".,;:)") if n else "Đang cập nhật"
+
+    # Some portals show only the official number and omit its document type.
+    # Infer the type from a known, unambiguous suffix instead of dropping it.
+    number_match=re.search(
+        r"(?<![0-9])([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9/-]*)",
+        title,re.I
+    )
+    if number_match:
+        number=number_match.group(1).upper().rstrip(".,;:)")
+        components=number.split("/")
+        suffix=components[-1] if components else ""
+        if suffix.upper()=="TW" and len(components)>1:
+            code=components[-2].split("-")[-1].upper()
+        else:
+            if suffix.isdigit() and len(components)>1:
+                suffix=components[-2]
+            code=suffix.split("-")[0].upper()
+        suffix_types={
+            "NĐ":"Nghị định","TT":"Thông tư","QĐ":"Quyết định","QD":"Quyết định",
+            "NQ":"Nghị quyết","KL":"Kết luận","KH":"Kế hoạch","HD":"Hướng dẫn",
+            "CT":"Chỉ thị","CV":"Công văn","TB":"Thông báo","QC":"Quy chế",
+            "CĐ":"Công điện","CD":"Công điện",
+        }
+        if code in suffix_types:
+            return suffix_types[code],number
     return None,None
 
 def parse_date(value):
