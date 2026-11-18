@@ -472,7 +472,10 @@ function thanhTraTramTinTuc() {
     const fullStale = !fullActive && fullAge > INSPECTOR_CONFIG.FULL_STALE_MINUTES;
     const priorityStale = !priorityActive && priorityAge > INSPECTOR_CONFIG.PRIORITY_STALE_MINUTES;
 
-    if (fullStale) {
+    if (priorityActive || fullActive) {
+      action = "SCAN_ACTIVE";
+      reason = "Co job dang queued/in_progress; khong gui them lenh trung.";
+    } else if (fullStale) {
       const cooldown = conTrongCooldown_(props, "LAST_FULL_DISPATCH_AT", now);
       if (cooldown) {
         action = "WAIT_FULL_DISPATCH";
@@ -494,9 +497,6 @@ function thanhTraTramTinTuc() {
         action = "DISPATCH_PRIORITY";
         reason = "Khong co luot quet uu tien thanh cong trong " + Math.round(priorityAge) + " phut.";
       }
-    } else if (priorityActive || fullActive) {
-      action = "SCAN_ACTIVE";
-      reason = "Co job dang queued/in_progress; khong gui them lenh trung.";
     } else {
       reason = "Priority: " + dinhDangTuoi_(priorityAge) + "; full: " + dinhDangTuoi_(fullAge) + ".";
     }
