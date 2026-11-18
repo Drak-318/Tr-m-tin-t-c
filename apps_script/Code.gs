@@ -1,5 +1,5 @@
 /**
- * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V12
+ * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V13
  * Vai trò: API nhận dữ liệu duy nhất từ GitHub Actions.
  * Không chạy bộ quét nguồn độc lập tại Apps Script để tránh hai bộ quét ghi trùng.
  *
@@ -20,13 +20,17 @@ const CONFIG = {
   RESULT_HEADERS: ["Thời điểm nhận", "Loại văn bản", "Nguồn/Cơ quan", "Tiêu đề", "Số hiệu", "Liên kết", "Fingerprint", "Nhóm văn bản"]
 };
 
+// Exact official domains in the GitHub-managed priority registry that may not
+// yet exist in the legacy Google Sheets source tab.
+const EXTRA_ALLOWED_SOURCE_HOSTS = new Set(["vbpl.vn", "vbpq.mof.gov.vn"]);
+
 function jsonOutput_(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
 }
 
 function doGet() {
-  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "12.0"});
+  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.0"});
 }
 
 function doPost(e) {
@@ -91,7 +95,7 @@ function fetchSource_(ss, data) {
     return {status: "error", message: "Không có danh sách nguồn để xác thực."};
   }
   const values = sourceSheet.getRange(2, 2, sourceSheet.getLastRow() - 1, 1).getDisplayValues();
-  const allowedHosts = new Set();
+  const allowedHosts = new Set(EXTRA_ALLOWED_SOURCE_HOSTS);
   values.forEach(row => {
     const match = String(row[0] || "").trim().match(/^https:\/\/([^\/?#:]+)/i);
     if (match) allowedHosts.add(match[1].toLowerCase());
