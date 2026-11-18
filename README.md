@@ -90,7 +90,7 @@ Chỉ cần kiểm tra và xóa trigger cũ một lần:
 3. Tìm trigger có tên hàm `quetNhanhTrungUongTuSheet`.
 4. Nhấn dấu ba chấm ở dòng đó → **Delete trigger / Xóa trình kích hoạt**.
 
-Không xóa hàm `doPost`: GitHub vẫn cần hàm này để đọc danh sách nguồn và ghi kết quả vào Sheets. Apps Script sau khi tắt trigger chỉ còn làm API nhận/gửi dữ liệu.
+Không xóa hàm `doPost`: GitHub vẫn cần hàm này để đọc danh sách nguồn và ghi kết quả vào Sheets. Apps Script không còn quét văn bản độc lập; ngoài API nhận/gửi dữ liệu, nó sẽ chạy bộ Thanh tra độc lập nếu bạn cài trigger theo Mục 12.
 
 ## 7. Chạy thử và theo dõi
 
