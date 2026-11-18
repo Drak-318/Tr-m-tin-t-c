@@ -12,6 +12,7 @@ STATE_FILES = (
     "data/relationship_scan_state.json",
     "data/review_queue.json",
     "data/sheets_export_queue.json",
+    "data/discovered_sources.json",
 )
 
 
@@ -110,6 +111,22 @@ def merge_state_files(local_dir, repo_root="."):
     else:
         export_items = list(remote_export.get("items", []))
     _write(export_path, {"version": 1, "items": export_items})
+
+    # Merge discovered source candidates; active sources take precedence.
+    discovered_path = root / "data/discovered_sources.json"
+    local_discovered_path = local_root / "data/discovered_sources.json"
+    remote_discovered = _read(discovered_path, {"version": 1, "items": {}})
+    local_discovered = _read(local_discovered_path, {"version": 1, "items": {}})
+    discovered_items = dict(remote_discovered.get("items", {}))
+    for url, row in local_discovered.get("items", {}).items():
+        current = dict(discovered_items.get(url, {}))
+        if current.get("status") != "active" or row.get("status") == "active":
+            current.update(row)
+        current["attempts"] = max(int(current.get("attempts", 0)), int(row.get("attempts", 0)))
+        discovered_items[url] = current
+    _write(discovered_path, {"version": 1, "items": discovered_items,
+                             "updated_at": max(str(remote_discovered.get("updated_at", "")),
+                                               str(local_discovered.get("updated_at", "")))})
 
     # Preserve the one-time migration marker across the workflow's reset-to-main merge.
     bootstrap_path = root / "data/sheets_bootstrap.json"

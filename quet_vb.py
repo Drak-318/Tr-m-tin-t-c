@@ -16,6 +16,7 @@ from scanner.normalizer import (
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
+from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, is_seen, record_documents, append_history,
     enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
@@ -54,6 +55,53 @@ def main():
             fallback=" | Có dùng nguồn dự phòng" if result.get("fallback_used") else ""
             feed_note=" | Có bổ sung RSS" if result.get("feed_supplement_used") else ""
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{feed_note}{detail}")
+
+    # Learn new listing/category URLs from the pages already scanned. A URL
+    # is not activated until a live validation scan finds at least 3 documents.
+    discovered_candidates=[]
+    for _source, _result in results_by_index.values():
+        discovered_candidates.extend(_result.get("discovered_candidates", []))
+    discovered_added=record_candidates(discovered_candidates)
+    discovery_checked=0
+    discovery_activated=0
+    for candidate in pending_candidates(limit=3):
+        discovery_checked+=1
+        candidate_source={
+            "name":candidate.get("name","Nguồn tự phát hiện"),
+            "url":candidate["url"],
+            "group":candidate.get("group","Văn Bản TW"),
+        }
+        candidate_config=config_for_source(candidate_source,config_data)
+        candidate_config.update({"max_pages":3,"max_items":120,"follow_pagination":True})
+        validation=scan_source(candidate_source,candidate_config,None)
+        recognized_items=[]
+        for candidate_item in validation.get("items",[]):
+            candidate_type=candidate_item.get("doc_type") or extract_doc_info(candidate_item.get("title",""))[0]
+            candidate_number=candidate_item.get("doc_number") or extract_doc_info(candidate_item.get("title",""))[1]
+            if candidate_type and candidate_number and candidate_number!="Đang cập nhật":
+                recognized_items.append(candidate_item)
+        attempts=int(candidate.get("attempts",0))+1
+        if len(recognized_items)>=3:
+            update_candidate(candidate["url"],{
+                "status":"active","attempts":attempts,
+                "validated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "validated_document_count":len(recognized_items),
+                "sample_titles":[x.get("title","") for x in recognized_items[:3]],
+                "last_error":"",
+            })
+            discovery_activated+=1
+        else:
+            reason=validation.get("error") or (
+                f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
+            )
+            update_candidate(candidate["url"],{
+                "attempts":attempts,"last_error":str(reason)[:350],
+                "last_validation_status":validation.get("status",""),
+            })
+    if discovered_added or discovery_checked:
+        print(f"[SOURCE-DISCOVERY] Phát hiện {discovered_added} link danh mục mới | "
+              f"Kiểm tra {discovery_checked} | Kích hoạt {discovery_activated} nguồn. "
+              "Nguồn mới sẽ tham gia từ lượt quét tiếp theo.")
 
     # Trace references from a bounded sample of local authority detail pages.
     local_candidates=[]
@@ -311,7 +359,12 @@ def main():
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
-             "relationship_ambiguous":relation_ambiguous,"duration_seconds":duration}
+             "relationship_ambiguous":relation_ambiguous,
+             "discovered_source_candidates_added":discovered_added,
+             "discovered_sources_checked":discovery_checked,
+             "discovered_sources_activated":discovery_activated,
+             "discovered_sources_pending":len(pending_candidates(limit=500)),
+             "duration_seconds":duration}
     append_history(summary)
     report=["## Kết quả quét Trạm Tin Tức",f"- Hoàn tất: **{utc_now()}**",f"- Nguồn: **{len(sources)}**",
             f"- Tổng mục thu thập: **{totals['items']}**",f"- Nhận diện văn bản: **{totals['recognized']}**",
@@ -322,6 +375,10 @@ def main():
              f"- Hồ sơ chờ xác minh ngày trên GitHub: **{review_total}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
             f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",
+            f"- Nguồn mới phát hiện: **{discovered_added}**",
+            f"- Nguồn mới đã kiểm tra: **{discovery_checked}**",
+            f"- Nguồn mới được kích hoạt cho lượt sau: **{discovery_activated}**",
+            f"- Nguồn mới còn chờ kiểm tra: **{len(pending_candidates(limit=500))}**",
             f"- Quan hệ văn bản địa phương đã ghi nhận: **{len(relation_rows)}**",
             f"- Dẫn chiếu tìm thấy trong kho quét: **{relation_matched}**",
             f"- Dẫn chiếu có nhiều văn bản trùng số hiệu: **{relation_ambiguous}**",

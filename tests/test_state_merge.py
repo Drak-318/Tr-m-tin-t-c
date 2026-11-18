@@ -61,4 +61,23 @@ class StateMergeTests(unittest.TestCase):
             self.assertEqual(result["relationships"],2)
             self.assertEqual(json.loads((root/"data/relationship_scan_state.json").read_text())["next_candidate"],3)
 
+    def test_discovered_sources_merge_preserves_activated_sources(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)/"repo"; local=Path(temp)/"local"
+            (root/"data").mkdir(parents=True); (local/"data").mkdir(parents=True)
+            remote={"version":1,"items":{
+                "https://a.gov.vn/van-ban":{"url":"https://a.gov.vn/van-ban","status":"pending","attempts":1}
+            }}
+            local_state={"version":1,"items":{
+                "https://a.gov.vn/van-ban":{"url":"https://a.gov.vn/van-ban","status":"active","attempts":2},
+                "https://b.gov.vn/van-ban":{"url":"https://b.gov.vn/van-ban","status":"pending","attempts":0}
+            }}
+            (root/"data/discovered_sources.json").write_text(json.dumps(remote),encoding="utf-8")
+            (local/"data/discovered_sources.json").write_text(json.dumps(local_state),encoding="utf-8")
+            merge_state_files(local,root)
+            merged=json.loads((root/"data/discovered_sources.json").read_text(encoding="utf-8"))
+            self.assertEqual(merged["items"]["https://a.gov.vn/van-ban"]["status"],"active")
+            self.assertIn("https://b.gov.vn/van-ban",merged["items"])
+
+
 if __name__ == "__main__": unittest.main()

@@ -222,4 +222,19 @@ class NormalizerTests(unittest.TestCase):
         b=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND","https://b.vn")
         self.assertNotEqual(a,b)
 
+
+    def test_official_letter_number_without_type_prefix_is_recognized(self):
+        self.assertEqual(extract_doc_info("11560/VPCP-CN 11/11/2026"),
+                         ("Công văn", "11560/VPCP-CN"))
+
+    def test_date_like_fragment_is_not_used_as_document_identity(self):
+        a=document_identity("11/2026","11560/VPCP-CN 11/11/2026","Văn phòng Chính phủ","https://a.gov.vn/doc/1")
+        b=document_identity("11/2026","11627/VPCP-CN 12/11/2026","Văn phòng Chính phủ","https://a.gov.vn/doc/2")
+        self.assertNotEqual(a,b)
+
+    def test_same_local_number_from_different_agencies_is_not_merged(self):
+        a=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND tỉnh An Giang","https://a.gov.vn/doc")
+        b=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND tỉnh Đồng Nai","https://b.gov.vn/doc")
+        self.assertNotEqual(a,b)
+
 if __name__=="__main__": unittest.main()
