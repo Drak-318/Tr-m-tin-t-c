@@ -171,7 +171,14 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
         return False,98
 
     local_scope = is_local_scope(group,agency)
-    if local_scope:
+    document_signals = f"{title} {doc_number}".casefold()
+    central_document = (
+        any(x in document_signals for x in CENTRAL_SIGNALS)
+        or bool(re.search(r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTG|/CT-TTG|/TT-[A-ZĐ0-9-]+|/QH[0-9]+|/VBHN-[A-Z0-9-]+)$", str(doc_number), re.I))
+    )
+    # A local portal may publish or link to a central instrument. The
+    # instrument's own issuer/number takes precedence over the portal's region.
+    if local_scope and not central_document:
         if not is_relevant_local_document(title,doc_type,doc_number):
             return False,97
         return True,30
@@ -181,7 +188,7 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
     if c=="Văn bản Đảng": return True,13
     if c=="Công văn": return True,14
     s=f"{title} {agency} {doc_number}".casefold()
-    if any(x in s for x in CENTRAL_SIGNALS) or doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất"}:
+    if central_document or any(x in s for x in CENTRAL_SIGNALS) or doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất"}:
         return True,10+{"Luật":1,"Nghị quyết":2,"Nghị định":3,"Thông tư":4,"Văn bản hợp nhất":5,"Quyết định":6,"Chỉ thị":7}.get(doc_type,9)
     return True,20
 
