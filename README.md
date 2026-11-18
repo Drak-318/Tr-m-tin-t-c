@@ -4,11 +4,12 @@ Bộ quét văn bản pháp luật tự động. GitHub quản lý danh sách ng
 
 ## 1. Hệ thống có tự chạy không?
 
-**Có.** Workflow `Tram Tin Tuc - Auto Scanner` được đặt lịch tự động 2 lần mỗi giờ:
-- 14:07 giờ Việt Nam.
-- 14:37 giờ Việt Nam.
+**Có.** Hệ thống có 3 lớp lịch chạy:
+- Quét nhanh nhóm nguồn ưu tiên mỗi 5 phút.
+- Quét toàn bộ danh sách nguồn mỗi 30 phút.
+- Watchdog kiểm tra tình trạng và kích hoạt lượt quét bù mỗi 10 phút khi phát hiện lịch quét bị bỏ lỡ.
 
-Tương đương 30 phút/lần. GitHub Actions có thể bắt đầu trễ hơn lịch dự kiến do cơ chế xếp hàng của GitHub; đây không phải bộ hẹn giờ chính xác từng giây.
+GitHub Actions có thể bắt đầu trễ hơn lịch dự kiến; đây không phải bộ hẹn giờ chính xác từng giây.
 
 Bạn không cần bấm `Run workflow` mỗi lần. Nút này chỉ dùng khi muốn chạy thử hoặc quét ngay.
 
@@ -148,7 +149,7 @@ Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong G
 
 Lưu ý: Google Sheets vẫn được dùng để lưu kết quả và bộ nhớ chống trùng. Vì API Apps Script hiện tại trả danh sách nguồn cùng bộ nhớ trong một phản hồi, lượt chạy vẫn gọi API để lấy bộ nhớ chống trùng; tuy nhiên, khi CSV đã được điền, danh sách CSV mới là danh sách quyết định nguồn nào được quét.
 
-Danh sách GitHub hiện có 64 dòng nguồn từ danh sách bạn gửi. Chưa xóa danh sách cũ trong Google Sheets; nên giữ làm bản đối chiếu dự phòng cho đến khi lượt quét mới hoạt động ổn định.
+Danh sách GitHub được quản lý tại `danh_sach_nguon.csv`; các nguồn trọng điểm được chọn riêng trong `priority_sources.json` để quét nhanh. Không xóa danh sách cũ trong Google Sheets; tiếp tục giữ làm bản đối chiếu dự phòng.
 
 
 ## 11. Bộ nhớ chống trùng và nguyên tắc ngày tháng
@@ -158,4 +159,4 @@ Danh sách GitHub hiện có 64 dòng nguồn từ danh sách bạn gửi. Chưa
 - Bộ lọc 60 ngày ưu tiên ngày ban hành ghi rõ trong tiêu đề; nếu không có thì dùng ngày đăng từ RSS/Atom hoặc ngày hiển thị cạnh bài trong danh sách nguồn. Ngày hiệu lực không được dùng thay ngày ban hành.
 - Một bài đăng lại có ngày đăng mới nhưng tiêu đề thể hiện ngày ban hành cũ sẽ bị loại. Nếu website không cung cấp ngày ban hành và ngày đăng đáng tin cậy, bộ lọc chưa thể xác định chắc chắn tuổi văn bản; trường hợp này cần cải thiện bộ đọc chi tiết riêng theo từng website.
 - Phân nhóm nhận diện gồm: Dự thảo, Văn bản Đảng, Công văn, Văn bản quy phạm pháp luật, Văn bản địa phương và Văn bản khác. Công văn được ưu tiên riêng; không coi công văn là văn bản quy phạm pháp luật.
-- Lịch quét tự động vẫn đặt 2 lần/giờ theo cron. Tuy nhiên, GitHub Actions có thể trì hoãn hoặc bỏ lỡ lượt theo lịch; cần theo dõi lịch sử workflow để xác nhận lượt thực tế, không chỉ dựa vào cấu hình cron.
+- Nhóm nguồn ưu tiên được quét theo lịch 5 phút/lần; toàn bộ nguồn được quét 30 phút/lần. Watchdog kiểm tra mỗi 10 phút và tự dispatch lượt bù nếu lần thành công gần nhất quá hạn. GitHub Actions vẫn có thể trì hoãn hoặc bỏ lỡ lịch; cần theo dõi lịch sử workflow và trường `scan_profile` trong `data/scan_history.json`.
