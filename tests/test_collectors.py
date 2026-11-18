@@ -144,4 +144,23 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(result[0]["date_source"],"fallback_aggregator")
         self.assertIsNone(result[0]["published_date"])
 
+
+    def test_discovery_rss_accepts_only_allowlisted_official_domains(self):
+        from types import SimpleNamespace
+
+        class FakeSession:
+            def get(self, url, **kwargs):
+                host = "chinhphu.vn" if "official" in url else "example.com"
+                return SimpleNamespace(url=f"https://{host}/van-ban/1", ok=True)
+
+        items = [
+            {"title":"Nghị định 1/2026/NĐ-CP","link":"https://news.google.com/rss/articles/official"},
+            {"title":"Nghị định 2/2026/NĐ-CP","link":"https://news.google.com/rss/articles/untrusted"},
+        ]
+        result = _resolve_aggregator_links(
+            FakeSession(), items, {"allowed_final_domains":["chinhphu.vn"]}
+        )
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["link"], "https://chinhphu.vn/van-ban/1")
+
 if __name__=="__main__": unittest.main()
