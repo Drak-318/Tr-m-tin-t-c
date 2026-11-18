@@ -82,6 +82,19 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(find_next_page(soup,"https://example.gov.vn/list",{}),
                          "https://example.gov.vn/list?page=2")
 
+
+    def test_generic_table_row_reads_number_and_date_outside_title_link(self):
+        html="""<table><tbody><tr>
+          <td>Số 123/2026/QĐ-UBND</td>
+          <td><a href="/van-ban/123">Ban hành bảng giá đất áp dụng trên địa bàn</a></td>
+          <td>16/11/2026</td>
+        </tr></tbody></table>"""
+        items,_=parse_html_items(html,"https://example.gov.vn/van-ban",{})
+        self.assertEqual(len(items),1)
+        self.assertEqual(items[0]["doc_type"],"Quyết định")
+        self.assertEqual(items[0]["doc_number"],"123/2026/QĐ-UBND")
+        self.assertEqual(items[0]["published_date"],"2026-11-16")
+
     def test_table_document_row_extracts_number_and_issue_date(self):
         html="""<table><tbody><tr>
           <td>123-KL/TW</td><td><a href="/van-ban/123">Kết luận của Bộ Chính trị về công tác</a></td>
