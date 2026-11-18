@@ -174,3 +174,35 @@ Danh sách GitHub được quản lý tại `danh_sach_nguon.csv`; các nguồn 
 - Một bài đăng lại có ngày đăng mới nhưng tiêu đề thể hiện ngày ban hành cũ sẽ bị loại. Nếu website không cung cấp ngày ban hành và ngày đăng đáng tin cậy, bộ lọc chưa thể xác định chắc chắn tuổi văn bản; trường hợp này cần cải thiện bộ đọc chi tiết riêng theo từng website.
 - Phân nhóm nhận diện gồm: Dự thảo, Văn bản Đảng, Công văn, Văn bản quy phạm pháp luật, Văn bản địa phương và Văn bản khác. Công văn được ưu tiên riêng; không coi công văn là văn bản quy phạm pháp luật.
 - Nhóm nguồn ưu tiên được quét theo lịch 5 phút/lần; toàn bộ nguồn được quét 30 phút/lần. Watchdog kiểm tra mỗi 10 phút và tự dispatch lượt bù nếu lần thành công gần nhất quá hạn. GitHub Actions vẫn có thể trì hoãn hoặc bỏ lỡ lịch; cần theo dõi lịch sử workflow và trường `scan_profile` trong `data/scan_history.json`.
+
+## 12. Thanh tra độc lập và tự khôi phục lịch quét
+
+Để không phụ thuộc hoàn toàn vào lịch GitHub Actions, Apps Script có thêm bộ **Thanh tra Trạm Tin Tức** chạy độc lập mỗi 5 phút. Bộ thanh tra đọc trạng thái workflow/jobs qua GitHub API, phân biệt riêng job `priority-scan` và `scan`, sau đó tự gửi `workflow_dispatch` khi phát hiện quá hạn.
+
+### Cài đặt một lần
+
+1. Mở Apps Script đang gắn với Google Sheets.
+2. Thay toàn bộ nội dung `Code.gs` bằng bản mới nhất tại `apps_script/Code.gs`.
+3. Chọn **Deploy → Manage deployments → Edit → New version → Deploy** để cập nhật Web App hiện tại.
+4. Mở URL Web App và kiểm tra GET trả về `"version":"13.1"`.
+5. Trong Apps Script, mở **Project Settings → Script properties → Add script property**:
+   - Property: `GITHUB_PAT`
+   - Value: Fine-grained Personal Access Token của repository này.
+6. Tạo token tại GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens:
+   - Repository access: **Only select repositories** → chọn `Tr-m-tin-t-c`.
+   - Repository permissions: **Actions = Read and write**.
+   - Không cần cấp quyền Contents.
+   - Đặt thời hạn token phù hợp và gia hạn khi hết hạn. Không gửi token qua tin nhắn hoặc đưa token vào mã nguồn.
+7. Trong Apps Script, chọn hàm `caiDatThanhTraDocLap` rồi nhấn **Run**. Chấp thuận các quyền Google yêu cầu.
+8. Chọn hàm `kiemTraThanhTraThuCong` rồi nhấn **Run** để kiểm tra ngay. Nếu thành công, Google Sheets sẽ có tab **Thanh tra he thong** ghi lịch sử.
+
+### Quy tắc tự khôi phục
+
+- Quét ưu tiên: coi là quá hạn nếu không có lượt thành công trong hơn 12 phút.
+- Quét toàn bộ: coi là quá hạn nếu không có lượt thành công trong hơn 42 phút.
+- Nếu có job đang xếp hàng hoặc chạy, thanh tra chờ và không gửi lệnh trùng.
+- Nếu cả hai phạm vi cùng quá hạn, chỉ gửi lệnh `full` vì lượt full đã bao gồm quét ưu tiên.
+- Sau khi gửi lệnh, thanh tra chờ tối thiểu 10 phút trước khi cân nhắc gửi lại; mỗi vòng tiếp theo đọc lại trạng thái job để xác minh.
+- Lỗi API/token được ghi vào **Nhật ký thực thi** của Apps Script và tab **Thanh tra he thong** (nếu ghi Sheets khả dụng).
+
+Lưu ý: thao tác cập nhật mã, thêm Script Property và chạy hàm cài đặt là bắt buộc. Chỉ commit mã lên GitHub **không tự cài được trigger trong tài khoản Google**. Bộ thanh tra cũng không thể bảo đảm tuyệt đối website nguồn luôn phản hồi hoặc mọi văn bản đều được nhận diện; nó bảo đảm giám sát và khôi phục việc kích hoạt lượt quét, không thay thế kiểm tra chất lượng dữ liệu.
