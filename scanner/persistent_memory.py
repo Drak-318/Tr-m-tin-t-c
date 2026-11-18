@@ -39,6 +39,29 @@ def load_state():
     return state
 
 
+class RunSeenIndex:
+    """Track documents accepted earlier in the same scan, before disk persistence."""
+    def __init__(self, state=None):
+        state = state or {}
+        self.identities = set((state.get("documents") or {}).keys())
+        self.urls = {
+            canonicalize_url(url)
+            for url in (state.get("urls") or {}).keys()
+            if canonicalize_url(url)
+        }
+
+    def contains(self, identity, url):
+        canonical = canonicalize_url(url)
+        return bool((identity and identity in self.identities) or (canonical and canonical in self.urls))
+
+    def add(self, identity, url):
+        canonical = canonicalize_url(url)
+        if identity:
+            self.identities.add(identity)
+        if canonical:
+            self.urls.add(canonical)
+
+
 def is_seen(state,identity,url):
     canonical=canonicalize_url(url)
     return identity in state["documents"] or canonical in state["urls"]
