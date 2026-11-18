@@ -39,7 +39,7 @@ def extract_doc_info(title):
         if re.match(r"^\s*(?:dự thảo\s+)?" + re.escape(t) + r"\b", title, re.I) and any(
             x in low for x in ("ban hành","quy định","về việc","sửa đổi","bổ sung","bãi bỏ","phê duyệt","hướng dẫn","số ","2026","lấy ý kiến")
         ):
-            n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9\\-/]*)",title,re.I)
+            n=re.search(r"([0-9]+(?:/[0-9]{4})?[/-][A-ZĐƯƠĂÂÊÔ][A-ZĐƯƠĂÂÊÔ0-9/-]*)",title,re.I)
             return t,n.group(1).upper().rstrip(".,;:)") if n else "Đang cập nhật"
     return None,None
 
@@ -79,24 +79,17 @@ def is_amendment_title(title):
 
 
 def is_too_old(title,doc_number="",max_days=60,published_date=None,now=None):
+    """Only exclude a document when an actual date signal proves it is old.
+
+    An old year mentioned in a document number is not enough to discard an
+    undated candidate: it may be a current amendment, a republication, or an
+    item whose detail page still needs human verification.
+    """
     current = now or datetime.utcnow()
-    number = str(doc_number or "").strip()
-    # A year embedded in the current document number is stronger than years
-    # mentioned in the title as references to older instruments.
-    year_match = re.search(r"(?:^|/)(20\d{2})(?:/|$)", number)
-    if year_match:
-        number_year = int(year_match.group(1))
-        if number_year < current.year:
-            if is_draft_title(title):
-                return False
-            evidence_date, _ = resolve_document_date(title, published_date)
-            if is_amendment_title(title) and evidence_date and evidence_date.year == current.year:
-                return False
-            return True
-        if number_year > current.year:
-            return False
     d, _basis = resolve_document_date(title, published_date)
-    return bool(d and (current-d).days>max_days)
+    if not d:
+        return False
+    return (current-d).days > max_days
 
 def classify_document(title,agency="",doc_type="",doc_number="",source_url=""):
     s=f"{title} {agency} {doc_number} {source_url}".casefold()
