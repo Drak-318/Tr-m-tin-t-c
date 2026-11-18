@@ -8,6 +8,7 @@ Bộ quét văn bản pháp luật tự động. GitHub quản lý danh sách ng
 - Quét nhanh nhóm nguồn ưu tiên mỗi 5 phút.
 - Quét toàn bộ danh sách nguồn mỗi 30 phút.
 - Watchdog kiểm tra tình trạng và kích hoạt lượt quét bù mỗi 10 phút khi phát hiện lịch quét bị bỏ lỡ.
+- Trạng thái watchdog được ghi tại `data/scheduler_health.json`; lỗi từng nguồn được lưu trong `data/scan_history.json` để truy nguyên.
 
 GitHub Actions có thể bắt đầu trễ hơn lịch dự kiến; đây không phải bộ hẹn giờ chính xác từng giây.
 
