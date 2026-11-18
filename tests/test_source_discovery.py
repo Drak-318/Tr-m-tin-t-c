@@ -41,17 +41,17 @@ class SourceDiscoveryTests(unittest.TestCase):
         self.assertEqual(discovery.active_sources(path=self.path), [])
         url = rows[0]["url"]
         discovery.update_candidate(url, {"status": "active", "validated_document_count": 3}, path=self.path)
-        self.assertEqual(discovery.pending_candidates(), [])
-        self.assertEqual(discovery.active_sources()[0]["url"], url)
+        self.assertEqual(discovery.pending_candidates(path=self.path), [])
+        self.assertEqual(discovery.active_sources(path=self.path)[0]["url"], url)
 
     def test_repeated_candidate_is_not_duplicated(self):
         rows = discovery.extract_source_candidates(
             '<a href="/van-ban">Văn bản</a>',
             "https://example.gov.vn/", "Cổng", "Văn Bản TW"
         )
-        self.assertEqual(discovery.record_candidates(rows), 1)
-        self.assertEqual(discovery.record_candidates(rows), 0)
-        self.assertEqual(len(discovery.pending_candidates()), 1)
+        self.assertEqual(discovery.record_candidates(rows, path=self.path), 1)
+        self.assertEqual(discovery.record_candidates(rows, path=self.path), 0)
+        self.assertEqual(len(discovery.pending_candidates(path=self.path)), 1)
 
 
 if __name__ == "__main__":
