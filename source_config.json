@@ -181,6 +181,18 @@
       "fallback_feed_urls": [
         "https://news.google.com/rss/search?q=site%3Avbpq.mof.gov.vn%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
       ]
+    },
+    "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang": {
+      "max_pages": 3,
+      "max_items": 150,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "allowed_final_domains": [
+        "tulieuvankien.dangcongsan.vn"
+      ],
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Atulieuvankien.dangcongsan.vn%2Fhe-thong-van-ban%20(%22KL%2FTW%22%20OR%20%22NQ%2FTW%22%20OR%20%22Q%C4%90%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     }
   }
 }
