@@ -6,6 +6,19 @@ from scanner.normalizer import (
 )
 
 class NormalizerTests(unittest.TestCase):
+
+    def test_infer_type_from_number_suffix_when_title_omits_type(self):
+        cases = [
+            ("Số 123/2026/NĐ-CP về chính sách thuế", "Nghị định", "123/2026/NĐ-CP"),
+            ("Số 45/2026/TT-BTC về phí và lệ phí", "Thông tư", "45/2026/TT-BTC"),
+            ("Số 18/2026/QĐ-UBND ban hành bảng giá đất", "Quyết định", "18/2026/QĐ-UBND"),
+            ("Số 12/2026/NQ-HĐND về mức học phí", "Nghị quyết", "12/2026/NQ-HĐND"),
+            ("Số 123-KL/TW về công tác xây dựng Đảng", "Kết luận", "123-KL/TW"),
+        ]
+        for title, expected_type, expected_number in cases:
+            with self.subTest(title=title):
+                self.assertEqual(extract_doc_info(title), (expected_type, expected_number))
+
     def test_extract_common_document_numbers(self):
         cases=[
             ("Nghị định 413/2026/NĐ-CP quy định về...","Nghị định","413/2026/NĐ-CP"),
