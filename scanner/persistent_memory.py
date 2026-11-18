@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """GitHub is the source of truth for scan memory, review queue and pending exports."""
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from .normalizer import canonicalize_url
@@ -111,14 +111,35 @@ def update_review_document(link,updates):
     return True
 
 
-def pending_review_documents(limit=10,max_attempts=3):
+def pending_review_documents(limit=40,max_attempts=3,retry_manual_after_days=7):
+    """Select undated records, including failed records after a retry cooldown."""
     items=load_review_queue()
     eligible=[]
+    retry_cutoff=datetime.now(timezone.utc)-timedelta(days=max(1,int(retry_manual_after_days)))
+
+    def is_stale(row):
+        raw=row.get("last_checked") or row.get("last_seen") or row.get("first_seen")
+        if not raw:
+            return True
+        try:
+            checked=datetime.fromisoformat(str(raw).replace("Z","+00:00"))
+            if checked.tzinfo is None:
+                checked=checked.replace(tzinfo=timezone.utc)
+            return checked < retry_cutoff
+        except (TypeError,ValueError):
+            return True
+
     for url,row in items.items():
         status=row.get("status","pending")
         attempts=int(row.get("attempts",0))
         if status in {"pending","fetch_error","not_found"} and attempts<max_attempts:
             eligible.append({**row,"link":url})
+        elif status in {"fetch_error","not_found","manual_review"} and is_stale(row):
+            # A manual_review caused by a failed fetch is retried after cooldown.
+            # needs_manual_review means the page was fetched but its document type
+            # remains ambiguous; that record should stay for human review.
+            if status!="manual_review" or row.get("verification_status")=="manual_review":
+                eligible.append({**row,"link":url,"retry_after_cooldown":True})
     eligible.sort(key=lambda row:(int(row.get("attempts",0)),str(row.get("first_seen",""))))
     return eligible[:max(0,int(limit))]
 
