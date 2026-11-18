@@ -154,6 +154,14 @@ class NormalizerTests(unittest.TestCase):
         )
         self.assertFalse(keep)
 
+
+    def test_central_general_reward_policy_is_not_excluded(self):
+        keep, _ = classify_and_score(
+            "Nghị định quy định chính sách thi đua, khen thưởng đối với cán bộ, công chức",
+            "Chính phủ", "Nghị định", "99/2026/NĐ-CP", "Văn Bản TW"
+        )
+        self.assertTrue(keep)
+
     def test_central_rule_on_administrative_penalties_is_kept(self):
         keep, _ = classify_and_score(
             "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực thuế",
