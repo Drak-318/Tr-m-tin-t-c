@@ -106,9 +106,23 @@ def parse_html_items(html,page_url,config):
             results.append(item)
         return results,soup
     for anchor in soup.find_all("a",href=True):
-        title=clean_title(anchor.get("aria-label") or anchor.get("title") or anchor.get_text(" ",strip=True)); href=anchor.get("href","").strip()
+        title=clean_title(anchor.get("aria-label") or anchor.get("title") or anchor.get_text(" ",strip=True))
+        href=anchor.get("href","").strip()
         if len(title)>=18 and href and not href.startswith(("javascript:","mailto:","#")):
-            results.append({"title":title,"link":canonicalize_url(urljoin(page_url,href)),"published_date":_date_from_container(anchor.parent or anchor,soup)})
+            # On many government portals the clickable title, document number,
+            # and date are separate cells in one table row. Read the nearest
+            # semantic row/card so the document is not discarded just because
+            # its number is outside the anchor text.
+            container=anchor.find_parent(["tr","li","article"]) or anchor.parent or anchor
+            context_text=clean_title(container.get_text(" ",strip=True)) if getattr(container,"get_text",None) else title
+            item={"title":title,"link":canonicalize_url(urljoin(page_url,href)),
+                  "published_date":_date_from_container(container,soup)}
+            if context_text and len(context_text)<=700:
+                context_type,context_number=extract_doc_info(context_text)
+                if context_type and context_number and context_number!="Đang cập nhật":
+                    item["doc_type"]=context_type
+                    item["doc_number"]=context_number
+            results.append(item)
     return results,soup
 
 def extract_detail_date(html):
