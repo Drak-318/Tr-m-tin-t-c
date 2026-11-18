@@ -523,6 +523,15 @@
       "link": "https://nghean.gov.vn/?pageid=71897&p_steering=157964",
       "title": "Về việc thực hiện Quyết định số 1403/QĐ-BNV ngày 13/11/2026 của Bộ Nội vụ"
     },
+    "number:1412/QĐ-BNV|issuer:QĐ-BNV|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "1412/QĐ-BNV",
+      "first_seen": "2026-11-18T09:04:45+00:00",
+      "last_seen": "2026-11-18T09:04:45+00:00",
+      "link": "https://luatvietnam.vn/lao-dong/quyet-dinh-1412-qd-bnv-2026-cong-bo-thu-tuc-hanh-chinh-moi-va-bai-bo-linh-vuc-viec-lam-456869-d1.html",
+      "title": "Quyết định 1412/QĐ-BNV của Bộ Nội vụ về việc công bố thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực việc làm thuộc phạm vi chức năng quản lý nhà nước của Bộ Nội vụ (Thủ tục hành chính cấp tỉnh)"
+    },
     "number:14444/KHSYT|issuer:KHSYT|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -4416,6 +4425,7 @@
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-3542-qd-ubnd-dong-thap-2026-uy-quyen-giam-doc-so-khcn-thuc-hien-nhiem-vu-cong-nghiep-cong-nghe-so-456284-d2.html": "legacy_sheet_url:https://luatvietnam.vn/khoa-hoc/quyet-dinh-3542-qd-ubnd-dong-thap-2026-uy-quyen-giam-doc-so-khcn-thuc-hien-nhiem-vu-cong-nghiep-cong-nghe-so-456284-d2.html",
     "https://luatvietnam.vn/lao-dong/cong-van-8865-snv-vlatld-ha-noi-2026-bao-cao-tinh-hinh-su-dung-lao-dong-456854-d2.html": "number:8865/SNV-VLATLĐ|issuer:SNV-VLATLĐ|locality:hà nội về việc báo cáo tình hình sử dụng lao động năm 2026 luatvietnam - văn bản mới",
     "https://luatvietnam.vn/lao-dong/cong-van-9876-snv-ld-dong-nai-2026-bao-cao-tinh-hinh-tien-thuong-tet-duong-lich-va-tet-nguyen-dan-456294-d2.html": "legacy_sheet_url:https://luatvietnam.vn/lao-dong/cong-van-9876-snv-ld-dong-nai-2026-bao-cao-tinh-hinh-tien-thuong-tet-duong-lich-va-tet-nguyen-dan-456294-d2.html",
+    "https://luatvietnam.vn/lao-dong/quyet-dinh-1412-qd-bnv-2026-cong-bo-thu-tuc-hanh-chinh-moi-va-bai-bo-linh-vuc-viec-lam-456869-d1.html": "number:1412/QĐ-BNV|issuer:QĐ-BNV|locality:",
     "https://luatvietnam.vn/lao-dong/quyet-dinh-149-2026-qd-ubnd-dak-lak-quy-dinh-he-so-dieu-chinh-tang-them-tien-luong-456810-d2.html": "number:149/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk quy định hệ số điều chỉnh tăng thêm tiền lương để làm cơ sở xác định chi phí tiền lương",
     "https://luatvietnam.vn/lao-dong/quyet-dinh-2865-qd-ubnd-son-la-2026-ke-hoach-thi-hanh-luat-sua-doi-luat-nguoi-lao-dong-viet-nam-456851-d2.html": "number:2865/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la về việc ban hành kế hoạch triển khai thi hành luật sửa đổi",
     "https://luatvietnam.vn/ngoai-giao/quyet-dinh-104-2026-qd-ubnd-quang-tri-quan-ly-hoat-dong-thong-tin-doi-ngoai-456624-d2.html": "number:104/2026/QĐ-UBND|issuer:QĐ-UBND|locality:quảng trị ban hành quy chế quản lý hoạt động thông tin đối ngoại trên địa bàn tỉnh quảng trị luatvietnam - văn bản mới",

@@ -1805,18 +1805,18 @@
     "evidence_url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122684",
     "matched_documents": [
       {
-        "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
-        "doc_number": "372/2026/NĐ-CP",
-        "doc_type": "Nghị định",
-        "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
-        "title": "V/v triển khai thực hiện Nghị định số 372/2026/NĐ-CP của Chính phủ quy định về hoạt động định danh, xác thực, truy xuất nguồn gốc sản phẩm, hàng hóa"
-      },
-      {
         "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
         "doc_number": "372/2026/NĐ-CP",
         "doc_type": "Nghị định",
         "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219673&classid=1&orggroupid=2",
         "title": "372/2026/NĐ-CP 29/09/2026"
+      },
+      {
+        "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
+        "doc_number": "372/2026/NĐ-CP",
+        "doc_type": "Nghị định",
+        "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12122151",
+        "title": "V/v triển khai thực hiện Nghị định số 372/2026/NĐ-CP của Chính phủ quy định về hoạt động định danh, xác thực, truy xuất nguồn gốc sản phẩm, hàng hóa"
       }
     ],
     "referenced_doc_number": "372/2026/NĐ-CP",
