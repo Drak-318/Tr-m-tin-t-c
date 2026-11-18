@@ -326,6 +326,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:1039/QĐ-TTG|issuer:QĐ-TTG|locality:": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "1039/QĐ-TTG",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/71227C074F318EB847258EA600039580",
+      "title": "Quy định nguyên tắc, tiêu chí, định mức phân bổ vốn ngân sách trung ương, ngân sách tỉnh và bố trí vốn đối ứng của ngân sách địa phương thực hiện Chương trình mục tiêu quốc gia về phát triển văn hóa trên địa bàn tỉnh Hà Tĩnh đối với nguồn vốn được giao tại Quyết định số 1039/QĐ-TTg ngày 11 tháng 6 năm 2026 của Thủ tướng Chính phủ"
+    },
     "number:104/2025/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
       "category": "Văn bản quy phạm pháp luật",
@@ -2345,6 +2354,15 @@
       "link": "https://laichau.gov.vn/he-thong-van-ban/quyet-dinh-ve-viec-cong-bo-thu-tuc-hanh-chinh-duoc-sua-doi-bo-sung-va-phe-duyet-quy-trinh-noi-bo-giai-quyet-thu-tuc-hanh2.html",
       "title": "Quyết định Về việc công bố thủ tục hành chính được sửa đổi, bổ sung và phê duyệt quy trình nội bộ giải quyết thủ tục hành chính thuộc thẩm quyền giải quyết của Ủy ban nhân dân tỉnh Lai Châu phân cấp cho Sở Xây dựng và UBND các xã, phường"
     },
+    "number:25/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh cổng qppl hà tĩnh - hđnd tỉnh": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "25/2026/QĐ-UBND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/92A4C9D828B319B547258E83000DCD01",
+      "title": "Quy định tiêu chí thành lập Tổ bảo vệ an ninh, trật tự; tiêu chí số lượng thành viên Tổ bảo vệ an ninh, trật tự; mức hỗ trợ, bồi dưỡng và các mức chỉ đối với lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở trên địa bàn tỉnh Hà Tĩnh"
+    },
     "number:2559/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
       "category": "Văn bản khác",
@@ -2372,6 +2390,15 @@
       "link": "https://luatvietnam.vn/doanh-nghiep/quyet-dinh-2605-qd-ubnd-dien-bien-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-sua-doi-bo-sung-456867-d2.html",
       "title": "Quyết định 2605/QĐ-UBND của Ủy ban nhân dân tỉnh Điện Biên về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong các lĩnh vực đấu giá tài sản, luật sư, công chứng, nuôi con nuôi, thừa hành viên, trọng tài thương mại, quản tài viên, hỗ trợ pháp lý cho doanh nghiệp nhỏ và vừa thuộc phạm vi, chức năng quản lý của Sở Tư pháp tỉnh Điện Biên"
     },
+    "number:261/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh giai đoạn 2026-2030 cổng qppl hà tĩnh - hđnd tỉnh": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "261/2026/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/6E2A84A4A3D86BE147258E970003384E",
+      "title": "Quy định chính sách khuyến khích phát triển nguồn nhân lực tỉnh Hà Tĩnh giai đoạn 2026-2030"
+    },
     "number:269-TB/BTCTW|issuer:BTCTW|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
       "category": "Văn bản Đảng",
@@ -2380,6 +2407,15 @@
       "last_seen": "2026-11-18T13:27:58+00:00",
       "link": "https://luatvietnam.vn/hanh-chinh/thong-bao-269-tb-btctw-2026-ra-soat-hoan-thien-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-452473-d11.html",
       "title": "Thông báo 269-TB/BTCTW của Ban Tổ chức Trung ương kết luận của Đồng chí Ủy viên Bộ Chính trị, Bí thư Trung ương Đảng, Trưởng Ban Tổ chức Trung ương về rà soát, hoàn thiện vị trí việc làm, xác định nhu cầu nhân lực và xây dựng phương án biên chế trong hệ thống chính trị"
+    },
+    "number:27/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh đến năm 2030 cổng qppl hà tĩnh - hđnd tỉnh": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "27/2026/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/CFC1A3C968120E6A47258E840032FD5A",
+      "title": "Quy định một số chính sách hỗ trợ phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số trên địa bàn tỉnh Hà Tĩnh đến năm 2030"
     },
     "number:2738-CV/BTCTW|issuer:BTCTW|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
@@ -2772,6 +2808,15 @@
       "last_seen": "2026-11-18T08:52:59+00:00",
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220140&classid=1&orggroupid=2",
       "title": "44/2026/NQ-CP 30/10/2026"
+    },
+    "number:35/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh tại nghị quyết số 35/nq-hđnd ngày 26 tháng 6 năm 2026 của hội đồng nhân dân tỉnh cổng qppl hà tĩnh - hđnd tỉnh": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "35/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/6FC9EDF5788E2F2A47258E9D00234C02",
+      "title": "Sửa đổi danh mục các khu đất thực hiện đấu thầu dự án có sứ dụng đất trên địa bàn tỉnh Hà Tĩnh tại Nghị quyết số 35/NQ-HĐND ngày 26 tháng 6 năm 2026 của Hội đồng nhân dân tỉnh"
     },
     "number:3517/QĐ-BYT|issuer:QĐ-BYT|locality:": {
       "agency": "",
@@ -3414,6 +3459,15 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=219641&classid=1&orggroupid=2",
       "title": "42/2026/NQ-CP 26/09/2026"
     },
+    "number:42/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "42/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/B37A66BAF87E7CA547258E8400330FC7",
+      "title": "Về phân bổ kế hoạch đầu tư công trung hạn vốn ngân sách trung ương thực hiện Chương trình mục tiêu quốc gia xây dụng nông thôn mới, giảm nghèo bền vũng và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiều số và miền núi giai đoạn 2026-2030"
+    },
     "number:422/KH-UBND|issuer:KH-UBND|locality:ubnd xã lý sơn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -3477,6 +3531,15 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
       "title": "398/2026/NĐ-CP 29/10/2026"
     },
+    "number:43/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "43/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/43A1BCC036254AFE47258E840033346A",
+      "title": "Về phân bổ dự toán chi thường xuyên, kế hoạch đầu tư công vốn ngân sách trung ương thực hiện Chương trình mục tiêu quốc gia xây dựng nông thôn mới, giảm nghèo bền vũng và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi năm 2026"
+    },
     "number:437/TB-UBND|issuer:TB-UBND|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -3513,6 +3576,15 @@
       "last_seen": "2026-11-18T08:52:59+00:00",
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220165&classid=1&orggroupid=2",
       "title": "45/2026/NQ-CP 31/10/2026"
+    },
+    "number:45/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "45/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/99F522A831914A4F47258E83000D7210",
+      "title": "Danh mục khu đất thực hiện đấu thầu dự án đầu tư có sử dụng đất trên địa bàn tỉnh Hà Tĩnh (đợt 3) năm 2026"
     },
     "number:4553/QĐ-UBND|issuer:QĐ-UBND|locality:hải phòng phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực đất đai thực hiện trong khu thương mại tự do thuộc thẩm quyền giải quyết của sở nông nghiệp và môi trường sở nông nghiệp và môi trường hải phòng": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -3559,6 +3631,15 @@
       "link": "https://luatvietnam.vn/hanh-chinh/du-thao-nghi-dinh-sua-doi-nghi-dinh-47-2011-nd-cp-va-25-2022-nd-cp-ve-buu-chinh-455895-d10.html",
       "title": "Dự thảo Nghị định sửa đổi, bổ sung một số điều của Nghị định 47/2011/NĐ-CP và Nghị định 25/2022/NĐ-CP để phân cấp, cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh trong lĩnh vực bưu chính thuộc phạm vi quản lý Nhà nước của Bộ Khoa học và Công nghệ"
     },
+    "number:47/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "47/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/4614A1F135FFFF6D47258E83000D3187",
+      "title": "Phân bổ kinh phí chỉ thường xuyên vốn ngân sách trung ương năm 2026 thực hiện Chương trình mục tiêu quốc gia phòng, chống ma túy đến năm 2030"
+    },
     "number:477/KH-UBND|issuer:KH-UBND|locality:đắk lắk triển khai xây dựng thí điểm tủ sách cộng đồng số": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -3576,6 +3657,15 @@
       "last_seen": "2026-11-18T13:27:58+00:00",
       "link": "https://luatvietnam.vn/dau-tu/ke-hoach-478-kh-ubnd-dak-lak-2026-to-chuc-hoat-dong-thu-hut-dau-tu-khu-nong-nghiep-cong-nghe-cao-456905-d2.html",
       "title": "Kế hoạch 478/KH-UBND của Ủy ban nhân dân tỉnh Đắk Lắk về việc tổ chức các hoạt động thu hút đầu tư vào các khu nông nghiệp ứng dụng công nghệ cao trên địa bàn tỉnh Đắk Lắk giai đoạn 2026 - 2030"
+    },
+    "number:48/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "48/NQ-HĐND",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/96812A60C0A7BF9A47258E9D002317C7",
+      "title": "Cho ý kiến về điều chỉnh dự kiến kế hoạch đầu tư công trung hạn nguồn ngân sách trung ương trong nước giai đoạn 2026-2030 và dự kiến kế hoạch đầu tư công nguồn ngân sách trung ương năm 2027"
     },
     "number:4831/QĐ-UBND|issuer:QĐ-UBND|locality:trong việc giải quyết các thủ tục hành chính lĩnh vực sở hữu trí tuệ hải phòng - văn bản quy phạm pháp luật": {
       "agency": "Hải Phòng - Văn bản quy phạm pháp luật",
@@ -5503,6 +5593,24 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/298C81B37DBBBD1047258E83000CF880": {
+      "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/298C81B37DBBBD1047258E83000CF880",
+      "title": "Quy định mức hỗ trợ từ ngân sách nhà nước cho một dự án, định mức hỗ trợ các đối tượng tham gia dự án phát triển sản xuất thuộc Chương trình mục tiêu quốc gia xây dựng nông thôn mới, giảm nghèo bền vững và phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi trên địa bàn tỉnh Hà Tĩnh giai đoạn 2026-2030"
+    },
+    "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048": {
+      "agency": "Cổng QPPL Hà Tĩnh - Trang chủ",
+      "category": "Văn bản khác",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-18T18:27:15+00:00",
+      "last_seen": "2026-11-18T18:27:15+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048",
+      "title": "Giấy mời họp nghe báo cáo, chỉ đạo giải ngân kế hoạch vốn đầu tư công năm 2026"
+    },
     "url:https://sgddt.dongnai.gov.vn/he-thong-van-ban/huong-dan-cac-khoan-thu-trong-cac-co-so-giao-duc-cong-lap-hoc-ky-i-nam-hoc-2026/vbct/9/1989": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -6901,6 +7009,18 @@
     "https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/cuc-quan-ly-dat-dai-day-manh-hoi-nhap-quoc-te-huong-toi-quan-tri-dat-dai-hien-dai-theo-tinh-than-nghi-quyet-so--59nqtw-3745.htm": "legacy_sheet_url:https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/cuc-quan-ly-dat-dai-day-manh-hoi-nhap-quoc-te-huong-toi-quan-tri-dat-dai-hien-dai-theo-tinh-than-nghi-quyet-so--59nqtw-3745.htm",
     "https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/cuc-quan-ly-dat-dai-ra-soat-cac-vuong-mac-phap-luat-co-tinh-he-thong-lien-nganh-va-de-xuat-dinh-huong-hoan-thien-luat-dat-dai-3761.htm": "legacy_sheet_url:https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/cuc-quan-ly-dat-dai-ra-soat-cac-vuong-mac-phap-luat-co-tinh-he-thong-lien-nganh-va-de-xuat-dinh-huong-hoan-thien-luat-dat-dai-3761.htm",
     "https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/tinh-son-la-ban-hanh-quy-dinh-moi-ve-trinh-tu-thu-tuc-hanh-chinh-va-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3764.htm": "legacy_sheet_url:https://qldd.mae.gov.vn/xay-dung-pho-bien-chinh-sach-phap-luat/tinh-son-la-ban-hanh-quy-dinh-moi-ve-trinh-tu-thu-tuc-hanh-chinh-va-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3764.htm",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/298C81B37DBBBD1047258E83000CF880": "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/298C81B37DBBBD1047258E83000CF880",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/43A1BCC036254AFE47258E840033346A": "number:43/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/4614A1F135FFFF6D47258E83000D3187": "number:47/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048": "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/6E2A84A4A3D86BE147258E970003384E": "number:261/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh giai đoạn 2026-2030 cổng qppl hà tĩnh - hđnd tỉnh",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/6FC9EDF5788E2F2A47258E9D00234C02": "number:35/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh tại nghị quyết số 35/nq-hđnd ngày 26 tháng 6 năm 2026 của hội đồng nhân dân tỉnh cổng qppl hà tĩnh - hđnd tỉnh",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/71227C074F318EB847258EA600039580": "number:1039/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/92A4C9D828B319B547258E83000DCD01": "number:25/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh cổng qppl hà tĩnh - hđnd tỉnh",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/96812A60C0A7BF9A47258E9D002317C7": "number:48/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/99F522A831914A4F47258E83000D7210": "number:45/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/B37A66BAF87E7CA547258E8400330FC7": "number:42/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/CFC1A3C968120E6A47258E840032FD5A": "number:27/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh đến năm 2030 cổng qppl hà tĩnh - hđnd tỉnh",
     "https://sbv.gov.vn/vi/th%E1%BA%A9m-quy%E1%BB%81n-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-cstt-qu%E1%BB%91c-gia-v%C3%A0-c%C3%A1c-c%C3%B4ng-c%E1%BB%A5-th%E1%BB%B1c-hi%E1%BB%87n": "legacy_sheet_url:https://sbv.gov.vn/vi/th%E1%BA%A9m-quy%E1%BB%81n-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-cstt-qu%E1%BB%91c-gia-v%C3%A0-c%C3%A1c-c%C3%B4ng-c%E1%BB%A5-th%E1%BB%B1c-hi%E1%BB%87n",
     "https://sbv.gov.vn/vi/v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-ph%C3%A1p-lu%E1%BA%ADt": "legacy_sheet_url:https://sbv.gov.vn/vi/v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-ph%C3%A1p-lu%E1%BA%ADt",
     "https://sbv.gov.vn/w/b%E1%BA%A3n-t%E1%BB%95ng-h%E1%BB%A3p-%C3%BD-ki%E1%BA%BFn-ti%E1%BA%BFp-thu-gi%E1%BA%A3i-tr%C3%ACnh-%C3%BD-ki%E1%BA%BFn-g%C3%B3p-%C3%BD-d%E1%BB%B1-th%E1%BA%A3o-ngh%E1%BB%8B-%C4%91%E1%BB%8Bnh-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s": "legacy_sheet_url:https://sbv.gov.vn/w/b%E1%BA%A3n-t%E1%BB%95ng-h%E1%BB%A3p-%C3%BD-ki%E1%BA%BFn-ti%E1%BA%BFp-thu-gi%E1%BA%A3i-tr%C3%ACnh-%C3%BD-ki%E1%BA%BFn-g%C3%B3p-%C3%BD-d%E1%BB%B1-th%E1%BA%A3o-ngh%E1%BB%8B-%C4%91%E1%BB%8Bnh-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s",
