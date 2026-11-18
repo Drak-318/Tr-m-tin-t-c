@@ -1,21 +1,41 @@
 name: Tram Tin Tuc - Auto Scanner
 
-# Full scan runs every 30 minutes. A 15-minute watchdog checks for missed runs
-# and dispatches a catch-up scan when the last successful scan is stale.
+# Priority sources run every 5 minutes; the full source registry runs every 30 minutes.
+# A separate watchdog checks scan health every 10 minutes and dispatches catch-up runs.
 
 on:
   schedule:
+    - cron: "*/5 * * * *"
     - cron: "7,37 * * * *"
-    - cron: "22,52 * * * *"
+    - cron: "2,12,22,32,42,52 * * * *"
   workflow_dispatch:
-  # Push trigger tạm tắt trong lúc triển khai nâng cấp đồng bộ.
+    inputs:
+      profile:
+        description: "Phạm vi quét"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - full
+          - priority
+  push:
+    branches: [main]
+    paths:
+      - 'quet_vb.py'
+      - 'scanner/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - 'source_config.json'
+      - 'danh_sach_nguon.csv'
+      - 'priority_sources.json'
+      - '.github/workflows/auto_scan.yml'
 
 permissions:
   contents: write
 
 jobs:
   scan:
-    if: ${{ github.event_name != 'schedule' || github.event.schedule == '7,37 * * * *' }}
+    if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.profile != 'priority') || (github.event_name == 'schedule' && github.event.schedule == '7,37 * * * *') }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
     concurrency:
@@ -46,6 +66,81 @@ jobs:
         env:
           SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
           SHEETS_API_TOKEN: ${{ secrets.SHEETS_API_TOKEN }}
+          SCAN_PROFILE: full
+          SCAN_TRIGGER: ${{ github.event.schedule || github.event_name }}
+        run: python quet_vb.py
+
+      - name: Save persistent scanner memory
+        if: always()
+        run: |
+          MEMORY_FILES="data/seen_documents.json data/scan_history.json data/document_relationships.json data/relationship_scan_state.json data/review_queue.json data/sheets_export_queue.json data/discovered_sources.json data/sheets_bootstrap.json"
+          if [[ -n "$(git status --porcelain $MEMORY_FILES)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            mkdir -p /tmp/scanner-memory-local
+            for file in $MEMORY_FILES; do
+              if [[ -f "$file" ]]; then
+                mkdir -p "/tmp/scanner-memory-local/$(dirname "$file")"
+                cp "$file" "/tmp/scanner-memory-local/$file"
+              fi
+            done
+
+            # Merge JSON state onto the newest main instead of rebasing conflicting JSON blobs.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git reset --hard origin/main
+              python -m scanner.state_merge --local-dir /tmp/scanner-memory-local --repo-root .
+              for file in $MEMORY_FILES; do
+                if [[ -f "$file" ]]; then git add "$file"; fi
+              done
+              if git diff --cached --quiet; then
+                echo "Không có thay đổi bộ nhớ cần lưu."
+                exit 0
+              fi
+              git commit -m "Merge persistent scanner memory [skip ci]"
+              if git push origin HEAD:main; then
+                echo "Đã hợp nhất và lưu bộ nhớ quét lên main."
+                exit 0
+              fi
+              echo "Push bộ nhớ thất bại lần ${attempt}/3; thử lấy main mới nhất."
+              sleep $((attempt * 3))
+            done
+            echo "Không thể lưu bộ nhớ sau 3 lần thử."
+            exit 1
+          fi
+
+  priority-scan:
+    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '*/5 * * * *') || (github.event_name == 'workflow_dispatch' && inputs.profile == 'priority') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: tram-tin-tuc-full-scan
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate Python modules
+        run: python -m compileall -q scanner quet_vb.py
+
+      - name: Run priority-source scanner
+        env:
+          SHEETS_WEB_APP_URL: ${{ secrets.SHEETS_WEB_APP_URL }}
+          SHEETS_API_TOKEN: ${{ secrets.SHEETS_API_TOKEN }}
+          SCAN_PROFILE: priority
+          SCAN_TRIGGER: ${{ github.event.schedule || github.event_name }}
         run: python quet_vb.py
 
       - name: Save persistent scanner memory
@@ -88,14 +183,14 @@ jobs:
           fi
 
   schedule-watchdog:
-    if: ${{ github.event_name == 'schedule' && github.event.schedule == '22,52 * * * *' }}
+    if: ${{ github.event_name == 'schedule' && github.event.schedule == '2,12,22,32,42,52 * * * *' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     permissions:
       actions: write
       contents: read
     steps:
-      - name: Dispatch a catch-up scan if the 30-minute schedule was missed
+      - name: Check scan health and dispatch a catch-up run when needed
         uses: actions/github-script@v7
         with:
           script: |
@@ -105,56 +200,84 @@ jobs:
               repo,
               workflow_id: "auto_scan.yml",
               branch: "main",
-              per_page: 20
+              per_page: 30
             });
-            const runs = response.data.workflow_runs.filter(run => run.id !== context.runId);
-            // The watchdog itself is a successful run of this same workflow, but
-            // it does not execute the "scan" job. Inspect jobs so watchdog-only
-            // runs are never mistaken for successful scans or active scans.
-            const scanRuns = [];
-            for (const run of runs) {
-              const jobsResponse = await github.rest.actions.listJobsForWorkflowRun({
+            const runs = response.data.workflow_runs
+              .filter(run => run.id !== context.runId)
+              .slice(0, 16);
+
+            // Inspect only recent runs in parallel. Watchdog-only runs have no
+            // "scan" or "priority-scan" job and are ignored.
+            const jobResults = await Promise.all(runs.map(async run => {
+              const result = await github.rest.actions.listJobsForWorkflowRun({
                 owner,
                 repo,
                 run_id: run.id,
                 per_page: 20
               });
-              const scanJob = jobsResponse.data.jobs.find(job => job.name === "scan");
-              if (scanJob) scanRuns.push({ run, scanJob });
+              return { run, jobs: result.data.jobs };
+            }));
+
+            const scanRuns = [];
+            for (const entry of jobResults) {
+              const fullJob = entry.jobs.find(job => job.name === "scan");
+              const priorityJob = entry.jobs.find(job => job.name === "priority-scan");
+              if (fullJob) scanRuns.push({ run: entry.run, job: fullJob, profile: "full" });
+              if (priorityJob) scanRuns.push({ run: entry.run, job: priorityJob, profile: "priority" });
             }
 
-            const active = scanRuns.find(({ scanJob }) =>
-              ["queued", "in_progress"].includes(scanJob.status)
+            const active = scanRuns.find(({ job }) =>
+              ["queued", "in_progress"].includes(job.status)
             );
             if (active) {
-              core.info(`A scan is already queued/running: #${active.run.run_number} (${active.scanJob.status}).`);
+              core.info(`A scan is already queued/running: ${active.profile} #${active.run.run_number} (${active.job.status}).`);
               return;
             }
 
-            const latestSuccess = scanRuns.find(({ scanJob }) => scanJob.conclusion === "success");
-            const latestScanRun = scanRuns.find(({ scanJob }) =>
-              ["failure", "cancelled", "timed_out"].includes(scanJob.conclusion)
-            );
             const now = Date.now();
-            const successAgeMinutes = latestSuccess
-              ? (now - Date.parse(latestSuccess.run.updated_at)) / 60000
-              : Number.POSITIVE_INFINITY;
-            const recentFailure = latestScanRun &&
-              (now - Date.parse(latestScanRun.run.updated_at)) / 60000 < 20;
+            const latestFor = (profile, conclusion) => scanRuns
+              .filter(row => row.profile === profile && row.job.conclusion === conclusion)
+              .sort((a, b) => Date.parse(b.run.updated_at) - Date.parse(a.run.updated_at))[0];
 
-            if (recentFailure) {
-              core.warning("A recent scan failed; wait for the next watchdog window before retrying.");
-              return;
-            }
-            if (successAgeMinutes > 40) {
-              core.warning(`Last successful scan is ${Math.round(successAgeMinutes)} minutes old. Dispatching catch-up scan.`);
+            const ageMinutes = profile => {
+              const success = latestFor(profile, "success");
+              return success
+                ? (now - Date.parse(success.run.updated_at)) / 60000
+                : Number.POSITIVE_INFINITY;
+            };
+
+            const recentFailure = profile => {
+              const failure = ["failure", "cancelled", "timed_out"]
+                .map(conclusion => latestFor(profile, conclusion))
+                .filter(Boolean)
+                .sort((a, b) => Date.parse(b.run.updated_at) - Date.parse(a.run.updated_at))[0];
+              return Boolean(failure && (now - Date.parse(failure.run.updated_at)) / 60000 < 10);
+            };
+
+            const priorityAge = ageMinutes("priority");
+            if (priorityAge > 15 && !recentFailure("priority")) {
+              core.warning(`Priority scan is ${Math.round(priorityAge)} minutes stale. Dispatching catch-up scan.`);
               await github.rest.actions.createWorkflowDispatch({
                 owner,
                 repo,
                 workflow_id: "auto_scan.yml",
-                ref: "main"
+                ref: "main",
+                inputs: { profile: "priority" }
               });
-              core.info("Catch-up scan dispatched.");
-            } else {
-              core.info(`Last successful scan is ${Math.round(successAgeMinutes)} minutes old; schedule is healthy.`);
+              return;
             }
+
+            const fullAge = ageMinutes("full");
+            if (fullAge > 40 && !recentFailure("full")) {
+              core.warning(`Full scan is ${Math.round(fullAge)} minutes stale. Dispatching catch-up scan.`);
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: "auto_scan.yml",
+                ref: "main",
+                inputs: { profile: "full" }
+              });
+              return;
+            }
+
+            core.info(`Scan health OK. Priority age: ${Math.round(priorityAge)}m; full scan age: ${Math.round(fullAge)}m.`);
