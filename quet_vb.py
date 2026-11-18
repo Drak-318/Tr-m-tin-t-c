@@ -21,7 +21,7 @@ from scanner.persistent_memory import (load_state, is_seen, record_documents, ap
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
 MAX_WORKERS=5
-SAVE_BATCH_SIZE=10
+SAVE_BATCH_SIZE=50
 MAX_AGE_DAYS=60
 
 def utc_now():
@@ -113,6 +113,42 @@ def main():
     print(f"[RELATIONS] Kiểm tra {len(selected)} trang địa phương (luân phiên); phát hiện {len(discovered_relations)} quan hệ mới; tổng lưu {len(relation_rows)}; tìm thấy trong kho quét {relation_matched}; số hiệu còn mơ hồ {relation_ambiguous}.")
 
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
+    existing_review=load_review_queue()
+    existing_review_urls=set(existing_review)
+    backfilled_review_docs=0
+    # Đưa các hồ sơ chưa rõ ngày đã tích lũy từ những lượt quét trước vào
+    # bảng kết quả một lần; không để chúng chỉ nằm trong hàng đợi nội bộ.
+    for review_url,row in existing_review.items():
+        status=row.get("status","pending")
+        if row.get("exported_to_sheets"):
+            continue
+        if status in {"excluded_old","already_seen"}:
+            continue
+        title=row.get("title","")
+        agency=row.get("agency","")
+        number=row.get("doc_number","")
+        doc_type,_=extract_doc_info(title)
+        if not doc_type:
+            if "dự thảo" in title.casefold():
+                doc_type="Dự thảo"
+            else:
+                doc_type="Văn bản khác"
+        identity=document_identity(number,title,agency,review_url)
+        # Do not use the old imported seen-memory to suppress backfill here:
+        # the Sheets API will idempotently skip rows already in the final table.
+        keep,priority=classify_and_score(title,agency,doc_type,number,"Văn Bản TW",row.get("verified_date") or None)
+        if not keep:
+            continue
+        verified_date=row.get("verified_date","")
+        new_docs.append({"priority":priority,"doc_type":doc_type,"agency":agency,"title":title,
+                         "doc_number":number,"link":review_url,"fingerprint":make_fingerprint(number,title),
+                         "category":classify_document(title,agency,doc_type,number,review_url),
+                         "identity":identity,"published_date":verified_date,
+                         "document_date":verified_date,"date_basis":row.get("date_basis","unknown"),
+                         "date_status":"Đã xác minh ngày" if verified_date else "Chưa xác minh ngày - giữ lại hậu kiểm"})
+        backfilled_review_docs+=1
+    if backfilled_review_docs:
+        print(f"[BACKFILL] Đưa {backfilled_review_docs} hồ sơ chờ xác minh cũ vào bảng kết quả.")
     totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
     recognized_by_source={}
     for i in range(len(sources)):
@@ -129,17 +165,31 @@ def main():
             number=item.get("doc_number") or number
             if not doc_type: continue
             recognized+=1; totals["recognized"]+=1
-            # Apply explicit document-number year rules before putting undated old instruments in review.
-            if is_too_old(title,number,MAX_AGE_DAYS,pub):
-                totals["old"]+=1; continue
+            category=classify_document(title,name,doc_type,number,link)
             if not has_document_date(title,pub):
+                # Không loại văn bản chỉ vì thiếu ngày. Đưa vào bảng kết quả
+                # ngay ở lượt phát hiện đầu tiên và đồng thời lưu hàng đợi
+                # GitHub để hậu kiểm/xác minh ngày ở các lượt sau.
                 totals["unknown_date"]+=1
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
                                     "published_date":"","source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
-                                    "reason":"Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản."})
+                                    "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm."})
+                if link not in existing_review_urls and not is_seen(state,document_identity(number,title,name,link),link):
+                    keep,priority=classify_and_score(title,name,doc_type,number,group,None)
+                    if keep:
+                        identity=document_identity(number,title,name,link)
+                        new_docs.append({"priority":priority,"doc_type":doc_type,"agency":name,"title":title,
+                                         "doc_number":number,"link":link,"fingerprint":make_fingerprint(number,title),
+                                         "category":category,"identity":identity,"published_date":"",
+                                         "document_date":"","date_basis":"unknown",
+                                         "date_status":"Chưa xác minh ngày - giữ lại hậu kiểm"})
+                        totals["kept"]+=1
+                        existing_review_urls.add(link)
                 continue
-            category=classify_document(title,name,doc_type,number,link)
+            # Có ngày thì mới áp dụng bộ lọc 60 ngày; ưu tiên ngày ban hành.
+            if is_too_old(title,number,MAX_AGE_DAYS,pub):
+                totals["old"]+=1; continue
             keep,priority=classify_and_score(title,name,doc_type,number,group,pub)
             if not keep: continue
             totals["kept"]+=1
@@ -239,6 +289,14 @@ def main():
                 saved+=export_result["added"]
                 review_saved+=export_result["review_added"]
             clear_sheets_export_queue()
+            # GitHub tracks exports; Sheets only receives final output.
+            for payload in pending_exports:
+                for doc in payload.get("new_docs",[]):
+                    if doc.get("date_basis")=="unknown":
+                        update_review_document(doc.get("link",""),{
+                            "exported_to_sheets":True,
+                            "exported_at":datetime.now(timezone.utc).isoformat(timespec="seconds")
+                        })
             print(f"[SHEETS] Đã xác nhận xuất {len(pending_exports)} gói dữ liệu: "
                   f"{saved} văn bản mới, {review_saved} hồ sơ xác minh ngày mới.")
         except Exception as exc:
