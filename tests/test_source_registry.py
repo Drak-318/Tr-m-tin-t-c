@@ -1,6 +1,6 @@
 import unittest
 
-from scanner.source_registry import filter_priority_sources
+from scanner.source_registry import filter_priority_sources, filter_non_priority_sources
 
 
 class PrioritySourceTests(unittest.TestCase):
@@ -31,6 +31,17 @@ class PrioritySourceTests(unittest.TestCase):
         selected, missing = filter_priority_sources(sources, priority["urls"])
         self.assertEqual(len(selected), len(priority["urls"]))
         self.assertEqual(missing, [])
+
+    def test_filter_non_priority_excludes_every_priority_url(self):
+        sources = [
+            {"name":"Government","url":"https://chinhphu.vn/he-thong-van-ban"},
+            {"name":"TVPL","url":"https://thuvienphapluat.vn/list"},
+            {"name":"Other","url":"https://other.gov.vn/list"},
+        ]
+        remaining = filter_non_priority_sources(
+            sources, ["https://chinhphu.vn/he-thong-van-ban/", "https://thuvienphapluat.vn/list"]
+        )
+        self.assertEqual([row["name"] for row in remaining], ["Other"])
 
     def test_empty_priority_list_does_not_select_any_source(self):
         selected, missing = filter_priority_sources(
