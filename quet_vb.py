@@ -422,10 +422,23 @@ def main():
     else:
         print(f"[SHEETS] Bỏ qua xuất dữ liệu; hàng đợi GitHub còn {len(pending_exports)} gói.")
     duration=round(time.monotonic()-started,2)
+    failed_source_details=[]
+    for i in range(len(sources)):
+        source,result=results_by_index[i]
+        if result.get("error") and not result.get("fallback_used"):
+            failed_source_details.append({
+                "name":source.get("name",""),
+                "url":source.get("url",""),
+                "status":result.get("status",""),
+                "http_status":result.get("http_status"),
+                "error":str(result.get("error",""))[:240],
+            })
     summary={"started_at":started_at,"finished_at":utc_now(),"scan_profile":profile,
              "trigger":os.getenv("SCAN_TRIGGER",os.getenv("GITHUB_EVENT_NAME","manual")),
              "run_id":os.getenv("GITHUB_RUN_ID",""),"run_attempt":os.getenv("GITHUB_RUN_ATTEMPT",""),
-             "sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
+             "sources":len(sources),"successful_sources":len(sources)-totals["failed"],
+             "failed_source_details":failed_source_details,
+             "collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
@@ -458,6 +471,12 @@ def main():
             f"- Dẫn chiếu có nhiều văn bản trùng số hiệu: **{relation_ambiguous}**",
             f"- Thời gian: **{duration} giây**","",
             "| Nguồn | Mục thu thập | Văn bản nhận diện | Trạng thái |","|---|---:|---:|---|"]
+    if failed_source_details:
+        report.extend(["","### Chi tiết nguồn lỗi"])
+        for failure in failed_source_details:
+            report.append(
+                f"- {failure['name']} | {failure['status']} | HTTP {failure['http_status']} | {failure['error'][:160]}"
+            )
     for i in range(len(sources)):
         s,r=results_by_index[i]; report.append(f"| {s.get('name','')[:50]} | {len(r['items'])} | {recognized_by_source[i]} | {r['status']} |")
     append_step_summary(report); print(f"[DONE] Hoàn tất trong {duration} giây.")
