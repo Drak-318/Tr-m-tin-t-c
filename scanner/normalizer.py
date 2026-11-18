@@ -31,7 +31,7 @@ PERSONAL_OR_ONE_OFF_PATTERNS = (
     r"\bquyết định xử phạt\b", r"\bxử phạt vi phạm hành chính đối với\b",
     r"\bphạt tiền đối với\b",
     r"\b(?:bổ nhiệm|điều động|luân chuyển|miễn nhiệm|tiếp nhận)\b.{0,100}\b(?:ông|bà|cá nhân)\b",
-    r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng tốt nghiệp|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân)\b",
+    r"\b(?:cấp|cấp lại|thu hồi)\b.{0,100}\b(?:chứng chỉ|bằng(?: tốt nghiệp)?|giấy chứng nhận|giấy phép hành nghề)\b.{0,80}\b(?:cho ông|cho bà|cá nhân|hộ gia đình)\b",
     r"\bthu hồi đất\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân|tổ chức)\b",
     r"\b(?:giao đất|cho thuê đất)\b.{0,180}\b(?:ông|bà|hộ gia đình|cá nhân)\b",
     r"\b(?:thửa đất số|tờ bản đồ số)\b",
