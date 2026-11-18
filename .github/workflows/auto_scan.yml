@@ -228,7 +228,7 @@ jobs:
             }
 
             const active = scanRuns.find(({ job }) =>
-              ["queued", "in_progress"].includes(job.status)
+              ["queued", "pending", "in_progress"].includes(job.status)
             );
             const now = Date.now();
             const latestFor = (profile, conclusion) => scanRuns
