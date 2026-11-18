@@ -240,7 +240,7 @@ def fetch_response(session,url,config):
     except requests.exceptions.RequestException as exc:
         raise SourceFetchError("REQUEST",str(exc),url=url) from exc
 
-def _collect_primary(session,base_url,config,max_items,max_pages,initial_response=None):
+def _collect_primary(session,base_url,config,max_items,max_pages,initial_response=None,discovery_sink=None):
     response=initial_response or fetch_response(session,base_url,config); page_count=1; items=[]; feed_used=False
     content_type=(response.headers.get("Content-Type") or "").lower(); body_start=response.text[:500].lower()
     is_feed="rss" in content_type or "atom" in content_type or "<rss" in body_start or "<feed" in body_start
@@ -258,6 +258,12 @@ def _collect_primary(session,base_url,config,max_items,max_pages,initial_respons
         page_url,html=response.url,response.text; seen_pages={canonicalize_url(page_url)}
         while True:
             page_items,soup=parse_html_items(html,page_url,config); items.extend(page_items)
+            if discovery_sink is not None:
+                from .source_discovery import extract_source_candidates
+                discovery_sink.extend(extract_source_candidates(
+                    html, page_url, config.get("_source_name", ""),
+                    config.get("_source_group", "Văn Bản TW")
+                ))
             if len(items)>=max_items or page_count>=max_pages: break
             next_url=find_next_page(soup,page_url,config)
             if not next_url or next_url in seen_pages: break
@@ -274,17 +280,21 @@ def _deduplicate_items(items,max_items):
                 unique[link]={**item,"title":title,"link":link}
     return list(unique.values())[:max_items]
 
-def _resolve_aggregator_links(session,items,config):
+def _resolve_aggregator_links(session,items,config=None):
     from concurrent.futures import ThreadPoolExecutor
     resolved=[item for item in items if urlsplit(item.get("link","")).hostname not in
               {"news.google.com","news.googleusercontent.com"}]
     aggregator_items=[item for item in items if urlsplit(item.get("link","")).hostname in
                       {"news.google.com","news.googleusercontent.com"}][:30]
+    settings = dict(config or {})
+    allowed_domains = tuple(str(x).lower().lstrip(".") for x in settings.get("allowed_final_domains", []))
     def resolve(item):
         try:
             response=session.get(item.get("link",""),timeout=(4,8),allow_redirects=True)
             final_url=canonicalize_url(response.url)
-            if response.ok and urlsplit(final_url).hostname not in {"news.google.com","news.googleusercontent.com"}:
+            host=(urlsplit(final_url).hostname or "").lower()
+            allowed = not allowed_domains or any(host == domain or host.endswith("." + domain) for domain in allowed_domains)
+            if response.ok and host not in {"news.google.com","news.googleusercontent.com"} and allowed:
                 return {**item,"link":final_url,"link_resolved_from_aggregator":True}
         except requests.exceptions.RequestException:
             pass
@@ -296,11 +306,15 @@ def _resolve_aggregator_links(session,items,config):
 
 def scan_source(source,config,fallback_fetcher=None):
     started=time.monotonic(); session=make_session(); base_url=source["url"].strip()
+    config=dict(config or {})
+    config["_source_name"]=source.get("name","")
+    config["_source_group"]=source.get("group","Văn Bản TW")
     max_items=max(1,int(config.get("max_items",200))); max_pages=max(1,min(int(config.get("max_pages",1)),10))
     items=[]; page_count=0; errors=[]; fallback_used=False; http_status=None
+    discovered_candidates=[]
     try:
         try:
-            items,page_count,http_status=_collect_primary(session,base_url,config,max_items,max_pages)
+            items,page_count,http_status=_collect_primary(session,base_url,config,max_items,max_pages,discovery_sink=discovered_candidates)
         except SourceFetchError as exc:
             errors.append(f"{exc.kind}: {exc}")
             http_status=exc.http_status
@@ -328,6 +342,16 @@ def scan_source(source,config,fallback_fetcher=None):
                         errors.append(f"Apps Script: {remote.get('message') or 'Không lấy được nội dung'}")
                 except Exception as remote_exc:
                     errors.append(f"Apps Script: {type(remote_exc).__name__}: {remote_exc}")
+        # A dedicated Google News RSS discovery source is accepted only after
+        # redirects resolve to explicitly allowed official domains. Its feed
+        # timestamp is provenance, never an issuance date.
+        if urlsplit(base_url).hostname in {"news.google.com", "news.googleusercontent.com"}:
+            for item in items:
+                item["source_published_date"] = item.get("published_date")
+                item["published_date"] = None
+                item["date_source"] = "fallback_aggregator"
+            items = _resolve_aggregator_links(session, items, config)
+
         # RSS aggregators supplement incomplete listings, not only completely
         # failed sources. Their publication dates remain provenance only.
         primary_item_count=len(items)
@@ -366,17 +390,20 @@ def scan_source(source,config,fallback_fetcher=None):
             return {"items":final_items,"status":status,"http_status":http_status,"pages":page_count,
                     "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],
                     "fallback_used":fallback_used,"feed_supplement_used":feed_supplement_used,
-                    "primary_item_count":primary_item_count,
+                    "primary_item_count":primary_item_count,"discovered_candidates":discovered_candidates,
                     "retrieval_method":"apps_script" if "apps_script" in methods else (
                         "direct+aggregator" if feed_supplement_used else ("aggregator" if fallback_used else "direct")
                     )}
         if errors:
             primary_kind=errors[0].split(":",1)[0]
             return {"items":[],"status":f"Lỗi: {primary_kind}"[:45],"http_status":http_status,"pages":page_count,
-                    "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],"fallback_used":False}
+                    "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],"fallback_used":False,
+                    "discovered_candidates":discovered_candidates}
         return {"items":[],"status":"Đã truy cập, chưa tìm thấy mục","http_status":http_status,"pages":page_count,
-                "duration":round(time.monotonic()-started,2),"error":"","fallback_used":False}
+                "duration":round(time.monotonic()-started,2),"error":"","fallback_used":False,
+                "discovered_candidates":discovered_candidates}
     except Exception as exc:
         return {"items":[],"status":f"Lỗi: {type(exc).__name__}"[:45],"http_status":http_status,"pages":page_count,
-                "duration":round(time.monotonic()-started,2),"error":str(exc)[:500],"fallback_used":fallback_used}
+                "duration":round(time.monotonic()-started,2),"error":str(exc)[:500],"fallback_used":fallback_used,
+                "discovered_candidates":discovered_candidates}
     finally: session.close()
