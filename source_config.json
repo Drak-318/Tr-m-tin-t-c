@@ -127,6 +127,24 @@
       "allowed_final_domains": [
         "dangcongsan.vn"
       ]
+    },
+    "https://vbpl.vn": {
+      "max_pages": 2,
+      "max_items": 120,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Avbpl.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Lu%E1%BA%ADt%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
+    },
+    "https://phapluat.gov.vn/he-thong-van-ban-phap-luat": {
+      "max_pages": 3,
+      "max_items": 160,
+      "timeout_connect": 6,
+      "timeout_read": 12,
+      "fallback_feed_urls": [
+        "https://news.google.com/rss/search?q=site%3Aphapluat.gov.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
+      ]
     }
   }
 }
