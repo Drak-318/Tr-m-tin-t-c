@@ -333,7 +333,7 @@ def scan_source(source,config,fallback_fetcher=None):
                             content=remote["body"].encode("utf-8",errors="replace"),
                         )
                         items,page_count,http_status=_collect_primary(
-                            session,base_url,config,max_items,max_pages,initial_response=initial
+                            session,base_url,config,max_items,max_pages,initial_response=initial,discovery_sink=discovered_candidates
                         )
                         if items:
                             fallback_used=True
