@@ -136,7 +136,7 @@ def main():
         identity=document_identity(number,title,agency,review_url)
         # Do not use the old imported seen-memory to suppress backfill here:
         # the Sheets API will idempotently skip rows already in the final table.
-        keep,priority=classify_and_score(title,agency,doc_type,number,"Văn Bản TW",row.get("verified_date") or None)
+        keep,priority=classify_and_score(title,agency,doc_type,number,"",row.get("verified_date") or None)
         if not keep:
             continue
         verified_date=row.get("verified_date","")
