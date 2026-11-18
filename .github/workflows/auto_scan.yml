@@ -117,23 +117,39 @@ jobs:
               per_page: 20
             });
             const runs = response.data.workflow_runs.filter(run => run.id !== context.runId);
-            const active = runs.find(run => ["queued", "in_progress"].includes(run.status));
+            // The watchdog itself is a successful run of this same workflow, but
+            // it does not execute the "scan" job. Inspect jobs so watchdog-only
+            // runs are never mistaken for successful scans or active scans.
+            const scanRuns = [];
+            for (const run of runs) {
+              const jobsResponse = await github.rest.actions.listJobsForWorkflowRun({
+                owner,
+                repo,
+                run_id: run.id,
+                per_page: 20
+              });
+              const scanJob = jobsResponse.data.jobs.find(job => job.name === "scan");
+              if (scanJob) scanRuns.push({ run, scanJob });
+            }
+
+            const active = scanRuns.find(({ scanJob }) =>
+              ["queued", "in_progress"].includes(scanJob.status)
+            );
             if (active) {
-              core.info(`A scan is already queued/running: #${active.run_number} (${active.status}).`);
+              core.info(`A scan is already queued/running: #${active.run.run_number} (${active.scanJob.status}).`);
               return;
             }
 
-            const latestSuccess = runs
-              .filter(run => run.conclusion === "success")
-              .sort((a, b) => Date.parse(b.updated_at) - Date.parse(a.updated_at))[0];
-            const latestRun = runs[0];
+            const latestSuccess = scanRuns.find(({ scanJob }) => scanJob.conclusion === "success");
+            const latestScanRun = scanRuns.find(({ scanJob }) =>
+              ["failure", "cancelled", "timed_out"].includes(scanJob.conclusion)
+            );
             const now = Date.now();
             const successAgeMinutes = latestSuccess
-              ? (now - Date.parse(latestSuccess.updated_at)) / 60000
+              ? (now - Date.parse(latestSuccess.run.updated_at)) / 60000
               : Number.POSITIVE_INFINITY;
-            const recentFailure = latestRun &&
-              latestRun.conclusion !== "success" &&
-              (now - Date.parse(latestRun.updated_at)) / 60000 < 20;
+            const recentFailure = latestScanRun &&
+              (now - Date.parse(latestScanRun.run.updated_at)) / 60000 < 20;
 
             if (recentFailure) {
               core.warning("A recent scan failed; wait for the next watchdog window before retrying.");
