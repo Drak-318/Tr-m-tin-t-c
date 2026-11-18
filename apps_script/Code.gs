@@ -387,7 +387,7 @@ function updateMissingDocumentRadar_(ss) {
 
 /**
  * Chạy thủ công một lần nếu muốn tắt hẳn bộ quét nhanh cũ.
- * Từ nay GitHub Actions là bộ quét duy nhất.
+ * GitHub Actions quét văn bản; Apps Script chỉ làm API và thanh tra lịch chạy.
  */
 function tatBoQuetCu() {
   const handlers = ["quetNhanhTrungUongTuSheet", "caiDatHenGio15Phut"];
