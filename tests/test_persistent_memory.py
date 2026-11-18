@@ -15,11 +15,13 @@ class PersistentMemoryTests(unittest.TestCase):
         self.history = self.root / "scan_history.json"
         self.review = self.root / "review_queue.json"
         self.export = self.root / "sheets_export_queue.json"
+        self.source_retry = self.root / "source_retry_queue.json"
         self.patches = [
             patch.object(memory, "STATE_PATH", self.state),
             patch.object(memory, "HISTORY_PATH", self.history),
             patch.object(memory, "REVIEW_QUEUE_PATH", self.review),
             patch.object(memory, "EXPORT_QUEUE_PATH", self.export),
+            patch.object(memory, "SOURCE_RETRY_QUEUE_PATH", self.source_retry),
         ]
         for item in self.patches:
             item.start()
@@ -89,6 +91,22 @@ class PersistentMemoryTests(unittest.TestCase):
         self.assertEqual(memory.load_sheets_export_queue(), [])
 
 
+
+    def test_failed_source_is_queued_and_marked_recovered_after_success(self):
+        source = {"name":"Cổng A","url":"https://example.gov.vn/list","group":"Văn Bản TW"}
+        pending = memory.record_source_scan_result(source, {
+            "error":"HTTP 503","status":"Lỗi: HTTP","http_status":503,"items":[{"title":"Nghị định 1/2026/NĐ-CP"}]
+        })
+        self.assertEqual(pending, 1)
+        rows = memory.pending_source_retries()
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["last_items_collected"], 1)
+        pending = memory.record_source_scan_result(source, {
+            "error":"","status":"Hoạt động","http_status":200,"items":[]
+        })
+        self.assertEqual(pending, 0)
+        self.assertEqual(memory.pending_source_retries(), [])
+        self.assertEqual(memory.load_source_retry_queue()["https://example.gov.vn/list"]["status"], "recovered")
 
     def test_run_seen_index_blocks_same_identity_from_second_source(self):
         index = memory.RunSeenIndex()
