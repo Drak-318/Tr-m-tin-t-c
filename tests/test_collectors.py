@@ -32,6 +32,35 @@ class CollectorTests(unittest.TestCase):
         self.assertIsNone(supplement["published_date"])
         self.assertEqual(supplement["date_source"], "fallback_aggregator")
 
+
+    def test_failed_review_pages_retry_after_seven_day_cooldown(self):
+        from datetime import datetime, timezone, timedelta
+        from unittest.mock import patch
+        from scanner.persistent_memory import pending_review_documents
+
+        old = (datetime.now(timezone.utc) - timedelta(days=8)).isoformat()
+        recent = datetime.now(timezone.utc).isoformat()
+        queue = {
+            "https://example.gov.vn/old-failure": {
+                "status":"manual_review","verification_status":"manual_review",
+                "attempts":3,"last_checked":old
+            },
+            "https://example.gov.vn/recent-failure": {
+                "status":"manual_review","verification_status":"manual_review",
+                "attempts":3,"last_checked":recent
+            },
+            "https://example.gov.vn/human-review": {
+                "status":"manual_review","verification_status":"needs_manual_review",
+                "attempts":1,"last_checked":old
+            },
+        }
+        with patch("scanner.persistent_memory.load_review_queue", return_value=queue):
+            rows = pending_review_documents(limit=20,max_attempts=3,retry_manual_after_days=7)
+        urls = {row["link"] for row in rows}
+        self.assertIn("https://example.gov.vn/old-failure", urls)
+        self.assertNotIn("https://example.gov.vn/recent-failure", urls)
+        self.assertNotIn("https://example.gov.vn/human-review", urls)
+
     def test_parse_rss_feed(self):
         xml=b"""<rss><channel><item><title>Thong tu 12/2026/TT-BTC</title><link>https://example.gov.vn/vb/12</link><pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
         items=parse_feed(xml)
