@@ -52,7 +52,8 @@ def main():
             results_by_index[i]=(s,result)
             detail=f" | Chi tiết: {result['error']}" if result.get("error") else ""
             fallback=" | Có dùng nguồn dự phòng" if result.get("fallback_used") else ""
-            print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{detail}")
+            feed_note=" | Có bổ sung RSS" if result.get("feed_supplement_used") else ""
+            print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{feed_note}{detail}")
 
     # Trace references from a bounded sample of local authority detail pages.
     local_candidates=[]
@@ -149,12 +150,13 @@ def main():
         backfilled_review_docs+=1
     if backfilled_review_docs:
         print(f"[BACKFILL] Đưa {backfilled_review_docs} hồ sơ chờ xác minh cũ vào bảng kết quả.")
-    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0}
+    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0,"feed_supplements":0}
     recognized_by_source={}
     for i in range(len(sources)):
         source,result=results_by_index[i]; name=source.get("name","Nguồn không tên"); group=source.get("group","Văn Bản TW")
         totals["items"]+=len(result["items"])
         if result.get("fallback_used"): totals["fallback_sources"]+=1
+        if result.get("feed_supplement_used"): totals["feed_supplements"]+=1
         recognized=0
         for item in result["items"]:
             title=item["title"]; link=canonicalize_url(item["link"]); pub=item.get("published_date")
@@ -174,7 +176,7 @@ def main():
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
                                     "published_date":"","source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
-                                    "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm."})
+                                    "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm.","source_group":group})
                 if link not in existing_review_urls and not is_seen(state,document_identity(number,title,name,link),link):
                     keep,priority=classify_and_score(title,name,doc_type,number,group,None)
                     if keep:
@@ -212,7 +214,7 @@ def main():
 
     # Recheck a small, bounded batch of previously undated documents on their detail pages.
     # This is deliberately limited per run so source collection remains the priority.
-    review_candidates=pending_review_documents(limit=20,max_attempts=3)
+    review_candidates=pending_review_documents(limit=40,max_attempts=3,retry_manual_after_days=7)
     detail_stats={"checked":0,"dated":0,"new":0,"old":0,"errors":0}
     def check_review_item(row):
         return row,verify_document_detail_date(row.get("link",""),{"timeout_connect":6,"timeout_read":12})
@@ -241,7 +243,7 @@ def main():
                     update.update({"status":"manual_review","verification_status":"needs_manual_review"})
                 else:
                     category=classify_document(title,agency,doc_type,number,row.get("link",""))
-                    keep,priority=classify_and_score(title,agency,doc_type,number,"Văn Bản TW",date_value)
+                    keep,priority=classify_and_score(title,agency,doc_type,number,row.get("source_group",""),date_value)
                     identity=document_identity(number,title,agency,row.get("link",""))
                     if not keep:
                         detail_stats["old"]+=1
@@ -307,7 +309,7 @@ def main():
     summary={"finished_at":utc_now(),"sources":len(sources),"collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,
-             "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],
+             "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
              "relationship_ambiguous":relation_ambiguous,"duration_seconds":duration}
     append_history(summary)
