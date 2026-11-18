@@ -17,7 +17,7 @@ from scanner.normalizer import (
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
-from scanner.persistent_memory import (load_state, is_seen, record_documents, append_history,
+from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
     enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
@@ -40,6 +40,8 @@ def main():
     sources=load_sources_from_csv()
     if not sources: raise RuntimeError("Không có nguồn đang bật trong danh_sach_nguon.csv trên GitHub.")
     state=load_state()
+    seen_index=RunSeenIndex(state)
+    output_index=RunSeenIndex()
     print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
     print(f"[INIT] Bộ nhớ GitHub: {len(state['documents'])} văn bản | {len(state['urls'])} URL")
 
@@ -164,6 +166,14 @@ def main():
     new_docs=[]; review_docs=[]; source_status=[]; accepted_for_memory=[]
     existing_review=load_review_queue()
     existing_review_urls=set(existing_review)
+    # Undated documents are tracked by identity in the review queue as well as
+    # by URL, so a second portal cannot re-add the same item on later scans.
+    review_identity_seen=set()
+    for review_url, review_row in existing_review.items():
+        review_identity_seen.add(document_identity(
+            review_row.get("doc_number",""), review_row.get("title",""),
+            review_row.get("agency",""), review_url
+        ))
     backfilled_review_docs=0
     # Đưa các hồ sơ chưa rõ ngày đã tích lũy từ những lượt quét trước vào
     # bảng kết quả một lần; không để chúng chỉ nằm trong hàng đợi nội bộ.
@@ -183,8 +193,11 @@ def main():
             else:
                 doc_type="Văn bản khác"
         identity=document_identity(number,title,agency,review_url)
-        # Do not use the old imported seen-memory to suppress backfill here:
-        # the Sheets API will idempotently skip rows already in the final table.
+        # Do not use old imported seen-memory to suppress backfill here:
+        # only prevent the same review identity/URL from being added twice
+        # during this particular run.
+        if output_index.contains(identity,review_url):
+            continue
         keep,priority=classify_and_score(title,agency,doc_type,number,"",row.get("verified_date") or None)
         if not keep:
             continue
@@ -195,6 +208,7 @@ def main():
                          "identity":identity,"published_date":verified_date,
                          "document_date":verified_date,"date_basis":row.get("date_basis","unknown"),
                          "date_status":"Đã xác minh ngày" if verified_date else "Chưa xác minh ngày - giữ lại hậu kiểm"})
+        output_index.add(identity,review_url)
         backfilled_review_docs+=1
     if backfilled_review_docs:
         print(f"[BACKFILL] Đưa {backfilled_review_docs} hồ sơ chờ xác minh cũ vào bảng kết quả.")
@@ -217,23 +231,28 @@ def main():
             recognized+=1; totals["recognized"]+=1
             category=classify_document(title,name,doc_type,number,link)
             if not has_document_date(title,pub):
-                # Không loại văn bản chỉ vì thiếu ngày. Đưa vào bảng kết quả
-                # ngay ở lượt phát hiện đầu tiên và đồng thời lưu hàng đợi
-                # GitHub để hậu kiểm/xác minh ngày ở các lượt sau.
+                # Keep undated documents for review, but deduplicate by identity
+                # across all sources in this run and across prior review-queue URLs.
                 totals["unknown_date"]+=1
+                identity=document_identity(number,title,name,link)
                 review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
-                                    "published_date":"","source_published_date":item.get("source_published_date",""),
+                                    "identity":identity,"published_date":"",
+                                    "source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
                                     "reason":"Chưa có ngày xác minh; giữ lại để hậu kiểm.","source_group":group})
-                if link not in existing_review_urls and not is_seen(state,document_identity(number,title,name,link),link):
+                if (link not in existing_review_urls
+                        and not seen_index.contains(identity,link)
+                        and not output_index.contains(identity,link)
+                        and identity not in review_identity_seen):
                     keep,priority=classify_and_score(title,name,doc_type,number,group,None)
                     if keep:
-                        identity=document_identity(number,title,name,link)
                         new_docs.append({"priority":priority,"doc_type":doc_type,"agency":name,"title":title,
                                          "doc_number":number,"link":link,"fingerprint":make_fingerprint(number,title),
                                          "category":category,"identity":identity,"published_date":"",
                                          "document_date":"","date_basis":"unknown",
                                          "date_status":"Chưa xác minh ngày - giữ lại hậu kiểm"})
+                        output_index.add(identity,link)
+                        review_identity_seen.add(identity)
                         totals["kept"]+=1
                         existing_review_urls.add(link)
                 continue
@@ -244,7 +263,7 @@ def main():
             if not keep: continue
             totals["kept"]+=1
             identity=document_identity(number,title,name,link)
-            if is_seen(state,identity,link):
+            if seen_index.contains(identity,link) or output_index.contains(identity,link):
                 totals["duplicate"]+=1; continue
             resolved_date,date_basis=resolve_document_date(title,pub)
             doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
@@ -253,6 +272,7 @@ def main():
                  "document_date":resolved_date.strftime("%Y-%m-%d") if resolved_date else "",
                  "date_basis":date_basis,"source_published_date":item.get("source_published_date","")}
             new_docs.append(doc); accepted_for_memory.append({**doc,"identity":identity})
+            output_index.add(identity,link)
         recognized_by_source[i]=recognized
         if result["error"] and not result.get("fallback_used"): totals["failed"]+=1
         status=result["status"]
@@ -296,7 +316,7 @@ def main():
                     if not keep:
                         detail_stats["old"]+=1
                         update.update({"status":"excluded_old","verification_status":"excluded_old"})
-                    elif is_seen(state,identity,row.get("link","")):
+                    elif seen_index.contains(identity,row.get("link","")) or output_index.contains(identity,row.get("link","")):
                         update.update({"status":"already_seen","verification_status":"already_seen"})
                     else:
                         doc={"priority":priority,"doc_type":doc_type,"agency":agency,"title":title,
@@ -307,6 +327,7 @@ def main():
                              "date_evidence":result.get("evidence","")}
                         new_docs.append(doc)
                         accepted_for_memory.append(doc)
+                        output_index.add(identity,row.get("link",""))
                         detail_stats["new"]+=1
                         update.update({"status":"verified_included","verification_status":"verified_included"})
             else:

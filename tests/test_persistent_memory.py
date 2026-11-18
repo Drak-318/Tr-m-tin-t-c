@@ -89,5 +89,19 @@ class PersistentMemoryTests(unittest.TestCase):
         self.assertEqual(memory.load_sheets_export_queue(), [])
 
 
+
+    def test_run_seen_index_blocks_same_identity_from_second_source(self):
+        index = memory.RunSeenIndex()
+        identity = "number:123/2026/TT-BTC|issuer:TT-BTC|locality:"
+        index.add(identity, "https://a.gov.vn/doc/123")
+        self.assertTrue(index.contains(identity, "https://b.gov.vn/doc/123"))
+        self.assertTrue(index.contains("", "https://a.gov.vn/doc/123"))
+        self.assertFalse(index.contains("number:456/2026/TT-BTC", "https://c.gov.vn/doc/456"))
+
+    def test_run_seen_index_uses_canonical_urls(self):
+        index = memory.RunSeenIndex()
+        index.add("id-1", "https://example.gov.vn/doc?utm_source=one")
+        self.assertTrue(index.contains("different-id", "https://example.gov.vn/doc?utm_source=two"))
+
 if __name__ == "__main__":
     unittest.main()
