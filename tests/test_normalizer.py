@@ -18,6 +18,10 @@ class NormalizerTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(extract_doc_info(title),(typ,num))
 
+    def test_fallback_document_number_pattern_is_valid(self):
+        self.assertEqual(extract_doc_info("Kế hoạch triển khai thực hiện số 606/KH-UBND trên địa bàn"),
+                         ("Kế hoạch","606/KH-UBND"))
+
     def test_phrase_phap_luat_is_not_misclassified_as_luat(self):
         title="Văn bản số 10582/SGDĐT-VP V/v hưởng ứng Cuộc thi trực tuyến tìm hiểu pháp luật"
         self.assertNotEqual(extract_doc_info(title)[0],"Luật")
