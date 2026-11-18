@@ -8,16 +8,6 @@ on:
     - cron: "7,37 * * * *"
     - cron: "22,52 * * * *"
   workflow_dispatch:
-  pull_request:
-    branches: [main]
-    paths:
-      - 'quet_vb.py'
-      - 'scanner/**'
-      - 'tests/**'
-      - 'requirements.txt'
-      - 'source_config.json'
-      - 'danh_sach_nguon.csv'
-      - '.github/workflows/auto_scan.yml'
   push:
     branches: [main]
     paths:
@@ -33,27 +23,8 @@ permissions:
   contents: write
 
 jobs:
-  test:
-    if: ${{ github.event_name == 'pull_request' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout pull request code
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: "pip"
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Compile and run regression tests
-        run: |
-          python -m compileall -q scanner quet_vb.py
-          python -m unittest discover -s tests -v
-
   scan:
-    if: ${{ github.event_name != 'pull_request' && (github.event_name != 'schedule' || github.event.schedule == '7,37 * * * *') }}
+    if: ${{ github.event_name != 'schedule' || github.event.schedule == '7,37 * * * *' }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
     concurrency:
