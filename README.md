@@ -68,7 +68,19 @@ Vào repository → **Settings → Secrets and variables → Actions → New rep
 
 Không đưa URL API vào mã nguồn công khai. URL triển khai cũ từng xuất hiện trong lịch sử repository công khai, vì vậy nên tạo deployment mới và dùng URL mới trong Secret.
 
-### B. Tắt bộ quét Apps Script cũ
+### B. Cập nhật Apps Script lên V13.0
+
+Mã Apps Script trong repository đã được nâng lên **V13.0**. Bản này bổ sung quyền fallback cho đúng hai tên miền nguồn ưu tiên đang thiếu trong danh sách nguồn cũ: `vbpl.vn` và `vbpq.mof.gov.vn`. Nếu vẫn dùng deployment V12.0, GitHub Actions sẽ tiếp tục nhận lỗi “Tên miền không nằm trong danh sách nguồn đã cấu hình” với hai nguồn này.
+
+Cập nhật một lần:
+1. Mở dự án Apps Script đang gắn với Google Sheets.
+2. Thay nội dung file `Code.gs` bằng bản mới tại repository: `apps_script/Code.gs`.
+3. Chọn **Deploy → Manage deployments**.
+4. Chọn deployment Web App hiện tại → biểu tượng chỉnh sửa → **Version: New version** → **Deploy**.
+5. Mở URL Web App đang dùng và kiểm tra kết quả GET có `"version":"13.0"`.
+6. Giữ nguyên URL trong GitHub Secret nếu bạn đã cập nhật deployment hiện tại, không tạo URL mới không cần thiết.
+
+### C. Tắt bộ quét Apps Script cũ
 
 GitHub không có quyền tự xóa trigger trong tài khoản Google Apps Script. Nếu trigger cũ `quetNhanhTrungUongTuSheet` còn hoạt động, nó sẽ tiếp tục quét độc lập và có thể ghi trùng với GitHub.
 
