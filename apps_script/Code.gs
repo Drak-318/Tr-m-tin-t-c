@@ -396,3 +396,260 @@ function tatBoQuetCu() {
   });
   Logger.log("Đã xóa trigger quét nhanh cũ. GitHub Actions là bộ quét duy nhất.");
 }
+
+
+/* ============================================================
+ * THANH TRA DOC LAP - GITHUB ACTIONS FAILSAFE
+ * Chay bang time trigger cua Google Apps Script, doc lap voi
+ * lich schedule cua GitHub Actions.
+ * Script Properties can co GITHUB_PAT (fine-grained):
+ * Actions: Read and write; repository access: this repository.
+ * ============================================================ */
+
+const INSPECTOR_CONFIG = {
+  REPOSITORY: "Drak-318/Tr-m-tin-t-c",
+  WORKFLOW: "auto_scan.yml",
+  BRANCH: "main",
+  AUDIT_SHEET: "Thanh tra he thong",
+  PRIORITY_STALE_MINUTES: 12,
+  FULL_STALE_MINUTES: 42,
+  DISPATCH_COOLDOWN_MINUTES: 10,
+  RUNS_TO_INSPECT: 18,
+  AUDIT_MAX_ROWS: 5000
+};
+
+/**
+ * Chay mot lan de cai dat thanh tra moi 5 phut.
+ * Ham nay khong xoa trigger quet/trigger khac.
+ */
+function caiDatThanhTraDocLap() {
+  const handler = "thanhTraTramTinTuc";
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    if (trigger.getHandlerFunction() === handler) ScriptApp.deleteTrigger(trigger);
+  });
+  ScriptApp.newTrigger(handler).timeBased().everyMinutes(5).create();
+  ghiNhatKyThanhTra_("SETUP", "", "", "INSTALLED", "Da cai trigger thanh tra doc lap moi 5 phut.");
+  Logger.log("Da cai dat Thanh tra Tram Tin Tuc moi 5 phut.");
+}
+
+/** Kiem tra ket noi/token va tinh trang workflow ngay lap tuc. */
+function kiemTraThanhTraThuCong() {
+  return thanhTraTramTinTuc();
+}
+
+/**
+ * Vong thanh tra chinh. Khong bao gio kich hoat them neu da co job
+ * tuong ung dang queued/in_progress. Co cooldown de tranh dispatch lap.
+ */
+function thanhTraTramTinTuc() {
+  const lock = LockService.getScriptLock();
+  if (!lock.tryLock(1000)) {
+    Logger.log("Bo qua: mot vong thanh tra khac dang chay.");
+    return {status: "busy"};
+  }
+
+  try {
+    const props = PropertiesService.getScriptProperties();
+    const token = props.getProperty("GITHUB_PAT");
+    if (!token) throw new Error("Thieu Script Property GITHUB_PAT. Hay them Fine-grained PAT trong Apps Script > Project Settings > Script properties.");
+
+    const snapshot = docTrangThaiGitHub_(token);
+    const now = Date.now();
+    const priority = tinhTuoiJob_(snapshot.jobs, "priority-scan", now);
+    const full = tinhTuoiJob_(snapshot.jobs, "scan", now);
+
+    const priorityActive = priority.active;
+    const fullActive = full.active;
+    const priorityAge = priority.ageMinutes;
+    const fullAge = full.ageMinutes;
+
+    let action = "HEALTHY";
+    let reason = "Cac luot quet van trong nguong cho phep.";
+    let dispatchResult = "";
+
+    // Full scan bao gom priority scan, nen neu ca hai deu qua han
+    // thi chi dispatch full de tranh tao hai luot chay trung.
+    const fullStale = !fullActive && fullAge > INSPECTOR_CONFIG.FULL_STALE_MINUTES;
+    const priorityStale = !priorityActive && priorityAge > INSPECTOR_CONFIG.PRIORITY_STALE_MINUTES;
+
+    if (fullStale) {
+      const cooldown = conTrongCooldown_(props, "LAST_FULL_DISPATCH_AT", now);
+      if (cooldown) {
+        action = "WAIT_FULL_DISPATCH";
+        reason = "Da gui lenh quet toan bo gan day; dang cho GitHub tiep nhan/hoan tat.";
+      } else {
+        dispatchResult = guiLenhQuetGitHub_(token, "full");
+        props.setProperty("LAST_FULL_DISPATCH_AT", String(now));
+        action = "DISPATCH_FULL";
+        reason = "Khong co luot quet toan bo thanh cong trong " + Math.round(fullAge) + " phut.";
+      }
+    } else if (priorityStale) {
+      const cooldown = conTrongCooldown_(props, "LAST_PRIORITY_DISPATCH_AT", now);
+      if (cooldown) {
+        action = "WAIT_PRIORITY_DISPATCH";
+        reason = "Da gui lenh quet uu tien gan day; dang cho GitHub tiep nhan/hoan tat.";
+      } else {
+        dispatchResult = guiLenhQuetGitHub_(token, "priority");
+        props.setProperty("LAST_PRIORITY_DISPATCH_AT", String(now));
+        action = "DISPATCH_PRIORITY";
+        reason = "Khong co luot quet uu tien thanh cong trong " + Math.round(priorityAge) + " phut.";
+      }
+    } else if (priorityActive || fullActive) {
+      action = "SCAN_ACTIVE";
+      reason = "Co job dang queued/in_progress; khong gui them lenh trung.";
+    } else {
+      reason = "Priority: " + dinhDangTuoi_(priorityAge) + "; full: " + dinhDangTuoi_(fullAge) + ".";
+    }
+
+    const record = {
+      checked_at: new Date(now).toISOString(),
+      action: action,
+      reason: reason,
+      priority_age_minutes: Number.isFinite(priorityAge) ? Math.round(priorityAge) : null,
+      full_age_minutes: Number.isFinite(fullAge) ? Math.round(fullAge) : null,
+      priority_active: priorityActive,
+      full_active: fullActive,
+      dispatch_result: dispatchResult,
+      latest_priority_success: priority.lastSuccess || null,
+      latest_full_success: full.lastSuccess || null
+    };
+    props.setProperty("INSPECTOR_LAST_HEALTH", JSON.stringify(record));
+    ghiNhatKyThanhTra_(action, dinhDangTuoi_(priorityAge), dinhDangTuoi_(fullAge), dispatchResult, reason);
+    Logger.log(JSON.stringify(record));
+    return record;
+  } catch (error) {
+    const message = String(error && error.stack ? error.stack : error);
+    PropertiesService.getScriptProperties().setProperty("INSPECTOR_LAST_ERROR", message.slice(0, 4000));
+    ghiNhatKyThanhTra_("ERROR", "", "", "", message.slice(0, 1500));
+    throw error;
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function docTrangThaiGitHub_(token) {
+  const base = "https://api.github.com/repos/" + INSPECTOR_CONFIG.REPOSITORY;
+  const headers = {
+    "Authorization": "Bearer " + token,
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28"
+  };
+  const runsUrl = base + "/actions/workflows/" + INSPECTOR_CONFIG.WORKFLOW +
+    "/runs?branch=" + encodeURIComponent(INSPECTOR_CONFIG.BRANCH) +
+    "&per_page=" + INSPECTOR_CONFIG.RUNS_TO_INSPECT;
+  const runsResponse = UrlFetchApp.fetch(runsUrl, {method: "get", headers: headers, muteHttpExceptions: true});
+  kiemTraPhanHoiGitHub_(runsResponse, "Doc workflow runs");
+  const runs = (JSON.parse(runsResponse.getContentText()).workflow_runs || []).slice(0, INSPECTOR_CONFIG.RUNS_TO_INSPECT);
+  if (!runs.length) return {jobs: []};
+
+  const requests = runs.map(function(run) {
+    return {
+      url: base + "/actions/runs/" + run.id + "/jobs?per_page=30",
+      method: "get",
+      headers: headers,
+      muteHttpExceptions: true
+    };
+  });
+  const responses = UrlFetchApp.fetchAll(requests);
+  const jobs = [];
+  responses.forEach(function(response, index) {
+    kiemTraPhanHoiGitHub_(response, "Doc jobs cua run " + runs[index].run_number);
+    const data = JSON.parse(response.getContentText());
+    (data.jobs || []).forEach(function(job) {
+      jobs.push({
+        name: job.name,
+        status: job.status,
+        conclusion: job.conclusion,
+        started_at: job.started_at,
+        completed_at: job.completed_at,
+        run_id: runs[index].id,
+        run_number: runs[index].run_number,
+        event: runs[index].event
+      });
+    });
+  });
+  return {jobs: jobs};
+}
+
+function tinhTuoiJob_(jobs, jobName, now) {
+  const matching = jobs.filter(function(job) { return job.name === jobName; });
+  const active = matching.some(function(job) {
+    return job.status === "queued" || job.status === "in_progress" || job.status === "pending";
+  });
+  const successes = matching.filter(function(job) {
+    return job.conclusion === "success" && job.completed_at;
+  }).sort(function(a, b) {
+    return new Date(b.completed_at).getTime() - new Date(a.completed_at).getTime();
+  });
+  if (!successes.length) return {active: active, ageMinutes: Infinity, lastSuccess: null};
+  const lastSuccess = successes[0].completed_at;
+  return {
+    active: active,
+    ageMinutes: Math.max(0, (now - new Date(lastSuccess).getTime()) / 60000),
+    lastSuccess: lastSuccess
+  };
+}
+
+function guiLenhQuetGitHub_(token, profile) {
+  const url = "https://api.github.com/repos/" + INSPECTOR_CONFIG.REPOSITORY +
+    "/actions/workflows/" + INSPECTOR_CONFIG.WORKFLOW + "/dispatches";
+  const response = UrlFetchApp.fetch(url, {
+    method: "post",
+    contentType: "application/json",
+    headers: {
+      "Authorization": "Bearer " + token,
+      "Accept": "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28"
+    },
+    payload: JSON.stringify({ref: INSPECTOR_CONFIG.BRANCH, inputs: {profile: profile}}),
+    muteHttpExceptions: true
+  });
+  const code = response.getResponseCode();
+  if (code !== 204) {
+    throw new Error("GitHub dispatch " + profile + " that bai, HTTP " + code + ": " + response.getContentText().slice(0, 1200));
+  }
+  return "GitHub da tiep nhan lenh " + profile + " (HTTP 204); thanh tra se xac minh job o vong tiep theo.";
+}
+
+function kiemTraPhanHoiGitHub_(response, operation) {
+  const code = response.getResponseCode();
+  if (code < 200 || code >= 300) {
+    throw new Error(operation + " that bai, HTTP " + code + ": " + response.getContentText().slice(0, 1200));
+  }
+}
+
+function conTrongCooldown_(props, key, now) {
+  const last = Number(props.getProperty(key) || 0);
+  return last > 0 && (now - last) < INSPECTOR_CONFIG.DISPATCH_COOLDOWN_MINUTES * 60000;
+}
+
+function dinhDangTuoi_(age) {
+  return Number.isFinite(age) ? Math.round(age) + " phut" : "chua co luot thanh cong";
+}
+
+function ghiNhatKyThanhTra_(action, priorityAge, fullAge, dispatchResult, reason) {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    if (!ss) return;
+    let sheet = ss.getSheetByName(INSPECTOR_CONFIG.AUDIT_SHEET);
+    if (!sheet) {
+      sheet = ss.insertSheet(INSPECTOR_CONFIG.AUDIT_SHEET);
+      sheet.appendRow(["Thoi diem", "Hanh dong", "Tuoi quet uu tien", "Tuoi quet toan bo", "Ket qua lenh", "Ly do"]);
+      sheet.setFrozenRows(1);
+    }
+    sheet.appendRow([
+      Utilities.formatDate(new Date(), CONFIG.TIMEZONE, "dd/MM/yyyy HH:mm:ss"),
+      String(action || ""),
+      String(priorityAge || ""),
+      String(fullAge || ""),
+      String(dispatchResult || ""),
+      String(reason || "").slice(0, 1500)
+    ]);
+    const lastRow = sheet.getLastRow();
+    if (lastRow > INSPECTOR_CONFIG.AUDIT_MAX_ROWS + 1) {
+      sheet.deleteRows(2, lastRow - INSPECTOR_CONFIG.AUDIT_MAX_ROWS - 1);
+    }
+  } catch (error) {
+    Logger.log("Khong ghi duoc nhat ky thanh tra: " + error);
+  }
+}
