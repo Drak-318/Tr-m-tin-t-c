@@ -1075,21 +1075,21 @@
     },
     "https://danang.gov.vn/en/web/dng/-/da-nang-tang-cuong-quan-ly-tau-ca-bao-dam-an-toan-cho-ngu-dan": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "11795/UBND-SNNMT",
       "first_seen": "2026-11-18T01:14:10+00:00",
       "identity": "number:11795/UBND-SNNMT|issuer:UBND-SNNMT|locality:unresolved-source:danang.gov.vn",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:37:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T04:12:43+00:00",
       "link": "https://danang.gov.vn/en/web/dng/-/da-nang-tang-cuong-quan-ly-tau-ca-bao-dam-an-toan-cho-ngu-dan",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Đà Nẵng tăng cường quản lý tàu cá, bảo đảm an toàn cho ngư dân",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://danang.gov.vn/vi/web/dng/-/thong-bao-dieu-chinh-thoi-han-lay-y-kien-tham-dinh-ho-so-de-nghi-cap-giay-phep-tham-do-khoang-san-cat-phuc-vu-du-an-dau-tu-xay-dung-tong-the-ben-cang-container-lien-chieu": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
@@ -1863,21 +1863,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Cac-so-ban-nganh/cong-bo-va-trien-khai-thuc-hien-quyet-dinh-so-3858-qd-ubnd-ve-ban-hanh-danh-muc-song-suoi-kenh-rach-noi-tinh-tren-dia-ban-thanh-pho-dong-nai-64911.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3858/QĐ-UBND",
       "first_seen": "2026-11-18T04:12:43+00:00",
       "identity": "number:3858/QĐ-UBND|issuer:QĐ-UBND|locality:trên địa bàn thành phố đồng nai ubnd tỉnh đồng nai - chỉ đạo điều hành",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:37:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Cac-so-ban-nganh/cong-bo-va-trien-khai-thuc-hien-quyet-dinh-so-3858-qd-ubnd-ve-ban-hanh-danh-muc-song-suoi-kenh-rach-noi-tinh-tren-dia-ban-thanh-pho-dong-nai-64911.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Công bố và triển khai thực hiện Quyết định số 3858/QĐ-UBND về ban hành Danh mục sông, suối, kênh, rạch nội tỉnh trên địa bàn thành phố Đồng Nai",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/ve-viec-cho-thue-nha-dat-do-trung-tam-dich-vu-tong-hop-xa-phuoc-son-quan-ly-khai-thac-doi-voi-03-co-so-nha-dat-doi-du-cac-diem-truong-duoc-chuyen-giao-theo-quyet-dinh-so-3339-qd-ubnd-lan-2-64887.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -10124,22 +10124,22 @@
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdnY0kwYTRzd1NaYjdjeW5La0NVUm5BMmlHWjNxZXYyN253bjBuMU42LTBLZXlqN2ZZM2NNTlBOLXY3ZGxxTm1hSWJFMHRwbm84dnNwTjVfXzZZVmNQSjVKV25wTDRsTk02RkxLZkZ5bTMwRENaNktPTFNoemxJLUM0S3BaRUxoNUFZd1NEWTVPNC1QNENnN2wyNm9TZ3VybDFKREdyM21LR2xBRFpyazJtTE45ZGw3d09Icnl0cG4wYS1JMnpibFlEZ3dUbXVhdUxuVUdDb1JyVmNFRjVJVlJzUlljdw?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2025/QĐ-UBND",
       "exported_at": "2026-11-18T01:09:59+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:09:50+00:00",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:37:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:09:50+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQWdnY0kwYTRzd1NaYjdjeW5La0NVUm5BMmlHWjNxZXYyN253bjBuMU42LTBLZXlqN2ZZM2NNTlBOLXY3ZGxxTm1hSWJFMHRwbm84dnNwTjVfXzZZVmNQSjVKV25wTDRsTk02RkxLZkZ5bTMwRENaNktPTFNoemxJLUM0S3BaRUxoNUFZd1NEWTVPNC1QNENnN2wyNm9TZ3VybDFKREdyM21LR2xBRFpyazJtTE45ZGw3d09Icnl0cG4wYS1JMnpibFlEZ3dUbXVhdUxuVUdDb1JyVmNFRjVJVlJzUlljdw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 2025/QĐ-UBND 2026 bổ sung Bảng giá tính lệ phí trước bạ đối với ô tô Lạng Sơn - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWmN1SHZaejU5dGJYZnBGRWpRdUVELU5vd1ZNdU5YMXhHTmpIdDlRTjVUV3lYMEx2WWNtM29WMGRfX2tsTHhNOFFRdTNQc1RQbnFtcmZEZ3hnSjBkVC02eHJ0c244dkNFbEgtbmdGQjNtYmpxZTB6Z0lzb3lueHlQZUdRNC1WenhfdEVDUUhxUmxJWVJzb1cyNWZSLVZmcTAtekNIRHpRT0hrSGh2UlEwaTR5WWJIaFVLQl9nZlVzdFo3WklHd04ydkltWjhMRlk4SE9XdmNBWHBwcHU0SnVpa1FvZ0tMZw?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -14637,22 +14637,22 @@
     },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN3FyaTRQejg2T2VFWHo5aEVkdFU0SmtRTzd4aTlwLWtYbktnWDRaY2RvaTJfOU5qNUNxdWptMkFiTFk1UzRMZHZkU3Nfc2pJSlY5RmVfYjVJUEZjdVpLUzhQTVB3aFdOeHNaWl9WV1BBakpna1JfeUhqcjh3cmdKRG9SRDN1U29NOUxiejhqVHR3VHk0dkotYUFnYkZMWTBudVM5VTVYLURoZVBMcGItUmdEN0hRSzRjUmVFQ1h5QzlTaHFRTVhr?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3893/QĐ-UBND",
       "exported_at": "2026-11-18T01:09:59+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:09:50+00:00",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:37:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:09:50+00:00",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN3FyaTRQejg2T2VFWHo5aEVkdFU0SmtRTzd4aTlwLWtYbktnWDRaY2RvaTJfOU5qNUNxdWptMkFiTFk1UzRMZHZkU3Nfc2pJSlY5RmVfYjVJUEZjdVpLUzhQTVB3aFdOeHNaWl9WV1BBakpna1JfeUhqcjh3cmdKRG9SRDN1U29NOUxiejhqVHR3VHk0dkotYUFnYkZMWTBudVM5VTVYLURoZVBMcGItUmdEN0hRSzRjUmVFQ1h5QzlTaHFRTVhr?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3893/QĐ-UBND Phú Thọ 2026 phê duyệt Quy hoạch chung xã Bao La đến 2050 - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSHRzUDBoNnJVRDYzZ2JpYVBqWHY4SUV5dGlGcWpUTEZ3LTJfbVJjdjM1bkNhX1ZJTTJUdXVqenFhdzc3a0hxbHFVTWZxX0JMSWlSanlxelJ1RzJRRFRfQ2lvSXlLRDI2aVN1MjB1QTNVZEFVRE9mbWhEZlNiNFFPbmRZSzBKRWhVTl96eUN6NndzVTFhc0V2WUhHbmRpYmZySUp1bEhnQzVRMFd2VDlRczloQWdHTjZzRmN5bVpWbWhqMkpFZlow?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15398,22 +15398,22 @@
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0NKY3gwcVBtN2V5bEdkamRZcjRVTldoTkNKeS05X2FVWmh5M3c0N1dsSzRIanRma2JwWXZzZUw2WUlQSXdSZWJTYjBWRU0wczczV3p5MUlqdVFuODA5c0dHb1R4c0YwV3ZqV0dBLUwxcjVmb2FBV2tmemRpMURnUFI3bWxLdHBJWkJ1OE9nUEJWNXBDRXVxZkVfV2poX0dqTUdHR0xlMTh6eEEyemlyMGJpaEhlZnBmY0JZSzFaaFJQcVVqZ25SN3RKNDA?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "150/2026/QĐ-UBND",
       "exported_at": "2026-11-18T01:14:27+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:14:10+00:00",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:37:59+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0NKY3gwcVBtN2V5bEdkamRZcjRVTldoTkNKeS05X2FVWmh5M3c0N1dsSzRIanRma2JwWXZzZUw2WUlQSXdSZWJTYjBWRU0wczczV3p5MUlqdVFuODA5c0dHb1R4c0YwV3ZqV0dBLUwxcjVmb2FBV2tmemRpMURnUFI3bWxLdHBJWkJ1OE9nUEJWNXBDRXVxZkVfV2poX0dqTUdHR0xlMTh6eEEyemlyMGJpaEhlZnBmY0JZSzFaaFJQcVVqZ25SN3RKNDA?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 150/2026/QĐ-UBND xét chọn cộng tác viên dân số Gia Lai - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -19025,6 +19025,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T15:33:08+00:00",
+  "updated_at": "2026-11-19T15:37:59+00:00",
   "version": 1
 }
