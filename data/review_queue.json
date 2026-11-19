@@ -15511,41 +15511,41 @@
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNa0YtZjN6QXpKMHVYaXJkcHhKcnNqR2U3aHA1TGw5THpwWW9aUUx5ZmN3aU43VjBQQktsS2JHRzJEVk1MUXQ0YzFLM05EQS1lOGI3RExyTGtiTlBzRjZrdlVjTmpiRmJGNDNFaWxlaFV3ZnByQWxFQzRpMWZMRVp1TjNzMC1HZjFSUEE1MkI5emwzUDNPMWlsYk5IV0tQRWN1eEpaMUREOEViZmtidzBvVjAtUmZ3aHE3ZE92Q0g1OXdSQ1Y2b0lXSHV3MU54dw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2215/QĐ-TTG",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:28:48+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNa0YtZjN6QXpKMHVYaXJkcHhKcnNqR2U3aHA1TGw5THpwWW9aUUx5ZmN3aU43VjBQQktsS2JHRzJEVk1MUXQ0YzFLM05EQS1lOGI3RExyTGtiTlBzRjZrdlVjTmpiRmJGNDNFaWxlaFV3ZnByQWxFQzRpMWZMRVp1TjNzMC1HZjFSUEE1MkI5emwzUDNPMWlsYk5IV0tQRWN1eEpaMUREOEViZmtidzBvVjAtUmZ3aHE3ZE92Q0g1OXdSQ1Y2b0lXSHV3MU54dw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 2215/QĐ-TTg 2026 ban hành quy trình vận hành liên hồ chứa trên sông Hương - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbTNoT29jd1pYX2lJWm92X0xKeGM5aHlsWDI0SDVZaFoxVTQ3S0NNVTRteXJDeFlGZ01rVTRJOXhmZV9IMXJGY2VuN1duRDVodFpxcDNwYTl6N2kzRWpGXzZXYTE4WlBYOUlsRFlQOU9VR1JGVEpCUXRiVHJZWFp4MFE2WGM5OU5RODRmbEpnbUxQU2YtNWtla3Faa1pPWC1xd3NmQjlDRThYNDd5TmFiY0hmZzVSUkpqU1hXMkFUMEVtNk9RdHZaN284ZXpPZw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "4290/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:28:48+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbTNoT29jd1pYX2lJWm92X0xKeGM5aHlsWDI0SDVZaFoxVTQ3S0NNVTRteXJDeFlGZ01rVTRJOXhmZV9IMXJGY2VuN1duRDVodFpxcDNwYTl6N2kzRWpGXzZXYTE4WlBYOUlsRFlQOU9VR1JGVEpCUXRiVHJZWFp4MFE2WGM5OU5RODRmbEpnbUxQU2YtNWtla3Faa1pPWC1xd3NmQjlDRThYNDd5TmFiY0hmZzVSUkpqU1hXMkFUMEVtNk9RdHZaN284ZXpPZw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 4290/QĐ-UBND Lào Cai 2026 Mở rộng mặt đường từ xã Mù Cang Chải đến xã Chế Tạo - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS1Y3enI0LVh2dmdmV3I1Z1JWaVN2NEFkQi1jVE1ZS0tUeC0zTFZoSEZrVl9wazRrdlNoVE11TEVTX0p5VnRqMTl4QkpxTm1QSHpVaF9KenhseGRIbXJJLTFlZmY4bjZzWXF3OElGdXRFYm5pTkV0OUhjOTNjalNkelg5OVdSRER1NUJyWnNrUmlEUG1kUGpqRkhudER3V283U1VuVjR6a2QyX0Z2YTh4STlrTlV2X28zbnFQS1lMNHhMYWpORmtqd0xtUU4zUQ?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15567,22 +15567,22 @@
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTl5RUxacEdmb3hfX0xCU2xLdU5KUkZjalpaYmlOSHVWNVF5cjhpZlVEMmdsMGx4UVBoU003dFBWcWZEay1ySThOaDBNdTNsUko1TzlDZlBTNTk5eUNqMi1BdnhzY0pERFRDbHFlUHlNR3BlTk9jZnc5T29Wc0hoSUt3RTNQLVVFRU9wZzlSTXFOVEh0ZWJGUFBnMWNnLVdQUWN2dC16b1FERTVJUDJzeUtJVkNNT000S092M2xzcy1PdUcwWFF3b0pCM3NaZw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "101/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:28:48+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTl5RUxacEdmb3hfX0xCU2xLdU5KUkZjalpaYmlOSHVWNVF5cjhpZlVEMmdsMGx4UVBoU003dFBWcWZEay1ySThOaDBNdTNsUko1TzlDZlBTNTk5eUNqMi1BdnhzY0pERFRDbHFlUHlNR3BlTk9jZnc5T29Wc0hoSUt3RTNQLVVFRU9wZzlSTXFOVEh0ZWJGUFBnMWNnLVdQUWN2dC16b1FERTVJUDJzeUtJVkNNT000S092M2xzcy1PdUcwWFF3b0pCM3NaZw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 101/2026/QĐ-UBND Khánh Hòa quy định mật độ chăn nuôi giai đoạn 2026 - 2030 - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcHMzUWJSdEdTd3NfcG1vWHB5MTdHMUxUZlZ6SWZfMU1XVEpwUzU1M3pmYWtxdmlhOXBuQWRCWm5HTWF1MGpxYlcyeTBOeXpoWGdac0ZEYkxpSERNdS1leWRFOExGaTlKQjlSMFRwQ01ERnlpMWpZV3hFM1hQRjRIYWlhZ1dITEtGeGN3UU1JajFKclI4YVZfeGFWRVB1NE85QmlwQVp6YnA4UHBGTUJlV3o3dzc3d19LQVNtMlJ4ZzM5NXpZaHA5R3ZrOUs5UQ?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15604,22 +15604,22 @@
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0dvWlZYb2xGM1dTdkdXdFNjeTJ5U2Nhem1iaUlpSzdDN0ZSMm5rSUwxZmxMMEw3QzFJQjZ2TEM0MTFwUUdXVm9VYzVKR1paRWJjaDFjQzlzM2tsMXpDc3I3d2tkVzF1S1J4RVBINU5KaWlzVlRzUk9mbjNZcFFrMl9XQ1JsVGtYWi1hNFNhQ19Gb0JHbHJjZXNlam4tU2xLSEV2dGtJeDB0b3hZVVVROGVHdmRUYUJocHBRdUVZQWtSWjVWZE5ybXhLSnczdw?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "140/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:28:48+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0dvWlZYb2xGM1dTdkdXdFNjeTJ5U2Nhem1iaUlpSzdDN0ZSMm5rSUwxZmxMMEw3QzFJQjZ2TEM0MTFwUUdXVm9VYzVKR1paRWJjaDFjQzlzM2tsMXpDc3I3d2tkVzF1S1J4RVBINU5KaWlzVlRzUk9mbjNZcFFrMl9XQ1JsVGtYWi1hNFNhQ19Gb0JHbHJjZXNlam4tU2xLSEV2dGtJeDB0b3hZVVVROGVHdmRUYUJocHBRdUVZQWtSWjVWZE5ybXhLSnczdw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 140/2026/QĐ-UBND xác định mức độ ảnh hưởng đến giá đất Đắk Lắk - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRGJET2l0RHlvdzhLRFVLaGhJSlhrUUxVcTZ5UHJiMEs1ZV9hVVdrbDYxSDdNek8tbUQ1UmxHN3FSNUVhWDlLcEpGZ3BSMklseFJBTHc5bUlHQnBVTjVhd3N2X2JfZmx3OEFhRzlJWTUzRlRYYjV6UGtocjg1Z0ZpbE5TZ0luRGdzN3lTbTl5RmgybGw5MXBtY2tpbWFGRFBSTjdNaFJaNm16VjJQd0tQLXhzVHZwaHZwakNSQnpRVG9HVUhlMkotYWd2dXU2RmM?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15642,21 +15642,21 @@
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUHBoWkZTb25VeGhmdDJrT08yWU1DUDFLRXRtQzZfTTFyZF9hMVBQX2NKQ0VsTlVKUWpTNnhVYXdFcnU5Q2JrWEJmeV9uQWNBTWMtSHNrTEhqOUNndDUzalNCbmxNUk1tWFBPdGx3ekxhWEhWNXkyd3pETGtDNzN5U3BoUzJJbUJPN0tDODA5VmZnV21SMjVTM1lJWS1KSnM2VWhWblhLb1VPXzhfOFVJUzdzV3ExU1lOamdvajU0OVpaME1sTG1EQUd1WEZkVGs?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2216/QĐ-TTG",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:28:48+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:17:26+00:00",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUHBoWkZTb25VeGhmdDJrT08yWU1DUDFLRXRtQzZfTTFyZF9hMVBQX2NKQ0VsTlVKUWpTNnhVYXdFcnU5Q2JrWEJmeV9uQWNBTWMtSHNrTEhqOUNndDUzalNCbmxNUk1tWFBPdGx3ekxhWEhWNXkyd3pETGtDNzN5U3BoUzJJbUJPN0tDODA5VmZnV21SMjVTM1lJWS1KSnM2VWhWblhLb1VPXzhfOFVJUzdzV3ExU1lOamdvajU0OVpaME1sTG1EQUd1WEZkVGs?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 2216/QĐ-TTg 2026 phê chuẩn miễn nhiệm Phó Chủ tịch UBND tỉnh Vĩnh Long - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSFBiOVEyUkwtOVhHZE1tT3Y3dnFYbzN4eTZHQkc2aFRPSjRDUXZ1V014dkR2amxvSUJYanZVbjFnbUxMb0w2ZzlFUlk4dUxFR2FtZmk1Z1Zma21OVWZTZ1Y5WGtVZ2Q0TWR0cFczc3JIcEhycGpESnNmeVFSWXZyTlhiOXFOWm40UkdacFhYcGd6TjdOSjE1UWJrNGtwSXcydkZyR0RXZS1hblp0VkFmVnltVkJRb2Q4Y1NpeEMycU1IMFBObV8td3hUOE9HRHM?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -18915,6 +18915,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T11:22:57+00:00",
+  "updated_at": "2026-11-19T11:28:48+00:00",
   "version": 1
 }
