@@ -70,21 +70,21 @@
     },
     "https://chinhphu.vn/du-thao-vbqppl": {
       "agency": "Chính phủ - Dự thảo văn bản quy phạm pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T17:36:41+00:00",
+      "last_checked": "2026-11-19T04:07:52+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://chinhphu.vn/du-thao-vbqppl",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Lấy ý kiến nhân dân về dự thảo VBQPPL",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": {
       "agency": "Chính phủ - Dự thảo văn bản quy phạm pháp luật",
@@ -4739,6 +4739,20 @@
       "status": "not_found",
       "title": "Dự thảo Thông tư sửa đổi Thông tư 21/2018/TT-BNNPTNT của Bộ Nông nghiệp và Phát triển nông thôn về việc quy định về ghi, nộp báo cáo, nhật ký khai thác thủy sản; công bố cảng cá chỉ định xác nhận nguồn gốc thủy sản từ khai thác; danh sách tàu cá khai thác thủy sản bất hợp pháp; xác nhận nguyên liệu, chứng nhận nguồn gốc thủy sản khai thác lần 2",
       "verification_status": "not_found"
+    },
+    "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8703-byt-tccb-huong-dan-che-do-phu-cap-uu-dai-nghe-cho-vien-chuc-y-te-186-115894-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "8703/BYT-TCCB",
+      "first_seen": "2026-11-19T04:07:52+00:00",
+      "identity": "number:8703/BYT-TCCB|issuer:BYT-TCCB|locality:",
+      "last_seen": "2026-11-19T04:07:52+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8703-byt-tccb-huong-dan-che-do-phu-cap-uu-dai-nghe-cho-vien-chuc-y-te-186-115894-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Công văn 8703/BYT-TCCB: Hướng dẫn chế độ phụ cấp ưu đãi nghề cho viên chức y tế"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8732-ct-doanh-nghiep-nop-thue-toi-thieu-toan-cau-theo-ma-tieu-muc-1058-186-115836-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -14266,21 +14280,21 @@
     },
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWmxjUkNWYk1MOXRSQnZDc2dXeHkwQ3hCS25oMFVEdDgtaUphZl9OV244UmgtUURaRG1ZbGNtdFdQYWZTOUNrMjZBUFZZUjloeUtCOHhQQmxqWjVKa2hmUUFETnNfVjZhNlBLUlVpUFhxMFNmdDZ5NWFnR01iLWVlSE9YLWFZaVd0YmRkcHFMby1nekIwYUdabWFIMFBlWk0ydU82SXZEOGFpVV9fU1g4WndMdVFZOXZ5aUZjaW9qcHBpV3ZvMWc?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T04:07:50+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:05:02+00:00",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWmxjUkNWYk1MOXRSQnZDc2dXeHkwQ3hCS25oMFVEdDgtaUphZl9OV244UmgtUURaRG1ZbGNtdFdQYWZTOUNrMjZBUFZZUjloeUtCOHhQQmxqWjVKa2hmUUFETnNfVjZhNlBLUlVpUFhxMFNmdDZ5NWFnR01iLWVlSE9YLWFZaVd0YmRkcHFMby1nekIwYUdabWFIMFBlWk0ydU82SXZEOGFpVV9fU1g4WndMdVFZOXZ5aUZjaW9qcHBpV3ZvMWc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quy định chi tiết một số điều và biện pháp thi hành Luật Trợ giúp pháp lý - dms.gov.vn",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxPa3ppa0E0TzZXcFo1SWdGSFFiVmFRUGp1UjUtNHhWV1BXa202TlVabW5EM1g3UXpPWDZzSXRmY0FqaU5nSFlnU0hkdnJxam5fUjJueWZRQkNrMURtZnR3Wkdia2hUWi1zQnBuZjNVaHh6b2wyTFNmbFlkVHR0NzFmeWFoOE5LYXJpRVkyOE92YkVGQUZUaS12RzBmRHhqazI0VUxxRThZeWljZEZhSng5cHFwY2ZJNDdqZ1FmemVXOWtWUGtXSVE?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
@@ -14936,21 +14950,21 @@
     },
     "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZVBiV1BzSURER2xKZ0NBUEQ2WEdzRDJ5Yjlibk0wakdpQTByWENpNlNjeUdQWFV4ZkhYRXdIVnZMX0hvZ3JWZGxmWXlKYW5sWUlleVFRNk0tbkN2SVJmdER0S0dRMnhla1J0ZE1nSnd1WnMwNW9vOUtoYzVoZDdQV0xhdGhqVWtacEhUckIzOXlvaEZEdE9faUVLa3FMNVRicFhubXpDR01MZHdhcjlPZXJRbWZYUzdQRGR6bzgxcTV4RWtMazZQZlJXQQ?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "5927/NHNN-ATHT",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T04:07:50+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:05:02+00:00",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZVBiV1BzSURER2xKZ0NBUEQ2WEdzRDJ5Yjlibk0wakdpQTByWENpNlNjeUdQWFV4ZkhYRXdIVnZMX0hvZ3JWZGxmWXlKYW5sWUlleVFRNk0tbkN2SVJmdER0S0dRMnhla1J0ZE1nSnd1WnMwNW9vOUtoYzVoZDdQV0xhdGhqVWtacEhUckIzOXlvaEZEdE9faUVLa3FMNVRicFhubXpDR01MZHdhcjlPZXJRbWZYUzdQRGR6bzgxcTV4RWtMazZQZlJXQQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Triển khai thực hiện Công văn số 5927/NHNN-ATHT ngày 06 tháng 7 năm 2026 của Ngân hàng Nhà nước Việt Nam - UBND thành phố Cần Thơ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNjlVTHAxX29ZX2pBZFhtdTlOUnkwcUFzOFFZeVBSSEtlMUpfMkpHcDVpT01FUWJwLV9oMzFOVERaalNsNW14ME1KaXktdTEzUXNNMGU0UG1iUEhnNlhESFV4cE5YamFEd1lFRFl3dVJLelRVYzYxUWFUYlBmMXljNmxXT05CclQ0aUJwVHBlY21aWkluVzhoRVZmTmt0WTFrODRXaS1xdkZ5VldLeEdjdjliNVA3clBldFlORUVRNzE1R0d6dTZjWVZFRQ?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15253,21 +15267,21 @@
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS1Y3enI0LVh2dmdmV3I1Z1JWaVN2NEFkQi1jVE1ZS0tUeC0zTFZoSEZrVl9wazRrdlNoVE11TEVTX0p5VnRqMTl4QkpxTm1QSHpVaF9KenhseGRIbXJJLTFlZmY4bjZzWXF3OElGdXRFYm5pTkV0OUhjOTNjalNkelg5OVdSRER1NUJyWnNrUmlEUG1kUGpqRkhudER3V283U1VuVjR6a2QyX0Z2YTh4STlrTlV2X28zbnFQS1lMNHhMYWpORmtqd0xtUU4zUQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "162/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T04:07:50+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:17:26+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS1Y3enI0LVh2dmdmV3I1Z1JWaVN2NEFkQi1jVE1ZS0tUeC0zTFZoSEZrVl9wazRrdlNoVE11TEVTX0p5VnRqMTl4QkpxTm1QSHpVaF9KenhseGRIbXJJLTFlZmY4bjZzWXF3OElGdXRFYm5pTkV0OUhjOTNjalNkelg5OVdSRER1NUJyWnNrUmlEUG1kUGpqRkhudER3V283U1VuVjR6a2QyX0Z2YTh4STlrTlV2X28zbnFQS1lMNHhMYWpORmtqd0xtUU4zUQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 162/2026/QĐ-UBND Quảng Ngãi phân cấp thẩm quyền phê duyệt vị trí việc làm - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTl5RUxacEdmb3hfX0xCU2xLdU5KUkZjalpaYmlOSHVWNVF5cjhpZlVEMmdsMGx4UVBoU003dFBWcWZEay1ySThOaDBNdTNsUko1TzlDZlBTNTk5eUNqMi1BdnhzY0pERFRDbHFlUHlNR3BlTk9jZnc5T29Wc0hoSUt3RTNQLVVFRU9wZzlSTXFOVEh0ZWJGUFBnMWNnLVdQUWN2dC16b1FERTVJUDJzeUtJVkNNT000S092M2xzcy1PdUcwWFF3b0pCM3NaZw?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15327,22 +15341,22 @@
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRGJET2l0RHlvdzhLRFVLaGhJSlhrUUxVcTZ5UHJiMEs1ZV9hVVdrbDYxSDdNek8tbUQ1UmxHN3FSNUVhWDlLcEpGZ3BSMklseFJBTHc5bUlHQnBVTjVhd3N2X2JfZmx3OEFhRzlJWTUzRlRYYjV6UGtocjg1Z0ZpbE5TZ0luRGdzN3lTbTl5RmgybGw5MXBtY2tpbWFGRFBSTjdNaFJaNm16VjJQd0tQLXhzVHZwaHZwakNSQnpRVG9HVUhlMkotYWd2dXU2RmM?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "08/2026/QĐ-CTUBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T04:07:50+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRGJET2l0RHlvdzhLRFVLaGhJSlhrUUxVcTZ5UHJiMEs1ZV9hVVdrbDYxSDdNek8tbUQ1UmxHN3FSNUVhWDlLcEpGZ3BSMklseFJBTHc5bUlHQnBVTjVhd3N2X2JfZmx3OEFhRzlJWTUzRlRYYjV6UGtocjg1Z0ZpbE5TZ0luRGdzN3lTbTl5RmgybGw5MXBtY2tpbWFGRFBSTjdNaFJaNm16VjJQd0tQLXhzVHZwaHZwakNSQnpRVG9HVUhlMkotYWd2dXU2RmM?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 08/2026/QĐ-CTUBND Đắk Lắk phân cấp thẩm quyền xử lý tài sản sở hữu toàn dân - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUHBoWkZTb25VeGhmdDJrT08yWU1DUDFLRXRtQzZfTTFyZF9hMVBQX2NKQ0VsTlVKUWpTNnhVYXdFcnU5Q2JrWEJmeV9uQWNBTWMtSHNrTEhqOUNndDUzalNCbmxNUk1tWFBPdGx3ekxhWEhWNXkyd3pETGtDNzN5U3BoUzJJbUJPN0tDODA5VmZnV21SMjVTM1lJWS1KSnM2VWhWblhLb1VPXzhfOFVJUzdzV3ExU1lOamdvajU0OVpaME1sTG1EQUd1WEZkVGs?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -18232,6 +18246,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T03:52:57+00:00",
+  "updated_at": "2026-11-19T04:07:52+00:00",
   "version": 1
 }
