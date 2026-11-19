@@ -1861,6 +1861,20 @@
       "title": "Nghị quyết số 20-NQ/TU của Ban Chấp hành Đảng bộ tỉnh (Nhiệm vụ và giải pháp)",
       "verification_status": "manual_review"
     },
+    "https://dongnai.gov.vn/vi/gop-y-du-thao/": {
+      "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T17:23:22+00:00",
+      "identity": "url:https://dongnai.gov.vn/vi/gop-y-du-thao/",
+      "last_seen": "2026-11-19T17:23:22+00:00",
+      "link": "https://dongnai.gov.vn/vi/gop-y-du-thao/",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Dự thảo văn bản và Lấy ý kiến nhân dân"
+    },
     "https://dongnai.gov.vn/vi/news/Cac-so-ban-nganh/cong-bo-va-trien-khai-thuc-hien-quyet-dinh-so-3858-qd-ubnd-ve-ban-hanh-danh-muc-song-suoi-kenh-rach-noi-tinh-tren-dia-ban-thanh-pho-dong-nai-64911.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
       "attempts": 3,
@@ -19025,6 +19039,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T16:32:51+00:00",
+  "updated_at": "2026-11-19T17:23:22+00:00",
   "version": 1
 }
