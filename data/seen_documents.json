@@ -270,6 +270,15 @@
       "link": "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123019",
       "title": "Công văn số 10065/VPCP-KGVX của Văn phòng Chính phủ: V/v phương án nghỉ một số dịp Lễ, Tết năm 2026 và năm 2027"
     },
+    "number:101/2006/QĐ-BVHTT|issuer:QĐ-BVHTT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản khác",
+      "doc_number": "101/2006/QĐ-BVHTT",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/van-hoa/quyet-dinh-101-2006-qd-bvhtt-bo-van-hoa-thong-tin-30100-d1.html",
+      "title": "Quyết định 101/2006/QĐ-BVHTT"
+    },
     "number:101/2022/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
       "category": "Văn bản quy phạm pháp luật",
@@ -1235,6 +1244,15 @@
       "link": "https://luatvietnam.vn/hanh-chinh/huong-dan-15-hd-btgtw-2026-dinh-huong-nghien-cuu-ly-luan-giai-doan-2026-2030-452754-d11.html",
       "title": "Hướng dẫn 15-HD/BTGTW của Ban Tuyên giáo Trung ương định hướng nội dung nghiên cứu lý luận giai đoạn 2026 - 2030"
     },
+    "number:15/2016/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "15/2016/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/van-hoa/nghi-dinh-15-2016-nd-cp-chinh-phu-103666-d1.html",
+      "title": "Nghị định 15/2016/NĐ-CP"
+    },
     "number:150/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk ban hành quy định giờ bán hàng": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -1243,6 +1261,15 @@
       "last_seen": "2026-11-18T08:48:52+00:00",
       "link": "https://luatvietnam.vn/thuong-mai/quyet-dinh-150-2026-qd-ubnd-dak-lak-quy-dinh-gio-ban-hang-va-tam-dung-ban-hang-xang-dau-456836-d2.html",
       "title": "Quyết định 150/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Đắk Lắk ban hành Quy định giờ bán hàng, các trường hợp tạm dừng bán hàng và quy trình thông báo trước khi dừng bán hàng tại cửa hàng bán lẻ xăng dầu trên địa bàn tỉnh Đắk Lắk"
+    },
+    "number:151/2026/TT-BTC|issuer:TT-BTC|locality:": {
+      "agency": "Đà Nẵng - Trang chủ tiếng Anh",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "151/2026/TT-BTC",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://danang.gov.vn/vi/web/dng/-/trien-khai-thuc-hien-thong-tu-151-2026-tt-btc-ngay-09-10-2026-cua-bo-truong-bo-tai-chinh",
+      "title": "Triển khai thực hiện Thông tư 151/2026/TT-BTC ngày 09/10/2026 của Bộ trưởng Bộ Tài chính"
     },
     "number:1513/KL-UBDNGS16|issuer:KL-UBDNGS16|locality:": {
       "agency": "UBND xã Lý Sơn",
@@ -1542,6 +1569,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:17110/BXD-QHKT|issuer:BXD-QHKT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
+      "category": "Công văn",
+      "doc_number": "17110/BXD-QHKT",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/bo-xay-dung-khong-duoc-loai-tru-dien-tich-ban-cong-khi-tinh-mat-do-xay-dung-nha-o-rieng-le-186-115899-article.html",
+      "title": "Bộ Xây dựng: Không được loại trừ diện tích ban công khi tính mật độ xây dựng nhà ở riêng lẻ"
+    },
     "number:1714/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -1635,6 +1671,15 @@
       "link": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/huong-dan-so-18-hd-btgtw-ngay-03-11-2026-cua-ban-tuyen-giao-trung-uong-ve-bao-chi-tuyen-truyen-ky-niem-80-nam-hoi-nghi-v.html?categoryId=102000092",
       "title": "Hướng dẫn số 18-HD/BTGTW ngày 03/11/2026 của Ban Tuyên giáo Trung ương về báo chí tuyên truyền kỷ niệm 80 năm Hội nghị Văn hóa toàn quốc lần thứ nhất (24/11/1946 - 24/11/2026), Ngày văn hóa Việt Nam (24/11) và Ngày hội Đại đoàn kết toàn dân tộc (18/11)"
     },
+    "number:18/2025/TT-BVHTTDL|issuer:TT-BVHTTDL|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "18/2025/TT-BVHTTDL",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html",
+      "title": "Thông tư 18/2025/TT-BVHTTDL"
+    },
     "number:1804/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -1697,6 +1742,15 @@
       "last_seen": "2026-11-18T02:06:37+00:00",
       "link": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/cao+diem+chong+buon+lau+hang+gia+dip+tet+nguyen+dan+dinh+mui+2027",
       "title": "Cao điểm chống buôn lậu, hàng giả dịp Tết Nguyên đán Đinh Mùi 2027"
+    },
+    "number:187/2025/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "187/2025/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/nghi-dinh-187-2025-nd-cp-405615-d1.html",
+      "title": "Nghị định 187/2025/NĐ-CP"
     },
     "number:1875/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
@@ -2786,6 +2840,15 @@
       "link": "https://luatvietnam.vn/lao-dong/thong-tu-27-2026-tt-bnv-danh-muc-cong-viec-yeu-cau-nghiem-ngat-ve-an-toan-lao-dong-451907-d1.html",
       "title": "Circular No. 27/2026/TT-BNV dated October 20, 2026 of the Ministry of Home Affairs promulgating the List of jobs subject to strict requirements for occupational safety and health"
     },
+    "number:27/2026/TT-BVHTTDL|issuer:TT-BVHTTDL|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "27/2026/TT-BVHTTDL",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/hon-nhan-gia-dinh/thong-tu-27-2026-tt-bvhttdl-sua-doi-bo-sung-linh-vuc-van-hoa-va-gia-dinh-454616-d1.html",
+      "title": "Thông tư 27/2026/TT-BVHTTDL"
+    },
     "number:2738-CV/BTCTW|issuer:BTCTW|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
       "category": "Văn bản Đảng",
@@ -3031,6 +3094,15 @@
       "last_seen": "2026-11-18T04:12:43+00:00",
       "link": "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123043",
       "title": "Quyết định Ban hành Quy chế Quản lý hoạt động đối ngoại của Bộ Văn hóa, Thể thao và Du lịch"
+    },
+    "number:298/2026/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "298/2026/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-298-2026-nd-cp-quy-dinh-chuc-nang-nhiem-vu-cua-bo-van-hoa-the-thao-va-du-lich-441673-d1.html",
+      "title": "Nghị định 298/2026/NĐ-CP"
     },
     "number:2987/QD-BCT|issuer:QD-BCT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản - Văn bản Tiếng Anh",
@@ -4071,6 +4143,15 @@
       "link": "https://luatvietnam.vn/dau-tu/quyet-dinh-4290-qd-ubnd-lao-cai-2026-mo-rong-mat-duong-tu-xa-mu-cang-chai-den-xa-che-tao-456601-d2.html",
       "title": "Quyết định 4290/QĐ-UBND của Ủy ban nhân dân tỉnh Lào Cai về chủ trương đầu tư dự án Mở rộng mặt đường từ xã Mù Cang Chải đến xã Chế Tạo"
     },
+    "number:43/2025/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "43/2025/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-43-2025-nd-cp-quyen-han-va-co-cau-to-chuc-cua-bo-vhttdl-391749-d1.html",
+      "title": "Nghị định 43/2025/NĐ-CP"
+    },
     "number:43/2025/TT-BKHCN|issuer:TT-BKHCN|locality:": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
       "category": "Dự thảo",
@@ -5031,6 +5112,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220271",
       "title": "74/CĐ-TTg 13/11/2026"
     },
+    "number:76/2013/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "76/2013/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-76-2013-nd-cp-chinh-phu-79810-d1.html",
+      "title": "Nghị định 76/2013/NĐ-CP"
+    },
     "number:761/TB-SXD|issuer:TB-SXD|locality:hải phòng tháng 10 năm 2026 sở xây dựng tp. hải phòng": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -5076,6 +5166,24 @@
       "last_seen": "2026-11-18T16:47:25+00:00",
       "link": "https://moit.gov.vn/du-thao-van-ban/ban-tong-hop-giai-trinh-tiep-thu-y-kien-gop-y-cua-co-quan-to-chuc-ca-nhan-doi-voi-du-thao-nghi-dinh-sua-doi-.html",
       "title": "Bản tổng hợp, giải trình, tiếp thu ý kiến với dự thảo Nghị định sửa đổi, bổ sung một số điều của Nghị định 77/2023/NĐ-CP và Nghị định 66/2024/NĐ-CP về nhập khẩu hàng hóa tân trang"
+    },
+    "number:78/2025/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "78/2025/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/nghi-dinh-78-2025-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-ban-hanh-van-ban-quy-pham-phap-luat-396523-d1.html",
+      "title": "Nghị định 78/2025/NĐ-CP"
+    },
+    "number:79/2012/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "79/2012/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/van-hoa/nghi-dinh-79-2012-nd-cp-chinh-phu-73969-d1.html",
+      "title": "Nghị định 79/2012/NĐ-CP"
     },
     "number:79/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng - Danh mục tra cứu",
@@ -5322,6 +5430,15 @@
       "link": "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/cong-van-so-9244-bct-tttn-thong-bao-ve-viec-dieu-hanh-gia-ban-xang-dau-ngay-3-11-2026.html",
       "title": "Công văn số 9244/BCT-TTTN thông báo về việc điều hành giá bán xăng dầu ngày 3/11/2026"
     },
+    "number:93/2020/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "93/2020/NĐ-CP",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/van-hoa/nghi-dinh-93-2020-nd-cp-huong-dan-luat-thu-vien-189179-d1.html",
+      "title": "Nghị định 93/2020/NĐ-CP"
+    },
     "number:93/2026/TT-BGDĐT|issuer:TT-BGDĐT|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -5432,6 +5549,15 @@
       "last_seen": "2026-11-18T13:27:58+00:00",
       "link": "https://luatvietnam.vn/hanh-chinh/van-ban-hop-nhat-98-2026-vbhn-tt-bnnmt-2026-quy-dinh-trang-phuc-phu-hieu-cap-hieu-bien-hieu-va-the-cong-chuc-kiem-dich-thuc-vat-451844-d5.html",
       "title": "Văn bản hợp nhất 98/2026/VBHN-TT-BNNMT do Bộ Nông nghiệp và Môi trường ban hành hợp nhất Thông tư quy định trang phục, phù hiệu, cấp hiệu, biển hiệu và thẻ công chức kiểm dịch thực vật"
+    },
+    "number:9846/BCT-TTTN|issuer:BCT-TTTN|locality:": {
+      "agency": "Bộ Công Thương - Văn bản pháp luật",
+      "category": "Công văn",
+      "doc_number": "9846/BCT-TTTN",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/van-ban-so-9846-bct-tttn-ve-viec-thong-bao-dieu-hanh-gia-ban-xang-dau.html",
+      "title": "Văn bản số 9846/BCT-TTTN về việc thông báo điều hành giá bán xăng dầu ngày 19/11/2026"
     },
     "number:99/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh quy định danh mục trang cấp đồ dùng cá nhân": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -6010,6 +6136,24 @@
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/hanh-chinh/du-thao-thong-tu-quy-dinh-quy-chuan-ky-thuat-va-cau-truc-du-lieu-tai-lieu-luu-tru-454871-d10.html",
       "title": "Dự thảo Thông tư quy định về quy chuẩn kỹ thuật và cấu trúc dữ liệu tài liệu lưu trữ trao đổi với Cơ sở dữ liệu tài liệu lưu trữ Phông Lưu trữ Nhà nước Việt Nam"
+    },
+    "url:https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-64-2025-qh15-391363-d1.html": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-64-2025-qh15-391363-d1.html",
+      "title": "Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    "url:https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-sua-doi-2025-so-87-2025-qh15-403951-d1.html": {
+      "agency": "LuatVietnam - Văn bản mới - Tổng quan",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-sua-doi-2025-so-87-2025-qh15-403951-d1.html",
+      "title": "Luật Ban hành văn bản quy phạm pháp luật sửa đổi 2025"
     },
     "url:https://luatvietnam.vn/hinh-su/du-thao-nghi-quyet-huong-dan-ap-dung-quy-dinh-ve-toi-xam-pham-quyen-tac-gia-va-so-huu-cong-nghiep-455776-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
@@ -6646,6 +6790,15 @@
       "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048",
       "title": "Giấy mời họp nghe báo cáo, chỉ đạo giải ngân kế hoạch vốn đầu tư công năm 2026"
     },
+    "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/A4F09C5DFF4D99D247258EB40026F2FB": {
+      "agency": "Cổng QPPL Hà Tĩnh - Trang chủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T08:42:20+00:00",
+      "last_seen": "2026-11-19T08:42:20+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/A4F09C5DFF4D99D247258EB40026F2FB",
+      "title": "Thông tư của Bộ trưởng Bộ Tài chính quy định miễn phí thăm quan vào Ngày Văn hóa Việt Nam"
+    },
     "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/F48F5472EA67CBE047258EA40015195B": {
       "agency": "Cổng QPPL Hà Tĩnh - UBND tỉnh",
       "category": "Dự thảo",
@@ -7099,6 +7252,7 @@
     "https://danang.gov.vn/nghi-quyet-hdnd": "legacy_sheet_url:https://danang.gov.vn/nghi-quyet-hdnd",
     "https://danang.gov.vn/v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-pl": "legacy_sheet_url:https://danang.gov.vn/v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-pl",
     "https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G": "legacy_sheet_url:https://danang.gov.vn/vi/w/toan-van-28-nghi-dinh-ve-phan-quyen-phan-cap-phan-dinh-tham-quyen-giua-chinh-phu-va-chinh-quyen-dia-phuong-2-cap?gidzl=ZZoS6q6ttm2F9vGTGwZR1eqZbHbQ_DfHm2QPI0shWW7589rE2lhKKi5ncKyAhD07a2IT6cRvldegHBFM0G",
+    "https://danang.gov.vn/vi/web/dng/-/trien-khai-thuc-hien-thong-tu-151-2026-tt-btc-ngay-09-10-2026-cua-bo-truong-bo-tai-chinh": "number:151/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat": "legacy_sheet_url:https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat",
     "https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281": "legacy_sheet_url:https://danang.gov.vn/web/dng/hoi-dap-public?p_p_id=HoiDap_WAR_sdthoidapportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_HoiDap_WAR_sdthoidapportlet_action=chiTietHoiDapPublic&hoiDapId=36281",
     "https://dangcongsan.vn/co-quan-dang-trung-uong/huong-dan-kiem-diem-danh-gia-xep-loai-nam-2026.html": "url:https://dangcongsan.vn/co-quan-dang-trung-uong/huong-dan-kiem-diem-danh-gia-xep-loai-nam-2026.html",
@@ -7417,6 +7571,9 @@
     "https://luatvietnam.vn/chinh-sach/quyet-dinh-97-2026-qd-ubnd-tp-ho-chi-minh-quy-dinh-chinh-sach-bien-phap-to-chuc-thuc-hien-nen-hanh-chinh-so-456551-d2.html": "legacy_sheet_url:https://luatvietnam.vn/chinh-sach/quyet-dinh-97-2026-qd-ubnd-tp-ho-chi-minh-quy-dinh-chinh-sach-bien-phap-to-chuc-thuc-hien-nen-hanh-chinh-so-456551-d2.html",
     "https://luatvietnam.vn/chinh-sach/van-ban-hop-nhat-12-2026-vbhn-nd-bnv-2026-ve-che-do-chinh-sach-thanh-nien-xung-phong-mien-nam-khang-chien-454448-d5.html": "number:12/2026/VBHN-NĐ-BNV|issuer:VBHN-NĐ-BNV|locality:",
     "https://luatvietnam.vn/chinh-sach/van-ban-hop-nhat-22-2026-vbhn-tt-bvhttdl-2026-quy-dinh-ho-tro-xay-dung-gia-dinh-hanh-phuc-456804-d5.html": "number:22/2026/VBHN-TT-BVHTTDL|issuer:VBHN-TT-BVHTTDL|locality:",
+    "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-298-2026-nd-cp-quy-dinh-chuc-nang-nhiem-vu-cua-bo-van-hoa-the-thao-va-du-lich-441673-d1.html": "number:298/2026/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-43-2025-nd-cp-quyen-han-va-co-cau-to-chuc-cua-bo-vhttdl-391749-d1.html": "number:43/2025/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/co-cau-to-chuc/nghi-dinh-76-2013-nd-cp-chinh-phu-79810-d1.html": "number:76/2013/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-121-2026-qd-ubnd-hue-phan-cap-quan-ly-nha-nuoc-an-toan-dap-ho-chua-thuy-loi-456908-d2.html": "number:121/2026/QĐ-UBND|issuer:QĐ-UBND|locality:huế phân cấp trách nhiệm quản lý nhà nước về an toàn đập",
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-135-2026-qd-ubnd-tuyen-quang-bai-bo-quyet-dinh-quy-pham-phap-luat-chuc-nang-nhiem-vu-chi-cuc-456801-d2.html": "number:135/2026/QĐ-UBND|issuer:QĐ-UBND|locality:tuyên quang bãi bỏ các quyết định quy phạm pháp luật của ủy ban nhân dân tỉnh tuyên quang quy định chức năng",
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2228-qd-ttg-2026-phe-chuan-mien-nhiem-chu-tich-ubnd-tp-hcm-nhiem-ky-2026-2031-456514-d1.html": "legacy_sheet_url:https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2228-qd-ttg-2026-phe-chuan-mien-nhiem-chu-tich-ubnd-tp-hcm-nhiem-ky-2026-2031-456514-d1.html",
@@ -7517,6 +7674,10 @@
     "https://luatvietnam.vn/hanh-chinh/huong-dan-7-hd-btctw-2026-ra-soat-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-he-thong-chinh-tri-452012-d11.html": "number:7-HD/BTCTW|issuer:BTCTW|locality:",
     "https://luatvietnam.vn/hanh-chinh/ke-hoach-445-kh-ubnd-thanh-hoa-2026-thi-diem-danh-gia-cham-diem-cai-cach-thu-tuc-hanh-chinh-456599-d2.html": "number:445/KH-UBND|issuer:KH-UBND|locality:thanh hóa triển khai thực hiện đề án thí điểm đánh giá",
     "https://luatvietnam.vn/hanh-chinh/ke-hoach-71-kh-btctw-2026-xay-dung-co-so-du-lieu-vi-tri-viec-lam-va-phuong-an-giao-bien-che-452755-d11.html": "number:71-KH/BTCTW|issuer:BTCTW|locality:",
+    "https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-64-2025-qh15-391363-d1.html": "url:https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-64-2025-qh15-391363-d1.html",
+    "https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-sua-doi-2025-so-87-2025-qh15-403951-d1.html": "url:https://luatvietnam.vn/hanh-chinh/luat-ban-hanh-van-ban-quy-pham-phap-luat-sua-doi-2025-so-87-2025-qh15-403951-d1.html",
+    "https://luatvietnam.vn/hanh-chinh/nghi-dinh-187-2025-nd-cp-405615-d1.html": "number:187/2025/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/hanh-chinh/nghi-dinh-78-2025-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-ban-hanh-van-ban-quy-pham-phap-luat-396523-d1.html": "number:78/2025/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/hanh-chinh/nghi-quyet-28-nq-tw-2026-ve-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv-450478-d11.html": "number:28-NQ/TW|issuer:TW|locality:",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-122-2026-qd-ubnd-vinh-long-quy-che-cong-nhan-nghe-truyen-thong-lang-nghe-456312-d2.html": "legacy_sheet_url:https://luatvietnam.vn/hanh-chinh/quyet-dinh-122-2026-qd-ubnd-vinh-long-quy-che-cong-nhan-nghe-truyen-thong-lang-nghe-456312-d2.html",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-2616-qd-ubnd-dien-bien-2026-cong-bo-danh-muc-thu-tuc-va-quy-trinh-noi-bo-ung-pho-su-co-tran-dau-456945-d2.html": "number:2616/QĐ-UBND|issuer:QĐ-UBND|locality:điện biên về việc công bố danh mục thủ tục hành chính và phê duyệt quy trình nội bộ trong giải quyết thủ tục hành chính lĩnh vực ứng phó sự cố tràn dầu thuộc thẩm quyền giải quyết của sở nông nghiệp và môi trường",
@@ -7536,6 +7697,7 @@
     "https://luatvietnam.vn/hanh-chinh/van-ban-hop-nhat-98-2026-vbhn-tt-bnnmt-2026-quy-dinh-trang-phuc-phu-hieu-cap-hieu-bien-hieu-va-the-cong-chuc-kiem-dich-thuc-vat-451844-d5.html": "number:98/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
     "https://luatvietnam.vn/hinh-su/du-thao-nghi-quyet-huong-dan-ap-dung-quy-dinh-ve-toi-xam-pham-quyen-tac-gia-va-so-huu-cong-nghiep-455776-d10.html": "url:https://luatvietnam.vn/hinh-su/du-thao-nghi-quyet-huong-dan-ap-dung-quy-dinh-ve-toi-xam-pham-quyen-tac-gia-va-so-huu-cong-nghiep-455776-d10.html",
     "https://luatvietnam.vn/hon-nhan-gia-dinh/quyet-dinh-125-2026-qd-ubnd-dong-nai-quy-che-phoi-hop-phong-chong-bao-luc-gia-dinh-456941-d2.html": "number:125/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đồng nai ban hành quy chế phối hợp liên ngành trong hoạt động phòng",
+    "https://luatvietnam.vn/hon-nhan-gia-dinh/thong-tu-27-2026-tt-bvhttdl-sua-doi-bo-sung-linh-vuc-van-hoa-va-gia-dinh-454616-d1.html": "number:27/2026/TT-BVHTTDL|issuer:TT-BVHTTDL|locality:",
     "https://luatvietnam.vn/khoa-hoc/cong-van-1221-cv-dub-2026-tuyen-truyen-cuoc-thi-truc-tuyen-tim-hieu-chuyen-doi-so-quoc-gia-450888-d11.html": "number:1221-CV/ĐUB|issuer:ĐUB|locality:",
     "https://luatvietnam.vn/khoa-hoc/cong-van-538-cv-btgdv-2026-tuyen-truyen-cuoc-thi-truc-tuyen-tim-hieu-chuyen-doi-so-quoc-gia-450887-d11.html": "number:538-CV/BTGDV|issuer:BTGDV|locality:",
     "https://luatvietnam.vn/khoa-hoc/du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-so-huu-tri-tue-455481-d10.html": "url:https://luatvietnam.vn/khoa-hoc/du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-so-huu-tri-tue-455481-d10.html",
@@ -7665,6 +7827,7 @@
     "https://luatvietnam.vn/thuong-mai/quyet-dinh-4006-qd-ubnd-khanh-hoa-2026-xay-dung-quan-ly-va-thuc-hien-chuong-trinh-xuc-tien-thuong-mai-456291-d2.html": "legacy_sheet_url:https://luatvietnam.vn/thuong-mai/quyet-dinh-4006-qd-ubnd-khanh-hoa-2026-xay-dung-quan-ly-va-thuc-hien-chuong-trinh-xuc-tien-thuong-mai-456291-d2.html",
     "https://luatvietnam.vn/thuong-mai/van-ban-hop-nhat-02-2026-vbhn-qd-ubnd-2026-quy-dinh-phan-cap-va-phan-cong-nhiem-vu-quan-ly-gia-bac-ninh-456960-d5.html": "number:02/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:bắc ninh ban hành hợp nhất quyết định quy định phân cấp và phân công nhiệm vụ để thực hiện quản lý nhà nước về giá và thẩm định giá trên địa bàn thành phố bắc ninh luatvietnam - văn bản mới - văn bản hợp nhất",
     "https://luatvietnam.vn/tin-van-ban-moi/10-nganh-khoa-hoc-va-cong-nghe-trong-linh-vuc-cong-nghiep-quoc-phong-186-115865-article.html": "number:159/2026/TT-BQP|issuer:TT-BQP|locality:",
+    "https://luatvietnam.vn/tin-van-ban-moi/bo-xay-dung-khong-duoc-loai-tru-dien-tich-ban-cong-khi-tinh-mat-do-xay-dung-nha-o-rieng-le-186-115899-article.html": "number:17110/BXD-QHKT|issuer:BXD-QHKT|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-11636-pho-thu-tuong-yeu-cau-tao-co-che-ho-tro-thanh-nien-tim-viec-lam-186-115696-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/cong-van-11636-pho-thu-tuong-yeu-cau-tao-co-che-ho-tro-thanh-nien-tim-viec-lam-186-115696-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8732-ct-doanh-nghiep-nop-thue-toi-thieu-toan-cau-theo-ma-tieu-muc-1058-186-115836-article.html": "number:8732/CT|issuer:CT|locality:",
@@ -7689,6 +7852,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-du-lieu-linh-vuc-lam-nghiep-duoc-quan-ly-theo-10-nhom-186-115870-article.html": "number:43/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
     "https://luatvietnam.vn/tu-phap/nghi-dinh-413-2026-nd-cp-sua-doi-nghi-dinh-104-2025-nd-cp-ve-luat-cong-chung-456590-d1.html": "legacy_sheet_url:https://luatvietnam.vn/tu-phap/nghi-dinh-413-2026-nd-cp-sua-doi-nghi-dinh-104-2025-nd-cp-ve-luat-cong-chung-456590-d1.html",
     "https://luatvietnam.vn/tu-phap/quyet-dinh-112-2026-qd-ubnd-lam-dong-quy-dinh-muc-tran-chi-phi-in-chup-danh-may-giay-to-456910-d2.html": "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định mức trần chi phí in",
+    "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html": "number:18/2025/TT-BVHTTDL|issuer:TT-BVHTTDL|locality:",
     "https://luatvietnam.vn/tu-phap/van-ban-hop-nhat-8-2026-vbhn-tt-btp-2026-huong-dan-thi-hanh-luat-luat-su-va-nghi-dinh-chi-tiet-452190-d5.html": "number:8/2026/VBHN-TT-BTP|issuer:VBHN-TT-BTP|locality:",
     "https://luatvietnam.vn/van-hoa/cong-van-11224-ubnd-vx-tp-hcm-2026-ban-phao-hoa-no-ngay-van-hoa-viet-nam-456508-d2.html": "legacy_sheet_url:https://luatvietnam.vn/van-hoa/cong-van-11224-ubnd-vx-tp-hcm-2026-ban-phao-hoa-no-ngay-van-hoa-viet-nam-456508-d2.html",
     "https://luatvietnam.vn/van-hoa/du-thao-thong-tu-quan-ly-mua-ban-hang-hoa-quoc-te-thuoc-quan-ly-van-hoa-cua-bo-vhttdl-455478-d10.html": "url:https://luatvietnam.vn/van-hoa/du-thao-thong-tu-quan-ly-mua-ban-hang-hoa-quoc-te-thuoc-quan-ly-van-hoa-cua-bo-vhttdl-455478-d10.html",
@@ -7696,6 +7860,10 @@
     "https://luatvietnam.vn/van-hoa/du-thao-thong-tu-quy-dinh-tieu-chi-phan-loai-va-dieu-kien-to-chuc-don-vi-su-nghiep-cong-lap-454521-d10.html": "url:https://luatvietnam.vn/van-hoa/du-thao-thong-tu-quy-dinh-tieu-chi-phan-loai-va-dieu-kien-to-chuc-don-vi-su-nghiep-cong-lap-454521-d10.html",
     "https://luatvietnam.vn/van-hoa/ke-hoach-416-kh-ubnd-bac-ninh-trien-khai-thuc-hien-ke-hoach-84-kh-tu-phat-trien-du-lich-456881-d2.html": "number:416/KH-UBND|issuer:KH-UBND|locality:bắc ninh triển khai thực hiện kế hoạch 84-kh/tu ngày 24/9/2026 của ban thường vụ thành ủy thực hiện nghị quyế 26-nq/tw ngày 22/8/2026 của bộ chính trị về phát triển du lịch trở thành ngành kinh tế mũi nhọn trong kỷ nguyên mới luatvietnam - văn bản mới",
     "https://luatvietnam.vn/van-hoa/ke-hoach-4600-kh-ubnd-cao-bang-to-chuc-hoat-dong-ky-niem-ngay-le-lon-giai-doan-2026-2030-456865-d2.html": "number:4600/KH-UBND|issuer:KH-UBND|locality:cao bằng tổ chức các hoạt động kỷ niệm các ngày lễ lớn và sự kiện lịch sử quan trọng của đất nước",
+    "https://luatvietnam.vn/van-hoa/nghi-dinh-15-2016-nd-cp-chinh-phu-103666-d1.html": "number:15/2016/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/van-hoa/nghi-dinh-79-2012-nd-cp-chinh-phu-73969-d1.html": "number:79/2012/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/van-hoa/nghi-dinh-93-2020-nd-cp-huong-dan-luat-thu-vien-189179-d1.html": "number:93/2020/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://luatvietnam.vn/van-hoa/quyet-dinh-101-2006-qd-bvhtt-bo-van-hoa-thong-tin-30100-d1.html": "number:101/2006/QĐ-BVHTT|issuer:QĐ-BVHTT|locality:",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-142-2026-qd-ubnd-an-giang-bai-bo-quyet-dinh-12-2021-qd-ubnd-ve-bo-don-gia-dich-vu-cong-456967-d2.html": "number:142/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-210-2026-qd-ubnd-ca-mau-quy-dinh-tieu-chi-phat-trien-van-hoa-toan-dien-cap-xa-456940-d2.html": "number:210/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cà mau quy định tiêu chí",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-2196-qd-ttg-2026-phe-duyet-de-an-dua-tac-pham-nghe-thuat-dinh-cao-ve-nuoc-456240-d1.html": "legacy_sheet_url:https://luatvietnam.vn/van-hoa/quyet-dinh-2196-qd-ttg-2026-phe-duyet-de-an-dua-tac-pham-nghe-thuat-dinh-cao-ve-nuoc-456240-d1.html",
@@ -7893,6 +8061,7 @@
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/cong-van-so-9149-bct-tttn-thong-bao-gia-ban-mat-hang-xang.html": "number:9149/BCT-TTTN|issuer:BCT-TTTN|locality:",
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/cong-van-so-9244-bct-tttn-thong-bao-ve-viec-dieu-hanh-gia-ban-xang-dau-ngay-3-11-2026.html": "number:9244/BCT-TTTN|issuer:BCT-TTTN|locality:",
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/cong-van-so-9589-bct-tttn-thong-bao-dieu-hanh-gia-ban-xang-dau.html": "legacy_sheet_url:https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/cong-van-so-9589-bct-tttn-thong-bao-dieu-hanh-gia-ban-xang-dau.html",
+    "https://moit.gov.vn/van-ban-phap-luat/van-ban-dieu-hanh/van-ban-so-9846-bct-tttn-ve-viec-thong-bao-dieu-hanh-gia-ban-xang-dau.html": "number:9846/BCT-TTTN|issuer:BCT-TTTN|locality:",
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-hop-nhat-thong-tu-so-136-2026-vbhn-tt-bct-ve-quy-chuan-ky-thuat-quoc-gia-doi-voi-san-pham-khan-giay-va-giay-ve-s.html": "url:https://moit.gov.vn/van-ban-phap-luat/van-ban-hop-nhat-thong-tu-so-136-2026-vbhn-tt-bct-ve-quy-chuan-ky-thuat-quoc-gia-doi-voi-san-pham-khan-giay-va-giay-ve-s.html",
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-dien-ve-viec-chu-dong-ung-pho-voi-mua-lon-lu-ngap-lut-lu-quet-sat-lo-dat-khu-vuc-trung-bo.html": "number:9449/CĐ|issuer:CĐ|locality:",
     "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-van-trien-khai-nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-nam-2026.html": "legacy_sheet_url:https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-van-trien-khai-nghi-quyet-phien-hop-chinh-phu-thuong-ky-thang-10-nam-2026.html",
@@ -8201,6 +8370,7 @@
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/92A4C9D828B319B547258E83000DCD01": "number:25/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh cổng qppl hà tĩnh - hđnd tỉnh",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/96812A60C0A7BF9A47258E9D002317C7": "number:48/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/99F522A831914A4F47258E83000D7210": "number:45/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/A4F09C5DFF4D99D247258EB40026F2FB": "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/A4F09C5DFF4D99D247258EB40026F2FB",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/B37A66BAF87E7CA547258E8400330FC7": "number:42/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/CFC1A3C968120E6A47258E840032FD5A": "number:27/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh đến năm 2030 cổng qppl hà tĩnh - hđnd tỉnh",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/F48F5472EA67CBE047258EA40015195B": "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/F48F5472EA67CBE047258EA40015195B",
