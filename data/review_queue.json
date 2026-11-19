@@ -9730,21 +9730,21 @@
     },
     "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQU9Yd3Y5Q0xOa1hJRnpzQjN2WlVVMklMaEpSSmlOa1BqblZxRVAySlFQMUpBYVFpY2hndzZWUUVYLURBMFNQUmh3aXdYdDNOVWtQczFhd1pQUTJJUlVzczJJUzlUQnE2SUM5THdaTVZGT191RWE4Mm9PTjE4TnotaHJQUkdrLUlORjFwVEpSSDk0VDVqZmRwWDQzVHpzMWFTVnVOOGFzWldMTGhRRW04UmpKWUJWcFU1Y0FLbm5tRC00TGNhRUNDU3hXR2cwS1VaNWkydGctdHV2MHZHVTF3VGRn?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2236/QĐ-TTG",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:03:13+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQU9Yd3Y5Q0xOa1hJRnpzQjN2WlVVMklMaEpSSmlOa1BqblZxRVAySlFQMUpBYVFpY2hndzZWUUVYLURBMFNQUmh3aXdYdDNOVWtQczFhd1pQUTJJUlVzczJJUzlUQnE2SUM5THdaTVZGT191RWE4Mm9PTjE4TnotaHJQUkdrLUlORjFwVEpSSDk0VDVqZmRwWDQzVHpzMWFTVnVOOGFzWldMTGhRRW04UmpKWUJWcFU1Y0FLbm5tRC00TGNhRUNDU3hXR2cwS1VaNWkydGctdHV2MHZHVTF3VGRn?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 2236/QĐ-TTg 2026 phê chuẩn kết quả bầu Phó Chủ tịch UBND Đồng Nai nhiệm kỳ 2026-2031 - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORHVMQVBuM3NRVTlfQlpZOVNEanNGQll2SlhmRUNITUlRcm9JTHM5ZjFta0NFUm1fc3hZakRoQVFyOW5MclQ1cXFUWVFDTy1zV2JROHZ4VEFKZE9rclE4ZWtWOU5PcEFWUVpsR2FvWnEwMjNXUWtzMXEwS1N1eWxKeGlpZjE4NkRXcTdzX3E1b0F4NDFSRDREcW4yMWZDbm9Ya0hYMzg5X3hxUnFsZ2R5djRSOEJGcXVlZnpmdnVmTWYzTElyQXc2NmtsQkhwcEJUdnJteF9qMDVHLXhfbzRDaExB?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -9974,21 +9974,21 @@
     },
     "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSUNEcGNXX3Z1dmlXQThXb19BQjl5YWJ6ZHhJQWVPaEF2Wm1zc2tBM1ZPcVc0MmlRbkdFSkMzc0YxaFg2eHVkWDk0MTViZmhCempRd2Zxai1xUDRwNFM2RjJXLXptMV9ldHhWNzY5RXFRNEJEaURNNW9MemFqWFgzZFpCc0pTYmJwbnZVQmJfS1gybE1RNmY2UzQxWHFOS3pPQ0wxRUhsbGFfYVFSMF9ORHdRUVpzUVU2ZURXS0JFYURTb0ZSSnp2UjdEOEFKM1lNdml2ODhYZmsxT0RRWHVhS1JESQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "7569/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:03:13+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSUNEcGNXX3Z1dmlXQThXb19BQjl5YWJ6ZHhJQWVPaEF2Wm1zc2tBM1ZPcVc0MmlRbkdFSkMzc0YxaFg2eHVkWDk0MTViZmhCempRd2Zxai1xUDRwNFM2RjJXLXptMV9ldHhWNzY5RXFRNEJEaURNNW9MemFqWFgzZFpCc0pTYmJwbnZVQmJfS1gybE1RNmY2UzQxWHFOS3pPQ0wxRUhsbGFfYVFSMF9ORHdRUVpzUVU2ZURXS0JFYURTb0ZSSnp2UjdEOEFKM1lNdml2ODhYZmsxT0RRWHVhS1JESQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 7569/QĐ-UBND TP Hồ Chí Minh 2026 phê duyệt khu vực không đấu giá quyền khai thác khoáng sản - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaGZ3eXBQWm5LV2FWaExXTkJYZmRFNklWX0FaQ0U1RzdwTTZCR0ZZSVp6UmZFWGEwWV84V2RBNXJnd2pWQUdPRFFrVGpxQ01NY3dWSEZVNXB6UXE1ZHpVNzlpSVF6VHlfU1IxQlRsQnFTT2VkQ2o5SERvdm9Qc2d4YXh5SmJKQVJlT1ktVFByaDJ2azhYT3ZhcGpPTHM1Q1JwcFpKeDhRdnprckdHR2RQeG1yY0YtNU1UWG9BTUtIa1g5RmM5aWoyc0NLZ2EycEVQdEhwVEFpX3ZqRHJKZktSdTlUTQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -10049,21 +10049,21 @@
     },
     "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMnJ2N1Z1bmhEYmJjSFdmUkVFUUFfaDR6OHc5RVVXLXdFNVB6U1FfdTFzSFhHS2ZIYjRvSTJLSDVZMVA2NklNYUJ4Y1UybXZhUGtUTmU1S09sVUZCLVZBQnFXZE12c2RoTzNFQjBjVS1ZNUI1WjI3VWVuN3RBTXNqdEplNFJLelZPamdNemxIaHdIc3k2LWhNX0tobWxqN2pha0xEQ1VVWVMwVVRjaUo1LUFuOWN3bUpfYWdzWW9SOFlqLUNlejYyYTdHSlJORFVIeG1oR0kxdG9xbVlHN3RyLVdzNms?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "4006/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:03:13+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMnJ2N1Z1bmhEYmJjSFdmUkVFUUFfaDR6OHc5RVVXLXdFNVB6U1FfdTFzSFhHS2ZIYjRvSTJLSDVZMVA2NklNYUJ4Y1UybXZhUGtUTmU1S09sVUZCLVZBQnFXZE12c2RoTzNFQjBjVS1ZNUI1WjI3VWVuN3RBTXNqdEplNFJLelZPamdNemxIaHdIc3k2LWhNX0tobWxqN2pha0xEQ1VVWVMwVVRjaUo1LUFuOWN3bUpfYWdzWW9SOFlqLUNlejYyYTdHSlJORFVIeG1oR0kxdG9xbVlHN3RyLVdzNms?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 4006/QĐ-UBND Khánh Hòa 2026 xây dựng, quản lý và thực hiện Chương trình xúc tiến thương mại - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUTVUbDI4RFdCQXFfdGlNdkVRbExvTkVSVzkxU0FsQldSQjN6TjdTQVZDeDF0RlRoM2RVT0xLa0RZUnZTeDhkSWJJWXVzWDZHQlNRZDlHdjNaVk14UmJaQ1NhOEp3alJ5am95Y0N1SzFibU9KRVQtSEdrVnRSTFMwVDFOVU5UemtJQWR1MnREelJ5YV9kVUY0Wk9kdnpoczN1dFdVRnlRNHQ5RUlKTGZUYWZxWnZYaWU5eVFhR3Z5bG9jYkViNXdMLVZYZ0JKemRjUDZJUngtVlNneFptbUpWRlVDVHM?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -10143,21 +10143,21 @@
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWmN1SHZaejU5dGJYZnBGRWpRdUVELU5vd1ZNdU5YMXhHTmpIdDlRTjVUV3lYMEx2WWNtM29WMGRfX2tsTHhNOFFRdTNQc1RQbnFtcmZEZ3hnSjBkVC02eHJ0c244dkNFbEgtbmdGQjNtYmpxZTB6Z0lzb3lueHlQZUdRNC1WenhfdEVDUUhxUmxJWVJzb1cyNWZSLVZmcTAtekNIRHpRT0hrSGh2UlEwaTR5WWJIaFVLQl9nZlVzdFo3WklHd04ydkltWjhMRlk4SE9XdmNBWHBwcHU0SnVpa1FvZ0tMZw?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "55/2026/TT-BGDĐT",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:03:13+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWmN1SHZaejU5dGJYZnBGRWpRdUVELU5vd1ZNdU5YMXhHTmpIdDlRTjVUV3lYMEx2WWNtM29WMGRfX2tsTHhNOFFRdTNQc1RQbnFtcmZEZ3hnSjBkVC02eHJ0c244dkNFbEgtbmdGQjNtYmpxZTB6Z0lzb3lueHlQZUdRNC1WenhfdEVDUUhxUmxJWVJzb1cyNWZSLVZmcTAtekNIRHpRT0hrSGh2UlEwaTR5WWJIaFVLQl9nZlVzdFo3WklHd04ydkltWjhMRlk4SE9XdmNBWHBwcHU0SnVpa1FvZ0tMZw?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Chuẩn chương trình đào tạo giáo dục nghề nghiệp theo Thông tư 55/2026/TT-BGDĐT như thế nào? - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTWxPeHF2VDNzYXhxak84Zm12UFNhMG1FazY1QXVGcFU3MHN6QjdCQmRUNVVtaWxrcWQ5aC1QYy1Wa1gwazJoYUMyTzU0YlJZNk5lYkVIcXVtZGRoWkMxbFFrQm1tNjM5WU1EZUEwd3FZcnZrNHd2SWVPRFEzbmU4NFY1bUppMnpzMUo3Nld4RS1paFRwSFNSUTVSMWZyOEN2bEVrTTVoVXpRTlQyUWFRMEo5SDFDTzFBMnhUR3FFTmJLd0VERWVvZ3NwTGZlbUs2ejZUV3lzTHM0cC1SSGh0QmpCTWZjQQ?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -10294,21 +10294,21 @@
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaDBualJOY2J4bkU2UGg4cWNtTXIzZnhyM1JoWS1HeFJlbGZFel9ELXIteGpFYk1ZSlZ0Nkc0ZEtwNmtoMFY5MEFleEJmMTN2dkZsVkg5T2p1NmczVkY0dVZ6cjdqdnJPSXpPbEExUU9oUWRkaC05UnBNRnBibk9JdDVHVlVEMlQ5SWhMc2lqb3ZIQzZjVGEySEJaeFZZcFVlNFJkekVKMGlJNmlpa0JFa3ltaV9aS3I0a2pvY3pHcWRmZDZaY3oxZUxEUDVucWVYeTlaN21LQ2hRM3NGX2R1WUIxWXNoYVk?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "13/2026/TT-BTP",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:03:13+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaDBualJOY2J4bkU2UGg4cWNtTXIzZnhyM1JoWS1HeFJlbGZFel9ELXIteGpFYk1ZSlZ0Nkc0ZEtwNmtoMFY5MEFleEJmMTN2dkZsVkg5T2p1NmczVkY0dVZ6cjdqdnJPSXpPbEExUU9oUWRkaC05UnBNRnBibk9JdDVHVlVEMlQ5SWhMc2lqb3ZIQzZjVGEySEJaeFZZcFVlNFJkekVKMGlJNmlpa0JFa3ltaV9aS3I0a2pvY3pHcWRmZDZaY3oxZUxEUDVucWVYeTlaN21LQ2hRM3NGX2R1WUIxWXNoYVk?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Triển khai thực hiện Thông tư số 13/2026/TT-BTP và Thông tư số 14/2026/TT-BTP của Bộ Tư pháp - Cổng Thông tin điện tử tỉnh Tuyên Quang",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMi1PUkxsMVplN3FieE1LNHdGSWhRS3UzTHg5ZjVQZ2ZRUHdJV1FQcWdsanVTcG81WHpUcXpTb2ZlZlNkOHcwbko1SnRzTFBEbmlpZjdWbFVqZVJhck1PaEJ5MXdtcUFIb2kxMUtvbGhuWjZHOEk0T0E3VnhrejhMOW9rdHRiVzlvWlh5T3JIX2FZQWdsRjdDUUU3NmFHUnpCLTRNdWJUWjlFM244cWtrWnExaXh1WHNnVFZaZWo2V2Zpb0sxZ01pLWZFa1RzRGRKR3VlMnp0RmIzQjREVl9XS2JYYmpUTGc?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
@@ -18915,6 +18915,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T12:47:53+00:00",
+  "updated_at": "2026-11-19T13:03:13+00:00",
   "version": 1
 }
