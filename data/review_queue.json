@@ -3547,7 +3547,7 @@
     },
     "https://luatvietnam.vn/can-bo-cong-chuc/diem-moi-tai-nghi-dinh-sua-doi-nghi-dinh-170-2025-nd-cp-ve-tuyen-dung-quan-ly-cong-chuc-566-107917-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Dự thảo mới",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "170/2025/NĐ-CP",
@@ -3555,7 +3555,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T04:32:44+00:00",
       "identity": "number:170/2025/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-19T04:52:47+00:00",
+      "last_checked": "2026-11-19T05:07:55+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T04:32:44+00:00",
       "link": "https://luatvietnam.vn/can-bo-cong-chuc/diem-moi-tai-nghi-dinh-sua-doi-nghi-dinh-170-2025-nd-cp-ve-tuyen-dung-quan-ly-cong-chuc-566-107917-article.html",
@@ -4490,7 +4490,7 @@
     },
     "https://luatvietnam.vn/tai-chinh/du-thao-thong-tu-sua-doi-thong-tu-62-2024-tt-nhnn-ve-to-chuc-lai-ngan-hang-402401-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "62/2024/TT-NHNN",
@@ -4498,7 +4498,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T04:32:44+00:00",
       "identity": "number:62/2024/TT-NHNN|issuer:TT-NHNN|locality:",
-      "last_checked": "2026-11-19T04:52:47+00:00",
+      "last_checked": "2026-11-19T05:07:55+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T04:32:44+00:00",
       "link": "https://luatvietnam.vn/tai-chinh/du-thao-thong-tu-sua-doi-thong-tu-62-2024-tt-nhnn-ve-to-chuc-lai-ngan-hang-402401-d1.html",
@@ -4723,7 +4723,7 @@
     },
     "https://luatvietnam.vn/thue/du-thao-thong-tu-ve-phi-le-phi-ngoai-giao-tai-co-quan-dai-dien-viet-nam-o-nuoc-ngoai-450884-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4731,7 +4731,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T04:32:44+00:00",
       "identity": "url:https://luatvietnam.vn/thue/du-thao-thong-tu-ve-phi-le-phi-ngoai-giao-tai-co-quan-dai-dien-viet-nam-o-nuoc-ngoai-450884-d10.html",
-      "last_checked": "2026-11-19T04:52:47+00:00",
+      "last_checked": "2026-11-19T05:07:55+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T04:32:44+00:00",
       "link": "https://luatvietnam.vn/thue/du-thao-thong-tu-ve-phi-le-phi-ngoai-giao-tai-co-quan-dai-dien-viet-nam-o-nuoc-ngoai-450884-d10.html",
@@ -5225,7 +5225,7 @@
     },
     "https://luatvietnam.vn/xay-dung/du-thao-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-cong-trinh-dan-dung-su-dung-nang-luong-hieu-qua-401954-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -5233,7 +5233,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T04:32:44+00:00",
       "identity": "url:https://luatvietnam.vn/xay-dung/du-thao-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-cong-trinh-dan-dung-su-dung-nang-luong-hieu-qua-401954-d1.html",
-      "last_checked": "2026-11-19T04:52:47+00:00",
+      "last_checked": "2026-11-19T05:07:55+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T04:32:44+00:00",
       "link": "https://luatvietnam.vn/xay-dung/du-thao-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-cong-trinh-dan-dung-su-dung-nang-luong-hieu-qua-401954-d1.html",
@@ -18236,17 +18236,22 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5637655": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 13-07-0202",
       "doc_number": "177/QĐ-UBND-NĐ",
       "first_seen": "2026-11-19T04:32:44+00:00",
       "identity": "number:177/QĐ-UBND-NĐ|issuer:QĐ-UBND-NĐ|locality:hồng ngự để thực hiện công trình bến khách ngang sông bờ đập",
+      "last_checked": "2026-11-19T05:07:55+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T04:32:44+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5637655",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về việc giao đất cho Ban Quản lý công trình công cộng huyện Hồng Ngự để thực hiện công trình Bến khách ngang sông Bờ Đập (xã Long Thuận qua xã Long Khánh A); hạng mục: Nền và mặt đường bê tông cốt thép"
+      "status": "excluded_old",
+      "title": "Quyết định về việc giao đất cho Ban Quản lý công trình công cộng huyện Hồng Ngự để thực hiện công trình Bến khách ngang sông Bờ Đập (xã Long Thuận qua xã Long Khánh A); hạng mục: Nền và mặt đường bê tông cốt thép",
+      "verification_status": "excluded_old",
+      "verified_date": "202-07-13"
     },
     "https://www.sav.gov.vn/bai-viet/quy-dinh-moi-ve-quan-ly-su-dung-bien-che-cong-chuc": {
       "agency": "Kiểm toán Nhà nước",
@@ -18365,6 +18370,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T04:52:50+00:00",
+  "updated_at": "2026-11-19T05:07:55+00:00",
   "version": 1
 }
