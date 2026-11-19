@@ -10349,39 +10349,39 @@
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQakRnWF9KMTlNT1RJUC1IWnBJME9FSVdBWENSWGhMYVhXZG1FOVc1VXlGSmRSZTZKa3dpeHF1MjhZUzI2czA3aFdNbHp6cFduTXBvYXJzbUY4Y0NwQmREd1hkVThMbXRVVm1HR2E1YnhGaF9PU1hjNEFKXy1SbXBROWtlSGpndUhSZ0dlYjN3VVNEcFpoem82d3IxU3pkb1lFTElQWHlvVGtKeU1idkJmZC01b2tob0V2T2tmRkpicmhfUE82OXhGMExJTTVJZlpJOUJncWppR2xjSkN2TWdTNXNYWXE3UEk?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3081/QĐ-BVHTTDL",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:07:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQakRnWF9KMTlNT1RJUC1IWnBJME9FSVdBWENSWGhMYVhXZG1FOVc1VXlGSmRSZTZKa3dpeHF1MjhZUzI2czA3aFdNbHp6cFduTXBvYXJzbUY4Y0NwQmREd1hkVThMbXRVVm1HR2E1YnhGaF9PU1hjNEFKXy1SbXBROWtlSGpndUhSZ0dlYjN3VVNEcFpoem82d3IxU3pkb1lFTElQWHlvVGtKeU1idkJmZC01b2tob0V2T2tmRkpicmhfUE82OXhGMExJTTVJZlpJOUJncWppR2xjSkN2TWdTNXNYWXE3UEk?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3081/QĐ-BVHTTDL 2026 phê duyệt quy trình giải quyết thủ tục hành chính Xuất bản In Phát hành - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbDlZVDFrQTU3SkFhblBjb2hPY0RRaVpXbWZ2T0FkaUE0WVJpSVJrY2hWRWJwRlQzaU0zLTVrcG9PVEh2YW9IWDVyZnl4Vlk4RWJNX2YwMEJRdkF3Szd1Njl1SEVSWWxWVlNnVWxUX3pFNGZwNkg3VDg1dUdKVlhhdkhMSnM2M1M1bV8tNmRxbDBscVFUbzNOWmZDM2thaDNvdEJpX1lPYm1IUFdNVHVJR2RlZGlaeXphN1lidkFmamVMN3QyX3lGYVFCYnRCY19iWXF6VE5fYzNpSDRJd1VqNHRsY3ptdWc?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "144/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:07:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbDlZVDFrQTU3SkFhblBjb2hPY0RRaVpXbWZ2T0FkaUE0WVJpSVJrY2hWRWJwRlQzaU0zLTVrcG9PVEh2YW9IWDVyZnl4Vlk4RWJNX2YwMEJRdkF3Szd1Njl1SEVSWWxWVlNnVWxUX3pFNGZwNkg3VDg1dUdKVlhhdkhMSnM2M1M1bV8tNmRxbDBscVFUbzNOWmZDM2thaDNvdEJpX1lPYm1IUFdNVHVJR2RlZGlaeXphN1lidkFmamVMN3QyX3lGYVFCYnRCY19iWXF6VE5fYzNpSDRJd1VqNHRsY3ptdWc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 144/2026/QĐ-UBND Đắk Lắk bãi bỏ Quyết định 031/2025/QĐ-UBND phân cấp thẩm quyền xử lý tài sản - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQdVFkN0FoekF6UW9Zc09yX25GbEppczZJV1MxdWVsZUs1UHFzMm5fd1YyaF9IeG9tNjFhTG9rZFctYlNTaXcwbW9EN2RBTWxJX0ZYYTVfbVBlaDlFdnVFVzZGdVhvTDYzeHVrVVlXcHRYbllSb3RtM19QenRSWHdRTlBzMDN0b01vN2VJbnlHYzVuUHRUeVJIUHV3cUFvLVlYc2VReDhjWkljWWdRSzZOYmNBQlo5LTJPVGQ2YkUtWFV5eV9hTDNuQ0lkMzBndERLaF83Sk41ZWg2WGR0VUtVMHRHMUxuQU0?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -10460,21 +10460,21 @@
     },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTC1GZ0pPMkI5ZFJINVFXUkF0a1VyNmlKa0thTVZmS05NZHhUaEpvLWtjX1plSW9iZTA4NDVIYmpUWWx3dHNlQUJCUG5tQm5BZ3VwcFRUb2tyNUYwdW1KRWxPZFBSanpGUXE5bkpnSTBjbE5XUEpuNTlMTDFlTldGc0RObFZXby1VN3kxRF83Uk1vZXdDVVJNeGN6N0NQSEp2RmdqcnMxazFfcDAzcF9ZNWtmVHZoX2FfR19IdXVXUG96SWpLNjRxOHBiMm03QkdybGFCTjVHYVNfejdHLUJYV1FZUnd6VVpvQWc?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3308/QĐ-BGDĐT",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:07:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTC1GZ0pPMkI5ZFJINVFXUkF0a1VyNmlKa0thTVZmS05NZHhUaEpvLWtjX1plSW9iZTA4NDVIYmpUWWx3dHNlQUJCUG5tQm5BZ3VwcFRUb2tyNUYwdW1KRWxPZFBSanpGUXE5bkpnSTBjbE5XUEpuNTlMTDFlTldGc0RObFZXby1VN3kxRF83Uk1vZXdDVVJNeGN6N0NQSEp2RmdqcnMxazFfcDAzcF9ZNWtmVHZoX2FfR19IdXVXUG96SWpLNjRxOHBiMm03QkdybGFCTjVHYVNfejdHLUJYV1FZUnd6VVpvQWc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3308/QĐ-BGDĐT: Giáo viên không xem, lưu, chuyển tiếp hình ảnh nhạy cảm của học sinh - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUjNicTA2VGNjUHI2Z1d2eWtiRWQ5T1RtaXVTLWJxc01sOTBSWF94Y3lOWER1M0tnWEpGb1ExUTF5YmhTODRwd2VMU3ZDenZUWlhBSUZYWF84SHJ5Q28wU3kycE5qaGd2S1Y4aXBMYUZOSVJrSkJfWmhuOUR2REJTdGFwRUtqbFlYd2JRQTQxT1VfT2JoblpxWldHSTduR3VKc3pvM0RnMFNSY1p1dWhEandPNlR6WElMaHg2THlLOHhZdFpzOW1xY3dnMjluUkhqR2lFcHd3QnNGbUljbGpQRTFXbDItaTNMUVE?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -10515,21 +10515,21 @@
     },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSHdfa2tMVmw4ZFdDd2g1eUwyRU9tRlFSdlh1TTE2N3l2TmJLTHRTY0JoXzI3MVNZSVpSOFRCTFd2eEMxTkJzT0wxY1N3QUFDNkg0QWdmM0VaUmhtdmxQV3E1am92dU8wdFNEWWtmdGU0Wm1DZlA0VWRwWEx0RzhZSDVybk16QkZtZzVhQ052OG1hYm5vN2s0OW12S3h4WF9MRkhtN2hXa1FPbm1BZzc3YjdQaFBjRU9FS2FZTzdZRzhDWXc5NTd5bGgtSUtpaGVWSzlfMzlJaUh4VlRyaGFlMy1yWTNZMVA2cUE?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "400/2026",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:07:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSHdfa2tMVmw4ZFdDd2g1eUwyRU9tRlFSdlh1TTE2N3l2TmJLTHRTY0JoXzI3MVNZSVpSOFRCTFd2eEMxTkJzT0wxY1N3QUFDNkg0QWdmM0VaUmhtdmxQV3E1am92dU8wdFNEWWtmdGU0Wm1DZlA0VWRwWEx0RzhZSDVybk16QkZtZzVhQ052OG1hYm5vN2s0OW12S3h4WF9MRkhtN2hXa1FPbm1BZzc3YjdQaFBjRU9FS2FZTzdZRzhDWXc5NTd5bGgtSUtpaGVWSzlfMzlJaUh4VlRyaGFlMy1yWTNZMVA2cUE?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định 400/2026: Từ 2027, hạ sĩ quan và công nhân công an nghỉ hưu được áp dụng chính sách như sĩ quan cấp Úy - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVDF6a3Z3Q05WVXBvQ1NNRVZXQUxPYVVLV20xc0c2ZXdvVmxiMGFWXzBBX29NbG1zalRfMFFQQTJ5elh4QzBVaHhLMlBmMEJoNlZ4T2V6d0FwRWZOMEFEbDFuWlB3RURhOW5tenFaQ3JRMEVWMzdodHloOVdVc08zRi0wTVRkeEhWUE0zcWVfeDdTckw4NlpIZVVjSk5MSkpvQ0M1SGRmVXEtUGZuc0lCblRBNTRjVXJpak43SUk1bE5US2xBRDVTS09QQ3ZMQ1B5S3d4anZXbkRKWFdMQkswREc5eFFHLXR0VEE?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -10702,21 +10702,21 @@
     },
     "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaGVqaElkSnE0SG9MTFpvSFpuQ2J4YXMta2lVRVhBbHpWU1hORGk1ejlySkZVYmpUcFdoenJNTzZkZ2V3WHNDMkpRcEZMaE9JMFZmNzNEdVB4RFhlWkpsckNfbkE2d3BCbzR0SlA2ZlF2TmxuV0lBSEN2RnA2V0xIa2t5WnRrT1V5QTZIYUc3MS1TZWEtMFVVX3I2Nlk2TUd6dERjbVcwMHVnMnBlR1ExejdvdHZWd0xRV1g0b3ZQYkYtZVY1NlZ1dHA1NGZOUmwxUmNRYWNBVG04MWxPMGhLdFFQdVRjSFk4NF9B?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3307/QĐ-BGDĐT",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:13:22+00:00",
-      "last_checked": "2026-11-19T00:57:14+00:00",
+      "last_checked": "2026-11-19T13:07:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T12:13:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaGVqaElkSnE0SG9MTFpvSFpuQ2J4YXMta2lVRVhBbHpWU1hORGk1ejlySkZVYmpUcFdoenJNTzZkZ2V3WHNDMkpRcEZMaE9JMFZmNzNEdVB4RFhlWkpsckNfbkE2d3BCbzR0SlA2ZlF2TmxuV0lBSEN2RnA2V0xIa2t5WnRrT1V5QTZIYUc3MS1TZWEtMFVVX3I2Nlk2TUd6dERjbVcwMHVnMnBlR1ExejdvdHZWd0xRV1g0b3ZQYkYtZVY1NlZ1dHA1NGZOUmwxUmNRYWNBVG04MWxPMGhLdFFQdVRjSFk4NF9B?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3307/QĐ-BGDĐT: Hướng dẫn học sinh không công khai địa chỉ nhà, lịch trình trên mạng - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUF9KMDVOVnJKZ1hjRm1MQ1NndVVoVjdtdVk2Rm1NQTRxb3dRdVBseWpOYzQyWUE3elRRM1d6SjVIX1VOakt3RjUwS1VXNHNRckl1Ylo4bk9aSWxndXBvNW1lekxEX3ZSeXJtSTdEb0hRWS1OanJqWlpjR19ERE9UQzlCNU1pamFsTFlNYlhFNFdtM1dZblBjU19fdjROeVFEb1pfUExDVTFKd1VLOUs2ZE90RzRQUk9WUGZWZWlfNEJaWUs0dURDQ1BkMEhrOTVSbmxucnFQdEJ1RVpacnl4WGE1a0swdVc5LTFvMQ?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -18915,6 +18915,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T13:03:13+00:00",
+  "updated_at": "2026-11-19T13:07:54+00:00",
   "version": 1
 }
