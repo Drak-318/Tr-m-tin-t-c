@@ -13270,21 +13270,21 @@
     },
     "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZEUwVmtlMUxySTZ4dWRYMUUzZDNBVGsxN0JVbVRMcERobkNCc1g0U2tvRFhBZlJqdWhiUEEzc0VCbHlJYkFQYUQyRFJyS2VYZzBldGZfVWxNR2cyYTdlTGdjYjJ2RnQ2dDVSbnFsOUZ5ZWRyeEZpZEF6bHhCUkw5aVRIRzF2WEdXMWVwdXhwU2QwU1c5Zm1DM2pIb2RadG5pdUhZSmFBcWMzVnZJaWVOU2lYU0RDRDlsZGR0c01xLXFnUkVjZ29fSERpS0NabWdNVHJ2SFNEY0pjcVZoejJWOTdoYUtma0xyZ2RQNXVrM1NxV2ptemdKSVMwUXE4blkzelFoSXE2ZlM?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T14:55:29+00:00",
-      "last_checked": "2026-11-19T01:47:03+00:00",
+      "last_checked": "2026-11-19T13:57:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZEUwVmtlMUxySTZ4dWRYMUUzZDNBVGsxN0JVbVRMcERobkNCc1g0U2tvRFhBZlJqdWhiUEEzc0VCbHlJYkFQYUQyRFJyS2VYZzBldGZfVWxNR2cyYTdlTGdjYjJ2RnQ2dDVSbnFsOUZ5ZWRyeEZpZEF6bHhCUkw5aVRIRzF2WEdXMWVwdXhwU2QwU1c5Zm1DM2pIb2RadG5pdUhZSmFBcWMzVnZJaWVOU2lYU0RDRDlsZGR0c01xLXFnUkVjZ29fSERpS0NabWdNVHJ2SFNEY0pjcVZoejJWOTdoYUtma0xyZ2RQNXVrM1NxV2ptemdKSVMwUXE4blkzelFoSXE2ZlM?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Về việc tham gia ý kiến đối với dự thảo Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch - sontayha.quangngai.gov.vn",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPaGZ2MFlmUXF1ZzBSQ3YtRFkzZUxwQ1YwZ1BrVklVWHk4YmEyY2dkSTJ6WkplaFpfaTlSb3BLSUtvVWszdm5BZTR6RHE4S00tYVgtYWZLanR4SFNtbHlzVEhTWWRzUUF3Qm50bjhXZEdqNXFCb2FzelhnSzdPd2xsajNfb18wZkRLMFBQZzdsR1JuRm02dmJZZ1pfTzVfZFgtcmd2QmIzSXB2d1FtTkZ4X0tRd1N5SHNtLWNkUXVUVF9FSDZyeGRtWUxjN2xJQTlhWnJGNjRCQU5pUWVEWEdxVXdtX25CejFBSVFXODNXdGZPTUFKV3MtOEdFYWNnZEFIenNhbmFvTlk?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -14917,39 +14917,39 @@
     },
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUm9KazhHNkFjVzhQd3NVb3VtenBUTklqejhVdWktMVltVmhXWFhuT05kV1FKVENIb1ZlRWw2OXZxTFhCWV9rM01PU2xIVXRmTWEyS3pzVE02Z0g3b3lWTTFIREQ1YTZfMEZRSnV2dEJ3Qkd0NGNRcWdyT3NPMTc5N3dJZU5xYm9NY0tFbE5iS3hNMFlZYWNJWk1ha2hSR18zdEJRZnRycnM4X2FtWFdSREpVcFR6em1OenNxUVdMc080OHQtLVlSUg?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3696/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T14:55:29+00:00",
-      "last_checked": "2026-11-19T01:47:03+00:00",
+      "last_checked": "2026-11-19T13:57:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUm9KazhHNkFjVzhQd3NVb3VtenBUTklqejhVdWktMVltVmhXWFhuT05kV1FKVENIb1ZlRWw2OXZxTFhCWV9rM01PU2xIVXRmTWEyS3pzVE02Z0g3b3lWTTFIREQ1YTZfMEZRSnV2dEJ3Qkd0NGNRcWdyT3NPMTc5N3dJZU5xYm9NY0tFbE5iS3hNMFlZYWNJWk1ha2hSR18zdEJRZnRycnM4X2FtWFdSREpVcFR6em1OenNxUVdMc080OHQtLVlSUg?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3696/QĐ-UBND Huế 2026 công bố Danh mục và Quy trình nội bộ thủ tục KHCN - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWmoxMXdCZ0VtS2hCSVVUWkYtWDVJcjRKd3NPODY4eHRVSHpUNWltQ1Q4MzVsMUJNYmVMVVBzTThBYndTUmdjMTlfSDZMbnlWUkNrRkdiOWdNbzAzTzdGQ0MtcDh6R2tuYWdQUmxjamdIT1gwa0ViaU1UQzREbldvVDZFamE3U01nRTFoZXFVam16UF9QZTAxZjVhc3FwbXdSTU82Q0lDWXlpUVp3bG9jNnNtQ2pBS0JjSXBQZE9IWmJpcGRyV2hCMA?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "118/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T14:55:29+00:00",
-      "last_checked": "2026-11-19T01:47:03+00:00",
+      "last_checked": "2026-11-19T13:57:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWmoxMXdCZ0VtS2hCSVVUWkYtWDVJcjRKd3NPODY4eHRVSHpUNWltQ1Q4MzVsMUJNYmVMVVBzTThBYndTUmdjMTlfSDZMbnlWUkNrRkdiOWdNbzAzTzdGQ0MtcDh6R2tuYWdQUmxjamdIT1gwa0ViaU1UQzREbldvVDZFamE3U01nRTFoZXFVam16UF9QZTAxZjVhc3FwbXdSTU82Q0lDWXlpUVp3bG9jNnNtQ2pBS0JjSXBQZE9IWmJpcGRyV2hCMA?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 118/2026/QĐ-UBND Huế Quy định chi tiết thi hành Luật Thi đua, khen thưởng - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaUdMamRiWVlpaE1keHdJRU03NC1mOGxwRkFCcE9yYldYMG9ieW4tYnRyazVBQmlodUF0RVQ1UmxrZ1ZZRk1HSmc0cUQ4MVJnY2tZUldPUTROMEowQlJieW1uUnJsZThLN09oZE8zSmVHaGc2TEcxVTdacEo3czFSMWtrdjRyTEd4S0xlSS11M0JEdmJ4Q1Q5OE4zRWtJeVpXc3o5VXRtbU9LZnh0bUtEcVFGckRhWW1GQTQ3R3JzbDZwOXRQdXNoSg?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15047,21 +15047,21 @@
     },
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxNT3U1ZVo5Uk9LeFZ3V3dFcHVKQm9pNGNWZ2MxQlQyaHpnMG1IRXlVYVllUGtDZDVBNndQaTc3dnR2eUxZMjJCYnpFSDB6eGZNUHRMOEFiQ1BqQU9tN3l4SEMySm1IWHlqMFJFYnhiT1VmU000bW5GVlZoUUFMdVFSd09LZm5qTjBIWjY3MDFQdkhUTTdwT3E2aUZpZFJFX1BtT1lTVnRXQ2dUaTlVTk1wZVd1SkdmdDNqdGdGRVhnWTlNd2twUDZNalVR?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2196/QĐ-TTG",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T14:55:29+00:00",
-      "last_checked": "2026-11-19T01:47:03+00:00",
+      "last_checked": "2026-11-19T13:57:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNT3U1ZVo5Uk9LeFZ3V3dFcHVKQm9pNGNWZ2MxQlQyaHpnMG1IRXlVYVllUGtDZDVBNndQaTc3dnR2eUxZMjJCYnpFSDB6eGZNUHRMOEFiQ1BqQU9tN3l4SEMySm1IWHlqMFJFYnhiT1VmU000bW5GVlZoUUFMdVFSd09LZm5qTjBIWjY3MDFQdkhUTTdwT3E2aUZpZFJFX1BtT1lTVnRXQ2dUaTlVTk1wZVd1SkdmdDNqdGdGRVhnWTlNd2twUDZNalVR?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 2196/QĐ-TTg 2026 phê duyệt Đề án đưa tác phẩm nghệ thuật đỉnh cao về nước - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTGRZV3lzSVB0dnhUYk16Q2ZKTE1QdDZVTktoN3NSdXFDLURvYzBvVzEzUWluX3kyZEU4NVVwb0hGRW8tMnhpU3lXa2M2VjhPUUV0ODNzZDl0cDJJVndyZ0VWYzFwbVpkeDJoc2ljTDMyRmVyZlY3SUNLVWZ0M1lEc3NmZmFUTGhITkprOEd4SF9jR2w1bHlaNkFjc0hlMUJKQlJzMVI2TFVTQzk0Mmd1Zk0yNUpOTVNOTTZsR2kwQlJxUUlCV3RFWml3?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -15735,22 +15735,22 @@
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxPY2lJdlFsNFZwMGtIQVdSU0lDQnZmbzdxZzlmcDhTaWdDX0tnVWduaHdtUXNGZ1NhN3ZmbzY4YlBXYUZQTUtnRmZSemhpSUxjOGhSRlpXWDdzaFdZWjZjV0RZYUE1VU9rbGFudnRzLXkzcng1RmQ4LTJ2b2VZaEJncnJRbFVwUDIyTGdwSWMwVGNDa0twMTNJUi05ZXhUU25lRGVLSVJSXzkzaGtQdExIOXZQMzZDZDk4LUFuY2Nka3dTMTRiRUxBWklvUlNkczQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "110/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T14:55:29+00:00",
-      "last_checked": "2026-11-19T01:47:03+00:00",
+      "last_checked": "2026-11-19T13:57:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPY2lJdlFsNFZwMGtIQVdSU0lDQnZmbzdxZzlmcDhTaWdDX0tnVWduaHdtUXNGZ1NhN3ZmbzY4YlBXYUZQTUtnRmZSemhpSUxjOGhSRlpXWDdzaFdZWjZjV0RZYUE1VU9rbGFudnRzLXkzcng1RmQ4LTJ2b2VZaEJncnJRbFVwUDIyTGdwSWMwVGNDa0twMTNJUi05ZXhUU25lRGVLSVJSXzkzaGtQdExIOXZQMzZDZDk4LUFuY2Nka3dTMTRiRUxBWklvUlNkczQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 110/2026/QĐ-UBND Lai Châu Quy chế phối hợp xây dựng cơ sở dữ liệu nhà ở và BĐS - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZGkwcS1iWVFud1BxWU1UUHNvSjFFMDQ5cTZEV3BlNDh0RWpTRDk0NnVEUlhITXA4VjhWQ1VGRVNpb0VNWXV4LTdUSXRlZWJpbXl1MVRxTjJ3bHlZckw1elZtcWdqdHRpSTNMcUg5dlRRaVExWG1STTYycTRFeGlQaG53dXgzc0pEYnF0cXJuVU5rVGpHWlhWNGt1blNvOURCTWd6bHh6eDItRTJBMDBaOHBPUmFYLWh0SWh0cm1nVzRfdExoa0YtY19CWjRHeFU?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -18915,6 +18915,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T13:49:16+00:00",
+  "updated_at": "2026-11-19T13:57:55+00:00",
   "version": 1
 }
