@@ -18099,31 +18099,39 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/400CV-UB2020THVX_1766463229114.pdf/16b3153b-7e35-fbae-a620-a5a8546a43c6": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "400/UBND-THVX",
       "first_seen": "2026-11-19T05:22:41+00:00",
       "identity": "number:400/UBND-THVX|issuer:UBND-THVX|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T05:32:51+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T05:22:41+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/400CV-UB2020THVX_1766463229114.pdf/16b3153b-7e35-fbae-a620-a5a8546a43c6",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "400CV-UB2020THVX.pdf"
+      "status": "not_found",
+      "title": "400CV-UB2020THVX.pdf",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/637CV-VP2020ĐTXD_1766463229155.pdf/3ce9b034-9dc6-37d6-00e3-257e21905cba": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "637/VPUBND-ĐTXD",
       "first_seen": "2026-11-19T05:22:41+00:00",
       "identity": "number:637/VPUBND-ĐTXD|issuer:VPUBND-ĐTXD|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T05:32:51+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T05:22:41+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/637CV-VP2020ĐTXD_1766463229155.pdf/3ce9b034-9dc6-37d6-00e3-257e21905cba",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "637CV-VP2020ĐTXD.pdf"
+      "status": "not_found",
+      "title": "637CV-VP2020ĐTXD.pdf",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12080584": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
@@ -18283,48 +18291,59 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644283": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "400/UBND-THVX",
       "exported_at": "2026-11-19T05:22:47+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T05:22:41+00:00",
       "identity": "number:400/UBND-THVX|issuer:UBND-THVX|locality:hồ chí minh ubnd tỉnh đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
-      "last_checked": "2026-11-19T05:22:47+00:00",
+      "last_checked": "2026-11-19T05:32:51+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T05:22:41+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644283",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v cử 02 sinh viên hệ chính quy đào tạo theo địa chỉ sử dụng tiếp tục tham gia dự thi Bác sĩ nội trú tại Đại học Y Dược thành phố Hồ Chí Minh"
+      "status": "not_found",
+      "title": "V/v cử 02 sinh viên hệ chính quy đào tạo theo địa chỉ sử dụng tiếp tục tham gia dự thi Bác sĩ nội trú tại Đại học Y Dược thành phố Hồ Chí Minh",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644285": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "334/VPUBND-THVX",
       "first_seen": "2026-11-19T05:22:41+00:00",
       "identity": "number:334/VPUBND-THVX|issuer:VPUBND-THVX|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T05:32:51+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T05:22:41+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644285",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v nhiệm vụ trọng tâm công tác thi đua, khen thưởng năm 2020"
+      "status": "not_found",
+      "title": "V/v nhiệm vụ trọng tâm công tác thi đua, khen thưởng năm 2020",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644374": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "958/QĐ-UBND-HC",
       "first_seen": "2026-11-19T05:22:41+00:00",
       "identity": "number:958/QĐ-UBND-HC|issuer:QĐ-UBND-HC|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T05:32:51+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T05:22:41+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644374",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định phê duyệt Dự án Kiểm định tải trọng cầu Giao Thông và cầu Kênh Đòn Giông trên Đường ĐT.853"
+      "status": "not_found",
+      "title": "Quyết định phê duyệt Dự án Kiểm định tải trọng cầu Giao Thông và cầu Kênh Đòn Giông trên Đường ĐT.853",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644377": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18491,6 +18510,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T05:22:47+00:00",
+  "updated_at": "2026-11-19T05:32:51+00:00",
   "version": 1
 }
