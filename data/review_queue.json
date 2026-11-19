@@ -3875,41 +3875,41 @@
     },
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2232-qd-ttg-2026-phe-chuan-mien-nhiem-pho-chu-tich-ubnd-dong-nai-456516-d1.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2232/QĐ-TTG",
       "exported_at": "2026-11-18T01:14:27+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:03:22+00:00",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:03:23+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2232-qd-ttg-2026-phe-chuan-mien-nhiem-pho-chu-tich-ubnd-dong-nai-456516-d1.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định 2232/QĐ-TTg của Thủ tướng Chính phủ phê chuẩn kết quả miễn nhiệm chức vụ Phó Chủ tịch Ủy ban nhân dân thành phố Đồng Nai nhiệm kỳ 2026 - 2031",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2233-qd-ttg-2026-phe-chuan-bau-pho-chu-tich-ubnd-tinh-thai-nguyen-456517-d1.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2233/QĐ-TTG",
       "exported_at": "2026-11-18T01:14:27+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T01:03:22+00:00",
-      "last_checked": "2026-11-19T02:50:16+00:00",
+      "last_checked": "2026-11-19T15:03:23+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2233-qd-ttg-2026-phe-chuan-bau-pho-chu-tich-ubnd-tinh-thai-nguyen-456517-d1.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định 2233/QĐ-TTg của Thủ tướng Chính phủ phê chuẩn kết quả bầu chức vụ Phó Chủ tịch Ủy ban nhân dân tỉnh Thái Nguyên nhiệm kỳ 2026 - 2031",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-98-2026-qd-ctubnd-tp-hcm-phan-cap-tham-quyen-quan-ly-tai-san-ha-tang-duong-bo-456781-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -18440,17 +18440,21 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/208QĐ-UB2020NĐ_1766463229186.pdf/0854a1f1-57bf-161a-91f6-388666bace80": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "208/QĐ-UBND-NĐ",
       "first_seen": "2026-11-19T14:52:31+00:00",
       "identity": "number:208/QĐ-UBND-NĐ|issuer:QĐ-UBND-NĐ|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T15:03:23+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T14:52:31+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/208QĐ-UB2020NĐ_1766463229186.pdf/0854a1f1-57bf-161a-91f6-388666bace80",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "208QĐ-UB2020NĐ.pdf"
+      "status": "not_found",
+      "title": "208QĐ-UB2020NĐ.pdf",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/28-6. CV Gui Bo TTTT gop y DA chuyen doi so va NQ_1766463229185.pdf/76f79e48-c69d-75e4-a370-95a7441321af": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18738,17 +18742,21 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644294": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "208/QĐ-UBND-NĐ",
       "first_seen": "2026-11-19T14:52:31+00:00",
       "identity": "number:208/QĐ-UBND-NĐ|issuer:QĐ-UBND-NĐ|locality:tam nông để xây dựng trụ sở làm việc",
+      "last_checked": "2026-11-19T15:03:23+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T14:52:31+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644294",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về việc giao đất cho Phòng Tài chính - Kế hoạch huyện Tam Nông để xây dựng trụ sở làm việc, tọa lạc thị trấn Tràm Chim, huyện Tam Nông"
+      "status": "not_found",
+      "title": "Quyết định về việc giao đất cho Phòng Tài chính - Kế hoạch huyện Tam Nông để xây dựng trụ sở làm việc, tọa lạc thị trấn Tràm Chim, huyện Tam Nông",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644374": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18884,17 +18892,21 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644386": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "22/VPUBND-ĐN",
       "first_seen": "2026-11-19T14:52:31+00:00",
       "identity": "number:22/VPUBND-ĐN|issuer:VPUBND-ĐN|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T15:03:23+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T14:52:31+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644386",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v đề xuất tìm hiểu đầu tư dự án năng lượng tái tạo và bất động sản"
+      "status": "not_found",
+      "title": "V/v đề xuất tìm hiểu đầu tư dự án năng lượng tái tạo và bất động sản",
+      "verification_status": "not_found"
     },
     "https://www.sav.gov.vn/bai-viet/quy-dinh-moi-ve-quan-ly-su-dung-bien-che-cong-chuc": {
       "agency": "Kiểm toán Nhà nước",
@@ -19013,6 +19025,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T14:52:31+00:00",
+  "updated_at": "2026-11-19T15:03:23+00:00",
   "version": 1
 }
