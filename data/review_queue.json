@@ -4800,6 +4800,20 @@
       "title": "Dự thảo Thông tư sửa đổi Thông tư 21/2018/TT-BNNPTNT của Bộ Nông nghiệp và Phát triển nông thôn về việc quy định về ghi, nộp báo cáo, nhật ký khai thác thủy sản; công bố cảng cá chỉ định xác nhận nguồn gốc thủy sản từ khai thác; danh sách tàu cá khai thác thủy sản bất hợp pháp; xác nhận nguyên liệu, chứng nhận nguồn gốc thủy sản khai thác lần 2",
       "verification_status": "not_found"
     },
+    "https://luatvietnam.vn/tin-van-ban-moi/5-truong-hop-duoc-chinh-sua-noi-dung-chung-chi-dao-tao-boi-duong-tu-nam-2027-186-115898-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "19/2026/TT-BTP",
+      "first_seen": "2026-11-19T07:27:52+00:00",
+      "identity": "number:19/2026/TT-BTP|issuer:TT-BTP|locality:",
+      "last_seen": "2026-11-19T07:27:52+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/5-truong-hop-duoc-chinh-sua-noi-dung-chung-chi-dao-tao-boi-duong-tu-nam-2027-186-115898-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "5 trường hợp được chỉnh sửa nội dung chứng chỉ đào tạo, bồi dưỡng từ năm 2027 (Theo Thông tư 19/2026/TT-BTP)"
+    },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8703-byt-tccb-huong-dan-che-do-phu-cap-uu-dai-nghe-cho-vien-chuc-y-te-186-115894-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
       "attempts": 1,
@@ -8449,22 +8463,22 @@
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUk1IbjhHck54YkxJUmx2WXR0YUZrQzZQWUJ5NHZMaURqb1Y0dkdQZ1JHVDZyY1R0aExTNFc0N2lLRDQxTWE1dm5NV1k5S2x0dktLNXFPcjhoWUotdHFNMTU1SGw3WWhYekRtMjQyWS1idmpjRFRFSE5oM2lpbHkyRTlPeUd6UEp0eEIwZ0k4TzRLazQzX01lR0p3bDJpODRLc1NDcjhpb0pHVGY5YkxpcmZEVnNzckpOMGZvNkV2YVY2NFV2VjJlbWgtdlJ0WTAxNU1NUzZ2R212QQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3259/QĐ-BTC",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:43:13+00:00",
+      "last_checked": "2026-11-19T07:27:52+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUk1IbjhHck54YkxJUmx2WXR0YUZrQzZQWUJ5NHZMaURqb1Y0dkdQZ1JHVDZyY1R0aExTNFc0N2lLRDQxTWE1dm5NV1k5S2x0dktLNXFPcjhoWUotdHFNMTU1SGw3WWhYekRtMjQyWS1idmpjRFRFSE5oM2lpbHkyRTlPeUd6UEp0eEIwZ0k4TzRLazQzX01lR0p3bDJpODRLc1NDcjhpb0pHVGY5YkxpcmZEVnNzckpOMGZvNkV2YVY2NFV2VjJlbWgtdlJ0WTAxNU1NUzZ2R212QQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 3259/QĐ-BTC 2026 giao số tiết kiệm chi thường xuyên và điều chỉnh dự toán ngân sách - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQLU1xczJEc0VrVVJvM1FMZFg3U1A2M0FfbXk1bHQ4cjM3MG0xMnctYU1LOTFFTmNQeFpaSDBYcXhUSDYyNEJUdnZ0cWFsOHFZRnc3UFRwX1Qta2p5SWVRX0tYRnBsWjFLVWFrTkViYy14S2hCRkNXZm5USFEzdGsxLVdvWVZISk43bVlhQ3dUUy1SekVOUEpLUXdhT0tnWmVSSVNmaGxsSWc5Uk1IX0lpN2dCWnZfZ3FZSGd3VHYtdm9POWQwam4zckRkNmtBc1d0cWx6emEtTTJoQQ?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -8486,40 +8500,40 @@
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMjVnSjdLV3pKMXo0M0RMLUtOeXFHQTNXUzQ4MEY0bjhIOEhqdUROb0c4d0U1dC05OGRKWDFnVDZ3UENjeWQ5NmEwNU1kZ2RUMEtvaS1lNkJxUkEzaG9lNDk5SHhDQkM1dDNaY3d0SVFzZnJuZ09wZ3pCdGhLYWlQTkZmdDhBUUVUWXhBR1ZqdXpkODA3YWJuLXZxdzI2dkFZREJveGhXTGJ5amNvS1lMdlJkTXp1dXVoOU1fOUt4Tklab19nLWd4T2VTNUstZ2ZmUHhkM0FYeXZqdw?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3655/UBND-NC",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:43:13+00:00",
+      "last_checked": "2026-11-19T07:27:52+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMjVnSjdLV3pKMXo0M0RMLUtOeXFHQTNXUzQ4MEY0bjhIOEhqdUROb0c4d0U1dC05OGRKWDFnVDZ3UENjeWQ5NmEwNU1kZ2RUMEtvaS1lNkJxUkEzaG9lNDk5SHhDQkM1dDNaY3d0SVFzZnJuZ09wZ3pCdGhLYWlQTkZmdDhBUUVUWXhBR1ZqdXpkODA3YWJuLXZxdzI2dkFZREJveGhXTGJ5amNvS1lMdlJkTXp1dXVoOU1fOUt4Tklab19nLWd4T2VTNUstZ2ZmUHhkM0FYeXZqdw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Công văn 3655/UBND-NC Về việc thực hiện các quy định về PCCC&CNCH theo Nghị quyết số 66.18/2026/NQ-CP của Chính phủ, Thông tư số 62/2026/TT-BCA của Bộ Công an - vanban.hanoi.gov.vn",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNUZUVHZsX1M2OTU4RTkyMEdoaGItVGUtUlYtbkhrYVlNQl9GWEFPTVo2TTk1TTlNdnNIQy1HTTkzVWp6RDAzWUd2cUk4clhTYW9JalRHMkxJRjA2ckdIckw2bXFDdkhJOXpIMEVmQl9lc2J3b3l4UEFrTUdvbnNRVTVUSlRoTkk4OERfQnRfb2FSaTFaN3ROT1NYR0duZFZtZGNOSnBIWVBFS3dRTG1reHVxMVJCM2JYcjJnNksxT3VEMTlvaXV6aVg5eEVieUJQeUdjbGM3akV1UQ?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "103/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:43:13+00:00",
+      "last_checked": "2026-11-19T07:27:52+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T00:52:06+00:00",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNUZUVHZsX1M2OTU4RTkyMEdoaGItVGUtUlYtbkhrYVlNQl9GWEFPTVo2TTk1TTlNdnNIQy1HTTkzVWp6RDAzWUd2cUk4clhTYW9JalRHMkxJRjA2ckdIckw2bXFDdkhJOXpIMEVmQl9lc2J3b3l4UEFrTUdvbnNRVTVUSlRoTkk4OERfQnRfb2FSaTFaN3ROT1NYR0duZFZtZGNOSnBIWVBFS3dRTG1reHVxMVJCM2JYcjJnNksxT3VEMTlvaXV6aVg5eEVieUJQeUdjbGM3akV1UQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 103/2026/QĐ-UBND tiêu chí bảo đảm yêu cầu phòng chống thiên tai Cần Thơ - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRGZCaTRoNElWMWhLU2hCOHFZbEh2elpBdVNoR0ZIbEtITnoxV1QyU0p5dWlPVWJ6MTNvdzFtZzQ2eW50TGIyZlJxV3NadS1jdUNVczZWQnAxUVdPVlhwSUJ5OXdGSmxZTGRibFJGQkNXNzFXdDVCZVBUX1pTVk8ydTk5UjNvWmMtWkh5YVNiYmpCeWFTZnpuVHdUZHRReDZFSmFrR2RQYW5fWDZJMVpPTzJxTlpYOWphZEx1amQ4TXpUTXUtVlN5WnA3eHpVQ3M5ZWJ1OFFINnI5Zw?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -8541,40 +8555,40 @@
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUDVzbW9lYjluSzBuYWl1WFpLa09FU0paUGVsRzUtWHFpNU9XQW1kYjZubktkdHhJU05uUG9aU3JXUWNURDlFeE1kS2VKVE5JbDV4X2J0NUU1WVBlRXltX2c3U0NmTG9wX056Z0wzNXp0RFduOUZuOXh2a3pEd3I4QWw0bm1vaVNWdUFNVmxoeFBxaFhoSmFpYWU2TWdXajVnNWNXZ2Y0c3RBSS1RSUx4Xzk1dnI0QUNQWWlESUo2Mm9za05IME5uSEFlZ1R6ZlN3NzJ1bXhaN0ZsQQ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "1838/QĐ-CHQ",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:43:13+00:00",
+      "last_checked": "2026-11-19T07:27:52+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUDVzbW9lYjluSzBuYWl1WFpLa09FU0paUGVsRzUtWHFpNU9XQW1kYjZubktkdHhJU05uUG9aU3JXUWNURDlFeE1kS2VKVE5JbDV4X2J0NUU1WVBlRXltX2c3U0NmTG9wX056Z0wzNXp0RFduOUZuOXh2a3pEd3I4QWw0bm1vaVNWdUFNVmxoeFBxaFhoSmFpYWU2TWdXajVnNWNXZ2Y0c3RBSS1RSUx4Xzk1dnI0QUNQWWlESUo2Mm9za05IME5uSEFlZ1R6ZlN3NzJ1bXhaN0ZsQQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 1838/QĐ-CHQ 2026 công bố điều chỉnh dự toán chi ngân sách Nhà nước của Cục Hải quan - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWTc3VG1kMGZsbERnV3FJSS1NeG5kczlpeWhEVEduZGhCaU5DaWp4RGVKbEdwekF1SFl1WWwwcHhuVTZyQ25YdWdWMG9yYmhLU1BXbTZXQ2tWZURZTjZtb0xfams3TkFRRW13NVFqVUFOQ2RnTjFTX0V3b1lkMTExdHMyODNZNVItWWtlZzhCMkVYWTFESmc3YTdvcGJleHlwR0JmQm1DSERlRG52VXVSdTY5em1lTnRKempWUTlYR2QyT0w1THAxTWU2NXlyR2NZbnpiR2wzNkl3QQ?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "358/NQ-CP",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:43:13+00:00",
+      "last_checked": "2026-11-19T07:27:52+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWTc3VG1kMGZsbERnV3FJSS1NeG5kczlpeWhEVEduZGhCaU5DaWp4RGVKbEdwekF1SFl1WWwwcHhuVTZyQ25YdWdWMG9yYmhLU1BXbTZXQ2tWZURZTjZtb0xfams3TkFRRW13NVFqVUFOQ2RnTjFTX0V3b1lkMTExdHMyODNZNVItWWtlZzhCMkVYWTFESmc3YTdvcGJleHlwR0JmQm1DSERlRG52VXVSdTY5em1lTnRKempWUTlYR2QyT0w1THAxTWU2NXlyR2NZbnpiR2wzNkl3QQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị quyết 358/NQ-CP 2026 thực hiện Nghị quyết 27-NQ/TW phát triển các vùng quốc gia - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTk5heDU0OTFNamw0M185UXc1bjZ6d3hxbFR5d1AxUTNPYnQ0cWVGQVpLWlYzdVdwWW9KWDdNWDdMVXNweExCS2lNUVMtU3AxT1M4LW9jaGFiY29janY3d2pHY0ZRZVBDemFlTGRMQlVKOTk4RXYwR1VaSVpJMGhreU5lbkE1aHkxRmN6dDlHenU0YnZRR0dVeHllTWQ0dkR6cXAxV2lZLWFVUGJYeVZBZkZqMGFndlphMnd1enhDdHFpLTBMZzhPRzJDMkdab3ppaTYzWnhGS21lVnM?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -18610,6 +18624,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T07:12:58+00:00",
+  "updated_at": "2026-11-19T07:27:52+00:00",
   "version": 1
 }
