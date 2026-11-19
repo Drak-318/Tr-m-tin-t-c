@@ -10104,41 +10104,41 @@
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUURkR1VqX3k2YlFFZnB5bmxSaEZvM3ZZbWxENzBVajV4VFNMNkZyMTBsZE0wUUVGaE1LTldPMDREY1V3aXh2ZGZhcVlvRS1aZU1ndkFHYmFBc2FWTDBXcm5PbGNTVXdLMDRQLVNNR2haMzhVRjF5Wjd0azc2Q2MxMm9DN2dYeFlPNm5jYkRyYlRLZ0l6RHhydUVMaE1leHh0VjZYcEo2d29pT2tjSDAyekRZUndsYlRpUDZDUHpLT0UzeWJuQURNYXUweXZyd0RJQVg4Q0pOU0h1UUY3WElyQ1pTZmtubFU?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "81/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T20:32:49+00:00",
+      "last_checked": "2026-11-19T08:33:05+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUURkR1VqX3k2YlFFZnB5bmxSaEZvM3ZZbWxENzBVajV4VFNMNkZyMTBsZE0wUUVGaE1LTldPMDREY1V3aXh2ZGZhcVlvRS1aZU1ndkFHYmFBc2FWTDBXcm5PbGNTVXdLMDRQLVNNR2haMzhVRjF5Wjd0azc2Q2MxMm9DN2dYeFlPNm5jYkRyYlRLZ0l6RHhydUVMaE1leHh0VjZYcEo2d29pT2tjSDAyekRZUndsYlRpUDZDUHpLT0UzeWJuQURNYXUweXZyd0RJQVg4Q0pOU0h1UUY3WElyQ1pTZmtubFU?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 81/2026/QĐ-UBND sửa đổi Phụ lục quy định về quản lý các tuyến đê Phú Thọ - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOaGJ1cU5DNjh0THNETnFhOGo4RGpaTnc3NXVjcEswUWJ4VTJfUm5zbUZnRWhLWndmWTJVNnpoODYxS3owYW5fR19mMng0bDZjX3hXT0ZkNlN5TUtVX0FFU1lTbUpnSDk3cWVPbjMzNHBEOWFJRmRKS0Ffa3BLQ1QtNVd0eXBRTlJCMlN5WDRpeE9qak00NUVwU183bmR5Y0R6QWxaRVFSZnktU3lYaW10S2xDTjY4TmV6NFNsNmEwTUNRY3d2blpmYk12Q3lPTFN4SjR6Rmp6ajF6ZmlFbXJvVk9ZRXdZbUU?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T20:32:49+00:00",
+      "last_checked": "2026-11-19T08:33:05+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOaGJ1cU5DNjh0THNETnFhOGo4RGpaTnc3NXVjcEswUWJ4VTJfUm5zbUZnRWhLWndmWTJVNnpoODYxS3owYW5fR19mMng0bDZjX3hXT0ZkNlN5TUtVX0FFU1lTbUpnSDk3cWVPbjMzNHBEOWFJRmRKS0Ffa3BLQ1QtNVd0eXBRTlJCMlN5WDRpeE9qak00NUVwU183bmR5Y0R6QWxaRVFSZnktU3lYaW10S2xDTjY4TmV6NFNsNmEwTUNRY3d2blpmYk12Q3lPTFN4SjR6Rmp6ajF6ZmlFbXJvVk9ZRXdZbUU?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOeUJCdm9SWFBEWFpHeTlEeDJvY3AyejhJMGlXbnp6UEl0RGtvWlRMWmFEeXRLdXpWWXJQTU5zdkhwZU5kbExGMENDdWZsLTk3T3l1dEstVzdjVkxtYVEtMVplY3BBcTlHbFhMRXpLd0hoMnRBcDl4UlNXYWZxWGU0UURmVEUtUDBmTURIeEllRG1JbjE0MVo2WkJFalV0elhUTl96UWFWaEpiU1FFaVUxbHdvTDR1Z2M0eFl6ZHp4cEhuSldCOGt3TWhKamRFTXFNTDlSQkpLUWh4dk1XSW9xQUU5N29xaDg?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -10179,40 +10179,40 @@
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMi1PUkxsMVplN3FieE1LNHdGSWhRS3UzTHg5ZjVQZ2ZRUHdJV1FQcWdsanVTcG81WHpUcXpTb2ZlZlNkOHcwbko1SnRzTFBEbmlpZjdWbFVqZVJhck1PaEJ5MXdtcUFIb2kxMUtvbGhuWjZHOEk0T0E3VnhrejhMOW9rdHRiVzlvWlh5T3JIX2FZQWdsRjdDUUU3NmFHUnpCLTRNdWJUWjlFM244cWtrWnExaXh1WHNnVFZaZWo2V2Zpb0sxZ01pLWZFa1RzRGRKR3VlMnp0RmIzQjREVl9XS2JYYmpUTGc?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T20:32:49+00:00",
+      "last_checked": "2026-11-19T08:33:05+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMi1PUkxsMVplN3FieE1LNHdGSWhRS3UzTHg5ZjVQZ2ZRUHdJV1FQcWdsanVTcG81WHpUcXpTb2ZlZlNkOHcwbko1SnRzTFBEbmlpZjdWbFVqZVJhck1PaEJ5MXdtcUFIb2kxMUtvbGhuWjZHOEk0T0E3VnhrejhMOW9rdHRiVzlvWlh5T3JIX2FZQWdsRjdDUUU3NmFHUnpCLTRNdWJUWjlFM244cWtrWnExaXh1WHNnVFZaZWo2V2Zpb0sxZ01pLWZFa1RzRGRKR3VlMnp0RmIzQjREVl9XS2JYYmpUTGc?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "LẤY Ý KIẾN DỰ THẢO THÔNG TƯ SỬA ĐỔI QUY ĐỊNH VỀ TỐC ĐỘ VÀ KHOẢNG CÁCH AN TOÀN CỦA XE CƠ GIỚI, XE MÁY CHUYÊN DÙNG .CÔNG AN BẠC LIÊU - CÔNG AN TỈNH CÀ MAU",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQT2U4eXUtQklmb2JST2V5TFV3M2pWS08xT1RkYllwWmNMZF9RMHJjNktwODg5VFZYbU9PS0x4RU10emptbFNfbTFBd3dOd2xCX3hMQUpMdFpaTmNwbGdqbXlVbmJzbW9QMktGRkdPVnI5cThtMndkZURWU1pXS3l3VWo5V09MeEVxaDN5SUNTa3Q0LUNTRGx5Ym8wWTlPMTc4cU1Xc2lQQ1N1QlhVU2hqeUFZb2t6NGtmeU1ESGxZNHZOWFZETElkV0hYZFlXOEREVVdpMDFyTzBCcGk3cW5mR3lZeThYTkU?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T20:32:49+00:00",
+      "last_checked": "2026-11-19T08:33:05+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQT2U4eXUtQklmb2JST2V5TFV3M2pWS08xT1RkYllwWmNMZF9RMHJjNktwODg5VFZYbU9PS0x4RU10emptbFNfbTFBd3dOd2xCX3hMQUpMdFpaTmNwbGdqbXlVbmJzbW9QMktGRkdPVnI5cThtMndkZURWU1pXS3l3VWo5V09MeEVxaDN5SUNTa3Q0LUNTRGx5Ym8wWTlPMTc4cU1Xc2lQQ1N1QlhVU2hqeUFZb2t6NGtmeU1ESGxZNHZOWFZETElkV0hYZFlXOEREVVdpMDFyTzBCcGk3cW5mR3lZeThYTkU?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQakRnWF9KMTlNT1RJUC1IWnBJME9FSVdBWENSWGhMYVhXZG1FOVc1VXlGSmRSZTZKa3dpeHF1MjhZUzI2czA3aFdNbHp6cFduTXBvYXJzbUY4Y0NwQmREd1hkVThMbXRVVm1HR2E1YnhGaF9PU1hjNEFKXy1SbXBROWtlSGpndUhSZ0dlYjN3VVNEcFpoem82d3IxU3pkb1lFTElQWHlvVGtKeU1idkJmZC01b2tob0V2T2tmRkpicmhfUE82OXhGMExJTTVJZlpJOUJncWppR2xjSkN2TWdTNXNYWXE3UEk?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -10252,22 +10252,22 @@
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQdVFkN0FoekF6UW9Zc09yX25GbEppczZJV1MxdWVsZUs1UHFzMm5fd1YyaF9IeG9tNjFhTG9rZFctYlNTaXcwbW9EN2RBTWxJX0ZYYTVfbVBlaDlFdnVFVzZGdVhvTDYzeHVrVVlXcHRYbllSb3RtM19QenRSWHdRTlBzMDN0b01vN2VJbnlHYzVuUHRUeVJIUHV3cUFvLVlYc2VReDhjWkljWWdRSzZOYmNBQlo5LTJPVGQ2YkUtWFV5eV9hTDNuQ0lkMzBndERLaF83Sk41ZWg2WGR0VUtVMHRHMUxuQU0?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "4203/QĐ-BNNMT",
       "exported_at": "2026-11-18T00:16:10+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T20:47:59+00:00",
+      "last_checked": "2026-11-19T08:33:05+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQdVFkN0FoekF6UW9Zc09yX25GbEppczZJV1MxdWVsZUs1UHFzMm5fd1YyaF9IeG9tNjFhTG9rZFctYlNTaXcwbW9EN2RBTWxJX0ZYYTVfbVBlaDlFdnVFVzZGdVhvTDYzeHVrVVlXcHRYbllSb3RtM19QenRSWHdRTlBzMDN0b01vN2VJbnlHYzVuUHRUeVJIUHV3cUFvLVlYc2VReDhjWkljWWdRSzZOYmNBQlo5LTJPVGQ2YkUtWFV5eV9hTDNuQ0lkMzBndERLaF83Sk41ZWg2WGR0VUtVMHRHMUxuQU0?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 4203/QĐ-BNNMT 2026 Quy hoạch tổng hợp lưu vực sông Kôn Hà Thanh đến 2030 - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdVNfWF9HWXhNbFZvRXcyTWxNM2pWWV9yTWFRQl82bEZsNmVETzV2Ym5Zb0JXb29aWmR0N2M1Sl9lNl92dDFUYXc3VnV0bTlSNlVPay1TSFBxRWlpVHgzUWdrYk1ma0pjb3lvVFAwY0RLOXZaa3JxcFVMU3hyQWJ6eGphTUwwUklQeVNuT20wU2o1dlN6cWhwNWc1QWlTWXhFbllHMFUxMzVIcHJvbTlzdDlVWnBvRjBldjE2N3lwdjY0UFpoT1plUENHcDdiNi1GMVFVQXh4WU9lUmxqVE9ESGRxYU0xdDFf?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -18672,6 +18672,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T08:18:07+00:00",
+  "updated_at": "2026-11-19T08:33:05+00:00",
   "version": 1
 }
