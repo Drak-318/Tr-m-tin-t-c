@@ -19,7 +19,7 @@
     },
     "https://admin.medinet.gov.vn//Data/soytehcm\\soytehcm\\Attachments/2020_2/10/qd_322_ncov_10220206.pdf": {
       "agency": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "10/QD",
@@ -27,7 +27,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T20:33:35+00:00",
       "identity": "number:10/QD|issuer:QD|locality:",
-      "last_checked": "2026-11-19T20:43:04+00:00",
+      "last_checked": "2026-11-19T20:58:05+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T20:33:35+00:00",
       "link": "https://admin.medinet.gov.vn//Data/soytehcm\\soytehcm\\Attachments/2020_2/10/qd_322_ncov_10220206.pdf",
@@ -17009,17 +17009,22 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-11-03T14:18:00+07:00",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-19T20:33:35+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684",
+      "last_checked": "2026-11-19T20:58:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T20:33:35+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Văn bản hợp nhất Thông tư ban hành quy định về quy trình phân tích nguy cơ dịch hại đối với vật thể thuộc diện kiểm dịch thực vật phải phân tích nguy cơ trước khi nhập khẩu vào Việt Nam"
+      "status": "excluded_old",
+      "title": "Văn bản hợp nhất Thông tư ban hành quy định về quy trình phân tích nguy cơ dịch hại đối với vật thể thuộc diện kiểm dịch thực vật phải phân tích nguy cơ trước khi nhập khẩu vào Việt Nam",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-11-03"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thanh-lap-cap-nhat-bo-ban-do-chuan-bien-gioi-quoc-gi-996743": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19251,6 +19256,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T20:43:04+00:00",
+  "updated_at": "2026-11-19T20:58:05+00:00",
   "version": 1
 }
