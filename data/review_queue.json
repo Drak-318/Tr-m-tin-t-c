@@ -15360,41 +15360,41 @@
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQXZWeVlyT1hNTDNpd09XNC1CaTY1eXRsVWN4UEVXMC1jNEtSRkMyYndXZE1PZm5JSW03eF9wQU55ZVQ2VU5YdjV1Q09taVNaajgwWml5ZkR3MVR1T3V3czF0Uk1pTVlQS1dFbTFTRGVqckozZWlUd1Zld0R1V2FqU0VDRklTaGtoVVJsLW5LejBwWlA0NDc2T21Cbm5WRzdLeWZtTllfNk14LThCaC1tb2tIZTFjMlZHX05jNEk0OW9oRlY0T1BiZG5BREE?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "167/2026/TT-BTC",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:22:57+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQXZWeVlyT1hNTDNpd09XNC1CaTY1eXRsVWN4UEVXMC1jNEtSRkMyYndXZE1PZm5JSW03eF9wQU55ZVQ2VU5YdjV1Q09taVNaajgwWml5ZkR3MVR1T3V3czF0Uk1pTVlQS1dFbTFTRGVqckozZWlUd1Zld0R1V2FqU0VDRklTaGtoVVJsLW5LejBwWlA0NDc2T21Cbm5WRzdLeWZtTllfNk14LThCaC1tb2tIZTFjMlZHX05jNEk0OW9oRlY0T1BiZG5BREE?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Thông tư 167/2026/TT-BTC miễn phí thăm quan vào Ngày Văn hóa Việt Nam mới nhất - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZktHX0hzaDlIMFFZb1RLckJoX3hOWXVocDNDWDZOb0VnWWZaREVFNGRQSThkNHFQOW92b09yOUN4dmh0M1VHSnY5Y1YxQ2FhcnR4WGdNdlB0M2Vxemt0d2p6eC0tdmVya3VQSUdsbzdIakVjVldrbTZrNWR0NEN3Y21mMmlaQ2xJY0NCYkJEVm9xZUlwd0NiS1h1Sm91NE8zeHlZOEFiYUJIYmtSZmc4a0stTDlsWjg5T25uWnhuNzIyN1l1QzhCQURxRTA?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "150/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:22:57+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZktHX0hzaDlIMFFZb1RLckJoX3hOWXVocDNDWDZOb0VnWWZaREVFNGRQSThkNHFQOW92b09yOUN4dmh0M1VHSnY5Y1YxQ2FhcnR4WGdNdlB0M2Vxemt0d2p6eC0tdmVya3VQSUdsbzdIakVjVldrbTZrNWR0NEN3Y21mMmlaQ2xJY0NCYkJEVm9xZUlwd0NiS1h1Sm91NE8zeHlZOEFiYUJIYmtSZmc4a0stTDlsWjg5T25uWnhuNzIyN1l1QzhCQURxRTA?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 150/2026/QĐ-UBND Gia Lai sửa đổi bổ sung Điều 2 Quyết định 93/2026/QĐ-UBND - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0NKY3gwcVBtN2V5bEdkamRZcjRVTldoTkNKeS05X2FVWmh5M3c0N1dsSzRIanRma2JwWXZzZUw2WUlQSXdSZWJTYjBWRU0wczczV3p5MUlqdVFuODA5c0dHb1R4c0YwV3ZqV0dBLUwxcjVmb2FBV2tmemRpMURnUFI3bWxLdHBJWkJ1OE9nUEJWNXBDRXVxZkVfV2poX0dqTUdHR0xlMTh6eEEyemlyMGJpaEhlZnBmY0JZSzFaaFJQcVVqZ25SN3RKNDA?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -15417,40 +15417,40 @@
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:22:57+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamVCVk12MFVuTWRIVnc3Mlk2ZzRTeTZsVVlnVVRYeUdVQ2ZROTdseEp1OWE3WnlKNU1kVmhvb0liYUZjQjRmS0Q2UVpYSUdCOGVHdnUyQlp4Zk1mcU5KOGlXeG9yMW5qQ2pBaUZwdVBWVDlHNW5QZ1FsNGw4TGJsc3lYdEVRS1c1WThhY0JzMjBPRDBaSzdxeFNHbE9pM3NqX1RKaTJIZHlMLWFacmR5bGtpdGFRbTZTamM0OWFvNDl2TnhRSGtnWmtmUWQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quốc hội thông qua Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán - xaydungchinhsach.chinhphu.vn",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnoteGdlRFZJMS02SWxXbnIzcS1VUk5HTm94UHRydVZfN0ZnXzlLRGpZSERkVml6b1BBdjNNOTlzaEJHR2xjeHFISlR5VGJzV3NXV3c2bHpPUUMyXzEzUW1yRm5OQldyY2stb1lTYll1OGxvOFBialJqclV6S2pUd1pfaDF5R0tfelJ4MjdwMmJQYjZDTE9pV3BLd2g3OW1QWl9lX2xXZkVXN01pYzNCd00xU3Z2bDZZdlBwU1dnUGd0Ung4dXpWek5GSnI?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "409/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:22:57+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnoteGdlRFZJMS02SWxXbnIzcS1VUk5HTm94UHRydVZfN0ZnXzlLRGpZSERkVml6b1BBdjNNOTlzaEJHR2xjeHFISlR5VGJzV3NXV3c2bHpPUUMyXzEzUW1yRm5OQldyY2stb1lTYll1OGxvOFBialJqclV6S2pUd1pfaDF5R0tfelJ4MjdwMmJQYjZDTE9pV3BLd2g3OW1QWl9lX2xXZkVXN01pYzNCd00xU3Z2bDZZdlBwU1dnUGd0Ung4dXpWek5GSnI?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định 409/2026/NĐ-CP: Quy định chi tiết và biện pháp thi hành Luật Trợ giúp pháp lý - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizAJBVV95cUxOQW9Dd3VBNUt1dWptODFsdnZFYVV2WDBRVDlidkdtd3RZWVhTeUNBSTNsdjhrZ3ZjUWx4eWlrYlhxSExfVy15Z2kzb1FJMEM1c3FFS3BETmllTzB2eGU5QmV4M25MVkg5b3N6elcwSUlXV1djSHlPUEVtX21YelhxMzJEMEVpNnlMNHZzcmlaR1BsMk1xNXpQOUt6UWF4WEUyYjg1Q3NSanNvck9maGo5Z1Z3NFBiLVVYTXZ2VkRYQTlTSkJpLTdBMGRNbHkzQjQwQjhGUy1wN0lxUlIzWHM1aUR4M2N1UW1zM2dEdnZ3MGY0US1hZ0xnMnpuRF9tUDB1a2ZTa2dhajdybXdYZXNQcHpsRVZEU09YdE9fMURaTVRyYWVudGxjTk9JZHNCdHVrRWs5S2xZcENqbERnZ1N2SHRLdWw1N3NLQTNKNQ?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
@@ -15492,22 +15492,22 @@
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNV2FhS2tyenN1YkpuR0NDQ1VBdlZDMmdfaXJuTjgwWFpucmt5TmtLbFBXRTRKRUZCMlBjUzBmam1FZGUxcFFZV2l4RkhTX04yUXhKc1NPQWpPMHdLSHlYa2dGQllKM1FsNWJ5XzVYYlBZaFVxWWZTV182NFBTYUYxZ2pIeDVJOGtFbEpUdjBBWnk4OXNrZE1xbnBSaEIycUEwMmpMb0J3U0ZHd0RRZTdJc2lYMnNWeTZXWkVmRDBYdnNOdXMteFlyWjFtTmltdw?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T23:16:35+00:00",
+      "last_checked": "2026-11-19T11:22:57+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNV2FhS2tyenN1YkpuR0NDQ1VBdlZDMmdfaXJuTjgwWFpucmt5TmtLbFBXRTRKRUZCMlBjUzBmam1FZGUxcFFZV2l4RkhTX04yUXhKc1NPQWpPMHdLSHlYa2dGQllKM1FsNWJ5XzVYYlBZaFVxWWZTV182NFBTYUYxZ2pIeDVJOGtFbEpUdjBBWnk4OXNrZE1xbnBSaEIycUEwMmpMb0J3U0ZHd0RRZTdJc2lYMnNWeTZXWkVmRDBYdnNOdXMteFlyWjFtTmltdw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Dự thảo Bộ luật Hình sự (sửa đổi): Hoàn thiện hành lang pháp lý đấu tranh với tội phạm trong kỷ nguyên số - Công An Tỉnh Ninh Bình",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNa0YtZjN6QXpKMHVYaXJkcHhKcnNqR2U3aHA1TGw5THpwWW9aUUx5ZmN3aU43VjBQQktsS2JHRzJEVk1MUXQ0YzFLM05EQS1lOGI3RExyTGtiTlBzRjZrdlVjTmpiRmJGNDNFaWxlaFV3ZnByQWxFQzRpMWZMRVp1TjNzMC1HZjFSUEE1MkI5emwzUDNPMWlsYk5IV0tQRWN1eEpaMUREOEViZmtidzBvVjAtUmZ3aHE3ZE92Q0g1OXdSQ1Y2b0lXSHV3MU54dw?oc=5": {
       "agency": "LuatVietnam - Google News",
@@ -18915,6 +18915,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T11:11:39+00:00",
+  "updated_at": "2026-11-19T11:22:57+00:00",
   "version": 1
 }
