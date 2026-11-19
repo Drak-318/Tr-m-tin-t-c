@@ -7640,22 +7640,22 @@
     },
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOelFzblFtajhyNFYzd0Q2S25WYXMzczlaU2luZXI2REZHNFZreWpxZFBYWGEybE9xYVlSU09KQnpsNnlOQkN5TGdEc3l0R3hLUGszcVhrSVpPS1VxcEh2a3k5ZFpqQ2dSNGQzM2JsNmJDQkxaTzdkZmNIaldETXFMdkx2UDFCTXA4X0xlVE1JM1JWRW1PY3Nhd1dlWkJNcV9WMzJHQVlManAzQkpIdkpFR09tTjkyV055RmtCeTVkbWJseGRiM0MybDhBUk9RamZoM3c?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "24/2021/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:47:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOelFzblFtajhyNFYzd0Q2S25WYXMzczlaU2luZXI2REZHNFZreWpxZFBYWGEybE9xYVlSU09KQnpsNnlOQkN5TGdEc3l0R3hLUGszcVhrSVpPS1VxcEh2a3k5ZFpqQ2dSNGQzM2JsNmJDQkxaTzdkZmNIaldETXFMdkx2UDFCTXA4X0xlVE1JM1JWRW1PY3Nhd1dlWkJNcV9WMzJHQVlManAzQkpIdkpFR09tTjkyV055RmtCeTVkbWJseGRiM0MybDhBUk9RamZoM3c?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 24/2021/QĐ-UBND Đắk Nông chức năng, nhiệm vụ, quyền hạn Sở Khoa học và Công nghệ - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNXo1c2Q1b2VFS2JKckx6YUFkcE5ZUVN2Z0h1NU9VNXgwZ2lFc1pyMnpyV1ZGMGZ0UnkyY3JCdXFsSlVRcGFhTi1zR0JSZGVCcTRGeVp4aTVmODdUWllyVHVYbUpiRU1SMHowUy1IVXhidWo4MXhlQ0l1TEpPZ3dzOTV6eWhnVHRGSHh6S29uR0VEald3MnNIX29QZHFkbUxVYUg2ZmFrLWlTRjB5NkY3dDNKRW0xNE1SM2lMeGNlMDVTbmZvZHlDZVVqTzhiTU45UXc?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -7732,22 +7732,22 @@
     },
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRmdXTTdTcGZGVlZVYnFzUm11MkhOS2tmVUxvVjBGSVdiX25lWTFzeVRZb0N3c0Q5SmxnYzg5MVZrc1F0cVNuNFE4SmFncl8wbVIyX1Y4bERrQ3hOZjRRci1ZUGx2bTRSNkMxSzdWSVFnU1Q2Z25UTTR5RzR2b2oxMDZvVjRFbG55VFVqQm81djhSdEJfNnVFUmtUdU5Ta0p5TlFBN3kzTmxOODFuQkNkbEE3SXhDQS1TM0lYeG12YnhfaHkwZ0tpVGEzWnhuU0hUUWc?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "166/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:47:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRmdXTTdTcGZGVlZVYnFzUm11MkhOS2tmVUxvVjBGSVdiX25lWTFzeVRZb0N3c0Q5SmxnYzg5MVZrc1F0cVNuNFE4SmFncl8wbVIyX1Y4bERrQ3hOZjRRci1ZUGx2bTRSNkMxSzdWSVFnU1Q2Z25UTTR5RzR2b2oxMDZvVjRFbG55VFVqQm81djhSdEJfNnVFUmtUdU5Ta0p5TlFBN3kzTmxOODFuQkNkbEE3SXhDQS1TM0lYeG12YnhfaHkwZ0tpVGEzWnhuU0hUUWc?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 166/2026/QĐ-UBND Quy chế xét tặng Giải thưởng Cống hiến Đà Nẵng - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi0gNBVV95cUxPLUk1bHphSDVkdE5aMkFkUXhyV3Y1andwTW9Ib0F4UDJ5NHJMdGZsRG1WNHUxVVhjUF8tb0E2QUhMR3NnWU9xVWxGbWlHTi1CNURrcUY0RVkzd0FaanJQcng4SkVKWEl0LTZTT3FTdjFPQ0NuRDBlMXVxT3lmRXF2SEp3WVJlVnFHM19wWGN1b0tzQS1ldHVNdVZ2YldqSENSOVI3aWJ1VmFqQ2NQRmJoc1RuN3FiVTZzd3NMd3BiQ1NHUWxnUEx4WUVwY01GNi1RLTVtWi1VVnpTT3FpYmhrdUg1R3lqbkc2Vm9SQmI3VUFpZGZYd2JMVTluVmlGV0JmTVZFcXc1aUtXMjhxSGxmZktsblZfa3BURHBReVB5VnBrNHJHTDJlUXRaaG1qR1NmQVJIZUQ2R1Bob0daZkpuSnJuRWZhUVppcnU5c2x1bEZiRlpacnhqemFXdVUtaC1hWFkxWGxPc3hBZmRUTk1rSC1IVDNYcDQ0c25RbXctdnpLRmtwU1VZREQtNVZlY0ZNUjVPSm9xRUd5T2V2Zy1YTUdJMHFLQUxmcV9aZWo3aXRrVm5XbjJJeFdqTGllUTBxZG1kcWpKRU5wa1M4U3RfZy1n?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
@@ -7806,22 +7806,22 @@
     },
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWW1ybUh6NGg4MnNXLVhUR1dWbk5YaDhjekt4TmdSSVZrSzUxTkstSjdWNnpyZFNQT3lxMWFyN1NHSE1LdkJ6amh1bnN4YTRZWmlNYTdsT3A3a1lpZm5ZUGstZW1FUG5zMllJWFJ3R05Ha2U4c3pPTGJjN3o5Z0xBeExwdTI5U1FjQXdEMUJMVWx3LTJTZ3ozQ21vSmFHUUx5NVd6dWNfR00wX2xVLVFBOWFpVEdwNG9WVWd5UTJYZ0FuZ0hWX2ltTlVQa0RDVlhaclJj?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "37/2022/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:47:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWW1ybUh6NGg4MnNXLVhUR1dWbk5YaDhjekt4TmdSSVZrSzUxTkstSjdWNnpyZFNQT3lxMWFyN1NHSE1LdkJ6amh1bnN4YTRZWmlNYTdsT3A3a1lpZm5ZUGstZW1FUG5zMllJWFJ3R05Ha2U4c3pPTGJjN3o5Z0xBeExwdTI5U1FjQXdEMUJMVWx3LTJTZ3ozQ21vSmFHUUx5NVd6dWNfR00wX2xVLVFBOWFpVEdwNG9WVWd5UTJYZ0FuZ0hWX2ltTlVQa0RDVlhaclJj?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 37/2022/QĐ-UBND Sơn La điều chỉnh bổ sung nội dung hệ số điều chỉnh giá đất 2022 - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONnZCQm8zZFkxLUNLTWdFeVR2TVdzbjhoaDFHMFBINzE3enBUdzJvX0NFQjFJRUZzODgzNFQ2bVRTVkNGOWtsdE5OWFJNMTVOSEs0ZzBXWXNDdmNPbVVIV3RWYVR3U0llamo3aUZFRmQxaUU3Y3lnNS1TSlZoS0ZReWxIWU1tcFVzS2hzZHVGMExEZVFRQ2ROdWNwazNWcGhCRE85cGdYTzlQNnQ2N0g2eHAzTHF0VWpjamNxSC1BSGNmT0hWMkt6UTlnOTZsVEFkSmY0?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -7844,22 +7844,22 @@
     },
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTUJfamo4c2lQYWoyOGFjLTFMRXlqVkt3Zm5oOVpBdnA4YUxOX1RHZ0EzZHJ3dzFKRlkyRnpEUEdOMmZNLUpqaVVZeHVGeWdsaU5leVpSVEU3SGRNNVZSUWVEQ1BINDRIWXVZZjZvQ3NfTWdQMnB4ZGF3M2IwTkZ4bk85WXhMTTQ2amNGZGk4UGVvNlQ5RXNhaHZJbGxPWkpmZm5zOVJsTDdiR01RY0Q2NVpQNlJFbnhQbVZZUWk2NXBNOV9fempuZ2gzeGZocXBVbFRJ?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "61/2023/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:47:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTUJfamo4c2lQYWoyOGFjLTFMRXlqVkt3Zm5oOVpBdnA4YUxOX1RHZ0EzZHJ3dzFKRlkyRnpEUEdOMmZNLUpqaVVZeHVGeWdsaU5leVpSVEU3SGRNNVZSUWVEQ1BINDRIWXVZZjZvQ3NfTWdQMnB4ZGF3M2IwTkZ4bk85WXhMTTQ2amNGZGk4UGVvNlQ5RXNhaHZJbGxPWkpmZm5zOVJsTDdiR01RY0Q2NVpQNlJFbnhQbVZZUWk2NXBNOV9fempuZ2gzeGZocXBVbFRJ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 61/2023/QĐ-UBND Ninh Thuận sửa đổi Đề án phát triển nông nghiệp công nghệ cao - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSkRrbkhKekpvczVnRGttem1zSkQ2Qlh6NTF1UTNxVmlBM21WZVBVMXpOUVF1R25iQW9aUUNKMENNczBhODNFUm9ZLXBqQTByNXp6UlFST3BLZHpLZkp4U3VMM2M2ZTlURUpoVWg5b3pfUDBocEM0NHA4V2hJdmRoRTFoZEJGczdYVUlhYlNGTnRQbl83YnVaQUFVUmQ4d0MySENfSzFqY1lvc2JJRGNiT0RoNy1nZWsxcUFsSzVqMmt3OTlyNXZHY1EzdWhITkg5WFlN?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -7938,22 +7938,22 @@
     },
     "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOa3Ezdmk5b2RaR1RuRU5VaVVUZEFLSlhtRzZnbktzei1YYWZvdzdPUjhUSDliWmx4dzNMN2F3YUF1VDBqeVM0NDZaamFEX256R200N1p4eGVhNlVleHl2QWxkQnlKcmVoLVBIdmV3aW5TTnNMeHcxdlI0VmtYeGZlVklzSTA2bWVRRUg0UzZmVHVlSy1ud2dEWWstZGhMTzRBTHYwUGRIN2x0bndKZ2ZjYmRMWFJIYkZKdkotSVpQYnhibXdEQUN0bGEwdXltWkxneGl5TA?oc=5": {
       "agency": "LuatVietnam - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "50/2023/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:47:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOa3Ezdmk5b2RaR1RuRU5VaVVUZEFLSlhtRzZnbktzei1YYWZvdzdPUjhUSDliWmx4dzNMN2F3YUF1VDBqeVM0NDZaamFEX256R200N1p4eGVhNlVleHl2QWxkQnlKcmVoLVBIdmV3aW5TTnNMeHcxdlI0VmtYeGZlVklzSTA2bWVRRUg0UzZmVHVlSy1ud2dEWWstZGhMTzRBTHYwUGRIN2x0bndKZ2ZjYmRMWFJIYkZKdkotSVpQYnhibXdEQUN0bGEwdXltWkxneGl5TA?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định 50/2023/QĐ-UBND Ninh Thuận quy định bồi thường, hỗ trợ, tái định cư khi thu hồi đất - LuatVietnam",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNHBmQTgydExBQnIwWXBfMVhxMzE0azdIOGVHNDA1ekFCNjRpWk5EYjR0Z1NHVG5NTHp2UjJmcjM5eWxWQ2tGTVlHbk0xR0JJNjM1SE0xU3F3M0lsZ0JSZG56N01tSUxzWUlvWkI1cjRKZFdQNmViUk5aRkhLRnZPV1RVd0tYZmtzdlk5Tkk3dkhxUE9ZWEIwSmRvQnJOZUwwQkozencxejNvM0ZRNWU1ZFpqNW5ldGU5dHlYS3RzcUFhR0N5djUtQmNJWlRUUmxBdklITQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -18971,6 +18971,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T14:42:59+00:00",
+  "updated_at": "2026-11-19T14:47:56+00:00",
   "version": 1
 }
