@@ -17,6 +17,20 @@
       "verification_status": "excluded_old",
       "verified_date": "2022-08-02"
     },
+    "https://admin.medinet.gov.vn//Data/soytehcm\\soytehcm\\Attachments/2020_2/10/qd_322_ncov_10220206.pdf": {
+      "agency": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "10/QD",
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "number:10/QD|issuer:QD|locality:",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://admin.medinet.gov.vn//Data/soytehcm\\soytehcm\\Attachments/2020_2/10/qd_322_ncov_10220206.pdf",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Tải file đính kèm tại đây (pdf)"
+    },
     "https://baochinhphu.vn/ban-hanh-nghi-dinh-thanh-lap-cong-ty-quan-ly-tai-san-102143281.htm": {
       "agency": "Báo Chính phủ - Chỉ đạo điều hành",
       "attempts": 1,
@@ -16777,6 +16791,37 @@
       "verification_status": "excluded_old",
       "verified_date": "2026-03-08"
     },
+    "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/chuong-trinh-cong-tac-nam-2026-cua-so-nong-nghiep-va-moi-truong-1012199": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/chuong-trinh-cong-tac-nam-2026-cua-so-nong-nghiep-va-moi-truong-1012199",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/chuong-trinh-cong-tac-nam-2026-cua-so-nong-nghiep-va-moi-truong-1012199",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Chương trình công tác năm 2026 của Sở Nông nghiệp và Môi trường"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-cai-cach-hanh-chinh-nha-nuoc-nam-2026-cua-so-nong-nghiep-va-moi-truong-1015035": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-19T20:33:39+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-cai-cach-hanh-chinh-nha-nuoc-nam-2026-cua-so-nong-nghiep-va-moi-truong-1015035",
+      "last_checked": "2026-11-19T20:33:39+00:00",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-cai-cach-hanh-chinh-nha-nuoc-nam-2026-cua-so-nong-nghiep-va-moi-truong-1015035",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Kế hoạch Cải cách hành chính nhà nước năm 2026 của Sở Nông nghiệp và Môi trường"
+    },
     "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-phat-trien-kinh-te-xa-hoi-giai-doan-2026-2030-nganh-nong-nghiep-va-moi-truong-911584": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Danh mục văn bản",
       "attempts": 3,
@@ -16852,6 +16897,20 @@
       "title": "Văn bản hợp nhất Thông tư ban hành Danh mục vật thể thuộc diện kiểm dịch thực vật; Danh mục vật thể thuộc diện kiểm dịch thực vật phải phân tích nguy cơ dịch hại trước khi nhập khẩu vào Việt Nam",
       "verification_status": "manual_review"
     },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-linh-vuc-thuc-an-chan-nuoi-995789": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-linh-vuc-thuc-an-chan-nuoi-995789",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-linh-vuc-thuc-an-chan-nuoi-995789",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Văn bản hợp nhất Thông tư ban hành quy chuẩn kỹ thuật quốc gia lĩnh vực thức ăn chăn nuôi"
+    },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-dieu-kien-trong-cham-soc-cao-s-996702": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
       "attempts": 3,
@@ -16890,6 +16949,20 @@
       "title": "Văn bản hợp nhất Thông tư ban hành Quy chuẩn kỹ thuật quốc gia về yêu cầu đối với vật thể thuộc diện kiểm dịch thực vật nhập khẩu",
       "verification_status": "manual_review"
     },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-yeu-cau-doi-voi-vat-the-thuoc-996679": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-yeu-cau-doi-voi-vat-the-thuoc-996679",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-chuan-ky-thuat-quoc-gia-ve-yeu-cau-doi-voi-vat-the-thuoc-996679",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Văn bản hợp nhất Thông tư ban hành Quy chuẩn kỹ thuật quốc gia về yêu cầu đối với vật thể thuộc diện kiểm dịch thực vật nhập khẩu"
+    },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat--996684": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
       "attempts": 3,
@@ -16908,6 +16981,20 @@
       "status": "manual_review",
       "title": "Văn bản hợp nhất Thông tư ban hành quy định về quy trình phân tích nguy cơ dịch hại đối với vật thể thuộc diện kiểm dịch thực vật phải phân tích nguy cơ trước khi nhập khẩu vào Việt Nam",
       "verification_status": "manual_review"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-19T20:33:35+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684",
+      "last_seen": "2026-11-19T20:33:35+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-quy-dinh-ve-quy-trinh-phan-tich-nguy-co-dich-hai-doi-voi-vat-996684",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Văn bản hợp nhất Thông tư ban hành quy định về quy trình phân tích nguy cơ dịch hại đối với vật thể thuộc diện kiểm dịch thực vật phải phân tích nguy cơ trước khi nhập khẩu vào Việt Nam"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thanh-lap-cap-nhat-bo-ban-do-chuan-bien-gioi-quoc-gi-996743": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19139,6 +19226,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T19:43:00+00:00",
+  "updated_at": "2026-11-19T20:33:39+00:00",
   "version": 1
 }
