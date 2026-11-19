@@ -4300,7 +4300,7 @@
     },
     "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4308,15 +4308,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T21:22:41+00:00",
       "identity": "url:https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
-      "last_checked": "2026-11-19T21:47:50+00:00",
+      "last_checked": "2026-11-19T21:54:05+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T21:22:41+00:00",
       "link": "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Dự thảo Nghị định quy định chế độ cử tuyển đối với học sinh, sinh viên dân tộc thiểu số lần 2",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/giao-duc/ke-hoach-477-kh-ubnd-dak-lak-2026-xay-dung-thi-diem-tu-sach-cong-dong-so-thu-vien-mo-456600-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -19276,6 +19276,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T21:47:50+00:00",
+  "updated_at": "2026-11-19T21:54:05+00:00",
   "version": 1
 }
