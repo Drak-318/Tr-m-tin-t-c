@@ -885,20 +885,24 @@
     },
     "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/mot-so-diem-moi-cua-nghi-dinh-so-392-2026-nd-cp-cua-chinh-phu-buoc-dot-pha-trong-cai-cach-thu-tuc-hanh-chinh-va-dieu-kien-dau-tu-kinh-doanh-trong-linh-vuc-an-ninh-trat-tu-12143.html": {
       "agency": "Công an TP. Cần Thơ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "dcterms.issued=2026-11-18T04:57:00+01:00",
       "doc_number": "392/2026/NĐ-CP",
       "exported_at": "2026-11-19T03:42:25+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T03:42:18+00:00",
       "identity": "number:392/2026/NĐ-CP|issuer:NĐ-CP|locality:cần thơ",
-      "last_checked": "2026-11-19T03:42:25+00:00",
+      "last_checked": "2026-11-19T03:52:54+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T03:42:18+00:00",
       "link": "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/mot-so-diem-moi-cua-nghi-dinh-so-392-2026-nd-cp-cua-chinh-phu-buoc-dot-pha-trong-cai-cach-thu-tuc-hanh-chinh-va-dieu-kien-dau-tu-kinh-doanh-trong-linh-vuc-an-ninh-trat-tu-12143.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Công an",
-      "status": "pending",
-      "title": "Một số điểm mới của Nghị định số 392/2026/NĐ-CP của Chính phủ: bước đột phá trong cải cách thủ tục hành chính và điều kiện đầu tư kinh doanh trong lĩnh vực an ninh, trật tự"
+      "status": "verified_included",
+      "title": "Một số điểm mới của Nghị định số 392/2026/NĐ-CP của Chính phủ: bước đột phá trong cải cách thủ tục hành chính và điều kiện đầu tư kinh doanh trong lĩnh vực an ninh, trật tự",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-18"
     },
     "https://congan.daklak.gov.vn/thong-bao/doi-canh-sat-giao-thong-duong-bo-so-4-phong-canh-sat-giao-thong-thong-bao-tim-nguoi-lien-quan-den-433-xe-mo-to-xe-gan-may-va-3-o-to-da-het-thoi-han-tam-giu-14701.html": {
       "agency": "Công an Đắk Lắk - Cảnh báo tội phạm",
@@ -4759,17 +4763,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-hoan-thanh-cap-thu-hoi-giay-chung-nhan-tai-12-du-an-trong-quy-iv-2028-186-115876-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 11/11/2026",
       "doc_number": "6301/QĐ-UBND",
+      "exported_at": "2026-11-19T03:52:57+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-19T03:42:18+00:00",
       "identity": "number:6301/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
+      "last_checked": "2026-11-19T03:52:57+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T03:42:18+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-hoan-thanh-cap-thu-hoi-giay-chung-nhan-tai-12-du-an-trong-quy-iv-2028-186-115876-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "​Hà Nội hoàn thành cấp, thu hồi Giấy chứng nhận tại 12 dự án trong quý IV/2028"
+      "status": "manual_review",
+      "title": "​Hà Nội hoàn thành cấp, thu hồi Giấy chứng nhận tại 12 dự án trong quý IV/2028",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-11"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-412-2026-nd-cp-vut-rac-thai-sinh-hoat-khong-dung-noi-quy-dinh-tai-chung-cu-bi-phat-den-1-trieu-dong-186-115861-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -12626,22 +12637,22 @@
     },
     "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOFNMZnYtb1dlWFZzbkZscmY1OUNsZzg2WFlwVFVWbFJERFE0djduem9VOTBTQS1GU3dLc25LQ2VodWpJcXA3VEhnWE5GS19hTUhHNk9iUi1LLTJGZEdXb2Ffb2VFYWpVTVNQZUl0MUUyRFNPaFowZXhuS0gxT1hnWmpB?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "23/2026/NQ-CP",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T03:52:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOFNMZnYtb1dlWFZzbkZscmY1OUNsZzg2WFlwVFVWbFJERFE0djduem9VOTBTQS1GU3dLc25LQ2VodWpJcXA3VEhnWE5GS19hTUhHNk9iUi1LLTJGZEdXb2Ffb2VFYWpVTVNQZUl0MUUyRFNPaFowZXhuS0gxT1hnWmpB?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị quyết số 66.23/2026/NQ-CP ban hành các cơ chế, chính sách đặc thù nhằm xử lý khó khăn, vướng mắc trong pháp luật về phòng, chống rửa tiền nhằm đáp ứng yêu cầu cấp bách trong thực hiện cam kết quốc tế về trao đổi thông tin theo yêu cầu về thuế - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMiggJBVV95cUxNYm9oY2Q1bjVhN2MydUlmSnNVNGZuaXQ3elp2QjJRTXFjQzJJOFI5Y19rUFNBOHk5MlNrQnF2NHRpaktoWkVacFppbS1vTlFEUjl0YkRtSGgxREhtX21CeVh3UkxyclgyOE1NZ1pkNnlmd0c0TENlWkVOSEk2TEVULWZzMkdDNUlBaDBRTVlaTy1JdTRBVHd0cXNrMlU4S1lmbUxJdXNLZFBadlBKRnAyeXdWRlgxdzA4TjVzd1NoNF92TmZEMGtGSmVreUNRN2RyZUhuakFMUm5vaVpoajVaeGRkY3FCbnkyM2N2YVhGSkxQY2ZENEhGMy1rYVJxQ0RoWWc?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -12925,22 +12936,22 @@
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeDZIZ1doSFdkSmtGWC1DR05ZMkxyZ1hjQkc4bUZ3c2RjMTQ5cVYyRldhNmw0TjRGX21rWjhmMF96cV9wRmhzQWdrblFYMElEbFNqZ0toVC1WcHZtODRzMkVzbGljeld1bUM5djFIN1J5dzI2WFRweGZ3aExGRFhqUFRPUDVBd3c?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "198/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T03:52:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeDZIZ1doSFdkSmtGWC1DR05ZMkxyZ1hjQkc4bUZ3c2RjMTQ5cVYyRldhNmw0TjRGX21rWjhmMF96cV9wRmhzQWdrblFYMElEbFNqZ0toVC1WcHZtODRzMkVzbGljeld1bUM5djFIN1J5dzI2WFRweGZ3aExGRFhqUFRPUDVBd3c?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định số 198/2026/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 26/2025/NĐ-CP ngày 24 tháng 02 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaXNaNnhxZWJRMzRVOVRHSDFRQmZjUXFoVXhQRm5QVUUtS3c2MW5aUDlET1dtODNRenJkbmtWYTVhazNyUUtiejAwMDZCMXhoNGNHT1dVOFlFSTM1RVhWM0tSb25Fb0sxdU1tZnRSWDFKSW4tVTJ0X3hDeUNGZWJIWktFamFHb28?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -13206,21 +13217,21 @@
     },
     "https://news.google.com/rss/articles/CBMilgJBVV95cUxORU5CeGk4bmNEUE9RbzdjVzVCWm0wRHU2MzNfaUhlUFlXMGdIaU1yMnNXcFAzNzltYVZYdWlBaXBNYVVZaFI2R3I5UzFza1BKQWRtRnZOdTJUbk5XMlp5SDUyVE94MDZSNkFEaG0yU2hvSkhXUXNtYzV2RWdXLXVldEtnd1c5R0kybWM3SjBMdER2dW1IbUlOcGJNM3ZJSDdwLU1HNFIxbHB0ZDRaWHR6cVpiVDhXelg4eXhkZlZSRG5UM0R2eVlXU1JwbWdoNjRuV1F2WGJrcER3bElNdEJOdUR4VzdLd3FnNXZsQXJHZGNqWmJZTy1heF91amJ1RS1NOFFCc2lsakVsQVhhOU1FWmlUVmlGZw?oc=5": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:07+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:05:02+00:00",
-      "last_checked": "2026-11-18T17:36:39+00:00",
+      "last_checked": "2026-11-19T03:52:54+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxORU5CeGk4bmNEUE9RbzdjVzVCWm0wRHU2MzNfaUhlUFlXMGdIaU1yMnNXcFAzNzltYVZYdWlBaXBNYVVZaFI2R3I5UzFza1BKQWRtRnZOdTJUbk5XMlp5SDUyVE94MDZSNkFEaG0yU2hvSkhXUXNtYzV2RWdXLXVldEtnd1c5R0kybWM3SjBMdER2dW1IbUlOcGJNM3ZJSDdwLU1HNFIxbHB0ZDRaWHR6cVpiVDhXelg4eXhkZlZSRG5UM0R2eVlXU1JwbWdoNjRuV1F2WGJrcER3bElNdEJOdUR4VzdLd3FnNXZsQXJHZGNqWmJZTy1heF91amJ1RS1NOFFCc2lsakVsQVhhOU1FWmlUVmlGZw?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Rà soát, hoàn thiện dự thảo Nghị quyết của Quốc hội về một số cơ chế, chính sách đặc thù phát triển du lịch Việt Nam đảm bảo chất lượng cao nhất - bvhttdl.gov.vn",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMimAJBVV95cUxNd29zcVpBOFlXc0ptX0xkYVNrM3ZJS0c0dmUwMm9vSDdBNVBVeXZXbUg3V3NvbWlYWUJCUGxxYXZJRm1VYVVwd0xuck9taE1NNVI1dk9vMEZxTkxBVXZPTEI2dVBpWWRzZ0dTUWJ6S1RDdlF4T3F4YVd1dXFNQ284VzktWDhOTVZlZHNfXy1pVm0wWDNnYlhsTFdVaEkzeVhQcDlTMi11b0V3QmhnZG9KZHlYamJlYlRsMjFsUDY5Sm91S1Bra09FaUdvWF96Nmp0WHRhcm41d29LQm9rdzFJREJLYTBya1REOWpXT3dwOHlqR3NLY1hORXdUX3QzTTc1ajhxVzlUc0FvVVhsS1NycEVZU29pWjBs?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -18221,6 +18232,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T03:42:25+00:00",
+  "updated_at": "2026-11-19T03:52:57+00:00",
   "version": 1
 }
