@@ -6948,7 +6948,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-ve-cac-mau-van-ban-theo-nghi-dinh-302020nd-cp-c4722-31473.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "30/2020/NĐ-CP",
@@ -6956,19 +6956,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
       "identity": "number:30/2020/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-19T02:39:32+00:00",
+      "last_checked": "2026-11-19T14:42:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-ve-cac-mau-van-ban-theo-nghi-dinh-302020nd-cp-c4722-31473.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Tải về các mẫu văn bản theo Nghị định 30/2020/NĐ-CP",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-1272016nq-hdnd-tphcm-cu-va-nghi-quyet-so-482017nq-hdnd-ba-c1291-74992.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "127/2016/NQ-HĐND",
@@ -6976,19 +6976,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
       "identity": "number:127/2016/NQ-HĐND|issuer:NQ-HĐND|locality:sau sáp nhập. medinet tp.hcm",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:42:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-1272016nq-hdnd-tphcm-cu-va-nghi-quyet-so-482017nq-hdnd-ba-c1291-74992.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Bãi bỏ Nghị quyết số 127/2016/NQ-HĐND (TP.HCM cũ) và Nghị quyết số 48/2017/NQ-HĐND (Bà Rịa - Vũng Tàu cũ) về mức giá và chính sách hỗ trợ điều trị Methadone để chuẩn bị cho việc áp dụng các quy định mới đồng bộ trên toàn Thành phố sau sáp nhập.",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-252014nq-hdnd-ve-thu-hut-nhan-luc-y-te-du-phong-va-nghi-qu-c1291-74990.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "25/2014/NQ-HĐND",
@@ -6996,19 +6996,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
       "identity": "number:25/2014/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:medinet.hochiminhcity.gov.vn",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:42:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-252014nq-hdnd-ve-thu-hut-nhan-luc-y-te-du-phong-va-nghi-qu-c1291-74990.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Bãi bỏ Nghị quyết số 25/2014/NQ-HĐND (về thu hút nhân lực y tế dự phòng) và Nghị quyết số 64/2006/NQ-HĐND (về phụ cấp trạm y tế) của HĐND TPHCM trước sáp nhập",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-392010nq-hdnd-ho-tro-ban-bao-ve-cham-soc-suc-khoe-can-bo-v-c1291-74991.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "39/2010/NQ-HĐND",
@@ -7016,15 +7016,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
       "identity": "number:39/2010/NQ-HĐND|issuer:NQ-HĐND|locality:bình dương medinet tp.hcm",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:42:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/bai-bo-nghi-quyet-so-392010nq-hdnd-ho-tro-ban-bao-ve-cham-soc-suc-khoe-can-bo-v-c1291-74991.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Bãi bỏ Nghị quyết số 39/2010/NQ-HĐND (hỗ trợ Ban Bảo vệ chăm sóc sức khỏe cán bộ) và Nghị quyết số 23/2023/NQ-HĐND (hỗ trợ nhân viên ngành y tế) của tỉnh Bình Dương",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-chi-phi-chi-tra-tro-cap-xa-hoi-hang-thang-tro-cap-huu-tri-xa-hoi-h-c1291-74987.aspx": {
       "agency": "Medinet TP.HCM",
@@ -7322,22 +7322,22 @@
     },
     "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQQU9ZR25FaThqXy1MWnpqMXV6ejhGRXZiWVRMN1ZMTkJXVjY2SEhvTk1FREg2OGpQR1VUdTV0WXRZOXQtSWt1ZjdWbDd0LXZUWmtmWXpSOVBfYzB2Z3dhbjN2Xy1jVVBlR0E1ckxfcjY4eFVjRjB2ZE81ZExYMHRtTkwtV3dOY2pSMWJtWG1iY0E1bTJReHU4a0IyLTdQYm9BRzNkbEZ5U0RUMFhUNmthaHc0VTNKRlBIUmdHNHJlQlJWa2tZNEJRd2xvbXh0bnJ5Z3VESXNhemh3YTFDRXJQRVlVT3ZiXzV2TzRLSHplRWNYMHppaEhOTQ?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "67/2026/TT-BKHCN",
       "exported_at": "2026-11-18T00:52:16+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T00:14:57+00:00",
-      "last_checked": "2026-11-19T02:39:35+00:00",
+      "last_checked": "2026-11-19T14:42:59+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQQU9ZR25FaThqXy1MWnpqMXV6ejhGRXZiWVRMN1ZMTkJXVjY2SEhvTk1FREg2OGpQR1VUdTV0WXRZOXQtSWt1ZjdWbDd0LXZUWmtmWXpSOVBfYzB2Z3dhbjN2Xy1jVVBlR0E1ckxfcjY4eFVjRjB2ZE81ZExYMHRtTkwtV3dOY2pSMWJtWG1iY0E1bTJReHU4a0IyLTdQYm9BRzNkbEZ5U0RUMFhUNmthaHc0VTNKRlBIUmdHNHJlQlJWa2tZNEJRd2xvbXh0bnJ5Z3VESXNhemh3YTFDRXJQRVlVT3ZiXzV2TzRLSHplRWNYMHppaEhOTQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Thông tư 67/2026/TT-BKHCN quy hoạch băng tần 1900-1910 MHz cho hệ thống thông tin di động đường sắt mới nhất - Thư Viện Pháp Luật",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNZGNQcVBLd25LdWJqVUJtUi04UE9GbkhlQ2JaQTBvRFF3T2JIZ3lmNEZVTGF5cXd2QjAyTy1JV1IxT1huMWNaUUlZLVZWbTlVYjRsTklOUGtLZ0tjRm9EalFEbVhzZXpMRGlKR3NrcXhyOVZnUHBXdGJUZXhZRWM4d3NVYm1YOVpURkRxV1RMVllqajBMaWk0M1htWmhpMW1MZkd6ZUNRWVNIRHFFNGxyQnNpcG5iTmZnMjBCNVAxVlkyMll3dXBTSjNJMzhoSnEwYXpIcmNiZlBWS0pkMHg0ckFQVGI3NXowSThTR0NDejlWUEFOREhGY0ln?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
@@ -18971,6 +18971,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T14:27:55+00:00",
+  "updated_at": "2026-11-19T14:42:59+00:00",
   "version": 1
 }
