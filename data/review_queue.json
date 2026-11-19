@@ -18464,7 +18464,7 @@
       "doc_number": "171/UBND-TCD-NC",
       "first_seen": "2026-11-19T19:05:58+00:00",
       "identity": "number:171/UBND-TCD-NC|issuer:UBND-TCD-NC|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản - 4499",
-      "last_checked": "2026-11-19T19:38:15+00:00",
+      "last_checked": "2026-11-19T19:43:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T19:05:58+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/171CV-UB2021CDNC___1_1766463229172.pdf/bea4c22e-61b6-bd09-e7c4-c28d24b51bf1",
@@ -18786,7 +18786,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T19:05:58+00:00",
       "identity": "number:09/QĐ-UBND-TCCB|issuer:QĐ-UBND-TCCB|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản - 4499",
-      "last_checked": "2026-11-19T19:38:27+00:00",
+      "last_checked": "2026-11-19T19:43:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T19:05:58+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644291",
@@ -18806,7 +18806,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T19:05:58+00:00",
       "identity": "number:171/UBND-TCD-NC|issuer:UBND-TCD-NC|locality:nhiệm kỳ 2021 - 2026 ubnd tỉnh đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản - 4499",
-      "last_checked": "2026-11-19T19:38:27+00:00",
+      "last_checked": "2026-11-19T19:43:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T19:05:58+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644292",
@@ -18900,7 +18900,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T19:05:58+00:00",
       "identity": "number:1315/QĐ-UBND-HC|issuer:QĐ-UBND-HC|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản - 4499",
-      "last_checked": "2026-11-19T19:38:27+00:00",
+      "last_checked": "2026-11-19T19:43:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T19:05:58+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644379",
@@ -18918,7 +18918,7 @@
       "doc_number": "207/KH-UBND",
       "first_seen": "2026-11-19T19:05:58+00:00",
       "identity": "number:207/KH-UBND|issuer:KH-UBND|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản - 4499",
-      "last_checked": "2026-11-19T19:38:27+00:00",
+      "last_checked": "2026-11-19T19:43:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T19:05:58+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644380",
@@ -19139,6 +19139,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T19:38:27+00:00",
+  "updated_at": "2026-11-19T19:43:00+00:00",
   "version": 1
 }
