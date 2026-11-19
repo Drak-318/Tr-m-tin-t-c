@@ -2191,7 +2191,7 @@
     },
     "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-nghi-quyet-so-31-2026-nq-hdnd-ngay-11-thang-11-nam-2026-cua-hoi-dong-nhan-dan-thanh-pho-dong-nai-quy-dinh-chinh-sach-ho-tro-cac-ho-gia-dinh-ca-nhan-co-long-be-nuoi-thuy-san-be-de-o-bi-giai-toa-tren-cac-tuyen-song-64930.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "31/2026/NQ-HĐND",
@@ -2199,15 +2199,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T15:06:23+00:00",
       "identity": "number:31/2026/NQ-HĐND|issuer:NQ-HĐND|locality:đồng nai quy định chính sách hỗ trợ các hộ gia đình",
-      "last_checked": "2026-11-19T03:42:16+00:00",
+      "last_checked": "2026-11-19T16:08:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T15:06:23+00:00",
       "link": "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-nghi-quyet-so-31-2026-nq-hdnd-ngay-11-thang-11-nam-2026-cua-hoi-dong-nhan-dan-thanh-pho-dong-nai-quy-dinh-chinh-sach-ho-tro-cac-ho-gia-dinh-ca-nhan-co-long-be-nuoi-thuy-san-be-de-o-bi-giai-toa-tren-cac-tuyen-song-64930.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông cáo báo chí Nghị quyết số 31/2026/NQ-HĐND ngày 11 tháng 11 năm 2026 của Hội đồng nhân dân thành phố Đồng Nai quy định chính sách hỗ trợ các hộ gia đình, cá nhân có lồng, bè nuôi thủy sản, bè để ở bị giải tỏa trên các tuyến sông...",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-quyet-dinh-quy-dinh-han-muc-giao-dat-nong-nghiep-cho-ho-gia-dinh-ca-nhan-dang-su-dung-dat-do-tu-khai-hoang-khong-co-tranh-chap-tren-dia-ban-thanh-pho-dong-nai-64910.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -2289,21 +2289,21 @@
     },
     "https://dongnai.gov.vn/vi/news/van-ban-quy-pham-phap-luat/quyet-dinh-sua-doi-bo-sung-mot-so-dieu-cua-quy-che-phoi-hop-trong-cong-tac-quan-ly-nha-nuoc-doi-voi-doanh-nghiep-hop-tac-xa-ho-kinh-doanh-sau-dang-ky-thanh-lap-tren-dia-ban-tinh-dong-nai-ban-hanh-kem-theo-quyet-dinh-so-24-2026-qd-ubnd-64929.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "24/2026/QĐ-UBND",
       "first_seen": "2026-11-18T15:06:23+00:00",
       "identity": "number:24/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đồng nai ban hành kèm theo quyết định số 24/2026/qđ-ubnd... ubnd tỉnh đồng nai - chỉ đạo điều hành",
-      "last_checked": "2026-11-19T03:42:16+00:00",
+      "last_checked": "2026-11-19T16:08:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T15:06:23+00:00",
       "link": "https://dongnai.gov.vn/vi/news/van-ban-quy-pham-phap-luat/quyet-dinh-sua-doi-bo-sung-mot-so-dieu-cua-quy-che-phoi-hop-trong-cong-tac-quan-ly-nha-nuoc-doi-voi-doanh-nghiep-hop-tac-xa-ho-kinh-doanh-sau-dang-ky-thanh-lap-tren-dia-ban-tinh-dong-nai-ban-hanh-kem-theo-quyet-dinh-so-24-2026-qd-ubnd-64929.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định sửa đổi, bổ sung một số điều của Quy chế phối hợp trong công tác quản lý nhà nước đối với doanh nghiệp, hợp tác xã, hộ kinh doanh sau đăng ký thành lập trên địa bàn tỉnh Đồng Nai ban hành kèm theo Quyết định số 24/2026/QĐ-UBND...",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dttktt.sbv.gov.vn/webcenter/portal/vi/menu/rm/ls/bls": {
       "agency": "Ngân hàng Nhà nước - Văn bản quy phạm pháp luật",
@@ -3720,7 +3720,7 @@
     },
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-60-nq-tw-cua-ban-chap-hanh-trung-uong-ve-hoi-nghi-lan-thu-11-ban-chap-hanh-trung-uong-dang-khoa-xiii-397246-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "60-NQ/TW",
@@ -3728,15 +3728,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T18:27:15+00:00",
       "identity": "number:60-NQ/TW|issuer:TW|locality:",
-      "last_checked": "2026-11-19T03:42:16+00:00",
+      "last_checked": "2026-11-19T16:08:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T18:27:15+00:00",
       "link": "https://luatvietnam.vn/chinh-sach/nghi-quyet-60-nq-tw-cua-ban-chap-hanh-trung-uong-ve-hoi-nghi-lan-thu-11-ban-chap-hanh-trung-uong-dang-khoa-xiii-397246-d1.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Nghị quyết 60-NQ/TW của Ban Chấp hành Trung ương về Hội nghị lần thứ 11 Ban Chấp hành Trung ương Đảng khóa XIII",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-68-nq-tw-cua-bo-chinh-tri-ve-phat-trien-kinh-te-tu-nhan-399256-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
@@ -4935,7 +4935,7 @@
     },
     "https://luatvietnam.vn/thuy-hai-san/du-thao-thong-tu-sua-doi-thong-tu-21-2018-tt-bnnptnt-cua-bo-nong-nghiep-va-181428-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "21/2018/TT-BNNPTNT",
@@ -4943,15 +4943,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T19:17:51+00:00",
       "identity": "number:21/2018/TT-BNNPTNT|issuer:TT-BNNPTNT|locality:",
-      "last_checked": "2026-11-19T03:42:17+00:00",
+      "last_checked": "2026-11-19T16:08:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T19:17:51+00:00",
       "link": "https://luatvietnam.vn/thuy-hai-san/du-thao-thong-tu-sua-doi-thong-tu-21-2018-tt-bnnptnt-cua-bo-nong-nghiep-va-181428-d10.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Dự thảo Thông tư sửa đổi Thông tư 21/2018/TT-BNNPTNT của Bộ Nông nghiệp và Phát triển nông thôn về việc quy định về ghi, nộp báo cáo, nhật ký khai thác thủy sản; công bố cảng cá chỉ định xác nhận nguồn gốc thủy sản từ khai thác; danh sách tàu cá khai thác thủy sản bất hợp pháp; xác nhận nguyên liệu, chứng nhận nguồn gốc thủy sản khai thác lần 2",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/5-truong-hop-duoc-chinh-sua-noi-dung-chung-chi-dao-tao-boi-duong-tu-nam-2027-186-115898-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -16394,7 +16394,7 @@
     },
     "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -16402,15 +16402,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T19:17:51+00:00",
       "identity": "url:https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin",
-      "last_checked": "2026-11-19T03:42:18+00:00",
+      "last_checked": "2026-11-19T16:08:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T19:17:51+00:00",
       "link": "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hướng dẫn yêu cầu cung cấp thông tin",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7%2B4MfeygA%25253D%25253D": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL",
@@ -19025,6 +19025,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T15:52:55+00:00",
+  "updated_at": "2026-11-19T16:08:08+00:00",
   "version": 1
 }
