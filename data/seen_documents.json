@@ -2708,6 +2708,15 @@
       "link": "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123047",
       "title": "Quyết định công bố thủ tục hành chính trong lĩnh vực Bản quyền tác giả thuộc phạm vi chức năng quản lý của Bộ Văn hóa, Thể thao và Du lịch"
     },
+    "number:2952/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
+      "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản",
+      "category": "Văn bản khác",
+      "doc_number": "2952/QĐ-BVHTTDL",
+      "first_seen": "2026-11-19T01:47:41+00:00",
+      "last_seen": "2026-11-19T01:47:41+00:00",
+      "link": "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123068",
+      "title": "Quyết định Phê duyệt Đề án phát triển đội ngũ trí thức ngành Văn hóa, Thể thao và Du lịch đến năm 2030, tầm nhìn đến năm 2045"
+    },
     "number:2957/QĐ-BCT|issuer:QĐ-BCT|locality:": {
       "agency": "Bộ Công Thương - Văn bản pháp luật",
       "category": "Văn bản địa phương",
@@ -3693,6 +3702,15 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220138&classid=1&orggroupid=2",
       "title": "398/2026/NĐ-CP 29/10/2026"
     },
+    "number:43/2026/TT-BNNMT|issuer:TT-BNNMT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "43/2026/TT-BNNMT",
+      "first_seen": "2026-11-19T01:47:41+00:00",
+      "last_seen": "2026-11-19T01:47:41+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-du-lieu-linh-vuc-lam-nghiep-duoc-quan-ly-theo-10-nhom-186-115870-article.html",
+      "title": "Từ 20/11/2026, dữ liệu lĩnh vực lâm nghiệp được quản lý theo 10 nhóm"
+    },
     "number:43/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
       "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
       "category": "Văn bản địa phương",
@@ -3884,6 +3902,15 @@
       "last_seen": "2026-11-18T08:48:52+00:00",
       "link": "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4906-qd-ubnd-nghe-an-2026-phe-duyet-phuong-an-don-gian-hoa-thu-tuc-hanh-chinh-duong-sat-456850-d2.html",
       "title": "Quyết định 4906/QĐ-UBND của Ủy ban nhân dân tỉnh Nghệ An phê duyệt Phương án đơn giản hóa thủ tục hành chính trong lĩnh vực Đường sắt thuộc phạm vi chức năng quản lý của Sở Xây dựng"
+    },
+    "number:4911/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an": {
+      "agency": "UBND tỉnh Nghệ An",
+      "category": "Văn bản địa phương",
+      "doc_number": "4911/QĐ-UBND",
+      "first_seen": "2026-11-19T01:47:41+00:00",
+      "last_seen": "2026-11-19T01:47:41+00:00",
+      "link": "https://nghean.gov.vn/?pageid=71897&p_steering=158191",
+      "title": "Quyết định phê duyệt Phương án cắt giảm, đơn giản hoá thủ tục hành chính thuộc phạm vi, chức năng quản lý của Ban quản lý KKT Đông Nam Nghệ An"
     },
     "number:492-QĐ/TW|issuer:TW|locality:": {
       "agency": "Tư liệu Văn kiện Đảng",
@@ -4556,6 +4583,15 @@
       "last_seen": "2026-11-18T09:27:37+00:00",
       "link": "https://dbndthanhhoa.gov.vn/portal/Home/van-ban/details.aspx?v=2219",
       "title": "Nghị quyết về kế hoạch đầu tư công trung hạn giai đoạn 2026 - 2030 nguồn vốn ngân sách địa phương tỉnh Thanh Hóa (đợt 2)"
+    },
+    "number:8703/BYT-TCCB|issuer:BYT-TCCB|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
+      "category": "Công văn",
+      "doc_number": "8703/BYT-TCCB",
+      "first_seen": "2026-11-19T01:47:41+00:00",
+      "last_seen": "2026-11-19T01:47:41+00:00",
+      "link": "https://luatvietnam.vn/y-te/cong-van-8703-byt-tccb-2026-thuc-hien-che-do-phu-cap-uu-dai-nghe-theo-nghi-dinh-350-2026-nd-cp-456931-d6.html",
+      "title": "Công văn 8703/BYT-TCCB 2026 về việc thực hiện chế độ phụ cấp ưu đãi nghề theo Nghị định 350/2026/NĐ-CP"
     },
     "number:8732/CT|issuer:CT|locality:": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -5762,6 +5798,15 @@
       "link": "https://nghean.gov.vn/?pageid=71897&p_steering=158117",
       "title": "V/v triá»n khai thá»±c hiá»n Nghá» quyáº¿t sá» 328/NQ-CP ngÃ y 13/10/2025 cá»§a ChÃ­nh phá»§ ban hÃ nh ChÆ°Æ¡ng trÃ¬nh hÃ nh Äá»ng cá»§a ChÃ­nh phá»§ thá»±c hiá»n Nghá» quyáº¿t sá» 70-NQ/TW"
     },
+    "url:https://nghean.gov.vn/?pageid=71897&p_steering=158174": {
+      "agency": "UBND tỉnh Nghệ An",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-19T01:47:41+00:00",
+      "last_seen": "2026-11-19T01:47:41+00:00",
+      "link": "https://nghean.gov.vn/?pageid=71897&p_steering=158174",
+      "title": "V/v triển khai đồng bộ bổ sung thông tin hồ sơ và cập nhật ngày hẹn kết quả giải quyết TTHC"
+    },
     "url:https://qldd.mae.gov.vn/thu-hoi-boi-thuong-ho-tro-tai-dinh-cu-ve---dat-dai/tinh-dak-lak-ban-hanh-quy-dinh-quy-trinh-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3754.htm": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -6096,6 +6141,7 @@
     "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123057": "number:2154/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123060": "number:26/2026/TT-BVHTTDL|issuer:TT-BVHTTDL|locality:",
     "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123064": "number:3081/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:",
+    "https://bvhttdl.gov.vn/van-ban-chi-tiet?vbid=123068": "number:2952/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:",
     "https://chinhphu.vn/?docid=220229": "legacy_sheet_url:https://chinhphu.vn/?docid=220229",
     "https://chinhphu.vn/?docid=220249": "legacy_sheet_url:https://chinhphu.vn/?docid=220249",
     "https://chinhphu.vn/?docid=220252": "legacy_sheet_url:https://chinhphu.vn/?docid=220252",
@@ -6749,6 +6795,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/tphcm-de-nghi-doanh-nghiep-chuan-hoa-thong-tin-dang-ky-truoc-10-12-2026-186-115852-article.html": "number:22826/STC-ĐKKD|issuer:STC-ĐKKD|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-bo-tai-chinh-bai-bo-5-thu-tuc-hanh-chinh-ve-ho-tro-cap-bu-lai-suat-186-115868-article.html": "number:3003/QĐ-BTC|issuer:QĐ-BTC|locality:",
+    "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-du-lieu-linh-vuc-lam-nghiep-duoc-quan-ly-theo-10-nhom-186-115870-article.html": "number:43/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
     "https://luatvietnam.vn/tu-phap/nghi-dinh-413-2026-nd-cp-sua-doi-nghi-dinh-104-2025-nd-cp-ve-luat-cong-chung-456590-d1.html": "legacy_sheet_url:https://luatvietnam.vn/tu-phap/nghi-dinh-413-2026-nd-cp-sua-doi-nghi-dinh-104-2025-nd-cp-ve-luat-cong-chung-456590-d1.html",
     "https://luatvietnam.vn/tu-phap/quyet-dinh-112-2026-qd-ubnd-lam-dong-quy-dinh-muc-tran-chi-phi-in-chup-danh-may-giay-to-456910-d2.html": "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định mức trần chi phí in",
     "https://luatvietnam.vn/tu-phap/van-ban-hop-nhat-8-2026-vbhn-tt-btp-2026-huong-dan-thi-hanh-luat-luat-su-va-nghi-dinh-chi-tiet-452190-d5.html": "number:8/2026/VBHN-TT-BTP|issuer:VBHN-TT-BTP|locality:",
@@ -6779,6 +6826,7 @@
     "https://luatvietnam.vn/xuat-nhap-khau/van-ban-hop-nhat-109-2026-vbhn-tt-bnnmt-2026-ve-danh-muc-vat-the-kiem-dich-thuc-vat-va-phan-tich-nguy-co-dich-hai-454455-d5.html": "number:109/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/van-ban-hop-nhat-110-2026-vbhn-tt-bnnmt-2026-quy-dinh-quy-trinh-phan-tich-nguy-co-dich-hai-kiem-dich-thuc-vat-454570-d5.html": "number:110/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/van-ban-hop-nhat-111-2026-vbhn-tt-bnnmt-2026-ve-quy-chuan-ky-thuat-kiem-dich-thuc-vat-nhap-khau-454569-d5.html": "number:111/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
+    "https://luatvietnam.vn/y-te/cong-van-8703-byt-tccb-2026-thuc-hien-che-do-phu-cap-uu-dai-nghe-theo-nghi-dinh-350-2026-nd-cp-456931-d6.html": "number:8703/BYT-TCCB|issuer:BYT-TCCB|locality:",
     "https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-phu-cap-uu-dai-nghe-cho-chuyen-mon-y-te-bo-quoc-phong-455477-d10.html": "url:https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-phu-cap-uu-dai-nghe-cho-chuyen-mon-y-te-bo-quoc-phong-455477-d10.html",
     "https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-thong-tin-bao-cao-cong-tac-kiem-dich-y-te-456652-d10.html": "url:https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-thong-tin-bao-cao-cong-tac-kiem-dich-y-te-456652-d10.html",
     "https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-ty-le-ton-thuong-co-the-do-thuong-tich-benh-tat-va-benh-nghe-nghiep-456519-d10.html": "url:https://luatvietnam.vn/y-te/du-thao-thong-tu-quy-dinh-ty-le-ton-thuong-co-the-do-thuong-tich-benh-tat-va-benh-nghe-nghiep-456519-d10.html",
@@ -7200,6 +7248,8 @@
     "https://nghean.gov.vn/?pageid=71897&p_steering=158038": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158038",
     "https://nghean.gov.vn/?pageid=71897&p_steering=158042": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158042",
     "https://nghean.gov.vn/?pageid=71897&p_steering=158117": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158117",
+    "https://nghean.gov.vn/?pageid=71897&p_steering=158174": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158174",
+    "https://nghean.gov.vn/?pageid=71897&p_steering=158191": "number:4911/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an",
     "https://nghean.gov.vn/?pageid=71913&p_cate=7772": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_cate=7772",
     "https://nghean.gov.vn/?pageid=71913&p_field=10402": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_field=10402",
     "https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183": "legacy_sheet_url:https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183",
