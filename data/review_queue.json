@@ -1863,13 +1863,13 @@
     },
     "https://dongnai.gov.vn/vi/gop-y-du-thao/": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-19T17:23:22+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/gop-y-du-thao/",
-      "last_checked": "2026-11-19T17:33:34+00:00",
+      "last_checked": "2026-11-19T17:48:33+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T17:23:22+00:00",
       "link": "https://dongnai.gov.vn/vi/gop-y-du-thao/",
@@ -19043,6 +19043,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T17:33:34+00:00",
+  "updated_at": "2026-11-19T17:48:33+00:00",
   "version": 1
 }
