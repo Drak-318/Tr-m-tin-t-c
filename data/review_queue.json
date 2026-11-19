@@ -12688,59 +12688,59 @@
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsMmVNeFpWaFpQLTZUZV9fdzRQdWpfb1MtWTBFREVrNE0xR1hWWEpITUlDcjRPVmFtZk1UNkJ2MTZESmRFeERyMEV4ZDVLVF9OVnI4RjFRbWRxeVlsRWIydXFoNUhpZ3BlaC1MQW15LWRqNzhSRnc1M19MNWw1XzQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "342/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T21:38:42+00:00",
+      "last_checked": "2026-11-19T09:58:15+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-17T14:55:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsMmVNeFpWaFpQLTZUZV9fdzRQdWpfb1MtWTBFREVrNE0xR1hWWEpITUlDcjRPVmFtZk1UNkJ2MTZESmRFeERyMEV4ZDVLVF9OVnI4RjFRbWRxeVlsRWIydXFoNUhpZ3BlaC1MQW15LWRqNzhSRnc1M19MNWw1XzQ?oc=5",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định số 342/2026/NĐ-CP quy định chi tiết Luật Thương mại và Luật Quản lý ngoại thương về hoạt động mua bán hàng hóa và các hoạt động liên quan trực tiếp đến mua bán hàng hóa của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoà - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuWUo1UnlBbTZ0a0VqX2xzTERXRUdoQUZvc0FGekpMLTBhWlRLLTczOWNMLWJ5WHhTYVFpbzFsRy1qaDBxV05hMzV4SUlKZWE2ZHJ1UVNnMVk2Z3FBQnFQUkJpMEFBUkVQdms4eklNTXJEeFdRSGJQYzY1UEhWc1E?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "162/2026/TT-BTC",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T21:38:42+00:00",
+      "last_checked": "2026-11-19T09:58:15+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuWUo1UnlBbTZ0a0VqX2xzTERXRUdoQUZvc0FGekpMLTBhWlRLLTczOWNMLWJ5WHhTYVFpbzFsRy1qaDBxV05hMzV4SUlKZWE2ZHJ1UVNnMVk2Z3FBQnFQUkJpMEFBUkVQdms4eklNTXJEeFdRSGJQYzY1UEhWc1E?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Thông tư số 162/2026/TT-BTC ban hành biểu mẫu thực hiện thủ tục đăng ký tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã, biểu mẫu đăng ký và thông báo về hỗ trợ cho tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã và quy định về nội dung thông tin, việc cập nhật, - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwODg2OVIxZXpodDdTeUV5OWRkeG1hcWp6YU1VSmNXOXE5bXRKUURmeDdWSXBReHZhUE1NUF83NmF5T2dIMEc2WGpqejVWT2lUcjVlTEtqckRTaG0xWjJ5cWdiZXRFdmdfVnF6UDNRV0VwSFduZU50SUk5UDVPcWc?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "254/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T21:38:42+00:00",
+      "last_checked": "2026-11-19T09:58:15+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwODg2OVIxZXpodDdTeUV5OWRkeG1hcWp6YU1VSmNXOXE5bXRKUURmeDdWSXBReHZhUE1NUF83NmF5T2dIMEc2WGpqejVWT2lUcjVlTEtqckRTaG0xWjJ5cWdiZXRFdmdfVnF6UDNRV0VwSFduZU50SUk5UDVPcWc?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định số 254/2026/NĐ-CP quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý thuế số 108/2025/QH15 về hóa đơn điện tử, chứng từ điện tử - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzQktZTTBBQzZua3o2cnUtTjVPZkdIc0tIU3Fqal9XelAySUlVQVUxR2FpeC1TQk45WXdDUmR1UGg3eEZZdVk3OXVuSEtxOHlOMXVXa3gySnpZbEJNVTFzVlhoQlBOWmN3YnVGUEE3TlI3Zzg3VVExa1FoQlJUMUE?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -12781,21 +12781,21 @@
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kSm15b0FqWWI0M1JWcWU4ck93dk55VmJQaWxoQ2NRNkViM0pVWGdlT0ZrSllHNlp2Y1l6ZUV6dHUwVzg0bGxfNEpVT1Rqa1VJUjBXdVZDUno5OU9wWVppcXFSMWdKWFI2Y3VKZWE4T3NXcDlZQkgtSVQ1cDVaZw?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "49/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T21:38:42+00:00",
+      "last_checked": "2026-11-19T09:58:15+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T00:52:06+00:00",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kSm15b0FqWWI0M1JWcWU4ck93dk55VmJQaWxoQ2NRNkViM0pVWGdlT0ZrSllHNlp2Y1l6ZUV6dHUwVzg0bGxfNEpVT1Rqa1VJUjBXdVZDUno5OU9wWVppcXFSMWdKWFI2Y3VKZWE4T3NXcDlZQkgtSVQ1cDVaZw?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị định số 49/2026/NĐ-CP quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5VcUE1Zm9YTE5hM0hERDY2a01sM0Q4d2RKX1RjYWc2VDNvRVptdXFaZGdVZm1nd2wwR3BpR0NCNUNZSVNzVlJ4TGFReUhZZEdTaUMzWTl4S1hXQnYtRThLUkUybjJtN2dvMzRUWjBSOGo5WFE1Yy0zZDBJdkZQQQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -12836,22 +12836,22 @@
     },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmT1FPM2dNbjVwdjhnTmRZbFV4UGtybkc3bGtkZDBNeWROVXlMUEtCcWRzMXlYQ3dwMlhmV1NqOWJOTHZxcFpaSlBvM2pnUHVhT1hqVXBlZ09wQ2N6bk10dUYtY2dxQUtEbDNPZmh6Vk5weEVhOVdVcVJYS3FuQQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "69/2026/TT-BCT",
       "exported_at": "2026-11-18T00:16:09+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T21:38:42+00:00",
+      "last_checked": "2026-11-19T09:58:15+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmT1FPM2dNbjVwdjhnTmRZbFV4UGtybkc3bGtkZDBNeWROVXlMUEtCcWRzMXlYQ3dwMlhmV1NqOWJOTHZxcFpaSlBvM2pnUHVhT1hqVXBlZ09wQ2N6bk10dUYtY2dxQUtEbDNPZmh6Vk5weEVhOVdVcVJYS3FuQQ?oc=5",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Thông tư số 69/2026/TT-BCT sửa đổi, bổ sung một số điều của Thông tư số 14/2024/TT-BCT ngày 15 tháng 8 năm 2024 của Bộ trưởng Bộ Công Thương quy định chế độ báo cáo định kỳ về cụm công nghiệp, cơ sở dữ liệu cụm công nghiệp cả nước và một số - Cổng Thông tin điện tử Chính phủ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdDlZUHFjVnFnQUlVLUVuUnRyM2lQWkIzejM1TWJWY0V4SGF3R1k5YXZwazVZTXhCR1VDSWJCczk1eWVvTVJhTXpNejFNWGxZZzB3WXJOV01QaVF5NHhOR1pnR3NOZl8xYmdhcmNORUgwMUlqQzZldWpqWDFxU0IzZQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
@@ -18784,6 +18784,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T09:42:56+00:00",
+  "updated_at": "2026-11-19T09:58:15+00:00",
   "version": 1
 }
