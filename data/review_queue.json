@@ -866,20 +866,24 @@
     },
     "https://congan.cantho.gov.vn/cai-cach-hanh-chinh/thong-tu-so-147-2026-tt-bca-ngay-24-thang-8-nam-2026-cua-bo-truong-bo-cong-an-12149.html": {
       "agency": "Công an TP. Cần Thơ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "dcterms.issued=2026-11-19T04:37:33-05:00",
       "doc_number": "147/2026/TT-BCA",
       "exported_at": "2026-11-19T10:22:31+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T10:22:24+00:00",
       "identity": "number:147/2026/TT-BCA|issuer:TT-BCA|locality:cần thơ",
-      "last_checked": "2026-11-19T10:22:31+00:00",
+      "last_checked": "2026-11-19T10:33:09+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T10:22:24+00:00",
       "link": "https://congan.cantho.gov.vn/cai-cach-hanh-chinh/thong-tu-so-147-2026-tt-bca-ngay-24-thang-8-nam-2026-cua-bo-truong-bo-cong-an-12149.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Công an",
-      "status": "pending",
-      "title": "Thông tư số 147/2026/TT-BCA ngày 24 tháng 8 năm 2026 của Bộ trưởng Bộ Công an"
+      "status": "verified_included",
+      "title": "Thông tư số 147/2026/TT-BCA ngày 24 tháng 8 năm 2026 của Bộ trưởng Bộ Công an",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-19"
     },
     "https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": {
       "agency": "Công an TP. Cần Thơ",
@@ -18380,17 +18384,21 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/28-6. CV Gui Bo TTTT gop y DA chuyen doi so va NQ_1766463229185.pdf/76f79e48-c69d-75e4-a370-95a7441321af": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "301/UBND-THVX",
       "first_seen": "2026-11-19T10:22:24+00:00",
       "identity": "number:301/UBND-THVX|issuer:UBND-THVX|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T10:33:11+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T10:22:24+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/28-6. CV Gui Bo TTTT gop y DA chuyen doi so va NQ_1766463229185.pdf/76f79e48-c69d-75e4-a370-95a7441321af",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "28-6. CV Gui Bo TTTT gop y DA chuyen doi so va NQ.pdf"
+      "status": "not_found",
+      "title": "28-6. CV Gui Bo TTTT gop y DA chuyen doi so va NQ.pdf",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/400CV-UB2020THVX_1766463229114.pdf/16b3153b-7e35-fbae-a620-a5a8546a43c6": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18606,17 +18614,21 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644284": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "2854/VPUBND-KT",
       "first_seen": "2026-11-19T10:22:24+00:00",
       "identity": "number:2854/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T10:33:11+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T10:22:24+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644284",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v giải quyết hồ sơ của Công ty TNHH Sản xuất Thương mại Phương Thịnh Phát"
+      "status": "not_found",
+      "title": "V/v giải quyết hồ sơ của Công ty TNHH Sản xuất Thương mại Phương Thịnh Phát",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644285": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18638,17 +18650,21 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644286": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "2556/VPUBND-KT",
       "first_seen": "2026-11-19T10:22:24+00:00",
       "identity": "number:2556/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T10:33:11+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T10:22:24+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644286",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v giải quyết kiến nghị của Công ty TNHH Tiệp Phát"
+      "status": "not_found",
+      "title": "V/v giải quyết kiến nghị của Công ty TNHH Tiệp Phát",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644374": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18728,17 +18744,21 @@
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644382": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "237/VPUBND-KT",
       "first_seen": "2026-11-19T10:22:24+00:00",
       "identity": "number:237/VPUBND-KT|issuer:VPUBND-KT|locality:ubnd tỉnh đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
+      "last_checked": "2026-11-19T10:33:11+00:00",
+      "last_error": "",
       "last_seen": "2026-11-19T10:22:24+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644382",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v lấy ý kiến đối với dự thảo văn bản quy phạm pháp luật của UBND Tỉnh"
+      "status": "not_found",
+      "title": "V/v lấy ý kiến đối với dự thảo văn bản quy phạm pháp luật của UBND Tỉnh",
+      "verification_status": "not_found"
     },
     "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=5644383": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -18888,6 +18908,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T10:22:31+00:00",
+  "updated_at": "2026-11-19T10:33:11+00:00",
   "version": 1
 }

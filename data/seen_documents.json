@@ -1235,6 +1235,15 @@
       "link": "https://luatvietnam.vn/dau-tu/quyet-dinh-147-2026-qd-ubnd-dak-lak-quy-dinh-tham-quyen-quan-ly-du-an-dau-tu-xay-dung-456837-d2.html",
       "title": "Quyết định 147/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Đắk Lắk ban hành Quy định về thẩm quyền trong quản lý dự án đầu tư xây dựng, quản lý chi phí đầu tư xây dựng, cấp giấy phép xây dựng và quản lý trật tự xây dựng trên địa bàn tỉnh Đắk Lắk"
     },
+    "number:147/2026/TT-BCA|issuer:TT-BCA|locality:cần thơ": {
+      "agency": "Công an TP. Cần Thơ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "147/2026/TT-BCA",
+      "first_seen": "2026-11-19T10:33:11+00:00",
+      "last_seen": "2026-11-19T10:33:11+00:00",
+      "link": "https://congan.cantho.gov.vn/cai-cach-hanh-chinh/thong-tu-so-147-2026-tt-bca-ngay-24-thang-8-nam-2026-cua-bo-truong-bo-cong-an-12149.html",
+      "title": "Thông tư số 147/2026/TT-BCA ngày 24 tháng 8 năm 2026 của Bộ trưởng Bộ Công an"
+    },
     "number:149/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk quy định hệ số điều chỉnh tăng thêm tiền lương để làm cơ sở xác định chi phí tiền lương": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -7353,6 +7362,7 @@
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-9962-SGDDT-TCCB-V-v-trien-khai-lap-danh-sach-nguoi-lam-cong-tac-chuyen-trach-ve-chuyen-doi-so-an-toan-thong-tin-mang-an-ninh-mang-1306/": "number:9962/SGDĐT-TCCB|issuer:SGDĐT-TCCB|locality:unresolved-source:cm.pek.edu.vn",
     "https://congan.camau.gov.vn/ch26/1619.html": "legacy_sheet_url:https://congan.camau.gov.vn/ch26/1619.html",
     "https://congan.camau.gov.vn/ch26/td26.html": "legacy_sheet_url:https://congan.camau.gov.vn/ch26/td26.html",
+    "https://congan.cantho.gov.vn/cai-cach-hanh-chinh/thong-tu-so-147-2026-tt-bca-ngay-24-thang-8-nam-2026-cua-bo-truong-bo-cong-an-12149.html": "number:147/2026/TT-BCA|issuer:TT-BCA|locality:cần thơ",
     "https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": "url:https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html",
     "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/cong-tac-kiem-tra-giam-sat-va-thi-hanh-ky-luat-cua-dang-o-dang-bo-cong-an-thanh-pho-can-tho-nam-2026-nhiem-vu-trong-tam-nam-2027-12072.html": "legacy_sheet_url:https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/cong-tac-kiem-tra-giam-sat-va-thi-hanh-ky-luat-cua-dang-o-dang-bo-cong-an-thanh-pho-can-tho-nam-2026-nhiem-vu-trong-tam-nam-2027-12072.html",
     "https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/": "legacy_sheet_url:https://congan.cantho.gov.vn/phong-trao-thi-dua-ba-nhat-ky-luat-nhat-trung-thanh-nhat-gan-dan-nhat/",
