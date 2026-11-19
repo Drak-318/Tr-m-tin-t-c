@@ -4298,6 +4298,23 @@
       "title": "Dự thảo Luật Giáo dục (sửa đổi) lần 8",
       "verification_status": "manual_review"
     },
+    "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html": {
+      "agency": "LuatVietnam - Văn bản mới - Dự thảo",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-19T21:22:49+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-19T21:22:41+00:00",
+      "identity": "url:https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
+      "last_checked": "2026-11-19T21:22:49+00:00",
+      "last_seen": "2026-11-19T21:22:41+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Dự thảo Nghị định quy định chế độ cử tuyển đối với học sinh, sinh viên dân tộc thiểu số lần 2"
+    },
     "https://luatvietnam.vn/giao-duc/ke-hoach-477-kh-ubnd-dak-lak-2026-xay-dung-thi-diem-tu-sach-cong-dong-so-thu-vien-mo-456600-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
       "attempts": 3,
@@ -19256,6 +19273,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-19T21:13:01+00:00",
+  "updated_at": "2026-11-19T21:22:49+00:00",
   "version": 1
 }
