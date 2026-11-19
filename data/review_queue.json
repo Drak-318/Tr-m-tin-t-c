@@ -17568,7 +17568,7 @@
     },
     "https://stp.angiang.gov.vn/index.php/node/10842": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -17576,19 +17576,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://stp.angiang.gov.vn/index.php/node/10842",
-      "last_checked": "2026-11-19T00:06:26+00:00",
+      "last_checked": "2026-11-19T12:17:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://stp.angiang.gov.vn/index.php/node/10842",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hướng dẫn thủ tục xác nhận tình trạng hôn nhân",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/index.php/node/10853": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -17596,34 +17596,34 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://stp.angiang.gov.vn/index.php/node/10853",
-      "last_checked": "2026-11-19T00:06:26+00:00",
+      "last_checked": "2026-11-19T12:17:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://stp.angiang.gov.vn/index.php/node/10853",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hướng dẫn tích hợp Giấy Khai sinh trên ứng dụng VNeID",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/index.php/quy-dinh-moi-ve-xay-dung-quan-ly-khai-thac-tu-sach-phap-luat": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T00:06:26+00:00",
+      "last_checked": "2026-11-19T12:17:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://stp.angiang.gov.vn/index.php/quy-dinh-moi-ve-xay-dung-quan-ly-khai-thac-tu-sach-phap-luat",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quy định mới về xây dựng, quản lý, khai thác tủ sách pháp luật",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/index.php/thong-bao-ve-viec-tiep-cong-dan-dinh-ky-thang-10-nam-2026": {
       "agency": "Sở Tư pháp An Giang",
@@ -17736,40 +17736,40 @@
     },
     "https://stp.angiang.gov.vn/index.php/ve-viec-phat-dong-cuoc-thi-tim-hieu-chinh-sach-phap-luat-dan-so-trong-tinh-hinh-moi-online-tren-mang-xa-hoi": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:15+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T00:06:26+00:00",
+      "last_checked": "2026-11-19T12:17:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://stp.angiang.gov.vn/index.php/ve-viec-phat-dong-cuoc-thi-tim-hieu-chinh-sach-phap-luat-dan-so-trong-tinh-hinh-moi-online-tren-mang-xa-hoi",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Về việc phát động Cuộc thi tìm hiểu chính sách pháp luật dân số trong tình hình mới (online trên mạng xã hội)",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/index.php/ve-viec-tiep-tuc-huong-dan-don-doc-thuc-hien-tich-hop-giay-khai-sinh-tren-ung-dung-vneid-theo-ke-hoach-so-576kh-ubnd-cua-ubnd-tinh": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "576/KH-UBND",
       "exported_at": "2026-11-18T00:16:15+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T00:06:26+00:00",
+      "last_checked": "2026-11-19T12:17:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://stp.angiang.gov.vn/index.php/ve-viec-tiep-tuc-huong-dan-don-doc-thuc-hien-tich-hop-giay-khai-sinh-tren-ung-dung-vneid-theo-ke-hoach-so-576kh-ubnd-cua-ubnd-tinh",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Về việc tiếp tục hướng dẫn, đôn đốc thực hiện tích hợp Giấy khai sinh trên ứng dụng VNeID theo Kế hoạch số 576/KH-UBND của UBND tỉnh",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/sites/default/files/2026/07/filedinhkembaiviet/lich-tiep-cong-dan-dinh-ky-thang-7.pdf": {
       "agency": "Sở Tư pháp An Giang",
@@ -18915,6 +18915,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T12:12:55+00:00",
+  "updated_at": "2026-11-19T12:17:51+00:00",
   "version": 1
 }
