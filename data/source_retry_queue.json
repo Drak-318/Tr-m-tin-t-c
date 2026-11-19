@@ -174,7 +174,7 @@
       "last_items_collected": 34,
       "last_status": "Hoạt động",
       "name": "Bộ Khoa học và Công nghệ - Văn bản pháp luật",
-      "recovered_at": "2026-11-19T15:17:50+00:00",
+      "recovered_at": "2026-11-19T15:33:07+00:00",
       "status": "recovered",
       "url": "https://mst.gov.vn/van-ban-phap-luat.htm"
     },
@@ -188,7 +188,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Chính phủ - Google News",
-      "recovered_at": "2026-11-19T15:17:50+00:00",
+      "recovered_at": "2026-11-19T15:33:07+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Achinhphu.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh+c%E1%BB%A7a+Th%E1%BB%A7+t%C6%B0%E1%BB%9Bng%22%29+when%3A10d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -202,7 +202,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "LuatVietnam - Google News",
-      "recovered_at": "2026-11-19T15:17:50+00:00",
+      "recovered_at": "2026-11-19T15:33:07+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Aluatvietnam.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -216,7 +216,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Thư viện Pháp luật - Google News",
-      "recovered_at": "2026-11-19T15:17:50+00:00",
+      "recovered_at": "2026-11-19T15:33:07+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -235,12 +235,12 @@
       "url": "https://paknvbqppl.moj.gov.vn/danh-sach-phan-anh"
     },
     "https://phapluat.gov.vn/danh-sach-van-ban-qppl": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/danh-sach-van-ban-qppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
@@ -261,12 +261,12 @@
       "url": "https://phapluat.gov.vn/du-thao-vbqppl"
     },
     "https://phapluat.gov.vn/he-thong-van-ban-phap-luat": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/he-thong-van-ban-phap-luat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -409,12 +409,12 @@
       "url": "https://soyte.caobang.gov.vn/Default.aspx?pageid=32323"
     },
     "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Thư viện Pháp luật - Hỏi đáp",
@@ -422,12 +422,12 @@
       "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat"
     },
     "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Thư viện Pháp luật - Lao động",
@@ -435,12 +435,12 @@
       "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl"
     },
     "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Thư viện Pháp luật - Mã số thuế",
@@ -448,12 +448,12 @@
       "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat"
     },
     "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Thư viện Pháp luật - Pháp luật vừa ban hành",
@@ -474,12 +474,12 @@
       "url": "https://vanban.hanoi.gov.vn/"
     },
     "https://vbpl.vn/": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://vbpl.vn/; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cơ sở dữ liệu quốc gia về pháp luật - VBPL",
@@ -487,12 +487,12 @@
       "url": "https://vbpl.vn/"
     },
     "https://vbpq.mof.gov.vn/": {
-      "attempts": 140,
+      "attempts": 141,
       "first_failed_at": "2026-11-18T09:19:10+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x79d8689c9a50>, 'Connection to vbpq.mof.gov.vn timed out. (connect timeout=6)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-19T15:17:50+00:00",
+      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x720214dd9f50>, 'Connection to vbpq.mof.gov.vn timed out. (connect timeout=6)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-19T15:33:07+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: TIMEOUT",
       "name": "Cơ sở dữ liệu VBQPPL ngành Tài chính",
@@ -592,6 +592,6 @@
       "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
     }
   },
-  "updated_at": "2026-11-19T15:17:50+00:00",
+  "updated_at": "2026-11-19T15:33:07+00:00",
   "version": 1
 }
