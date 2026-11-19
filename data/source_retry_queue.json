@@ -1,17 +1,16 @@
 {
   "items": {
     "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban": {
-      "attempts": 8,
+      "attempts": 9,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "",
-      "last_failed_at": "2026-11-19T00:06:15+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='laichau.gov.vn', port=443): Max retries exceeded with url: /lay-y-kien-nhan-dan-ve-du-thao-van-ban (Caused by NewConnectionError(\"HTTPSConnection(host='laichau.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Chỉ chấp nhận URL HTTPS.",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
-      "last_status": "Hoạt động",
+      "last_status": "Lỗi: CONNECTION",
       "name": "UBND tỉnh Lai Châu - Lấy ý kiến về dự thảo văn bản QPPL",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
-      "status": "recovered",
+      "status": "retry_pending",
       "url": "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban"
     },
     "https://congan.haiphong.gov.vn/van-ban": {
@@ -24,7 +23,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Công an TP. Hải Phòng",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://congan.haiphong.gov.vn/van-ban"
     },
@@ -33,12 +32,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Timeout: https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Hoạt động",
       "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533"
     },
     "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong": {
@@ -51,7 +51,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động qua Apps Script",
       "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong"
     },
@@ -63,9 +63,9 @@
       "last_error": "",
       "last_failed_at": "2026-11-18T10:36:48+00:00",
       "last_items_collected": 0,
-      "last_status": "Hoạt động qua Apps Script",
+      "last_status": "Hoạt động",
       "name": "Hải Phòng - Văn bản quy phạm pháp luật",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://haiphong.gov.vn/van-ban-quy-pham-phap-luat"
     },
@@ -79,7 +79,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "HĐND TP. Hồ Chí Minh",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://hdnd.hochiminhcity.gov.vn/van-ban"
     },
@@ -93,7 +93,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Đoàn ĐBQH và HĐND tỉnh Ninh Bình",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://hdnd.ninhbinh.gov.vn/kien-nghi-cu-tri/van-ban-tra-loi-cua-cac-bo-nganh-trung-uong"
     },
@@ -107,17 +107,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx"
     },
     "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Address unavailable: https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Dự thảo",
@@ -125,12 +125,12 @@
       "url": "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl"
     },
     "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Address unavailable: https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Chỉ đạo điều hành",
@@ -138,12 +138,12 @@
       "url": "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh"
     },
     "https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-quy-pham-phap-luat (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Address unavailable: https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Văn bản QPPL",
@@ -220,12 +220,12 @@
       "url": "https://phapluat.gov.vn/danh-sach-van-ban-qppl"
     },
     "https://phapluat.gov.vn/du-thao-vbqppl": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
@@ -246,12 +246,12 @@
       "url": "https://phapluat.gov.vn/he-thong-van-ban-phap-luat"
     },
     "https://quangngai.dcs.vn/vanban/van-ban-moi": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản Đảng",
       "http_status": null,
-      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x7ecba2dc72d0>, 'Connection to quangngai.dcs.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x735e081d8190>, 'Connection to quangngai.dcs.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: TIMEOUT",
       "name": "Đảng bộ tỉnh Quảng Ngãi - Văn bản mới",
@@ -268,7 +268,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng Thông tin điện tử Quốc hội",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://quochoi.vn/tintuc/Pages/tin-hoat-dong-cua-quoc-hoi.aspx"
     },
@@ -277,12 +277,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "UBND tỉnh Sơn La - Văn bản 1",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33434&p_cate=9263%2C6394&p_agency=6396%2C6397"
     },
     "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33896&p_cate=6767": {
@@ -290,12 +291,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33896&p_cate=6767 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "UBND tỉnh Sơn La - Văn bản 2",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33896&p_cate=6767"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat": {
@@ -308,7 +310,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat"
     },
@@ -322,7 +324,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Xây dựng TP. Hải Phòng",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://soxaydung.haiphong.gov.vn/van-ban"
     },
@@ -331,12 +333,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='soyte.caobang.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=32323 (Caused by NewConnectionError(\"HTTPSConnection(host='soyte.caobang.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Sở Y tế Cao Bằng",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://soyte.caobang.gov.vn/Default.aspx?pageid=32323"
     },
     "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat": {
@@ -392,12 +395,12 @@
       "url": "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh"
     },
     "https://vanban.hanoi.gov.vn/": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x7ecba21c66d0>, 'Connection to vanban.hanoi.gov.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x735df959df50>, 'Connection to vanban.hanoi.gov.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: TIMEOUT",
       "name": "Cổng văn bản UBND TP Hà Nội",
@@ -431,12 +434,12 @@
       "url": "https://vbpq.mof.gov.vn/"
     },
     "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Website nguồn trả HTTP 502",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Cổng văn bản Tòa án nhân dân",
@@ -444,12 +447,12 @@
       "url": "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home"
     },
     "https://vimda.moh.gov.vn/van-ban-phap-quy": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vimda.moh.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-quy (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Tên miền không nằm trong danh sách nguồn đã cấu hình.",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Trang thiết bị y tế - Văn bản pháp quy",
@@ -457,12 +460,12 @@
       "url": "https://vimda.moh.gov.vn/van-ban-phap-quy"
     },
     "https://vnpa.moh.gov.vn/he-thong-van-ban/": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vnpa.moh.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Tên miền không nằm trong danh sách nguồn đã cấu hình.",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Cục Dân số - Hệ thống văn bản",
@@ -474,12 +477,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": 200,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=95221 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "UBND tỉnh Lào Cai",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://www.laocai.gov.vn/Default.aspx?pageid=95221"
     },
     "https://www.laocai.gov.vn/doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704": {
@@ -487,12 +491,13 @@
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": 200,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "last_error": "",
       "last_failed_at": "2026-11-19T02:39:30+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: CONNECTION",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Đoàn ĐBQH và HĐND tỉnh Lào Cai",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
+      "status": "recovered",
       "url": "https://www.laocai.gov.vn/doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704"
     },
     "https://www.quangninh.gov.vn/So/sogiaoducdaotao/Trang/Default.aspx": {
@@ -505,17 +510,17 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Sở Giáo dục và Đào tạo Quảng Ninh",
-      "recovered_at": "2026-11-19T02:39:30+00:00",
+      "recovered_at": "2026-11-19T02:50:06+00:00",
       "status": "recovered",
       "url": "https://www.quangninh.gov.vn/So/sogiaoducdaotao/Trang/Default.aspx"
     },
     "https://www.toaan.gov.vn/webcenter/portal/tatc/home": {
-      "attempts": 22,
+      "attempts": 23,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": 200,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='www.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/tatc/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))",
-      "last_failed_at": "2026-11-19T02:39:30+00:00",
+      "last_failed_at": "2026-11-19T02:50:06+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Tòa án nhân dân tối cao",
@@ -523,6 +528,6 @@
       "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
     }
   },
-  "updated_at": "2026-11-19T02:47:10+00:00",
+  "updated_at": "2026-11-19T02:50:06+00:00",
   "version": 1
 }
