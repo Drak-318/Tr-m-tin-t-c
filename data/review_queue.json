@@ -6679,7 +6679,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/huong-dan-su-dung-cai-dat-va-su-dung-so-suc-khoe-dien-tu-c4722-72352.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -6687,69 +6687,69 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://medinet.hochiminhcity.gov.vn/tai-ve/huong-dan-su-dung-cai-dat-va-su-dung-so-suc-khoe-dien-tu-c4722-72352.aspx",
-      "last_checked": "2026-11-18T18:52:53+00:00",
+      "last_checked": "2026-11-19T06:52:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/tai-ve/huong-dan-su-dung-cai-dat-va-su-dung-so-suc-khoe-dien-tu-c4722-72352.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hướng dẫn sử dụng cài đặt và sử dụng Sổ sức khỏe điện tử",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-quan-tri-he-thong-khai-bao-y-te-dien-tu-c4722-39770.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T18:52:53+00:00",
+      "last_checked": "2026-11-19T06:52:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-quan-tri-he-thong-khai-bao-y-te-dien-tu-c4722-39770.aspx",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Tài liệu Hướng dẫn Quản trị Hệ thống khai báo y tế điện tử",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-quan-tri-he-thong-khai-bao-y-te-dien-tu-v2-c4722-43748.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:07:55+00:00",
+      "last_checked": "2026-11-19T06:52:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-quan-tri-he-thong-khai-bao-y-te-dien-tu-v2-c4722-43748.aspx",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Tài liệu Hướng dẫn Quản trị Hệ thống khai báo y tế điện tử v2",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-su-dung-phan-mem-thong-ke-y-te-c4722-9868.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-18T19:07:55+00:00",
+      "last_checked": "2026-11-19T06:52:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-lieu-huong-dan-su-dung-phan-mem-thong-ke-y-te-c4722-9868.aspx",
       "reason": "Chưa xác minh được ngày ban hành; cần kiểm tra trang chi tiết văn bản.",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Tài liệu hướng dẫn sử dụng phần mềm Thống kê y tế",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/tai-ve/tai-ve-cac-mau-van-ban-theo-nghi-dinh-302020nd-cp-c4722-31473.aspx": {
       "agency": "Medinet TP.HCM",
@@ -6833,7 +6833,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-chi-phi-chi-tra-tro-cap-xa-hoi-hang-thang-tro-cap-huu-tri-xa-hoi-h-c1291-74987.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -6841,15 +6841,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-chi-phi-chi-tra-tro-cap-xa-hoi-hang-thang-tro-cap-huu-tri-xa-hoi-h-c1291-74987.aspx",
-      "last_checked": "2026-11-18T19:07:55+00:00",
+      "last_checked": "2026-11-19T06:52:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-chi-phi-chi-tra-tro-cap-xa-hoi-hang-thang-tro-cap-huu-tri-xa-hoi-h-c1291-74987.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quy định mức chi phí chi trả trợ cấp xã hội hằng tháng, trợ cấp hưu trí xã hội hằng tháng và các chính sách trợ giúp xã hội thuộc lĩnh vực bảo trợ xã hội khác thông qua tổ chức dịch vụ chi trả trên địa bàn Thành phố Hồ Chí Minh.",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-ho-tro-dong-bao-hiem-y-te-cho-benh-nhan-phong-tai-benh-vien-ben-sa-c1291-74988.aspx": {
       "agency": "Medinet TP.HCM",
@@ -18610,6 +18610,6 @@
       "verification_status": "not_found"
     }
   },
-  "updated_at": "2026-11-19T06:38:00+00:00",
+  "updated_at": "2026-11-19T06:52:49+00:00",
   "version": 1
 }
