@@ -5008,6 +5008,15 @@
       "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/99F522A831914A4F47258E83000D7210",
       "title": "Danh mục khu đất thực hiện đấu thầu dự án đầu tư có sử dụng đất trên địa bàn tỉnh Hà Tĩnh (đợt 3) năm 2026"
     },
+    "number:4502/QĐ-BKHCN|issuer:QĐ-BKHCN|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "4502/QĐ-BKHCN",
+      "first_seen": "2026-11-20T09:42:53+00:00",
+      "last_seen": "2026-11-20T09:42:53+00:00",
+      "link": "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-4502-qd-bkhcn-2026-cong-bo-thu-tuc-hanh-chinh-moi-ve-xuat-khau-va-qua-canh-hang-hoa-luong-dung-457210-d1.html",
+      "title": "Quyết định 4502/QĐ-BKHCN của Bộ Khoa học và Công nghệ về việc công bố các thủ tục hành chính mới liên quan đến cấp giấy phép xuất khẩu, tạm nhập tái xuất, chuyển khẩu, trung chuyển, quá cảnh hàng hóa lưỡng dụng thuộc thẩm quyền quản lý của Bộ Khoa học và Công nghệ"
+    },
     "number:451/KH-UBND|issuer:KH-UBND|locality:thanh hóa triển khai thi hành luật phòng": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -5124,6 +5133,15 @@
       "last_seen": "2026-11-18T13:27:58+00:00",
       "link": "https://luatvietnam.vn/dau-tu/ke-hoach-478-kh-ubnd-dak-lak-2026-to-chuc-hoat-dong-thu-hut-dau-tu-khu-nong-nghiep-cong-nghe-cao-456905-d2.html",
       "title": "Kế hoạch 478/KH-UBND của Ủy ban nhân dân tỉnh Đắk Lắk về việc tổ chức các hoạt động thu hút đầu tư vào các khu nông nghiệp ứng dụng công nghệ cao trên địa bàn tỉnh Đắk Lắk giai đoạn 2026 - 2030"
+    },
+    "number:48/2026/NQ-CP|issuer:NQ-CP|locality:": {
+      "agency": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
+      "category": "Văn bản khác",
+      "doc_number": "48/2026/NQ-CP",
+      "first_seen": "2026-11-20T09:42:53+00:00",
+      "last_seen": "2026-11-20T09:42:53+00:00",
+      "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220329&classid=1&orggroupid=2",
+      "title": "48/2026/NQ-CP 11/11/2026"
     },
     "number:48/2026/TT-BNNMT|issuer:TT-BNNMT|locality:unresolved-source:sonnmt.haiphong.gov.vn": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
@@ -9122,6 +9140,7 @@
     "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-136-2026-qd-ubnd-an-giang-bai-bo-quyet-dinh-quy-pham-phap-luat-cong-thuong-456138-d2.html": "legacy_sheet_url:https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-136-2026-qd-ubnd-an-giang-bai-bo-quyet-dinh-quy-pham-phap-luat-cong-thuong-456138-d2.html",
     "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-1828-qd-chq-2026-quy-trinh-kiem-tra-xuat-xu-hang-hoa-xuat-nhap-khau-sau-thong-quan-456235-d1.html": "legacy_sheet_url:https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-1828-qd-chq-2026-quy-trinh-kiem-tra-xuat-xu-hang-hoa-xuat-nhap-khau-sau-thong-quan-456235-d1.html",
     "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-3573-qd-ubnd-hung-yen-2026-uy-quyen-giam-doc-so-cong-thuong-thuc-hien-thu-tuc-hanh-chinh-456277-d2.html": "legacy_sheet_url:https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-3573-qd-ubnd-hung-yen-2026-uy-quyen-giam-doc-so-cong-thuong-thuc-hien-thu-tuc-hanh-chinh-456277-d2.html",
+    "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-4502-qd-bkhcn-2026-cong-bo-thu-tuc-hanh-chinh-moi-ve-xuat-khau-va-qua-canh-hang-hoa-luong-dung-457210-d1.html": "number:4502/QĐ-BKHCN|issuer:QĐ-BKHCN|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/thong-tu-142-2026-tt-btc-sua-doi-thu-tuc-hai-quan-hang-hoa-xuat-nhap-khau-449059-d1.html": "number:142/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/thong-tu-65-2026-tt-bct-quy-dinh-chi-tiet-kinh-doanh-xuat-nhap-khau-gao-hieu-luc-2026-449815-d1.html": "number:65/2026/TT-BCT|issuer:TT-BCT|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/van-ban-hop-nhat-109-2026-vbhn-tt-bnnmt-2026-ve-danh-muc-vat-the-kiem-dich-thuc-vat-va-phan-tich-nguy-co-dich-hai-454455-d5.html": "number:109/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
@@ -9841,6 +9860,7 @@
     "https://vanban.chinhphu.vn/?pageid=27160&docid=220279&classid=1&orggroupid=2": "number:409/2026/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://vanban.chinhphu.vn/?pageid=27160&docid=220280&classid=1&orggroupid=2": "number:113/2013/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://vanban.chinhphu.vn/?pageid=27160&docid=220301&classid=1&orggroupid=2": "number:104/2025/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://vanban.chinhphu.vn/?pageid=27160&docid=220329&classid=1&orggroupid=2": "number:48/2026/NQ-CP|issuer:NQ-CP|locality:",
     "https://vbpl.vn/": "legacy_sheet_url:https://vbpl.vn/",
     "https://vbpl.vn/Pages/portal.aspx": "legacy_sheet_url:https://vbpl.vn/Pages/portal.aspx",
     "https://vbpl.vn/haiphong/Pages/vanban.aspx?dvid=310&idLoaiVanBan=137": "legacy_sheet_url:https://vbpl.vn/haiphong/Pages/vanban.aspx?dvid=310&idLoaiVanBan=137",
