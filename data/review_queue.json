@@ -17016,20 +17016,24 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-hanh-chinh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-chuan-hoa-li-779357": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản hành chính",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2025-09-09T08:42:00+07:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T00:45:33+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T00:45:26+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-hanh-chinh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-chuan-hoa-li-779357",
-      "last_checked": "2026-11-20T00:45:33+00:00",
+      "last_checked": "2026-11-20T01:08:03+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T00:45:26+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-hanh-chinh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-sua-doi-bo-sung-chuan-hoa-li-779357",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định Về việc công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, chuẩn hóa lĩnh vực địa chất và khoáng sản, đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường"
+      "status": "excluded_old",
+      "title": "Quyết định Về việc công bố danh mục thủ tục hành chính mới ban hành, sửa đổi, bổ sung, chuẩn hóa lĩnh vực địa chất và khoáng sản, đất đai thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường",
+      "verification_status": "excluded_old",
+      "verified_date": "2025-09-09"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-danh-muc-vat-the-thuoc-dien-kiem-dich-thuc-vat-danh-muc-vat-t-996694": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19394,6 +19398,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T00:53:04+00:00",
+  "updated_at": "2026-11-20T01:08:03+00:00",
   "version": 1
 }
