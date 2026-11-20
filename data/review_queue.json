@@ -947,37 +947,45 @@
     },
     "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-du-kien-ngay-kiem-tra-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-de-duoc-phuc-hoi-diem-giay-phep-lai-xe-thang-12-2026-12210.html": {
       "agency": "Công an TP. Cần Thơ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "dcterms.issued=2026-11-20T10:46:42+00:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T11:57:42+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T11:57:36+00:00",
       "identity": "url:https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-du-kien-ngay-kiem-tra-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-de-duoc-phuc-hoi-diem-giay-phep-lai-xe-thang-12-2026-12210.html",
-      "last_checked": "2026-11-20T11:57:42+00:00",
+      "last_checked": "2026-11-20T12:07:55+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T11:57:36+00:00",
       "link": "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-du-kien-ngay-kiem-tra-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-de-duoc-phuc-hoi-diem-giay-phep-lai-xe-thang-12-2026-12210.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Công an",
-      "status": "pending",
-      "title": "Thông báo Dự kiến ngày kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ để được phục hồi điểm giấy phép lái xe tháng 12/2026"
+      "status": "verified_included",
+      "title": "Thông báo Dự kiến ngày kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ để được phục hồi điểm giấy phép lái xe tháng 12/2026",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-20"
     },
     "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-lich-sat-hach-lai-xe-co-gioi-duong-bo-thang-12-2026-12211.html": {
       "agency": "Công an TP. Cần Thơ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "dcterms.issued=2026-11-20T10:46:44+00:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T11:57:42+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T11:57:36+00:00",
       "identity": "url:https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-lich-sat-hach-lai-xe-co-gioi-duong-bo-thang-12-2026-12211.html",
-      "last_checked": "2026-11-20T11:57:42+00:00",
+      "last_checked": "2026-11-20T12:07:55+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T11:57:36+00:00",
       "link": "https://congan.cantho.gov.vn/hoat-dong-cua-cong-an-thanh-pho/thong-bao-lich-sat-hach-lai-xe-co-gioi-duong-bo-thang-12-2026-12211.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Công an",
-      "status": "pending",
-      "title": "Thông báo Lịch sát hạch lái xe cơ giới đường bộ tháng 12/2026"
+      "status": "verified_included",
+      "title": "Thông báo Lịch sát hạch lái xe cơ giới đường bộ tháng 12/2026",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-20"
     },
     "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/mot-so-diem-moi-cua-nghi-dinh-so-392-2026-nd-cp-cua-chinh-phu-buoc-dot-pha-trong-cai-cach-thu-tuc-hanh-chinh-va-dieu-kien-dau-tu-kinh-doanh-trong-linh-vuc-an-ninh-trat-tu-12143.html": {
       "agency": "Công an TP. Cần Thơ",
@@ -19843,6 +19851,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T11:57:42+00:00",
+  "updated_at": "2026-11-20T12:07:55+00:00",
   "version": 1
 }
