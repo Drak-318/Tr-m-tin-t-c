@@ -4692,20 +4692,23 @@
     },
     "https://luatvietnam.vn/linh-vuc-khac/5-diem-moi-tai-nghi-dinh-347-2026-nd-cp-ve-phong-chay-chua-chay-danh-cho-doanh-nghiep-883-112498-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - ​Từ 01/3/2027, bỏ thủ tục kiểm tra công tác nghiệm thu PCCC",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "347/2026/NĐ-CP",
       "exported_at": "2026-11-20T20:27:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T20:27:08+00:00",
       "identity": "number:347/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-20T20:27:14+00:00",
+      "last_checked": "2026-11-20T20:37:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T20:27:08+00:00",
       "link": "https://luatvietnam.vn/linh-vuc-khac/5-diem-moi-tai-nghi-dinh-347-2026-nd-cp-ve-phong-chay-chua-chay-danh-cho-doanh-nghiep-883-112498-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "5 điểm mới tại Nghị định 347/2026/NĐ-CP về Phòng cháy, chữa cháy dành cho doanh nghiệp"
+      "status": "not_found",
+      "title": "5 điểm mới tại Nghị định 347/2026/NĐ-CP về Phòng cháy, chữa cháy dành cho doanh nghiệp",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/media-luat/video-8-quy-dinh-dang-chu-y-ve-san-du-lieu-theo-nghi-dinh-314-2026-nd-cp-560-114320-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
@@ -5239,20 +5242,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-295-2026-nd-cp-ve-dang-ky-hop-tac-xa-186-110867-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - Từ 2027, áp dụng 60 biểu mẫu mới khi đăng ký tổ hợp tác, hợp tác xã - Từ 2",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 19/11/2026",
       "doc_number": "295/2026/NĐ-CP",
       "exported_at": "2026-11-20T20:27:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T20:27:08+00:00",
       "identity": "number:295/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-20T20:27:14+00:00",
+      "last_checked": "2026-11-20T20:37:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T20:27:08+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-295-2026-nd-cp-ve-dang-ky-hop-tac-xa-186-110867-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Đã có Nghị định 295/2026/NĐ-CP về đăng ký hợp tác xã, liên hiệp hợp tác xã"
+      "status": "verified_included",
+      "title": "Đã có Nghị định 295/2026/NĐ-CP về đăng ký hợp tác xã, liên hiệp hợp tác xã",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-19"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-415-2026-nd-cp-ve-xu-phat-vi-pham-hanh-chinh-linh-vuc-khoa-hoc-cong-nghe-186-115975-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -5402,20 +5409,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-75-nq-cp-kien-quyet-khong-de-cong-trinh-chua-nghiem-thu-ve-pccc-dua-vao-su-dung-186-108154-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - ​Từ 01/3/2027, bỏ thủ tục kiểm tra công tác nghiệm thu PCCC",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 19/11/2026",
       "doc_number": "75/NQ-CP",
       "exported_at": "2026-11-20T20:27:14+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T20:27:08+00:00",
       "identity": "number:75/NQ-CP|issuer:NQ-CP|locality:",
-      "last_checked": "2026-11-20T20:27:14+00:00",
+      "last_checked": "2026-11-20T20:37:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T20:27:08+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-75-nq-cp-kien-quyet-khong-de-cong-trinh-chua-nghiem-thu-ve-pccc-dua-vao-su-dung-186-108154-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Nghị quyết 75/NQ-CP: Kiên quyết không đưa vào sử dụng công trình chưa nghiệm thu PCCC"
+      "status": "verified_included",
+      "title": "Nghị quyết 75/NQ-CP: Kiên quyết không đưa vào sử dụng công trình chưa nghiệm thu PCCC",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-19"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-168-2026-tt-btc-bo-tai-chinh-quy-dinh-mau-ho-so-dau-thau-cho-9-nhom-goi-thau-186-115872-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -19923,6 +19934,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T20:27:14+00:00",
+  "updated_at": "2026-11-20T20:37:59+00:00",
   "version": 1
 }
