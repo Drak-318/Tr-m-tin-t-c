@@ -1135,6 +1135,15 @@
       "link": "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-135-2026-qd-ubnd-tuyen-quang-bai-bo-quyet-dinh-quy-pham-phap-luat-chuc-nang-nhiem-vu-chi-cuc-456801-d2.html",
       "title": "Quyết định 135/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Tuyên Quang bãi bỏ các Quyết định quy phạm pháp luật của Ủy ban nhân dân tỉnh Tuyên Quang quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của các chi cục, đơn vị sự nghiệp công lập thuộc Sở Nông nghiệp và Môi trường"
     },
+    "number:135/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp ban hành quy chế phối hợp trong công tác quản lý nhà nước về hoạt động tín ngưỡng": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "135/2026/QĐ-UBND",
+      "first_seen": "2026-11-20T02:17:47+00:00",
+      "last_seen": "2026-11-20T02:17:47+00:00",
+      "link": "https://luatvietnam.vn/van-hoa/quyet-dinh-135-2026-qd-ubnd-dong-thap-quy-che-phoi-hop-quan-ly-tin-nguong-ton-giao-457080-d2.html",
+      "title": "Quyết định 135/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Đồng Tháp ban hành Quy chế phối hợp trong công tác quản lý Nhà nước về hoạt động tín ngưỡng, tôn giáo trên địa bàn tỉnh Đồng Tháp"
+    },
     "number:135/VBHN-TT-BCT|issuer:VBHN-TT-BCT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
       "category": "Văn bản quy phạm pháp luật",
@@ -8424,6 +8433,7 @@
     "https://luatvietnam.vn/van-hoa/nghi-dinh-79-2012-nd-cp-chinh-phu-73969-d1.html": "number:79/2012/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/van-hoa/nghi-dinh-93-2020-nd-cp-huong-dan-luat-thu-vien-189179-d1.html": "number:93/2020/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-101-2006-qd-bvhtt-bo-van-hoa-thong-tin-30100-d1.html": "number:101/2006/QĐ-BVHTT|issuer:QĐ-BVHTT|locality:",
+    "https://luatvietnam.vn/van-hoa/quyet-dinh-135-2026-qd-ubnd-dong-thap-quy-che-phoi-hop-quan-ly-tin-nguong-ton-giao-457080-d2.html": "number:135/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp ban hành quy chế phối hợp trong công tác quản lý nhà nước về hoạt động tín ngưỡng",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-142-2026-qd-ubnd-an-giang-bai-bo-quyet-dinh-12-2021-qd-ubnd-ve-bo-don-gia-dich-vu-cong-456967-d2.html": "number:142/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-210-2026-qd-ubnd-ca-mau-quy-dinh-tieu-chi-phat-trien-van-hoa-toan-dien-cap-xa-456940-d2.html": "number:210/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cà mau quy định tiêu chí",
     "https://luatvietnam.vn/van-hoa/quyet-dinh-211-2026-qd-ubnd-ca-mau-muc-thuong-va-chi-tien-thuong-hlv-vdv-thanh-tich-the-thao-457024-d2.html": "number:211/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cà mau quy định mức thưởng và chi tiền thưởng huấn luyện viên",
