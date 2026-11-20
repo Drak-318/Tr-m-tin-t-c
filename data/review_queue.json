@@ -1905,7 +1905,7 @@
     },
     "https://ddbqhhdnd.hungyen.gov.vn/van-ban-tuyen-truyen/nghi-quyet-so-19-nqtu-cua-ban-chap-hanh-dang-bo-tinh-nhiem-vu-va-giai-phap.html": {
       "agency": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "19-NQ/TU",
@@ -1913,15 +1913,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T09:15:16+00:00",
       "identity": "number:19-NQ/TU|issuer:TU|locality:",
-      "last_checked": "2026-11-20T09:42:53+00:00",
+      "last_checked": "2026-11-20T09:57:55+00:00",
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='ddbqhhdnd.hungyen.gov.vn', port=443): Max retries exceeded with url: /van-ban-tuyen-truyen/nghi-quyet-so-19-nqtu-cua-ban-chap-hanh-dang-bo-tinh-nhiem-vu-va-giai-phap.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
       "last_seen": "2026-11-20T09:15:16+00:00",
       "link": "https://ddbqhhdnd.hungyen.gov.vn/van-ban-tuyen-truyen/nghi-quyet-so-19-nqtu-cua-ban-chap-hanh-dang-bo-tinh-nhiem-vu-va-giai-phap.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Nghị quyết số 19-NQ/TU của Ban Chấp hành Đảng bộ tỉnh (Nhiệm vụ và giải pháp)",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://ddbqhhdnd.hungyen.gov.vn/van-ban-tuyen-truyen/nghi-quyet-so-20-nqtu-cua-ban-chap-hanh-dang-bo-tinh-nhiem-vu-va-giai-phap.html": {
       "agency": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
@@ -19683,6 +19683,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T09:42:53+00:00",
+  "updated_at": "2026-11-20T09:57:55+00:00",
   "version": 1
 }
