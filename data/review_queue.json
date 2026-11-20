@@ -17336,20 +17336,24 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ho-so-nghiep-vu-kiem-dich-thuc-vat-cua-bo-nong-nghiep-va-moi-987508": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-10-20T14:10:00+07:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T08:18:33+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T08:18:28+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ho-so-nghiep-vu-kiem-dich-thuc-vat-cua-bo-nong-nghiep-va-moi-987508",
-      "last_checked": "2026-11-20T08:18:33+00:00",
+      "last_checked": "2026-11-20T08:42:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T08:18:28+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ho-so-nghiep-vu-kiem-dich-thuc-vat-cua-bo-nong-nghiep-va-moi-987508",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Văn bản hợp nhất Thông tư quy định hồ sơ nghiệp vụ kiểm dịch thực vật của Bộ Nông nghiệp và Môi trường"
+      "status": "verified_included",
+      "title": "Văn bản hợp nhất Thông tư quy định hồ sơ nghiệp vụ kiểm dịch thực vật của Bộ Nông nghiệp và Môi trường",
+      "verification_status": "verified_included",
+      "verified_date": "2026-10-20"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-thanh-lap-cap-nhat-bo-ban-do-chuan-bien-gioi-quoc-gi-996743": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -17391,37 +17395,45 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-va-dinh-muc-kinh-te-ky-thuat-ve-cong-tac-thu-nhan-lu-981887": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-10-12T10:35:00+07:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T08:18:33+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T08:18:28+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-va-dinh-muc-kinh-te-ky-thuat-ve-cong-tac-thu-nhan-lu-981887",
-      "last_checked": "2026-11-20T08:18:33+00:00",
+      "last_checked": "2026-11-20T08:42:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T08:18:28+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ky-thuat-va-dinh-muc-kinh-te-ky-thuat-ve-cong-tac-thu-nhan-lu-981887",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Văn bản hợp nhất Thông tư Quy định kỹ thuật và Định mức kinh tế - kỹ thuật về công tác thu nhận, lưu trữ, bảo quản và cung cấp thông tin, dữ liệu tài nguyên và môi trường của Bộ Nông nghiệp và Môi trường"
+      "status": "verified_included",
+      "title": "Văn bản hợp nhất Thông tư Quy định kỹ thuật và Định mức kinh tế - kỹ thuật về công tác thu nhận, lưu trữ, bảo quản và cung cấp thông tin, dữ liệu tài nguyên và môi trường của Bộ Nông nghiệp và Môi trường",
+      "verification_status": "verified_included",
+      "verified_date": "2026-10-12"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-trang-phuc-phu-hieu-cap-hieu-bien-hieu-va-the-cong-chuc-kiem-987505": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-10-20T14:07:00+07:00",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-20T08:18:33+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-20T08:18:28+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-trang-phuc-phu-hieu-cap-hieu-bien-hieu-va-the-cong-chuc-kiem-987505",
-      "last_checked": "2026-11-20T08:18:33+00:00",
+      "last_checked": "2026-11-20T08:42:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-20T08:18:28+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-trang-phuc-phu-hieu-cap-hieu-bien-hieu-va-the-cong-chuc-kiem-987505",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Văn bản hợp nhất Thông tư quy định trang phục, phù hiệu, cấp hiệu, biển hiệu và thẻ công chức kiểm dịch thực vật của Bộ Nông nghiệp và Môi trường"
+      "status": "verified_included",
+      "title": "Văn bản hợp nhất Thông tư quy định trang phục, phù hiệu, cấp hiệu, biển hiệu và thẻ công chức kiểm dịch thực vật của Bộ Nông nghiệp và Môi trường",
+      "verification_status": "verified_included",
+      "verified_date": "2026-10-20"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-dinh-muc-kinh-te-ky-thuat-xay-dung-co-so-du-lieu-nen-dia-l-996725": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19651,6 +19663,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T08:27:55+00:00",
+  "updated_at": "2026-11-20T08:42:59+00:00",
   "version": 1
 }
