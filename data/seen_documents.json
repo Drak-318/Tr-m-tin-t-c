@@ -769,6 +769,15 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220012&classid=1&orggroupid=2",
       "title": "388/2026/NĐ-CP 13/10/2026"
     },
+    "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cần thơ ban hành quy chế phối hợp thực hiện chức năng": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
+      "category": "Văn bản địa phương",
+      "doc_number": "112/2026/QĐ-UBND",
+      "first_seen": "2026-11-20T04:02:27+00:00",
+      "last_seen": "2026-11-20T04:02:27+00:00",
+      "link": "https://luatvietnam.vn/dat-dai/quyet-dinh-112-2026-qd-ubnd-can-tho-quy-che-phoi-hop-van-phong-dang-ky-dat-dai-457108-d2.html",
+      "title": "Quyết định 112/2026/QĐ-UBND của Ủy ban nhân dân Thành phố Cần Thơ ban hành Quy chế phối hợp thực hiện chức năng, nhiệm vụ, quyền hạn giữa Văn phòng Đăng ký đất đai, Chi nhánh Văn phòng Đăng ký đất đai các khu vực với cơ quan có chức năng quản lý đất đai cấp xã, Ủy ban nhân dân cấp xã, cơ quan tài chính, cơ quan thuế và các cơ quan, đơn vị khác có liên quan trên địa bàn thành phố Cần Thơ"
+    },
     "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định mức trần chi phí in": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -2846,6 +2855,15 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "number:225/QĐ/TW|issuer:TW|locality:unresolved-source:congan.hochiminhcity.gov.vn": {
+      "agency": "Công an TP.HCM",
+      "category": "Văn bản khác",
+      "doc_number": "225/QĐ/TW",
+      "first_seen": "2026-11-20T04:02:27+00:00",
+      "last_seen": "2026-11-20T04:02:27+00:00",
+      "link": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/toan+van+quy+dinh+so+225-qd.tw+ve+cong+tac+kiem+tra+giam+sat+va+ky+luat+cua+dang",
+      "title": "TOÀN VĂN: Quy định số 225/QĐ/TW về công tác kiểm tra, giám sát và kỷ luật của Đảng(05/11/2026)"
     },
     "number:226-TB/ĐU|issuer:ĐU|locality:": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
@@ -5147,6 +5165,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:57/2026/TT-NHNN|issuer:TT-NHNN|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "57/2026/TT-NHNN",
+      "first_seen": "2026-11-20T04:02:27+00:00",
+      "last_seen": "2026-11-20T04:02:27+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/cac-truong-hop-ngan-hang-phai-giai-trinh-bang-van-ban-ve-hoat-dong-phong-chong-rua-tien-tu-01-12-2026-186-115943-article.html",
+      "title": "Các trường hợp ngân hàng phải giải trình bằng văn bản về hoạt động phòng, chống rửa tiền từ 01/12/2026"
+    },
     "number:57/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
       "category": "Văn bản quy phạm pháp luật",
@@ -7373,6 +7400,15 @@
       "link": "https://nghean.gov.vn/?pageid=71897&p_steering=158446",
       "title": "V/v đánh giá công tác phòng, chống tham nhũng, lãng phí, tiêu cực tỉnh Nghệ An năm 2026"
     },
+    "url:https://nghean.gov.vn/?pageid=71897&p_steering=158448": {
+      "agency": "UBND tỉnh Nghệ An",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-20T04:02:27+00:00",
+      "last_seen": "2026-11-20T04:02:27+00:00",
+      "link": "https://nghean.gov.vn/?pageid=71897&p_steering=158448",
+      "title": "V/v thá»±c hiá»n Káº¿t luáº­n sá» 123-KL/TW ngÃ y 13/7/2026 cá»§a Bá» ChÃ­nh trá»"
+    },
     "url:https://qldd.mae.gov.vn/thu-hoi-boi-thuong-ho-tro-tai-dinh-cu-ve---dat-dai/tinh-dak-lak-ban-hanh-quy-dinh-quy-trinh-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3754.htm": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -7878,6 +7914,7 @@
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+bca+giai+trinh+y+kien+cua+dbqh+ve+du+an+luat+sua+doi+bo+sung+mot+so+dieu+cua+luat+ql+su+dung+vk+vln+ccht+va+luat+pccc+va+cnch": "legacy_sheet_url:https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+bca+giai+trinh+y+kien+cua+dbqh+ve+du+an+luat+sua+doi+bo+sung+mot+so+dieu+cua+luat+ql+su+dung+vk+vln+ccht+va+luat+pccc+va+cnch",
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+luong+tam+quang+giai+trinh+cac+y+kien+dai+bieu+neu+ve+du+an+luat+xlvphc": "legacy_sheet_url:https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+luong+tam+quang+giai+trinh+cac+y+kien+dai+bieu+neu+ve+du+an+luat+xlvphc",
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+luong+tam+quang+giai+trinh+lam+rox+ve+du+an+luat+bv+cong+trinh+quan+trong+lien+quan+den+anqg": "legacy_sheet_url:https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/bo+truong+luong+tam+quang+giai+trinh+lam+rox+ve+du+an+luat+bv+cong+trinh+quan+trong+lien+quan+den+anqg",
+    "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/tin-chuyen-nganh/tuyen+truyen+phap+luat/toan+van+quy+dinh+so+225-qd.tw+ve+cong+tac+kiem+tra+giam+sat+va+ky+luat+cua+dang": "number:225/QĐ/TW|issuer:TW|locality:unresolved-source:congan.hochiminhcity.gov.vn",
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/bo+truong+luong+tam+quang+tiep+thu%2C+giai+trinh%2C+lam+ro+ve+hai+du+an+luat+dinh+danh+va+xac+dinh+dien+tu+va+luat+an+ninh+du+lieu": "legacy_sheet_url:https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/bo+truong+luong+tam+quang+tiep+thu%2C+giai+trinh%2C+lam+ro+ve+hai+du+an+luat+dinh+danh+va+xac+dinh+dien+tu+va+luat+an+ninh+du+lieu",
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/cao+diem+chong+buon+lau+hang+gia+dip+tet+nguyen+dan+dinh+mui+2027": "number:186/QĐ-BCĐ|issuer:QĐ-BCĐ|locality:unresolved-source:congan.hochiminhcity.gov.vn",
     "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/lan+toa+tinh+than+thuong+ton+phap+luat+vi+truong+hoc+an+toan": "legacy_sheet_url:https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu/noi-dung-chi-tiet/trang+chu/su+kien+noi+bat/lan+toa+tinh+than+thuong+ton+phap+luat+vi+truong+hoc+an+toan",
@@ -8256,6 +8293,7 @@
     "https://luatvietnam.vn/danh-ba-luat-su.html": "legacy_sheet_url:https://luatvietnam.vn/danh-ba-luat-su.html",
     "https://luatvietnam.vn/dat-dai/du-thao-luat-dat-dai-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-456049-d10.html": "url:https://luatvietnam.vn/dat-dai/du-thao-luat-dat-dai-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-456049-d10.html",
     "https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html",
+    "https://luatvietnam.vn/dat-dai/quyet-dinh-112-2026-qd-ubnd-can-tho-quy-che-phoi-hop-van-phong-dang-ky-dat-dai-457108-d2.html": "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cần thơ ban hành quy chế phối hợp thực hiện chức năng",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-161-2026-qd-ubnd-ha-noi-quy-che-phoi-hop-chia-se-thong-tin-du-lieu-nha-o-va-bds-456816-d2.html": "number:161/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội quy định về quy chế phối hợp chia sẻ",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-2617-qd-ubnd-dien-bien-2026-duyet-quy-trinh-luong-xanh-thu-tuc-dat-dai-moi-truong-lam-nghiep-456980-d2.html": "number:2617/QĐ-UBND|issuer:QĐ-UBND|locality:điện biên phê duyệt quy trình nội bộ trong giải quyết thủ tục hành chính thực hiện theo cơ chế “luồng xanh” trong các lĩnh vực đất đai",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-3694-qd-ubnd-dak-lak-2026-phe-duyet-tai-cau-truc-quy-trinh-thu-tuc-dat-dai-456609-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dat-dai/quyet-dinh-3694-qd-ubnd-dak-lak-2026-phe-duyet-tai-cau-truc-quy-trinh-thu-tuc-dat-dai-456609-d2.html",
@@ -8500,6 +8538,7 @@
     "https://luatvietnam.vn/thuong-mai/van-ban-hop-nhat-02-2026-vbhn-qd-ubnd-2026-quy-dinh-phan-cap-va-phan-cong-nhiem-vu-quan-ly-gia-bac-ninh-456960-d5.html": "number:02/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:bắc ninh ban hành hợp nhất quyết định quy định phân cấp và phân công nhiệm vụ để thực hiện quản lý nhà nước về giá và thẩm định giá trên địa bàn thành phố bắc ninh luatvietnam - văn bản mới - văn bản hợp nhất",
     "https://luatvietnam.vn/tin-van-ban-moi/10-nganh-khoa-hoc-va-cong-nghe-trong-linh-vuc-cong-nghiep-quoc-phong-186-115865-article.html": "number:159/2026/TT-BQP|issuer:TT-BQP|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/bo-xay-dung-khong-duoc-loai-tru-dien-tich-ban-cong-khi-tinh-mat-do-xay-dung-nha-o-rieng-le-186-115899-article.html": "number:17110/BXD-QHKT|issuer:BXD-QHKT|locality:",
+    "https://luatvietnam.vn/tin-van-ban-moi/cac-truong-hop-ngan-hang-phai-giai-trinh-bang-van-ban-ve-hoat-dong-phong-chong-rua-tien-tu-01-12-2026-186-115943-article.html": "number:57/2026/TT-NHNN|issuer:TT-NHNN|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-11636-pho-thu-tuong-yeu-cau-tao-co-che-ho-tro-thanh-nien-tim-viec-lam-186-115696-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/cong-van-11636-pho-thu-tuong-yeu-cau-tao-co-che-ho-tro-thanh-nien-tim-viec-lam-186-115696-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-191-bcdcp-ket-qua-ra-soat-vi-tri-viec-lam-duoc-dung-de-danh-gia-xep-loai-can-bo-va-nguoi-dung-dau-186-115917-article.html": "number:191/BCĐCP|issuer:BCĐCP|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/cong-van-8010-khong-huy-dong-dong-gop-cua-phu-huynh-de-to-chuc-ky-niem-20-11-186-115712-article.html",
@@ -9013,6 +9052,7 @@
     "https://nghean.gov.vn/?pageid=71897&p_steering=158191": "number:4911/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an",
     "https://nghean.gov.vn/?pageid=71897&p_steering=158415": "number:4935/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an ubnd tỉnh nghệ an",
     "https://nghean.gov.vn/?pageid=71897&p_steering=158446": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158446",
+    "https://nghean.gov.vn/?pageid=71897&p_steering=158448": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158448",
     "https://nghean.gov.vn/?pageid=71913&p_cate=7772": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_cate=7772",
     "https://nghean.gov.vn/?pageid=71913&p_field=10402": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_field=10402",
     "https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183": "legacy_sheet_url:https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183",
