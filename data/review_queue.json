@@ -18780,13 +18780,13 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/09QD-UB2020TCCB___1766463229166.pdf/8b64b2be-4ecb-24a0-5664-0165c332d91f": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "09/QĐ-UBND-TCCB",
       "first_seen": "2026-11-20T07:25:42+00:00",
       "identity": "number:09/QĐ-UBND-TCCB|issuer:QĐ-UBND-TCCB|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
-      "last_checked": "2026-11-20T07:33:06+00:00",
+      "last_checked": "2026-11-20T07:47:57+00:00",
       "last_error": "",
       "last_seen": "2026-11-20T07:25:42+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/09QD-UB2020TCCB___1766463229166.pdf/8b64b2be-4ecb-24a0-5664-0165c332d91f",
@@ -18798,13 +18798,13 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/1315QĐ-UB2020HC_1766463229165.pdf/68fae584-dc83-5ebf-f439-a6bea214f064": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "1315/QĐ-UBND-HC",
       "first_seen": "2026-11-20T07:25:42+00:00",
       "identity": "number:1315/QĐ-UBND-HC|issuer:QĐ-UBND-HC|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
-      "last_checked": "2026-11-20T07:33:06+00:00",
+      "last_checked": "2026-11-20T07:47:57+00:00",
       "last_error": "",
       "last_seen": "2026-11-20T07:25:42+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/1315QĐ-UB2020HC_1766463229165.pdf/68fae584-dc83-5ebf-f439-a6bea214f064",
@@ -19497,6 +19497,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-20T07:33:06+00:00",
+  "updated_at": "2026-11-20T07:47:57+00:00",
   "version": 1
 }
