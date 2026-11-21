@@ -4051,6 +4051,33 @@
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220140&classid=1&orggroupid=2",
       "title": "44/2026/NQ-CP 30/10/2026"
     },
+    "number:3371/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "3371/QĐ-BGDĐT",
+      "first_seen": "2026-11-21T02:07:54+00:00",
+      "last_seen": "2026-11-21T02:07:54+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3371-qd-bgddt-2026-thanh-lap-phan-hieu-truong-cao-dang-giao-thong-van-tai-trung-uong-v-tai-nghe-an-457254-d1.html",
+      "title": "Quyết định 3371/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc thành lập Phân hiệu Trường Cao đẳng Giao thông vận tải Trung ương V tại tỉnh Nghệ An trên cơ sở Trường Cao đẳng Giao thông vận tải Trung ương IV"
+    },
+    "number:3372/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3372/QĐ-BGDĐT",
+      "first_seen": "2026-11-21T02:07:54+00:00",
+      "last_seen": "2026-11-21T02:07:54+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3372-qd-bgddt-2026-sap-nhap-truong-cao-dang-cong-nghe-kinh-te-va-thuy-loi-mien-trung-457253-d1.html",
+      "title": "Quyết định 3372/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc sáp nhập Trường Cao đẳng Công nghệ, Kinh tế và Thủy lợi miền Trung vào Trường Cao đẳng Lương thực - Thực phẩm và đổi tên Trường Cao đẳng Lương thực - Thực phẩm sau sáp nhập thành Trường Cao đẳng Nông nghiệp và Môi trường miền Trung"
+    },
+    "number:3373/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3373/QĐ-BGDĐT",
+      "first_seen": "2026-11-21T02:07:54+00:00",
+      "last_seen": "2026-11-21T02:07:54+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3373-qd-bgddt-2026-sap-nhap-truong-cao-dang-co-dien-va-nong-lam-phu-tho-vao-truong-cao-dang-co-khi-nong-nghiep-457252-d1.html",
+      "title": "Quyết định 3373/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc sáp nhập Trường Cao đẳng Cơ điện và Nông lâm Phú Thọ vào Trường Cao đẳng Cơ khí nông nghiệp"
+    },
     "number:3377/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
       "category": "Văn bản khác",
@@ -9111,6 +9138,9 @@
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3307-qd-bgddt-2026-phe-duyet-tai-lieu-huong-dan-su-dung-mang-an-toan-cho-hoc-sinh-456318-d1.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-3307-qd-bgddt-2026-phe-duyet-tai-lieu-huong-dan-su-dung-mang-an-toan-cho-hoc-sinh-456318-d1.html",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3316-qd-bgddt-2026-sap-nhap-truong-cao-dang-cong-nghe-kinh-te-va-che-bien-lam-san-456316-d1.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-3316-qd-bgddt-2026-sap-nhap-truong-cao-dang-cong-nghe-kinh-te-va-che-bien-lam-san-456316-d1.html",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3319-qd-bgddt-2026-sap-nhap-truong-cao-dang-co-dien-tay-bac-vao-truong-cao-dang-co-dien-ha-noi-456315-d1.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-3319-qd-bgddt-2026-sap-nhap-truong-cao-dang-co-dien-tay-bac-vao-truong-cao-dang-co-dien-ha-noi-456315-d1.html",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-3371-qd-bgddt-2026-thanh-lap-phan-hieu-truong-cao-dang-giao-thong-van-tai-trung-uong-v-tai-nghe-an-457254-d1.html": "number:3371/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-3372-qd-bgddt-2026-sap-nhap-truong-cao-dang-cong-nghe-kinh-te-va-thuy-loi-mien-trung-457253-d1.html": "number:3372/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-3373-qd-bgddt-2026-sap-nhap-truong-cao-dang-co-dien-va-nong-lam-phu-tho-vao-truong-cao-dang-co-khi-nong-nghiep-457252-d1.html": "number:3373/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3377-qd-bgddt-2026-sap-nhap-truong-trung-cap-kinh-te-ky-thuat-vinh-vao-cao-dang-ky-thuat-cong-nghiep-viet-nam-han-quoc-457256-d1.html": "number:3377/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3380-qd-bgddt-2026-cong-bo-thu-tuc-hanh-chinh-noi-bo-duoc-thay-the-457255-d1.html": "number:3380/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-6292-qd-ubnd-ha-noi-2026-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-truong-cao-dang-dien-tu-dien-lanh-456825-d2.html": "number:6292/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc quy định vị trí",
