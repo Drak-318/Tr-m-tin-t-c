@@ -90,7 +90,7 @@
     },
     "https://bdttg.gov.vn/thong-bao/du-thao-thong-tu-quy-dinh-he-thong-chi-tieu-thong-ke-cong-tac-dan-toc.htm": {
       "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin - Xem thêm >>",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -98,7 +98,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-21T17:57:23+00:00",
       "identity": "url:https://bdttg.gov.vn/thong-bao/du-thao-thong-tu-quy-dinh-he-thong-chi-tieu-thong-ke-cong-tac-dan-toc.htm",
-      "last_checked": "2026-11-21T18:03:20+00:00",
+      "last_checked": "2026-11-21T18:17:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-21T17:57:23+00:00",
       "link": "https://bdttg.gov.vn/thong-bao/du-thao-thong-tu-quy-dinh-he-thong-chi-tieu-thong-ke-cong-tac-dan-toc.htm",
@@ -110,7 +110,7 @@
     },
     "https://bdttg.gov.vn/thong-bao/xin-y-kien-ho-so-du-thao-nghi-dinh-ve-cong-tac-dan-toc-thay-the-nghi-dinh-so-05-2011-nd-cp.htm": {
       "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin - Xem thêm >>",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "05/2011/NĐ-CP",
@@ -118,7 +118,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-21T17:57:23+00:00",
       "identity": "number:05/2011/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-21T18:03:20+00:00",
+      "last_checked": "2026-11-21T18:17:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-21T17:57:23+00:00",
       "link": "https://bdttg.gov.vn/thong-bao/xin-y-kien-ho-so-du-thao-nghi-dinh-ve-cong-tac-dan-toc-thay-the-nghi-dinh-so-05-2011-nd-cp.htm",
@@ -20137,6 +20137,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-21T18:03:20+00:00",
+  "updated_at": "2026-11-21T18:17:59+00:00",
   "version": 1
 }
