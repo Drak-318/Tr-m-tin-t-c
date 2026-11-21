@@ -55196,5 +55196,437 @@
     "successful_sources": 9,
     "trigger": "workflow_dispatch",
     "unknown_date": 3
+  },
+  {
+    "collected": 20224,
+    "discovered_source_candidates_added": 249,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 10,
+    "discovered_sources_pending": 106,
+    "duplicates": 1674,
+    "duration_seconds": 531.49,
+    "failed_source_details": [
+      {
+        "error": "REQUEST: HTTPSConnectionPool(host='congan.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /wps/portal/Home/trang-chu (Caused by ResponseError('too many 500 error responses')); Apps Script: RuntimeError: Website nguồn trả HT",
+        "http_status": null,
+        "name": "Công an TP.HCM",
+        "status": "Lỗi: REQUEST",
+        "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /Default.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn', port=443): Failed ",
+        "http_status": null,
+        "name": "Medinet TP.HCM",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/Default.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonoivu.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /web/snv/trang-chu (Caused by NewConnectionError(\"HTTPSConnection(host='sonoivu.hochiminhcity.gov.vn', port=443): Fa",
+        "http_status": null,
+        "name": "Sở Nội vụ TP.HCM",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu"
+      },
+      {
+        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='www.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/tatc/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+        "http_status": 200,
+        "name": "Tòa án nhân dân tối cao",
+        "status": "Lỗi: SSL",
+        "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
+      },
+      {
+        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ce",
+        "http_status": 200,
+        "name": "Cổng văn bản Tòa án nhân dân",
+        "status": "Lỗi: SSL",
+        "url": "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='hdnd.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban (Caused by ConnectTimeoutError(<HTTPSConnection(host='hdnd.hochiminhcity.gov.vn', port=443) at 0x7a11fcb563",
+        "http_status": null,
+        "name": "HĐND TP. Hồ Chí Minh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://hdnd.hochiminhcity.gov.vn/van-ban"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
+        "status": "Lỗi: HTTP",
+        "url": "https://phapluat.gov.vn/du-thao-vbqppl"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=95221 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establ",
+        "http_status": null,
+        "name": "UBND tỉnh Lào Cai",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://www.laocai.gov.vn/Default.aspx?pageid=95221"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='soyte.caobang.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=32323 (Caused by NewConnectionError(\"HTTPSConnection(host='soyte.caobang.gov.vn', port=443): Failed to ",
+        "http_status": null,
+        "name": "Sở Y tế Cao Bằng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://soyte.caobang.gov.vn/Default.aspx?pageid=32323"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x7a11f4f6a0d0>, 'Connection to",
+        "http_status": null,
+        "name": "Cổng văn bản UBND TP Hà Nội",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://vanban.hanoi.gov.vn/"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to es",
+        "http_status": null,
+        "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x7a11f40a00d0>, 'C",
+        "http_status": null,
+        "name": "Đảng bộ tỉnh Quảng Ngãi - Văn bản mới",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://quangngai.dcs.vn/vanban/van-ban-moi"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.",
+        "http_status": null,
+        "name": "UBND tỉnh Sơn La - Văn bản 1",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33896&p_cate=6767 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed t",
+        "http_status": null,
+        "name": "UBND tỉnh Sơn La - Văn bản 2",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33896&p_cate=6767"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-quy-pham-phap-luat (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
+        "http_status": null,
+        "name": "Bộ Giáo dục và Đào tạo - Văn bản QPPL",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish ",
+        "http_status": null,
+        "name": "Bộ Giáo dục và Đào tạo - Chỉ đạo điều hành",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
+        "http_status": null,
+        "name": "Bộ Giáo dục và Đào tạo - Dự thảo",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): ",
+        "http_status": null,
+        "name": "Đoàn ĐBQH và HĐND tỉnh Lào Cai",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://www.laocai.gov.vn/doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704"
+      },
+      {
+        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vnpa.moh.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
+        "http_status": null,
+        "name": "Cục Dân số - Hệ thống văn bản",
+        "status": "Lỗi: SSL",
+        "url": "https://vnpa.moh.gov.vn/he-thong-van-ban/"
+      },
+      {
+        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vimda.moh.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-quy (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
+        "http_status": null,
+        "name": "Trang thiết bị y tế - Văn bản pháp quy",
+        "status": "Lỗi: SSL",
+        "url": "https://vimda.moh.gov.vn/van-ban-phap-quy"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='baohiemxahoi.gov.vn', port=443): Max retries exceeded with url: /vanban/pages/default.aspx (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by pee",
+        "http_status": null,
+        "name": "Bảo hiểm xã hội Việt Nam - Danh sách văn bản",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://baohiemxahoi.gov.vn/vanban/pages/default.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx (Caused ",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh-c4664.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medin",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh-c4664.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/Contact.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='med",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/Contact.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-thuoc-pham-vi-chuc-nang-q",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-thuoc-pham-vi-chuc-nang-quan-ly-cua-c4664-59482.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-cua-so-y-te-vb4639.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn',",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản của Sở Y tế",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te-vb4639.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-cua-so-y-te/Contact.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn'",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v hướng dẫn thu thập và nộp lưu hồ sơ, tài liệu về đại dịch COVID-19 - Liên hệ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/Contact.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-cua-so-y-te/vv-huong-dan-thu-thap-va-nop-luu-ho-so-tai-lieu-ve-dai-dich-covid-19-vbct4639-53317.aspx (Cause",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v hướng dẫn thu thập và nộp lưu hồ sơ, tài liệu về đại dịch COVID-19",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/vv-huong-dan-thu-thap-va-nop-luu-ho-so-tai-lieu-ve-dai-dich-covid-19-vbct4639-53317.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-cua-so-y-te/vv-ra-soat-bao-cao-thuoc-thuc-pham-chuc-nang-thiet-bi-y-te-gia-vbct4639-73183.aspx (Caused by N",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v rà soát, báo cáo thuốc, thực phẩm chức năng, thiết bị y tế giả",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/vv-ra-soat-bao-cao-thuoc-thuc-pham-chuc-nang-thiet-bi-y-te-gia-vbct4639-73183.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-luat-vb1291.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn', p",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản pháp luật",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat-vb1291.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-luat/Contact.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn', ",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức chi quà tặng chúc thọ, mừng thọ người cao tuổi trên địa bàn Thành phố Hồ Chí",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/Contact.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-luat/ve-bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-tinh-binh-duong-va-tinh-ba-ria-v-vbct1291-74977.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản pháp luật - Về Bãi bỏ các Nghị quyết của Hội đồng nhân dân tỉnh Bình Dương và tỉnh Bà Rịa - Vũn",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-tinh-binh-duong-va-tinh-ba-ria-v-vbct1291-74977.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-luat/ve-muc-chi-qua-tang-chuc-tho-mung-tho-nguoi-cao-tuoi-tren-dia-ban-thanh-pho-ho-vbct1291-74981.asp",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức chi quà tặng chúc thọ, mừng thọ người cao tuổi trên địa bàn Thành phố Hồ Chí",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-muc-chi-qua-tang-chuc-tho-mung-tho-nguoi-cao-tuoi-tren-dia-ban-thanh-pho-ho-vbct1291-74981.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-luat/ve-muc-ho-tro-dong-bao-hiem-y-te-cho-nguoi-cao-tuoi-hoc-sinh-tren-dia-ban-thanh-vbct1291-74980.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức hỗ trợ đóng bảo hiểm y tế cho người cao tuổi, học sinh trên địa bàn Thành ph",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-muc-ho-tro-dong-bao-hiem-y-te-cho-nguoi-cao-tuoi-hoc-sinh-tren-dia-ban-thanh-vbct1291-74980.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te-c4638.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn',",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-c4638.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te-vb4638.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn'",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-vb4638.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/Contact.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Liên hệ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/Contact.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-vbct4638-39145",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công c",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-vbct4638-39145.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-c4638-44093.a",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Lời hiệu triệu phòng, chống dịch COVID-19 của Bộ trưởng Bộ Y tế Nguyễn Thanh Long",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-c4638-44093.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-vbct4638-4409",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Lời hiệu triệu phòng, chống dịch COVID-19 của Bộ trưởng Bộ Y tế Nguyễn Thanh Lon",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-vbct4638-44093.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-c4638-52113.aspx (Caused by NewConn",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Thư của Bộ trưởng Bộ Y tế nhân ngày Nhà giáo Việt Nam 2021",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-c4638-52113.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-vbct4638-52113.aspx (Caused by NewC",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Thư của Bộ trưởng Bộ Y tế nhân ngày Nhà giáo Việt Nam 2021",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-vbct4638-52113.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-c4638-24264.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-c4638-24264.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-vbct4638-24264",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - về việc ban hành Hướng dẫn chẩn đoán, điều trị viêm đường hô hấp cấp tính do chủ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-vbct4638-24264.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-c4638-26141.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-c4638-26141.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-vbct4638-26141",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Về việc Hướng dẫn đeo khẩu trang phòng chống bệnh COVID-19 cho người dân và cộng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-vbct4638-26141.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-c4638-24110.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-c4638-24110.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-vbct4638-24110",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Về việc tăng cường phòng, chống dịch bệnh viêm đường hô hấp cấp do chủng mới của",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-vbct4638-24110.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-c4638-23554.as",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-c4638-23554.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-vbct4638-23554",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v bảo đảm trang bị TTB_Thuốc_VTTH cho đơn vị cách ly điều trị bệnh viêm đường ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-vbct4638-23554.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-c4638-23904.aspx (",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-c4638-23904.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-vbct4638-23904.asp",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v: Đảm bảo cung cấp đủ vật tư, trang thiết bị cho phòng, chống dịch bệnh nCoV",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-vbct4638-23904.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-c4638-31679.aspx (Caused by NewConnectionEr",
+        "http_status": null,
+        "name": "Medinet TP.HCM - V/v triển khai cài đặt và sử dụng ứng dụng BlueZone",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-c4638-31679.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-vbct4638-31679.aspx (Caused by NewConnectio",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v triển khai cài đặt và sử dụng ứng dụng BlueZone",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-vbct4638-31679.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='medinet.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /van-ban-vb25.aspx (Caused by NewConnectionError(\"HTTPSConnection(host='medinet.hochiminhcity.gov.vn', port=443): Fa",
+        "http_status": null,
+        "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế - Văn bản",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://medinet.hochiminhcity.gov.vn/van-ban-vb25.aspx"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 4",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=4"
+      }
+    ],
+    "failed_sources": 57,
+    "fallback_sources": 5,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-21 22:57:02 UTC",
+    "new_to_sheets": 0,
+    "older_than_60_days": 2184,
+    "pending_sheets_exports": 0,
+    "recognized": 4653,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1050,
+    "review_to_sheets": 0,
+    "run_attempt": "1",
+    "run_id": "44958454890",
+    "scan_profile": "remaining",
+    "source_retry_queue_pending": 65,
+    "sources": 294,
+    "started_at": "2026-11-21 22:48:11 UTC",
+    "successful_sources": 237,
+    "trigger": "workflow_dispatch",
+    "unknown_date": 373
   }
 ]
