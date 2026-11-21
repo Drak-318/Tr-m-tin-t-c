@@ -4214,6 +4214,15 @@
       "link": "https://luatvietnam.vn/y-te/quyet-dinh-3556-qd-byt-2026-sua-doi-bo-sung-du-lieu-quan-ly-chi-phi-kham-chua-benh-457214-d1.html",
       "title": "Quyết định 3556/QĐ-BYT 2026 sửa đổi, bổ sung một số trường dữ liệu tại Quyết định 3176/QĐ-BYT về quản lý chi phí khám chữa bệnh"
     },
+    "number:3564/QĐ-UBND|issuer:QĐ-UBND|locality:và điều chỉnh kế hoạch đầu tư công năm 2026 nguồn ngân sách địa phương": {
+      "agency": "Văn phòng UBND tỉnh Đắk Lắk - Văn bản chỉ đạo điều hành",
+      "category": "Văn bản địa phương",
+      "doc_number": "3564/QĐ-UBND",
+      "first_seen": "2026-11-21T13:00:33+00:00",
+      "last_seen": "2026-11-21T13:00:33+00:00",
+      "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12789",
+      "title": "về việc đính chính chủ đầu tư tại Quyết định số 3564/QĐ-UBND ngày 05/11/2026 của UBND tỉnh và điều chỉnh kế hoạch đầu tư công năm 2026 nguồn ngân sách địa phương (đợt 7)"
+    },
     "number:36/2019/TT-BTC|issuer:TT-BTC|locality:": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
       "category": "Dự thảo",
@@ -10449,6 +10458,7 @@
     "https://vibonline.com.vn/du_thao/du-thao-thong-tu-thay-ve-quan-ly-ho-tro-hoat-dong-nang-cao-nang-luc-khoa-hoc-va-cong-nghe": "number:43/2025/TT-BKHCN|issuer:TT-BKHCN|locality:",
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12772": "url:https://vpubnd.daklak.gov.vn/Documents/Detail/12772",
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12773": "url:https://vpubnd.daklak.gov.vn/Documents/Detail/12773",
+    "https://vpubnd.daklak.gov.vn/Documents/Detail/12789": "number:3564/QĐ-UBND|issuer:QĐ-UBND|locality:và điều chỉnh kế hoạch đầu tư công năm 2026 nguồn ngân sách địa phương",
     "https://www.cantho.gov.vn/?pageid=32075&p_steering=54176": "legacy_sheet_url:https://www.cantho.gov.vn/?pageid=32075&p_steering=54176",
     "https://www.cantho.gov.vn/?pageid=32084&p_cate=5186": "legacy_sheet_url:https://www.cantho.gov.vn/?pageid=32084&p_cate=5186",
     "https://www.dongthap.gov.vn//documents/1527809/11893839/3616qd_signed_signed_1794824182250.pdf/6f9ca510-ccc7-97d0-b5ec-d54cda236ab4": "number:3616/QĐ-BTC|issuer:QĐ-BTC|locality:đồng tháp - văn bản chỉ đạo điều hành - 3",
