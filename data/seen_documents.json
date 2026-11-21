@@ -985,6 +985,15 @@
       "link": "https://luatvietnam.vn/dia-gioi-hanh-chinh/cong-van-11475-ubnd-vx-tp-ho-chi-minh-2026-gia-han-ho-so-dia-gioi-hanh-chinh-457142-d2.html",
       "title": "Công văn 11475/UBND-VX TP Hồ Chí Minh 2026 gia hạn hồ sơ địa giới hành chính"
     },
+    "number:11478/UBND-VX|issuer:UBND-VX|locality:hcm giao xây dựng đề án sáp nhập sở du lịch vào sở văn hóa và thể thao luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+      "category": "Công văn",
+      "doc_number": "11478/UBND-VX",
+      "first_seen": "2026-11-21T03:24:00+00:00",
+      "last_seen": "2026-11-21T03:24:00+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-giao-xay-dung-de-an-sap-nhap-so-du-lich-vao-so-van-hoa-va-the-thao-186-115996-article.html",
+      "title": "​Khẩn: TP. HCM giao xây dựng đề án sáp nhập Sở Du lịch vào Sở Văn hóa và Thể thao"
+    },
     "number:11478/UBND-VX|issuer:UBND-VX|locality:hồ chí minh về việc triển khai sắp xếp tổ chức bộ máy các cơ quan chuyên môn thuộc ủy ban nhân dân thành phố luatvietnam - văn bản mới - văn bản luật việt nam": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
       "category": "Công văn",
@@ -3717,11 +3726,11 @@
       "title": "Quyết định 2916/QĐ-UBND của Ủy ban nhân dân tỉnh Tuyên Quang ban hành Danh mục loại cây trồng lâu năm được chuyển đổi cơ cấu cây trồng trên đất trồng lúa còn lại trên địa bàn tỉnh Tuyên Quang"
     },
     "number:292/QĐ-KĐHQ|issuer:QĐ-KĐHQ|locality:": {
-      "agency": "LuatVietnam - Văn bản mới",
+      "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
       "category": "Văn bản khác",
       "doc_number": "292/QĐ-KĐHQ",
-      "first_seen": "2026-11-21T03:17:53+00:00",
-      "last_seen": "2026-11-21T03:17:53+00:00",
+      "first_seen": "2026-11-21T03:24:00+00:00",
+      "last_seen": "2026-11-21T03:24:00+00:00",
       "link": "https://luatvietnam.vn/tai-chinh/quyet-dinh-292-qd-kdhq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-457275-d1.html",
       "title": "Quyết định 292/QĐ-KĐHQ của Chi cục Kiểm định hải quan về việc công bố công khai điều chỉnh dự toán chi ngân sách nhà nước năm 2026 của Chi cục Kiểm định hải quan"
     },
@@ -7442,6 +7451,24 @@
       "link": "https://luatvietnam.vn/dat-dai/du-thao-luat-dat-dai-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-456049-d10.html",
       "title": "Dự thảo Luật Đất đai: Quy định mới và những thay đổi quan trọng cần biết"
     },
+    "url:https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457277-d10.html": {
+      "agency": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
+      "category": "Dự thảo",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-21T03:24:00+00:00",
+      "last_seen": "2026-11-21T03:24:00+00:00",
+      "link": "https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457277-d10.html",
+      "title": "Dự thảo Luật Nhà ở: Quy định mới và những thay đổi quan trọng"
+    },
+    "url:https://luatvietnam.vn/dau-thau/du-thao-luat-dau-thau-sua-doi-cap-nhat-moi-nhat-va-cac-diem-can-chu-y-457276-d10.html": {
+      "agency": "LuatVietnam - Văn bản mới - Dự thảo - Dự thảo mới",
+      "category": "Dự thảo",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-21T03:24:00+00:00",
+      "last_seen": "2026-11-21T03:24:00+00:00",
+      "link": "https://luatvietnam.vn/dau-thau/du-thao-luat-dau-thau-sua-doi-cap-nhat-moi-nhat-va-cac-diem-can-chu-y-457276-d10.html",
+      "title": "Dự thảo Luật Đấu thầu (sửa đổi)"
+    },
     "url:https://luatvietnam.vn/giao-duc/du-thao-thong-tu-ve-quy-che-to-chuc-va-hoat-dong-truong-thpt-chuyen-455523-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
       "category": "Dự thảo",
@@ -9143,6 +9170,7 @@
     "https://luatvietnam.vn/dan-su/luat-bao-ve-du-lieu-ca-nhan-2025-so-91-2025-qh15-405135-d1.html": "legacy_sheet_url:https://luatvietnam.vn/dan-su/luat-bao-ve-du-lieu-ca-nhan-2025-so-91-2025-qh15-405135-d1.html",
     "https://luatvietnam.vn/danh-ba-luat-su.html": "legacy_sheet_url:https://luatvietnam.vn/danh-ba-luat-su.html",
     "https://luatvietnam.vn/dat-dai/du-thao-luat-dat-dai-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-456049-d10.html": "url:https://luatvietnam.vn/dat-dai/du-thao-luat-dat-dai-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-456049-d10.html",
+    "https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457277-d10.html": "url:https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457277-d10.html",
     "https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-112-2026-qd-ubnd-can-tho-quy-che-phoi-hop-van-phong-dang-ky-dat-dai-457108-d2.html": "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cần thơ ban hành quy chế phối hợp thực hiện chức năng",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-151-2026-qd-ubnd-dak-lak-dinh-muc-kinh-te-ky-thuat-dieu-tra-danh-gia-dat-dai-457164-d2.html": "number:151/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk ban hành định mức kinh tế - kỹ thuật điều tra",
@@ -9156,6 +9184,7 @@
     "https://luatvietnam.vn/dat-dai/van-ban-hop-nhat-01-2026-vbhn-qd-ubnd-2026-quy-dinh-don-gia-boi-thuong-thiet-hai-cay-trong-vat-nuoi-khi-thu-hoi-dat-bac-ninh-455294-d5.html": "number:01/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:bắc ninh ban hành hợp nhất quyết định ban hành quy định đơn giá bồi thường thiệt hại về cây trồng",
     "https://luatvietnam.vn/dat-dai/van-ban-hop-nhat-01-2026-vbhn-qd-ubnd-2026-quy-dinh-tieu-chuan-va-dieu-kien-mua-nha-o-xa-hoi-gia-lai-456563-d5.html": "number:01/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:gia lai ban hành hợp nhất quyết định quy định tiêu chuẩn",
     "https://luatvietnam.vn/dat-dai/van-ban-hop-nhat-09-2026-vbhn-qd-ubnd-2026-quy-dinh-bang-gia-tinh-le-phi-truoc-ba-nha-tai-lai-chau-456090-d5.html": "number:09/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:lai châu ban hành hợp nhất quyết định quy định bảng giá tính lệ phí trước bạ đối với nhà trên địa bàn tỉnh lai châu luatvietnam - văn bản mới - văn bản hợp nhất",
+    "https://luatvietnam.vn/dau-thau/du-thao-luat-dau-thau-sua-doi-cap-nhat-moi-nhat-va-cac-diem-can-chu-y-457276-d10.html": "url:https://luatvietnam.vn/dau-thau/du-thao-luat-dau-thau-sua-doi-cap-nhat-moi-nhat-va-cac-diem-can-chu-y-457276-d10.html",
     "https://luatvietnam.vn/dau-thau/quyet-dinh-7567-qd-ubnd-tp-hcm-2026-phe-duyet-khu-vuc-khong-dau-gia-khai-thac-khoang-san-nhom-iv-456372-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dau-thau/quyet-dinh-7567-qd-ubnd-tp-hcm-2026-phe-duyet-khu-vuc-khong-dau-gia-khai-thac-khoang-san-nhom-iv-456372-d2.html",
     "https://luatvietnam.vn/dau-thau/quyet-dinh-7569-qd-ubnd-tp-ho-chi-minh-2026-phe-duyet-khu-vuc-khong-dau-gia-quyen-khai-thac-khoang-san-456373-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dau-thau/quyet-dinh-7569-qd-ubnd-tp-ho-chi-minh-2026-phe-duyet-khu-vuc-khong-dau-gia-quyen-khai-thac-khoang-san-456373-d2.html",
     "https://luatvietnam.vn/dau-thau/van-ban-hop-nhat-63-2026-vbhn-nd-btc-2026-quy-dinh-giao-nhiem-vu-dat-hang-hoac-dau-thau-cung-cap-dich-vu-cong-454992-d5.html": "number:63/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:",
@@ -9442,6 +9471,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-19-2026-btp-chung-chi-so-va-chung-chi-giay-cua-bo-tu-phap-co-gia-tri-phap-ly-nhu-nhau-186-115880-article.html": "url:https://luatvietnam.vn/tin-van-ban-moi/thong-tu-19-2026-btp-chung-chi-so-va-chung-chi-giay-cua-bo-tu-phap-co-gia-tri-phap-ly-nhu-nhau-186-115880-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-192026-btp-chung-chi-so-va-chung-chi-giay-cua-bo-tu-phap-co-gia-tri-phap-ly-nhu-nhau-186-115880-article.html": "url:https://luatvietnam.vn/tin-van-ban-moi/thong-tu-192026-btp-chung-chi-so-va-chung-chi-giay-cua-bo-tu-phap-co-gia-tri-phap-ly-nhu-nhau-186-115880-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-95-bgddt-moi-chuong-trinh-dao-tao-chi-con-toi-da-2-phuong-thuc-tuyen-sinh-tu-nam-2028-186-115700-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/thong-tu-95-bgddt-moi-chuong-trinh-dao-tao-chi-con-toi-da-2-phuong-thuc-tuyen-sinh-tu-nam-2028-186-115700-article.html",
+    "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-giao-xay-dung-de-an-sap-nhap-so-du-lich-vao-so-van-hoa-va-the-thao-186-115996-article.html": "number:11478/UBND-VX|issuer:UBND-VX|locality:hcm giao xây dựng đề án sáp nhập sở du lịch vào sở văn hóa và thể thao luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
     "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-so-noi-vu-chu-tri-kiem-tra-doanh-nghiep-khong-kham-suc-khoe-cho-nguoi-lao-dong-186-115924-article.html": "number:11362/UBND-VX|issuer:UBND-VX|locality:hcm: ​sở nội vụ chủ trì kiểm tra doanh nghiệp không khám sức khỏe cho người lao động luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
     "https://luatvietnam.vn/tin-van-ban-moi/tphcm-de-nghi-doanh-nghiep-chuan-hoa-thong-tin-dang-ky-truoc-10-12-2026-186-115852-article.html": "number:22826/STC-ĐKKD|issuer:STC-ĐKKD|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html",
