@@ -5179,20 +5179,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-13451-bnv-tam-dung-dieu-chuyen-can-bo-cong-chuc-tru-truong-hop-that-can-thiet-186-116023-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 20/11/2026",
       "doc_number": "13451/BNV",
       "exported_at": "2026-11-21T03:33:01+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-21T03:32:55+00:00",
       "identity": "number:13451/BNV|issuer:BNV|locality:",
-      "last_checked": "2026-11-21T03:33:01+00:00",
+      "last_checked": "2026-11-21T03:47:50+00:00",
+      "last_error": "",
       "last_seen": "2026-11-21T03:32:55+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-13451-bnv-tam-dung-dieu-chuyen-can-bo-cong-chuc-tru-truong-hop-that-can-thiet-186-116023-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Công văn 13451/BNV: ​Tạm dừng điều chuyển cán bộ, công chức, trừ trường hợp thật cần thiết"
+      "status": "verified_included",
+      "title": "Công văn 13451/BNV: ​Tạm dừng điều chuyển cán bộ, công chức, trừ trường hợp thật cần thiết",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-20"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-191-bcdcp-ket-qua-ra-soat-vi-tri-viec-lam-duoc-dung-de-danh-gia-xep-loai-can-bo-va-nguoi-dung-dau-186-115917-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -19951,6 +19955,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-21T03:33:01+00:00",
+  "updated_at": "2026-11-21T03:47:50+00:00",
   "version": 1
 }
