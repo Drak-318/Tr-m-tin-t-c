@@ -2298,20 +2298,23 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-thanh-lap-ban-chi-dao-chinh-sach-nha-o-va-thi-truong-bat-dong-san-thanh-pho-dong-nai-64959.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-21T08:48:40+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-21T08:48:36+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-thanh-lap-ban-chi-dao-chinh-sach-nha-o-va-thi-truong-bat-dong-san-thanh-pho-dong-nai-64959.html",
-      "last_checked": "2026-11-21T08:48:40+00:00",
+      "last_checked": "2026-11-21T08:57:54+00:00",
+      "last_error": "",
       "last_seen": "2026-11-21T08:48:36+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-thanh-lap-ban-chi-dao-chinh-sach-nha-o-va-thi-truong-bat-dong-san-thanh-pho-dong-nai-64959.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quyết định về việc thành lập Ban Chỉ đạo chính sách nhà ở và thị trường bất động sản thành phố Đồng Nai"
+      "status": "not_found",
+      "title": "Quyết định về việc thành lập Ban Chỉ đạo chính sách nhà ở và thị trường bất động sản thành phố Đồng Nai",
+      "verification_status": "not_found"
     },
     "https://dongnai.gov.vn/vi/news/quoc-hoi-hoi-dong-nhan-dan/nghi-quyet-quy-dinh-chinh-sach-ho-tro-cac-ho-gia-dinh-ca-nhan-co-long-be-nuoi-thuy-san-be-de-o-bi-giai-toa-tren-cac-tuyen-song-thuoc-phuong-tran-bien-va-phuong-long-hung-thanh-pho-dong-nai-64881.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -20054,6 +20057,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-21T08:48:40+00:00",
+  "updated_at": "2026-11-21T08:57:54+00:00",
   "version": 1
 }
