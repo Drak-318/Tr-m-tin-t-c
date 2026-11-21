@@ -4522,7 +4522,7 @@
     },
     "https://luatvietnam.vn/giao-thong/du-thao-quyet-dinh-ve-thu-phi-dich-vu-duong-bo-hinh-thuc-dien-tu-khong-dung-181799-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4530,7 +4530,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-21T13:52:57+00:00",
       "identity": "url:https://luatvietnam.vn/giao-thong/du-thao-quyet-dinh-ve-thu-phi-dich-vu-duong-bo-hinh-thuc-dien-tu-khong-dung-181799-d10.html",
-      "last_checked": "2026-11-21T14:02:58+00:00",
+      "last_checked": "2026-11-21T14:17:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-21T13:52:57+00:00",
       "link": "https://luatvietnam.vn/giao-thong/du-thao-quyet-dinh-ve-thu-phi-dich-vu-duong-bo-hinh-thuc-dien-tu-khong-dung-181799-d10.html",
@@ -20077,6 +20077,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-21T14:02:58+00:00",
+  "updated_at": "2026-11-21T14:17:59+00:00",
   "version": 1
 }
