@@ -18949,21 +18949,21 @@
     },
     "https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-22T15:38:46+00:00",
       "identity": "url:https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf",
-      "last_checked": "2026-11-22T16:03:01+00:00",
+      "last_checked": "2026-11-22T16:13:50+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T15:38:46+00:00",
       "link": "https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo thay đổi thời gian tiếp công dân định kỳ tháng 11 năm 2026",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/cong-bo-thong-tin-tiep-cong-dan-thang-11-2026.pdf": {
       "agency": "Sở Tư pháp An Giang",
@@ -18987,21 +18987,21 @@
     },
     "https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-22T15:38:46+00:00",
       "identity": "url:https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026",
-      "last_checked": "2026-11-22T16:03:01+00:00",
+      "last_checked": "2026-11-22T16:13:50+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T15:38:46+00:00",
       "link": "https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo thay đổi thời gian tiếp công dân định kỳ tháng 11 năm 2026",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://stp.angiang.gov.vn/thong-bao-ve-viec-tiep-cong-dan-dinh-ky-thang-10-nam-2026": {
       "agency": "Sở Tư pháp An Giang",
@@ -20253,6 +20253,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-22T16:03:01+00:00",
+  "updated_at": "2026-11-22T16:13:50+00:00",
   "version": 1
 }
