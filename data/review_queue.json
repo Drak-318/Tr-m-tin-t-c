@@ -18949,13 +18949,13 @@
     },
     "https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-22T15:38:46+00:00",
       "identity": "url:https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf",
-      "last_checked": "2026-11-22T15:48:07+00:00",
+      "last_checked": "2026-11-22T16:03:01+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T15:38:46+00:00",
       "link": "https://stp.angiang.gov.vn/sites/default/files/2026/11/filedinhkembaiviet/8945-tb-stp.pdf",
@@ -18987,13 +18987,13 @@
     },
     "https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026": {
       "agency": "Sở Tư pháp An Giang",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-22T15:38:46+00:00",
       "identity": "url:https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026",
-      "last_checked": "2026-11-22T15:48:07+00:00",
+      "last_checked": "2026-11-22T16:03:01+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T15:38:46+00:00",
       "link": "https://stp.angiang.gov.vn/thong-bao-thay-doi-thoi-gian-tiep-cong-dan-dinh-ky-thang-11-nam-2026",
@@ -20253,6 +20253,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-22T15:48:07+00:00",
+  "updated_at": "2026-11-22T16:03:01+00:00",
   "version": 1
 }
