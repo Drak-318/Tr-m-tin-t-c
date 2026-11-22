@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "last_watchdog_at": "2026-11-22T01:26:11.270Z",
+  "last_watchdog_at": "2026-11-22T08:42:59.555Z",
   "scheduled_for": "2,12,22,32,42,52 * * * *",
-  "workflow_run_id": 44971444019,
-  "action": "healthy",
-  "reason": "Priority age: 8m; full age: 10m",
-  "priority_age_minutes": 8,
-  "full_age_minutes": 10,
-  "last_priority_success_at": "2026-11-22T01:18:02Z",
-  "last_full_success_at": "2026-11-22T01:16:21Z"
+  "workflow_run_id": 45004090914,
+  "action": "scan_active",
+  "reason": "full scan #586 is queued",
+  "priority_age_minutes": 2,
+  "full_age_minutes": 44,
+  "last_priority_success_at": "2026-11-22T08:41:27Z",
+  "last_full_success_at": "2026-11-22T07:58:37Z"
 }
