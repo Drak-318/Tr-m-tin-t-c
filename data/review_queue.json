@@ -2222,7 +2222,7 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -2230,19 +2230,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-22T05:27:27+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html",
-      "last_checked": "2026-11-22T05:52:56+00:00",
+      "last_checked": "2026-11-22T06:07:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T05:27:27+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định công bố Danh mục thủ tục hành chính được thay thế trong quản lý chương trình mục tiêu quốc gia phát triển văn hóa - xã hội, nông thôn, dân tộc và miền núi giai đoạn 2026 - 2035 thuộc phạm vi chức năng quản lý của ngành Tài chính thành phố",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -2250,15 +2250,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-22T05:27:27+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html",
-      "last_checked": "2026-11-22T05:52:56+00:00",
+      "last_checked": "2026-11-22T06:07:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T05:27:27+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định công bố danh mục thủ tục hành chính mới ban hành lĩnh vực Lao động, tiền lương thuộc phạm vi chức năng quản lý nhà nước của Sở Nội vụ",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-phe-duyet-danh-muc-nganh-hang-san-pham-nong-nghiep-quan-trong-can-khuyen-khich-va-uu-tien-ho-tro-thuc-hien-lien-ket-gan-san-xuat-voi-tieu-thu-san-pham-tren-dia-ban-thanh-pho-dong-nai-64924.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -6066,6 +6066,23 @@
       "status": "manual_review",
       "title": "Văn bản hợp nhất 62/2026/VBHN-TT-BXD năm 2026 do Bộ Xây dựng ban hành hợp nhất Thông tư ban hành quy trình kiểm định kỹ thuật an toàn đối với hệ thống cốp pha trượt; cần phân phối bê tông độc lập; máy khoan, máy ép cọc, đóng cọc sử dụng trong thi công xây dựng công trình",
       "verification_status": "manual_review"
+    },
+    "https://luatvietnam.vn/xuat-nhap-khau/luat-hai-quan-sua-doi-2026-so-11-2026-qh16-445854-d1.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "11/2026/QH16",
+      "exported_at": "2026-11-22T06:08:03+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-22T06:07:59+00:00",
+      "identity": "number:11/2026/QH16|issuer:QH16|locality:",
+      "last_checked": "2026-11-22T06:08:03+00:00",
+      "last_seen": "2026-11-22T06:07:59+00:00",
+      "link": "https://luatvietnam.vn/xuat-nhap-khau/luat-hai-quan-sua-doi-2026-so-11-2026-qh16-445854-d1.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Luật sửa đổi, bổ sung một số điều của Luật Hải quan của Quốc hội, số 11/2026/QH16"
     },
     "https://luatvietnam.vn/y-te/nghi-quyet-144-nq-cp-234170-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
@@ -20177,6 +20194,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-22T05:52:56+00:00",
+  "updated_at": "2026-11-22T06:08:03+00:00",
   "version": 1
 }
