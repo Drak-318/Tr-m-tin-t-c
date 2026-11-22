@@ -4001,6 +4001,23 @@
       "title": "Dự thảo Thông tư hướng dẫn một số quy định về cán bộ, công chức cấp xã và người hoạt động không chuyên trách ở cấp xã, ở thôn, ở tổ dân phố lần 1",
       "verification_status": "manual_review"
     },
+    "https://luatvietnam.vn/chinh-sach/nghi-quyet-19-nq-tw-2026-doi-moi-mo-hinh-phat-trien-viet-nam-441935-d1.html": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "19-NQ/TW",
+      "exported_at": "2026-11-22T19:42:32+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-22T19:42:25+00:00",
+      "identity": "number:19-NQ/TW|issuer:TW|locality:",
+      "last_checked": "2026-11-22T19:42:32+00:00",
+      "last_seen": "2026-11-22T19:42:25+00:00",
+      "link": "https://luatvietnam.vn/chinh-sach/nghi-quyet-19-nq-tw-2026-doi-moi-mo-hinh-phat-trien-viet-nam-441935-d1.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Nghị quyết 19-NQ/TW của Ban Chấp hành Trung ương Hội nghị lần thứ ba Ban Chấp hành Trung ương Đảng khóa XIV về đổi mới mô hình phát triển Việt Nam"
+    },
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-60-nq-tw-cua-ban-chap-hanh-trung-uong-ve-hoi-nghi-lan-thu-11-ban-chap-hanh-trung-uong-dang-khoa-xiii-397246-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
       "attempts": 3,
@@ -20253,6 +20270,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-22T16:13:50+00:00",
+  "updated_at": "2026-11-22T19:42:32+00:00",
   "version": 1
 }
