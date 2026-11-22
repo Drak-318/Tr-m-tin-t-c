@@ -2222,7 +2222,7 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -2230,7 +2230,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-22T05:27:27+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html",
-      "last_checked": "2026-11-22T05:37:53+00:00",
+      "last_checked": "2026-11-22T05:52:56+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T05:27:27+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-duoc-thay-the-trong-quan-ly-chuong-trinh-muc-tieu-quoc-gia-phat-trien-van-hoa-xa-hoi-nong-thon-dan-toc-va-mien-nui-giai-doan-2026-2035-thuoc-pham-vi-chuc-nang-quan-ly-cua-nganh-tai-chinh-thanh-pho-64967.html",
@@ -2242,7 +2242,7 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -2250,7 +2250,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-22T05:27:27+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html",
-      "last_checked": "2026-11-22T05:37:53+00:00",
+      "last_checked": "2026-11-22T05:52:56+00:00",
       "last_error": "",
       "last_seen": "2026-11-22T05:27:27+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-ban-hanh-linh-vuc-lao-dong-tien-luong-thuoc-pham-vi-chuc-nang-quan-ly-nha-nuoc-cua-so-noi-vu-64968.html",
@@ -20177,6 +20177,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-22T05:37:53+00:00",
+  "updated_at": "2026-11-22T05:52:56+00:00",
   "version": 1
 }
