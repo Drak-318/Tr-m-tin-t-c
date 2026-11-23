@@ -18374,33 +18374,34 @@
     },
     "https://snv.gialai.gov.vn/vi/laws/detail/Thong-bao-ket-qua-kiem-tra-sat-hach-tiep-nhan-nguoi-hoat-dong-khong-chuyen-trach-vao-lam-cong-chuc-cap-xa-nam-2026-2583/": {
       "agency": "Sở Nội vụ Gia Lai",
-      "attempts": 1,
-      "date_basis": "unknown",
-      "date_evidence": "",
+      "attempts": 2,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 05/07/2026",
       "doc_number": "4523/TB-SNV",
       "exported_at": "2026-11-22T23:23:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-22T23:23:06+00:00",
       "identity": "number:4523/TB-SNV|issuer:TB-SNV|locality:unresolved-source:snv.gialai.gov.vn",
-      "last_checked": "2026-11-23T00:38:08+00:00",
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='snv.gialai.gov.vn', port=443): Read timed out.",
+      "last_checked": "2026-11-23T00:58:10+00:00",
+      "last_error": "",
       "last_seen": "2026-11-22T23:23:06+00:00",
       "link": "https://snv.gialai.gov.vn/vi/laws/detail/Thong-bao-ket-qua-kiem-tra-sat-hach-tiep-nhan-nguoi-hoat-dong-khong-chuyen-trach-vao-lam-cong-chuc-cap-xa-nam-2026-2583/",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "fetch_error",
+      "status": "excluded_old",
       "title": "Thông báo kết quả kiểm tra, sát hạch tiếp nhận người hoạt động không chuyên trách vào làm công chức cấp xã năm 2026",
-      "verification_status": "fetch_error"
+      "verification_status": "excluded_old",
+      "verified_date": "2026-07-05"
     },
     "https://snv.gialai.gov.vn/vi/laws/detail/Thong-bao-ket-qua-ky-thi-tieng-Han-nganh-ngu-nghiep-lam-nghiep-va-dich-vu-nam-2026-2563/": {
       "agency": "Sở Nội vụ Gia Lai",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-22T23:23:06+00:00",
       "identity": "url:https://snv.gialai.gov.vn/vi/laws/detail/Thong-bao-ket-qua-ky-thi-tieng-Han-nganh-ngu-nghiep-lam-nghiep-va-dich-vu-nam-2026-2563/",
-      "last_checked": "2026-11-23T00:38:21+00:00",
+      "last_checked": "2026-11-23T00:58:26+00:00",
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='snv.gialai.gov.vn', port=443): Read timed out.",
       "last_seen": "2026-11-22T23:23:06+00:00",
       "link": "https://snv.gialai.gov.vn/vi/laws/detail/Thong-bao-ket-qua-ky-thi-tieng-Han-nganh-ngu-nghiep-lam-nghiep-va-dich-vu-nam-2026-2563/",
@@ -21663,6 +21664,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T00:53:22+00:00",
+  "updated_at": "2026-11-23T00:58:26+00:00",
   "version": 1
 }
