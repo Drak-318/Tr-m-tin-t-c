@@ -7575,6 +7575,24 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220315",
       "title": "11857/VPCP-KGVX 17/11/2026"
     },
+    "url:https://chinhphu.vn/?pageid=27160&docid=220335": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "20/11/2026",
+      "first_seen": "2026-11-23T07:28:16+00:00",
+      "last_seen": "2026-11-23T07:28:16+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220335",
+      "title": "587/TB-VPCP 20/11/2026"
+    },
+    "url:https://chinhphu.vn/?pageid=27160&docid=220337": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-23T07:28:16+00:00",
+      "last_seen": "2026-11-23T07:28:16+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220337",
+      "title": "11966/VPCP-CN 19/11/2026"
+    },
     "url:https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": {
       "agency": "Công an TP. Cần Thơ",
       "category": "Văn bản khác",
@@ -9768,6 +9786,8 @@
     "https://chinhphu.vn/?pageid=27160&docid=220332": "number:40/CT-TTG|issuer:CT-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220333": "number:403/NQ-CP|issuer:NQ-CP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220334": "number:81/2023/QH15|issuer:QH15|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220335": "url:https://chinhphu.vn/?pageid=27160&docid=220335",
+    "https://chinhphu.vn/?pageid=27160&docid=220337": "url:https://chinhphu.vn/?pageid=27160&docid=220337",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
