@@ -4353,7 +4353,7 @@
     },
     "https://luatvietnam.vn/dau-tu/nghi-quyet-50-nq-tw-2019-nang-cao-hieu-qua-hop-tac-dau-tu-nuoc-ngoai-den-nam-2030-176280-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "50-NQ/TW",
@@ -4361,7 +4361,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-23T09:59:59+00:00",
       "identity": "number:50-NQ/TW|issuer:TW|locality:",
-      "last_checked": "2026-11-23T10:07:52+00:00",
+      "last_checked": "2026-11-23T10:22:56+00:00",
       "last_error": "",
       "last_seen": "2026-11-23T09:59:59+00:00",
       "link": "https://luatvietnam.vn/dau-tu/nghi-quyet-50-nq-tw-2019-nang-cao-hieu-qua-hop-tac-dau-tu-nuoc-ngoai-den-nam-2030-176280-d1.html",
@@ -18970,13 +18970,13 @@
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-23T09:59:59+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313",
-      "last_checked": "2026-11-23T10:07:55+00:00",
+      "last_checked": "2026-11-23T10:22:58+00:00",
       "last_error": "",
       "last_seen": "2026-11-23T09:59:59+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313",
@@ -19579,13 +19579,13 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-23T09:59:59+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313",
-      "last_checked": "2026-11-23T10:07:55+00:00",
+      "last_checked": "2026-11-23T10:22:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-23T09:59:59+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313",
@@ -21901,6 +21901,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T10:07:55+00:00",
+  "updated_at": "2026-11-23T10:22:59+00:00",
   "version": 1
 }

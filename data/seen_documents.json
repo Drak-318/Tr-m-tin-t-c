@@ -396,6 +396,24 @@
       "link": "https://luatvietnam.vn/tai-nguyen/van-ban-hop-nhat-102-2026-vbhn-tt-bnnmt-2026-quy-dinh-ky-thuat-ban-do-dia-hinh-day-bien-454449-d5.html",
       "title": "Văn bản hợp nhất 102/2026/VBHN-TT-BNNMT do Bộ Nông nghiệp và Môi trường ban hành hợp nhất Thông tư quy định kỹ thuật thành lập bản đồ địa hình đáy biển tỷ lệ 1:100.000 bằng phương pháp đo vẽ trực tiếp"
     },
+    "number:1022/QĐ-QLD|issuer:QĐ-QLD|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "1022/QĐ-QLD",
+      "first_seen": "2026-11-23T10:22:59+00:00",
+      "last_seen": "2026-11-23T10:22:59+00:00",
+      "link": "https://luatvietnam.vn/y-te/quyet-dinh-1022-qd-qld-2026-ban-hanh-danh-muc-22-thuoc-san-xuat-trong-nuoc-duoc-cap-giay-dang-ky-luu-hanh-457523-d1.html",
+      "title": "Quyết định 1022/QĐ-QLD của Cục Quản lý Dược về việc ban hành danh mục 22 thuốc sản xuất trong nước được cấp giấy đăng ký lưu hành tại Việt Nam - Đợt 222 thuốc dược liệu"
+    },
+    "number:1023/QĐ-QLD|issuer:QĐ-QLD|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "1023/QĐ-QLD",
+      "first_seen": "2026-11-23T10:22:59+00:00",
+      "last_seen": "2026-11-23T10:22:59+00:00",
+      "link": "https://luatvietnam.vn/y-te/quyet-dinh-1023-qd-qld-2026-ban-hanh-danh-muc-165-thuoc-nhap-khau-duoc-cap-gia-han-luu-hanh-457524-d1.html",
+      "title": "Quyết định 1023/QĐ-QLD của Cục Quản lý Dược về việc ban hành danh mục 165 thuốc nhập khẩu được cấp, gia hạn giấy đăng ký lưu hành tại Việt Nam - Đợt 131"
+    },
     "number:103-KL/TW|issuer:TW|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -3658,6 +3676,15 @@
       "last_seen": "2026-11-23T09:52:52+00:00",
       "link": "https://chinhphu.vn/?pageid=27160&docid=220345",
       "title": "2531/QĐ-BTP 23/11/2026"
+    },
+    "number:25315/UBND-THĐT|issuer:UBND-THĐT|locality:thanh hóa về việc rà soát": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Công văn",
+      "doc_number": "25315/UBND-THĐT",
+      "first_seen": "2026-11-23T10:22:59+00:00",
+      "last_seen": "2026-11-23T10:22:59+00:00",
+      "link": "https://luatvietnam.vn/can-bo/cong-van-25315-ubnd-thdt-thanh-hoa-2026-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-457519-d2.html",
+      "title": "Công văn 25315/UBND-THĐT của Ủy ban nhân dân tỉnh Thanh Hóa về việc rà soát, hoàn thiện hệ thống vị trí việc làm gắn với xây dựng đội ngũ cán bộ và quản lý biên chế"
     },
     "number:2559/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
@@ -10401,6 +10428,7 @@
     "https://luatvietnam.vn/bao-hiem/van-ban-hop-nhat-61-2026-vbhn-nd-btc-2026-quy-dinh-chi-tiet-thi-hanh-luat-kinh-doanh-bao-hiem-453723-d5.html": "number:61/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:",
     "https://luatvietnam.vn/bao-hiem/van-ban-hop-nhat-66-2026-vbhn-tt-btc-2026-quy-dinh-chi-tiet-chung-chi-bao-hiem-dai-ly-moi-gioi-455711-d5.html": "number:66/2026/VBHN-TT-BTC|issuer:VBHN-TT-BTC|locality:",
     "https://luatvietnam.vn/can-bo/cong-van-11441-ubnd-dn-tp-ho-chi-minh-trien-khai-de-an-boi-duong-nghiep-vu-doi-ngoai-2026-2030-457154-d2.html": "number:11441/UBND-ĐN|issuer:UBND-ĐN|locality:hồ chí minh về việc tiếp tục triển khai đề án bồi dưỡng nghiệp vụ đối ngoại cho cán bộ",
+    "https://luatvietnam.vn/can-bo/cong-van-25315-ubnd-thdt-thanh-hoa-2026-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-457519-d2.html": "number:25315/UBND-THĐT|issuer:UBND-THĐT|locality:thanh hóa về việc rà soát",
     "https://luatvietnam.vn/can-bo/cong-van-29603-snv-ccvc-tp-hcm-2026-kiem-diem-danh-gia-xep-loai-lanh-dao-quan-ly-457140-d2.html": "number:29603/SNV-CCVC|issuer:SNV-CCVC|locality:hồ chí minh về việc thực hiện kiểm điểm",
     "https://luatvietnam.vn/can-bo/ke-hoach-70-kh-btctw-2026-xay-dung-co-so-du-lieu-vi-tri-viec-lam-va-phuong-an-giao-bien-che-452474-d11.html": "number:70-KH/BTCTW|issuer:BTCTW|locality:",
     "https://luatvietnam.vn/can-bo/quy-dinh-221-qd-tw-2026-ve-trach-nhiem-dang-vien-doi-voi-to-chuc-dang-va-nhan-dan-450432-d11.html": "number:221-QĐ/TW|issuer:TW|locality:",
@@ -10926,6 +10954,8 @@
     "https://luatvietnam.vn/y-te/nghi-quyet-78-2026-nq-hdnd-lam-dong-ho-tro-tien-an-cho-benh-nhan-tai-khu-dieu-tri-phong-di-linh-457340-d2.html": "number:78/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định mức hỗ trợ tiền ăn cho bệnh nhân đang được nuôi dưỡng",
     "https://luatvietnam.vn/y-te/nghi-quyet-80-2026-nq-hdnd-lam-dong-chinh-sach-thu-hut-dai-ngo-va-dao-tao-phat-trien-nguon-nhan-luc-y-te-457342-d2.html": "number:80/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định chính sách thu hút",
     "https://luatvietnam.vn/y-te/quyet-dinh-1014-qd-qld-2026-thu-hoi-so-tiep-nhan-phieu-cong-bo-san-pham-my-pham-457035-d1.html": "number:1014/QĐ-QLD|issuer:QĐ-QLD|locality:",
+    "https://luatvietnam.vn/y-te/quyet-dinh-1022-qd-qld-2026-ban-hanh-danh-muc-22-thuoc-san-xuat-trong-nuoc-duoc-cap-giay-dang-ky-luu-hanh-457523-d1.html": "number:1022/QĐ-QLD|issuer:QĐ-QLD|locality:",
+    "https://luatvietnam.vn/y-te/quyet-dinh-1023-qd-qld-2026-ban-hanh-danh-muc-165-thuoc-nhap-khau-duoc-cap-gia-han-luu-hanh-457524-d1.html": "number:1023/QĐ-QLD|issuer:QĐ-QLD|locality:",
     "https://luatvietnam.vn/y-te/quyet-dinh-3538-qd-byt-2026-ke-hoach-thuc-hien-cham-soc-suc-khoe-nguoi-cao-tuoi-den-2030-456585-d1.html": "legacy_sheet_url:https://luatvietnam.vn/y-te/quyet-dinh-3538-qd-byt-2026-ke-hoach-thuc-hien-cham-soc-suc-khoe-nguoi-cao-tuoi-den-2030-456585-d1.html",
     "https://luatvietnam.vn/y-te/quyet-dinh-3556-qd-byt-2026-sua-doi-bo-sung-du-lieu-quan-ly-chi-phi-kham-chua-benh-457214-d1.html": "number:3556/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/y-te/quyet-dinh-3592-qd-byt-2026-huong-dan-chan-doan-va-dieu-tri-benh-di-ung-mien-dich-lam-sang-457402-d1.html": "number:3592/QĐ-BYT|issuer:QĐ-BYT|locality:",
