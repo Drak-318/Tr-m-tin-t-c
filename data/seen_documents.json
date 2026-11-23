@@ -4313,6 +4313,15 @@
       "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12789",
       "title": "về việc đính chính chủ đầu tư tại Quyết định số 3564/QĐ-UBND ngày 05/11/2026 của UBND tỉnh và điều chỉnh kế hoạch đầu tư công năm 2026 nguồn ngân sách địa phương (đợt 7)"
     },
+    "number:3592/QĐ-BYT|issuer:QĐ-BYT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3592/QĐ-BYT",
+      "first_seen": "2026-11-23T03:52:52+00:00",
+      "last_seen": "2026-11-23T03:52:52+00:00",
+      "link": "https://luatvietnam.vn/y-te/quyet-dinh-3592-qd-byt-2026-huong-dan-chan-doan-va-dieu-tri-benh-di-ung-mien-dich-lam-sang-457402-d1.html",
+      "title": "Quyết định 3592/QĐ-BYT của Bộ Y tế về việc ban hành tài liệu chuyên môn “Hướng dẫn chẩn đoán và điều trị các bệnh về Dị ứng - Miễn dịch lâm sàng”"
+    },
     "number:36/2019/TT-BTC|issuer:TT-BTC|locality:": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
       "category": "Dự thảo",
@@ -4348,6 +4357,15 @@
       "last_seen": "2026-11-18T02:06:37+00:00",
       "link": "https://lyson.quangngai.gov.vn/upload/2006771/20261109/CV%20GOP%20Y%20DT%20TRIEN%20KHAI%20CT%20SO%2036.pdf",
       "title": "CV GOP Y DT TRIEN KHAI CT SO 36.pdf"
+    },
+    "number:3600/QĐ-BYT|issuer:QĐ-BYT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3600/QĐ-BYT",
+      "first_seen": "2026-11-23T03:52:52+00:00",
+      "last_seen": "2026-11-23T03:52:52+00:00",
+      "link": "https://luatvietnam.vn/y-te/quyet-dinh-3600-qd-byt-2026-ban-hanh-tu-dien-du-lieu-dung-chung-nganh-y-te-phien-ban-1-0-457403-d1.html",
+      "title": "Quyết định 3600/QĐ-BYT của Bộ Y tế ban hành Từ điển dữ liệu dùng chung ngành Y tế (phiên bản 1.0)"
     },
     "number:3603/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp quy định chức năng": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -10078,6 +10096,8 @@
     "https://luatvietnam.vn/y-te/quyet-dinh-1014-qd-qld-2026-thu-hoi-so-tiep-nhan-phieu-cong-bo-san-pham-my-pham-457035-d1.html": "number:1014/QĐ-QLD|issuer:QĐ-QLD|locality:",
     "https://luatvietnam.vn/y-te/quyet-dinh-3538-qd-byt-2026-ke-hoach-thuc-hien-cham-soc-suc-khoe-nguoi-cao-tuoi-den-2030-456585-d1.html": "legacy_sheet_url:https://luatvietnam.vn/y-te/quyet-dinh-3538-qd-byt-2026-ke-hoach-thuc-hien-cham-soc-suc-khoe-nguoi-cao-tuoi-den-2030-456585-d1.html",
     "https://luatvietnam.vn/y-te/quyet-dinh-3556-qd-byt-2026-sua-doi-bo-sung-du-lieu-quan-ly-chi-phi-kham-chua-benh-457214-d1.html": "number:3556/QĐ-BYT|issuer:QĐ-BYT|locality:",
+    "https://luatvietnam.vn/y-te/quyet-dinh-3592-qd-byt-2026-huong-dan-chan-doan-va-dieu-tri-benh-di-ung-mien-dich-lam-sang-457402-d1.html": "number:3592/QĐ-BYT|issuer:QĐ-BYT|locality:",
+    "https://luatvietnam.vn/y-te/quyet-dinh-3600-qd-byt-2026-ban-hanh-tu-dien-du-lieu-dung-chung-nganh-y-te-phien-ban-1-0-457403-d1.html": "number:3600/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/y-te/quyet-dinh-3603-qd-ubnd-dong-thap-2026-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-y-te-tam-nong-456641-d2.html": "number:3603/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp quy định chức năng",
     "https://luatvietnam.vn/y-te/quyet-dinh-3604-qd-ubnd-dong-thap-2026-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-y-te-tan-hong-456642-d2.html": "number:3604/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp quy định chức năng",
     "https://luatvietnam.vn/y-te/quyet-dinh-3605-qd-ubnd-dong-thap-2026-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-trung-tam-y-te-thanh-binh-456643-d2.html": "number:3605/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp quy định chức năng",
