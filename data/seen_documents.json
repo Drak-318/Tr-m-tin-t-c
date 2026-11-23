@@ -3641,6 +3641,15 @@
       "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/92A4C9D828B319B547258E83000DCD01",
       "title": "Quy định tiêu chí thành lập Tổ bảo vệ an ninh, trật tự; tiêu chí số lượng thành viên Tổ bảo vệ an ninh, trật tự; mức hỗ trợ, bồi dưỡng và các mức chỉ đối với lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở trên địa bàn tỉnh Hà Tĩnh"
     },
+    "number:2531/QĐ-BTP|issuer:QĐ-BTP|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản khác",
+      "doc_number": "2531/QĐ-BTP",
+      "first_seen": "2026-11-23T09:52:52+00:00",
+      "last_seen": "2026-11-23T09:52:52+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220345",
+      "title": "2531/QĐ-BTP 23/11/2026"
+    },
     "number:2559/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
       "category": "Văn bản khác",
@@ -9980,6 +9989,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220337": "url:https://chinhphu.vn/?pageid=27160&docid=220337",
     "https://chinhphu.vn/?pageid=27160&docid=220339": "number:31/2026/TT-BNV|issuer:TT-BNV|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220341": "number:47/2026/TT-BYT|issuer:TT-BYT|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220345": "number:2531/QĐ-BTP|issuer:QĐ-BTP|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
