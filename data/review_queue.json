@@ -5716,20 +5716,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 18/11/2026",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-23T07:28:21+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-23T07:28:16+00:00",
       "identity": "url:https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html",
-      "last_checked": "2026-11-23T07:28:21+00:00",
+      "last_checked": "2026-11-23T07:42:55+00:00",
+      "last_error": "",
       "last_seen": "2026-11-23T07:28:16+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Thông tư 176: Đơn khiếu nại, tố cáo gửi đến Công an phải có số căn cước hoặc số hộ chiếu để đủ điều kiện xử lý"
+      "status": "verified_included",
+      "title": "Thông tư 176: Đơn khiếu nại, tố cáo gửi đến Công an phải có số căn cước hoặc số hộ chiếu để đủ điều kiện xử lý",
+      "verification_status": "verified_included",
+      "verified_date": "2026-11-18"
     },
     "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Tổng quan",
@@ -18908,13 +18912,13 @@
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-bao-ve-viec-khao-khat-thuc-trang-va-nhu-cau-ung-dung-thuong-mai-dien-tu-nam-2026-1019486": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Hệ thống văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-23T07:19:12+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-bao-ve-viec-khao-khat-thuc-trang-va-nhu-cau-ung-dung-thuong-mai-dien-tu-nam-2026-1019486",
-      "last_checked": "2026-11-23T07:28:16+00:00",
+      "last_checked": "2026-11-23T07:42:56+00:00",
       "last_error": "",
       "last_seen": "2026-11-23T07:19:12+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-bao-ve-viec-khao-khat-thuc-trang-va-nhu-cau-ung-dung-thuong-mai-dien-tu-nam-2026-1019486",
@@ -21821,6 +21825,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T07:28:21+00:00",
+  "updated_at": "2026-11-23T07:42:56+00:00",
   "version": 1
 }

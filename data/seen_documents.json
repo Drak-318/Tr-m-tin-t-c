@@ -4167,6 +4167,15 @@
       "link": "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-nghi-quyet-so-31-2026-nq-hdnd-ngay-11-thang-11-nam-2026-cua-hoi-dong-nhan-dan-thanh-pho-dong-nai-quy-dinh-chinh-sach-ho-tro-cac-ho-gia-dinh-ca-nhan-co-long-be-nuoi-thuy-san-be-de-o-bi-giai-toa-tren-cac-tuyen-song-64930.html",
       "title": "Thông cáo báo chí Nghị quyết số 31/2026/NQ-HĐND ngày 11 tháng 11 năm 2026 của Hội đồng nhân dân thành phố Đồng Nai quy định chính sách hỗ trợ các hộ gia đình, cá nhân có lồng, bè nuôi thủy sản, bè để ở bị giải tỏa trên các tuyến sông..."
     },
+    "number:31/2026/TT-BNV|issuer:TT-BNV|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "31/2026/TT-BNV",
+      "first_seen": "2026-11-23T07:42:56+00:00",
+      "last_seen": "2026-11-23T07:42:56+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220339",
+      "title": "31/2026/TT-BNV 20/11/2026"
+    },
     "number:3154/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
       "category": "Văn bản khác",
@@ -8639,6 +8648,15 @@
       "link": "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-192026-btp-chung-chi-so-va-chung-chi-giay-cua-bo-tu-phap-co-gia-tri-phap-ly-nhu-nhau-186-115880-article.html",
       "title": "Thông tư 192026 BTP: Chứng chỉ số và chứng chỉ giấy của Bộ Tư pháp có giá trị pháp lý như nhau"
     },
+    "url:https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-23T07:42:56+00:00",
+      "last_seen": "2026-11-23T07:42:56+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html",
+      "title": "Thông tư 176: Đơn khiếu nại, tố cáo gửi đến Công an phải có số căn cước hoặc số hộ chiếu để đủ điều kiện xử lý"
+    },
     "url:https://luatvietnam.vn/tu-phap/du-thao-luat-dau-gia-tai-san-sua-doi-cap-nhat-va-thay-doi-quan-trong-457395-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Dự thảo mới",
       "category": "Dự thảo",
@@ -9788,6 +9806,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220334": "number:81/2023/QH15|issuer:QH15|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220335": "url:https://chinhphu.vn/?pageid=27160&docid=220335",
     "https://chinhphu.vn/?pageid=27160&docid=220337": "url:https://chinhphu.vn/?pageid=27160&docid=220337",
+    "https://chinhphu.vn/?pageid=27160&docid=220339": "number:31/2026/TT-BNV|issuer:TT-BNV|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
@@ -10615,6 +10634,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-so-noi-vu-chu-tri-kiem-tra-doanh-nghiep-khong-kham-suc-khoe-cho-nguoi-lao-dong-186-115924-article.html": "number:11362/UBND-VX|issuer:UBND-VX|locality:hcm: ​sở nội vụ chủ trì kiểm tra doanh nghiệp không khám sức khỏe cho người lao động luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
     "https://luatvietnam.vn/tin-van-ban-moi/tphcm-de-nghi-doanh-nghiep-chuan-hoa-thong-tin-dang-ky-truoc-10-12-2026-186-115852-article.html": "number:22826/STC-ĐKKD|issuer:STC-ĐKKD|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/tu-11-11-2026-hdnd-cap-xa-quyet-dinh-giao-bien-che-cong-chuc-cho-tung-co-quan-186-115702-article.html",
+    "https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html": "url:https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-15-12-2026-bai-bo-thong-tu-04-2021-tt-btc-ve-bao-hiem-bat-buoc-trach-nhiem-dan-su-cua-chu-xe-co-gioi-186-114855-article.html": "number:04/2021/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-bo-tai-chinh-bai-bo-5-thu-tuc-hanh-chinh-ve-ho-tro-cap-bu-lai-suat-186-115868-article.html": "number:3003/QĐ-BTC|issuer:QĐ-BTC|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-20-11-2026-du-lieu-linh-vuc-lam-nghiep-duoc-quan-ly-theo-10-nhom-186-115870-article.html": "number:43/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
