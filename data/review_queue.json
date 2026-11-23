@@ -5359,20 +5359,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-chuc-thue-cham-xu-ly-ho-so-da-nop-day-du-dung-quy-dinh-phai-chiu-trach-nhiem-186-116128-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 06/8/2026",
       "doc_number": "8743/CT",
       "exported_at": "2026-11-23T11:52:58+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-23T11:52:52+00:00",
       "identity": "number:8743/CT|issuer:CT|locality:",
-      "last_checked": "2026-11-23T11:52:58+00:00",
+      "last_checked": "2026-11-23T12:07:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-23T11:52:52+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-chuc-thue-cham-xu-ly-ho-so-da-nop-day-du-dung-quy-dinh-phai-chiu-trach-nhiem-186-116128-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Công văn 8743/CT: Công chức thuế chậm xử lý hồ sơ đã nộp đầy đủ, đúng quy định phải chịu trách nhiệm"
+      "status": "excluded_old",
+      "title": "Công văn 8743/CT: Công chức thuế chậm xử lý hồ sơ đã nộp đầy đủ, đúng quy định phải chịu trách nhiệm",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-08-06"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-13451-bnv-tam-dung-dieu-chuyen-can-bo-cong-chuc-tru-truong-hop-that-can-thiet-186-116023-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -21918,6 +21922,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T11:52:58+00:00",
+  "updated_at": "2026-11-23T12:07:59+00:00",
   "version": 1
 }
