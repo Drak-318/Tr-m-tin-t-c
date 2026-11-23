@@ -20813,17 +20813,23 @@
     },
     "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/68-2026-TT-BKHCN PL.pdf": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "68/2026/TT-BKHCN",
+      "exported_at": "2026-11-23T04:58:08+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-23T04:48:23+00:00",
       "identity": "number:68/2026/TT-BKHCN|issuer:TT-BKHCN|locality:",
+      "last_checked": "2026-11-23T04:58:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-23T04:48:23+00:00",
       "link": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/68-2026-TT-BKHCN PL.pdf",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "68/2026/TT-BKHCN PL"
+      "status": "not_found",
+      "title": "68/2026/TT-BKHCN PL",
+      "verification_status": "not_found"
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12755": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
@@ -20966,31 +20972,43 @@
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12811": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 22/11/2026",
       "doc_number": "70/2026/TT-BKHCN",
+      "exported_at": "2026-11-23T04:58:08+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-23T04:48:23+00:00",
       "identity": "number:70/2026/TT-BKHCN|issuer:TT-BKHCN|locality:",
+      "last_checked": "2026-11-23T04:58:08+00:00",
+      "last_error": "",
       "last_seen": "2026-11-23T04:48:23+00:00",
       "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12811",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v triển khai thực hiện Thông tư số 70/2026/TT-BKHCN của Bộ trưởng Bộ Khoa học và Công nghệ"
+      "status": "already_seen",
+      "title": "V/v triển khai thực hiện Thông tư số 70/2026/TT-BKHCN của Bộ trưởng Bộ Khoa học và Công nghệ",
+      "verification_status": "already_seen",
+      "verified_date": "2026-11-22"
     },
     "https://vpubnd.daklak.gov.vn/Documents/Detail/12814": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 20/11/2026",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-23T04:48:23+00:00",
       "identity": "url:https://vpubnd.daklak.gov.vn/Documents/Detail/12814",
+      "last_checked": "2026-11-23T04:58:05+00:00",
+      "last_error": "",
       "last_seen": "2026-11-23T04:48:23+00:00",
       "link": "https://vpubnd.daklak.gov.vn/Documents/Detail/12814",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Kết luận của đồng chí Nguyễn Thiên Văn - Phó Chủ tịch UBND tỉnh tại Hội nghị Tổng kết sản xuất trồng trọt, bảo vệ thực vật năm 2026 và triển khai Kế hoạch sản xuất vụ Đông Xuân 2026 - 2027; Tổng kết Niên vụ cà phê 2025-2026 và phương hướng nhiệm vụ thời gian tới"
+      "status": "excluded_old",
+      "title": "Kết luận của đồng chí Nguyễn Thiên Văn - Phó Chủ tịch UBND tỉnh tại Hội nghị Tổng kết sản xuất trồng trọt, bảo vệ thực vật năm 2026 và triển khai Kế hoạch sản xuất vụ Đông Xuân 2026 - 2027; Tổng kết Niên vụ cà phê 2025-2026 và phương hướng nhiệm vụ thời gian tới",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-11-20"
     },
     "https://www.dongthap.gov.vn//documents/1527809/5458409/177QĐ-UB2020NĐ_1766458078388.pdf/e9d19988-bc19-ae69-82a5-6c94e772e7d5": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -21749,6 +21767,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T04:48:23+00:00",
+  "updated_at": "2026-11-23T04:58:08+00:00",
   "version": 1
 }
