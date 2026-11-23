@@ -5854,6 +5854,15 @@
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-47-2026-tt-bnnmt-ngay-30-10-2026-cua-bo-nong-nghiep-va-moi-truong-quy-dinh-chi-tiet-994890",
       "title": "Thông tư số 47/2026/TT-BNNMT ngày 30/10/2026 của Bộ Nông nghiệp và Môi trường Quy định chi tiết một số điều của pháp luật về đa dạng sinh học và pháp luật về bảo vệ môi trường"
     },
+    "number:47/2026/TT-BYT|issuer:TT-BYT|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "47/2026/TT-BYT",
+      "first_seen": "2026-11-23T09:47:54+00:00",
+      "last_seen": "2026-11-23T09:47:54+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220341",
+      "title": "47/2026/TT-BYT 23/11/2026"
+    },
     "number:47/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
       "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
       "category": "Văn bản địa phương",
@@ -7238,6 +7247,15 @@
       "last_seen": "2026-11-18T00:14:57+00:00",
       "link": "https://dangcongsan.vn/van-ban-cua-dang/ke-hoach-so-84-kh-btctw-ngay-17-11-2026-cua-ban-to-chuc-trung-uong-ve-cao-diem-hoan-thanh-cac-nhiem-vu-trong-tam-ve-vi-t.html?menuId=6825579653d58aefae04bfb5",
       "title": "Kế hoạch số 84-KH/BTCTW ngày 17/11/2026 của Ban Tổ chức Trung ương về cao điểm hoàn thành các nhiệm vụ trọng tâm về vị trí việc làm và phương án biên chế giai đoạn 2027-2031 (từ ngày 16 đến 30/11/2026) ngày 17/11/2026"
+    },
+    "number:84/2026/TT-BXD|issuer:TT-BXD|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "84/2026/TT-BXD",
+      "first_seen": "2026-11-23T09:47:54+00:00",
+      "last_seen": "2026-11-23T09:47:54+00:00",
+      "link": "https://luatvietnam.vn/xay-dung/thong-tu-84-2026-tt-bxd-tieu-chi-danh-gia-kha-nang-chong-chiu-bien-doi-khi-hau-457511-d1.html",
+      "title": "Thông tư 84/2026/TT-BXD của Bộ Xây dựng ban hành tiêu chí đánh giá khả năng chống chịu với biến đổi khí hậu và việc tổ chức thực hiện tại các đô thị"
     },
     "number:85/2026/TT-BGDDT|issuer:TT-BGDDT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản - Văn bản Tiếng Anh",
@@ -9961,6 +9979,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220335": "url:https://chinhphu.vn/?pageid=27160&docid=220335",
     "https://chinhphu.vn/?pageid=27160&docid=220337": "url:https://chinhphu.vn/?pageid=27160&docid=220337",
     "https://chinhphu.vn/?pageid=27160&docid=220339": "number:31/2026/TT-BNV|issuer:TT-BNV|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220341": "number:47/2026/TT-BYT|issuer:TT-BYT|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
@@ -10849,6 +10868,7 @@
     "https://luatvietnam.vn/xay-dung/quyet-dinh-3980-qd-ubnd-phu-tho-2026-phe-duyet-quy-hoach-chung-xa-quy-duc-den-2050-457297-d2.html": "number:3980/QĐ-UBND|issuer:QĐ-UBND|locality:phú thọ phê duyệt nhiệm vụ quy hoạch chung xã quy đức",
     "https://luatvietnam.vn/xay-dung/quyet-dinh-7588-qd-ubnd-tp-ho-chi-minh-2026-uy-quyen-giam-doc-so-xay-dung-quan-ly-chat-luong-vat-lieu-xay-dung-456540-d2.html": "legacy_sheet_url:https://luatvietnam.vn/xay-dung/quyet-dinh-7588-qd-ubnd-tp-ho-chi-minh-2026-uy-quyen-giam-doc-so-xay-dung-quan-ly-chat-luong-vat-lieu-xay-dung-456540-d2.html",
     "https://luatvietnam.vn/xay-dung/thong-tu-81-2026-tt-bxd-quy-dinh-dan-nhan-nang-luong-cho-vat-lieu-xay-dung-454601-d1.html": "number:81/2026/TT-BXD|issuer:TT-BXD|locality:",
+    "https://luatvietnam.vn/xay-dung/thong-tu-84-2026-tt-bxd-tieu-chi-danh-gia-kha-nang-chong-chiu-bien-doi-khi-hau-457511-d1.html": "number:84/2026/TT-BXD|issuer:TT-BXD|locality:",
     "https://luatvietnam.vn/xay-dung/van-ban-hop-nhat-64-2026-vbhn-nd-btc-2026-ve-bao-hiem-bat-buoc-trach-nhiem-dan-su-va-chay-no-454991-d5.html": "number:64/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/cong-van-24288-chq-gsql-2026-cua-cuc-hai-quan-ve-vuong-mac-thu-tuc-hai-quan-hoa-chat-456557-d6.html": "number:24288/CHQ-GSQL|issuer:CHQ-GSQL|locality:",
     "https://luatvietnam.vn/xuat-nhap-khau/cong-van-24313-chq-gsql-2026-cua-cuc-hai-quan-trien-khai-thu-tuc-hai-quan-qua-thuong-mai-dien-tu-456556-d6.html": "number:24313/CHQ-GSQL|issuer:CHQ-GSQL|locality:",
