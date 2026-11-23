@@ -2463,6 +2463,15 @@
       "link": "https://luatvietnam.vn/hanh-chinh/nghi-dinh-187-2025-nd-cp-405615-d1.html",
       "title": "Nghị định 187/2025/NĐ-CP"
     },
+    "number:1872/QĐ-CHQ|issuer:QĐ-CHQ|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "1872/QĐ-CHQ",
+      "first_seen": "2026-11-23T09:03:00+00:00",
+      "last_seen": "2026-11-23T09:03:00+00:00",
+      "link": "https://luatvietnam.vn/tai-chinh/quyet-dinh-1872-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-457491-d1.html",
+      "title": "Quyết định 1872/QĐ-CHQ của Cục Hải quan về việc công bố công khai điều chỉnh dự toán chi ngân sách Nhà nước năm 2026 của Cục Hải quan (đơn vị sử dụng ngân sách)"
+    },
     "number:1875/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -10628,6 +10637,7 @@
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-144-2026-qd-ubnd-dak-lak-bai-bo-quyet-dinh-031-2025-qd-ubnd-phan-cap-tham-quyen-xu-ly-tai-san-456444-d2.html": "legacy_sheet_url:https://luatvietnam.vn/tai-chinh/quyet-dinh-144-2026-qd-ubnd-dak-lak-bai-bo-quyet-dinh-031-2025-qd-ubnd-phan-cap-tham-quyen-xu-ly-tai-san-456444-d2.html",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-165-2026-qd-ubnd-quang-ngai-quyet-toan-von-ho-tro-du-an-bang-vat-lieu-xay-dung-457162-d2.html": "number:165/2026/QĐ-UBND|issuer:QĐ-UBND|locality:quảng ngãi quy định việc quyết toán phần vốn hỗ trợ đối với dự án thực hiện theo hình thức sử dụng vốn để hỗ trợ bằng vật liệu xây dựng",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-1838-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-456565-d1.html": "legacy_sheet_url:https://luatvietnam.vn/tai-chinh/quyet-dinh-1838-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-456565-d1.html",
+    "https://luatvietnam.vn/tai-chinh/quyet-dinh-1872-qd-chq-2026-cong-bo-dieu-chinh-du-toan-chi-ngan-sach-nha-nuoc-cua-cuc-hai-quan-457491-d1.html": "number:1872/QĐ-CHQ|issuer:QĐ-CHQ|locality:",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-2184-qd-ttg-2026-sua-doi-bo-sung-quyet-dinh-352-qd-ttg-ve-ke-hoach-vay-tra-no-cong-456053-d1.html": "number:2184/QD-TTG|issuer:QD-TTG|locality:",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-2452-qd-nhnn-2026-ve-hieu-luc-thong-tu-32-2013-tt-nhnn-han-che-ngoai-hoi-455816-d1.html": "number:2452/QD-NHNN|issuer:QD-NHNN|locality:",
     "https://luatvietnam.vn/tai-chinh/quyet-dinh-2626-qd-ubnd-dien-bien-dieu-chinh-giam-thu-hoi-ngan-sach-tinh-2026-457388-d2.html": "number:2626/QĐ-UBND|issuer:QĐ-UBND|locality:điện biên điều chỉnh giảm",
