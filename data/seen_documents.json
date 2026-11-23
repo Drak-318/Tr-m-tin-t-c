@@ -3806,6 +3806,15 @@
       "link": "https://luatvietnam.vn/giao-thong/quyet-dinh-2920-qd-ubnd-tuyen-quang-2026-cong-bo-danh-muc-duong-thuy-noi-dia-dia-phuong-457030-d2.html",
       "title": "Quyết định 2920/QĐ-UBND của Ủy ban nhân dân tỉnh Tuyên Quang về việc công bố Danh mục đường thủy nội địa địa phương trên địa bàn tỉnh Tuyên Quang"
     },
+    "number:2939/CT-UBND|issuer:CT-UBND|locality:tuyên quang về tăng cường phòng": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
+      "category": "Văn bản địa phương",
+      "doc_number": "2939/CT-UBND",
+      "first_seen": "2026-11-23T01:53:19+00:00",
+      "last_seen": "2026-11-23T01:53:19+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/chi-thi-2939-ct-ubnd-tuyen-quang-2026-phong-chong-gian-lan-thi-cu-kiem-tra-danh-gia-giao-duc-457370-d2.html",
+      "title": "Chỉ thị 2939/CT-UBND của Ủy ban nhân dân tỉnh Tuyên Quang về tăng cường phòng, chống gian lận thi cử, kiểm tra, đánh giá trong giáo dục và đào tạo trên địa bàn tỉnh Tuyên Quang"
+    },
     "number:2945/QD-BCT|issuer:QD-BCT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản - Văn bản Tiếng Anh",
       "category": "Văn bản khác",
@@ -4970,6 +4979,15 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "number:4094/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn": {
+      "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản - Trang 2",
+      "category": "Văn bản địa phương",
+      "doc_number": "4094/QĐ-UBND",
+      "first_seen": "2026-11-23T01:53:19+00:00",
+      "last_seen": "2026-11-23T01:53:19+00:00",
+      "link": "https://luatvietnam.vn/thuong-mai/quyet-dinh-4094-qd-ubnd-khanh-hoa-2026-bai-bo-quyet-dinh-29-2020-qd-ubnd-gia-dich-vu-cho-ninh-thuan-457371-d2.html",
+      "title": "Quyết định 4094/QĐ-UBND Khánh Hòa 2026 bãi bỏ Quyết định 29/2020/QĐ-UBND giá dịch vụ chợ Ninh Thuận"
     },
     "number:41/2026/TT-BXD|issuer:TT-BXD|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
@@ -6552,6 +6570,15 @@
       "last_seen": "2026-11-22T06:07:59+00:00",
       "link": "https://luatvietnam.vn/y-te/nghi-quyet-78-2026-nq-hdnd-lam-dong-ho-tro-tien-an-cho-benh-nhan-tai-khu-dieu-tri-phong-di-linh-457340-d2.html",
       "title": "Nghị quyết 78/2026/NQ-HĐND của Ủy ban nhân dân tỉnh Lâm Đồng quy định mức hỗ trợ tiền ăn cho bệnh nhân đang được nuôi dưỡng, chăm sóc tại Khu điều trị phong Di Linh, tỉnh Lâm Đồng"
+    },
+    "number:7813/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh 2026 bãi bỏ quyết định 79/2009/qđ-ubnd quản lý lưu học sinh lào luatvietnam - văn bản mới - tra cứu văn bản": {
+      "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
+      "category": "Văn bản địa phương",
+      "doc_number": "7813/QĐ-UBND",
+      "first_seen": "2026-11-23T01:53:19+00:00",
+      "last_seen": "2026-11-23T01:53:19+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-7813-qd-ubnd-tp-ho-chi-minh-2026-bai-bo-quyet-dinh-79-2009-qd-ubnd-quan-ly-luu-hoc-sinh-lao-457372-d2.html",
+      "title": "Quyết định 7813/QĐ-UBND TP Hồ Chí Minh 2026 bãi bỏ Quyết định 79/2009/QĐ-UBND quản lý lưu học sinh Lào"
     },
     "number:7817/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh về việc phê duyệt quy trình nội bộ": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -9578,6 +9605,7 @@
     "https://luatvietnam.vn/doanh-nghiep/van-ban-hop-nhat-03-2026-vbhn-qd-ubnd-2026-quy-che-phoi-hop-quan-ly-doanh-nghiep-ho-kinh-doanh-bac-ninh-457169-d5.html": "number:03/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:bắc ninh ban hành hợp nhất quyết định ban hành quy chế phối hợp trong công tác quản lý nhà nước đối với doanh nghiệp",
     "https://luatvietnam.vn/doanh-nghiep/van-ban-hop-nhat-113-2026-vbhn-tt-bnnmt-2026-huong-dan-sap-xep-doi-moi-cong-ty-nong-lam-nghiep-456535-d5.html": "legacy_sheet_url:https://luatvietnam.vn/doanh-nghiep/van-ban-hop-nhat-113-2026-vbhn-tt-bnnmt-2026-huong-dan-sap-xep-doi-moi-cong-ty-nong-lam-nghiep-456535-d5.html",
     "https://luatvietnam.vn/doanh-nghiep/van-ban-hop-nhat-92-2026-vbhn-qd-ubnd-2026-quy-che-phoi-hop-quan-ly-nha-nuoc-voi-doanh-nghiep-452132-d5.html": "number:92/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:lâm đồng ban hành hợp nhất quyết định ban hành quy chế phối hợp giữa các cơ quan quản lý nhà nước tại địa phương trong công tác quản lý nhà nước đối với doanh nghiệp",
+    "https://luatvietnam.vn/giao-duc/chi-thi-2939-ct-ubnd-tuyen-quang-2026-phong-chong-gian-lan-thi-cu-kiem-tra-danh-gia-giao-duc-457370-d2.html": "number:2939/CT-UBND|issuer:CT-UBND|locality:tuyên quang về tăng cường phòng",
     "https://luatvietnam.vn/giao-duc/du-thao-thong-tu-ve-quy-che-to-chuc-va-hoat-dong-truong-thpt-chuyen-455523-d10.html": "url:https://luatvietnam.vn/giao-duc/du-thao-thong-tu-ve-quy-che-to-chuc-va-hoat-dong-truong-thpt-chuyen-455523-d10.html",
     "https://luatvietnam.vn/giao-duc/ke-hoach-477-kh-ubnd-dak-lak-2026-xay-dung-thi-diem-tu-sach-cong-dong-so-thu-vien-mo-456600-d2.html": "number:477/KH-UBND|issuer:KH-UBND|locality:đắk lắk triển khai xây dựng thí điểm tủ sách cộng đồng số",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3307-qd-bgddt-2026-phe-duyet-tai-lieu-huong-dan-su-dung-mang-an-toan-cho-hoc-sinh-456318-d1.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-3307-qd-bgddt-2026-phe-duyet-tai-lieu-huong-dan-su-dung-mang-an-toan-cho-hoc-sinh-456318-d1.html",
@@ -9590,6 +9618,7 @@
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3380-qd-bgddt-2026-cong-bo-thu-tuc-hanh-chinh-noi-bo-duoc-thay-the-457255-d1.html": "number:3380/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-6292-qd-ubnd-ha-noi-2026-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-truong-cao-dang-dien-tu-dien-lanh-456825-d2.html": "number:6292/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc quy định vị trí",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-7813-qd-ubnd-tp-ho-chi-minh-2026-bai-bo-quyet-dinh-79-2009-qd-ubnd-quan-ly-luu-hoc-sinh-lao-457372-d2.html": "number:7813/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh 2026 bãi bỏ quyết định 79/2009/qđ-ubnd quản lý lưu học sinh lào luatvietnam - văn bản mới - tra cứu văn bản",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-80-2026-qd-ubnd-nghe-an-sua-doi-bo-sung-quy-dinh-day-them-hoc-them-456949-d2.html": "number:80/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-99-2026-qd-ubnd-tp-ho-chi-minh-danh-muc-trang-cap-do-dung-hoc-sinh-dan-toc-noi-tru-456805-d2.html": "number:99/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh quy định danh mục trang cấp đồ dùng cá nhân",
     "https://luatvietnam.vn/giao-duc/thong-tu-81-2026-tt-bgddt-dieu-le-ban-dai-dien-cha-me-hoc-sinh-moi-nhat-449106-d1.html": "number:81/2026/TT-BGDDT|issuer:TT-BGDDT|locality:",
@@ -9806,6 +9835,7 @@
     "https://luatvietnam.vn/thuong-mai/quyet-dinh-164-2026-qd-ubnd-quang-ngai-phan-cap-nhiem-vu-quyen-han-so-cong-thuong-quan-ly-kinh-doanh-da-cap-456846-d2.html": "number:164/2026/QĐ-UBND|issuer:QĐ-UBND|locality:quảng ngãi phân cấp nhiệm vụ",
     "https://luatvietnam.vn/thuong-mai/quyet-dinh-1922-qd-ttg-2026-sua-doi-bo-sung-quyet-dinh-2326-qd-ttg-phat-trien-thi-truong-ban-le-viet-nam-449641-d1.html": "number:1922/QD-TTG|issuer:QD-TTG|locality:",
     "https://luatvietnam.vn/thuong-mai/quyet-dinh-4006-qd-ubnd-khanh-hoa-2026-xay-dung-quan-ly-va-thuc-hien-chuong-trinh-xuc-tien-thuong-mai-456291-d2.html": "legacy_sheet_url:https://luatvietnam.vn/thuong-mai/quyet-dinh-4006-qd-ubnd-khanh-hoa-2026-xay-dung-quan-ly-va-thuc-hien-chuong-trinh-xuc-tien-thuong-mai-456291-d2.html",
+    "https://luatvietnam.vn/thuong-mai/quyet-dinh-4094-qd-ubnd-khanh-hoa-2026-bai-bo-quyet-dinh-29-2020-qd-ubnd-gia-dich-vu-cho-ninh-thuan-457371-d2.html": "number:4094/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/thuong-mai/van-ban-hop-nhat-02-2026-vbhn-qd-ubnd-2026-quy-dinh-phan-cap-va-phan-cong-nhiem-vu-quan-ly-gia-bac-ninh-456960-d5.html": "number:02/2026/VBHN-QĐ-UBND|issuer:VBHN-QĐ-UBND|locality:bắc ninh ban hành hợp nhất quyết định quy định phân cấp và phân công nhiệm vụ để thực hiện quản lý nhà nước về giá và thẩm định giá trên địa bàn thành phố bắc ninh luatvietnam - văn bản mới - văn bản hợp nhất",
     "https://luatvietnam.vn/tin-van-ban-moi/10-nganh-khoa-hoc-va-cong-nghe-trong-linh-vuc-cong-nghiep-quoc-phong-186-115865-article.html": "number:159/2026/TT-BQP|issuer:TT-BQP|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/2-lan-tham-dinh-chi-so-cai-cach-hanh-chinh-tp-hcm-hoan-thanh-truoc-26-11-2026-186-115961-article.html": "number:11483/UBND-VX|issuer:UBND-VX|locality:hcm hoàn thành trước 26/11/2026 luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",

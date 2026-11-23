@@ -5672,6 +5672,20 @@
       "verification_status": "verified_included",
       "verified_date": "2026-11-17"
     },
+    "https://luatvietnam.vn/tin-van-ban-moi/thue-thanh-pho-ha-noi-duoc-tu-choi-tiep-cong-dan-trong-13-truong-hop-186-116085-article.html": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "18849/QĐ-HAN-KTR2",
+      "first_seen": "2026-11-23T01:53:19+00:00",
+      "identity": "number:18849/QĐ-HAN-KTR2|issuer:QĐ-HAN-KTR2|locality:",
+      "last_seen": "2026-11-23T01:53:19+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/thue-thanh-pho-ha-noi-duoc-tu-choi-tiep-cong-dan-trong-13-truong-hop-186-116085-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Thuế thành phố Hà Nội được từ chối tiếp công dân trong 13 trường hợp"
+    },
     "https://luatvietnam.vn/tin-van-ban-moi/tphcm-hoan-thanh-kiem-diem-danh-gia-xep-loai-chat-luong-nam-2026-truoc-30-11-186-115954-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
       "attempts": 1,
@@ -21686,6 +21700,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-23T01:12:52+00:00",
+  "updated_at": "2026-11-23T01:53:19+00:00",
   "version": 1
 }
