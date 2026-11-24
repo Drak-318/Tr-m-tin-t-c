@@ -4525,7 +4525,7 @@
     },
     "https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-so-59-2020-qh14-186272-d1.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "59/2020/QH14",
@@ -4533,7 +4533,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T19:17:52+00:00",
       "identity": "number:59/2020/QH14|issuer:QH14|locality:",
-      "last_checked": "2026-11-24T19:33:01+00:00",
+      "last_checked": "2026-11-24T19:38:14+00:00",
       "last_error": "",
       "last_seen": "2026-11-24T19:17:52+00:00",
       "link": "https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-so-59-2020-qh14-186272-d1.html",
@@ -22102,6 +22102,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T19:33:01+00:00",
+  "updated_at": "2026-11-24T19:38:14+00:00",
   "version": 1
 }
