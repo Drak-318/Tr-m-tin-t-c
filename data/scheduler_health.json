@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "last_watchdog_at": "2026-11-24T06:53:44.173Z",
+  "last_watchdog_at": "2026-11-24T18:48:32.330Z",
   "scheduled_for": "2,12,22,32,42,52 * * * *",
-  "workflow_run_id": 45343831058,
-  "action": "healthy",
-  "reason": "Priority age: 6m; full age: 38m",
-  "priority_age_minutes": 6,
-  "full_age_minutes": 38,
-  "last_priority_success_at": "2026-11-24T06:48:03Z",
-  "last_full_success_at": "2026-11-24T06:15:57Z"
+  "workflow_run_id": 45463468255,
+  "action": "scan_active",
+  "reason": "priority scan #866 is in_progress",
+  "priority_age_minutes": 5,
+  "full_age_minutes": 46,
+  "last_priority_success_at": "2026-11-24T18:43:11Z",
+  "last_full_success_at": "2026-11-24T18:02:43Z"
 }
