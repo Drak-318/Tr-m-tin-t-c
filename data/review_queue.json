@@ -5650,6 +5650,23 @@
       "verification_status": "verified_included",
       "verified_date": "2026-11-13"
     },
+    "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-63-2026-2-nhom-nguoi-nop-thue-duoc-xoa-no-le-phi-mon-bai-va-tien-cham-nop-186-116147-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "63/2026",
+      "exported_at": "2026-11-24T01:57:56+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-24T01:57:51+00:00",
+      "identity": "url:https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-63-2026-2-nhom-nguoi-nop-thue-duoc-xoa-no-le-phi-mon-bai-va-tien-cham-nop-186-116147-article.html",
+      "last_checked": "2026-11-24T01:57:57+00:00",
+      "last_seen": "2026-11-24T01:57:51+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-63-2026-2-nhom-nguoi-nop-thue-duoc-xoa-no-le-phi-mon-bai-va-tien-cham-nop-186-116147-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Nghị quyết 63/2026: 2 nhóm người nộp thuế được xóa nợ lệ phí môn bài và tiền chậm nộp"
+    },
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-75-nq-cp-kien-quyet-khong-de-cong-trinh-chua-nghiem-thu-ve-pccc-dua-vao-su-dung-186-108154-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - ​Từ 01/3/2027, bỏ thủ tục kiểm tra công tác nghiệm thu PCCC",
       "attempts": 1,
@@ -21964,6 +21981,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T01:52:54+00:00",
+  "updated_at": "2026-11-24T01:57:57+00:00",
   "version": 1
 }
