@@ -2104,21 +2104,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-v-v-phan-luong-to-chuc-giao-thong-tren-tuyen-duong-dt-741-phuc-vu-sua-chua-cau-suoi-rat-cu-du-an-dieu-chinh-nang-cap-mo-rong-dt-741-doan-tu-dong-xoai-di-phuoc-long-km72-750-den-km118-532-tinh-binh-phuoc-theo-hinh-thuc-bot-64985.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-24T07:09:56+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-v-v-phan-luong-to-chuc-giao-thong-tren-tuyen-duong-dt-741-phuc-vu-sua-chua-cau-suoi-rat-cu-du-an-dieu-chinh-nang-cap-mo-rong-dt-741-doan-tu-dong-xoai-di-phuoc-long-km72-750-den-km118-532-tinh-binh-phuoc-theo-hinh-thuc-bot-64985.html",
-      "last_checked": "2026-11-24T07:32:59+00:00",
+      "last_checked": "2026-11-24T07:47:51+00:00",
       "last_error": "",
       "last_seen": "2026-11-24T07:09:56+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-v-v-phan-luong-to-chuc-giao-thong-tren-tuyen-duong-dt-741-phuc-vu-sua-chua-cau-suoi-rat-cu-du-an-dieu-chinh-nang-cap-mo-rong-dt-741-doan-tu-dong-xoai-di-phuoc-long-km72-750-den-km118-532-tinh-binh-phuoc-theo-hinh-thuc-bot-64985.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo về việc phân luồng, tổ chức giao thông trên tuyến đường ĐT.741 phục vụ sửa chữa cầu Suối Rạt (cũ) dự án điều chỉnh nâng cấp, mở rộng ĐT.741 đoạn từ Đồng Xoài đi Phước Long (Km72+750 đến Km118+532), tỉnh Bình Phước theo hình thức BOT",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/ve-viec-cho-thue-nha-dat-do-trung-tam-dich-vu-tong-hop-xa-phuoc-son-quan-ly-khai-thac-doi-voi-03-co-so-nha-dat-doi-du-cac-diem-truong-duoc-chuyen-giao-theo-quyet-dinh-so-3339-qd-ubnd-lan-2-64887.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -17291,7 +17291,7 @@
     },
     "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7+4MfeygA%3D%25": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -17299,15 +17299,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T07:09:56+00:00",
       "identity": "url:https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7+4MfeygA%3D%25",
-      "last_checked": "2026-11-24T07:33:00+00:00",
+      "last_checked": "2026-11-24T07:47:52+00:00",
       "last_error": "",
       "last_seen": "2026-11-24T07:09:56+00:00",
       "link": "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7+4MfeygA%3D%25",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hướng dẫn yêu cầu cung cấp thông tin",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7+4MfeygA%3D%3D": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
@@ -22082,6 +22082,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T07:33:00+00:00",
+  "updated_at": "2026-11-24T07:47:52+00:00",
   "version": 1
 }
