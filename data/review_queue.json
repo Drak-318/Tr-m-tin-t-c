@@ -5527,37 +5527,43 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-48-2026-qh16-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-186-116148-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "48/2026/QH16",
       "exported_at": "2026-11-24T04:08:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T04:08:04+00:00",
       "identity": "number:48/2026/QH16|issuer:QH16|locality:",
-      "last_checked": "2026-11-24T04:08:11+00:00",
+      "last_checked": "2026-11-24T04:22:49+00:00",
+      "last_error": "",
       "last_seen": "2026-11-24T04:08:04+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-48-2026-qh16-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-186-116148-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Đã có Nghị quyết 48/2026/QH16 về dự toán ngân sách nhà nước năm 2027"
+      "status": "not_found",
+      "title": "Đã có Nghị quyết 48/2026/QH16 về dự toán ngân sách nhà nước năm 2027",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-49-2026-qh16-ve-phan-bo-ngan-sach-trung-uong-nam-2027-186-116150-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "49/2026/QH16",
       "exported_at": "2026-11-24T04:08:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T04:08:04+00:00",
       "identity": "number:49/2026/QH16|issuer:QH16|locality:",
-      "last_checked": "2026-11-24T04:08:11+00:00",
+      "last_checked": "2026-11-24T04:22:49+00:00",
+      "last_error": "",
       "last_seen": "2026-11-24T04:08:04+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-49-2026-qh16-ve-phan-bo-ngan-sach-trung-uong-nam-2027-186-116150-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "​Đã có Nghị quyết 49/2026/QH16 về phân bổ ngân sách trung ương năm 2027"
+      "status": "not_found",
+      "title": "​Đã có Nghị quyết 49/2026/QH16 về phân bổ ngân sách trung ương năm 2027",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-63-2026-qh16-ve-chinh-sach-dac-thu-xu-ly-no-le-phi-mon-bai-va-tien-cham-nop-186-116146-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -5853,7 +5859,7 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/tu-05-01-2027-khong-phai-nop-giay-to-dieu-chinh-thong-tin-bh-tai-nan-lao-dong-tu-nguyen-neu-da-co-du-lieu-dien-tu-186-116153-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "418/2026/NĐ-CP",
@@ -5861,15 +5867,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T03:42:43+00:00",
       "identity": "number:418/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-24T04:08:04+00:00",
+      "last_checked": "2026-11-24T04:22:49+00:00",
       "last_error": "",
       "last_seen": "2026-11-24T03:42:43+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/tu-05-01-2027-khong-phai-nop-giay-to-dieu-chinh-thong-tin-bh-tai-nan-lao-dong-tu-nguyen-neu-da-co-du-lieu-dien-tu-186-116153-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Không phải nộp giấy tờ điều chỉnh thông tin bảo hiểm tai nạn lao động tự nguyện nếu đã có dữ liệu điện tử",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/tu-14-12-2026-don-gui-den-cong-an-phai-co-so-can-cuoc-hoac-so-ho-chieu-de-du-dieu-kien-xu-ly-186-116112-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -22038,6 +22044,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T04:08:11+00:00",
+  "updated_at": "2026-11-24T04:22:49+00:00",
   "version": 1
 }
