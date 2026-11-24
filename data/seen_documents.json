@@ -1120,6 +1120,15 @@
       "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/B251D3F50A06788947258EB400328322",
       "title": "V/v giao tham mưu thu hồi kinh phí hỗ trợ theo Nghị định 116/2020/NĐ-CP đã hưởng đối với sinh viên không hoàn thành Chương trình đào tạo"
     },
+    "number:116/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định khung giá cho thuê nhà lưu trú công nhân trong khu công nghiệp trên địa bàn tỉnh lâm đồng luatvietnam - văn bản mới": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "116/2026/QĐ-UBND",
+      "first_seen": "2026-11-24T05:32:58+00:00",
+      "last_seen": "2026-11-24T05:32:58+00:00",
+      "link": "https://luatvietnam.vn/dat-dai/quyet-dinh-116-2026-qd-ubnd-lam-dong-khung-gia-cho-thue-nha-luu-tru-cong-nhan-kcn-457550-d2.html",
+      "title": "Quyết định 116/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Lâm Đồng quy định khung giá cho thuê nhà lưu trú công nhân trong Khu công nghiệp trên địa bàn tỉnh Lâm Đồng"
+    },
     "number:116/2026/VBHN-TT-NHNN|issuer:VBHN-TT-NHNN|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
       "category": "Văn bản quy phạm pháp luật",
@@ -4599,6 +4608,15 @@
       "last_seen": "2026-11-21T01:43:05+00:00",
       "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3380-qd-bgddt-2026-cong-bo-thu-tuc-hanh-chinh-noi-bo-duoc-thay-the-457255-d1.html",
       "title": "Quyết định 3380/QĐ-BGDĐT 2026 về việc công bố thủ tục hành chính nội bộ được thay thế thuộc phạm vi, chức năng quản lý của Bộ Giáo dục và Đào tạo"
+    },
+    "number:3390/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3390/QĐ-BGDĐT",
+      "first_seen": "2026-11-24T05:32:58+00:00",
+      "last_seen": "2026-11-24T05:32:58+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3390-qd-bgddt-2026-sap-nhap-va-doi-ten-cac-truong-cao-dang-457545-d1.html",
+      "title": "Quyết định 3390/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc sáp nhập Trường Cao đẳng Công nghiệp, Thương mại và Du lịch, Trường Cao đẳng Công nghệ và Thương mại vào Trường Cao đẳng Kỹ thuật Công nghệ Việt - Đức và đổi tên Trường Cao đẳng Kỹ thuật Công nghệ Việt - Đức sau sáp nhập thành Trường Cao đẳng Kỹ thuật Công nghệ và Thương mại"
     },
     "number:34/CT-UBND|issuer:CT-UBND|locality:đắk lắk về tăng cường công tác phòng": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -10747,6 +10765,7 @@
     "https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457432-d10.html": "url:https://luatvietnam.vn/dat-dai/du-thao-luat-nha-o-quy-dinh-moi-va-nhung-thay-doi-quan-trong-can-biet-457432-d10.html",
     "https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dat-dai/ke-hoach-533-kh-ubnd-lao-cai-thuc-hien-nghi-quyet-303-nq-cp-phat-trien-nha-o-xa-hoi-2026-2030-456274-d2.html",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-112-2026-qd-ubnd-can-tho-quy-che-phoi-hop-van-phong-dang-ky-dat-dai-457108-d2.html": "number:112/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cần thơ ban hành quy chế phối hợp thực hiện chức năng",
+    "https://luatvietnam.vn/dat-dai/quyet-dinh-116-2026-qd-ubnd-lam-dong-khung-gia-cho-thue-nha-luu-tru-cong-nhan-kcn-457550-d2.html": "number:116/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định khung giá cho thuê nhà lưu trú công nhân trong khu công nghiệp trên địa bàn tỉnh lâm đồng luatvietnam - văn bản mới",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-151-2026-qd-ubnd-dak-lak-dinh-muc-kinh-te-ky-thuat-dieu-tra-danh-gia-dat-dai-457164-d2.html": "number:151/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk ban hành định mức kinh tế - kỹ thuật điều tra",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-161-2026-qd-ubnd-ha-noi-quy-che-phoi-hop-chia-se-thong-tin-du-lieu-nha-o-va-bds-456816-d2.html": "number:161/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội quy định về quy chế phối hợp chia sẻ",
     "https://luatvietnam.vn/dat-dai/quyet-dinh-2617-qd-ubnd-dien-bien-2026-duyet-quy-trinh-luong-xanh-thu-tuc-dat-dai-moi-truong-lam-nghiep-456980-d2.html": "number:2617/QĐ-UBND|issuer:QĐ-UBND|locality:điện biên phê duyệt quy trình nội bộ trong giải quyết thủ tục hành chính thực hiện theo cơ chế “luồng xanh” trong các lĩnh vực đất đai",
@@ -10822,6 +10841,7 @@
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3373-qd-bgddt-2026-sap-nhap-truong-cao-dang-co-dien-va-nong-lam-phu-tho-vao-truong-cao-dang-co-khi-nong-nghiep-457252-d1.html": "number:3373/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3377-qd-bgddt-2026-sap-nhap-truong-trung-cap-kinh-te-ky-thuat-vinh-vao-cao-dang-ky-thuat-cong-nghiep-viet-nam-han-quoc-457256-d1.html": "number:3377/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3380-qd-bgddt-2026-cong-bo-thu-tuc-hanh-chinh-noi-bo-duoc-thay-the-457255-d1.html": "number:3380/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-3390-qd-bgddt-2026-sap-nhap-va-doi-ten-cac-truong-cao-dang-457545-d1.html": "number:3390/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-6292-qd-ubnd-ha-noi-2026-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-truong-cao-dang-dien-tu-dien-lanh-456825-d2.html": "number:6292/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc quy định vị trí",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-7813-qd-ubnd-tp-ho-chi-minh-2026-bai-bo-quyet-dinh-79-2009-qd-ubnd-quan-ly-luu-hoc-sinh-lao-457372-d2.html": "number:7813/QĐ-UBND|issuer:QĐ-UBND|locality:hồ chí minh 2026 bãi bỏ quyết định 79/2009/qđ-ubnd quản lý lưu học sinh lào luatvietnam - văn bản mới - tra cứu văn bản",
