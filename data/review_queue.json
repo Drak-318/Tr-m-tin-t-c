@@ -4525,7 +4525,7 @@
     },
     "https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-so-59-2020-qh14-186272-d1.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "59/2020/QH14",
@@ -4533,15 +4533,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-24T19:17:52+00:00",
       "identity": "number:59/2020/QH14|issuer:QH14|locality:",
-      "last_checked": "2026-11-24T19:43:59+00:00",
+      "last_checked": "2026-11-24T19:52:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-24T19:17:52+00:00",
       "link": "https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-so-59-2020-qh14-186272-d1.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Luật Doanh nghiệp của Quốc hội, số 59/2020/QH14",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/doanh-nghiep/quyet-dinh-1007-qd-ubnd-uy-ban-nhan-dan-tinh-lao-cai-410330-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -22102,6 +22102,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T19:43:59+00:00",
+  "updated_at": "2026-11-24T19:52:59+00:00",
   "version": 1
 }
