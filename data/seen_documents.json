@@ -7680,6 +7680,15 @@
       "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-8732-ct-doanh-nghiep-nop-thue-toi-thieu-toan-cau-theo-ma-tieu-muc-1058-186-115836-article.html",
       "title": "Công văn 8732/CT: Doanh nghiệp nộp thuế tối thiểu toàn cầu theo mã tiểu mục 1058"
     },
+    "number:8743/CT-PC|issuer:CT-PC|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
+      "category": "Công văn",
+      "doc_number": "8743/CT-PC",
+      "first_seen": "2026-11-24T12:59:18+00:00",
+      "last_seen": "2026-11-24T12:59:18+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/nha-nuoc-boi-thuong-thiet-hai-do-thu-thue-truy-thu-thue-hoan-thue-trai-phap-luat-186-116133-article.html",
+      "title": "Nhà nước bồi thường thiệt hại do thu thuế, truy thu thuế, hoàn thuế trái pháp luật"
+    },
     "number:8743/CT|issuer:CT|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
       "category": "Công văn",
@@ -11235,6 +11244,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-416-2026-co-so-san-xuat-kinh-doanh-vung-dan-toc-thieu-so-va-mien-nui-duoc-vay-toi-da-10-ty-dong-186-115986-article.html": "url:https://luatvietnam.vn/tin-van-ban-moi/nghi-dinh-416-2026-co-so-san-xuat-kinh-doanh-vung-dan-toc-thieu-so-va-mien-nui-duoc-vay-toi-da-10-ty-dong-186-115986-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-336-nq-cp-yeu-cau-bo-tri-ngan-sach-cho-cong-tac-nhan-tai-dat-khoang-01-gdp-hang-nam-186-115823-article.html": "number:336/NQ-CP|issuer:NQ-CP|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/nghi-quyet-75-nq-cp-kien-quyet-khong-de-cong-trinh-chua-nghiem-thu-ve-pccc-dua-vao-su-dung-186-108154-article.html": "number:75/NQ-CP|issuer:NQ-CP|locality:",
+    "https://luatvietnam.vn/tin-van-ban-moi/nha-nuoc-boi-thuong-thiet-hai-do-thu-thue-truy-thu-thue-hoan-thue-trai-phap-luat-186-116133-article.html": "number:8743/CT-PC|issuer:CT-PC|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/quyet-dinh-159-2026-qd-ubnd-thoi-han-cho-thue-dat-ngan-han-tai-ha-noi-toi-da-khong-qua-5-nam-186-115854-article.html": "number:159/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/quyet-dinh-3517-qd-byt-cac-don-vi-thuoc-bo-y-te-phai-lap-danh-sach-ke-khai-tai-san-truoc-19-11-2026-186-115819-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/quyet-dinh-3517-qd-byt-cac-don-vi-thuoc-bo-y-te-phai-lap-danh-sach-ke-khai-tai-san-truoc-19-11-2026-186-115819-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/thanh-tra-chinh-phu-se-thanh-tra-vietlott-va-4-cong-ty-xo-so-trong-nam-2027-186-115860-article.html": "number:1030/QĐ-TTCP|issuer:QĐ-TTCP|locality:",
