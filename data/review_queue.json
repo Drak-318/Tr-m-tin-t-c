@@ -5527,17 +5527,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-63-2026-qh16-ve-chinh-sach-dac-thu-xu-ly-no-le-phi-mon-bai-va-tien-cham-nop-186-116146-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 06/8/2026",
       "doc_number": "63/2026/QH16",
+      "exported_at": "2026-11-24T01:52:54+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-24T01:37:49+00:00",
       "identity": "number:63/2026/QH16|issuer:QH16|locality:",
+      "last_checked": "2026-11-24T01:52:54+00:00",
+      "last_error": "",
       "last_seen": "2026-11-24T01:37:49+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-63-2026-qh16-ve-chinh-sach-dac-thu-xu-ly-no-le-phi-mon-bai-va-tien-cham-nop-186-116146-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Đã có Nghị quyết 63/2026/QH16 về chính sách đặc thù xử lý nợ lệ phí môn bài và tiền chậm nộp"
+      "status": "excluded_old",
+      "title": "Đã có Nghị quyết 63/2026/QH16 về chính sách đặc thù xử lý nợ lệ phí môn bài và tiền chậm nộp",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-08-06"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-hoan-thanh-cap-thu-hoi-giay-chung-nhan-tai-12-du-an-trong-quy-iv-2028-186-115876-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
@@ -21957,6 +21964,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-24T01:37:49+00:00",
+  "updated_at": "2026-11-24T01:52:54+00:00",
   "version": 1
 }
