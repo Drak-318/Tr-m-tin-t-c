@@ -6511,6 +6511,15 @@
       "migrated_from": "Google Sheets",
       "title": ""
     },
+    "number:4377/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "4377/QĐ-BNNMT",
+      "first_seen": "2026-11-25T14:08:00+00:00",
+      "last_seen": "2026-11-25T14:08:00+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4377-qd-bnnmt-2026-cong-bo-thu-tuc-hanh-chinh-sua-doi-linh-vuc-bien-doi-khi-hau-457744-d1.html",
+      "title": "Quyết định 4377/QĐ-BNNMT của Bộ Nông nghiệp và Môi trường về việc công bố thủ tục hành chính sửa đổi, bổ sung lĩnh vực biến đổi khí hậu thuộc phạm vi chức năng quản lý nhà nước của Bộ Nông nghiệp và Môi trường"
+    },
     "number:44/2025/TT-BKHCN|issuer:TT-BKHCN|locality:": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
       "category": "Dự thảo",
@@ -12194,6 +12203,7 @@
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4159-qd-ubnd-khanh-hoa-2026-bai-bo-quyet-dinh-22-2024-qd-ubnd-ve-dinh-muc-kinh-te-ky-thuat-phat-thanh-truyen-hinh-457607-d2.html": "number:4159/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4304-qd-bnnmt-2026-sua-doi-bo-sung-noi-dung-quan-ly-de-dieu-va-phong-chong-thien-tai-457048-d1.html": "number:4304/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4312-qd-bnnmt-2026-quy-che-quan-ly-va-chia-se-du-lieu-bo-tri-dan-cu-457415-d1.html": "number:4312/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
+    "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4377-qd-bnnmt-2026-cong-bo-thu-tuc-hanh-chinh-sua-doi-linh-vuc-bien-doi-khi-hau-457744-d1.html": "number:4377/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4906-qd-ubnd-nghe-an-2026-phe-duyet-phuong-an-don-gian-hoa-thu-tuc-hanh-chinh-duong-sat-456850-d2.html": "number:4906/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an phê duyệt phương án đơn giản hóa thủ tục hành chính trong lĩnh vực đường sắt thuộc phạm vi chức năng quản lý của sở xây dựng luatvietnam - văn bản mới",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4935-qd-ubnd-nghe-an-2026-phe-duyet-phuong-an-cat-giam-don-gian-hoa-thu-tuc-hanh-chinh-noi-bo-457093-d2.html": "number:4935/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an phê duyệt phương án cắt giảm",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-4949-qd-ubnd-nghe-an-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-sua-doi-bo-sung-457113-d2.html": "number:4949/QĐ-UBND|issuer:QĐ-UBND|locality:nghệ an về việc công bố danh mục thủ tục hành chính được sửa đổi",
