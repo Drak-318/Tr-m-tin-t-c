@@ -3692,6 +3692,15 @@
       "link": "https://www.dongthap.gov.vn//documents/1527809/11893839/ubnd_kehoachtrienkhaithuchienctr47vaqd224_signed_signed_signed_1794901169789.pdf/62ba8fbe-1f5e-cec0-f7e1-dce7b4e430fa",
       "title": "ubnd_kehoachtrienkhaithuchienctr47vaqd224_signed_signed_signed.pdf"
     },
+    "number:2241-CV/BTCTU|issuer:BTCTU|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
+      "category": "Công văn",
+      "doc_number": "2241-CV/BTCTU",
+      "first_seen": "2026-11-25T10:58:24+00:00",
+      "last_seen": "2026-11-25T10:58:24+00:00",
+      "link": "https://luatvietnam.vn/thi-dua-khen-thuong-ky-luat/cong-van-2241-cv-btctu-tinh-uy-gia-lai-457733-d11.html",
+      "title": "Công văn 2241-CV/BTCTU của Ban Tổ chức Tỉnh ủy Gia Lai về việc hướng dẫn bổ sung một số nội dung kiểm điểm, đánh giá, xếp loại tập thể, cá nhân năm 2026"
+    },
     "number:225-QĐ/TW|issuer:TW|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -7884,6 +7893,15 @@
       "link": "https://luatvietnam.vn/dau-tu/nghi-quyet-72-2026-nq-hdnd-lam-dong-tieu-chi-dau-thau-lua-chon-nha-dau-tu-du-an-su-dung-dat-457348-d2.html",
       "title": "Nghị quyết 72/2026/NQ-HĐND của Hội đồng nhân dân tỉnh Lâm Đồng quy định các tiêu chí để quyết định thực hiện đấu thầu lựa chọn nhà đầu tư thực hiện dự án đầu tư có sử dụng đất thuộc trường hợp quy định tại khoản 27 Điều 79 Luật Đất đai trên địa bàn tỉnh Lâm Đồng"
     },
+    "number:73/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cao bằng ban hành quy chế phối hợp quản lý nhà nước đối với hoạt động kinh doanh theo phương thức đa cấp trên địa bàn tỉnh cao bằng luatvietnam - văn bản mới - văn bản luật việt nam - trang 2": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam - Trang 2",
+      "category": "Văn bản địa phương",
+      "doc_number": "73/2026/QĐ-UBND",
+      "first_seen": "2026-11-25T10:58:24+00:00",
+      "last_seen": "2026-11-25T10:58:24+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-73-2026-qd-ubnd-uy-ban-nhan-dan-tinh-cao-bang-457737-d2.html",
+      "title": "Quyết định 73/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Cao Bằng ban hành Quy chế phối hợp quản lý Nhà nước đối với hoạt động kinh doanh theo phương thức đa cấp trên địa bàn tỉnh Cao Bằng"
+    },
     "number:74/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định mức chi thực hiện bộ chỉ số theo dõi": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -10667,6 +10685,15 @@
       "link": "https://nghean.gov.vn/?pageid=71897&p_steering=162479",
       "title": "V/v Công bố Danh mục thủ tục hành chính được tái cấu trúc dựa trên dữ liệu; Quy trình liên thông khai thác thông tin từ Cơ sở dữ liệu Lý lịch tư pháp thuộc phạm vi chức năng quản lý nhà nước của Sở Nội vụ"
     },
+    "url:https://nghean.gov.vn/?pageid=71897&p_steering=162483": {
+      "agency": "UBND tỉnh Nghệ An",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-25T10:58:24+00:00",
+      "last_seen": "2026-11-25T10:58:24+00:00",
+      "link": "https://nghean.gov.vn/?pageid=71897&p_steering=162483",
+      "title": "V/v triển khai thực hiện Nghị định số 416/2026/NĐ-CP"
+    },
     "url:https://qldd.mae.gov.vn/thu-hoi-boi-thuong-ho-tro-tai-dinh-cu-ve---dat-dai/tinh-dak-lak-ban-hanh-quy-dinh-quy-trinh-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3754.htm": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -11961,6 +11988,7 @@
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-5174-qd-ubnd-uy-ban-nhan-dan-tinh-an-giang-457602-d2.html": "number:5174/QĐ-UBND|issuer:QĐ-UBND|locality:an giang về việc công bố thủ tục hành chính tái cấu trúc quy trình dựa trên dữ liệu",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-6369-qd-ubnd-457588-d1.html": "number:6369/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc xếp hạng di tích lịch sử - văn hóa và danh lam thắng cảnh trên địa bàn thành phố hà nội luatvietnam - văn bản mới - văn bản ubnd",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-6374-qd-ubnd-457589-d1.html": "number:6374/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc quy định chức năng",
+    "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-73-2026-qd-ubnd-uy-ban-nhan-dan-tinh-cao-bang-457737-d2.html": "number:73/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cao bằng ban hành quy chế phối hợp quản lý nhà nước đối với hoạt động kinh doanh theo phương thức đa cấp trên địa bàn tỉnh cao bằng luatvietnam - văn bản mới - văn bản luật việt nam - trang 2",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-74-2026-qd-ubnd-uy-ban-nhan-dan-tinh-cao-bang-457735-d2.html": "number:74/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cao bằng phân cấp thẩm quyền tiếp nhận và giải quyết thủ tục hành chính liên quan đến điện mặt trời mái nhà thuộc lĩnh vực công thương trên địa bàn tỉnh cao bằng luatvietnam - văn bản mới",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-859-qd-ctk-cuc-thong-ke-457629-d1.html": "number:859/QĐ-CTK|issuer:QĐ-CTK|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-87-2026-qd-ubnd-457674-d1.html": "number:87/2026/QĐ-UBND|issuer:QĐ-UBND|locality:phú thọ ban hành quy định về dạy thêm",
@@ -12065,6 +12093,7 @@
     "https://luatvietnam.vn/tai-nguyen/van-ban-hop-nhat-106-2026-vbhn-tt-bnnmt-2026-quy-dinh-dinh-muc-kinh-te-ky-thuat-xay-dung-co-so-du-lieu-dia-ly-454452-d5.html": "number:106/2026/VBHN-TT-BNNMT|issuer:VBHN-TT-BNNMT|locality:",
     "https://luatvietnam.vn/tai-nguyen/van-ban-hop-nhat-112-2026-vbhn-nd-bnnmt-2026-quy-dinh-giam-nhe-phat-thai-khi-nha-kinh-va-bao-ve-tang-o-don-455325-d5.html": "number:112/2026/VBHN-NĐ-BNNMT|issuer:VBHN-NĐ-BNNMT|locality:",
     "https://luatvietnam.vn/thi-dua-khen-thuong-ky-luat-55-f1.html": "legacy_sheet_url:https://luatvietnam.vn/thi-dua-khen-thuong-ky-luat-55-f1.html",
+    "https://luatvietnam.vn/thi-dua-khen-thuong-ky-luat/cong-van-2241-cv-btctu-tinh-uy-gia-lai-457733-d11.html": "number:2241-CV/BTCTU|issuer:BTCTU|locality:",
     "https://luatvietnam.vn/thi-dua/huong-dan-06-hd-du-2026-trien-khai-phong-trao-thi-dua-va-khen-thuong-mo-hinh-dan-van-kheo-450904-d11.html": "number:06-HD/ĐU|issuer:ĐU|locality:",
     "https://luatvietnam.vn/thi-dua/quyet-dinh-2194-qd-ttg-2026-tang-co-thi-dua-cua-chinh-phu-456255-d1.html": "legacy_sheet_url:https://luatvietnam.vn/thi-dua/quyet-dinh-2194-qd-ttg-2026-tang-co-thi-dua-cua-chinh-phu-456255-d1.html",
     "https://luatvietnam.vn/thi-dua/van-ban-hop-nhat-03-2026-vbhn-nq-hdnd-2026-tang-ky-niem-chuong-vi-su-nghiep-xay-dung-va-phat-trien-tinh-son-la-454028-d5.html": "number:03/2026/VBHN-NQ-HĐND|issuer:VBHN-NQ-HĐND|locality:sơn la ban hành hợp nhất nghị quyết quy định tặng kỷ niệm chương “vì sự nghiệp xây dựng và phát triển tỉnh sơn la” luatvietnam - văn bản mới - văn bản hợp nhất",
@@ -12715,6 +12744,7 @@
     "https://nghean.gov.vn/?pageid=71897&p_steering=158905": "url:https://nghean.gov.vn/?pageid=71897&p_steering=158905",
     "https://nghean.gov.vn/?pageid=71897&p_steering=161700": "url:https://nghean.gov.vn/?pageid=71897&p_steering=161700",
     "https://nghean.gov.vn/?pageid=71897&p_steering=162479": "url:https://nghean.gov.vn/?pageid=71897&p_steering=162479",
+    "https://nghean.gov.vn/?pageid=71897&p_steering=162483": "url:https://nghean.gov.vn/?pageid=71897&p_steering=162483",
     "https://nghean.gov.vn/?pageid=71913&p_cate=7772": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_cate=7772",
     "https://nghean.gov.vn/?pageid=71913&p_field=10402": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_field=10402",
     "https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183": "legacy_sheet_url:https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183",
