@@ -3228,6 +3228,15 @@
       "link": "https://luatvietnam.vn/van-hoa/quyet-dinh-210-2026-qd-ubnd-ca-mau-quy-dinh-tieu-chi-phat-trien-van-hoa-toan-dien-cap-xa-456940-d2.html",
       "title": "Quyết định 210/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Cà Mau quy định tiêu chí, chỉ tiêu về phát triển văn hóa toàn diện cấp xã trên địa bàn tỉnh Cà Mau"
     },
+    "number:210/QĐ-BCĐCTTĐQG|issuer:QĐ-BCĐCTTĐQG|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "210/QĐ-BCĐCTTĐQG",
+      "first_seen": "2026-11-25T04:42:57+00:00",
+      "last_seen": "2026-11-25T04:42:57+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-210-qd-bcdcttdqg-van-phong-chinh-phu-457637-d1.html",
+      "title": "Quyết định 210/QĐ-BCĐCTTĐQG của Ban Chỉ đạo các công trình trọng điểm lĩnh vực Công Thương và Xây dựng ban hành Quy chế hoạt động của Ban Chỉ đạo các công trình trọng điểm lĩnh vực Công Thương và Xây dựng"
+    },
     "number:211/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cà mau quy định mức thưởng và chi tiền thưởng huấn luyện viên": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
       "category": "Văn bản địa phương",
@@ -4009,6 +4018,15 @@
       "last_seen": "2026-11-23T10:22:59+00:00",
       "link": "https://luatvietnam.vn/can-bo/cong-van-25315-ubnd-thdt-thanh-hoa-2026-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-457519-d2.html",
       "title": "Công văn 25315/UBND-THĐT của Ủy ban nhân dân tỉnh Thanh Hóa về việc rà soát, hoàn thiện hệ thống vị trí việc làm gắn với xây dựng đội ngũ cán bộ và quản lý biên chế"
+    },
+    "number:2540/QĐ-BTP|issuer:QĐ-BTP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "2540/QĐ-BTP",
+      "first_seen": "2026-11-25T04:42:57+00:00",
+      "last_seen": "2026-11-25T04:42:57+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/2540-qd-btp-bo-tu-phap-457634-d1.html",
+      "title": "Quyết định 2540/QĐ-BTP của Bộ Tư pháp ban hành Kế hoạch thực hiện đợt cao điểm làm sạch đối với các dữ liệu chưa xác định số định danh cá nhân trong Cơ sở dữ liệu hộ tịch"
     },
     "number:2559/QĐ-BVHTTDL|issuer:QĐ-BVHTTDL|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
@@ -5023,6 +5041,15 @@
       "last_seen": "2026-11-19T00:57:14+00:00",
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093941",
       "title": "Quyết định Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Trung tâm Y tế khu vực Sa Đéc 2 thuộc Sở Y tế tỉnh Đồng Tháp"
+    },
+    "number:3610/QĐ-BYT|issuer:QĐ-BYT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3610/QĐ-BYT",
+      "first_seen": "2026-11-25T04:42:57+00:00",
+      "last_seen": "2026-11-25T04:42:57+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3610-qd-byt-bo-y-te-457633-d1.html",
+      "title": "Quyết định 3610/QĐ-BYT của Bộ Y tế về việc công bố dữ liệu bảo trợ xã hội và ban hành Hướng dẫn kết nối, khai thác, sử dụng dữ liệu bảo trợ xã hội thay thế giấy tờ trong giải quyết thủ tục hành chính"
     },
     "number:3616/QĐ-BTC|issuer:QĐ-BTC|locality:đồng tháp - văn bản chỉ đạo điều hành - 3": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 3",
@@ -11488,11 +11515,14 @@
     "https://luatvietnam.vn/lao-dong/quyet-dinh-2865-qd-ubnd-son-la-2026-ke-hoach-thi-hanh-luat-sua-doi-luat-nguoi-lao-dong-viet-nam-456851-d2.html": "number:2865/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la về việc ban hành kế hoạch triển khai thi hành luật sửa đổi",
     "https://luatvietnam.vn/lao-dong/thong-tu-27-2026-tt-bnv-danh-muc-cong-viec-yeu-cau-nghiem-ngat-ve-an-toan-lao-dong-451907-d1.html": "number:27/2026/TT-BNV|issuer:TT-BNV|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/167-2026-qd-ubnd-457609-d1.html": "number:167/2026/QĐ-UBND|issuer:QĐ-UBND|locality:tây ninh ban hành quy định phân cấp thẩm quyền quản lý nhiệm vụ đổi mới sáng tạo sử dụng ngân sách nhà nước trên địa bàn tỉnh tây ninh luatvietnam - văn bản mới - văn bản luật việt nam",
+    "https://luatvietnam.vn/linh-vuc-khac/2540-qd-btp-bo-tu-phap-457634-d1.html": "number:2540/QĐ-BTP|issuer:QĐ-BTP|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/64-bcd-bnnmt-bo-nong-nghiep-va-moi-truong-457583-d1.html": "number:64/BCĐ-BNNMT|issuer:BCĐ-BNNMT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/ban-hanh-ke-hoach-trien-khai-nen-tang-so-suc-khoe-dien-tu-457620-d1.html": "number:3622/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-454-kh-ubnd-uy-ban-nhan-dan-tinh-thanh-hoa-457591-d2.html": "number:454/KH-UBND|issuer:KH-UBND|locality:thanh hóa triển khai thực hiện bài toán lớn “xây dựng",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-115-2026-qd-ubnd-457584-d1.html": "number:115/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng ban hành quy định quản lý",
+    "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-210-qd-bcdcttdqg-van-phong-chinh-phu-457637-d1.html": "number:210/QĐ-BCĐCTTĐQG|issuer:QĐ-BCĐCTTĐQG|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3607-qd-byt-bo-y-te-457619-d1.html": "number:3607/QĐ-BYT|issuer:QĐ-BYT|locality:",
+    "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3610-qd-byt-bo-y-te-457633-d1.html": "number:3610/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3679-qd-ubnd-uy-ban-nhan-dan-tinh-dong-thap-457601-d2.html": "number:3679/QĐ-UBND|issuer:QĐ-UBND|locality:đồng tháp ban hành kế hoạch triển khai chương trình vươn ra thị trường quốc tế trên địa bàn tỉnh đồng tháp giai đoạn 2026 - 2030 luatvietnam - văn bản mới - văn bản ubnd",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3914-qd-ubnd-457594-d1.html": "number:3914/QĐ-UBND|issuer:QĐ-UBND|locality:quảng ninh phê duyệt đề án phát triển kinh tế đô thị của thành phố quảng ninh đến năm 2030 luatvietnam - văn bản mới - văn bản luật việt nam",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-4009-qd-ubnd-uy-ban-nhan-dan-tinh-thanh-hoa-457600-d2.html": "number:4009/QĐ-UBND|issuer:QĐ-UBND|locality:thanh hóa về việc phê duyệt đề án “đào tạo nguồn nhân lực ngành công nghiệp bán dẫn phục vụ phát triển kinh tế - xã hội của tỉnh thanh hóa đến năm 2030",
