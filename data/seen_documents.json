@@ -7541,6 +7541,15 @@
       "link": "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/quyet-dinh-so-659-qd-tw-ngay-02-11-2026-cua-bo-chinh-tri-ve-chuc-nang-nhiem-vu-to-chuc-bo-may-co-quan-uy-ban-trung-uong-.html?categoryId=102000092",
       "title": "Quyết định số 659-QĐ/TW ngày 02/11/2026 của Bộ Chính trị về chức năng, nhiệm vụ, tổ chức bộ máy Cơ quan Uỷ ban Trung ương Mặt trận Tổ quốc Việt Nam và các cơ quan Trung ương của tổ chức chính trị - xã hội"
     },
+    "number:659/KH-UBND|issuer:KH-UBND|locality:hồ chí minh triển khai công tác bồi thường": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "659/KH-UBND",
+      "first_seen": "2026-11-25T08:53:01+00:00",
+      "last_seen": "2026-11-25T08:53:01+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-so-659-kh-ubnd-457720-d1.html",
+      "title": "Kế hoạch 659/KH-UBND của Ủy ban nhân dân Thành phố Hồ Chí Minh triển khai công tác bồi thường, hỗ trợ, tái định cư để thu hồi đất thực hiện Dự án Tuyến đường sắt đô thị số 1 (Thành phố mới Bình Dương – Suối Tiên, Thành phố Hồ Chí Minh)"
+    },
     "number:66-NQ/TW|issuer:TW|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản Đảng",
@@ -11760,6 +11769,7 @@
     "https://luatvietnam.vn/linh-vuc-khac/bo-tai-chinh-457684-d10.html": "url:https://luatvietnam.vn/linh-vuc-khac/bo-tai-chinh-457684-d10.html",
     "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-454-kh-ubnd-uy-ban-nhan-dan-tinh-thanh-hoa-457591-d2.html": "number:454/KH-UBND|issuer:KH-UBND|locality:thanh hóa triển khai thực hiện bài toán lớn “xây dựng",
     "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-551-kh-ubnd-457697-d1.html": "number:551/KH-UBND|issuer:KH-UBND|locality:cần thơ thực hiện kê khai",
+    "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-so-659-kh-ubnd-457720-d1.html": "number:659/KH-UBND|issuer:KH-UBND|locality:hồ chí minh triển khai công tác bồi thường",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-115-2026-qd-ubnd-457584-d1.html": "number:115/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng ban hành quy định quản lý",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-143-2026-qd-ubnd-457658-d1.html": "number:143/2026/QĐ-UBND|issuer:QĐ-UBND|locality:thái nguyên quy định tiêu chí cụ thể đánh giá",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-143-2026-qd-ubnd-uy-ban-nhan-dan-tinh-an-giang-457652-d2.html": "number:143/2026/QĐ-UBND|issuer:QĐ-UBND|locality:an giang phân cấp quản lý nhà nước về an toàn thực phẩm nông",
