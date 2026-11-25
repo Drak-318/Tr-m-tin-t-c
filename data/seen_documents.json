@@ -5654,6 +5654,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220277",
       "title": "404/2026/NĐ-CP 11/11/2026"
     },
+    "number:404/NQ-CP|issuer:NQ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "404/NQ-CP",
+      "first_seen": "2026-11-25T04:02:59+00:00",
+      "last_seen": "2026-11-25T04:02:59+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/nghi-quyet-404-nq-cp-chinh-phu-457616-d1.html",
+      "title": "Nghị quyết 404/NQ-CP của Chính phủ về việc chuyển giao, sắp xếp các đơn vị sự nghiệp công lập đang tạm giao Tập đoàn Dệt may Việt Nam quản lý"
+    },
     "number:405/2026/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "Hệ thống Văn bản Chính phủ",
       "category": "Văn bản quy phạm pháp luật",
@@ -11331,6 +11340,7 @@
     "https://luatvietnam.vn/hanh-chinh/nghi-dinh-187-2025-nd-cp-405615-d1.html": "number:187/2025/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/hanh-chinh/nghi-dinh-78-2025-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-ban-hanh-van-ban-quy-pham-phap-luat-396523-d1.html": "number:78/2025/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/hanh-chinh/nghi-quyet-28-nq-tw-2026-ve-hoi-nghi-lan-thu-tu-ban-chap-hanh-trung-uong-dang-khoa-xiv-450478-d11.html": "number:28-NQ/TW|issuer:TW|locality:",
+    "https://luatvietnam.vn/hanh-chinh/nghi-quyet-404-nq-cp-chinh-phu-457616-d1.html": "number:404/NQ-CP|issuer:NQ-CP|locality:",
     "https://luatvietnam.vn/hanh-chinh/nghi-quyet-70-2026-nq-hdnd-lam-dong-quy-dinh-muc-chi-hoat-dong-dang-uy-xa-phuong-457337-d2.html": "number:70/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định một số mức chi hoạt động của đảng ủy xã",
     "https://luatvietnam.vn/hanh-chinh/nghi-quyet-77-2026-nq-hdnd-lam-dong-quy-dinh-noi-dung-va-muc-chi-to-chuc-thi-ky-nang-nghe-457346-d2.html": "number:77/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định nội dung và mức chi tổ chức thi kỹ năng nghề trên địa bàn tỉnh lâm đồng luatvietnam - văn bản mới - văn bản luật việt nam",
     "https://luatvietnam.vn/hanh-chinh/quyet-dinh-122-2026-qd-ubnd-vinh-long-quy-che-cong-nhan-nghe-truyen-thong-lang-nghe-456312-d2.html": "legacy_sheet_url:https://luatvietnam.vn/hanh-chinh/quyet-dinh-122-2026-qd-ubnd-vinh-long-quy-che-cong-nhan-nghe-truyen-thong-lang-nghe-456312-d2.html",
