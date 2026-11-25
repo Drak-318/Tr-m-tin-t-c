@@ -5626,17 +5626,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/du-kien-nam-2026-sua-doi-nghi-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-186-116170-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 18/11/2026",
       "doc_number": "403/NQ-CP",
+      "exported_at": "2026-11-25T02:58:00+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-25T02:48:36+00:00",
       "identity": "number:403/NQ-CP|issuer:NQ-CP|locality:",
+      "last_checked": "2026-11-25T02:58:00+00:00",
+      "last_error": "",
       "last_seen": "2026-11-25T02:48:36+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/du-kien-nam-2026-sua-doi-nghi-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-186-116170-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Dự kiến năm 2026 sửa đổi Nghị định về xử phạt vi phạm hành chính trong hoạt động thương mại"
+      "status": "manual_review",
+      "title": "Dự kiến năm 2026 sửa đổi Nghị định về xử phạt vi phạm hành chính trong hoạt động thương mại",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-18"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-hoan-thanh-cap-thu-hoi-giay-chung-nhan-tai-12-du-an-trong-quy-iv-2028-186-115876-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
@@ -5785,20 +5792,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nguoi-chua-la-dang-vien-duoc-du-tuyen-cong-chuc-vao-vi-tri-trong-yeu-co-mat-cua-dang-neu-du-dieu-kien-186-116168-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 18/11/2026",
       "doc_number": "04-HD/BTCTW",
       "exported_at": "2026-11-25T02:48:41+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-25T02:48:36+00:00",
       "identity": "number:04-HD/BTCTW|issuer:BTCTW|locality:",
-      "last_checked": "2026-11-25T02:48:41+00:00",
+      "last_checked": "2026-11-25T02:57:55+00:00",
+      "last_error": "",
       "last_seen": "2026-11-25T02:48:36+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/nguoi-chua-la-dang-vien-duoc-du-tuyen-cong-chuc-vao-vi-tri-trong-yeu-co-mat-cua-dang-neu-du-dieu-kien-186-116168-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "​Người chưa là Đảng viên được dự tuyển công chức vào vị trí trọng yếu, cơ mật của Đảng nếu đủ điều kiện"
+      "status": "manual_review",
+      "title": "​Người chưa là Đảng viên được dự tuyển công chức vào vị trí trọng yếu, cơ mật của Đảng nếu đủ điều kiện",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-18"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/nha-nuoc-boi-thuong-thiet-hai-do-thu-thue-truy-thu-thue-hoan-thue-trai-phap-luat-186-116133-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
@@ -22133,6 +22144,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T02:48:41+00:00",
+  "updated_at": "2026-11-25T02:58:00+00:00",
   "version": 1
 }
