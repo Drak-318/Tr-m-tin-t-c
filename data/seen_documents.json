@@ -6276,6 +6276,15 @@
       "link": "https://luatvietnam.vn/linh-vuc-khac/4362-qd-bnnmt-bo-nong-nghiep-va-moi-truong-457622-d1.html",
       "title": "Quyết định 4362/QĐ-BNNMT của Bộ Nông nghiệp và Môi trường phê duyệt kết quả đánh giá, phân hạng sản phẩm OCOP cấp Quốc gia năm 2026 (Đợt 1)"
     },
+    "number:437/KH-UBND|issuer:KH-UBND|locality:hưng yên triển khai thi hành luật phổ biến": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "437/KH-UBND",
+      "first_seen": "2026-11-25T08:17:56+00:00",
+      "last_seen": "2026-11-25T08:17:56+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/437-kh-ubnd-457698-d1.html",
+      "title": "Kế hoạch 437/KH-UBND của Ủy ban nhân dân tỉnh Hưng Yên triển khai thi hành Luật Phổ biến, giáo dục pháp luật năm 2026 trên địa bàn tỉnh Hưng Yên"
+    },
     "number:437/TB-UBND|issuer:TB-UBND|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -11709,6 +11718,7 @@
     "https://luatvietnam.vn/linh-vuc-khac/167-2026-qd-ubnd-457609-d1.html": "number:167/2026/QĐ-UBND|issuer:QĐ-UBND|locality:tây ninh ban hành quy định phân cấp thẩm quyền quản lý nhiệm vụ đổi mới sáng tạo sử dụng ngân sách nhà nước trên địa bàn tỉnh tây ninh luatvietnam - văn bản mới - văn bản luật việt nam",
     "https://luatvietnam.vn/linh-vuc-khac/2540-qd-btp-bo-tu-phap-457634-d1.html": "number:2540/QĐ-BTP|issuer:QĐ-BTP|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/4362-qd-bnnmt-bo-nong-nghiep-va-moi-truong-457622-d1.html": "number:4362/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
+    "https://luatvietnam.vn/linh-vuc-khac/437-kh-ubnd-457698-d1.html": "number:437/KH-UBND|issuer:KH-UBND|locality:hưng yên triển khai thi hành luật phổ biến",
     "https://luatvietnam.vn/linh-vuc-khac/64-bcd-bnnmt-bo-nong-nghiep-va-moi-truong-457583-d1.html": "number:64/BCĐ-BNNMT|issuer:BCĐ-BNNMT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/ban-hanh-ke-hoach-trien-khai-nen-tang-so-suc-khoe-dien-tu-457620-d1.html": "number:3622/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/bo-tai-chinh-457684-d10.html": "url:https://luatvietnam.vn/linh-vuc-khac/bo-tai-chinh-457684-d10.html",
