@@ -2140,21 +2140,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-doi-voi-tru-so-trung-tam-kiem-nghiem-dong-nai-va-tru-so-phong-cong-chung-so-4-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-dot-4-lan-2-65000.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-25T15:14:04+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-doi-voi-tru-so-trung-tam-kiem-nghiem-dong-nai-va-tru-so-phong-cong-chung-so-4-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-dot-4-lan-2-65000.html",
-      "last_checked": "2026-11-25T15:38:19+00:00",
+      "last_checked": "2026-11-25T15:58:03+00:00",
       "last_error": "",
       "last_seen": "2026-11-25T15:14:04+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-doi-voi-tru-so-trung-tam-kiem-nghiem-dong-nai-va-tru-so-phong-cong-chung-so-4-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-dot-4-lan-2-65000.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo về việc cho thuê nhà đối với trụ sở Trung tâm Kiểm nghiệm Đồng Nai và trụ sở Phòng Công chứng số 4 do Trung tâm Phát triển quỹ đất thành phố Đồng Nai quản lý, khai thác - Đợt 4 (lần 2)",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/ve-viec-cho-thue-nha-dat-do-trung-tam-dich-vu-tong-hop-xa-phuoc-son-quan-ly-khai-thac-doi-voi-03-co-so-nha-dat-doi-du-cac-diem-truong-duoc-chuyen-giao-theo-quyet-dinh-so-3339-qd-ubnd-lan-2-64887.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -2216,21 +2216,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ban-hanh-quy-che-ve-cong-tac-thi-dua-khen-thuong-tren-dia-ban-thanh-pho-dong-nai-64998.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-25T15:14:04+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ban-hanh-quy-che-ve-cong-tac-thi-dua-khen-thuong-tren-dia-ban-thanh-pho-dong-nai-64998.html",
-      "last_checked": "2026-11-25T15:38:19+00:00",
+      "last_checked": "2026-11-25T15:58:03+00:00",
       "last_error": "",
       "last_seen": "2026-11-25T15:14:04+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ban-hanh-quy-che-ve-cong-tac-thi-dua-khen-thuong-tren-dia-ban-thanh-pho-dong-nai-64998.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định ban hành Quy chế về công tác thi đua, khen thưởng trên địa bàn thành phố Đồng Nai",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ban-hanh-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-ban-quan-ly-du-an-dau-tu-xay-dung-cong-trinh-dan-dung-thanh-pho-dong-nai-64897.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -22322,6 +22322,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T15:38:19+00:00",
+  "updated_at": "2026-11-25T15:58:03+00:00",
   "version": 1
 }
