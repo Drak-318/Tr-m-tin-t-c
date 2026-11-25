@@ -7189,20 +7189,23 @@
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-25T07:38:16+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-25T07:38:08+00:00",
       "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm",
-      "last_checked": "2026-11-25T07:38:16+00:00",
+      "last_checked": "2026-11-25T07:47:59+00:00",
+      "last_error": "",
       "last_seen": "2026-11-25T07:38:08+00:00",
       "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Thông báo Lịch tiếp công dân định kỳ tháng 11 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường"
+      "status": "not_found",
+      "title": "Thông báo Lịch tiếp công dân định kỳ tháng 11 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường",
+      "verification_status": "not_found"
     },
     "https://mae.gov.vn/chinh-phu-ban-hanh-ke-hoach-phong-chong-thien-tai-quoc-gia-giai-doan-20262030-23369.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
@@ -22241,6 +22244,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T07:38:16+00:00",
+  "updated_at": "2026-11-25T07:47:59+00:00",
   "version": 1
 }
