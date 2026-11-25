@@ -6060,17 +6060,24 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/uu-tien-tuyen-dung-nguoi-nuoc-ngoai-co-chung-chi-tieng-viet-bac-2-6-tro-len-khi-lam-viec-tai-co-so-giao-duc-186-116205-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "ban hành ngày 23/11/2026",
       "doc_number": "411/2026/NĐ-CP",
+      "exported_at": "2026-11-25T11:58:04+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-25T11:48:33+00:00",
       "identity": "number:411/2026/NĐ-CP|issuer:NĐ-CP|locality:",
+      "last_checked": "2026-11-25T11:58:04+00:00",
+      "last_error": "",
       "last_seen": "2026-11-25T11:48:33+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/uu-tien-tuyen-dung-nguoi-nuoc-ngoai-co-chung-chi-tieng-viet-bac-2-6-tro-len-khi-lam-viec-tai-co-so-giao-duc-186-116205-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Ưu tiên tuyển dụng người nước ngoài có chứng chỉ tiếng Việt bậc 2/6 trở lên khi làm việc tại cơ sở giáo dục"
+      "status": "manual_review",
+      "title": "Ưu tiên tuyển dụng người nước ngoài có chứng chỉ tiếng Việt bậc 2/6 trở lên khi làm việc tại cơ sở giáo dục",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-23"
     },
     "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Tổng quan",
@@ -22279,6 +22286,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T11:48:33+00:00",
+  "updated_at": "2026-11-25T11:58:04+00:00",
   "version": 1
 }
