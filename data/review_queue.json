@@ -7189,7 +7189,7 @@
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -7197,7 +7197,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-25T07:38:08+00:00",
       "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm",
-      "last_checked": "2026-11-25T07:47:59+00:00",
+      "last_checked": "2026-11-25T08:03:06+00:00",
       "last_error": "",
       "last_seen": "2026-11-25T07:38:08+00:00",
       "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm",
@@ -22244,6 +22244,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T07:47:59+00:00",
+  "updated_at": "2026-11-25T08:03:06+00:00",
   "version": 1
 }
