@@ -1783,6 +1783,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220340",
       "title": "418/2026/NĐ-CP 20/11/2026"
     },
+    "number:143/2026/QĐ-UBND|issuer:QĐ-UBND|locality:an giang phân cấp quản lý nhà nước về an toàn thực phẩm nông": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "143/2026/QĐ-UBND",
+      "first_seen": "2026-11-25T06:33:02+00:00",
+      "last_seen": "2026-11-25T06:33:02+00:00",
+      "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-143-2026-qd-ubnd-uy-ban-nhan-dan-tinh-an-giang-457652-d2.html",
+      "title": "Quyết định 143/2026/QĐ-UBND của Ủy ban nhân dân tỉnh An Giang phân cấp quản lý Nhà nước về an toàn thực phẩm nông, lâm, thủy sản thuộc phạm vi quản lý Nhà nước của Sở Nông nghiệp và Môi trường trên địa bàn tỉnh An Giang"
+    },
     "number:14444/KHSYT|issuer:KHSYT|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -11566,6 +11575,7 @@
     "https://luatvietnam.vn/linh-vuc-khac/ban-hanh-ke-hoach-trien-khai-nen-tang-so-suc-khoe-dien-tu-457620-d1.html": "number:3622/QĐ-BYT|issuer:QĐ-BYT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/ke-hoach-454-kh-ubnd-uy-ban-nhan-dan-tinh-thanh-hoa-457591-d2.html": "number:454/KH-UBND|issuer:KH-UBND|locality:thanh hóa triển khai thực hiện bài toán lớn “xây dựng",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-115-2026-qd-ubnd-457584-d1.html": "number:115/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng ban hành quy định quản lý",
+    "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-143-2026-qd-ubnd-uy-ban-nhan-dan-tinh-an-giang-457652-d2.html": "number:143/2026/QĐ-UBND|issuer:QĐ-UBND|locality:an giang phân cấp quản lý nhà nước về an toàn thực phẩm nông",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-210-qd-bcdcttdqg-van-phong-chinh-phu-457637-d1.html": "number:210/QĐ-BCĐCTTĐQG|issuer:QĐ-BCĐCTTĐQG|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3127-qd-bct-bo-cong-thuong-457630-d1.html": "number:3127/QĐ-BCT|issuer:QĐ-BCT|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3607-qd-byt-bo-y-te-457619-d1.html": "number:3607/QĐ-BYT|issuer:QĐ-BYT|locality:",
