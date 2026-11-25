@@ -1142,13 +1142,13 @@
     },
     "https://congan.haiphong.gov.vn/Video/Huong-dan-nguoi-dan-gui-yeu-cau-thay-doi-muc-dich-su-dung-dien-tren-Cong-Dich-vu-cong-Quoc-gia-197529.html": {
       "agency": "Công an TP. Hải Phòng",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-25T05:53:27+00:00",
       "identity": "url:https://congan.haiphong.gov.vn/Video/Huong-dan-nguoi-dan-gui-yeu-cau-thay-doi-muc-dich-su-dung-dien-tren-Cong-Dich-vu-cong-Quoc-gia-197529.html",
-      "last_checked": "2026-11-25T06:03:07+00:00",
+      "last_checked": "2026-11-25T06:17:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-25T05:53:27+00:00",
       "link": "https://congan.haiphong.gov.vn/Video/Huong-dan-nguoi-dan-gui-yeu-cau-thay-doi-muc-dich-su-dung-dien-tren-Cong-Dich-vu-cong-Quoc-gia-197529.html",
@@ -22203,6 +22203,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T06:03:07+00:00",
+  "updated_at": "2026-11-25T06:17:59+00:00",
   "version": 1
 }
