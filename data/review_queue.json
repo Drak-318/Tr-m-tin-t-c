@@ -926,7 +926,7 @@
     },
     "https://congan.camau.gov.vn/ch4/index1.html": {
       "agency": "Công an Cà Mau",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -934,7 +934,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://congan.camau.gov.vn/ch4/index1.html",
-      "last_checked": "2026-11-19T04:34:27+00:00",
+      "last_checked": "2026-11-26T04:58:06+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://congan.camau.gov.vn/ch4/index1.html",
@@ -21410,7 +21410,7 @@
     },
     "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/84-2026-TT-BXD PL1.pdf": {
       "agency": "Văn phòng UBND tỉnh Đắk Lắk",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "84/2026/TT-BXD",
@@ -21418,7 +21418,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T04:33:28+00:00",
       "identity": "number:84/2026/TT-BXD|issuer:TT-BXD|locality:",
-      "last_checked": "2026-11-26T04:43:12+00:00",
+      "last_checked": "2026-11-26T04:58:06+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T04:33:28+00:00",
       "link": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/84-2026-TT-BXD PL1.pdf",
@@ -22404,6 +22404,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T04:43:12+00:00",
+  "updated_at": "2026-11-26T04:58:06+00:00",
   "version": 1
 }
