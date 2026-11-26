@@ -1296,17 +1296,21 @@
     },
     "https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T23:28:33+00:00",
       "identity": "url:https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap",
+      "last_checked": "2026-11-26T23:38:02+00:00",
+      "last_error": "",
       "last_seen": "2026-11-26T23:28:33+00:00",
       "link": "https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Quy định đánh giá, xếp loại chất lượng đối với đơn vị sự nghiệp công lập"
+      "status": "not_found",
+      "title": "Quy định đánh giá, xếp loại chất lượng đối với đơn vị sự nghiệp công lập",
+      "verification_status": "not_found"
     },
     "https://danang.gov.vn/vi/web/dng/-/thong-bao-dieu-chinh-thoi-han-lay-y-kien-tham-dinh-ho-so-de-nghi-cap-giay-phep-tham-do-khoang-san-cat-phuc-vu-du-an-dau-tu-xay-dung-tong-the-ben-cang-container-lien-chieu": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
@@ -22627,6 +22631,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T23:28:33+00:00",
+  "updated_at": "2026-11-26T23:38:02+00:00",
   "version": 1
 }
