@@ -8083,7 +8083,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-ho-tro-dong-bao-hiem-y-te-cho-benh-nhan-phong-tai-benh-vien-ben-sa-c1291-74988.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -8091,7 +8091,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-ho-tro-dong-bao-hiem-y-te-cho-benh-nhan-phong-tai-benh-vien-ben-sa-c1291-74988.aspx",
-      "last_checked": "2026-11-19T07:02:45+00:00",
+      "last_checked": "2026-11-26T07:08:20+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-muc-ho-tro-dong-bao-hiem-y-te-cho-benh-nhan-phong-tai-benh-vien-ben-sa-c1291-74988.aspx",
@@ -8103,7 +8103,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-noi-dung-chi-muc-chi-cua-mot-so-hoat-dong-y-te-dan-so-tren-dia-ban-tph-c1291-74989.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -8111,7 +8111,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "url:https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-noi-dung-chi-muc-chi-cua-mot-so-hoat-dong-y-te-dan-so-tren-dia-ban-tph-c1291-74989.aspx",
-      "last_checked": "2026-11-19T07:02:45+00:00",
+      "last_checked": "2026-11-26T07:08:30+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/quy-dinh-noi-dung-chi-muc-chi-cua-mot-so-hoat-dong-y-te-dan-so-tren-dia-ban-tph-c1291-74989.aspx",
@@ -8123,14 +8123,14 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-18T00:16:11+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T07:02:45+00:00",
+      "last_checked": "2026-11-26T07:08:30+00:00",
       "last_error": "",
       "last_seen": "2026-11-17T22:54:41+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx",
@@ -8141,7 +8141,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/chi-thi-so-11ct-ubnd-cua-uy-ban-nhan-dan-thanh-pho-c4677-60381.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "11/CT-UBND",
@@ -8149,7 +8149,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "number:11/CT-UBND|issuer:CT-UBND|locality:medinet tp.hcm",
-      "last_checked": "2026-11-19T07:02:45+00:00",
+      "last_checked": "2026-11-26T07:08:30+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/chi-thi-so-11ct-ubnd-cua-uy-ban-nhan-dan-thanh-pho-c4677-60381.aspx",
@@ -8161,7 +8161,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-trien-khai-thuc-hien-chi-thi-so-19ct-ttg-ngay-24-thang-4-nam-2020-cua-thu-tu-c4638-27599.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "19/CT-TTG",
@@ -8169,7 +8169,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
       "identity": "number:19/CT-TTG|issuer:CT-TTG|locality:",
-      "last_checked": "2026-11-19T07:02:45+00:00",
+      "last_checked": "2026-11-26T07:08:30+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T09:04:45+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-trien-khai-thuc-hien-chi-thi-so-19ct-ttg-ngay-24-thang-4-nam-2020-cua-thu-tu-c4638-27599.aspx",
@@ -22404,6 +22404,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T07:03:13+00:00",
+  "updated_at": "2026-11-26T07:08:30+00:00",
   "version": 1
 }
