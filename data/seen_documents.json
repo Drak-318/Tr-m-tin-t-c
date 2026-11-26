@@ -1264,6 +1264,15 @@
       "link": "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-116-2026-vbhn-tt-nhnn-2026-quy-dinh-ve-thong-tin-giam-sat-quy-tin-dung-va-tai-chinh-vi-mo-452463-d5.html",
       "title": "Văn bản hợp nhất 116/2026/VBHN-TT-NHNN do Ngân hàng Nhà nước Việt Nam ban hành hợp nhất Thông tư quy định về thu thập, khai thác, chia sẻ thông tin, báo cáo của Hệ thống thông tin phục vụ công tác giám sát hoạt động quỹ tín dụng nhân dân và tổ chức tài chính vi mô"
     },
+    "number:11654/UBND-VX|issuer:UBND-VX|locality:hồ chí minh về việc tạm dừng tuyển dụng": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Công văn",
+      "doc_number": "11654/UBND-VX",
+      "first_seen": "2026-11-26T06:48:02+00:00",
+      "last_seen": "2026-11-26T06:48:02+00:00",
+      "link": "https://luatvietnam.vn/can-bo/cong-van-11654-ubnd-vx-tp-hcm-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-457853-d2.html",
+      "title": "Công văn 11654/UBND-VX của Ủy ban nhân dân Thành phố Hồ Chí Minh về việc tạm dừng tuyển dụng, điều chuyển cán bộ, công chức trong thời gian rà soát, hoàn thiện vị trí việc làm và phương án biên chế giai đoạn 2027-2031"
+    },
     "number:117/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lâm đồng quy định về đường giao thông để phương tiện chữa cháy thực hiện nhiệm vụ chữa cháy tại nơi có nhà ở nhiều tầng nhiều căn hộ của cá nhân trên địa bàn tỉnh lâm đồng luatvietnam - văn bản mới": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản địa phương",
@@ -8171,6 +8180,15 @@
       "link": "https://luatvietnam.vn/bao-hiem/van-ban-hop-nhat-66-2026-vbhn-tt-btc-2026-quy-dinh-chi-tiet-chung-chi-bao-hiem-dai-ly-moi-gioi-455711-d5.html",
       "title": "Văn bản hợp nhất 66/2026/VBHN-TT-BTC do Bộ Tài chính ban hành hợp nhất Thông tư quy định chi tiết về chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm, chứng chỉ môi giới bảo hiểm"
     },
+    "number:664/KH-UBND|issuer:KH-UBND|locality:hồ chí minh triển khai thực hiện công tác bồi thường": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "664/KH-UBND",
+      "first_seen": "2026-11-26T06:48:02+00:00",
+      "last_seen": "2026-11-26T06:48:02+00:00",
+      "link": "https://luatvietnam.vn/dau-tu/ke-hoach-664-kh-ubnd-tp-hcm-2026-boi-thuong-ho-tro-tai-dinh-cu-du-an-duong-ton-that-thuyet-457850-d2.html",
+      "title": "Kế hoạch 664/KH-UBND của Ủy ban nhân dân Thành phố Hồ Chí Minh triển khai thực hiện công tác bồi thường, hỗ trợ, tái định cư Dự án Xây dựng cải tạo, mở rộng đường Tôn Thất Thuyết và công viên cây xanh dọc bờ kênh Tẻ"
+    },
     "number:67/2025/TT-BXD|issuer:TT-BXD|locality:unresolved-source:sgddt.dongnai.gov.vn": {
       "agency": "Sở Giáo dục và Đào tạo Đồng Nai - HỆ THỐNG VĂN BẢN - Công văn 120",
       "category": "Văn bản quy phạm pháp luật",
@@ -12275,6 +12293,7 @@
     "https://luatvietnam.vn/bao-hiem/van-ban-hop-nhat-66-2026-vbhn-tt-btc-2026-quy-dinh-chi-tiet-chung-chi-bao-hiem-dai-ly-moi-gioi-455711-d5.html": "number:66/2026/VBHN-TT-BTC|issuer:VBHN-TT-BTC|locality:",
     "https://luatvietnam.vn/bao-ve-moi-truong/quyet-dinh-157-2026-qd-ubnd-457657-d1.html": "number:157/2026/QĐ-UBND|issuer:QĐ-UBND|locality:gia lai ban hành quy định quy trình",
     "https://luatvietnam.vn/can-bo/cong-van-11441-ubnd-dn-tp-ho-chi-minh-trien-khai-de-an-boi-duong-nghiep-vu-doi-ngoai-2026-2030-457154-d2.html": "number:11441/UBND-ĐN|issuer:UBND-ĐN|locality:hồ chí minh về việc tiếp tục triển khai đề án bồi dưỡng nghiệp vụ đối ngoại cho cán bộ",
+    "https://luatvietnam.vn/can-bo/cong-van-11654-ubnd-vx-tp-hcm-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-457853-d2.html": "number:11654/UBND-VX|issuer:UBND-VX|locality:hồ chí minh về việc tạm dừng tuyển dụng",
     "https://luatvietnam.vn/can-bo/cong-van-25315-ubnd-thdt-thanh-hoa-2026-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-457519-d2.html": "number:25315/UBND-THĐT|issuer:UBND-THĐT|locality:thanh hóa về việc rà soát",
     "https://luatvietnam.vn/can-bo/cong-van-29603-snv-ccvc-tp-hcm-2026-kiem-diem-danh-gia-xep-loai-lanh-dao-quan-ly-457140-d2.html": "number:29603/SNV-CCVC|issuer:SNV-CCVC|locality:hồ chí minh về việc thực hiện kiểm điểm",
     "https://luatvietnam.vn/can-bo/ke-hoach-551-kh-ubnd-can-tho-2026-thuc-hien-ke-khai-cong-khai-ban-ke-khai-tai-san-thu-nhap-457697-d2.html": "number:551/KH-UBND|issuer:KH-UBND|locality:unresolved-source:luatvietnam.vn",
@@ -12381,6 +12400,7 @@
     "https://luatvietnam.vn/dau-tu/du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-dau-tu-2023-457399-d10.html": "url:https://luatvietnam.vn/dau-tu/du-thao-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-dau-tu-2023-457399-d10.html",
     "https://luatvietnam.vn/dau-tu/du-thao-nghi-quyet-ve-co-che-chinh-sach-dau-tu-phat-trien-khu-do-thi-da-muc-tieu-ha-noi-456127-d10.html": "number:02/2026/QH16|issuer:QH16|locality:",
     "https://luatvietnam.vn/dau-tu/ke-hoach-478-kh-ubnd-dak-lak-2026-to-chuc-hoat-dong-thu-hut-dau-tu-khu-nong-nghiep-cong-nghe-cao-456905-d2.html": "number:478/KH-UBND|issuer:KH-UBND|locality:đắk lắk về việc tổ chức các hoạt động thu hút đầu tư vào các khu nông nghiệp ứng dụng công nghệ cao trên địa bàn tỉnh đắk lắk giai đoạn 2026 - 2030 luatvietnam - văn bản mới - văn bản luật việt nam",
+    "https://luatvietnam.vn/dau-tu/ke-hoach-664-kh-ubnd-tp-hcm-2026-boi-thuong-ho-tro-tai-dinh-cu-du-an-duong-ton-that-thuyet-457850-d2.html": "number:664/KH-UBND|issuer:KH-UBND|locality:hồ chí minh triển khai thực hiện công tác bồi thường",
     "https://luatvietnam.vn/dau-tu/nghi-quyet-406-nq-cp-2026-trien-khai-dau-tu-xay-dung-duong-vanh-dai-5-vung-thu-do-ha-noi-457748-d1.html": "number:406/NQ-CP|issuer:NQ-CP|locality:",
     "https://luatvietnam.vn/dau-tu/nghi-quyet-60-nq-hdnd-quang-tri-2026-ke-hoach-dau-tu-cong-trung-han-ngan-sach-trung-uong-2026-2030-457097-d2.html": "number:60/NQ-HĐND|issuer:NQ-HĐND|locality:quảng trị về việc cho ý kiến về dự kiến kế hoạch đầu tư công trung hạn nguồn vốn ngân sách trung ương giai đoạn 2026 - 2030 luatvietnam - văn bản mới",
     "https://luatvietnam.vn/dau-tu/nghi-quyet-72-2026-nq-hdnd-lam-dong-tieu-chi-dau-thau-lua-chon-nha-dau-tu-du-an-su-dung-dat-457348-d2.html": "number:72/2026/NQ-HĐND|issuer:NQ-HĐND|locality:lâm đồng quy định các tiêu chí để quyết định thực hiện đấu thầu lựa chọn nhà đầu tư thực hiện dự án đầu tư có sử dụng đất thuộc trường hợp quy định tại khoản 27 điều 79 luật đất đai trên địa bàn tỉnh lâm đồng luatvietnam - văn bản mới - văn bản luật việt nam - trang 2",
