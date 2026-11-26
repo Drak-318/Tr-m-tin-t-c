@@ -5329,6 +5329,15 @@
       "link": "https://stp.angiang.gov.vn/ve-viec-trien-khai-thuc-hien-nghi-dinh-so-3462026nd-cp-cua-chinh-phu",
       "title": "Về việc triển khai thực hiện Nghị định số 346/2026/NĐ-CP của Chính phủ"
     },
+    "number:35/2015/TT-NHNN|issuer:TT-NHNN|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "35/2015/TT-NHNN",
+      "first_seen": "2026-11-26T09:38:10+00:00",
+      "last_seen": "2026-11-26T09:38:10+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220372",
+      "title": "2521/QĐ-NHNN 20/11/2026"
+    },
     "number:35/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh tại nghị quyết số 35/nq-hđnd ngày 26 tháng 6 năm 2026 của hội đồng nhân dân tỉnh cổng qppl hà tĩnh - hđnd tỉnh": {
       "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
       "category": "Văn bản địa phương",
@@ -12019,6 +12028,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220361": "url:https://chinhphu.vn/?pageid=27160&docid=220361",
     "https://chinhphu.vn/?pageid=27160&docid=220363": "number:38/2026/QH16|issuer:QH16|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220365": "number:610/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220372": "number:35/2015/TT-NHNN|issuer:TT-NHNN|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
