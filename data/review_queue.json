@@ -1047,6 +1047,23 @@
       "verification_status": "verified_included",
       "verified_date": "2026-11-20"
     },
+    "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/luat-to-chuc-co-quan-dieu-tra-hinh-su-sua-doi-buoc-di-quan-trong-huong-toi-tinh-gon-bo-may-va-nang-cao-hieu-luc-tu-phap-12321.html": {
+      "agency": "Công an TP. Cần Thơ",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-26T03:39:49+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-26T03:39:39+00:00",
+      "identity": "url:https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/luat-to-chuc-co-quan-dieu-tra-hinh-su-sua-doi-buoc-di-quan-trong-huong-toi-tinh-gon-bo-may-va-nang-cao-hieu-luc-tu-phap-12321.html",
+      "last_checked": "2026-11-26T03:39:49+00:00",
+      "last_seen": "2026-11-26T03:39:39+00:00",
+      "link": "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/luat-to-chuc-co-quan-dieu-tra-hinh-su-sua-doi-buoc-di-quan-trong-huong-toi-tinh-gon-bo-may-va-nang-cao-hieu-luc-tu-phap-12321.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Công an",
+      "status": "pending",
+      "title": "Luật Tổ chức cơ quan điều tra hình sự (sửa đổi) - Bước đi quan trọng hướng tới tinh gọn bộ máy và nâng cao hiệu lực tư pháp"
+    },
     "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/mot-so-diem-moi-cua-nghi-dinh-so-392-2026-nd-cp-cua-chinh-phu-buoc-dot-pha-trong-cai-cach-thu-tuc-hanh-chinh-va-dieu-kien-dau-tu-kinh-doanh-trong-linh-vuc-an-ninh-trat-tu-12143.html": {
       "agency": "Công an TP. Cần Thơ",
       "attempts": 1,
@@ -1067,6 +1084,23 @@
       "title": "Một số điểm mới của Nghị định số 392/2026/NĐ-CP của Chính phủ: bước đột phá trong cải cách thủ tục hành chính và điều kiện đầu tư kinh doanh trong lĩnh vực an ninh, trật tự",
       "verification_status": "verified_included",
       "verified_date": "2026-11-18"
+    },
+    "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/quy-dinh-moi-tai-dieu-343-bo-luat-hinh-su-sua-doi-12325.html": {
+      "agency": "Công an TP. Cần Thơ",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-26T03:39:49+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-26T03:39:39+00:00",
+      "identity": "url:https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/quy-dinh-moi-tai-dieu-343-bo-luat-hinh-su-sua-doi-12325.html",
+      "last_checked": "2026-11-26T03:39:49+00:00",
+      "last_seen": "2026-11-26T03:39:39+00:00",
+      "link": "https://congan.cantho.gov.vn/tuyen-truyen-pho-bien-giao-duc-phap-luat/quy-dinh-moi-tai-dieu-343-bo-luat-hinh-su-sua-doi-12325.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Công an",
+      "status": "pending",
+      "title": "Quy định mới tại Điều 343 Bộ luật Hình sự (sửa đổi)"
     },
     "https://congan.daklak.gov.vn/thong-bao/doi-canh-sat-giao-thong-duong-bo-so-4-phong-canh-sat-giao-thong-thong-bao-tim-nguoi-lien-quan-den-433-xe-mo-to-xe-gan-may-va-3-o-to-da-het-thoi-han-tam-giu-14701.html": {
       "agency": "Công an Đắk Lắk - Cảnh báo tội phạm",
@@ -22342,6 +22376,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T01:48:06+00:00",
+  "updated_at": "2026-11-26T03:39:49+00:00",
   "version": 1
 }
