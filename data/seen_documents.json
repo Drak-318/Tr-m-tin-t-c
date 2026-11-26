@@ -5726,6 +5726,15 @@
       "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-3794-qd-ubnd-457681-d1.html",
       "title": "Quyết định 3794/QĐ-UBND của Ủy ban nhân dân tỉnh Đắk Lắk về việc phê duyệt quy trình nội bộ, quy trình nội bộ liên thông trong giải quyết thủ tục hành chính lĩnh vực an toàn bức xạ và hạt nhân thuộc phạm vi chức năng quản lý của Sở Khoa học và Công nghệ thực hiện tiếp nhận, trả kết quả không phụ thuộc vào địa giới hành chính trên địa bàn tỉnh Đắk Lắk"
     },
+    "number:3796/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk về việc công bố danh mục thủ tục hành chính mới ban hành": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "3796/QĐ-UBND",
+      "first_seen": "2026-11-26T05:43:05+00:00",
+      "last_seen": "2026-11-26T05:43:05+00:00",
+      "link": "https://luatvietnam.vn/lao-dong/quyet-dinh-3796-qd-ubnd-dak-lak-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-bai-bo-linh-vuc-viec-lam-457847-d2.html",
+      "title": "Quyết định 3796/QĐ-UBND của Ủy ban nhân dân tỉnh Đắk Lắk về việc công bố danh mục thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực việc làm thuộc phạm vi chức năng quản lý Nhà nước của Sở Nội vụ"
+    },
     "number:38/2026/NQ-HĐND|issuer:NQ-HĐND|locality:quy định mức tối đa": {
       "agency": "HĐND tỉnh Thanh Hóa - Nghị quyết - Văn bản - tài liệu",
       "category": "Văn bản địa phương",
@@ -12569,6 +12578,7 @@
     "https://luatvietnam.vn/lao-dong/quyet-dinh-1412-qd-bnv-2026-cong-bo-thu-tuc-hanh-chinh-moi-va-bai-bo-linh-vuc-viec-lam-456869-d1.html": "number:1412/QĐ-BNV|issuer:QĐ-BNV|locality:",
     "https://luatvietnam.vn/lao-dong/quyet-dinh-149-2026-qd-ubnd-dak-lak-quy-dinh-he-so-dieu-chinh-tang-them-tien-luong-456810-d2.html": "number:149/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk quy định hệ số điều chỉnh tăng thêm tiền lương để làm cơ sở xác định chi phí tiền lương",
     "https://luatvietnam.vn/lao-dong/quyet-dinh-2865-qd-ubnd-son-la-2026-ke-hoach-thi-hanh-luat-sua-doi-luat-nguoi-lao-dong-viet-nam-456851-d2.html": "number:2865/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la về việc ban hành kế hoạch triển khai thi hành luật sửa đổi",
+    "https://luatvietnam.vn/lao-dong/quyet-dinh-3796-qd-ubnd-dak-lak-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-moi-bai-bo-linh-vuc-viec-lam-457847-d2.html": "number:3796/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk về việc công bố danh mục thủ tục hành chính mới ban hành",
     "https://luatvietnam.vn/lao-dong/quyet-dinh-4149-qd-ubnd-khanh-hoa-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-lao-dong-tien-luong-457683-d2.html": "number:4149/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/lao-dong/thong-tu-27-2026-tt-bnv-danh-muc-cong-viec-yeu-cau-nghiem-ngat-ve-an-toan-lao-dong-451907-d1.html": "number:27/2026/TT-BNV|issuer:TT-BNV|locality:",
     "https://luatvietnam.vn/linh-vuc-khac/-457678-d10.html": "url:https://luatvietnam.vn/linh-vuc-khac/-457678-d10.html",
