@@ -4640,6 +4640,15 @@
       "link": "https://luatvietnam.vn/thong-tin/van-ban-hop-nhat-28-2026-vbhn-qd-bkhcn-2026-ma-dinh-danh-dien-tu-phuc-vu-ket-noi-du-lieu-452465-d5.html",
       "title": "Văn bản hợp nhất 28/2026/VBHN-QĐ-BKHCN do Bộ Khoa học và Công nghệ ban hành hợp nhất Quyết định về mã định danh điện tử của các cơ quan, tổ chức phục vụ kết nối, chia sẻ dữ liệu với các bộ, ngành, địa phương"
     },
+    "number:28/QĐ-TTG|issuer:QĐ-TTG|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản khác",
+      "doc_number": "28/QĐ-TTG",
+      "first_seen": "2026-11-26T08:42:55+00:00",
+      "last_seen": "2026-11-26T08:42:55+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220355",
+      "title": "53/2026/QĐ-TTg 23/11/2026"
+    },
     "number:2820/QĐ-BCT|issuer:QĐ-BCT|locality:": {
       "agency": "Bộ Công Thương - Văn bản pháp luật - Bộ Công Thương triển khai thực hiện Nghị quyết Phiên họp Chính phủ thường kỳ tháng ",
       "category": "Văn bản khác",
@@ -11968,6 +11977,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220352": "number:473/NQ-UBTVQH16|issuer:NQ-UBTVQH16|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220353": "number:75/CĐ-TTG|issuer:CĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220354": "url:https://chinhphu.vn/?pageid=27160&docid=220354",
+    "https://chinhphu.vn/?pageid=27160&docid=220355": "number:28/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220358": "number:61/2023/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220360": "number:613/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220361": "url:https://chinhphu.vn/?pageid=27160&docid=220361",
