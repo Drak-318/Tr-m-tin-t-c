@@ -1296,13 +1296,13 @@
     },
     "https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap": {
       "agency": "Đà Nẵng - Trang chủ tiếng Anh",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T23:28:33+00:00",
       "identity": "url:https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap",
-      "last_checked": "2026-11-26T23:38:02+00:00",
+      "last_checked": "2026-11-26T23:53:02+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T23:28:33+00:00",
       "link": "https://danang.gov.vn/vi/web/dng/-/quy-dinh-danh-gia-xep-loai-chat-luong-doi-voi-don-vi-su-nghiep-cong-lap",
@@ -22631,6 +22631,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T23:38:02+00:00",
+  "updated_at": "2026-11-26T23:53:02+00:00",
   "version": 1
 }
