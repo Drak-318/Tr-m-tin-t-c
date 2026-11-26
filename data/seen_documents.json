@@ -8929,6 +8929,15 @@
       "link": "https://luatvietnam.vn/xuat-nhap-khau/quyet-dinh-7873-qd-ubnd-tp-hcm-2026-uy-quyen-giam-doc-so-cong-thuong-thuc-hien-nhiem-vu-457788-d2.html",
       "title": "Quyết định 7873/QĐ-UBND của Ủy ban nhân dân Thành phố Hồ Chí Minh về việc ủy quyền cho Giám đốc Sở Công Thương thực hiện một số nhiệm vụ, quyền hạn của Ủy ban nhân dân Thành phố trong giải quyết thủ tục hành chính và thực hiện nhiệm vụ quản lý Nhà nước thuộc các lĩnh vực do Sở Công Thương tham mưu, quản lý"
     },
+    "number:7876/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn": {
+      "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
+      "category": "Văn bản địa phương",
+      "doc_number": "7876/QĐ-UBND",
+      "first_seen": "2026-11-26T10:43:39+00:00",
+      "last_seen": "2026-11-26T10:43:39+00:00",
+      "link": "https://luatvietnam.vn/xay-dung/quyet-dinh-7876-qd-ubnd-tp-hcm-2026-sua-doi-bo-sung-don-gia-nhan-cong-xay-dung-457936-d2.html",
+      "title": "Quyết định 7876/QĐ-UBND TP.HCM 2026 sửa đổi bổ sung đơn giá nhân công xây dựng"
+    },
     "number:79/2012/NĐ-CP|issuer:NĐ-CP|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tổng quan",
       "category": "Văn bản quy phạm pháp luật",
@@ -11558,6 +11567,15 @@
       "link": "https://nghean.gov.vn/?pageid=71897&p_steering=162483",
       "title": "V/v triển khai thực hiện Nghị định số 416/2026/NĐ-CP"
     },
+    "url:https://nghean.gov.vn/?pageid=71897&p_steering=162668": {
+      "agency": "UBND tỉnh Nghệ An",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-26T10:43:39+00:00",
+      "last_seen": "2026-11-26T10:43:39+00:00",
+      "link": "https://nghean.gov.vn/?pageid=71897&p_steering=162668",
+      "title": "V/v thực hiện Thông báo số 1065/TB-BTC ngày 23/11/2026 của Bộ Tài chính (công khai kết quả xử lý, khai thác nhà, đất dôi dư sau khi sắp xếp tổ chức bộ máy, sắp xếp đơn vị hành chính (đến ngày 23/11/2026))"
+    },
     "url:https://qldd.mae.gov.vn/thu-hoi-boi-thuong-ho-tro-tai-dinh-cu-ve---dat-dai/tinh-dak-lak-ban-hanh-quy-dinh-quy-trinh-luan-chuyen-ho-so-xac-dinh-nghia-vu-tai-chinh-ve-dat-dai-3754.htm": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -11670,6 +11688,24 @@
       "link": "",
       "migrated_from": "Google Sheets",
       "title": ""
+    },
+    "url:https://sonnmt.haiphong.gov.vn/he-thong-van-ban/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Hệ thống văn bản",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-26T10:43:39+00:00",
+      "last_seen": "2026-11-26T10:43:39+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/he-thong-van-ban/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
+      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành lập, giữ chức danh, chức vụ quản lý, điều hành doanh nghiệp tư nhân, công ty trách nhiệm hữu hạn, công ty cổ phần, công ty hợp danh, hợp tác xã sau khi thôi giữ chức vụ thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường"
+    },
+    "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-26T10:43:39+00:00",
+      "last_seen": "2026-11-26T10:43:39+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
+      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành lập, giữ chức danh, chức vụ quản lý, điều hành doanh nghiệp tư nhân, công ty trách nhiệm hữu hạn, công ty cổ phần, công ty hợp danh, hợp tác xã sau khi thôi giữ chức vụ thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường"
     },
     "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-dinh-muc-kinh-te-ky-thuat-kiem-tra-nghiem-thu-san-pham-ung-du-987503": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
@@ -11818,6 +11854,15 @@
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://tuyengiaodanvan.vn/van-ban/huong-dan-dinh-huong-noi-dung-nghien-cuu-ly-luan-giai-doan-2026-2030-6ada3105fe13b9ef33de5241",
       "title": "Hướng dẫn về định hướng nội dung nghiên cứu lý luận giai đoạn 2026 - 2030"
+    },
+    "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham": {
+      "agency": "VIB Online - Dự thảo đang lấy ý kiến",
+      "category": "Dự thảo",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-26T10:43:39+00:00",
+      "last_seen": "2026-11-26T10:43:39+00:00",
+      "link": "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham",
+      "title": "Dự thảo Nghị định sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực an toàn thực phẩm"
     },
     "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-nghi-dinh-ve-phuong-tien-giao-thong-duong-bo-va-duong-sat": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
@@ -13196,6 +13241,7 @@
     "https://luatvietnam.vn/xay-dung/quyet-dinh-2950-qd-ubnd-son-la-2026-cong-bo-thu-tuc-hanh-chinh-va-phe-duyet-quy-trinh-noi-bo-xay-dung-457884-d2.html": "number:2950/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la về việc công bố thủ tục hành chính và phê duyệt quy trình nội bộ giải quyết thủ tục hành chính trong lĩnh vực hoạt động xây dựng thuộc phạm vi chức năng quản lý nhà nước của sở xây dựng tỉnh sơn la luatvietnam - văn bản mới - văn bản ubnd",
     "https://luatvietnam.vn/xay-dung/quyet-dinh-3980-qd-ubnd-phu-tho-2026-phe-duyet-quy-hoach-chung-xa-quy-duc-den-2050-457297-d2.html": "number:3980/QĐ-UBND|issuer:QĐ-UBND|locality:phú thọ phê duyệt nhiệm vụ quy hoạch chung xã quy đức",
     "https://luatvietnam.vn/xay-dung/quyet-dinh-7588-qd-ubnd-tp-ho-chi-minh-2026-uy-quyen-giam-doc-so-xay-dung-quan-ly-chat-luong-vat-lieu-xay-dung-456540-d2.html": "legacy_sheet_url:https://luatvietnam.vn/xay-dung/quyet-dinh-7588-qd-ubnd-tp-ho-chi-minh-2026-uy-quyen-giam-doc-so-xay-dung-quan-ly-chat-luong-vat-lieu-xay-dung-456540-d2.html",
+    "https://luatvietnam.vn/xay-dung/quyet-dinh-7876-qd-ubnd-tp-hcm-2026-sua-doi-bo-sung-don-gia-nhan-cong-xay-dung-457936-d2.html": "number:7876/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/xay-dung/thong-tu-81-2026-tt-bxd-quy-dinh-dan-nhan-nang-luong-cho-vat-lieu-xay-dung-454601-d1.html": "number:81/2026/TT-BXD|issuer:TT-BXD|locality:",
     "https://luatvietnam.vn/xay-dung/thong-tu-84-2026-tt-bxd-tieu-chi-danh-gia-kha-nang-chong-chiu-bien-doi-khi-hau-457511-d1.html": "number:84/2026/TT-BXD|issuer:TT-BXD|locality:",
     "https://luatvietnam.vn/xay-dung/van-ban-hop-nhat-64-2026-vbhn-nd-btc-2026-ve-bao-hiem-bat-buoc-trach-nhiem-dan-su-va-chay-no-454991-d5.html": "number:64/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:",
@@ -13701,6 +13747,7 @@
     "https://nghean.gov.vn/?pageid=71897&p_steering=161700": "url:https://nghean.gov.vn/?pageid=71897&p_steering=161700",
     "https://nghean.gov.vn/?pageid=71897&p_steering=162479": "url:https://nghean.gov.vn/?pageid=71897&p_steering=162479",
     "https://nghean.gov.vn/?pageid=71897&p_steering=162483": "url:https://nghean.gov.vn/?pageid=71897&p_steering=162483",
+    "https://nghean.gov.vn/?pageid=71897&p_steering=162668": "url:https://nghean.gov.vn/?pageid=71897&p_steering=162668",
     "https://nghean.gov.vn/?pageid=71913&p_cate=7772": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_cate=7772",
     "https://nghean.gov.vn/?pageid=71913&p_field=10402": "legacy_sheet_url:https://nghean.gov.vn/?pageid=71913&p_field=10402",
     "https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183": "legacy_sheet_url:https://ninhbinh.gov.vn/?pageid=27160&p_steering=50183",
@@ -13819,12 +13866,14 @@
     "https://songphu.vinhlong.gov.vn/Default.aspx?tabid=27158&ID=321096": "legacy_sheet_url:https://songphu.vinhlong.gov.vn/Default.aspx?tabid=27158&ID=321096",
     "https://sonnmt.haiphong.gov.vn/dich-vu-cong/quyet-dinh-so-4304-qd-bnnmt-ngay-18-11-2026-cua-bo-nong-nghiep-va-moi-truong-ve-viec-sua-doi-bo--1019372": "number:4304/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:unresolved-source:sonnmt.haiphong.gov.vn",
     "https://sonnmt.haiphong.gov.vn/dich-vu-cong/quyet-dinh-so-4553-qd-ubnd-ngay-30-10-2026-cua-uy-ban-nhan-dan-thanh-pho-hai-phong-phe-duyet-quy-1011159": "number:4553/QĐ-UBND|issuer:QĐ-UBND|locality:hải phòng phê duyệt quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực đất đai thực hiện trong khu thương mại tự do thuộc thẩm quyền giải quyết của sở nông nghiệp và môi trường sở nông nghiệp và môi trường hải phòng",
+    "https://sonnmt.haiphong.gov.vn/he-thong-van-ban/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": "url:https://sonnmt.haiphong.gov.vn/he-thong-van-ban/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
     "https://sonnmt.haiphong.gov.vn/lay-y-kien-gop-y-cua-to-chuc-ca-nhan/lay-y-kien-du-thao-quyet-dinh-ban-hanh-danh-muc-nghe-ngu-cu-cam-su-dung-khai-thac-thuy-san-danh--1006402": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/lay-y-kien-gop-y-cua-to-chuc-ca-nhan/lay-y-kien-du-thao-quyet-dinh-ban-hanh-danh-muc-nghe-ngu-cu-cam-su-dung-khai-thac-thuy-san-danh--1006402",
     "https://sonnmt.haiphong.gov.vn/pho-bien-chinh-sach-phap-luat": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/pho-bien-chinh-sach-phap-luat",
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/bo-nong-nghiep-va-moi-truong-ban-hanh-tieu-chi-nhan-sinh-thai-viet-nam-doi-voi-san-pham-giay-van-1010368": "number:4256/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/so-nong-nghiep-va-moi-truong-trien-khai-ke-hoach-thuc-hien-nghi-quyet-so-19-nq-tw-ve-doi-moi-mo--1005912": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/so-nong-nghiep-va-moi-truong-trien-khai-ke-hoach-thuc-hien-nghi-quyet-so-19-nq-tw-ve-doi-moi-mo--1005912",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-quyet-so-32-2026-nq-hdnd-ngay-29-10-2026-cua-hoi-dong-nhan-dan-thanh-pho-hai-phong-quy-dinh-994897": "number:32/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hải phòng quy định mức hỗ trợ sản xuất nông nghiệp để khôi phục sản xuất vùng bị thiệt hại do thiên tai",
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-47-2026-tt-bnnmt-ngay-30-10-2026-cua-bo-nong-nghiep-va-moi-truong-quy-dinh-chi-tiet-994890": "number:47/2026/TT-BNNMT|issuer:TT-BNNMT|locality:unresolved-source:sonnmt.haiphong.gov.vn",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-48-2026-tt-bnnmt-ngay-30-10-2026-cua-bo-nong-nghiep-va-moi-truong-quy-dinh-chi-tiet-994891": "number:48/2026/TT-BNNMT|issuer:TT-BNNMT|locality:unresolved-source:sonnmt.haiphong.gov.vn",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-49-2026-tt-bnnmt-ngay-31-10-2026-quy-dinh-ve-kiem-soat-giet-mo-va-kiem-tra-ve-sinh-t-1003799": "number:49/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
@@ -14040,6 +14089,7 @@
     "https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6ad8dc25faa5187abd0bedc2": "legacy_sheet_url:https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6ad8dc25faa5187abd0bedc2",
     "https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6af07611f5157a438e07cc02": "legacy_sheet_url:https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6af07611f5157a438e07cc02",
     "https://vibonline.com.vn/du_thao/du%cc%a3-tha%cc%89o-thong-tu-huong-da%cc%83n-nghi%cc%a3-di%cc%a3nh-2026-nd-cp-ve-kinh-doanh-casino": "number:2026/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-nghi-dinh-ve-phuong-tien-giao-thong-duong-bo-va-duong-sat": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-nghi-dinh-ve-phuong-tien-giao-thong-duong-bo-va-duong-sat",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh": "legacy_sheet_url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-quyet-quy-dinh-ve-toi-xam-pham-quyen-tac-gia-quyen-lien-quan-va-quyen-huu-cong-nghiep": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-quyet-quy-dinh-ve-toi-xam-pham-quyen-tac-gia-quyen-lien-quan-va-quyen-huu-cong-nghiep",
