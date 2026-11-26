@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "last_watchdog_at": "2026-11-26T03:28:46.148Z",
+  "last_watchdog_at": "2026-11-26T13:03:54.915Z",
   "scheduled_for": "2,12,22,32,42,52 * * * *",
-  "workflow_run_id": 45749153512,
+  "workflow_run_id": 45825491003,
   "action": "healthy",
-  "reason": "Priority age: 6m; full age: 40m",
-  "priority_age_minutes": 6,
+  "reason": "Priority age: 1m; full age: 40m",
+  "priority_age_minutes": 1,
   "full_age_minutes": 40,
-  "last_priority_success_at": "2026-11-26T03:23:08Z",
-  "last_full_success_at": "2026-11-26T02:48:54Z"
+  "last_priority_success_at": "2026-11-26T13:03:23Z",
+  "last_full_success_at": "2026-11-26T12:24:18Z"
 }
