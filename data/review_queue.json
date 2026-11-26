@@ -17488,6 +17488,23 @@
       "title": "Hướng dẫn yêu cầu cung cấp thông tin",
       "verification_status": "manual_review"
     },
+    "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7%2B4MfeygA%3D%3D": {
+      "agency": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-26T01:07:44+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-26T01:07:38+00:00",
+      "identity": "url:https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7%2B4MfeygA%3D%3D",
+      "last_checked": "2026-11-26T01:07:44+00:00",
+      "last_seen": "2026-11-26T01:07:38+00:00",
+      "link": "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7%2B4MfeygA%3D%3D",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Hướng dẫn yêu cầu cung cấp thông tin"
+    },
     "https://sbv.gov.vn/vi/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-y%C3%AAu-c%E1%BA%A7u-cung-c%E1%BA%A5p-th%C3%B4ng-tin?doAsUserId=tEKSyzEKNbfwM7+4MfeygA%253D%253D": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính",
       "attempts": 3,
@@ -22322,6 +22339,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-25T16:04:09+00:00",
+  "updated_at": "2026-11-26T01:07:44+00:00",
   "version": 1
 }
