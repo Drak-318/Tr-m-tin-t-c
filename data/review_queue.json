@@ -4815,7 +4815,7 @@
     },
     "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4823,7 +4823,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-19T21:22:41+00:00",
       "identity": "url:https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
-      "last_checked": "2026-11-19T21:54:05+00:00",
+      "last_checked": "2026-11-26T21:57:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-19T21:22:41+00:00",
       "link": "https://luatvietnam.vn/giao-duc/du-thao-nghi-dinh-ve-che-do-cu-tuyen-doi-voi-hssv-dan-toc-thieu-so-181286-d10.html",
@@ -22613,6 +22613,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T21:23:07+00:00",
+  "updated_at": "2026-11-26T21:57:59+00:00",
   "version": 1
 }
