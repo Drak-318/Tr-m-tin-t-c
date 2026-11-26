@@ -19470,34 +19470,41 @@
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-26T10:43:47+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
-      "last_checked": "2026-11-26T10:43:47+00:00",
+      "last_checked": "2026-11-26T10:53:03+00:00",
+      "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành lập, giữ chức danh, chức vụ quản lý, điều hành doanh nghiệp tư nhân, công ty trách nhiệm hữu hạn, công ty cổ phần, công ty hợp danh, hợp tác xã sau khi thôi giữ chức vụ thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường"
+      "status": "not_found",
+      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành lập, giữ chức danh, chức vụ quản lý, điều hành doanh nghiệp tư nhân, công ty trách nhiệm hữu hạn, công ty cổ phần, công ty hợp danh, hợp tác xã sau khi thôi giữ chức vụ thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
+      "verification_status": "not_found"
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
+      "last_checked": "2026-11-26T10:53:03+00:00",
+      "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị sự nghiệp công lập thuộc ngành, lĩnh vực nông nghiệp và môi trường"
+      "status": "not_found",
+      "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị sự nghiệp công lập thuộc ngành, lĩnh vực nông nghiệp và môi trường",
+      "verification_status": "not_found"
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19737,31 +19744,39 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
+      "last_checked": "2026-11-26T10:53:03+00:00",
+      "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành..."
+      "status": "not_found",
+      "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành...",
+      "verification_status": "not_found"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
+      "last_checked": "2026-11-26T10:53:03+00:00",
+      "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị..."
+      "status": "not_found",
+      "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị...",
+      "verification_status": "not_found"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-danh-muc-doi-tuong-kiem-dich-thuc-vat-cua-nuoc-cong-hoa-xa-ho-987510": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
@@ -22501,6 +22516,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T10:43:47+00:00",
+  "updated_at": "2026-11-26T10:53:03+00:00",
   "version": 1
 }
