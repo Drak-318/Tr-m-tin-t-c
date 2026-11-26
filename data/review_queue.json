@@ -11090,14 +11090,14 @@
     },
     "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaGZ3eXBQWm5LV2FWaExXTkJYZmRFNklWX0FaQ0U1RzdwTTZCR0ZZSVp6UmZFWGEwWV84V2RBNXJnd2pWQUdPRFFrVGpxQ01NY3dWSEZVNXB6UXE1ZHpVNzlpSVF6VHlfU1IxQlRsQnFTT2VkQ2o5SERvdm9Qc2d4YXh5SmJKQVJlT1ktVFByaDJ2azhYT3ZhcGpPTHM1Q1JwcFpKeDhRdnprckdHR2RQeG1yY0YtNU1UWG9BTUtIa1g5RmM5aWoyc0NLZ2EycEVQdEhwVEFpX3ZqRHJKZktSdTlUTQ?oc=5": {
       "agency": "Cổng TTĐT Chính phủ - Google News",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "409/2026/NĐ-CP",
       "exported_at": "2026-11-18T00:16:08+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T08:03:03+00:00",
+      "last_checked": "2026-11-26T08:12:55+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaGZ3eXBQWm5LV2FWaExXTkJYZmRFNklWX0FaQ0U1RzdwTTZCR0ZZSVp6UmZFWGEwWV84V2RBNXJnd2pWQUdPRFFrVGpxQ01NY3dWSEZVNXB6UXE1ZHpVNzlpSVF6VHlfU1IxQlRsQnFTT2VkQ2o5SERvdm9Qc2d4YXh5SmJKQVJlT1ktVFByaDJ2azhYT3ZhcGpPTHM1Q1JwcFpKeDhRdnprckdHR2RQeG1yY0YtNU1UWG9BTUtIa1g5RmM5aWoyc0NLZ2EycEVQdEhwVEFpX3ZqRHJKZktSdTlUTQ?oc=5",
@@ -11109,14 +11109,14 @@
     },
     "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbkVTQVpud2xnNTVMQkNlclRkMXphZHkwdE1aVVRVdWhpX3U4X1FuTm40Sjg5OE80ZkJsR21zYnkxek5LR1NLN1ViZHdPMkNxXzZFbVF0RnBaVzVNakxpQS1Gc3huakFvbmhyY3VidEhpd00zRlRYNmJ4cmV5eEFGT1loUUFUdzBtSmFraVl5NXItQ09ZTXVfQzNPTEJ2WFNadW1YbkdLVUVMN0hkOGlpWGtWWGZTcnpOdFh6cGhuT09kQlh6bFVVU19sX0pnaGZiaWJWY05FRXNOakxJdGpMOW1mTEg?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "1019/QĐ-TTCP",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T08:03:03+00:00",
+      "last_checked": "2026-11-26T08:12:56+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbkVTQVpud2xnNTVMQkNlclRkMXphZHkwdE1aVVRVdWhpX3U4X1FuTm40Sjg5OE80ZkJsR21zYnkxek5LR1NLN1ViZHdPMkNxXzZFbVF0RnBaVzVNakxpQS1Gc3huakFvbmhyY3VidEhpd00zRlRYNmJ4cmV5eEFGT1loUUFUdzBtSmFraVl5NXItQ09ZTXVfQzNPTEJ2WFNadW1YbkdLVUVMN0hkOGlpWGtWWGZTcnpOdFh6cGhuT09kQlh6bFVVU19sX0pnaGZiaWJWY05FRXNOakxJdGpMOW1mTEg?oc=5",
@@ -22404,6 +22404,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T08:04:43+00:00",
+  "updated_at": "2026-11-26T08:12:56+00:00",
   "version": 1
 }
