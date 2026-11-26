@@ -2832,6 +2832,15 @@
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ0VEMklwRTJZWHFGQmVBT3ZHd2dOS3daWlBFcjVYWkJqSmFiVDBLZUN5dEVTM09xdHhDWHRHVWpsRi1TV1VjQ0FaVC1oYVhnb1ZNdjRWMU52R25hNjhFTjAzSzR1M3FhWGVXcDI1Zl91RVBDTHEteVlaQmtNbDFXeURhelo4VTlCWWloSndQNFdpMWYybG42Zi1kNUNkU195dlhLRldkanhla25JMEFzUkFwSUpCYlYwbnVxZGdRRW5LYm9fV2UwUDhWSU5Qdw?oc=5",
       "title": "Công văn số 1794/UBND-VHXH ngày 17/11/2026 của UBND xã Quan Thành - Cổng thông tin điện tử Nghệ An"
     },
+    "number:1797/KH-UBND|issuer:KH-UBND|locality:đồng tháp triển khai đề án phát triển công nghiệp chế biến thức ăn chăn nuôi": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "1797/KH-UBND",
+      "first_seen": "2026-11-26T03:33:04+00:00",
+      "last_seen": "2026-11-26T03:33:04+00:00",
+      "link": "https://luatvietnam.vn/nong-nghiep/ke-hoach-1797-kh-ubnd-dong-thap-trien-khai-de-an-phat-trien-cong-nghiep-che-bien-thuc-an-chan-nuoi-457772-d2.html",
+      "title": "Kế hoạch 1797/KH-UBND của Ủy ban nhân dân tỉnh Đồng Tháp triển khai Đề án Phát triển công nghiệp chế biến thức ăn chăn nuôi, Đề án Phát triển công nghiệp sản xuất giống vật nuôi, Đề án ưu tiên Đẩy mạnh hoạt động khoa học và công nghệ ngành chăn nuôi, Phát triển công nghiệp chuồng trại và xử lý chất thải chăn nuôi trên địa bàn tỉnh Đồng Tháp đến năm 2030"
+    },
     "number:1797/UBND-VHXH|issuer:UBND-VHXH|locality:unresolved-source:news.google.com": {
       "agency": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
       "category": "Công văn",
@@ -12526,6 +12535,7 @@
     "https://luatvietnam.vn/ngoai-giao/van-ban-hop-nhat-02-2026-vbhn-nd-bng-2026-quy-dinh-chi-tiet-luat-sua-doi-bo-sung-luat-co-quan-dai-dien-viet-nam-o-nuoc-ngoai-455734-d5.html": "number:02/2026/VBHN-NĐ-BNG|issuer:VBHN-NĐ-BNG|locality:",
     "https://luatvietnam.vn/nong-nghiep/cong-van-11337-ubnd-dt-tp-hcm-2026-trien-khai-quy-hoach-lam-nghiep-quoc-gia-2021-2030-456787-d2.html": "number:11337/UBND-ĐT|issuer:UBND-ĐT|locality:hồ chí minh về việc triển khai thực hiện quy hoạch lâm nghiệp quốc gia thời kỳ 2021- 2030",
     "https://luatvietnam.vn/nong-nghiep/cong-van-11382-ubnd-dt-tp-ho-chi-minh-2026-to-chuc-thuc-hien-nhiem-vu-nhan-vien-thu-y-xa-457052-d2.html": "number:11382/UBND-ĐT|issuer:UBND-ĐT|locality:hồ chí minh về việc tổ chức thực hiện nhiệm vụ của nhân viên thú y xã trên địa bàn thành phố luatvietnam - văn bản mới",
+    "https://luatvietnam.vn/nong-nghiep/ke-hoach-1797-kh-ubnd-dong-thap-trien-khai-de-an-phat-trien-cong-nghiep-che-bien-thuc-an-chan-nuoi-457772-d2.html": "number:1797/KH-UBND|issuer:KH-UBND|locality:đồng tháp triển khai đề án phát triển công nghiệp chế biến thức ăn chăn nuôi",
     "https://luatvietnam.vn/nong-nghiep/ke-hoach-415-kh-ubnd-bac-ninh-to-chuc-hoi-nghi-tong-ket-cong-tac-phong-chay-chua-chay-rung-mua-kho-2025-2026-456630-d2.html": "number:415/KH-UBND|issuer:KH-UBND|locality:bắc ninh tổ chức hội nghị tổng kết công tác phòng cháy",
     "https://luatvietnam.vn/nong-nghiep/ke-hoach-446-kh-ubnd-thanh-hoa-2026-phat-trien-nganh-trong-trot-nam-2027-456943-d2.html": "number:446/KH-UBND|issuer:KH-UBND|locality:thanh hóa phát triển ngành trồng trọt tỉnh thanh hóa năm 2027 luatvietnam - văn bản mới",
     "https://luatvietnam.vn/nong-nghiep/quyet-dinh-101-2026-qd-ubnd-khanh-hoa-quy-dinh-mat-do-chan-nuoi-giai-doan-2026-2030-456596-d2.html": "number:101/2026/QĐ-UBND|issuer:QĐ-UBND|locality:khánh hòa quy định mật độ chăn nuôi trên địa bàn tỉnh khánh hòa giai đoạn 2026 - 2030 luatvietnam - văn bản mới",
