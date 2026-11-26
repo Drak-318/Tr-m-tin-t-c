@@ -1,26 +1,25 @@
 {
   "items": {
     "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban": {
-      "attempts": 108,
+      "attempts": 109,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "",
-      "last_failed_at": "2026-11-26T14:09:04+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='laichau.gov.vn', port=443): Max retries exceeded with url: /lay-y-kien-nhan-dan-ve-du-thao-van-ban (Caused by NewConnectionError(\"HTTPSConnection(host='laichau.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Chỉ chấp nhận URL HTTPS.",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
-      "last_status": "Hoạt động",
+      "last_status": "Lỗi: CONNECTION",
       "name": "UBND tỉnh Lai Châu - Lấy ý kiến về dự thảo văn bản QPPL",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
-      "status": "recovered",
+      "status": "retry_pending",
       "url": "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban"
     },
     "https://baohiemxahoi.gov.vn/vanban/pages/default.aspx": {
-      "attempts": 159,
+      "attempts": 160,
       "first_failed_at": "2026-11-21T04:25:42+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='baohiemxahoi.gov.vn', port=443): Max retries exceeded with url: /vanban/pages/default.aspx (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))); Apps Script: RuntimeError: Tên miền không nằm trong danh sách nguồn đã cấu hình.",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bảo hiểm xã hội Việt Nam - Danh sách văn bản",
@@ -37,7 +36,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Dân tộc và Tôn giáo - Cổng thông tin - Xem thêm >>",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bdttg.gov.vn/gop-y-du-thao-van-ban.htm"
     },
@@ -51,7 +50,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Dân tộc và Tôn giáo - Cổng thông tin",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bdttg.gov.vn/home.htm"
     },
@@ -65,7 +64,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bvhttdl.gov.vn/van-ban-quan-ly"
     },
@@ -79,7 +78,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bvhttdl.gov.vn/van-ban-quan-ly.htm"
     },
@@ -93,7 +92,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản pháp quy",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=1"
     },
@@ -107,7 +106,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản chỉ đạo điều hành",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://bvhttdl.gov.vn/van-ban-quan-ly?nhom=2"
     },
@@ -135,7 +134,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Công an Cà Mau",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://congan.camau.gov.vn/ch26/td26.html"
     },
@@ -149,7 +148,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Công an TP. Hải Phòng",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://congan.haiphong.gov.vn/van-ban"
     },
@@ -163,7 +162,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Công an TP.HCM",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu"
     },
@@ -177,7 +176,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Công an Lâm Đồng - Cảnh báo tội phạm",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://congan.lamdong.gov.vn/canh-bao-toi-pham.aspx"
     },
@@ -191,7 +190,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Đà Nẵng - Trang chủ tiếng Anh",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://danang.gov.vn/en/trang-chu"
     },
@@ -205,17 +204,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Đà Nẵng - Văn bản chỉ đạo điều hành",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://danang.gov.vn/van-ban-chi-dao-dieu-hanh"
     },
     "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533": {
-      "attempts": 196,
+      "attempts": 197,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Timeout: https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
@@ -232,7 +231,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "HĐND tỉnh Thanh Hóa - Nghị quyết",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/cat.aspx?cat=Ngh%E1%BB%8B+quy%E1%BA%BFt"
     },
@@ -246,7 +245,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "HĐND tỉnh Thanh Hóa - Nghị quyết - Văn bản - tài liệu",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://dbndthanhhoa.gov.vn/portal/home/van-ban/default.aspx"
     },
@@ -260,7 +259,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động qua Apps Script",
       "name": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://ddbqhhdnd.hungyen.gov.vn/91250-bo-nganh-trung-uong"
     },
@@ -274,7 +273,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Hải Phòng - Văn bản quy phạm pháp luật",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://haiphong.gov.vn/van-ban-quy-pham-phap-luat"
     },
@@ -288,7 +287,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "HĐND TP Đà Nẵng - Nghị quyết",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://hdnd.danang.gov.vn/nghi-quyet-hdnd"
     },
@@ -302,7 +301,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "HĐND TP. Hồ Chí Minh",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://hdnd.hochiminhcity.gov.vn/van-ban"
     },
@@ -316,7 +315,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Đoàn ĐBQH và HĐND tỉnh Ninh Bình",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://hdnd.ninhbinh.gov.vn/kien-nghi-cu-tri/van-ban-tra-loi-cua-cac-bo-nganh-trung-uong"
     },
@@ -330,7 +329,7 @@
       "last_items_collected": 79,
       "last_status": "Hoạt động",
       "name": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://luatvietnam.vn/van-ban/tim-kiem.html"
     },
@@ -344,7 +343,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "LuatVietnam - Văn bản mới - Tìm nâng cao",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://luatvietnam.vn/van-ban/tim-kiem.html?AdvancedSearch=1"
     },
@@ -358,7 +357,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "LuatVietnam - Văn bản mới - Dự thảo - Xóa tìm kiếm",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://luatvietnam.vn/van-ban/tim-van-ban-du-thao.html"
     },
@@ -372,7 +371,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Nông nghiệp và Môi trường",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://mae.gov.vn/"
     },
@@ -386,7 +385,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Bộ Nông nghiệp và Môi trường - Văn bản pháp luật",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://mae.gov.vn/van-ban-phap-luat.htm"
     },
@@ -400,7 +399,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/Default.aspx"
     },
@@ -414,7 +413,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/thong-bao/ve-viec-lay-y-kien-ket-qua-tong-ra-soat-he-thong-van-ban-quy-pham-phap-luat-cua-c1013-76172.aspx"
     },
@@ -428,7 +427,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh-c4664.aspx"
     },
@@ -442,7 +441,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/Contact.aspx"
     },
@@ -456,7 +455,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-chi-dao-dieu-hanh-cai-cach-hanh-chinh/ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-thuoc-pham-vi-chuc-nang-quan-ly-cua-c4664-59482.aspx"
     },
@@ -470,7 +469,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản của Sở Y tế",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te-vb4639.aspx"
     },
@@ -484,7 +483,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v hướng dẫn thu thập và nộp lưu hồ sơ, tài liệu về đại dịch COVID-19 - Liên hệ",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/Contact.aspx"
     },
@@ -498,7 +497,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v hướng dẫn thu thập và nộp lưu hồ sơ, tài liệu về đại dịch COVID-19",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/vv-huong-dan-thu-thap-va-nop-luu-ho-so-tai-lieu-ve-dai-dich-covid-19-vbct4639-53317.aspx"
     },
@@ -512,7 +511,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản của Sở Y tế - V/v rà soát, báo cáo thuốc, thực phẩm chức năng, thiết bị y tế giả",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-cua-so-y-te/vv-ra-soat-bao-cao-thuoc-thuc-pham-chuc-nang-thiet-bi-y-te-gia-vbct4639-73183.aspx"
     },
@@ -526,7 +525,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản pháp luật",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat-vb1291.aspx"
     },
@@ -540,7 +539,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức chi quà tặng chúc thọ, mừng thọ người cao tuổi trên địa bàn Thành phố Hồ Chí",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/Contact.aspx"
     },
@@ -554,7 +553,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản pháp luật - Về Bãi bỏ các Nghị quyết của Hội đồng nhân dân tỉnh Bình Dương và tỉnh Bà Rịa - Vũn",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-tinh-binh-duong-va-tinh-ba-ria-v-vbct1291-74977.aspx"
     },
@@ -568,7 +567,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức chi quà tặng chúc thọ, mừng thọ người cao tuổi trên địa bàn Thành phố Hồ Chí",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-muc-chi-qua-tang-chuc-tho-mung-tho-nguoi-cao-tuoi-tren-dia-ban-thanh-pho-ho-vbct1291-74981.aspx"
     },
@@ -582,7 +581,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản pháp luật - Về mức hỗ trợ đóng bảo hiểm y tế cho người cao tuổi, học sinh trên địa bàn Thành ph",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-phap-luat/ve-muc-ho-tro-dong-bao-hiem-y-te-cho-nguoi-cao-tuoi-hoc-sinh-tren-dia-ban-thanh-vbct1291-74980.aspx"
     },
@@ -596,7 +595,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-c4638.aspx"
     },
@@ -610,7 +609,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te-vb4638.aspx"
     },
@@ -624,7 +623,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Liên hệ",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/Contact.aspx"
     },
@@ -638,7 +637,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-c4638-39145.aspx"
     },
@@ -652,7 +651,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công c",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ban-hanh-huong-dan-deo-khau-trang-phong-chong-dich-benh-covid-19-tai-noi-cong-c-vbct4638-39145.aspx"
     },
@@ -666,7 +665,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Lời hiệu triệu phòng, chống dịch COVID-19 của Bộ trưởng Bộ Y tế Nguyễn Thanh Long",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-c4638-44093.aspx"
     },
@@ -680,7 +679,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Lời hiệu triệu phòng, chống dịch COVID-19 của Bộ trưởng Bộ Y tế Nguyễn Thanh Lon",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/loi-hieu-trieu-phong-chong-dich-covid-19-cua-bo-truong-bo-y-te-nguyen-thanh-long-vbct4638-44093.aspx"
     },
@@ -694,7 +693,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Thư của Bộ trưởng Bộ Y tế nhân ngày Nhà giáo Việt Nam 2021",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-c4638-52113.aspx"
     },
@@ -708,7 +707,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Thư của Bộ trưởng Bộ Y tế nhân ngày Nhà giáo Việt Nam 2021",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/thu-cua-bo-truong-bo-y-te-nhan-ngay-nha-giao-viet-nam-2021-vbct4638-52113.aspx"
     },
@@ -722,7 +721,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-c4638-24264.aspx"
     },
@@ -736,7 +735,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - về việc ban hành Hướng dẫn chẩn đoán, điều trị viêm đường hô hấp cấp tính do chủ",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-ban-hanh-huong-dan-chan-doan-dieu-tri-viem-duong-ho-hap-cap-tinh-do-chu-vbct4638-24264.aspx"
     },
@@ -750,7 +749,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-c4638-26141.aspx"
     },
@@ -764,7 +763,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Về việc Hướng dẫn đeo khẩu trang phòng chống bệnh COVID-19 cho người dân và cộng",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-huong-dan-deo-khau-trang-phong-chong-benh-covid-19-cho-nguoi-dan-va-con-vbct4638-26141.aspx"
     },
@@ -778,7 +777,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-c4638-24110.aspx"
     },
@@ -792,7 +791,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - Về việc tăng cường phòng, chống dịch bệnh viêm đường hô hấp cấp do chủng mới của",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/ve-viec-tang-cuong-phong-chong-dich-benh-viem-duong-ho-hap-cap-do-chung-moi-cua-vbct4638-24110.aspx"
     },
@@ -806,7 +805,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-c4638-23554.aspx"
     },
@@ -820,7 +819,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v bảo đảm trang bị TTB_Thuốc_VTTH cho đơn vị cách ly điều trị bệnh viêm đường ",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-bao-dam-trang-bi-ttbthuocvtth-cho-don-vi-cach-ly-dieu-tri-benh-viem-duong-ho-vbct4638-23554.aspx"
     },
@@ -834,7 +833,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Ban hành Hướng dẫn đeo khẩu trang phòng, chống dịch bệnh COVID-19 tại nơi công cộng - Văn bản QLNN về Y",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-c4638-23904.aspx"
     },
@@ -848,7 +847,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v: Đảm bảo cung cấp đủ vật tư, trang thiết bị cho phòng, chống dịch bệnh nCoV",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-dam-bao-cung-cap-du-vat-tu-trang-thiet-bi-cho-phong-chong-dich-benh-ncov-vbct4638-23904.aspx"
     },
@@ -862,7 +861,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - V/v triển khai cài đặt và sử dụng ứng dụng BlueZone",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-c4638-31679.aspx"
     },
@@ -876,7 +875,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Văn bản QLNN về Y tế - V/v triển khai cài đặt và sử dụng ứng dụng BlueZone",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-qlnn-ve-y-te/vv-trien-khai-cai-dat-va-su-dung-ung-dung-bluezone-vbct4638-31679.aspx"
     },
@@ -890,17 +889,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Medinet TP.HCM - Về việc lấy ý kiến kết quả tổng rà soát hệ thống văn bản quy phạm pháp luật của Sở Y tế - Văn bản",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://medinet.hochiminhcity.gov.vn/van-ban-vb25.aspx"
     },
     "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Address unavailable: https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Dự thảo",
@@ -908,12 +907,12 @@
       "url": "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl"
     },
     "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: UrlFetchApp: Address unavailable: https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Chỉ đạo điều hành",
@@ -921,12 +920,12 @@
       "url": "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh"
     },
     "https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-quy-pham-phap-luat (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Bộ Giáo dục và Đào tạo - Văn bản QPPL",
@@ -971,7 +970,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Tìm kiếm bổ sung văn bản Đảng (RSS)",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Adangcongsan.vn+%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22Quy+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22+OR+%22H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn%22%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -985,7 +984,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Tìm kiếm bổ sung văn bản cơ quan trung ương (RSS)",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Agov.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22C%C3%B4ng+v%C4%83n%22%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -999,7 +998,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Agov.vn+%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22%29+%22s%E1%BB%91%22+when%3A10d+-filetype%3Apdf&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1013,7 +1012,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Agov.vn+%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%22s%E1%BB%91%22+when%3A10d+-filetype%3Apdf&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1041,7 +1040,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Tìm kiếm bổ sung văn bản Quốc hội (RSS)",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Aquochoi.vn+%28%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Ph%C3%A1p+l%E1%BB%87nh%22+OR+%22V%C4%83n+b%E1%BA%A3n%22%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1069,7 +1068,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động qua Apps Script",
       "name": "UBND tỉnh Nghệ An",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://nghean.gov.vn/van-ban-chi-dao-dieu-hanh"
     },
@@ -1083,7 +1082,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Bộ Tư pháp - Danh sách phản ánh",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://paknvbqppl.moj.gov.vn/danh-sach-phan-anh"
     },
@@ -1101,12 +1100,12 @@
       "url": "https://phapluat.gov.vn/danh-sach-van-ban-qppl"
     },
     "https://phapluat.gov.vn/du-thao-vbqppl": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
@@ -1136,7 +1135,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Cục Quản lý đất đai",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://qldd.mae.gov.vn/"
     },
@@ -1150,7 +1149,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Cục Quản lý đất đai - Chỉ đạo điều hành",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://qldd.mae.gov.vn/van-ban-chi-dao-dieu-hanh.htm"
     },
@@ -1164,17 +1163,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Cổng QPPL Điện Biên (VB Trung ương) - Tài liệu họp",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://qppl.dienbien.gov.vn/qlvb/vbpq.nsf/byLoaiTaiLieuHop?OpenView=&RestrictToCategory=T%C3%A0i+li%E1%BB%87u+h%E1%BB%8Dp"
     },
     "https://quangngai.dcs.vn/vanban/van-ban-moi": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản Đảng",
       "http_status": null,
-      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x7cbcc3fc7790>, 'Connection to quangngai.dcs.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x7503c3b90450>, 'Connection to quangngai.dcs.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: TIMEOUT",
       "name": "Đảng bộ tỉnh Quảng Ngãi - Văn bản mới",
@@ -1191,7 +1190,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng Thông tin điện tử Quốc hội",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://quochoi.vn/tintuc/Pages/tin-hoat-dong-cua-quoc-hoi.aspx"
     },
@@ -1205,7 +1204,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL - Tiếp theo",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fl%25E1%25BA%25A5y-%25C3%25BD-ki%25E1%25BA%25BFn-d%25E1%25BB%25B1-th%25E1%25BA%25A3o-vbqppl1&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=50&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=2"
     },
@@ -1219,7 +1218,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 1",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=1"
     },
@@ -1233,7 +1232,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Trang kế tiếp",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=2"
     },
@@ -1247,7 +1246,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 3",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=3"
     },
@@ -1261,17 +1260,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 4",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=4"
     },
     "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=5": {
-      "attempts": 50,
+      "attempts": 51,
       "first_failed_at": "2026-11-19T12:22:10+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publish",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 5",
@@ -1283,12 +1282,13 @@
       "first_failed_at": "2026-11-19T19:05:57+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
-      "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt.",
+      "last_error": "",
       "last_failed_at": "2026-11-26T14:58:54+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: HTTP",
+      "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
+      "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cchc"
     },
     "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=1": {
@@ -1301,7 +1301,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 1",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=1"
     },
@@ -1315,7 +1315,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Trang kế tiếp",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=2"
     },
@@ -1329,7 +1329,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 4",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=4"
     },
@@ -1343,17 +1343,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Nội vụ Gia Lai",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://snv.gialai.gov.vn/laws/"
     },
     "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33434&p_cate=9263%2C6394&p_agency=6396%2C6397": {
-      "attempts": 226,
+      "attempts": 227,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "UBND tỉnh Sơn La - Văn bản 1",
@@ -1361,12 +1361,12 @@
       "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33434&p_cate=9263%2C6394&p_agency=6396%2C6397"
     },
     "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33896&p_cate=6767": {
-      "attempts": 226,
+      "attempts": 227,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
-      "http_status": 200,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33896&p_cate=6767 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "http_status": null,
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33896&p_cate=6767 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "UBND tỉnh Sơn La - Văn bản 2",
@@ -1383,7 +1383,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat"
     },
@@ -1397,7 +1397,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Nội vụ TP.HCM",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://sonoivu.hochiminhcity.gov.vn/web/snv/trang-chu"
     },
@@ -1411,17 +1411,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Xây dựng TP. Hải Phòng",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://soxaydung.haiphong.gov.vn/van-ban"
     },
     "https://soyte.caobang.gov.vn/Default.aspx?pageid=32323": {
-      "attempts": 226,
+      "attempts": 227,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": 200,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='soyte.caobang.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=32323 (Caused by NewConnectionError(\"HTTPSConnection(host='soyte.caobang.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Sở Y tế Cao Bằng",
@@ -1438,7 +1438,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Ủy ban Chứng khoán Nhà nước - Văn bản mới",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://ssc.gov.vn/webcenter/portal/ubck/pages_r/m/vnbnmi"
     },
@@ -1452,7 +1452,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Tư pháp An Giang - Văn bản cần biết",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://stp.angiang.gov.vn/van-ban-can-biet"
     },
@@ -1466,7 +1466,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Tư pháp An Giang - Văn bản cần biết - Current page",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://stp.angiang.gov.vn/van-ban-can-biet?page=0"
     },
@@ -1480,7 +1480,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Tư pháp An Giang - Văn bản cần biết - Đi đến trang kế",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://stp.angiang.gov.vn/van-ban-can-biet?page=1"
     },
@@ -1494,7 +1494,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Tư pháp An Giang - Văn bản cần biết - Go to page 3",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://stp.angiang.gov.vn/van-ban-can-biet?page=2"
     },
@@ -1508,7 +1508,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Sở Tư pháp An Giang - Văn bản cần biết - Về việc triển khai thực hiện các văn bản chỉ đạo của Ủy ban nhân dân tỉnh và Ch",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://stp.angiang.gov.vn/ve-viec-trien-khai-thuc-hien-cac-van-ban-chi-dao-cua-uy-ban-nhan-dan-tinh-va-chu-tich-uy-ban-nhan-dan-tinh"
     },
@@ -1579,12 +1579,12 @@
       "url": "https://vanban.chinhphu.vn/he-thong-van-ban?classid=1&mode=1&orggroupid=2"
     },
     "https://vanban.hanoi.gov.vn/": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x7cbcb0ef2d50>, 'Connection to vanban.hanoi.gov.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x7503dc3b4e10>, 'Connection to vanban.hanoi.gov.vn timed out. (connect timeout=8)')); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: TIMEOUT",
       "name": "Cổng văn bản UBND TP Hà Nội",
@@ -1618,12 +1618,12 @@
       "url": "https://vbpq.mof.gov.vn/"
     },
     "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": 200,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Cổng văn bản Tòa án nhân dân",
@@ -1631,12 +1631,12 @@
       "url": "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home"
     },
     "https://vimda.moh.gov.vn/van-ban-phap-quy": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vimda.moh.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-quy (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Tên miền không nằm trong danh sách nguồn đã cấu hình.",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Trang thiết bị y tế - Văn bản pháp quy",
@@ -1644,12 +1644,12 @@
       "url": "https://vimda.moh.gov.vn/van-ban-phap-quy"
     },
     "https://vnpa.moh.gov.vn/he-thong-van-ban/": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vnpa.moh.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))); Apps Script: RuntimeError: Tên miền không nằm trong danh sách nguồn đã cấu hình.",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Cục Dân số - Hệ thống văn bản",
@@ -1666,7 +1666,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh"
     },
@@ -1680,7 +1680,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 1",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=1"
     },
@@ -1694,7 +1694,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=2"
     },
@@ -1708,7 +1708,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 3",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=3"
     },
@@ -1722,7 +1722,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 3 - Danh mục văn bản",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4"
     },
@@ -1736,7 +1736,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản - 4498",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4498"
     },
@@ -1750,7 +1750,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản - 4499",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4499"
     },
@@ -1764,7 +1764,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4500"
     },
@@ -1778,7 +1778,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=4501"
     },
@@ -1792,17 +1792,17 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - 3 - 5",
-      "recovered_at": "2026-11-26T14:58:55+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/van-ban-chi-dao-dieu-hanh?_iportal_quanlyvanban_web_HienThiDanhSachVanBanTuyChinh_INSTANCE_bsla_p=5"
     },
     "https://www.laocai.gov.vn/Default.aspx?pageid=95221": {
-      "attempts": 226,
+      "attempts": 227,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
       "http_status": 200,
       "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=95221 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "UBND tỉnh Lào Cai",
@@ -1810,12 +1810,12 @@
       "url": "https://www.laocai.gov.vn/Default.aspx?pageid=95221"
     },
     "https://www.laocai.gov.vn/doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704": {
-      "attempts": 226,
+      "attempts": 227,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Địa phương",
-      "http_status": null,
-      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")); Apps Script: RuntimeError: Không thể kết nối Apps Script sau 3 lần thử: HTTPSConnectionPool(host='script.google.com', port=443): Read timed out. (read timeout=45)",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "http_status": 200,
+      "last_error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: CONNECTION",
       "name": "Đoàn ĐBQH và HĐND tỉnh Lào Cai",
@@ -1832,7 +1832,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Cục Thống kê - Văn bản pháp lý",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.nso.gov.vn/van-ban-phap-ly_gso/"
     },
@@ -1846,17 +1846,17 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Sở Giáo dục và Đào tạo Quảng Ninh",
-      "recovered_at": "2026-11-26T14:58:54+00:00",
+      "recovered_at": "2026-11-26T15:49:24+00:00",
       "status": "recovered",
       "url": "https://www.quangninh.gov.vn/So/sogiaoducdaotao/Trang/Default.aspx"
     },
     "https://www.toaan.gov.vn/webcenter/portal/tatc/home": {
-      "attempts": 242,
+      "attempts": 243,
       "first_failed_at": "2026-11-18T09:27:37+00:00",
       "group": "Văn Bản TW",
       "http_status": 200,
       "last_error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='www.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/tatc/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))",
-      "last_failed_at": "2026-11-26T14:58:54+00:00",
+      "last_failed_at": "2026-11-26T15:49:24+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: SSL",
       "name": "Tòa án nhân dân tối cao",
@@ -1864,6 +1864,6 @@
       "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
     }
   },
-  "updated_at": "2026-11-26T15:43:29+00:00",
+  "updated_at": "2026-11-26T15:49:24+00:00",
   "version": 1
 }
