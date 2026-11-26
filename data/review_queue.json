@@ -4543,7 +4543,7 @@
     },
     "https://luatvietnam.vn/dau-tu/du-thao-luat-dau-tu-cong-sua-doi-lan-5-172405-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4551,7 +4551,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T13:06:42+00:00",
       "identity": "url:https://luatvietnam.vn/dau-tu/du-thao-luat-dau-tu-cong-sua-doi-lan-5-172405-d10.html",
-      "last_checked": "2026-11-19T15:42:41+00:00",
+      "last_checked": "2026-11-26T16:53:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/dau-tu/du-thao-luat-dau-tu-cong-sua-doi-lan-5-172405-d10.html",
@@ -4795,7 +4795,7 @@
     },
     "https://luatvietnam.vn/giao-duc/du-thao-luat-giao-duc-sua-doi-lan-8-172411-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4803,7 +4803,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T13:06:42+00:00",
       "identity": "url:https://luatvietnam.vn/giao-duc/du-thao-luat-giao-duc-sua-doi-lan-8-172411-d10.html",
-      "last_checked": "2026-11-19T15:42:41+00:00",
+      "last_checked": "2026-11-26T16:53:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/giao-duc/du-thao-luat-giao-duc-sua-doi-lan-8-172411-d10.html",
@@ -4985,7 +4985,7 @@
     },
     "https://luatvietnam.vn/hinh-su/du-thao-luat-thi-hanh-an-hinh-su-sua-doi-lan-5-172144-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -4993,7 +4993,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T13:06:42+00:00",
       "identity": "url:https://luatvietnam.vn/hinh-su/du-thao-luat-thi-hanh-an-hinh-su-sua-doi-lan-5-172144-d10.html",
-      "last_checked": "2026-11-19T15:42:41+00:00",
+      "last_checked": "2026-11-26T16:53:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/hinh-su/du-thao-luat-thi-hanh-an-hinh-su-sua-doi-lan-5-172144-d10.html",
@@ -5122,7 +5122,7 @@
     },
     "https://luatvietnam.vn/media-luat/video-8-quy-dinh-dang-chu-y-ve-san-du-lieu-theo-nghi-dinh-314-2026-nd-cp-560-114320-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "314/2026/NĐ-CP",
@@ -5130,7 +5130,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T13:06:42+00:00",
       "identity": "number:314/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-19T15:42:41+00:00",
+      "last_checked": "2026-11-26T16:53:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/media-luat/video-8-quy-dinh-dang-chu-y-ve-san-du-lieu-theo-nghi-dinh-314-2026-nd-cp-560-114320-article.html",
@@ -5469,7 +5469,7 @@
     },
     "https://luatvietnam.vn/thue/du-thao-luat-quan-ly-thue-sua-doi-lan-3-172457-d10.html": {
       "agency": "LuatVietnam - Văn bản mới - Dự thảo",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -5477,7 +5477,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-18T13:06:42+00:00",
       "identity": "url:https://luatvietnam.vn/thue/du-thao-luat-quan-ly-thue-sua-doi-lan-3-172457-d10.html",
-      "last_checked": "2026-11-19T15:42:41+00:00",
+      "last_checked": "2026-11-26T16:53:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T13:06:42+00:00",
       "link": "https://luatvietnam.vn/thue/du-thao-luat-quan-ly-thue-sua-doi-lan-3-172457-d10.html",
@@ -22613,6 +22613,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T16:43:05+00:00",
+  "updated_at": "2026-11-26T16:53:08+00:00",
   "version": 1
 }
