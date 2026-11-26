@@ -15264,14 +15264,14 @@
     },
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWWFvYmpSVEt3Zm5iWXA2NnVLM2NUU2xFaGVGeDFZWEFZVWJVNXgwNlVWdkY2Q1hmU1B0Z2ZMWnF5eHFGemJxZGwwQ2ltX013WVFLM2REaWRXYURRYUpCZkFINXNXWUZFbU9qcTQ0TXBMX2l0UGxvMVFnVU5tTGVpa2IyX2dKSlNrM25NTHU4VUR1TjRNTVpOWkVzdTg0SEtkX1NjVlU5TktuejdQR3JzUGNTb0VCNGxrU1F2S2lXbw?oc=5": {
       "agency": "Thư viện Pháp luật - Google News",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "578/TB-VPCP",
       "exported_at": "2026-11-18T00:16:12+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T12:08:50+00:00",
-      "last_checked": "2026-11-19T11:03:26+00:00",
+      "last_checked": "2026-11-26T11:23:11+00:00",
       "last_error": "Liên kết tổng hợp chưa được chuyển về trang nguồn gốc; không dùng ngày Google News.",
       "last_seen": "2026-11-18T01:14:10+00:00",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWWFvYmpSVEt3Zm5iWXA2NnVLM2NUU2xFaGVGeDFZWEFZVWJVNXgwNlVWdkY2Q1hmU1B0Z2ZMWnF5eHFGemJxZGwwQ2ltX013WVFLM2REaWRXYURRYUpCZkFINXNXWUZFbU9qcTQ0TXBMX2l0UGxvMVFnVU5tTGVpa2IyX2dKSlNrM25NTHU4VUR1TjRNTVpOWkVzdTg0SEtkX1NjVlU5TktuejdQR3JzUGNTb0VCNGxrU1F2S2lXbw?oc=5",
@@ -19470,7 +19470,7 @@
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -19478,33 +19478,33 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
-      "last_checked": "2026-11-26T11:08:02+00:00",
+      "last_checked": "2026-11-26T11:23:11+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành lập, giữ chức danh, chức vụ quản lý, điều hành doanh nghiệp tư nhân, công ty trách nhiệm hữu hạn, công ty cổ phần, công ty hợp danh, hợp tác xã sau khi thôi giữ chức vụ thuộc phạm vi quản lý của Bộ Nông nghiệp và Môi trường",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
-      "last_checked": "2026-11-26T11:08:02+00:00",
+      "last_checked": "2026-11-26T11:23:11+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị sự nghiệp công lập thuộc ngành, lĩnh vực nông nghiệp và môi trường",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/van-ban-hop-nhat-thong-tu-quy-dinh-ve-luu-mau-giong-cay-trong-kiem-dinh-ruong-giong-lay-mau-vat--1020313": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
@@ -19744,39 +19744,39 @@
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
-      "last_checked": "2026-11-26T11:08:02+00:00",
+      "last_checked": "2026-11-26T11:23:11+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông tư Quy định danh mục các lĩnh vực và thời hạn người có chức vụ, quyền hạn không được thành...",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T10:43:39+00:00",
       "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
-      "last_checked": "2026-11-26T11:08:02+00:00",
+      "last_checked": "2026-11-26T11:23:11+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T10:43:39+00:00",
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-tieu-chi-phan-loai-tieu-chi-dieu-kien-thanh-lap-to-chuc-lai-giai-the-don-vi-su-1022861",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông tư Quy định tiêu chí phân loại; tiêu chí, điều kiện thành lập, tổ chức lại, giải thể đơn vị...",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/van-ban-hop-nhat-thong-tu-ban-hanh-danh-muc-doi-tuong-kiem-dich-thuc-vat-cua-nuoc-cong-hoa-xa-ho-987510": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Trang sau",
@@ -22516,6 +22516,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T11:08:02+00:00",
+  "updated_at": "2026-11-26T11:23:11+00:00",
   "version": 1
 }
