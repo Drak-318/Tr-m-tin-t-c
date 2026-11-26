@@ -2182,21 +2182,21 @@
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-tren-dia-ban-thanh-pho-dong-nai-dot-3-lan-2-65017.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-26T14:59:34+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-tren-dia-ban-thanh-pho-dong-nai-dot-3-lan-2-65017.html",
-      "last_checked": "2026-11-26T15:23:01+00:00",
+      "last_checked": "2026-11-26T15:38:10+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T14:59:34+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-tren-dia-ban-thanh-pho-dong-nai-dot-3-lan-2-65017.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo về việc cho thuê nhà do Trung tâm Phát triển quỹ đất thành phố Đồng Nai quản lý, khai thác trên địa bàn thành phố Đồng Nai - Đợt 3 (lần 2)",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Thong-bao/thong-bao-ve-viec-cho-thue-nha-doi-voi-tru-so-trung-tam-kiem-nghiem-dong-nai-va-tru-so-phong-cong-chung-so-4-do-trung-tam-phat-trien-quy-dat-thanh-pho-dong-nai-quan-ly-khai-thac-dot-4-lan-2-65000.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -2530,7 +2530,7 @@
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-noi-bo-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-y-te-65013.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -2538,15 +2538,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T14:59:34+00:00",
       "identity": "url:https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-noi-bo-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-y-te-65013.html",
-      "last_checked": "2026-11-26T15:23:01+00:00",
+      "last_checked": "2026-11-26T15:38:10+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T14:59:34+00:00",
       "link": "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-cong-bo-danh-muc-thu-tuc-hanh-chinh-noi-bo-bi-bai-bo-thuoc-pham-vi-chuc-nang-quan-ly-cua-so-y-te-65013.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quyết định về việc công bố Danh mục thủ tục hành chính nội bộ bị bãi bỏ thuộc phạm vi, chức năng quản lý của Sở Y tế",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/Tin-chi-dao-dieu-hanh/quyet-dinh-ve-viec-giao-dat-de-su-dung-vao-muc-dich-dau-tu-xay-dung-khu-dan-cu-tai-phuong-nhon-trach-thanh-pho-dong-nai-64912.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -2684,7 +2684,7 @@
     },
     "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-bo-sung-lan-thu-nhat-quy-dinh-bang-gia-dat-lan-dau-tren-dia-ban-thanh-pho-dong-nai-nam-2026-ban-hanh-kem-theo-nghi-quyet-so-28-2025-nq-hdnd-ngay-10-thang-12-nam-2025-65012.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "28/2025/NQ-HĐND",
@@ -2692,15 +2692,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T14:59:34+00:00",
       "identity": "number:28/2025/NQ-HĐND|issuer:NQ-HĐND|locality:bổ sung lần thứ nhất quy định bảng giá đất lần đầu trên địa bàn thành phố đồng nai năm 2026 ban hành kèm theo nghị quyết số 28/2025/nq-hđnd ngày 10 tháng 12 năm 2025... ubnd tỉnh đồng nai - chỉ đạo điều hành",
-      "last_checked": "2026-11-26T15:23:01+00:00",
+      "last_checked": "2026-11-26T15:38:10+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T14:59:34+00:00",
       "link": "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-bo-sung-lan-thu-nhat-quy-dinh-bang-gia-dat-lan-dau-tren-dia-ban-thanh-pho-dong-nai-nam-2026-ban-hanh-kem-theo-nghi-quyet-so-28-2025-nq-hdnd-ngay-10-thang-12-nam-2025-65012.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông cáo báo chí về Nghị quyết của Hội đồng nhân dân thành phố bổ sung lần thứ nhất quy định bảng giá đất lần đầu trên địa bàn thành phố Đồng Nai năm 2026 ban hành kèm theo Nghị quyết số 28/2025/NQ-HĐND ngày 10 tháng 12 năm 2025...",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://dongnai.gov.vn/vi/news/thong-cao-bao-chi/thong-cao-bao-chi-ve-quyet-dinh-quy-dinh-han-muc-giao-dat-nong-nghiep-cho-ho-gia-dinh-ca-nhan-dang-su-dung-dat-do-tu-khai-hoang-khong-co-tranh-chap-tren-dia-ban-thanh-pho-dong-nai-64910.html": {
       "agency": "UBND tỉnh Đồng Nai - Chỉ đạo điều hành",
@@ -5083,14 +5083,14 @@
     },
     "https://luatvietnam.vn/lao-dong/quyet-dinh-149-2026-qd-ubnd-dak-lak-quy-dinh-he-so-dieu-chinh-tang-them-tien-luong-456810-d2.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "149/2026/QĐ-UBND",
       "exported_at": "2026-11-18T00:16:13+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-17T22:54:41+00:00",
-      "last_checked": "2026-11-19T14:03:07+00:00",
+      "last_checked": "2026-11-26T15:38:10+00:00",
       "last_error": "",
       "last_seen": "2026-11-18T01:03:22+00:00",
       "link": "https://luatvietnam.vn/lao-dong/quyet-dinh-149-2026-qd-ubnd-dak-lak-quy-dinh-he-so-dieu-chinh-tang-them-tien-luong-456810-d2.html",
@@ -22518,7 +22518,7 @@
     },
     "https://www.sav.gov.vn/bai-viet/quy-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-khoa-hoc-va-cong-nghe-chuyen-giao-cong-nghe": {
       "agency": "Kiểm toán Nhà nước",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -22526,15 +22526,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-26T14:59:34+00:00",
       "identity": "url:https://www.sav.gov.vn/bai-viet/quy-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-khoa-hoc-va-cong-nghe-chuyen-giao-cong-nghe",
-      "last_checked": "2026-11-26T15:23:01+00:00",
+      "last_checked": "2026-11-26T15:38:10+00:00",
       "last_error": "",
       "last_seen": "2026-11-26T14:59:34+00:00",
       "link": "https://www.sav.gov.vn/bai-viet/quy-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-khoa-hoc-va-cong-nghe-chuyen-giao-cong-nghe",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Quy định về xử phạt vi phạm hành chính trong lĩnh vực khoa học và công nghệ, chuyển giao công nghệ",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://www.sav.gov.vn/chuyen-muc/huong-dan-kiem-toan": {
       "agency": "Kiểm toán Nhà nước",
@@ -22613,6 +22613,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-26T15:23:01+00:00",
+  "updated_at": "2026-11-26T15:38:10+00:00",
   "version": 1
 }
