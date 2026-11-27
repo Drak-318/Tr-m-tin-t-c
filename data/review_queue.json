@@ -5752,17 +5752,23 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/cong-van-9116-ct-qlnt-huong-dan-chinh-sach-thue-tndn-doi-voi-cac-co-so-kham-benh-chua-benh-cong-lap-186-116268-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "9116/CT-QLNT",
+      "exported_at": "2026-11-27T08:08:09+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:03:36+00:00",
       "identity": "number:9116/CT-QLNT|issuer:CT-QLNT|locality:",
+      "last_checked": "2026-11-27T08:08:09+00:00",
+      "last_error": "",
       "last_seen": "2026-11-27T08:03:36+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-9116-ct-qlnt-huong-dan-chinh-sach-thue-tndn-doi-voi-cac-co-so-kham-benh-chua-benh-cong-lap-186-116268-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Công văn 9116/CT-QLNT: Hướng dẫn chính sách thuế TNDN đối với các cơ sở khám, chữa bệnh công lập"
+      "status": "not_found",
+      "title": "Công văn 9116/CT-QLNT: Hướng dẫn chính sách thuế TNDN đối với các cơ sở khám, chữa bệnh công lập",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-295-2026-nd-cp-ve-dang-ky-hop-tac-xa-186-110867-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - Từ 2027, áp dụng 60 biểu mẫu mới khi đăng ký tổ hợp tác, hợp tác xã - Từ 2",
@@ -23043,6 +23049,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T08:03:36+00:00",
+  "updated_at": "2026-11-27T08:08:09+00:00",
   "version": 1
 }
