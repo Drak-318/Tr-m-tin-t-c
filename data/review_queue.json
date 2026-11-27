@@ -5750,6 +5750,20 @@
       "verification_status": "verified_included",
       "verified_date": "2026-11-16"
     },
+    "https://luatvietnam.vn/tin-van-ban-moi/cong-van-9116-ct-qlnt-huong-dan-chinh-sach-thue-tndn-doi-voi-cac-co-so-kham-benh-chua-benh-cong-lap-186-116268-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "9116/CT-QLNT",
+      "first_seen": "2026-11-27T08:03:36+00:00",
+      "identity": "number:9116/CT-QLNT|issuer:CT-QLNT|locality:",
+      "last_seen": "2026-11-27T08:03:36+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/cong-van-9116-ct-qlnt-huong-dan-chinh-sach-thue-tndn-doi-voi-cac-co-so-kham-benh-chua-benh-cong-lap-186-116268-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Công văn 9116/CT-QLNT: Hướng dẫn chính sách thuế TNDN đối với các cơ sở khám, chữa bệnh công lập"
+    },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-295-2026-nd-cp-ve-dang-ky-hop-tac-xa-186-110867-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - Từ 2027, áp dụng 60 biểu mẫu mới khi đăng ký tổ hợp tác, hợp tác xã - Từ 2",
       "attempts": 1,
@@ -22272,13 +22286,13 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/09QD-UB2020TCCB___1766463229166.pdf/8b64b2be-4ecb-24a0-5664-0165c332d91f": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "09/QĐ-UBND-TCCB",
       "first_seen": "2026-11-20T07:25:42+00:00",
       "identity": "number:09/QĐ-UBND-TCCB|issuer:QĐ-UBND-TCCB|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
-      "last_checked": "2026-11-20T08:03:08+00:00",
+      "last_checked": "2026-11-27T08:03:36+00:00",
       "last_error": "",
       "last_seen": "2026-11-20T07:25:42+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/09QD-UB2020TCCB___1766463229166.pdf/8b64b2be-4ecb-24a0-5664-0165c332d91f",
@@ -22290,13 +22304,13 @@
     },
     "https://www.dongthap.gov.vn//documents/1527809/5639658/1315QĐ-UB2020HC_1766463229165.pdf/68fae584-dc83-5ebf-f439-a6bea214f064": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành - Danh mục văn bản",
-      "attempts": 3,
+      "attempts": 4,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "1315/QĐ-UBND-HC",
       "first_seen": "2026-11-20T07:25:42+00:00",
       "identity": "number:1315/QĐ-UBND-HC|issuer:QĐ-UBND-HC|locality:đồng tháp - văn bản chỉ đạo điều hành - danh mục văn bản",
-      "last_checked": "2026-11-20T08:03:08+00:00",
+      "last_checked": "2026-11-27T08:03:36+00:00",
       "last_error": "",
       "last_seen": "2026-11-20T07:25:42+00:00",
       "link": "https://www.dongthap.gov.vn//documents/1527809/5639658/1315QĐ-UB2020HC_1766463229165.pdf/68fae584-dc83-5ebf-f439-a6bea214f064",
@@ -23029,6 +23043,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T07:33:05+00:00",
+  "updated_at": "2026-11-27T08:03:36+00:00",
   "version": 1
 }
