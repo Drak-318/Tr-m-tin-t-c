@@ -7429,6 +7429,15 @@
       "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-48-2026-tt-bnnmt-ngay-30-10-2026-cua-bo-nong-nghiep-va-moi-truong-quy-dinh-chi-tiet-994891",
       "title": "Thông tư số 48/2026/TT-BNNMT ngày 30/10/2026 của Bộ Nông nghiệp và Môi trường Quy định chi tiết một số điều và hướng dẫn thực hiẹn Nghị định số 268/2026/NĐ-CP ngày 01/7/2026 của Chính phủ về khuyến nông"
     },
+    "number:48/2026/TT-BYT|issuer:TT-BYT|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "48/2026/TT-BYT",
+      "first_seen": "2026-11-27T02:47:58+00:00",
+      "last_seen": "2026-11-27T02:47:58+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220367",
+      "title": "48/2026/TT-BYT 25/11/2026"
+    },
     "number:48/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn": {
       "agency": "Cổng QPPL Hà Tĩnh - HĐND tỉnh",
       "category": "Văn bản địa phương",
@@ -8746,6 +8755,15 @@
       "last_seen": "2026-11-18T22:25:33+00:00",
       "link": "https://stp.angiang.gov.vn/ve-viec-trien-khai-thuc-hien-cong-dien-so-70cd-ttg-ngay-15102026-cua-thu-tuong-chinh-phu-va-thong-bao-so-528tb-vpcp-ngay-15102026-cua-van-phong-chinh",
       "title": "Về việc triển khai thực hiện Công điện số 70/CĐ-TTg ngày 15/10/2026 của Thủ tướng Chính phủ và Thông báo số 528/TB-VPCP ngày 15/10/2026 của Văn phòng Chính phủ"
+    },
+    "number:7016/UBND-NC|issuer:UBND-NC|locality:cần thơ về việc tạm dừng tuyển dụng": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Công văn",
+      "doc_number": "7016/UBND-NC",
+      "first_seen": "2026-11-27T02:47:58+00:00",
+      "last_seen": "2026-11-27T02:47:58+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/cong-van-7016-ubnd-nc-can-tho-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-458023-d2.html",
+      "title": "Công văn 7016/UBND-NC của Ủy ban nhân dân Thành phố Cần Thơ về việc tạm dừng tuyển dụng, điều chuyển cán bộ, công chức trong thời gian rà soát, hoàn thiện vị trí việc làm và phương án biên chế giai đoạn 2027-2031"
     },
     "number:7020/CT-QLNT|issuer:CT-QLNT|locality:": {
       "agency": "",
@@ -12398,6 +12416,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220363": "number:38/2026/QH16|issuer:QH16|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220365": "number:610/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220366": "number:18/2026/TT-BTP|issuer:TT-BTP|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220367": "number:48/2026/TT-BYT|issuer:TT-BYT|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220372": "number:35/2015/TT-NHNN|issuer:TT-NHNN|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220373": "number:142/2020/TT-BQP|issuer:TT-BQP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220374": "url:https://chinhphu.vn/?pageid=27160&docid=220374",
@@ -13028,6 +13047,7 @@
     "https://luatvietnam.vn/hanh-chinh/cong-van-13451-bnv-ccvc-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-457251-d6.html": "number:13451/BNV-CCVC|issuer:BNV-CCVC|locality:",
     "https://luatvietnam.vn/hanh-chinh/cong-van-24485-chq-gsql-2026-cua-cuc-hai-quan-ve-kien-nghi-thu-tuc-cap-c-o-457247-d6.html": "number:24485/CHQ-GSQL|issuer:CHQ-GSQL|locality:",
     "https://luatvietnam.vn/hanh-chinh/cong-van-2738-cv-btctw-2026-de-nghi-bo-sung-hoan-thien-05-bao-cao-chuyen-de-phuc-vu-ra-soat-vi-tri-viec-lam-455954-d11.html": "number:2738-CV/BTCTW|issuer:BTCTW|locality:",
+    "https://luatvietnam.vn/hanh-chinh/cong-van-7016-ubnd-nc-can-tho-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-458023-d2.html": "number:7016/UBND-NC|issuer:UBND-NC|locality:cần thơ về việc tạm dừng tuyển dụng",
     "https://luatvietnam.vn/hanh-chinh/du-thao-luat-thuc-hien-dan-chu-o-co-so-sua-doi-cap-nhat-moi-nhat-457417-d10.html": "url:https://luatvietnam.vn/hanh-chinh/du-thao-luat-thuc-hien-dan-chu-o-co-so-sua-doi-cap-nhat-moi-nhat-457417-d10.html",
     "https://luatvietnam.vn/hanh-chinh/du-thao-luat-van-ban-quy-pham-phap-luat-quy-dinh-va-huong-dan-chi-tiet-457411-d10.html": "url:https://luatvietnam.vn/hanh-chinh/du-thao-luat-van-ban-quy-pham-phap-luat-quy-dinh-va-huong-dan-chi-tiet-457411-d10.html",
     "https://luatvietnam.vn/hanh-chinh/du-thao-nghi-dinh-sua-doi-nghi-dinh-47-2011-nd-cp-va-25-2022-nd-cp-ve-buu-chinh-455895-d10.html": "number:47/2011/NĐ-CP|issuer:NĐ-CP|locality:",
