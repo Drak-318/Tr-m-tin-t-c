@@ -90,7 +90,7 @@
     },
     "https://bdttg.gov.vn/ctmtqg/nghi-quyet-so-48-2026-nq-cp-cua-chinh-phu-tiep-tuc-keo-dai-ho-tro-muc-dong-bao-hiem-y-te-doi-voi-nguoi-dan-toc-thieu-so-dang-sinh-song-tai-dia-ban-cac-xa-khu-vuc-ii-khu-vuc-iii-thon-dac-biet-kho-khan.htm": {
       "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "48/2026/NQ-CP",
@@ -98,7 +98,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T03:58:45+00:00",
       "identity": "number:48/2026/NQ-CP|issuer:NQ-CP|locality:",
-      "last_checked": "2026-11-27T04:08:00+00:00",
+      "last_checked": "2026-11-27T04:22:55+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T03:58:45+00:00",
       "link": "https://bdttg.gov.vn/ctmtqg/nghi-quyet-so-48-2026-nq-cp-cua-chinh-phu-tiep-tuc-keo-dai-ho-tro-muc-dong-bao-hiem-y-te-doi-voi-nguoi-dan-toc-thieu-so-dang-sinh-song-tai-dia-ban-cac-xa-khu-vuc-ii-khu-vuc-iii-thon-dac-biet-kho-khan.htm",
@@ -110,7 +110,7 @@
     },
     "https://bdttg.gov.vn/ctmtqg/van-ban-hop-nhat-cua-bo-nnmt-v-v-ho-tro-to-chuc-don-vi-su-dung-lao-dong-la-nguoi-dan-toc-thieu-so-tai-khu-vuc-mien-nui-vung-dac-biet-kho-khan.htm": {
       "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -118,7 +118,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T03:58:45+00:00",
       "identity": "url:https://bdttg.gov.vn/ctmtqg/van-ban-hop-nhat-cua-bo-nnmt-v-v-ho-tro-to-chuc-don-vi-su-dung-lao-dong-la-nguoi-dan-toc-thieu-so-tai-khu-vuc-mien-nui-vung-dac-biet-kho-khan.htm",
-      "last_checked": "2026-11-27T04:07:57+00:00",
+      "last_checked": "2026-11-27T04:23:01+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T03:58:45+00:00",
       "link": "https://bdttg.gov.vn/ctmtqg/van-ban-hop-nhat-cua-bo-nnmt-v-v-ho-tro-to-chuc-don-vi-su-dung-lao-dong-la-nguoi-dan-toc-thieu-so-tai-khu-vuc-mien-nui-vung-dac-biet-kho-khan.htm",
@@ -22711,6 +22711,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T04:08:00+00:00",
+  "updated_at": "2026-11-27T04:23:01+00:00",
   "version": 1
 }
