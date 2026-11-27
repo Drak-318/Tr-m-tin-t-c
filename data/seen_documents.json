@@ -3003,6 +3003,15 @@
       "link": "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html",
       "title": "Thông tư 18/2025/TT-BVHTTDL"
     },
+    "number:18/2026/TT-BTP|issuer:TT-BTP|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "18/2026/TT-BTP",
+      "first_seen": "2026-11-27T02:08:26+00:00",
+      "last_seen": "2026-11-27T02:08:26+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220366",
+      "title": "18/2026/TT-BTP 16/11/2026"
+    },
     "number:1804/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:lyson.quangngai.gov.vn": {
       "agency": "UBND xã Lý Sơn",
       "category": "Văn bản địa phương",
@@ -9771,6 +9780,15 @@
       "link": "https://chinhphu.vn/?pageid=27160&docid=220361",
       "title": "12126/VPCP-KGVX 24/11/2026"
     },
+    "url:https://chinhphu.vn/?pageid=27160&docid=220374": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Công văn",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-27T02:08:26+00:00",
+      "last_seen": "2026-11-27T02:08:26+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220374",
+      "title": "19128/BTC-ĐTPT 26/11/2026"
+    },
     "url:https://chinhphu.vn/?pageid=27160&docid=220375": {
       "agency": "Hệ thống Văn bản Chính phủ",
       "category": "Văn bản quy phạm pháp luật",
@@ -12289,7 +12307,9 @@
     "https://chinhphu.vn/?pageid=27160&docid=220361": "url:https://chinhphu.vn/?pageid=27160&docid=220361",
     "https://chinhphu.vn/?pageid=27160&docid=220363": "number:38/2026/QH16|issuer:QH16|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220365": "number:610/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220366": "number:18/2026/TT-BTP|issuer:TT-BTP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220372": "number:35/2015/TT-NHNN|issuer:TT-NHNN|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220374": "url:https://chinhphu.vn/?pageid=27160&docid=220374",
     "https://chinhphu.vn/?pageid=27160&docid=220375": "url:https://chinhphu.vn/?pageid=27160&docid=220375",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
