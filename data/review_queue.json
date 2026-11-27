@@ -17380,25 +17380,25 @@
     },
     "https://phapluat.gov.vn/legal-documents/7e8ef7d0-ea2e-11f1-987b-31eda5424af5?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "113/2026/QĐ-UBND",
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:113/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lai châu cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:12:13+00:00",
+      "last_checked": "2026-11-27T09:24:57+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/7e8ef7d0-ea2e-11f1-987b-31eda5424af5?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/7e8ef7d0-ea2e-11f1-987b-31eda5424af5?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định số 113/2026/QĐ-UBND Ban hành Quy chế về công tác thi đua, khen thưởng trên địa bàn tỉnh Lai Châu",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://phapluat.gov.vn/legal-documents/80d66e70-ea3c-11f1-ac91-29651f15299d?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "94/2026/QĐ-UBND",
@@ -17406,15 +17406,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:94/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh thuộc lĩnh vực nội vụ cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:12:13+00:00",
+      "last_checked": "2026-11-27T09:24:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/80d66e70-ea3c-11f1-ac91-29651f15299d?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/80d66e70-ea3c-11f1-ac91-29651f15299d?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định số 94/2026/QĐ-UBND Bãi bỏ một số quyết định quy phạm pháp luật của Ủy ban nhân dân tỉnh Hà Tĩnh thuộc lĩnh vực Nội vụ",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://phapluat.gov.vn/legal-documents/8d8a92d0-e876-11f1-af34-b925f21b9966?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -17458,7 +17458,7 @@
     },
     "https://phapluat.gov.vn/legal-documents/ace48a50-ea2e-11f1-b930-a1cd124bb0cd?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "114/2026/QĐ-UBND",
@@ -17466,15 +17466,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:114/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lai châu cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:12:13+00:00",
+      "last_checked": "2026-11-27T09:24:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/ace48a50-ea2e-11f1-b930-a1cd124bb0cd?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/ace48a50-ea2e-11f1-b930-a1cd124bb0cd?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định số 114/2026/QĐ-UBND Ban hành Bảng giá tính thuế tài nguyên áp dụng trên địa bàn tỉnh Lai Châu",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://phapluat.gov.vn/legal-documents/ba22f1a0-e94a-11f1-a2dd-8d26bd33e1f0?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -17538,7 +17538,7 @@
     },
     "https://phapluat.gov.vn/legal-documents/f0d63950-ea3a-11f1-ac0b-bdcd6c8a54c3?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "123/2026/QĐ-UBND",
@@ -17546,15 +17546,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:123/2026/QĐ-UBND|issuer:QĐ-UBND|locality:huế cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:12:13+00:00",
+      "last_checked": "2026-11-27T09:24:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/f0d63950-ea3a-11f1-ac0b-bdcd6c8a54c3?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/f0d63950-ea3a-11f1-ac0b-bdcd6c8a54c3?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định số 123/2026/QĐ-UBND Ban hành quy trình bảo trì mẫu cho công trình được đầu tư xây dựng theo cơ chế tổ chức thực hiện dự án quy mô nhỏ, tính chất kỹ thuật đơn giản, có sự tham gia của người dân thuộc các chương trình mục tiêu quốc gia trên địa bàn thành phố Huế",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://phapluat.gov.vn/legal-documents/f79ffd10-e932-11f1-9d85-a31db7ceb50f?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -17576,7 +17576,7 @@
     },
     "https://phapluat.gov.vn/legal-documents/fb8bec50-ea3a-11f1-9b45-4de6b1ab6836?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "124/2026/QĐ-UBND",
@@ -17584,15 +17584,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:124/2026/QĐ-UBND|issuer:QĐ-UBND|locality:huế cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:12:13+00:00",
+      "last_checked": "2026-11-27T09:24:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/fb8bec50-ea3a-11f1-9b45-4de6b1ab6836?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/fb8bec50-ea3a-11f1-9b45-4de6b1ab6836?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "fetch_error",
+      "status": "manual_review",
       "title": "Quyết định số 124/2026/QĐ-UBND Bãi bỏ các Quyết định quy phạm pháp luật của Ủy ban nhân dân thành phố Huế",
-      "verification_status": "fetch_error"
+      "verification_status": "manual_review"
     },
     "https://phapluat.gov.vn/nghi-quyet-66": {
       "agency": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
@@ -23184,6 +23184,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T09:12:13+00:00",
+  "updated_at": "2026-11-27T09:24:58+00:00",
   "version": 1
 }
