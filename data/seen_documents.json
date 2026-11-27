@@ -2414,6 +2414,15 @@
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12195793",
       "title": "V/v triển khai Nghị định số 405/NĐ-CP của Chính phủ về quản lý, sử dụng biên chế công chức"
     },
+    "number:1566/QĐ-CT|issuer:QĐ-CT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+      "category": "Văn bản khác",
+      "doc_number": "1566/QĐ-CT",
+      "first_seen": "2026-11-27T03:08:59+00:00",
+      "last_seen": "2026-11-27T03:08:59+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/danh-gia-nghiep-vu-thue-gom-2-mon-thoi-gian-lam-bai-moi-mon-tu-60-den-180-phut-186-116247-article.html",
+      "title": "Quyết định 1566/QĐ-CT: ​Đánh giá nghiệp vụ thuế gồm 2 môn, thời gian làm bài từ 60-180 phút/môn"
+    },
     "number:15696/VPUBND-KT|issuer:VPUBND-KT|locality:đồng tháp - văn bản chỉ đạo điều hành": {
       "agency": "UBND tỉnh Đồng Tháp - Văn bản chỉ đạo điều hành",
       "category": "Dự thảo",
@@ -6364,6 +6373,24 @@
       "last_seen": "2026-11-18T08:52:59+00:00",
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=220209&classid=1&orggroupid=2",
       "title": "401/2026/NĐ-CP 04/11/2026"
+    },
+    "number:402/2026/NĐ-CP|issuer:NĐ-CP|locality:hải phòng giao chỉ tiêu s": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Uỷ ban nhân dân thành phố Hải Phòng giao chỉ tiêu s",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "402/2026/NĐ-CP",
+      "first_seen": "2026-11-27T03:08:59+00:00",
+      "last_seen": "2026-11-27T03:08:59+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/nghi-dinh-so-402-2026-nd-cp-ngay-06-11-2026-cua-chinh-phu-ve-sua-doi-bo-sung-mot-so-dieu-cua-ngh-1022968",
+      "title": "Nghị định số 402/2026/NĐ-CP ngày 06/11/2026 của Chính phủ về sửa đổi, bổ sung một số điều của Nghị định số 114/2018/NĐ-CP ngày 04 tháng 9 năm 2018 của Chính phủ về quản lý an toàn đập, hồ chứa nước"
+    },
+    "number:402/2026/NĐ-CP|issuer:NĐ-CP|locality:unresolved-source:sonnmt.haiphong.gov.vn": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "402/2026/NĐ-CP",
+      "first_seen": "2026-11-27T03:08:59+00:00",
+      "last_seen": "2026-11-27T03:08:59+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-dinh-so-402-2026-nd-cp-ngay-06-11-2026-cua-chinh-phu-ve-sua-doi-bo-sung-mot-so-dieu-cua-ngh-1022968",
+      "title": "Nghị định số 402/2026/NĐ-CP ngày 06/11/2026 của Chính phủ về sửa đổi, bổ sung một số điều của Nghị định số 114/2018/NĐ-CP ngày 04 tháng 9 năm 2018 của Chính phủ về quản lý an toàn đập, hồ chứa nước"
     },
     "number:402/NQ-CP|issuer:NQ-CP|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
@@ -12089,6 +12116,15 @@
       "link": "https://tuyengiaodanvan.vn/van-ban/huong-dan-dinh-huong-noi-dung-nghien-cuu-ly-luan-giai-doan-2026-2030-6ada3105fe13b9ef33de5241",
       "title": "Hướng dẫn về định hướng nội dung nghiên cứu lý luận giai đoạn 2026 - 2030"
     },
+    "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-quy-dinh-chi-tiet-luat-luong": {
+      "agency": "VIB Online - Dự thảo đang lấy ý kiến",
+      "category": "Dự thảo",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-27T03:08:59+00:00",
+      "last_seen": "2026-11-27T03:08:59+00:00",
+      "link": "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-quy-dinh-chi-tiet-luat-luong",
+      "title": "Dự thảo Nghị định quy định chi tiết Luật Đo lường"
+    },
     "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham": {
       "agency": "VIB Online - Dự thảo đang lấy ý kiến",
       "category": "Dự thảo",
@@ -13390,6 +13426,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-405-2026-nd-cp-ve-quan-ly-su-dung-bien-che-cong-chuc-186-115701-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-405-2026-nd-cp-ve-quan-ly-su-dung-bien-che-cong-chuc-186-115701-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-406-2026-nd-cp-ve-quan-ly-so-luong-nguoi-lam-viec-trong-don-vi-su-nghiep-cong-lap-186-115787-article.html": "legacy_sheet_url:https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-406-2026-nd-cp-ve-quan-ly-so-luong-nguoi-lam-viec-trong-don-vi-su-nghiep-cong-lap-186-115787-article.html",
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-49-2026-qh16-ve-phan-bo-ngan-sach-trung-uong-nam-2027-186-116150-article.html": "number:49/2026/QH16|issuer:QH16|locality:",
+    "https://luatvietnam.vn/tin-van-ban-moi/danh-gia-nghiep-vu-thue-gom-2-mon-thoi-gian-lam-bai-moi-mon-tu-60-den-180-phut-186-116247-article.html": "number:1566/QĐ-CT|issuer:QĐ-CT|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-hoan-thanh-di-doi-cu-dan-thuoc-dien-phai-di-doi-tai-12-du-an-truoc-31-12-2027-186-115847-article.html": "number:6301/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-yeu-cau-gui-bao-cao-an-toan-ve-sinh-lao-dong-nam-2026-truoc-05-12-2026-186-116102-article.html": "number:8933/SNV-VLATLĐ|issuer:SNV-VLATLĐ|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/tin-van-ban-moi/ha-noi-yeu-cau-gui-bao-cao-su-dung-lao-dong-nam-2026-den-het-05-12-2026-186-115859-article.html": "number:8865/SNV-VLATLĐ|issuer:SNV-VLATLĐ|locality:unresolved-source:luatvietnam.vn",
@@ -14125,8 +14162,10 @@
     "https://sonnmt.haiphong.gov.vn/lay-y-kien-gop-y-cua-to-chuc-ca-nhan/lay-y-kien-du-thao-quyet-dinh-ban-hanh-danh-muc-nghe-ngu-cu-cam-su-dung-khai-thac-thuy-san-danh--1006402": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/lay-y-kien-gop-y-cua-to-chuc-ca-nhan/lay-y-kien-du-thao-quyet-dinh-ban-hanh-danh-muc-nghe-ngu-cu-cam-su-dung-khai-thac-thuy-san-danh--1006402",
     "https://sonnmt.haiphong.gov.vn/pho-bien-chinh-sach-phap-luat": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/pho-bien-chinh-sach-phap-luat",
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/bo-nong-nghiep-va-moi-truong-ban-hanh-tieu-chi-nhan-sinh-thai-viet-nam-doi-voi-san-pham-giay-van-1010368": "number:4256/QĐ-BNNMT|issuer:QĐ-BNNMT|locality:",
+    "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/nghi-dinh-so-402-2026-nd-cp-ngay-06-11-2026-cua-chinh-phu-ve-sua-doi-bo-sung-mot-so-dieu-cua-ngh-1022968": "number:402/2026/NĐ-CP|issuer:NĐ-CP|locality:hải phòng giao chỉ tiêu s",
     "https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/so-nong-nghiep-va-moi-truong-trien-khai-ke-hoach-thuc-hien-nghi-quyet-so-19-nq-tw-ve-doi-moi-mo--1005912": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/tin-tuc-su-kien/so-nong-nghiep-va-moi-truong-trien-khai-ke-hoach-thuc-hien-nghi-quyet-so-19-nq-tw-ve-doi-moi-mo--1005912",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat": "legacy_sheet_url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat",
+    "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-dinh-so-402-2026-nd-cp-ngay-06-11-2026-cua-chinh-phu-ve-sua-doi-bo-sung-mot-so-dieu-cua-ngh-1022968": "number:402/2026/NĐ-CP|issuer:NĐ-CP|locality:unresolved-source:sonnmt.haiphong.gov.vn",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/nghi-quyet-so-32-2026-nq-hdnd-ngay-29-10-2026-cua-hoi-dong-nhan-dan-thanh-pho-hai-phong-quy-dinh-994897": "number:32/2026/NQ-HĐND|issuer:NQ-HĐND|locality:hải phòng quy định mức hỗ trợ sản xuất nông nghiệp để khôi phục sản xuất vùng bị thiệt hại do thiên tai",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853": "url:https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-quy-dinh-danh-muc-cac-linh-vuc-va-thoi-han-nguoi-co-chuc-vu-quyen-han-khong-duoc-thanh--1022853",
     "https://sonnmt.haiphong.gov.vn/van-ban-quy-pham-phap-luat/thong-tu-so-47-2026-tt-bnnmt-ngay-30-10-2026-cua-bo-nong-nghiep-va-moi-truong-quy-dinh-chi-tiet-994890": "number:47/2026/TT-BNNMT|issuer:TT-BNNMT|locality:unresolved-source:sonnmt.haiphong.gov.vn",
@@ -14346,6 +14385,7 @@
     "https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6ad8dc25faa5187abd0bedc2": "legacy_sheet_url:https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6ad8dc25faa5187abd0bedc2",
     "https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6af07611f5157a438e07cc02": "legacy_sheet_url:https://vbtc.dcs.vn/page/project/lawlibrary/home/legaldocument/detail/6af07611f5157a438e07cc02",
     "https://vibonline.com.vn/du_thao/du%cc%a3-tha%cc%89o-thong-tu-huong-da%cc%83n-nghi%cc%a3-di%cc%a3nh-2026-nd-cp-ve-kinh-doanh-casino": "number:2026/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-quy-dinh-chi-tiet-luat-luong": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-quy-dinh-chi-tiet-luat-luong",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-dieu-cua-cac-nghi-dinh-trong-linh-vuc-toan-thuc-pham",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-nghi-dinh-ve-phuong-tien-giao-thong-duong-bo-va-duong-sat": "url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-mot-nghi-dinh-ve-phuong-tien-giao-thong-duong-bo-va-duong-sat",
     "https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh": "legacy_sheet_url:https://vibonline.com.vn/du_thao/du-thao-nghi-dinh-sua-doi-bo-sung-ve-phan-cap-cat-giam-don-gian-hoa-tthc-dkkd-linh-vuc-buu-chinh",
