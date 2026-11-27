@@ -5874,7 +5874,7 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-421-2026-nd-cp-thay-the-danh-muc-san-pham-xuat-khau-la-tai-nguyen-khoang-san-186-116277-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "421/2026/NĐ-CP",
@@ -5882,7 +5882,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T09:42:56+00:00",
       "identity": "number:421/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-27T10:04:08+00:00",
+      "last_checked": "2026-11-27T10:12:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T09:42:56+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-421-2026-nd-cp-thay-the-danh-muc-san-pham-xuat-khau-la-tai-nguyen-khoang-san-186-116277-article.html",
@@ -6245,17 +6245,23 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/quyet-dinh-2320-qd-ttg-viet-nam-uu-tien-thu-hut-von-dau-tu-nuoc-ngoai-vao-5-linh-vuc-ban-dan-dien-tu-186-116278-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "2320/QĐ-TTG",
+      "exported_at": "2026-11-27T10:13:06+00:00",
+      "exported_to_sheets": true,
       "first_seen": "2026-11-27T10:04:11+00:00",
       "identity": "number:2320/QĐ-TTG|issuer:QĐ-TTG|locality:",
+      "last_checked": "2026-11-27T10:13:06+00:00",
+      "last_error": "",
       "last_seen": "2026-11-27T10:04:11+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/quyet-dinh-2320-qd-ttg-viet-nam-uu-tien-thu-hut-von-dau-tu-nuoc-ngoai-vao-5-linh-vuc-ban-dan-dien-tu-186-116278-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định 2320/QĐ-TTg: Việt Nam ưu tiên thu hút vốn đầu tư nước ngoài vào 5 lĩnh vực bán dẫn, điện tử"
+      "status": "not_found",
+      "title": "Quyết định 2320/QĐ-TTg: Việt Nam ưu tiên thu hút vốn đầu tư nước ngoài vào 5 lĩnh vực bán dẫn, điện tử",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/thong-tu-168-2026-tt-btc-bo-tai-chinh-quy-dinh-mau-ho-so-dau-thau-cho-9-nhom-goi-thau-186-115872-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -6343,20 +6349,23 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-yeu-cau-cac-co-quan-don-vi-de-xuat-muc-xep-loai-chat-luong-nam-2026-186-116275-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "11716/UBND-VX",
       "exported_at": "2026-11-27T10:04:17+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T10:04:11+00:00",
       "identity": "number:11716/UBND-VX|issuer:UBND-VX|locality:hcm yêu cầu các cơ quan",
-      "last_checked": "2026-11-27T10:04:17+00:00",
+      "last_checked": "2026-11-27T10:12:58+00:00",
+      "last_error": "",
       "last_seen": "2026-11-27T10:04:11+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/tp-hcm-yeu-cau-cac-co-quan-don-vi-de-xuat-muc-xep-loai-chat-luong-nam-2026-186-116275-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "​TP HCM yêu cầu các cơ quan, đơn vị đề xuất mức xếp loại chất lượng năm 2026"
+      "status": "not_found",
+      "title": "​TP HCM yêu cầu các cơ quan, đơn vị đề xuất mức xếp loại chất lượng năm 2026",
+      "verification_status": "not_found"
     },
     "https://luatvietnam.vn/tin-van-ban-moi/tphcm-hoan-thanh-kiem-diem-danh-gia-xep-loai-chat-luong-nam-2026-truoc-30-11-186-115954-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
@@ -17371,20 +17380,23 @@
     },
     "https://phapluat.gov.vn/legal-documents/20dd9980-ea46-11f1-b905-cb7ab7dafe3a?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "89/2026/QĐ-UBND",
       "exported_at": "2026-11-27T09:58:34+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T09:58:29+00:00",
       "identity": "number:89/2026/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:58:34+00:00",
+      "last_checked": "2026-11-27T10:12:58+00:00",
+      "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/20dd9980-ea46-11f1-b905-cb7ab7dafe3a?tabName=noidung",
       "last_seen": "2026-11-27T09:58:29+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/20dd9980-ea46-11f1-b905-cb7ab7dafe3a?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định số 89/2026/QĐ-UBND Ban hành Quy định một số nội dung về quản lý chi phí dịch vụ thu gom, phân loại, vận chuyển, xử lý chất thải, vệ sinh công cộng và dịch vụ thoát nước đô thị, khu dân cư nông thôn tập trung sử dụng ngân sách nhà nước từ nguồn kinh phí chi thường xuyên trên địa bàn tỉnh Sơn La"
+      "status": "fetch_error",
+      "title": "Quyết định số 89/2026/QĐ-UBND Ban hành Quy định một số nội dung về quản lý chi phí dịch vụ thu gom, phân loại, vận chuyển, xử lý chất thải, vệ sinh công cộng và dịch vụ thoát nước đô thị, khu dân cư nông thôn tập trung sử dụng ngân sách nhà nước từ nguồn kinh phí chi thường xuyên trên địa bàn tỉnh Sơn La",
+      "verification_status": "fetch_error"
     },
     "https://phapluat.gov.vn/legal-documents/26684690-e71a-11f1-bc06-111ab071b247?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -17408,20 +17420,23 @@
     },
     "https://phapluat.gov.vn/legal-documents/2ac415a0-ea46-11f1-86f0-c121b0ef5353?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 0,
+      "attempts": 1,
       "date_basis": "unknown",
+      "date_evidence": "",
       "doc_number": "90/2026/QĐ-UBND",
       "exported_at": "2026-11-27T09:58:34+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T09:58:29+00:00",
       "identity": "number:90/2026/QĐ-UBND|issuer:QĐ-UBND|locality:sơn la cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:58:34+00:00",
+      "last_checked": "2026-11-27T10:12:58+00:00",
+      "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/2ac415a0-ea46-11f1-86f0-c121b0ef5353?tabName=noidung",
       "last_seen": "2026-11-27T09:58:29+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/2ac415a0-ea46-11f1-86f0-c121b0ef5353?tabName=noidung",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Quyết định số 90/2026/QĐ-UBND Quy định phân công, phân cấp quản lý công viên, cây xanh, mặt nước trên địa bàn tỉnh Sơn La"
+      "status": "fetch_error",
+      "title": "Quyết định số 90/2026/QĐ-UBND Quy định phân công, phân cấp quản lý công viên, cây xanh, mặt nước trên địa bàn tỉnh Sơn La",
+      "verification_status": "fetch_error"
     },
     "https://phapluat.gov.vn/legal-documents/2c28ecf0-e96e-11f1-99a1-494bb4f0e412?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -23269,6 +23284,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T10:04:17+00:00",
+  "updated_at": "2026-11-27T10:13:06+00:00",
   "version": 1
 }
