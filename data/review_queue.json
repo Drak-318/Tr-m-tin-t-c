@@ -22117,20 +22117,24 @@
     },
     "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/quy-dinh-cua-bo-chinh-tri-ve-thuc-hien-trach-nhiem-giai-trinh-trong-dang.html": {
       "agency": "Tư liệu Văn kiện Đảng - Trang chủ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-11-27T22:43:30+0700",
       "doc_number": "Đang cập nhật",
       "exported_at": "2026-11-27T16:08:52+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T16:08:44+00:00",
       "identity": "url:https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/quy-dinh-cua-bo-chinh-tri-ve-thuc-hien-trach-nhiem-giai-trinh-trong-dang.html",
-      "last_checked": "2026-11-27T16:08:52+00:00",
+      "last_checked": "2026-11-27T16:18:28+00:00",
+      "last_error": "",
       "last_seen": "2026-11-27T16:08:44+00:00",
       "link": "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/quy-dinh-cua-bo-chinh-tri-ve-thuc-hien-trach-nhiem-giai-trinh-trong-dang.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản Đảng",
-      "status": "pending",
-      "title": "Quy định của Bộ Chính trị về thực hiện trách nhiệm giải trình trong Đảng"
+      "status": "already_seen",
+      "title": "Quy định của Bộ Chính trị về thực hiện trách nhiệm giải trình trong Đảng",
+      "verification_status": "already_seen",
+      "verified_date": "2026-11-27"
     },
     "https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/cong-van-so-2772-cv-btctw-ngay-13-11-2026-cua-ban-to-chuc-trung-uong-huong-dan-kiem-diem-danh-gia-xep-loai-nam-2026.html?categoryId=102000092": {
       "agency": "Tư liệu Văn kiện Đảng",
@@ -23441,6 +23445,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T16:08:52+00:00",
+  "updated_at": "2026-11-27T16:18:28+00:00",
   "version": 1
 }
