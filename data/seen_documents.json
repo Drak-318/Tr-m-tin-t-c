@@ -2837,6 +2837,15 @@
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12093084",
       "title": "V/v triển khai Thông tư số 165/2026/TT-BTC ngày 31/10/2026 của Bộ trưởng Bộ Tài chính về việc hướng dẫn một số nội dung về chế độ báo cáo, công bố thông tin trên thị trường tài sản mã hóa"
     },
+    "number:167/2026/QĐ-UBND|issuer:QĐ-UBND|locality:quảng ngãi ban hành quy định khuyến khích": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "167/2026/QĐ-UBND",
+      "first_seen": "2026-11-27T08:38:09+00:00",
+      "last_seen": "2026-11-27T08:38:09+00:00",
+      "link": "https://luatvietnam.vn/dau-tu/quyet-dinh-167-2026-qd-ubnd-quang-ngai-khuyen-khich-xa-hoi-hoa-dau-tu-xay-dung-ha-tang-bao-ve-moi-truong-458129-d2.html",
+      "title": "Quyết định 167/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Quảng Ngãi ban hành Quy định khuyến khích, tổ chức thực hiện xã hội hóa đầu tư xây dựng, kinh doanh và vận hành công trình hạ tầng bảo vệ môi trường đối với cụm công nghiệp trên địa bàn tỉnh Quảng Ngãi"
+    },
     "number:167/2026/QĐ-UBND|issuer:QĐ-UBND|locality:tây ninh ban hành quy định phân cấp thẩm quyền quản lý nhiệm vụ đổi mới sáng tạo sử dụng ngân sách nhà nước trên địa bàn tỉnh tây ninh luatvietnam - văn bản mới - văn bản luật việt nam": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản luật Việt Nam",
       "category": "Văn bản địa phương",
@@ -8477,6 +8486,15 @@
       "link": "https://luatvietnam.vn/khoa-hoc/van-ban-hop-nhat-59-2026-vbhn-nd-btc-2026-ve-co-che-chinh-sach-hop-tac-cong-tu-trong-khoa-hoc-cong-nghe-453228-d5.html",
       "title": "Văn bản hợp nhất 59/2026/VBHN-NĐ-BTC do Bộ Tài chính ban hành hợp nhất Nghị định về cơ chế, chính sách hợp tác công tư trong lĩnh vực phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số"
     },
+    "number:591/TB-VPCP|issuer:TB-VPCP|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản khác",
+      "doc_number": "591/TB-VPCP",
+      "first_seen": "2026-11-27T08:38:09+00:00",
+      "last_seen": "2026-11-27T08:38:09+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220379",
+      "title": "591/TB-VPCP 26/11/2026"
+    },
     "number:6-HD/BTCTW|issuer:BTCTW|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng",
       "category": "Văn bản Đảng",
@@ -12935,6 +12953,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220374": "url:https://chinhphu.vn/?pageid=27160&docid=220374",
     "https://chinhphu.vn/?pageid=27160&docid=220375": "url:https://chinhphu.vn/?pageid=27160&docid=220375",
     "https://chinhphu.vn/?pageid=27160&docid=220378": "number:2320/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220379": "number:591/TB-VPCP|issuer:TB-VPCP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220381": "number:76/CĐ-TTG|issuer:CĐ-TTG|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
@@ -13498,6 +13517,7 @@
     "https://luatvietnam.vn/dau-tu/quyet-dinh-152-2026-qd-ubnd-dak-lak-quy-trinh-bao-tri-cong-trinh-quy-mo-nho-457165-d2.html": "number:152/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk quy định quy trình bảo trì mẫu cho công trình được đầu tư xây dựng theo cơ chế tổ chức thực hiện dự án quy mô nhỏ",
     "https://luatvietnam.vn/dau-tu/quyet-dinh-154-2026-qd-ubnd-dak-lak-quy-dinh-ban-giao-tiep-nhan-cong-trinh-ha-tang-457879-d2.html": "number:154/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk ban hành quy định về bàn giao",
     "https://luatvietnam.vn/dau-tu/quyet-dinh-162-2026-qd-ubnd-ha-noi-quy-dinh-trinh-tu-thu-tuc-tham-quyen-giao-chu-dau-tu-du-an-nha-o-cho-thue-457537-d2.html": "number:162/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội quy định trình tự",
+    "https://luatvietnam.vn/dau-tu/quyet-dinh-167-2026-qd-ubnd-quang-ngai-khuyen-khich-xa-hoi-hoa-dau-tu-xay-dung-ha-tang-bao-ve-moi-truong-458129-d2.html": "number:167/2026/QĐ-UBND|issuer:QĐ-UBND|locality:quảng ngãi ban hành quy định khuyến khích",
     "https://luatvietnam.vn/dau-tu/quyet-dinh-2638-qd-ubnd-dien-bien-2026-dieu-chinh-ke-hoach-von-dau-tu-cong-nguon-ngan-sach-trung-uong-457754-d2.html": "number:2638/QĐ-UBND|issuer:QĐ-UBND|locality:điện biên điều chỉnh kế hoạch vốn đầu tư công nguồn ngân sách trung ương năm 2026 thực hiện chương trình mục tiêu quốc gia về phát triển văn hóa giai đoạn 2025 - 2035",
     "https://luatvietnam.vn/dau-tu/quyet-dinh-3691-qd-ubnd-dak-lak-2026-phe-duyet-quy-trinh-noi-bo-lien-thong-thu-tuc-dau-tu-cong-tu-456607-d2.html": "number:3691/QĐ-UBND|issuer:QĐ-UBND|locality:đắk lắk về việc phê duyệt quy trình nội bộ liên thông trong giải quyết thủ tục hành chính lĩnh vực đầu tư theo phương thức đối tác công tư thuộc phạm vi chức năng quản lý của sở tài chính thực hiện tiếp nhận",
     "https://luatvietnam.vn/dau-tu/quyet-dinh-4033-qd-ubnd-khanh-hoa-2026-phe-duyet-chuong-trinh-xuc-tien-dau-tu-2027-456410-d2.html": "legacy_sheet_url:https://luatvietnam.vn/dau-tu/quyet-dinh-4033-qd-ubnd-khanh-hoa-2026-phe-duyet-chuong-trinh-xuc-tien-dau-tu-2027-456410-d2.html",
