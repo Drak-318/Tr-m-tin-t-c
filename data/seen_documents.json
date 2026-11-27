@@ -8630,6 +8630,15 @@
       "link": "https://mst.gov.vn/van-ban-phap-luat/25543.htm",
       "title": "Xem chi tiết văn bản 60/2026/TT-BKHCN"
     },
+    "number:60/2026/TT-BNNMT|issuer:TT-BNNMT|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "60/2026/TT-BNNMT",
+      "first_seen": "2026-11-27T09:58:29+00:00",
+      "last_seen": "2026-11-27T09:58:29+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220389",
+      "title": "60/2026/TT-BNNMT 27/11/2026"
+    },
     "number:60/2026/TT-BNNMT|issuer:TT-BNNMT|locality:hải phòng giao chỉ tiêu s": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Uỷ ban nhân dân thành phố Hải Phòng giao chỉ tiêu s",
       "category": "Văn bản quy phạm pháp luật",
@@ -8711,6 +8720,15 @@
       "link": "https://mst.gov.vn/van-ban-phap-luat/25544.htm",
       "title": "Xem chi tiết văn bản 61/2026/TT-BKHCN"
     },
+    "number:61/2026/TT-BNNMT|issuer:TT-BNNMT|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "61/2026/TT-BNNMT",
+      "first_seen": "2026-11-27T09:58:29+00:00",
+      "last_seen": "2026-11-27T09:58:29+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220393",
+      "title": "61/2026/TT-BNNMT 27/11/2026"
+    },
     "number:61/2026/TT-BNNMT|issuer:TT-BNNMT|locality:hải phòng giao chỉ tiêu s": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Uỷ ban nhân dân thành phố Hải Phòng giao chỉ tiêu s",
       "category": "Văn bản quy phạm pháp luật",
@@ -8782,6 +8800,15 @@
       "last_seen": "2026-11-27T07:23:49+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/tu-01-01-2027-ha-noi-tiep-nhan-quan-ly-khu-vuc-4006-km-2-voi-1057-nguoi-tu-phu-tho-186-116263-article.html",
       "title": "​Từ 01/01/2027, Hà Nội tiếp nhận quản lý khu vực 40,06 km² với 1.057 người từ Phú Thọ"
+    },
+    "number:62/2026/TT-BNNMT|issuer:TT-BNNMT|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "62/2026/TT-BNNMT",
+      "first_seen": "2026-11-27T09:58:29+00:00",
+      "last_seen": "2026-11-27T09:58:29+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220390",
+      "title": "62/2026/TT-BNNMT 27/11/2026"
     },
     "number:62/2026/VBHN-NĐ-BTC|issuer:VBHN-NĐ-BTC|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Văn bản hợp nhất",
@@ -10508,6 +10535,15 @@
       "last_seen": "2026-11-26T10:18:19+00:00",
       "link": "https://chinhphu.vn/?pageid=27160&docid=220375",
       "title": "2309/QĐ-TTg 25/11/2026"
+    },
+    "url:https://chinhphu.vn/?pageid=27160&docid=220396": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "09/2026/",
+      "first_seen": "2026-11-27T09:58:29+00:00",
+      "last_seen": "2026-11-27T09:58:29+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220396",
+      "title": "74/2026/TT-BCT 26/11/2026"
     },
     "url:https://congan.cantho.gov.vn/hoat-dong-cong-an-co-so/cong-an-xa-chau-thanh-tuyen-truyen-giao-duc-kien-thuc-phap-luat-ve-trat-tu-an-toan-giao-thong-duong-bo-va-huong-dan-ky-nang-lai-xe-an-toan-12081.html": {
       "agency": "Công an TP. Cần Thơ",
@@ -13091,7 +13127,11 @@
     "https://chinhphu.vn/?pageid=27160&docid=220379": "number:591/TB-VPCP|issuer:TB-VPCP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220381": "number:76/CĐ-TTG|issuer:CĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220382": "number:181/2025/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220389": "number:60/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220390": "number:62/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220391": "number:2317/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220393": "number:61/2026/TT-BNNMT|issuer:TT-BNNMT|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220396": "url:https://chinhphu.vn/?pageid=27160&docid=220396",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
