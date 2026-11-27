@@ -17386,7 +17386,7 @@
       "doc_number": "113/2026/QĐ-UBND",
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:113/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lai châu cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:05:58+00:00",
+      "last_checked": "2026-11-27T09:12:13+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/7e8ef7d0-ea2e-11f1-987b-31eda5424af5?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/7e8ef7d0-ea2e-11f1-987b-31eda5424af5?tabName=noidung",
@@ -17406,7 +17406,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:94/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh thuộc lĩnh vực nội vụ cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:05:58+00:00",
+      "last_checked": "2026-11-27T09:12:13+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/80d66e70-ea3c-11f1-ac91-29651f15299d?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/80d66e70-ea3c-11f1-ac91-29651f15299d?tabName=noidung",
@@ -17466,7 +17466,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:114/2026/QĐ-UBND|issuer:QĐ-UBND|locality:lai châu cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:05:58+00:00",
+      "last_checked": "2026-11-27T09:12:13+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/ace48a50-ea2e-11f1-b930-a1cd124bb0cd?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/ace48a50-ea2e-11f1-b930-a1cd124bb0cd?tabName=noidung",
@@ -17546,7 +17546,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:123/2026/QĐ-UBND|issuer:QĐ-UBND|locality:huế cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:05:58+00:00",
+      "last_checked": "2026-11-27T09:12:13+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/f0d63950-ea3a-11f1-ac0b-bdcd6c8a54c3?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/f0d63950-ea3a-11f1-ac0b-bdcd6c8a54c3?tabName=noidung",
@@ -17584,7 +17584,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T08:53:08+00:00",
       "identity": "number:124/2026/QĐ-UBND|issuer:QĐ-UBND|locality:huế cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T09:05:58+00:00",
+      "last_checked": "2026-11-27T09:12:13+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/fb8bec50-ea3a-11f1-9b45-4de6b1ab6836?tabName=noidung",
       "last_seen": "2026-11-27T08:53:08+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/fb8bec50-ea3a-11f1-9b45-4de6b1ab6836?tabName=noidung",
@@ -23184,6 +23184,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T09:05:58+00:00",
+  "updated_at": "2026-11-27T09:12:13+00:00",
   "version": 1
 }
