@@ -5872,6 +5872,23 @@
       "title": "Đã có Nghị định 419/2026/NĐ-CP về xử phạt vi phạm lĩnh vực khoáng sản",
       "verification_status": "manual_review"
     },
+    "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-421-2026-nd-cp-thay-the-danh-muc-san-pham-xuat-khau-la-tai-nguyen-khoang-san-186-116277-article.html": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "421/2026/NĐ-CP",
+      "exported_at": "2026-11-27T09:43:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-27T09:42:56+00:00",
+      "identity": "number:421/2026/NĐ-CP|issuer:NĐ-CP|locality:",
+      "last_checked": "2026-11-27T09:43:04+00:00",
+      "last_seen": "2026-11-27T09:42:56+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-dinh-421-2026-nd-cp-thay-the-danh-muc-san-pham-xuat-khau-la-tai-nguyen-khoang-san-186-116277-article.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Đã có Nghị định 421/2026/NĐ-CP thay thế danh mục sản phẩm xuất khẩu là tài nguyên, khoáng sản"
+    },
     "https://luatvietnam.vn/tin-van-ban-moi/da-co-nghi-quyet-48-2026-qh16-ve-du-toan-ngan-sach-nha-nuoc-nam-2027-186-116148-article.html": {
       "agency": "LuatVietnam - Văn bản mới",
       "attempts": 3,
@@ -23184,6 +23201,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T09:24:58+00:00",
+  "updated_at": "2026-11-27T09:43:04+00:00",
   "version": 1
 }

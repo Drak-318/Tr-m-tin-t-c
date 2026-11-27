@@ -2080,6 +2080,15 @@
       "link": "https://luatvietnam.vn/linh-vuc-khac/quyet-dinh-144-2026-qd-ubnd-457653-d1.html",
       "title": "Quyết định 144/2026/QĐ-UBND của Ủy ban nhân dân tỉnh Thái Nguyên ban hành Quy chế quản lý, vận hành, kết nối và bảo đảm an ninh mạng đối với Hệ thống thông tin nguồn thông tin cơ sở tỉnh Thái Nguyên"
     },
+    "number:1440/QĐ-BNV|issuer:QĐ-BNV|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "1440/QĐ-BNV",
+      "first_seen": "2026-11-27T09:42:56+00:00",
+      "last_seen": "2026-11-27T09:42:56+00:00",
+      "link": "https://luatvietnam.vn/hanh-chinh/decision-1440-qd-bnv-2026-technical-guidance-on-data-sharing-and-usage-458167-d1.html",
+      "title": "Quyết định 1440/QĐ-BNV của Bộ Nội vụ ban hành Hướng dẫn kỹ thuật kết nối, cập nhật, chia sẻ, khai thác, sử dụng dữ liệu từ các cơ sở dữ liệu chuyên ngành về người có công do Bộ Nội vụ quản lý"
+    },
     "number:14444/KHSYT|issuer:KHSYT|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -4359,6 +4368,15 @@
       "last_seen": "2026-11-26T14:48:12+00:00",
       "link": "https://luatvietnam.vn/co-cau-to-chuc/quyet-dinh-2309-qd-ttg-2026-kien-toan-ban-chi-dao-ra-soat-xu-ly-vuong-mac-phap-luat-457965-d1.html",
       "title": "Quyết định 2309/QĐ-TTg của Thủ tướng Chính phủ về việc kiện toàn Ban Chỉ đạo của Chính phủ về rà soát, xử lý vướng mắc trong hệ thống pháp luật và tổ chức thi hành pháp luật"
+    },
+    "number:2317/QĐ-TTG|issuer:QĐ-TTG|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản khác",
+      "doc_number": "2317/QĐ-TTG",
+      "first_seen": "2026-11-27T09:42:56+00:00",
+      "last_seen": "2026-11-27T09:42:56+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220391",
+      "title": "2317/QĐ-TTg 25/11/2026"
     },
     "number:2320/QD-TTG|issuer:QD-TTG|locality:": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
@@ -13073,6 +13091,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220379": "number:591/TB-VPCP|issuer:TB-VPCP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220381": "number:76/CĐ-TTG|issuer:CĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220382": "number:181/2025/NĐ-CP|issuer:NĐ-CP|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220391": "number:2317/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-tiep-thu-giai-trinh-y-kien-ve-du-an-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-cua-nghi-7959",
     "https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl/ban-tong-hop-y-kien-tiep-thu-giai-trinh-y-kien-gop-y-du-thao-nghi-quyet-cua-quoc-hoi-ban-hanh-ch-7963",
@@ -13721,6 +13740,7 @@
     "https://luatvietnam.vn/hanh-chinh/cong-van-2738-cv-btctw-2026-de-nghi-bo-sung-hoan-thien-05-bao-cao-chuyen-de-phuc-vu-ra-soat-vi-tri-viec-lam-455954-d11.html": "number:2738-CV/BTCTW|issuer:BTCTW|locality:",
     "https://luatvietnam.vn/hanh-chinh/cong-van-6030-ubnd-th-an-giang-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-2026-458075-d2.html": "number:6030/UBND-TH|issuer:UBND-TH|locality:an giang về việc tạm dừng tuyển dụng",
     "https://luatvietnam.vn/hanh-chinh/cong-van-7016-ubnd-nc-can-tho-2026-tam-dung-tuyen-dung-dieu-chuyen-can-bo-cong-chuc-458023-d2.html": "number:7016/UBND-NC|issuer:UBND-NC|locality:cần thơ về việc tạm dừng tuyển dụng",
+    "https://luatvietnam.vn/hanh-chinh/decision-1440-qd-bnv-2026-technical-guidance-on-data-sharing-and-usage-458167-d1.html": "number:1440/QĐ-BNV|issuer:QĐ-BNV|locality:",
     "https://luatvietnam.vn/hanh-chinh/du-thao-luat-thuc-hien-dan-chu-o-co-so-sua-doi-cap-nhat-moi-nhat-457417-d10.html": "url:https://luatvietnam.vn/hanh-chinh/du-thao-luat-thuc-hien-dan-chu-o-co-so-sua-doi-cap-nhat-moi-nhat-457417-d10.html",
     "https://luatvietnam.vn/hanh-chinh/du-thao-luat-van-ban-quy-pham-phap-luat-quy-dinh-va-huong-dan-chi-tiet-457411-d10.html": "url:https://luatvietnam.vn/hanh-chinh/du-thao-luat-van-ban-quy-pham-phap-luat-quy-dinh-va-huong-dan-chi-tiet-457411-d10.html",
     "https://luatvietnam.vn/hanh-chinh/du-thao-nghi-dinh-sua-doi-nghi-dinh-47-2011-nd-cp-va-25-2022-nd-cp-ve-buu-chinh-455895-d10.html": "number:47/2011/NĐ-CP|issuer:NĐ-CP|locality:",
