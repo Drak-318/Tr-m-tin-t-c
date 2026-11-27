@@ -190,13 +190,13 @@
     },
     "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-dinh-muc-ktkt-linh-vuc-bttn.tt_261126190416__27112026110141_signed639313888657950018.pdf": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-27T10:59:27+00:00",
       "identity": "url:https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-dinh-muc-ktkt-linh-vuc-bttn.tt_261126190416__27112026110141_signed639313888657950018.pdf",
-      "last_checked": "2026-11-27T11:08:23+00:00",
+      "last_checked": "2026-11-27T11:23:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T10:59:27+00:00",
       "link": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-dinh-muc-ktkt-linh-vuc-bttn.tt_261126190416__27112026110141_signed639313888657950018.pdf",
@@ -208,13 +208,13 @@
     },
     "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-kien-truc-du-lieu-khung-qt-tu-dien-du-lieu-bttn.ban-hanh.tt_261126190331__27112026110542_signed639313891730658643.pdf": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Danh mục văn bản",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
       "first_seen": "2026-11-27T10:59:27+00:00",
       "identity": "url:https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-kien-truc-du-lieu-khung-qt-tu-dien-du-lieu-bttn.ban-hanh.tt_261126190331__27112026110542_signed639313891730658643.pdf",
-      "last_checked": "2026-11-27T11:08:23+00:00",
+      "last_checked": "2026-11-27T11:23:08+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T10:59:27+00:00",
       "link": "https://cdn.haiphong.gov.vn/gov-hpg/5892/tintuc/2026/11/thong-tu-kien-truc-du-lieu-khung-qt-tu-dien-du-lieu-bttn.ban-hanh.tt_261126190331__27112026110542_signed639313891730658643.pdf",
@@ -23320,6 +23320,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T11:08:23+00:00",
+  "updated_at": "2026-11-27T11:23:08+00:00",
   "version": 1
 }
