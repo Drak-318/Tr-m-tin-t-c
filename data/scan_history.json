@@ -1,122 +1,5 @@
 [
   {
-    "collected": 20962,
-    "discovered_source_candidates_added": 238,
-    "discovered_sources_activated": 3,
-    "discovered_sources_checked": 10,
-    "discovered_sources_pending": 298,
-    "duplicates": 1579,
-    "duration_seconds": 230.91,
-    "failed_source_details": [
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='www.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/tatc/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-        "http_status": 200,
-        "name": "Tòa án nhân dân tối cao",
-        "status": "Lỗi: SSL",
-        "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ce",
-        "http_status": 200,
-        "name": "Cổng văn bản Tòa án nhân dân",
-        "status": "Lỗi: SSL",
-        "url": "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/du-thao-vbqppl"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x71f7044de0d0>, 'Connection to",
-        "http_status": null,
-        "name": "Cổng văn bản UBND TP Hà Nội",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://vanban.hanoi.gov.vn/"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x71f704524a90>, 'C",
-        "http_status": null,
-        "name": "Đảng bộ tỉnh Quảng Ngãi - Văn bản mới",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://quangngai.dcs.vn/vanban/van-ban-moi"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-quy-pham-phap-luat (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Văn bản QPPL",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish ",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Chỉ đạo điều hành",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Dự thảo",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vnpa.moh.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
-        "http_status": null,
-        "name": "Cục Dân số - Hệ thống văn bản",
-        "status": "Lỗi: SSL",
-        "url": "https://vnpa.moh.gov.vn/he-thong-van-ban/"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vimda.moh.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-quy (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
-        "http_status": null,
-        "name": "Trang thiết bị y tế - Văn bản pháp quy",
-        "status": "Lỗi: SSL",
-        "url": "https://vimda.moh.gov.vn/van-ban-phap-quy"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='laichau.gov.vn', port=443): Max retries exceeded with url: /lay-y-kien-nhan-dan-ve-du-thao-van-ban (Caused by NewConnectionError(\"HTTPSConnection(host='laichau.gov.vn', port=443): Failed to",
-        "http_status": null,
-        "name": "UBND tỉnh Lai Châu - Lấy ý kiến về dự thảo văn bản QPPL",
-        "status": "Lỗi: CONNECTION",
-        "url": "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt.",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cchc"
-      }
-    ],
-    "failed_sources": 12,
-    "fallback_sources": 4,
-    "feed_supplements": 0,
-    "finished_at": "2026-11-20 17:54:02 UTC",
-    "new_to_sheets": 0,
-    "older_than_60_days": 2723,
-    "pending_sheets_exports": 0,
-    "recognized": 5102,
-    "relationship_ambiguous": 13,
-    "relationship_candidates": 164,
-    "relationship_matched_in_scan_index": 55,
-    "review_queue_total": 1037,
-    "review_to_sheets": 0,
-    "run_attempt": "1",
-    "run_id": "44786189971",
-    "scan_profile": "remaining",
-    "source_retry_queue_pending": 20,
-    "sources": 275,
-    "started_at": "2026-11-20 17:50:11 UTC",
-    "successful_sources": 263,
-    "trigger": "7,37 * * * *",
-    "unknown_date": 371
-  },
-  {
     "collected": 474,
     "discovered_source_candidates_added": 0,
     "discovered_sources_activated": 0,
@@ -107042,6 +106925,109 @@
     "sources": 17,
     "started_at": "2026-11-27 18:11:47 UTC",
     "successful_sources": 11,
+    "trigger": "workflow_dispatch",
+    "unknown_date": 18
+  },
+  {
+    "collected": 503,
+    "discovered_source_candidates_added": 0,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 0,
+    "discovered_sources_pending": 414,
+    "duplicates": 159,
+    "duration_seconds": 194.03,
+    "failed_source_details": [
+      {
+        "error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA",
+        "http_status": 200,
+        "name": "Thư viện Pháp luật - Google News",
+        "status": "Lỗi: REQUEST",
+        "url": "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi"
+      },
+      {
+        "error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Aluatvietnam.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%",
+        "http_status": 200,
+        "name": "LuatVietnam - Google News",
+        "status": "Lỗi: REQUEST",
+        "url": "https://news.google.com/rss/search?q=site%3Aluatvietnam.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi"
+      },
+      {
+        "error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Achinhphu.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Quy%E1%BA%BFt%20%C",
+        "http_status": 200,
+        "name": "Cổng TTĐT Chính phủ - Google News",
+        "status": "Lỗi: REQUEST",
+        "url": "https://news.google.com/rss/search?q=site%3Achinhphu.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20c%E1%BB%A7a%20Th%E1%BB%A7%20t%C6%B0%E1%BB%9Bng%22)%20when%3A10d&hl=vi&gl=VN&ceid=VN:vi"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh; Apps Script: RuntimeError: Website nguồn trả HTTP 403; Fallback REQUEST: HTTPSConnectionPool(host='news.google.com",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Pháp luật vừa ban hành",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403; Fallback REQUEST: HTTPSConnectionPool(host='new",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Hỏi đáp",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403; Fallback REQUEST: HTTPSConnectionPool(host",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Mã số thuế",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl; Apps Script: RuntimeError: Website nguồn trả HTTP 403; Fallback REQUEST: HTTPSConnectionP",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Lao động",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://vbpl.vn/; Apps Script: RuntimeError: Website nguồn trả HTTP 403; Fallback REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url",
+        "http_status": 403,
+        "name": "Cơ sở dữ liệu quốc gia về pháp luật - VBPL",
+        "status": "Lỗi: HTTP",
+        "url": "https://vbpl.vn/"
+      },
+      {
+        "error": "Fallback REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Amst.gov.vn%2Fvan-ban-phap-luat%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when",
+        "http_status": 200,
+        "name": "Bộ Khoa học và Công nghệ - Văn bản pháp luật",
+        "status": "Hoạt động",
+        "url": "https://mst.gov.vn/van-ban-phap-luat.htm"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x7ab9d6f935d0>, 'Connection to vbpq.mo",
+        "http_status": null,
+        "name": "Cơ sở dữ liệu VBQPPL ngành Tài chính",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://vbpq.mof.gov.vn/"
+      }
+    ],
+    "failed_sources": 10,
+    "fallback_sources": 2,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-27 18:30:06 UTC",
+    "new_to_sheets": 0,
+    "older_than_60_days": 5,
+    "pending_sheets_exports": 0,
+    "recognized": 182,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1216,
+    "review_to_sheets": 0,
+    "run_attempt": "1",
+    "run_id": "46049483919",
+    "scan_profile": "priority",
+    "source_retry_queue_pending": 26,
+    "sources": 17,
+    "started_at": "2026-11-27 18:26:52 UTC",
+    "successful_sources": 7,
     "trigger": "workflow_dispatch",
     "unknown_date": 18
   }
