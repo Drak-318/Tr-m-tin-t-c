@@ -1900,6 +1900,15 @@
       "link": "https://luatvietnam.vn/lao-dong/quyet-dinh-1412-qd-bnv-2026-cong-bo-thu-tuc-hanh-chinh-moi-va-bai-bo-linh-vuc-viec-lam-456869-d1.html",
       "title": "Quyết định 1412/QĐ-BNV của Bộ Nội vụ về việc công bố thủ tục hành chính mới ban hành, bị bãi bỏ lĩnh vực việc làm thuộc phạm vi chức năng quản lý nhà nước của Bộ Nội vụ (Thủ tục hành chính cấp tỉnh)"
     },
+    "number:142/2020/TT-BQP|issuer:TT-BQP|locality:": {
+      "agency": "Hệ thống Văn bản Chính phủ",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "142/2020/TT-BQP",
+      "first_seen": "2026-11-27T02:33:00+00:00",
+      "last_seen": "2026-11-27T02:33:00+00:00",
+      "link": "https://chinhphu.vn/?pageid=27160&docid=220373",
+      "title": "204/2026/TT-BQP 23/11/2026"
+    },
     "number:142/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn": {
       "agency": "LuatVietnam - Văn bản mới - Tra cứu văn bản",
       "category": "Văn bản địa phương",
@@ -6806,6 +6815,15 @@
       "last_seen": "2026-11-23T03:09:08+00:00",
       "link": "https://luatvietnam.vn/ngoai-giao/ke-hoach-421-kh-ubnd-bac-ninh-trien-khai-thoa-thuan-hop-tac-huu-nghi-voi-son-dong-2026-2030-457380-d2.html",
       "title": "Kế hoạch 421/KH-UBND của Ủy ban nhân dân thành phố Bắc Ninh triển khai thực hiện Thỏa thuận hợp tác hữu nghị giữa Ủy ban nhân dân thành phố Bắc Ninh và Chính quyền tỉnh Sơn Đông giai đoạn 2026-2030"
+    },
+    "number:422/2026/NĐ-CP|issuer:NĐ-CP|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản quy phạm pháp luật",
+      "doc_number": "422/2026/NĐ-CP",
+      "first_seen": "2026-11-27T02:33:00+00:00",
+      "last_seen": "2026-11-27T02:33:00+00:00",
+      "link": "https://luatvietnam.vn/chinh-sach/nghi-dinh-422-2026-nd-cp-co-che-chinh-sach-phat-trien-thanh-pho-dong-nai-458019-d1.html",
+      "title": "Nghị định 422/2026/NĐ-CP của Chính phủ quy định cơ chế, chính sách phát triển thành phố Đồng Nai"
     },
     "number:422/KH-UBND|issuer:KH-UBND|locality:ubnd xã lý sơn": {
       "agency": "UBND xã Lý Sơn",
@@ -12381,6 +12399,7 @@
     "https://chinhphu.vn/?pageid=27160&docid=220365": "number:610/QĐ-TTG|issuer:QĐ-TTG|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220366": "number:18/2026/TT-BTP|issuer:TT-BTP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220372": "number:35/2015/TT-NHNN|issuer:TT-NHNN|locality:",
+    "https://chinhphu.vn/?pageid=27160&docid=220373": "number:142/2020/TT-BQP|issuer:TT-BQP|locality:",
     "https://chinhphu.vn/?pageid=27160&docid=220374": "url:https://chinhphu.vn/?pageid=27160&docid=220374",
     "https://chinhphu.vn/?pageid=27160&docid=220375": "url:https://chinhphu.vn/?pageid=27160&docid=220375",
     "https://chinhphu.vn/du-thao-vbqppl": "legacy_sheet_url:https://chinhphu.vn/du-thao-vbqppl",
@@ -12826,6 +12845,7 @@
     "https://luatvietnam.vn/chinh-sach/ke-hoach-655-kh-ubnd-tp-ho-chi-minh-2026-trien-khai-phong-trao-thi-dua-cham-lo-nguoi-co-cong-457378-d2.html": "number:655/KH-UBND|issuer:KH-UBND|locality:hồ chí minh triển khai thực hiện phong trào thi đua “đẩy mạnh chăm lo người có công với cách mạng” trên địa bàn thành phố hồ chí minh luatvietnam - văn bản mới - văn bản luật việt nam",
     "https://luatvietnam.vn/chinh-sach/ke-hoach-689-kh-ubnd-ca-mau-trien-khai-chien-luoc-phat-trien-tre-em-2026-2035-457955-d2.html": "number:689/KH-UBND|issuer:KH-UBND|locality:cà mau triển khai thực hiện chiến lược quốc gia về phát triển trẻ em giai đoạn 2026 - 2035 và tầm nhìn đến năm 2045 trên địa bàn tỉnh cà mau luatvietnam - văn bản mới",
     "https://luatvietnam.vn/chinh-sach/ke-hoach-690-kh-ubnd-ca-mau-thuc-hien-chien-luoc-quoc-gia-ve-nguoi-cao-tuoi-den-2035-457953-d2.html": "number:690/KH-UBND|issuer:KH-UBND|locality:cà mau thực hiện chiến lược quốc gia về người cao tuổi trên địa bàn tỉnh cà mau đến năm 2035",
+    "https://luatvietnam.vn/chinh-sach/nghi-dinh-422-2026-nd-cp-co-che-chinh-sach-phat-trien-thanh-pho-dong-nai-458019-d1.html": "number:422/2026/NĐ-CP|issuer:NĐ-CP|locality:",
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-29-nq-tw-2026-doi-moi-hoan-thien-phuong-thuc-lanh-dao-cua-dang-451363-d11.html": "number:29-NQ/TW|issuer:TW|locality:",
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-30-nq-tw-2026-xay-dung-doi-ngu-can-bo-cac-cap-va-doi-moi-cong-tac-can-bo-451364-d11.html": "number:30-NQ/TW|issuer:TW|locality:",
     "https://luatvietnam.vn/chinh-sach/nghi-quyet-31-nq-tw-2026-tang-cuong-xay-dung-chinh-don-dang-va-he-thong-chinh-tri-451365-d11.html": "number:31-NQ/TW|issuer:TW|locality:",
