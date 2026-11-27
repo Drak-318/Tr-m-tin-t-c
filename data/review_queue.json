@@ -17161,7 +17161,7 @@
     },
     "https://phapluat.gov.vn/du-thao-vbqppl/du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-nguoi-lao-dong-2198": {
       "agency": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -17169,7 +17169,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T04:48:56+00:00",
       "identity": "url:https://phapluat.gov.vn/du-thao-vbqppl/du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-nguoi-lao-dong-2198",
-      "last_checked": "2026-11-27T04:58:10+00:00",
+      "last_checked": "2026-11-27T05:27:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl/du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-nguoi-lao-dong-2198",
       "last_seen": "2026-11-27T04:48:56+00:00",
       "link": "https://phapluat.gov.vn/du-thao-vbqppl/du-thao-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-nguoi-lao-dong-2198",
@@ -17361,7 +17361,7 @@
     },
     "https://phapluat.gov.vn/legal-documents/ba22f1a0-e94a-11f1-a2dd-8d26bd33e1f0?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "31/2026/TT-BNV",
@@ -17369,7 +17369,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T04:38:05+00:00",
       "identity": "number:31/2026/TT-BNV|issuer:TT-BNV|locality:",
-      "last_checked": "2026-11-27T04:49:03+00:00",
+      "last_checked": "2026-11-27T05:27:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/ba22f1a0-e94a-11f1-a2dd-8d26bd33e1f0?tabName=noidung",
       "last_seen": "2026-11-27T04:38:05+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/ba22f1a0-e94a-11f1-a2dd-8d26bd33e1f0?tabName=noidung",
@@ -17381,7 +17381,7 @@
     },
     "https://phapluat.gov.vn/legal-documents/e82c1a40-e878-11f1-983b-3fa54641d9b9?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "158/2026/QĐ-UBND",
@@ -17389,7 +17389,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T04:38:05+00:00",
       "identity": "number:158/2026/QĐ-UBND|issuer:QĐ-UBND|locality:gia lai cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T04:48:56+00:00",
+      "last_checked": "2026-11-27T05:27:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/e82c1a40-e878-11f1-983b-3fa54641d9b9?tabName=noidung",
       "last_seen": "2026-11-27T04:38:05+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/e82c1a40-e878-11f1-983b-3fa54641d9b9?tabName=noidung",
@@ -17401,13 +17401,13 @@
     },
     "https://phapluat.gov.vn/legal-documents/f79ffd10-e932-11f1-9d85-a31db7ceb50f?tabName=noidung": {
       "agency": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "127/2026/QĐ-UBND",
       "first_seen": "2026-11-27T04:38:05+00:00",
       "identity": "number:127/2026/QĐ-UBND|issuer:QĐ-UBND|locality:đồng nai cổng pháp luật quốc gia - hệ thống văn bản pháp luật",
-      "last_checked": "2026-11-27T04:48:56+00:00",
+      "last_checked": "2026-11-27T05:27:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/legal-documents/f79ffd10-e932-11f1-9d85-a31db7ceb50f?tabName=noidung",
       "last_seen": "2026-11-27T04:38:05+00:00",
       "link": "https://phapluat.gov.vn/legal-documents/f79ffd10-e932-11f1-9d85-a31db7ceb50f?tabName=noidung",
@@ -17419,7 +17419,7 @@
     },
     "https://phapluat.gov.vn/nghi-quyet-66": {
       "agency": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -17427,7 +17427,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T04:38:05+00:00",
       "identity": "url:https://phapluat.gov.vn/nghi-quyet-66",
-      "last_checked": "2026-11-27T04:48:56+00:00",
+      "last_checked": "2026-11-27T05:27:58+00:00",
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/nghi-quyet-66",
       "last_seen": "2026-11-27T04:38:05+00:00",
       "link": "https://phapluat.gov.vn/nghi-quyet-66",
@@ -22989,6 +22989,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T05:13:01+00:00",
+  "updated_at": "2026-11-27T05:27:58+00:00",
   "version": 1
 }
