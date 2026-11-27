@@ -5999,7 +5999,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-27T12:53:36+00:00",
       "identity": "number:32/2026/TT-BNV|issuer:TT-BNV|locality:",
-      "last_checked": "2026-11-27T13:27:58+00:00",
+      "last_checked": "2026-11-27T13:33:58+00:00",
       "last_error": "",
       "last_seen": "2026-11-27T12:53:36+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-thong-tu-32-2026-tt-bnv-huong-dan-xep-luong-cong-chuc-khi-tuyen-dung-tiep-nhan-va-doi-vi-tri-viec-lam-186-116286-article.html",
@@ -19863,6 +19863,23 @@
       "verification_status": "needs_manual_review",
       "verified_date": "2026-10-15"
     },
+    "https://snv.gialai.gov.vn/vi/laws/detail/Ve-viec-cong-bo-cong-khai-dieu-chinh-kinh-phi-tiet-kiem-sau-dau-thau-de-thuc-hien-so-hoa-tai-lieu-luu-tru-2652/": {
+      "agency": "Sở Nội vụ Gia Lai",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "24143/QĐ-SNV",
+      "exported_at": "2026-11-27T13:34:07+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-27T13:33:58+00:00",
+      "identity": "number:24143/QĐ-SNV|issuer:QĐ-SNV|locality:unresolved-source:snv.gialai.gov.vn",
+      "last_checked": "2026-11-27T13:34:07+00:00",
+      "last_seen": "2026-11-27T13:33:58+00:00",
+      "link": "https://snv.gialai.gov.vn/vi/laws/detail/Ve-viec-cong-bo-cong-khai-dieu-chinh-kinh-phi-tiet-kiem-sau-dau-thau-de-thuc-hien-so-hoa-tai-lieu-luu-tru-2652/",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Về việc công bố công khai điều chỉnh kinh phí tiết kiệm sau đấu thầu để thực hiện số hóa tài liệu lưu trữ"
+    },
     "https://snv.gialai.gov.vn:/vi/laws/detail/Ke-hoach-kiem-tra-cong-tac-cai-cach-hanh-chinh-nam-2026-cua-So-Noi-vu-2573/": {
       "agency": "Sở Nội vụ Gia Lai",
       "attempts": 1,
@@ -23361,6 +23378,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-27T13:27:58+00:00",
+  "updated_at": "2026-11-27T13:34:07+00:00",
   "version": 1
 }
