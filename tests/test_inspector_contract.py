@@ -6,24 +6,27 @@ class GitHubControllerContractTests(unittest.TestCase):
     def test_github_schedule_is_the_only_scheduler(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "*/5 * * * *"', workflow)
-        self.assertIn("createWorkflowDispatch", workflow)
-        self.assertIn('inputs: { profile: dispatchedProfile }', workflow)
+        scheduler = Path("scripts/github_scheduler.js").read_text(encoding="utf-8")
+        self.assertIn("createWorkflowDispatch", scheduler)
+        self.assertIn('inputs: { profile: dispatchedProfile }', scheduler)
         self.assertIn('priority_only', workflow)
         self.assertIn('full_only', workflow)
 
     def test_cooldown_is_measured_from_job_completion(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
-        self.assertIn("job.completed_at", workflow)
-        self.assertIn("priorityAge >= 5", workflow)
-        self.assertIn("Math.max(5, fullInterval)", workflow)
-        self.assertIn("globalCooldownAge < 5", workflow)
-        self.assertIn("latestAnyCompleted", workflow)
+        scheduler = Path("scripts/github_scheduler.js").read_text(encoding="utf-8")
+        self.assertIn("job.completed_at", scheduler)
+        self.assertIn("priorityAge >= 5", scheduler)
+        self.assertIn("Math.max(5, fullInterval)", scheduler)
+        self.assertIn("globalCooldownAge < 5", scheduler)
+        self.assertIn("latestAnyCompleted", scheduler)
 
     def test_controller_prevents_duplicate_and_recovers_stale_runs(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
-        self.assertIn('["queued", "pending", "in_progress"]', workflow)
-        self.assertIn("no duplicate dispatch", workflow)
-        self.assertIn("cancelWorkflowRun", workflow)
+        scheduler = Path("scripts/github_scheduler.js").read_text(encoding="utf-8")
+        self.assertIn('["queued", "pending", "in_progress"]', scheduler)
+        self.assertIn("no duplicate dispatch", scheduler)
+        self.assertIn("cancelWorkflowRun", scheduler)
 
     def test_apps_script_has_no_scheduler_or_github_credentials(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
@@ -46,7 +49,8 @@ class GitHubControllerContractTests(unittest.TestCase):
 
     def test_controller_checks_thirty_recent_runs_for_long_running_jobs(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
-        self.assertIn(".slice(0, 30)", workflow)
+        scheduler = Path("scripts/github_scheduler.js").read_text(encoding="utf-8")
+        self.assertIn(".slice(0, 30)", scheduler)
         self.assertIn("timeout-minutes: 40", workflow)
 
     def test_apps_script_is_only_a_result_receiver(self):
