@@ -268,7 +268,7 @@ class NormalizerTests(unittest.TestCase):
 
 
     def test_local_rollout_dispatch_citing_central_decree_is_excluded(self):
-        title = "Công văn số 123/SNV-VP về việc triển khai Nghị định 45/2026/NĐ-CP về cán bộ"
+        title = "Công văn số 123/SNV-VP về việc triển khai Nghị định 45/2026/NĐ-CP về chính sách hỗ trợ người dân trong lĩnh vực đất đai"
         doc_type, number = extract_doc_info(title)
         self.assertEqual((doc_type, number), ("Công văn", "123/SNV-VP"))
         keep, _ = classify_and_score(
@@ -292,9 +292,9 @@ class NormalizerTests(unittest.TestCase):
         self.assertEqual(score, 10)
 
     def test_local_cited_decree_without_original_document_title_is_not_promoted(self):
-        title = "Thông báo triển khai Nghị định 45/2026/NĐ-CP về chính sách đất đai"
+        title = "Công văn hướng dẫn triển khai Nghị định 45/2026/NĐ-CP về chính sách đất đai"
         keep, _ = classify_and_score(
-            title, "Sở Nội vụ Lâm Đồng", "Nghị định", "45/2026/NĐ-CP", "Địa phương"
+            title, "Sở Nội vụ Lâm Đồng", "Công văn", "", "Địa phương"
         )
         self.assertFalse(keep)
 
