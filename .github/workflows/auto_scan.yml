@@ -18,16 +18,6 @@ on:
         options:
           - full
           - priority
-  push:
-    branches: [main]
-    paths:
-      - 'quet_vb.py'
-      - 'scanner/**'
-      - 'requirements.txt'
-      - 'source_config.json'
-      - 'danh_sach_nguon.csv'
-      - 'priority_sources.json'
-      - '.github/workflows/auto_scan.yml'
 
 permissions:
   contents: write
@@ -35,7 +25,7 @@ permissions:
 jobs:
   scan:
     needs: priority-scan
-    if: ${{ always() && needs.priority-scan.result == 'success' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.profile == 'full') || (github.event_name == 'schedule' && github.event.schedule == '7,37 * * * *')) }}
+    if: ${{ always() && needs.priority-scan.result == 'success' && ((github.event_name == 'workflow_dispatch' && inputs.profile == 'full') || (github.event_name == 'schedule' && github.event.schedule == '7,37 * * * *')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 40
     concurrency:
@@ -114,7 +104,7 @@ jobs:
           fi
 
   priority-scan:
-    if: ${{ (github.event_name == 'schedule' && (github.event.schedule == '*/5 * * * *' || github.event.schedule == '7,37 * * * *')) || (github.event_name == 'workflow_dispatch' && (inputs.profile == 'priority' || inputs.profile == 'full')) || github.event_name == 'push' }}
+    if: ${{ (github.event_name == 'schedule' && (github.event.schedule == '*/5 * * * *' || github.event.schedule == '7,37 * * * *')) || (github.event_name == 'workflow_dispatch' && (inputs.profile == 'priority' || inputs.profile == 'full')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
