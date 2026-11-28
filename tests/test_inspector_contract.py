@@ -2,33 +2,43 @@ import unittest
 from pathlib import Path
 
 
-class InspectorContractTests(unittest.TestCase):
-    def test_apps_script_waits_for_dispatch_ack_even_when_old_completion_exists(self):
-        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
-        self.assertIn('else if (awaitingGitHub)', code)
-        self.assertNotIn('!full.lastCompletedAt && awaitingGitHub', code)
-        self.assertNotIn('!priority.lastCompletedAt && awaitingGitHub', code)
-
-    def test_completion_cooldown_is_five_minutes(self):
-        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
-        self.assertIn('POST_COMPLETION_COOLDOWN_MINUTES: 5', code)
-        self.assertIn('everyMinutes(5)', code)
-
-    def test_dispatch_marker_is_cleared_only_after_newer_completed_job(self):
-        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
-        self.assertIn('completedMs >= dispatchAt', code)
-        self.assertIn('props.deleteProperty(dispatchKey)', code)
-
-    def test_github_watchdog_is_not_a_second_dispatcher(self):
+class GitHubControllerContractTests(unittest.TestCase):
+    def test_github_schedule_is_the_only_scheduler(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
-        self.assertNotIn("createWorkflowDispatch", workflow)
-        self.assertNotIn("cancelWorkflowRun", workflow)
-        self.assertIn("actions: read", workflow)
+        self.assertIn('cron: "*/5 * * * *"', workflow)
+        self.assertIn("createWorkflowDispatch", workflow)
+        self.assertIn('inputs: { profile: dispatchedProfile }', workflow)
+        self.assertIn('priority_only', workflow)
+        self.assertIn('full_only', workflow)
 
-    def test_apps_script_is_version_14(self):
+    def test_cooldown_is_measured_from_job_completion(self):
+        workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
+        self.assertIn("job.completed_at", workflow)
+        self.assertIn("priorityAge >= 5", workflow)
+        self.assertIn("Math.max(5, fullInterval)", workflow)
+
+    def test_controller_prevents_duplicate_and_recovers_stale_runs(self):
+        workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
+        self.assertIn('["queued", "pending", "in_progress"]', workflow)
+        self.assertIn("no duplicate dispatch", workflow)
+        self.assertIn("cancelWorkflowRun", workflow)
+
+    def test_apps_script_has_no_scheduler_or_github_credentials(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
-        self.assertIn('version: "14.0"', code)
-        self.assertIn("V14.0", code)
+        self.assertNotIn("GITHUB_PAT", code)
+        self.assertNotIn("createWorkflowDispatch", code)
+        self.assertNotIn("guiLenhQuetGitHub_", code)
+        self.assertNotIn("ScriptApp.newTrigger", code)
+        self.assertIn("xoaTriggerDieuPhoiCu_", code)
+        self.assertIn('version: "15.0"', code)
+
+    def test_apps_script_is_only_a_result_receiver(self):
+        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
+        self.assertIn('data.action === "save_results"', code)
+        self.assertNotIn('data.action === "get_sources"', code)
+        self.assertNotIn('data.action === "fetch_source"', code)
+        self.assertNotIn("function getSources_(", code)
+        self.assertNotIn("function fetchSource_(", code)
 
     def test_sheets_write_has_retry_repair_logic(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
