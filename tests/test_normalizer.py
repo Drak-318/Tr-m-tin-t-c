@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime
 from scanner.normalizer import (
     canonicalize_url, extract_doc_info, classify_and_score,
-    classify_document, document_identity, is_too_old, make_fingerprint, has_document_date, extract_central_references,
+    classify_document, document_identity, is_too_old, make_fingerprint, has_document_date, extract_central_references, document_type_from_number, issuer_from_document_number,
 )
 
 class NormalizerTests(unittest.TestCase):
@@ -400,6 +400,15 @@ class NormalizerTests(unittest.TestCase):
             title, "HĐND tỉnh Lâm Đồng", doc_type, number, "Địa phương"
         )
         self.assertTrue(keep)
+
+
+
+    def test_central_reference_infers_document_type_and_issuer(self):
+        self.assertEqual(document_type_from_number("151/2026/TT-BTC"), "Thông tư")
+        self.assertEqual(issuer_from_document_number("151/2026/TT-BTC"), "Bộ Tài chính")
+        self.assertEqual(issuer_from_document_number("45/2026/NĐ-CP"), "Chính phủ")
+        self.assertEqual(issuer_from_document_number("77/2026/QĐ-TTg"), "Thủ tướng Chính phủ")
+        self.assertEqual(issuer_from_document_number("1234/BTC-TCT"), "Bộ Tài chính")
 
 
 if __name__=="__main__": unittest.main()
