@@ -382,4 +382,24 @@ class NormalizerTests(unittest.TestCase):
         )
 
 
+
+    def test_local_resolution_citing_central_decree_is_not_mistaken_for_that_decree(self):
+        title = "Nghị quyết quy định chính sách hỗ trợ đất đai khi triển khai Nghị định 45/2026/NĐ-CP"
+        doc_type, number = extract_doc_info(title)
+        self.assertEqual(doc_type, "Nghị quyết")
+        keep, _ = classify_and_score(
+            title, "HĐND tỉnh Lâm Đồng", doc_type, number, "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_hdn_resolution_with_own_number_is_retained_even_if_it_cites_decree(self):
+        title = "Nghị quyết 12/2026/NQ-HĐND quy định hỗ trợ học phí khi thực hiện Nghị định 45/2026/NĐ-CP"
+        doc_type, number = extract_doc_info(title)
+        self.assertEqual((doc_type, number), ("Nghị quyết", "12/2026/NQ-HĐND"))
+        keep, _ = classify_and_score(
+            title, "HĐND tỉnh Lâm Đồng", doc_type, number, "Địa phương"
+        )
+        self.assertTrue(keep)
+
+
 if __name__=="__main__": unittest.main()
