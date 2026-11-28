@@ -403,15 +403,16 @@ def main():
             doc_type=item.get("doc_type") or doc_type
             number=item.get("doc_number") or number
             if not doc_type: continue
+            agency=item.get("agency") or issuer_from_document_number(number) or name
             recognized+=1; totals["recognized"]+=1
-            category=classify_document(title,name,doc_type,number,link)
+            category=classify_document(title,agency,doc_type,number,link)
             if not has_document_date(title,pub):
                 # Keep undated documents for review, but deduplicate by identity
                 # across all sources in this run and across prior review-queue URLs.
                 totals["unknown_date"]+=1
-                identity=document_identity(number,title,name,link)
+                identity=document_identity(number,title,agency,link)
                 if link not in existing_review_urls and identity not in review_identity_seen:
-                    review_docs.append({"agency":name,"title":title,"doc_number":number,"link":link,
+                    review_docs.append({"agency":agency,"title":title,"doc_number":number,"link":link,
                                     "identity":identity,"published_date":"",
                                     "source_published_date":item.get("source_published_date",""),
                                     "date_basis":"unknown","date_source":item.get("date_source",""),
@@ -421,9 +422,9 @@ def main():
                         and not seen_index.contains(identity,link)
                         and not output_index.contains(identity,link)
                         and identity not in existing_review_identity):
-                    keep,priority=classify_and_score(title,name,doc_type,number,group,None)
+                    keep,priority=classify_and_score(title,agency,doc_type,number,group,None)
                     if keep:
-                        new_docs.append({"priority":priority,"doc_type":doc_type,"agency":name,"title":title,
+                        new_docs.append({"priority":priority,"doc_type":doc_type,"agency":agency,"title":title,
                                          "doc_number":number,"link":link,"fingerprint":make_fingerprint(number,title),
                                          "category":category,"identity":identity,"published_date":"",
                                          "document_date":"","date_basis":"unknown",
