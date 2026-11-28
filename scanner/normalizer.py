@@ -13,7 +13,7 @@ LOCAL_KEYWORDS = ["ubnd","ủy ban nhân dân","hđnd","hội đồng nhân dân
 # based: a local resolution or decision can still be important.
 LOCAL_RELEVANCE_TOPICS = (
     # Đất đai, quy hoạch, nhà ở và hạ tầng có tác động rộng
-    "đất đai", "bồi thường", "tái định cư", "bảng giá đất", "giá đất",
+    "đất đai", "quyền sử dụng đất", "bồi thường", "tái định cư", "bảng giá đất", "giá đất",
     "quy hoạch sử dụng đất", "kế hoạch sử dụng đất", "đấu giá quyền sử dụng đất",
     "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng", "quy hoạch đô thị",
     "đầu tư công", "giao thông", "hạ tầng", "đấu thầu", "lựa chọn nhà thầu",
