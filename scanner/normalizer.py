@@ -92,7 +92,7 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
         text, re.I
     )
     named_recipient = re.search(
-        r"\b(?:cho|đối với)\s+(?:ông|bà|cá nhân|hộ gia đình|công ty|doanh nghiệp|tổ chức|"
+        r"\b(?:cho|đối với|của)\s+(?:ông|bà|cá nhân|hộ gia đình|công ty|doanh nghiệp|tổ chức|"
         r"trung tâm|bệnh viện|trường|hợp tác xã)\b",
         text, re.I
     )
