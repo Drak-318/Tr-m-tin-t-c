@@ -38,7 +38,10 @@ function doPost(e) {
 
     const data = JSON.parse(e.postData.contents);
     const expectedToken = PropertiesService.getScriptProperties().getProperty("SHEETS_API_TOKEN");
-    if (expectedToken && String(data.token || "") !== expectedToken) {
+    if (!expectedToken) {
+      return jsonOutput_({status: "error", message: "Chưa cấu hình SHEETS_API_TOKEN trong Script Properties."});
+    }
+    if (String(data.token || "") !== expectedToken) {
       return jsonOutput_({status: "error", message: "API token không hợp lệ."});
     }
 
@@ -141,10 +144,17 @@ function saveResults_(ss, data) {
 
   const sourceStatus = Array.isArray(data.source_status) ? data.source_status : [];
   const sourceSheet = ss.getSheetByName(CONFIG.SHEET_SOURCES);
-  if (sourceSheet && sourceStatus.length) {
+  if (sourceSheet && sourceStatus.length && sourceSheet.getLastRow() >= 2) {
+    const sourceRows = sourceSheet.getRange(2, 2, sourceSheet.getLastRow() - 1, 1).getDisplayValues();
+    const rowByUrl = new Map();
+    sourceRows.forEach((row, index) => {
+      const key = normalizeUrl_(row[0]);
+      if (key && !rowByUrl.has(key)) rowByUrl.set(key, index + 2);
+    });
     sourceStatus.forEach(st => {
-      const row = Number(st.row);
-      if (row >= 2) sourceSheet.getRange(row, 5, 1, 3)
+      const key = normalizeUrl_(st.url || "");
+      const row = rowByUrl.get(key);
+      if (row) sourceSheet.getRange(row, 5, 1, 3)
         .setValues([[Number(st.count || 0), now, String(st.status || "")]]);
     });
   }
