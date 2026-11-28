@@ -289,8 +289,17 @@ jobs:
               const priorityDue = priorityAge >= 5;
               const fullInterval = fullLast && fullLast.job.conclusion !== "success" ? 5 : 30;
               const fullDue = fullAge >= Math.max(5, fullInterval);
+              const latestAnyCompleted = scanJobs
+                .filter(row => row.job.completed_at)
+                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0] || null;
+              const globalCooldownAge = latestAnyCompleted
+                ? (now - Date.parse(latestAnyCompleted.job.completed_at)) / 60000
+                : Number.POSITIVE_INFINITY;
 
-              if (priorityDue) {
+              if (globalCooldownAge < 5) {
+                action = "POST_COMPLETION_COOLDOWN";
+                reason = `Last scan completed ${Math.round(globalCooldownAge)}m ago; wait until 5 minutes after completion`;
+              } else if (priorityDue) {
                 dispatchedProfile = "priority_only";
                 action = "DISPATCH_PRIORITY";
                 reason = `No active scan; last priority completion: ${Number.isFinite(priorityAge) ? Math.round(priorityAge) + "m ago" : "not found"}`;
