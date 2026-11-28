@@ -41,7 +41,7 @@ class SourceDiscoveryTests(unittest.TestCase):
             html, "https://moha.gov.vn/", "Cơ quan Trung ương", "Văn Bản TW"
         )
         self.assertEqual(len(rows), 1)
-        self.assertEqual(rows[0]["url"], "https://snv.lamdong.gov.vn")
+        self.assertEqual(rows[0]["url"], "https://snv.lamdong.gov.vn/")
         self.assertEqual(rows[0]["group"], "Địa phương")
         self.assertEqual(rows[0]["candidate_kind"], "portal_hub")
         discovery.record_candidates(rows, path=self.path)
