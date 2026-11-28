@@ -1638,6 +1638,15 @@
       "link": "https://luatvietnam.vn/khoa-hoc/cong-van-1221-cv-dub-2026-tuyen-truyen-cuoc-thi-truc-tuyen-tim-hieu-chuyen-doi-so-quoc-gia-450888-d11.html",
       "title": "Công văn 1221-CV/ĐUB của Đảng ủy Bộ Công Thương tuyên truyền về Cuộc thi trực tuyến tìm hiểu về chuyển đổi số quốc gia trên Trang Thông tin điện tử tổng hợp Báo cáo viên"
     },
+    "number:12263/VPCP-TCCV|issuer:VPCP-TCCV|locality:": {
+      "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+      "category": "Công văn",
+      "doc_number": "12263/VPCP-TCCV",
+      "first_seen": "2026-11-28T04:38:43+00:00",
+      "last_seen": "2026-11-28T04:38:43+00:00",
+      "link": "https://luatvietnam.vn/tin-van-ban-moi/tuyet-doi-khong-lay-bien-che-hien-co-lam-can-cu-tinh-nguoc-nhu-cau-nhan-luc-giai-doan-2027-2031-186-116318-article.html",
+      "title": "​Tuyệt đối không lấy biên chế hiện có làm căn cứ tính ngược nhu cầu nhân lực giai đoạn 2027-2031"
+    },
     "number:123-KL/TW|issuer:TW|locality:": {
       "agency": "Cổng Đảng Cộng sản Việt Nam - Văn bản của Đảng",
       "category": "Văn bản Đảng",
@@ -10714,6 +10723,15 @@
       "link": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/cong-dien-ve-viec-chu-dong-ung-pho-voi-mua-lon-lu-ngap-lut-lu-quet-sat-lo-dat-khu-vuc-trung-bo.html",
       "title": "Công điện về việc chủ động ứng phó với mưa lớn, lũ, ngập lụt, lũ quét, sạt lở đất khu vực Trung Bộ"
     },
+    "number:95/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn": {
+      "agency": "LuatVietnam - Văn bản mới - Văn bản của Đảng - Danh mục tra cứu",
+      "category": "Văn bản địa phương",
+      "doc_number": "95/2026/QĐ-UBND",
+      "first_seen": "2026-11-28T04:38:43+00:00",
+      "last_seen": "2026-11-28T04:38:43+00:00",
+      "link": "https://luatvietnam.vn/thue/quyet-dinh-95-2026-qd-ubnd-ha-tinh-sua-doi-bang-gia-tinh-le-phi-truoc-ba-458226-d2.html",
+      "title": "Quyết định 95/2026/QĐ-UBND Hà Tĩnh sửa đổi Bảng giá tính lệ phí trước bạ"
+    },
     "number:9589/BCT-TTTN|issuer:BCT-TTTN|locality:": {
       "agency": "",
       "category": "legacy_sheet_record",
@@ -14656,6 +14674,7 @@
     "https://luatvietnam.vn/thue/quyet-dinh-134-2026-qd-ubnd-tuyen-quang-bang-gia-tinh-thue-tai-nguyen-456800-d2.html": "number:134/2026/QĐ-UBND|issuer:QĐ-UBND|locality:tuyên quang ban hành bảng giá tính thuế tài nguyên trên địa bàn tỉnh tuyên quang luatvietnam - văn bản mới",
     "https://luatvietnam.vn/thue/quyet-dinh-18849-qd-han-ktr2-2026-ban-hanh-noi-quy-tiep-cong-dan-tai-co-quan-thue-ha-noi-457333-d1.html": "number:18849/QĐ-HAN-KTR2|issuer:QĐ-HAN-KTR2|locality:",
     "https://luatvietnam.vn/thue/quyet-dinh-3318-qd-btc-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-khong-phu-thuoc-dia-gioi-hanh-chinh-456244-d1.html": "legacy_sheet_url:https://luatvietnam.vn/thue/quyet-dinh-3318-qd-btc-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-khong-phu-thuoc-dia-gioi-hanh-chinh-456244-d1.html",
+    "https://luatvietnam.vn/thue/quyet-dinh-95-2026-qd-ubnd-ha-tinh-sua-doi-bang-gia-tinh-le-phi-truoc-ba-458226-d2.html": "number:95/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/thue/thong-tu-149-2026-tt-btc-sua-doi-bo-sung-quy-dinh-ve-phi-le-phi-cua-bo-tai-chinh-450308-d1.html": "number:149/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/thue/thong-tu-152-2026-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-phi-va-le-phi-an-ninh-mang-450795-d1.html": "number:152/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/thue/thong-tu-154-2026-tt-btc-sua-doi-thong-tu-80-2019-tt-btc-ve-thu-tuc-hai-quan-452011-d1.html": "number:154/2026/TT-BTC|issuer:TT-BTC|locality:",
@@ -14736,6 +14755,7 @@
     "https://luatvietnam.vn/tin-van-ban-moi/tu-2027-ap-dung-60-bieu-mau-moi-khi-dang-ky-to-hop-tac-hop-tac-xa-186-115904-article.html": "number:162/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-23-11-2026-de-an-khuyen-cong-quoc-gia-duoc-tam-ung-toi-da-50-kinh-phi-ho-tro-186-116111-article.html": "number:66/2026/TT-BCT|issuer:TT-BCT|locality:",
     "https://luatvietnam.vn/tin-van-ban-moi/tu-30-11-2026-tp-hcm-bo-sung-3-nhom-cong-trinh-duoc-mien-giay-phep-xay-dung-186-116235-article.html": "number:102/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hcm bổ sung 3 nhóm công trình được miễn giấy phép xây dựng luatvietnam - văn bản mới - tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
+    "https://luatvietnam.vn/tin-van-ban-moi/tuyet-doi-khong-lay-bien-che-hien-co-lam-can-cu-tinh-nguoc-nhu-cau-nhan-luc-giai-doan-2027-2031-186-116318-article.html": "number:12263/VPCP-TCCV|issuer:VPCP-TCCV|locality:",
     "https://luatvietnam.vn/tu-phap/du-thao-luat-dau-gia-tai-san-sua-doi-cap-nhat-va-thay-doi-quan-trong-457395-d10.html": "url:https://luatvietnam.vn/tu-phap/du-thao-luat-dau-gia-tai-san-sua-doi-cap-nhat-va-thay-doi-quan-trong-457395-d10.html",
     "https://luatvietnam.vn/tu-phap/du-thao-luat-dau-gia-tai-san-sua-doi-cap-nhat-va-thay-doi-quan-trong-457396-d10.html": "url:https://luatvietnam.vn/tu-phap/du-thao-luat-dau-gia-tai-san-sua-doi-cap-nhat-va-thay-doi-quan-trong-457396-d10.html",
     "https://luatvietnam.vn/tu-phap/du-thao-luat-dinh-danh-va-xac-thuc-dien-tu-quy-dinh-va-huong-dan-chi-tiet-457401-d10.html": "url:https://luatvietnam.vn/tu-phap/du-thao-luat-dinh-danh-va-xac-thuc-dien-tu-quy-dinh-va-huong-dan-chi-tiet-457401-d10.html",
