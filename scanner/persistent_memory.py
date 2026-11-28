@@ -211,10 +211,13 @@ def record_source_scan_result(source,result):
     failed=bool(result.get("error")) and not result.get("fallback_used")
     if failed:
         previous=items.get(url,{})
+        same_failure_streak=previous.get("status")=="retry_pending"
+        attempts=int(previous.get("attempts",0))+1 if same_failure_streak else 1
+        first_failed_at=previous.get("first_failed_at",now) if same_failure_streak else now
         items[url]={
             "name":source.get("name",""),"url":url,"group":source.get("group",""),
-            "status":"retry_pending","attempts":int(previous.get("attempts",0))+1,
-            "first_failed_at":previous.get("first_failed_at",now),"last_failed_at":now,
+            "status":"retry_pending","attempts":attempts,
+            "first_failed_at":first_failed_at,"last_failed_at":now,
             "last_error":str(result.get("error",""))[:500],
             "last_status":str(result.get("status",""))[:100],
             "http_status":result.get("http_status"),
