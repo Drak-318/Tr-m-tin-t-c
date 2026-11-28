@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from .normalizer import clean_title, canonicalize_url, extract_doc_info
+from .normalizer import (clean_title, canonicalize_url, extract_doc_info,
+    document_type_from_number, issuer_from_document_number)
 
 HEADERS = {"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
            "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -332,6 +333,19 @@ def _resolve_aggregator_links(session,items,config=None):
             if item: resolved.append(item)
     return resolved
 
+def is_original_central_document_result(title,link,reference):
+    """Require the result itself to be the cited instrument, not a rollout article."""
+    clean=clean_title(title)
+    compact=re.sub(r"\s+","",clean).upper()
+    expected=re.sub(r"\s+","",str(reference)).upper()
+    if expected not in compact:
+        return False
+    doc_type=document_type_from_number(reference)
+    if doc_type and re.match(r"^\s*"+re.escape(doc_type)+r"\b",clean,re.I):
+        return True
+    return bool(re.match(r"^\s*"+re.escape(str(reference))+r"\b",clean,re.I))
+
+
 def search_central_reference_web(reference,allowed_domains,max_results=8):
     """Best-effort exact-reference search, restricted to approved central hosts.
 
@@ -362,13 +376,16 @@ def search_central_reference_web(reference,allowed_domains,max_results=8):
                 continue
             body=clean_title(row.get("body",""))
             searchable=re.sub(r"\s+","",f"{title} {body} {link}").upper()
-            if expected not in searchable:
+            if expected not in searchable or not is_original_central_document_result(title,link,reference):
                 continue
             seen.add(link)
             items.append({
                 "title":title,"link":link,"published_date":None,
                 "source_published_date":row.get("date") or "",
                 "date_source":"DDGS search result; not an issuance date",
+                "doc_number":reference,
+                "doc_type":document_type_from_number(reference),
+                "agency":issuer_from_document_number(reference),
                 "source":"DDGS"
             })
         return items,""
