@@ -36,6 +36,22 @@ const EXTRA_ALLOWED_SOURCE_HOSTS = new Set([
   "sxd.lamdong.gov.vn",
   "sxd.quangngai.gov.vn",
   "nhandan.vn",
+  "kcb.vn",
+  "baocaotaichinh.vn",
+  "tayninh.gov.vn",
+  "haiphong.baohiemxahoi.gov.vn",
+  "snn.quangngai.gov.vn",
+  "snnmt.bacninh.gov.vn",
+  "thuvienphapluat.vn",
+  "bacninh.gov.vn",
+  "snv.bacninh.gov.vn",
+  "stp.bacninh.gov.vn",
+  "stc.bacninh.gov.vn",
+  "syt.bacninh.gov.vn",
+  "sxd.bacninh.gov.vn",
+  "sgddt.bacninh.gov.vn",
+  "yentrung.bacninh.gov.vn",
+  "ninhbinh.gov.vn",
   "news.google.com"
 ]);
 
