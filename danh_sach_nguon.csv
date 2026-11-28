@@ -121,3 +121,7 @@ name,url,group,enabled
 "Dò tìm văn bản các cơ quan Lâm Đồng - RSS tham chiếu","https://news.google.com/rss/search?q=site%3Alamdong.gov.vn%20(%22v%C4%83n%20b%E1%BA%A3n%22%20OR%20%22quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22c%C3%B4ng%20v%C4%83n%22%20OR%20%22th%C3%B4ng%20t%C6%B0%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi","Địa phương","true"
 "Cổng TTĐT Bộ ngành - RSS PDF (URL gốc 10 ngày)","https://news.google.com/rss/search?q=site%3Agov.vn%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22)%20%22s%E1%BB%91%22%20when%3A10d%20-filetype%3Apdf&hl=vi&gl=VN&ceid=VN:vi","Văn Bản TW","true"
 "Cổng TTĐT Bộ ngành - RSS PDF (URL gốc 10 ngày, có dự thảo)","https://news.google.com/rss/search?q=site%3Agov.vn%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22%20OR%20%22D%E1%BB%B1%20th%E1%BA%A3o%22)%20%22s%E1%BB%91%22%20when%3A10d%20-filetype%3Apdf&hl=vi&gl=VN&ceid=VN:vi","Văn Bản TW","true"
+"Cổng TTĐT tỉnh Ninh Bình - Danh mục văn bản","https://ninhbinh.gov.vn/Default.aspx?pageid=27172","Địa phương","true"
+"Thư viện Pháp luật - Hỏi đáp pháp luật","https://thuvienphapluat.vn/hoi-dap-phap-luat","Văn Bản TW","true"
+"Thư viện Pháp luật - Pháp luật thuế","https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue","Văn Bản TW","true"
+"Thư viện Pháp luật - Lao động tiền lương","https://thuvienphapluat.vn/lao-dong-tien-luong/","Văn Bản TW","true"
