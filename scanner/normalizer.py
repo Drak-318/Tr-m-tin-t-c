@@ -26,12 +26,12 @@ LOCAL_RELEVANCE_TOPICS = (
     "viện phí", "giá dịch vụ y tế", "dược", "cơ sở khám bệnh",
     # Thuế, hải quan, hóa đơn và chứng từ
     "thuế", "hải quan", "hóa đơn", "hoá đơn", "chứng từ", "kê khai thuế",
-    "quản lý thuế", "lệ phí trước bạ", "thu ngân sách",
+    "quản lý thuế", "lệ phí trước bạ", 
     # Lao động và an sinh liên quan trực tiếp
     "lao động", "người lao động", "hợp đồng lao động", "tiền công",
     "bảo hiểm xã hội", "trợ cấp thất nghiệp", "an toàn lao động",
     # Đất đai, nhà ở và quy hoạch
-    "đất đai", "đất", "quyền sử dụng đất", "sử dụng đất", "giao đất", "thuê đất", "tiền thuê đất", "thu hồi đất", "bồi thường", "tái định cư", "bảng giá đất",
+    "đất đai", "quyền sử dụng đất", "sử dụng đất", "giao đất", "thuê đất", "tiền thuê đất", "thu hồi đất", "bồi thường", "tái định cư", "bảng giá đất",
     "giá đất", "quy hoạch sử dụng đất", "kế hoạch sử dụng đất",
     "đấu giá quyền sử dụng đất", "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng",
     "quy hoạch đô thị", "quy hoạch tỉnh", "quy hoạch phân khu",
@@ -112,11 +112,20 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
     return any(re.search(pattern, text, re.I) for pattern in PERSONAL_OR_ONE_OFF_PATTERNS)
 
 def is_relevant_local_document(title, doc_type="", doc_number=""):
-    """True only for locally issued items on the user's selected public-interest topics."""
+    """Keep local instruments only for the user's selected public-interest fields.
+
+    Match complete phrases rather than arbitrary substrings: generic wording
+    such as "đất trên tuyến đường" must not make a flood-response dispatch a
+    land-policy document.
+    """
     text = clean_title(f"{title} {doc_type} {doc_number}").casefold()
     if is_personal_or_one_off_document(title, doc_type, doc_number):
         return False
-    return any(topic in text for topic in LOCAL_RELEVANCE_TOPICS)
+    for topic in LOCAL_RELEVANCE_TOPICS:
+        phrase = re.escape(topic.casefold())
+        if re.search(r"(?<![0-9a-zà-ỹ])" + phrase + r"(?![0-9a-zà-ỹ])", text):
+            return True
+    return False
 
 
 def canonicalize_url(url):
