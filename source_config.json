@@ -86,37 +86,6 @@
         "https://news.google.com/rss/search?q=site%3Avimda.moh.gov.vn%2Fvan-ban-phap-quy%20(th%C3%B4ng%20t%C6%B0%20OR%20quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20OR%20ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh)%20when%3A30d&hl=vi&gl=VN&ceid=VN%3Avi"
       ]
     },
-    "https://news.google.com/rss/search?q=site%3Agov.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
-      "mode": "rss",
-      "max_items": 60,
-      "allowed_final_domains": [
-        "chinhphu.vn",
-        "moj.gov.vn",
-        "mof.gov.vn",
-        "moet.gov.vn",
-        "moh.gov.vn",
-        "mae.gov.vn",
-        "moit.gov.vn",
-        "sbv.gov.vn",
-        "sav.gov.vn",
-        "vbpl.vn",
-        "phapluat.gov.vn",
-        "ppd.gov.vn",
-        "baohiemxahoi.gov.vn",
-        "thanhtra.gov.vn",
-        "mps.gov.vn",
-        "moc.gov.vn",
-        "bvhttdl.gov.vn",
-        "moha.gov.vn",
-        "mfa.gov.vn",
-        "mod.gov.vn",
-        "mic.gov.vn",
-        "baochinhphu.vn",
-        "lamdong.gov.vn",
-        "thanhhoa.gov.vn",
-        "quangngai.gov.vn"
-      ]
-    },
     "https://news.google.com/rss/search?q=site%3Aquochoi.vn%20(%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Ph%C3%A1p%20l%E1%BB%87nh%22%20OR%20%22V%C4%83n%20b%E1%BA%A3n%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
       "mode": "rss",
       "max_items": 60,
@@ -235,34 +204,6 @@
         "lamdong.gov.vn"
       ]
     },
-    "https://news.google.com/rss/search?q=(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22NQ-CP%22%20OR%20%22NQ-H%C4%90ND%22)%20(site%3Aquochoi.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Agov.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
-      "mode": "rss",
-      "max_items": 100,
-      "max_pages": 1,
-      "allowed_final_domains": [
-        "quochoi.vn",
-        "chinhphu.vn",
-        "vanban.chinhphu.vn",
-        "vbpl.vn",
-        "phapluat.gov.vn",
-        "gov.vn",
-        "lamdong.gov.vn"
-      ]
-    },
-    "https://news.google.com/rss/search?q=site%3Alamdong.gov.vn%20(%22v%C4%83n%20b%E1%BA%A3n%22%20OR%20%22quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22c%C3%B4ng%20v%C4%83n%22%20OR%20%22th%C3%B4ng%20t%C6%B0%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
-      "mode": "rss",
-      "max_items": 100,
-      "max_pages": 1,
-      "allowed_final_domains": [
-        "quochoi.vn",
-        "chinhphu.vn",
-        "vanban.chinhphu.vn",
-        "vbpl.vn",
-        "phapluat.gov.vn",
-        "gov.vn",
-        "lamdong.gov.vn"
-      ]
-    },
     "https://kiemtra-phapche.hcm.edu.vn/van-ban/vbplus/41014/0/0/0": {
       "max_pages": 3,
       "max_items": 150,
@@ -334,6 +275,39 @@
       "max_pages": 2,
       "max_items": 120,
       "follow_pagination": false
+    },
+    "https://news.google.com/rss/search?q=(%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20%C4%91i%E1%BB%87n%22%20OR%20%22D%E1%BB%B1%20th%E1%BA%A3o%22)%20(site%3Aquochoi.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Amoha.gov.vn%20OR%20site%3Amoc.gov.vn%20OR%20site%3Amps.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 100,
+      "max_pages": 1,
+      "allowed_final_domains": [
+        "quochoi.vn",
+        "vanban.chinhphu.vn",
+        "chinhphu.vn",
+        "vbpl.vn",
+        "phapluat.gov.vn",
+        "moj.gov.vn",
+        "mof.gov.vn",
+        "moet.gov.vn",
+        "moh.gov.vn",
+        "mae.gov.vn",
+        "moit.gov.vn",
+        "sbv.gov.vn",
+        "moha.gov.vn",
+        "moc.gov.vn",
+        "mps.gov.vn",
+        "baochinhphu.vn",
+        "sav.gov.vn",
+        "baohiemxahoi.gov.vn"
+      ]
+    },
+    "https://news.google.com/rss/search?q=site%3Alamdong.gov.vn%20(%22%C4%91%E1%BA%A5t%20%C4%91ai%22%20OR%20%22b%E1%BA%A3ng%20gi%C3%A1%20%C4%91%E1%BA%A5t%22%20OR%20%22h%E1%BB%8Dc%20ph%C3%AD%22%20OR%20%22vi%E1%BB%87n%20ph%C3%AD%22%20OR%20%22gi%C3%A1%20d%E1%BB%8Bch%20v%E1%BB%A5%20y%20t%E1%BA%BF%22%20OR%20%22tuy%E1%BB%83n%20sinh%22%20OR%20%22quy%20ho%E1%BA%A1ch%22%20OR%20%22%C4%91%E1%BA%A7u%20t%C6%B0%20c%C3%B4ng%22%20OR%20%22%C4%91%E1%BA%A5u%20th%E1%BA%A7u%22%20OR%20%22thu%E1%BA%BF%22%20OR%20%22ph%C3%AD%22%20OR%20%22nh%C3%A0%20%E1%BB%9F%20x%C3%A3%20h%E1%BB%99i%22%20OR%20%22ng%C6%B0%E1%BB%9Di%20lao%20%C4%91%E1%BB%99ng%22%20OR%20%22tr%E1%BB%A3%20c%E1%BA%A5p%22%20OR%20%22thi%C3%AAn%20tai%22%20OR%20%22m%C3%B4i%20tr%C6%B0%E1%BB%9Dng%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 80,
+      "max_pages": 1,
+      "allowed_final_domains": [
+        "lamdong.gov.vn"
+      ]
     }
   }
 }
