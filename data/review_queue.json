@@ -22234,20 +22234,24 @@
     },
     "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung/v-v-trien-khai-cac-van-ban-cua-bo-xay-dung-ve-bao-dam-an-toan-trong-cong-tac-dao-tao-thuc-hanh-lai-xe.html": {
       "agency": "Sở Xây dựng Quảng Ngãi",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "source_posted_date_detail",
+      "date_evidence": "article:published_time=2026-11-19T16:43:31+07:00",
       "doc_number": "7882/SXD-VTPT",
       "exported_at": "2026-11-28T05:16:30+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:16:24+00:00",
       "identity": "number:7882/SXD-VTPT|issuer:SXD-VTPT|locality:unresolved-source:sxd.quangngai.gov.vn",
-      "last_checked": "2026-11-28T05:16:30+00:00",
+      "last_checked": "2026-11-28T05:26:50+00:00",
+      "last_error": "",
       "last_seen": "2026-11-28T05:16:24+00:00",
       "link": "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung/v-v-trien-khai-cac-van-ban-cua-bo-xay-dung-ve-bao-dam-an-toan-trong-cong-tac-dao-tao-thuc-hanh-lai-xe.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "pending",
-      "title": "V/v triển khai các văn bản của Bộ Xây dựng về bảo đảm an toàn trong công tác đào tạo thực hành lái xe"
+      "status": "manual_review",
+      "title": "V/v triển khai các văn bản của Bộ Xây dựng về bảo đảm an toàn trong công tác đào tạo thực hành lái xe",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-11-19"
     },
     "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/quy-dinh-cua-ban-bi-thu-ve-sinh-hoat-dang-truc-tuyen.html": {
       "agency": "Tư liệu Văn kiện Đảng - Trang chủ",
@@ -23600,6 +23604,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T05:16:30+00:00",
+  "updated_at": "2026-11-28T05:26:50+00:00",
   "version": 1
 }
