@@ -134,7 +134,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Hệ thống Văn bản Chính phủ",
-      "recovered_at": "2026-11-28T12:17:09+00:00",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
       "status": "recovered",
       "url": "https://chinhphu.vn/he-thong-van-ban"
     },
@@ -1006,12 +1006,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": 200,
-      "last_error": "Fallback REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Amst.gov.vn%2Fvan-ban-phap-luat%20(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 34,
       "last_status": "Hoạt động",
       "name": "Bộ Khoa học và Công nghệ - Văn bản pháp luật",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://mst.gov.vn/van-ban-phap-luat.htm"
     },
     "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22C%C3%B4ng+%C4%91i%E1%BB%87n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1019,12 +1020,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20%C4%91i%E1%BB%87n%22%20OR%20%22D%E1%BB%B1%20th%E1%BA%A3o%22)%20(site%3Aquochoi.vn%20OR%20site%3Avanba",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Tìm kiếm văn bản cấp Trung ương - RSS",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22C%C3%B4ng+%C4%91i%E1%BB%87n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt+s%E1%BB%91%22+OR+%22Lu%E1%BA%ADt+%C4%91%C6%B0%E1%BB%A3c+Qu%E1%BB%91c+h%E1%BB%99i+th%C3%B4ng+qua%22+OR+%22Lu%E1%BA%ADt+m%E1%BB%9Bi%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1032,12 +1034,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Lu%E1%BA%ADt%20s%E1%BB%91%22%20OR%20%22Lu%E1%BA%ADt%20%C4%91%C6%B0%E1%BB%A3c%20Qu%E1%BB%91c%20h%E1%BB%99i%20th%C3%B4ng%20qua%22%20OR%20%22Lu%E1%BA%ADt%20m%E1%BB%9Bi%22)%20(site%3Aquochoi.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error resp",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Luật mới - Google News RSS",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt+s%E1%BB%91%22+OR+%22Lu%E1%BA%ADt+%C4%91%C6%B0%E1%BB%A3c+Qu%E1%BB%91c+h%E1%BB%99i+th%C3%B4ng+qua%22+OR+%22Lu%E1%BA%ADt+m%E1%BB%9Bi%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-H%C4%90ND%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Agov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1045,12 +1048,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Địa phương",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22NQ-CP%22%20OR%20%22NQ-H%C4%90ND%22)%20(site%3Aquochoi.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Agov.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Nghị quyết các cấp trên .gov.vn - RSS tham chiếu",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-H%C4%90ND%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Agov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-QH%22+OR+%22NQ-UBTVQH%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1058,12 +1062,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22NQ-CP%22%20OR%20%22NQ-QH%22%20OR%20%22NQ-UBTVQH%22)%20(site%3Aquochoi.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Amoj.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Nghị quyết cấp Trung ương - Google News RSS",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-QH%22+OR+%22NQ-UBTVQH%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1071,12 +1076,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22%20OR%20%22D%E1%BB%B1%20th%E1%BA%A3o%22)%20(site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Amoha.gov.vn%20OR%20site%3Amoc.gov.vn%20OR%20site%3Amps.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A6",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22Th%C3%B4ng+t%C6%B0+s%E1%BB%91%22+OR+%22C%C3%B4ng+v%C4%83n+s%E1%BB%91%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1084,12 +1090,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%22%20OR%20%22C%C3%B4ng%20v%C4%83n%20s%E1%BB%91%22)%20(site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Amoha.gov.vn%20OR%20site%3Amoc.gov.vn%20OR%20sit",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22Th%C3%B4ng+t%C6%B0+s%E1%BB%91%22+OR+%22C%C3%B4ng+v%C4%83n+s%E1%BB%91%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=site%3Achinhphu.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh+c%E1%BB%A7a+Th%E1%BB%A7+t%C6%B0%E1%BB%9Bng%22%29+when%3A10d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1097,12 +1104,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Achinhphu.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20c%E1%BB%A7a%20Th%E1%BB%A7%20t%C6%B0%E1%BB%9Bng%22)%20when%3A10d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Chính phủ - Google News",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Achinhphu.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh+c%E1%BB%A7a+Th%E1%BB%A7+t%C6%B0%E1%BB%9Bng%22%29+when%3A10d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=site%3Adangcongsan.vn+%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22Quy+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22+OR+%22H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn%22%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1188,12 +1196,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Aluatvietnam.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ch%E1%BB%89%20th%E1%BB%8B%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "LuatVietnam - Google News",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Aluatvietnam.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://news.google.com/rss/search?q=site%3Aquochoi.vn+%28%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Ph%C3%A1p+l%E1%BB%87nh%22+OR+%22V%C4%83n+b%E1%BA%A3n%22%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi": {
@@ -1214,12 +1223,13 @@
       "first_failed_at": "2026-11-28T12:17:09+00:00",
       "group": "Văn Bản TW",
       "http_status": null,
-      "last_error": "REQUEST: HTTPSConnectionPool(host='news.google.com', port=443): Max retries exceeded with url: /rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Lu%E1%BA%ADt%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22)%20when%3A14d&hl=vi&gl=VN&ceid=VN:vi (Caused by ResponseError('too many 503 error responses'))",
+      "last_error": "",
       "last_failed_at": "2026-11-28T12:17:09+00:00",
       "last_items_collected": 0,
-      "last_status": "Lỗi: REQUEST",
+      "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Thư viện Pháp luật - Google News",
-      "status": "retry_pending",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
+      "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
     "https://nghean.gov.vn/van-ban-chi-dao-dieu-hanh": {
@@ -1263,12 +1273,12 @@
       "url": "https://paknvbqppl.moj.gov.vn/danh-sach-phan-anh"
     },
     "https://phapluat.gov.vn/danh-sach-van-ban-qppl": {
-      "attempts": 2,
+      "attempts": 3,
       "first_failed_at": "2026-11-28T11:52:06+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/danh-sach-van-ban-qppl",
-      "last_failed_at": "2026-11-28T12:07:20+00:00",
+      "last_failed_at": "2026-11-28T12:32:20+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
@@ -1290,12 +1300,12 @@
       "url": "https://phapluat.gov.vn/du-thao-vbqppl"
     },
     "https://phapluat.gov.vn/he-thong-van-ban-phap-luat": {
-      "attempts": 2,
+      "attempts": 3,
       "first_failed_at": "2026-11-28T11:52:06+00:00",
       "group": "Văn Bản TW",
       "http_status": 403,
       "last_error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/he-thong-van-ban-phap-luat",
-      "last_failed_at": "2026-11-28T12:07:20+00:00",
+      "last_failed_at": "2026-11-28T12:32:20+00:00",
       "last_items_collected": 0,
       "last_status": "Lỗi: HTTP",
       "name": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
@@ -2074,7 +2084,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
-      "recovered_at": "2026-11-28T12:17:09+00:00",
+      "recovered_at": "2026-11-28T12:32:20+00:00",
       "status": "recovered",
       "url": "https://vanban.chinhphu.vn/he-thong-van-ban?classid=1&mode=1&orggroupid=2"
     },
@@ -2377,6 +2387,6 @@
       "url": "https://yentrung.bacninh.gov.vn/van-ban"
     }
   },
-  "updated_at": "2026-11-28T12:17:09+00:00",
+  "updated_at": "2026-11-28T12:32:20+00:00",
   "version": 1
 }
