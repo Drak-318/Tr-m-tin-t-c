@@ -303,12 +303,22 @@ function xoaTriggerDieuPhoiCu_() {
     "quetNhanhTrungUongTuSheet",
     "caiDatHenGio15Phut"
   ];
-  ScriptApp.getProjectTriggers().forEach(function(trigger) {
-    if (obsoleteHandlers.indexOf(trigger.getHandlerFunction()) !== -1) {
-      ScriptApp.deleteTrigger(trigger);
-    }
-  });
-  props.setProperty("GITHUB_ONLY_TRIGGERS_CLEANED", "1");
+  try {
+    ScriptApp.getProjectTriggers().forEach(function(trigger) {
+      if (obsoleteHandlers.indexOf(trigger.getHandlerFunction()) !== -1) {
+        ScriptApp.deleteTrigger(trigger);
+      }
+    });
+    props.setProperty("GITHUB_ONLY_TRIGGERS_CLEANED", "1");
+  } catch (error) {
+    Logger.log("Khong the tu dong xoa trigger cu; khong anh huong viec nhan ket qua: " + error);
+  }
+}
+
+/** Legacy trigger: cleanup only; never dispatches or controls scans. */
+function thanhTraTramTinTuc() {
+  xoaTriggerDieuPhoiCu_();
+  Logger.log("Lich quet do GitHub Actions quan ly.");
 }
 
 /**
