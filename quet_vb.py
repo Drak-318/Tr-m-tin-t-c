@@ -18,7 +18,7 @@ from scanner.normalizer import (
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
     is_local_scope, extract_central_references, document_type_from_number, issuer_from_document_number,
 )
-from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script, get_sources_and_memory
+from scanner.sheets import save_results_in_batches
 from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
@@ -80,22 +80,7 @@ def main():
         )
 
     state=load_state()
-    # Also consult the identities already persisted in the Google Sheets memory
-    # tab. This bridges records saved before/without the current GitHub memory.
-    if WEB_APP_URL:
-        try:
-            _sheet_sources, sheet_links, _sheet_numbers, sheet_identities = get_sources_and_memory()
-            state.setdefault("documents", {}).update({
-                identity: state.get("documents", {}).get(identity, {})
-                for identity in sheet_identities if identity
-            })
-            state.setdefault("urls", {}).update({
-                link: state.get("urls", {}).get(link, "sheets-memory")
-                for link in sheet_links if link
-            })
-            print(f"[SHEETS-MEMORY] Đã nạp {len(sheet_identities)} định danh và {len(sheet_links)} URL từ bộ nhớ Google Sheets.")
-        except Exception as exc:
-            print(f"[SHEETS-MEMORY-WARNING] Không đọc được bộ nhớ Sheets; tiếp tục bằng bộ nhớ GitHub: {str(exc)[:250]}")
+    # GitHub persistent memory is the sole source of truth for deduplication.
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
     print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Profile: {profile} | Tổng nguồn: {len(sources)} | Đồng thời: {max_workers}")
@@ -108,7 +93,7 @@ def main():
             source_config["max_items"]=min(max(1,int(source_config.get("max_items",200))),120)
             source_config["timeout_connect"]=min(max(3,int(source_config.get("timeout_connect",8))),6)
             source_config["timeout_read"]=min(max(5,int(source_config.get("timeout_read",18))),12)
-        return scan_source(source,source_config,fetch_source_via_apps_script if WEB_APP_URL else None)
+        return scan_source(source,source_config)
 
     results_by_index={}
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
@@ -344,7 +329,6 @@ def main():
             selected=[]; next_cursor=0
         discovered_relations=collect_local_document_relations(
             selected,
-            fallback_fetcher=fetch_source_via_apps_script if WEB_APP_URL else None,
             limit=8,
         )
         known_documents=list(state.get("documents",{}).values())
