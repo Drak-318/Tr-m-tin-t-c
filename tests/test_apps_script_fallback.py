@@ -59,7 +59,7 @@ class AppsScriptFallbackTests(unittest.TestCase):
         for host in hosts:
             with self.subTest(host=host):
                 self.assertIn('"' + host + '"', code)
-        self.assertIn('version: "13.2"', code)
+        self.assertIn('version: "13.3"', code)
 
 
 if __name__ == "__main__": unittest.main()
