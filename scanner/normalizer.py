@@ -318,7 +318,25 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
             return True,10
 
         if not is_relevant_local_document(title,doc_type,doc_number):
-            return False,97
+            # Recall-first safety net: a numbered local legal instrument may
+            # still be important even when its title misses the current topic
+            # keywords. Keep it at low priority for human review, unless it is
+            # clearly a one-off case or merely a local rollout of a central item.
+            has_own_local_number = bool(
+                re.search(r"\\b[0-9]{1,7}/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
+                and not extract_central_references(doc_number)
+            )
+            local_policy_types = {
+                "Quyết định", "Nghị quyết", "Chỉ thị", "Kế hoạch",
+                "Thông báo", "Hướng dẫn", "Quy định", "Quy chế",
+                "Chương trình", "Công văn", "Kết luận"
+            }
+            cited_central = bool(extract_central_references(title))
+            if not (has_own_local_number and doc_type in local_policy_types):
+                return False,97
+            if doc_type == "Công văn" and cited_central:
+                return False,96
+            return True,65
 
         central_references = extract_central_references(title)
         central_reference = bool(central_references)
