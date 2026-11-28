@@ -178,6 +178,21 @@ class NormalizerTests(unittest.TestCase):
         )
         self.assertFalse(keep)
 
+
+    def test_local_flood_letter_mentioning_roadside_land_is_not_misclassified(self):
+        keep, _ = classify_and_score(
+            "V/v tập trung phòng tránh sạt lở đất trên các tuyến đường và công trình",
+            "Sở Xây dựng Quảng Ngãi", "Công văn", "9737/SXD-KCHT", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_selected_topics_match_as_complete_phrases(self):
+        keep, _ = classify_and_score(
+            "Quyết định về vị trí việc làm và phụ cấp đối với viên chức",
+            "UBND tỉnh An Giang", "Quyết định", "18/2026/QĐ-UBND", "Địa phương"
+        )
+        self.assertTrue(keep)
+
     def test_local_invoice_policy_is_kept(self):
         keep, _ = classify_and_score(
             "Quyết định về quản lý hóa đơn, chứng từ trên địa bàn tỉnh",
