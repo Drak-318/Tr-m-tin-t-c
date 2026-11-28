@@ -432,6 +432,12 @@ function thanhTraTramTinTuc() {
   Logger.log("Lich quet do GitHub Actions quan ly.");
 }
 
+/** Legacy scanner trigger compatibility: cleanup only; never scans a source. */
+function quetNhanhTrungUongTuSheet() {
+  xoaTriggerDieuPhoiCu_();
+  Logger.log("Bo quet Apps Script cu da bi vo hieu hoa; GitHub Actions quan ly viec quet.");
+}
+
 /**
  * Compatibility cleanup entry point. Safe to run manually if desired.
  * All scheduling and scan control now live in GitHub Actions.
