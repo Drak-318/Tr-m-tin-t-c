@@ -12,18 +12,24 @@ LOCAL_KEYWORDS = ["ubnd","ủy ban nhân dân","hđnd","hội đồng nhân dân
 # broad public relevance. These are deliberately topic-based, not document-type
 # based: a local resolution or decision can still be important.
 LOCAL_RELEVANCE_TOPICS = (
-    "đất đai", "thu hồi đất", "bồi thường", "hỗ trợ", "tái định cư",
-    "bảng giá đất", "giá đất", "quy hoạch sử dụng đất", "kế hoạch sử dụng đất",
-    "đấu giá quyền sử dụng đất", "y tế", "khám chữa bệnh", "khám bệnh",
-    "chữa bệnh", "bảo hiểm y tế", "viện phí", "giá dịch vụ y tế",
-    "giá dịch vụ khám", "dược", "giáo dục", "đào tạo", "tuyển sinh",
-    "học phí", "giáo viên", "học sinh", "trường học", "đấu thầu",
-    "lựa chọn nhà thầu", "mua sắm công", "đầu tư công", "cán bộ",
-    "công chức", "viên chức", "tiền lương", "phụ cấp", "vị trí việc làm",
-    "tổ chức bộ máy", "cải cách hành chính", "thủ tục hành chính",
-    "thuế", "phí", "lệ phí", "miễn giảm", "trợ cấp", "an sinh",
-    "bảo hiểm xã hội", "người lao động", "nhà ở", "nhà ở xã hội",
-    "chính sách", "chương trình hỗ trợ", "hỗ trợ người dân",
+    # Đất đai, quy hoạch, nhà ở và hạ tầng có tác động rộng
+    "đất đai", "bồi thường", "tái định cư", "bảng giá đất", "giá đất",
+    "quy hoạch sử dụng đất", "kế hoạch sử dụng đất", "đấu giá quyền sử dụng đất",
+    "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng", "quy hoạch đô thị",
+    "đầu tư công", "giao thông", "hạ tầng", "đấu thầu", "lựa chọn nhà thầu",
+    "mua sắm công",
+    # Y tế, giáo dục, lao động và an sinh
+    "y tế", "khám chữa bệnh", "khám bệnh", "chữa bệnh", "bảo hiểm y tế",
+    "viện phí", "giá dịch vụ y tế", "giá dịch vụ khám", "dược",
+    "giáo dục", "đào tạo", "tuyển sinh", "học phí", "giáo viên",
+    "học sinh", "trường học", "bảo hiểm xã hội", "người lao động",
+    "trợ cấp", "an sinh", "tiền lương", "phụ cấp", "vị trí việc làm",
+    "tuyển dụng viên chức", "tuyển dụng công chức",
+    # Thuế, phí, thủ tục và lĩnh vực công có phạm vi chung
+    "thuế", "phí", "lệ phí", "mức thu", "miễn giảm", "thủ tục hành chính",
+    "cải cách hành chính", "tổ chức bộ máy", "định mức kinh tế - kỹ thuật",
+    "định mức kinh tế kỹ thuật", "phòng chống thiên tai", "ứng phó thiên tai",
+    "môi trường", "ô nhiễm", "chất thải", "chuyển đổi số",
 )
 
 PERSONAL_OR_ONE_OFF_PATTERNS = (
@@ -80,6 +86,19 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
     ):
         return True
 
+    permit_action = re.search(
+        r"\b(?:cấp|cấp lại|gia hạn|điều chỉnh|thu hồi|hủy bỏ)\b.{0,100}"
+        r"\b(?:giấy phép|giấy chứng nhận đủ điều kiện|chứng chỉ hành nghề)\b",
+        text, re.I
+    )
+    named_recipient = re.search(
+        r"\b(?:cho|đối với)\s+(?:ông|bà|cá nhân|hộ gia đình|công ty|doanh nghiệp|tổ chức|"
+        r"trung tâm|bệnh viện|trường|hợp tác xã)\b",
+        text, re.I
+    )
+    if permit_action and named_recipient:
+        return True
+
     return any(re.search(pattern, text, re.I) for pattern in PERSONAL_OR_ONE_OFF_PATTERNS)
 
 def is_relevant_local_document(title, doc_type="", doc_number=""):
@@ -106,8 +125,15 @@ def is_draft_title(title):
 def extract_doc_info(title):
     title=clean_title(title); low=title.casefold()
     if not title or any(low==j or (len(low)<55 and j in low) for j in JUNK_EXACT): return None,None
-    # Many administrative official letters use "Văn bản số ... V/v"
-    # without spelling out "Công văn" in the title.
+    # Prefer the local/issuing document number at the beginning of the title
+    # over a central law/circular merely cited later in a rollout dispatch.
+    leading_dispatch=re.match(
+        r"^\s*(?:công văn|văn bản)\s+(?:số\s*)?([0-9]{1,7}/(?:[0-9]{4}/)?[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+        title,re.I
+    )
+    if leading_dispatch:
+        return "Công văn",leading_dispatch.group(1).upper().rstrip(".,;:)")
+    # Many portals omit "Công văn" but show the official number followed by V/v.
     letter=re.search(r"(?:văn bản\s+)?(?:số\s*[:：]?\s*)?([0-9]+(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+)\s+V/v\b",title,re.I)
     if letter:
         return "Công văn",letter.group(1).upper().rstrip(".,;:)")
@@ -236,11 +262,32 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
         any(x in document_signals for x in CENTRAL_SIGNALS)
         or bool(re.search(r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTG|/CT-TTG|/TT-[A-ZĐ0-9-]+|/QH[0-9]+|/VBHN-[A-Z0-9-]+)$", str(doc_number), re.I))
     )
-    # A local portal may publish or link to a central instrument. The
-    # instrument's own issuer/number takes precedence over the portal's region.
-    if local_scope and not central_document:
+    # Local portals are discovery channels, not a reason to ingest every
+    # provincial dispatch. A central instrument is accepted only when the
+    # item itself is titled as that instrument, not merely citing it.
+    if local_scope:
+        direct_central_title = bool(re.match(
+            r"^\s*(?:luật|nghị định|thông tư|nghị quyết|quyết định|chỉ thị|"
+            r"văn bản hợp nhất|pháp lệnh)\b", clean_title(title), re.I
+        ))
+        central_number = bool(re.search(
+            r"/(?:NĐ-CP|NQ-CP|QĐ-TTg|CT-TTg|TT-[A-ZĐ0-9-]+|VBHN-[A-Z0-9-]+|QH[0-9]+)$",
+            str(doc_number), re.I
+        ))
+        if direct_central_title and central_number and doc_type != "Công văn":
+            return True,10
         if not is_relevant_local_document(title,doc_type,doc_number):
             return False,97
+        central_reference = bool(re.search(
+            r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTg|/CT-TTg|/TT-[A-ZĐ0-9-]+|/QH[0-9]+)",
+            clean_title(title), re.I
+        ))
+        rollout_language = bool(re.search(
+            r"\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện)\b",
+            clean_title(title), re.I
+        ))
+        if doc_type == "Công văn" and central_reference and rollout_language:
+            return False,96
         return True,30
 
     c=classify_document(title,agency,doc_type,doc_number)
