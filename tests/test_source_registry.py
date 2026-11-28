@@ -78,6 +78,17 @@ class PrioritySourceTests(unittest.TestCase):
         names = {row["name"] for row in load_sources_from_csv()}
         self.assertIn("Dò tìm Luật mới - Google News RSS", names)
         self.assertIn("Dò tìm Nghị quyết mới - Google News RSS", names)
+        self.assertIn("Tìm kiếm văn bản cấp Trung ương - RSS", names)
+        self.assertIn("Dò tìm chính sách địa phương có tác động rộng - Google News RSS", names)
+
+        rows = load_sources_from_csv()
+        central = next(row for row in rows if row["name"] == "Tìm kiếm văn bản cấp Trung ương - RSS")
+        local = next(row for row in rows if row["name"] == "Dò tìm chính sách địa phương có tác động rộng - Google News RSS")
+        self.assertEqual(central["group"], "Văn Bản TW")
+        self.assertEqual(local["group"], "Địa phương")
+        self.assertIn("site%3Aquochoi.vn", central["url"])
+        self.assertNotIn("site%3Alamdong.gov.vn", central["url"])
+        self.assertIn("site%3Alamdong.gov.vn", local["url"])
 
 if __name__ == "__main__":
     unittest.main()
