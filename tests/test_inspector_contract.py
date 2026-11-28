@@ -32,6 +32,7 @@ class GitHubControllerContractTests(unittest.TestCase):
         self.assertNotIn("guiLenhQuetGitHub_", code)
         self.assertNotIn("ScriptApp.newTrigger", code)
         self.assertIn("xoaTriggerDieuPhoiCu_", code)
+        self.assertIn("function quetNhanhTrungUongTuSheet()", code)
         self.assertIn('version: "15.0"', code)
 
     def test_python_source_registry_and_memory_are_github_owned(self):
