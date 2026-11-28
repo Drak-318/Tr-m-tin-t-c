@@ -261,6 +261,7 @@ def main():
         with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
             for candidate,validation,recognized_items in pool.map(validate_source_candidate,candidates_to_check):
                 attempts=int(candidate.get("attempts",0))+1
+                child_candidates = validation.get("discovered_candidates", [])
                 if len(recognized_items)>=3:
                     update_candidate(candidate["url"],{
                         "status":"active","attempts":attempts,
@@ -270,6 +271,17 @@ def main():
                         "last_error":"",
                     })
                     discovery_activated+=1
+                elif candidate.get("candidate_kind") == "portal_hub" and child_candidates:
+                    # A directory/homepage is a discovery bridge, not a scan source.
+                    # Extract its same-site document-listing links and queue those.
+                    children_added = record_candidates(child_candidates)
+                    update_candidate(candidate["url"],{
+                        "status":"hub","attempts":attempts,
+                        "hub_checked_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                        "child_candidates_found":len(child_candidates),
+                        "child_candidates_added":children_added,
+                        "last_error":"",
+                    })
                 else:
                     reason=validation.get("error") or (
                         f"Chỉ nhận diện {len(recognized_items)} văn bản có số hiệu; cần ít nhất 3."
