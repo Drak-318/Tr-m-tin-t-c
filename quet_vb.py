@@ -25,7 +25,7 @@ from scanner.persistent_memory import (load_state, RunSeenIndex, record_document
     enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document, pending_source_retries, record_source_scan_result, filter_sources_due_for_retry)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
-MAX_WORKERS=5
+MAX_WORKERS=5  # Tổng ngân sách: priority 2 + full/remaining 3, tối đa 5 nguồn đồng thời.
 SAVE_BATCH_SIZE=50
 MAX_AGE_DAYS=60
 
@@ -43,7 +43,8 @@ def main():
     profile=os.getenv("SCAN_PROFILE","full").strip().lower() or "full"
     if profile not in {"full","priority","remaining"}:
         raise RuntimeError(f"SCAN_PROFILE không hợp lệ: {profile}")
-    print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {started_at} | PROFILE: {profile}"); print("="*70)
+    max_workers = 2 if profile == "priority" else 3
+    print("="*70); print(f"TRẠM TIN TỨC | BẮT ĐẦU: {started_at} | PROFILE: {profile} | WORKERS: {max_workers}"); print("="*70)
     config_data=load_source_config()
     sources=load_sources_from_csv()
     if not sources: raise RuntimeError("Không có nguồn đang bật trong danh_sach_nguon.csv trên GitHub.")
@@ -94,7 +95,7 @@ def main():
             print(f"[SHEETS-MEMORY-WARNING] Không đọc được bộ nhớ Sheets; tiếp tục bằng bộ nhớ GitHub: {str(exc)[:250]}")
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
-    print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Profile: {profile} | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
+    print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Profile: {profile} | Tổng nguồn: {len(sources)} | Đồng thời: {max_workers}")
     print(f"[INIT] Bộ nhớ GitHub: {len(state['documents'])} văn bản | {len(state['urls'])} URL")
 
     def scan_one(source):
@@ -107,7 +108,7 @@ def main():
         return scan_source(source,source_config,fetch_source_via_apps_script if WEB_APP_URL else None)
 
     results_by_index={}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures={pool.submit(scan_one,s):(i,s) for i,s in enumerate(sources)}
         for future in concurrent.futures.as_completed(futures):
             i,s=futures[future]
