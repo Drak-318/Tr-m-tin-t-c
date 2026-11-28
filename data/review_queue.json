@@ -6570,7 +6570,7 @@
     },
     "https://luatvietnam.vn/tin-van-ban-moi/vien-chuc-tai-trung-tam-y-te-da-chuc-nang-du-dieu-kien-huong-phu-cap-80-hoac-70-theo-dia-ban-186-116299-article.html": {
       "agency": "LuatVietnam - Văn bản mới - Tin văn bản mới - 4 khoản chi được lập dự toán kinh phí cố định của tổ chức khoa học và công",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "8935/BYT-TCCB",
@@ -6578,15 +6578,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T02:54:40+00:00",
       "identity": "number:8935/BYT-TCCB|issuer:BYT-TCCB|locality:",
-      "last_checked": "2026-11-28T03:17:59+00:00",
+      "last_checked": "2026-11-28T03:31:33+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T02:54:40+00:00",
       "link": "https://luatvietnam.vn/tin-van-ban-moi/vien-chuc-tai-trung-tam-y-te-da-chuc-nang-du-dieu-kien-huong-phu-cap-80-hoac-70-theo-dia-ban-186-116299-article.html",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Viên chức tại Trung tâm Y tế đa chức năng đủ điều kiện hưởng phụ cấp 80% hoặc 70% theo địa bàn",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://luatvietnam.vn/tu-phap/thong-tu-18-2025-tt-bvhttdl-bai-bo-van-ban-phap-luat-cua-bo-van-hoa-the-thao-va-du-lich-421201-d1.html": {
       "agency": "LuatVietnam - Văn bản mới - Tổng quan",
@@ -23505,6 +23505,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T03:17:59+00:00",
+  "updated_at": "2026-11-28T03:31:33+00:00",
   "version": 1
 }
