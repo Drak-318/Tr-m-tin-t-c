@@ -125,24 +125,46 @@ def is_draft_title(title):
 def extract_doc_info(title):
     title=clean_title(title); low=title.casefold()
     if not title or any(low==j or (len(low)<55 and j in low) for j in JUNK_EXACT): return None,None
-    # Preserve the document actually issued by a local agency before parsing
-    # any central instrument cited later in its title.
+    # Preserve the issuing document type before reading a central instrument
+    # cited later in the title. Require a substantive title so category links
+    # such as "Văn bản mới" are not mistaken for documents.
     leading_type=re.match(
-        r"^\s*(Công văn|Văn bản|Thông báo|Kế hoạch|Báo cáo|Giấy mời|Hướng dẫn|"
+        r"^\s*(Công văn|Thông báo|Kế hoạch|Báo cáo|Giấy mời|Hướng dẫn|"
         r"Quyết định|Chỉ thị|Kết luận)\b",
         title,re.I
     )
     if leading_type:
         doc_label=leading_type.group(1)
         remainder=title[leading_type.end():].lstrip()
-        own_number=re.match(
+        immediate_number=re.match(
             r"(?:số\s*)?([0-9]{1,7}/(?:[0-9]{4}/)?[A-ZĐƯƠĂÂÊÔ0-9-]+)",
             remainder,re.I
         )
-        return (
-            doc_label[0].upper()+doc_label[1:].lower(),
-            own_number.group(1).upper().rstrip(".,;:)") if own_number else "Đang cập nhật"
-        )
+        expected_codes={
+            "Thông báo":r"(?:TB|TB-[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+            "Kế hoạch":r"KH-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Báo cáo":r"BC-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Giấy mời":r"GM-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Hướng dẫn":r"HD-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Quyết định":r"(?:QĐ|QD)-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Chỉ thị":r"CT-[A-ZĐƯƠĂÂÊÔ0-9-]+",
+            "Kết luận":r"KL(?:/TW|-[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+        }
+        own_number=immediate_number.group(1) if immediate_number else ""
+        expected=expected_codes.get(doc_label)
+        if not own_number and expected:
+            candidate=re.search(
+                r"([0-9]{1,7}(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+                title,re.I
+            )
+            if candidate and re.search(expected,candidate.group(1).split("/")[-1],re.I):
+                own_number=candidate.group(1)
+        if doc_label=="Công văn":
+            return "Công văn", own_number.upper().rstrip(".,;:)") if own_number else "Đang cập nhật"
+        if own_number:
+            return doc_label,own_number.upper().rstrip(".,;:)")
+        if len(title)>=35 and re.search(r"\b(?:triển khai|thực hiện|hướng dẫn|về việc|quy định|phê duyệt)\b",title,re.I):
+            return doc_label,"Đang cập nhật"
     # Many portals omit "Công văn" but show the official number followed by V/v.
     letter=re.search(r"(?:văn bản\s+)?(?:số\s*[:：]?\s*)?([0-9]+(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+)\s+V/v\b",title,re.I)
     if letter:
