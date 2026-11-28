@@ -405,7 +405,7 @@ CENTRAL_REFERENCE_REGEX = re.compile(
     r"QĐ-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
     r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)|"
     r"QD-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BCA|BQP|BHXH|TTCP)|"
-    r"CT-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BCA|BQP|TTCP)|"
+    r"CT-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BCA|BQP|TTCP)|KH-(?:TTg|CP)|"
     r"VBHN-[A-Z0-9-]+|QH[0-9]+|"
     r"(?:VPCP|BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
     r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)-[A-ZĐ0-9-]+))",
@@ -473,13 +473,13 @@ def issuer_from_document_number(doc_number):
     if not number:
         return ""
     suffix=number.split("/")[-1]
-    if suffix=="NĐ-CP" or suffix=="NQ-CP":
+    if suffix in {"NĐ-CP", "NQ-CP", "KH-CP"}:
         return "Chính phủ"
     if suffix.startswith("NQ-UBTVQH"):
         return "Ủy ban Thường vụ Quốc hội"
     if suffix.startswith("NQ-QH") or re.fullmatch(r"QH[0-9]+",suffix):
         return "Quốc hội"
-    if suffix.endswith("-TTG") or suffix=="QĐ-TTG" or suffix=="CT-TTG":
+    if suffix.endswith("-TTG") or suffix in {"QĐ-TTG", "CT-TTG", "KH-TTG"}:
         return "Thủ tướng Chính phủ"
     if suffix.startswith("VBHN-"):
         suffix=suffix[len("VBHN-"):]
