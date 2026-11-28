@@ -192,7 +192,7 @@ jobs:
       cancel-in-progress: false
     permissions:
       actions: write
-      contents: write
+      contents: read
     steps:
       - name: Check scan health and dispatch a catch-up run when needed
         uses: actions/github-script@v7
@@ -253,8 +253,6 @@ jobs:
             let dispatchedProfile = "";
             let priorityAge = null;
             let fullAge = null;
-            let priorityLastSuccess = null;
-            let fullLastSuccess = null;
             if (stale) {
               await github.rest.actions.cancelWorkflowRun({
                 owner, repo, run_id: stale.run.id
@@ -276,13 +274,6 @@ jobs:
               const fullLast = latestCompleted("full");
               priorityAge = priorityLast ? (now - Date.parse(priorityLast.job.completed_at)) / 60000 : Number.POSITIVE_INFINITY;
               fullAge = fullLast ? (now - Date.parse(fullLast.job.completed_at)) / 60000 : Number.POSITIVE_INFINITY;
-              priorityLastSuccess = scanJobs
-                .filter(row => row.profile === "priority" && row.job.conclusion === "success" && row.job.completed_at)
-                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0];
-              fullLastSuccess = scanJobs
-                .filter(row => row.profile === "full" && row.job.conclusion === "success" && row.job.completed_at)
-                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0];
-
               // Priority repeats no sooner than 5 minutes after completion.
               // Full retains its 30-minute cadence; after a failed full scan,
               // retry after a 5-minute post-completion cooldown.
@@ -321,39 +312,16 @@ jobs:
               }
             }
 
-            // Persist a heartbeat so a missing scheduler run can be distinguished
-            // from a scanner failure. This path is intentionally excluded from
-            // the push trigger to avoid creating a scan loop.
-            const health = {
-              version: 1,
-              last_watchdog_at: new Date().toISOString(),
-              scheduled_for: context.payload.schedule || "",
-              workflow_run_id: context.runId,
-              action,
-              reason,
-              dispatched_profile: dispatchedProfile,
-              priority_age_minutes: Number.isFinite(priorityAge) ? Math.round(priorityAge) : null,
-              full_age_minutes: Number.isFinite(fullAge) ? Math.round(fullAge) : null,
-              last_priority_success_at: priorityLastSuccess?.job.completed_at || null,
-              last_full_success_at: fullLastSuccess?.job.completed_at || null
-            };
-            let healthSha;
-            try {
-              const existing = await github.rest.repos.getContent({
-                owner, repo, path: "data/scheduler_health.json", ref: "main"
-              });
-              if (!Array.isArray(existing.data)) healthSha = existing.data.sha;
-            } catch (error) {
-              if (error.status !== 404) throw error;
-            }
-            const content = Buffer.from(JSON.stringify(health, null, 2) + "\n", "utf8").toString("base64");
-            await github.rest.repos.createOrUpdateFileContents({
-              owner,
-              repo,
-              path: "data/scheduler_health.json",
-              message: "Update scanner scheduler health [skip ci]",
-              content,
-              ...(healthSha ? { sha: healthSha } : {}),
-              branch: "main"
-            });
-            core.info(`Scheduler heartbeat saved: ${action}.`);
+            await core.summary
+              .addHeading("Trạm Tin Tức – Bộ điều phối GitHub")
+              .addTable([
+                [{data: "Thông tin", header: true}, {data: "Giá trị", header: true}],
+                ["Hành động", action],
+                ["Lý do", reason],
+                ["Lượt được gửi", dispatchedProfile || "Không gửi lệnh"],
+                ["Tuổi lượt ưu tiên (phút)", Number.isFinite(priorityAge) ? String(Math.round(priorityAge)) : "Chưa có"],
+                ["Tuổi lượt toàn bộ (phút)", Number.isFinite(fullAge) ? String(Math.round(fullAge)) : "Chưa có"],
+                ["Job đang hoạt động", String(activeJobs.length)]
+              ])
+              .write();
+            core.info(`Scheduler decision: ${action}. ${reason}`);
