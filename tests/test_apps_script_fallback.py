@@ -37,4 +37,29 @@ class AppsScriptFallbackTests(unittest.TestCase):
         self.assertEqual(result["status"],"Đã truy cập, chưa tìm thấy mục")
         fetcher.assert_not_called()
 
+
+    def test_new_source_hosts_are_explicitly_allowlisted_in_apps_script(self):
+        from pathlib import Path
+
+        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
+        hosts = [
+            "kiemtra-phapche.hcm.edu.vn",
+            "snv.lamdong.gov.vn",
+            "qppl.thanhhoa.gov.vn",
+            "syt.lamdong.gov.vn",
+            "stc.lamdong.gov.vn",
+            "stp.lamdong.gov.vn",
+            "songoaivu.lamdong.gov.vn",
+            "snnmt.lamdong.gov.vn",
+            "sxd.lamdong.gov.vn",
+            "sxd.quangngai.gov.vn",
+            "nhandan.vn",
+            "news.google.com",
+        ]
+        for host in hosts:
+            with self.subTest(host=host):
+                self.assertIn('"' + host + '"', code)
+        self.assertIn('version: "13.2"', code)
+
+
 if __name__ == "__main__": unittest.main()
