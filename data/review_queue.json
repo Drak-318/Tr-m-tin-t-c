@@ -179,7 +179,7 @@
     },
     "https://baocaotaichinh.vn/thong-tu-200": {
       "agency": "Bộ Tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "200/2014/TT-BTC",
@@ -187,7 +187,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:200/2014/TT-BTC|issuer:TT-BTC|locality:",
-      "last_checked": "2026-11-28T11:07:20+00:00",
+      "last_checked": "2026-11-28T12:07:22+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thong-tu-200",
@@ -199,7 +199,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/cong-van-so-13460-btcqlkt-cua-bo-tai-chinh-ve-viec-huong-dan-trien-khai-kiem-tra-giam-sat-trong-linh-vuc-ke-toan-428529909-269428": {
       "agency": "Bộ Tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "13460/BTC-QLKT",
@@ -207,7 +207,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:13460/BTC-QLKT|issuer:BTC-QLKT|locality:",
-      "last_checked": "2026-11-28T11:07:20+00:00",
+      "last_checked": "2026-11-28T12:07:22+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/cong-van-so-13460-btcqlkt-cua-bo-tai-chinh-ve-viec-huong-dan-trien-khai-kiem-tra-giam-sat-trong-linh-vuc-ke-toan-428529909-269428",
@@ -219,7 +219,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/cong-van-so-1902-ctcds-cua-cuc-thue-ve-viec-phoi-hop-ngan-chan-hanh-vi-gian-lan-thue-su-dung-song-song-hai-he-thong-so-ke-toan-tai-chinh-1178433928-198400": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "1902/CT-CĐS",
@@ -227,7 +227,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:1902/CT-CĐS|issuer:CT-CĐS|locality:",
-      "last_checked": "2026-11-28T11:07:20+00:00",
+      "last_checked": "2026-11-28T12:07:22+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/cong-van-so-1902-ctcds-cua-cuc-thue-ve-viec-phoi-hop-ngan-chan-hanh-vi-gian-lan-thue-su-dung-song-song-hai-he-thong-so-ke-toan-tai-chinh-1178433928-198400",
@@ -239,7 +239,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/cong-van-so-218-csttn-ve-viec-ap-dung-chung-tu-thanh-toan-khong-dung-tien-mat-khi-thanh-toan-tien-luong-tien-cong-cho-nguoi-lao-dong-1602246236-349472": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "218/CST-TN",
@@ -247,7 +247,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:218/CST-TN|issuer:CST-TN|locality:",
-      "last_checked": "2026-11-28T11:49:05+00:00",
+      "last_checked": "2026-11-28T12:07:22+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/cong-van-so-218-csttn-ve-viec-ap-dung-chung-tu-thanh-toan-khong-dung-tien-mat-khi-thanh-toan-tien-luong-tien-cong-cho-nguoi-lao-dong-1602246236-349472",
@@ -259,7 +259,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/cong-van-so-2470-ctcs-ve-su-dung-hoa-don-dien-tu-hddt-cua-ho-kinh-doanh-co-doanh-thu-tu-500tr-nam-tro-xuong-1647512103-489243": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "2470/CT-CS",
@@ -267,7 +267,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:2470/CT-CS|issuer:CT-CS|locality:",
-      "last_checked": "2026-11-28T11:49:06+00:00",
+      "last_checked": "2026-11-28T12:07:22+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/cong-van-so-2470-ctcs-ve-su-dung-hoa-don-dien-tu-hddt-cua-ho-kinh-doanh-co-doanh-thu-tu-500tr-nam-tro-xuong-1647512103-489243",
@@ -25046,6 +25046,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T11:52:13+00:00",
+  "updated_at": "2026-11-28T12:07:22+00:00",
   "version": 1
 }
