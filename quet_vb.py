@@ -17,7 +17,7 @@ from scanner.normalizer import (
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
     is_local_scope, extract_central_references, document_type_from_number, issuer_from_document_number,
 )
-from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
+from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script, get_sources_and_memory
 from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
@@ -75,6 +75,22 @@ def main():
         return
 
     state=load_state()
+    # Also consult the identities already persisted in the Google Sheets memory
+    # tab. This bridges records saved before/without the current GitHub memory.
+    if WEB_APP_URL:
+        try:
+            _sheet_sources, sheet_links, _sheet_numbers, sheet_identities = get_sources_and_memory()
+            state.setdefault("documents", {}).update({
+                identity: state.get("documents", {}).get(identity, {})
+                for identity in sheet_identities if identity
+            })
+            state.setdefault("urls", {}).update({
+                link: state.get("urls", {}).get(link, "sheets-memory")
+                for link in sheet_links if link
+            })
+            print(f"[SHEETS-MEMORY] Đã nạp {len(sheet_identities)} định danh và {len(sheet_links)} URL từ bộ nhớ Google Sheets.")
+        except Exception as exc:
+            print(f"[SHEETS-MEMORY-WARNING] Không đọc được bộ nhớ Sheets; tiếp tục bằng bộ nhớ GitHub: {str(exc)[:250]}")
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
     print(f"[INIT] Nguồn: GitHub/danh_sach_nguon.csv | Profile: {profile} | Tổng nguồn: {len(sources)} | Đồng thời: {MAX_WORKERS}")
@@ -437,14 +453,14 @@ def main():
             # Có ngày thì mới áp dụng bộ lọc 60 ngày; ưu tiên ngày ban hành.
             if is_too_old(title,number,MAX_AGE_DAYS,pub):
                 totals["old"]+=1; continue
-            keep,priority=classify_and_score(title,name,doc_type,number,group,pub)
+            keep,priority=classify_and_score(title,agency,doc_type,number,group,pub)
             if not keep: continue
             totals["kept"]+=1
-            identity=document_identity(number,title,name,link)
+            identity=document_identity(number,title,agency,link)
             if seen_index.contains(identity,link) or output_index.contains(identity,link):
                 totals["duplicate"]+=1; continue
             resolved_date,date_basis=resolve_document_date(title,pub)
-            doc={"priority":priority,"doc_type":doc_type,"agency":name,"title":title,"doc_number":number,
+            doc={"priority":priority,"doc_type":doc_type,"agency":agency,"title":title,"doc_number":number,
                  "link":link,"fingerprint":make_fingerprint(number,title),"category":category,
                  "identity":identity,"published_date":pub or "",
                  "document_date":resolved_date.strftime("%Y-%m-%d") if resolved_date else "",
