@@ -125,14 +125,24 @@ def is_draft_title(title):
 def extract_doc_info(title):
     title=clean_title(title); low=title.casefold()
     if not title or any(low==j or (len(low)<55 and j in low) for j in JUNK_EXACT): return None,None
-    # Prefer the local/issuing document number at the beginning of the title
-    # over a central law/circular merely cited later in a rollout dispatch.
-    leading_dispatch=re.match(
-        r"^\s*(?:công văn|văn bản)\s+(?:số\s*)?([0-9]{1,7}/(?:[0-9]{4}/)?[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+    # Preserve the document actually issued by a local agency before parsing
+    # any central instrument cited later in its title.
+    leading_type=re.match(
+        r"^\s*(Công văn|Văn bản|Thông báo|Kế hoạch|Báo cáo|Giấy mời|Hướng dẫn|"
+        r"Quyết định|Chỉ thị|Kết luận)\b",
         title,re.I
     )
-    if leading_dispatch:
-        return "Công văn",leading_dispatch.group(1).upper().rstrip(".,;:)")
+    if leading_type:
+        doc_label=leading_type.group(1)
+        remainder=title[leading_type.end():].lstrip()
+        own_number=re.match(
+            r"(?:số\s*)?([0-9]{1,7}/(?:[0-9]{4}/)?[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+            remainder,re.I
+        )
+        return (
+            doc_label[0].upper()+doc_label[1:].lower(),
+            own_number.group(1).upper().rstrip(".,;:)") if own_number else "Đang cập nhật"
+        )
     # Many portals omit "Công văn" but show the official number followed by V/v.
     letter=re.search(r"(?:văn bản\s+)?(?:số\s*[:：]?\s*)?([0-9]+(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+)\s+V/v\b",title,re.I)
     if letter:
