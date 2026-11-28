@@ -1,227 +1,5 @@
 [
   {
-    "collected": 21256,
-    "discovered_source_candidates_added": 244,
-    "discovered_sources_activated": 0,
-    "discovered_sources_checked": 10,
-    "discovered_sources_pending": 165,
-    "duplicates": 1675,
-    "duration_seconds": 430.06,
-    "failed_source_details": [
-      {
-        "error": "REQUEST: HTTPSConnectionPool(host='congan.hochiminhcity.gov.vn', port=443): Max retries exceeded with url: /wps/portal/Home/trang-chu (Caused by ResponseError('too many 500 error responses')); Apps Script: RuntimeError: Website nguồn trả HT",
-        "http_status": null,
-        "name": "Công an TP.HCM",
-        "status": "Lỗi: REQUEST",
-        "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='www.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/tatc/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-        "http_status": null,
-        "name": "Tòa án nhân dân tối cao",
-        "status": "Lỗi: SSL",
-        "url": "https://www.toaan.gov.vn/webcenter/portal/tatc/home"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vbpq.toaan.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/htvb/home (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ce",
-        "http_status": null,
-        "name": "Cổng văn bản Tòa án nhân dân",
-        "status": "Lỗi: SSL",
-        "url": "https://vbpq.toaan.gov.vn/webcenter/portal/htvb/home"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quochoi.vn', port=443): Max retries exceeded with url: /tintuc/Pages/tin-hoat-dong-cua-quoc-hoi.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='quochoi.vn', port=443) at 0x765",
-        "http_status": 200,
-        "name": "Cổng Thông tin điện tử Quốc hội",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://quochoi.vn/tintuc/Pages/tin-hoat-dong-cua-quoc-hoi.aspx"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/du-thao-vbqppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Dự thảo",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/du-thao-vbqppl"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=95221 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): Failed to establ",
-        "http_status": 200,
-        "name": "UBND tỉnh Lào Cai",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://www.laocai.gov.vn/Default.aspx?pageid=95221"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='soyte.caobang.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=32323 (Caused by NewConnectionError(\"HTTPSConnection(host='soyte.caobang.gov.vn', port=443): Failed to ",
-        "http_status": null,
-        "name": "Sở Y tế Cao Bằng",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://soyte.caobang.gov.vn/Default.aspx?pageid=32323"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vanban.hanoi.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vanban.hanoi.gov.vn', port=443) at 0x765e9d8483d0>, 'Connection to",
-        "http_status": null,
-        "name": "Cổng văn bản UBND TP Hà Nội",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://vanban.hanoi.gov.vn/"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to es",
-        "http_status": null,
-        "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='quangngai.dcs.vn', port=443): Max retries exceeded with url: /vanban/van-ban-moi (Caused by ConnectTimeoutError(<HTTPSConnection(host='quangngai.dcs.vn', port=443) at 0x765eafd738d0>, 'C",
-        "http_status": null,
-        "name": "Đảng bộ tỉnh Quảng Ngãi - Văn bản mới",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://quangngai.dcs.vn/vanban/van-ban-moi"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.",
-        "http_status": null,
-        "name": "UBND tỉnh Sơn La - Văn bản 1",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33434&p_cate=9263,6394&p_agency=6396,6397"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sonla.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?sid=4&pageid=33896&p_cate=6767 (Caused by NewConnectionError(\"HTTPSConnection(host='sonla.gov.vn', port=443): Failed t",
-        "http_status": null,
-        "name": "UBND tỉnh Sơn La - Văn bản 2",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://sonla.gov.vn/Default.aspx?sid=4&pageid=33896&p_cate=6767"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-quy-pham-phap-luat (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Văn bản QPPL",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/van-ban-quy-pham-phap-luat"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish ",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Chỉ đạo điều hành",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/van-ban-chi-dao-dieu-hanh"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='moet.gov.vn', port=443): Max retries exceeded with url: /van-ban/gop-y-du-thao-van-ban-qppl (Caused by NewConnectionError(\"HTTPSConnection(host='moet.gov.vn', port=443): Failed to establish",
-        "http_status": null,
-        "name": "Bộ Giáo dục và Đào tạo - Dự thảo",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://moet.gov.vn/van-ban/gop-y-du-thao-van-ban-qppl"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.laocai.gov.vn', port=443): Max retries exceeded with url: /doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704 (Caused by NewConnectionError(\"HTTPSConnection(host='www.laocai.gov.vn', port=443): ",
-        "http_status": 200,
-        "name": "Đoàn ĐBQH và HĐND tỉnh Lào Cai",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://www.laocai.gov.vn/doan-dai-bieu-quoc-hoi-tinh-lao-cai-88704"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vnpa.moh.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
-        "http_status": null,
-        "name": "Cục Dân số - Hệ thống văn bản",
-        "status": "Lỗi: SSL",
-        "url": "https://vnpa.moh.gov.vn/he-thong-van-ban/"
-      },
-      {
-        "error": "SSL: Không xác minh được chứng chỉ TLS: HTTPSConnectionPool(host='vimda.moh.gov.vn', port=443): Max retries exceeded with url: /van-ban-phap-quy (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate v",
-        "http_status": null,
-        "name": "Trang thiết bị y tế - Văn bản pháp quy",
-        "status": "Lỗi: SSL",
-        "url": "https://vimda.moh.gov.vn/van-ban-phap-quy"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='baohiemxahoi.gov.vn', port=443): Max retries exceeded with url: /vanban/pages/default.aspx (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by pee",
-        "http_status": null,
-        "name": "Bảo hiểm xã hội Việt Nam - Danh sách văn bản",
-        "status": "Lỗi: CONNECTION",
-        "url": "https://baohiemxahoi.gov.vn/vanban/pages/default.aspx"
-      },
-      {
-        "error": "CONNECTION: Lỗi kết nối: HTTPConnectionPool(host='laichau.gov.vn', port=80): Max retries exceeded with url: /lay-y-kien-nhan-dan-ve-du-thao-van-ban (Caused by NewConnectionError(\"HTTPConnection(host='laichau.gov.vn', port=80): Failed to est",
-        "http_status": null,
-        "name": "UBND tỉnh Lai Châu - Lấy ý kiến về dự thảo văn bản QPPL",
-        "status": "Lỗi: CONNECTION",
-        "url": "http://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 1",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=1"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Trang kế tiếp",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=2"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 5",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=5"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt.",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cchc"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 1",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=1"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Trang kế tiếp",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=2"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
-        "http_status": 403,
-        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 4",
-        "status": "Lỗi: HTTP",
-        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=4"
-      }
-    ],
-    "failed_sources": 27,
-    "fallback_sources": 24,
-    "feed_supplements": 0,
-    "finished_at": "2026-11-21 14:45:22 UTC",
-    "new_to_sheets": 1,
-    "older_than_60_days": 2777,
-    "pending_sheets_exports": 0,
-    "recognized": 5272,
-    "relationship_ambiguous": 13,
-    "relationship_candidates": 164,
-    "relationship_matched_in_scan_index": 55,
-    "review_queue_total": 1048,
-    "review_to_sheets": 1,
-    "run_attempt": "1",
-    "run_id": "44914806200",
-    "scan_profile": "remaining",
-    "source_retry_queue_pending": 35,
-    "sources": 293,
-    "started_at": "2026-11-21 14:38:12 UTC",
-    "successful_sources": 266,
-    "trigger": "workflow_dispatch",
-    "unknown_date": 402
-  },
-  {
     "collected": 475,
     "discovered_source_candidates_added": 0,
     "discovered_sources_activated": 0,
@@ -102993,5 +102771,256 @@
     "successful_sources": 17,
     "trigger": "push",
     "unknown_date": 17
+  },
+  {
+    "collected": 20811,
+    "discovered_source_candidates_added": 451,
+    "discovered_sources_activated": 2,
+    "discovered_sources_checked": 10,
+    "discovered_sources_pending": 34,
+    "duplicates": 1888,
+    "duration_seconds": 749.36,
+    "failed_source_details": [
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='www.quangninh.gov.vn', port=443): Max retries exceeded with url: /So/sogiaoducdaotao/Trang/Default.aspx (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.quangninh.gov.vn', port=44",
+        "http_status": 200,
+        "name": "Sở Giáo dục và Đào tạo Quảng Ninh",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://www.quangninh.gov.vn/So/sogiaoducdaotao/Trang/Default.aspx"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to es",
+        "http_status": null,
+        "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='hdnd.ninhbinh.gov.vn', port=443): Read timed out.",
+        "http_status": 200,
+        "name": "Đoàn ĐBQH và HĐND tỉnh Ninh Bình",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://hdnd.ninhbinh.gov.vn/kien-nghi-cu-tri/van-ban-tra-loi-cua-cac-bo-nganh-trung-uong"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='stc.lamdong.gov.vn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='stc.lamdong.gov.vn', port=443): Failed to establish a new connection: [",
+        "http_status": null,
+        "name": "Sở Tài chính Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://stc.lamdong.gov.vn/"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='ninhbinh.gov.vn', port=443): Max retries exceeded with url: /Default.aspx?pageid=27172 (Caused by NewConnectionError(\"HTTPSConnection(host='ninhbinh.gov.vn', port=443): Failed to establish ",
+        "http_status": null,
+        "name": "Cổng TTĐT tỉnh Ninh Bình - Danh mục văn bản",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://ninhbinh.gov.vn/Default.aspx?pageid=27172"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Hỏi đáp pháp luật",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/bai-viet; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Pháp luật thuế",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Lao động tiền lương",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='tayninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='tayninh.gov.vn', port=443): Failed to establish a ",
+        "http_status": null,
+        "name": "UBND Tây Ninh",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://tayninh.gov.vn/van-ban-chi-dao-dieu-hanh"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='haiphong.baohiemxahoi.gov.vn', port=443): Max retries exceeded with url: /vanban/pages/default.aspx (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection res",
+        "http_status": null,
+        "name": "BHXH Hải Phòng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://haiphong.baohiemxahoi.gov.vn/vanban/pages/default.aspx"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='snnmt.bacninh.gov.vn', port=443): Max retries exceeded with url: /vanbanchidaodieuhanh (Caused by ConnectTimeoutError(<HTTPSConnection(host='snnmt.bacninh.gov.vn', port=443) at 0x774f3ec",
+        "http_status": null,
+        "name": "Sở Nông nghiệp và Môi trường Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://snnmt.bacninh.gov.vn/vanbanchidaodieuhanh"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/van-ban-moi; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Văn bản mới",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/van-ban-moi"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/van-ban-moi/Cong-van; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
+        "http_status": 403,
+        "name": "Thư viện Pháp luật - Văn bản mới - Công văn",
+        "status": "Lỗi: HTTP",
+        "url": "https://thuvienphapluat.vn/van-ban-moi/Cong-van"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-tinh-bac-ninh (Caused by NewConnectionError(\"HTTPSConnection(host='bacninh.gov.vn', port=443): Failed to establish a new ",
+        "http_status": null,
+        "name": "UBND tỉnh Bắc Ninh",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://bacninh.gov.vn/van-ban-tinh-bac-ninh"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='snv.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao (Caused by ConnectTimeoutError(<HTTPSConnection(host='snv.bacninh.gov.vn', port=443) at 0x774f44748550>, '",
+        "http_status": null,
+        "name": "Sở Nội vụ Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://snv.bacninh.gov.vn/van-ban-chi-dao"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='stp.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao (Caused by ConnectTimeoutError(<HTTPSConnection(host='stp.bacninh.gov.vn', port=443) at 0x774f44748910>, '",
+        "http_status": null,
+        "name": "Sở Tư pháp Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://stp.bacninh.gov.vn/van-ban-chi-dao"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='stc.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao (Caused by ConnectTimeoutError(<HTTPSConnection(host='stc.bacninh.gov.vn', port=443) at 0x774f470b1690>, '",
+        "http_status": null,
+        "name": "Sở Tài chính Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://stc.bacninh.gov.vn/van-ban-chi-dao"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='syt.bacninh.gov.vn', port=443): Max retries exceeded with url: /v%C4%83n-b%E1%BA%A3n-ch%E1%BB%89-%C4%91%E1%BA%A1o-%C4%91i%E1%BB%81u-h%C3%A0nh (Caused by ConnectTimeoutError(<HTTPSConnect",
+        "http_status": null,
+        "name": "Sở Y tế Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://syt.bacninh.gov.vn/v%C4%83n-b%E1%BA%A3n-ch%E1%BB%89-%C4%91%E1%BA%A1o-%C4%91i%E1%BB%81u-h%C3%A0nh"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='sxd.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao (Caused by ConnectTimeoutError(<HTTPSConnection(host='sxd.bacninh.gov.vn', port=443) at 0x774f3e292e50>, '",
+        "http_status": null,
+        "name": "Sở Xây dựng Bắc Ninh",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://sxd.bacninh.gov.vn/van-ban-chi-dao"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='sgddt.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-qppl (Caused by ConnectTimeoutError(<HTTPSConnection(host='sgddt.bacninh.gov.vn', port=443) at 0x774f4419c250>, ",
+        "http_status": null,
+        "name": "Sở Giáo dục và Đào tạo Bắc Ninh - Văn bản QPPL",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://sgddt.bacninh.gov.vn/van-ban-qppl"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='sgddt.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao (Caused by ConnectTimeoutError(<HTTPSConnection(host='sgddt.bacninh.gov.vn', port=443) at 0x774f4419da50",
+        "http_status": null,
+        "name": "Sở Giáo dục và Đào tạo Bắc Ninh - Văn bản chỉ đạo",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://sgddt.bacninh.gov.vn/van-ban-chi-dao"
+      },
+      {
+        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='yentrung.bacninh.gov.vn', port=443): Max retries exceeded with url: /van-ban (Caused by ConnectTimeoutError(<HTTPSConnection(host='yentrung.bacninh.gov.vn', port=443) at 0x774f3e855890>,",
+        "http_status": null,
+        "name": "Xã Yên Trung - Văn bản",
+        "status": "Lỗi: TIMEOUT",
+        "url": "https://yentrung.bacninh.gov.vn/van-ban"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Page 4",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fcac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=16&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=4"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cdvq&p_p_li",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL - Tiếp theo",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cdvq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cdvq_redirect=%2Fvi%2Fl%25E1%25BA%25A5y-%25C3%25BD-ki%25E1%25BA%25BFn-d%25E1%25BB%25B1-th%25E1%25BA%25A3o-vbqppl1&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cdvq_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_cdvq_cur=2"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_li",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Lấy ý Kiến Dự thảo VBQPPL - Tiếp theo",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/l%E1%BA%A5y-%C3%BD-ki%E1%BA%BFn-d%E1%BB%B1-th%E1%BA%A3o-vbqppl1?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fl%25E1%25BA%25A5y-%25C3%25BD-ki%25E1%25BA%25BFn-d%25E1%25BB%25B1-th%25E1%25BA%25A3o-vbqppl1&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=50&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=2"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt.",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Page 1",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=1"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Văn bản cải cách hành chính - Trang kế tiếp",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cai-cach-hanh-chinh?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_redirect=%2Fvi%2Fvan-ban-cai-cach-hanh-chinh&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_delta=10&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ncdx_cur=2"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc; Apps Script: RuntimeError: Nội dung vượt giới hạn 400 KB; bỏ qua để tránh trả dữ liệu bị cắt.",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cchc"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 1",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=1"
+      }
+    ],
+    "failed_sources": 31,
+    "fallback_sources": 21,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-28 11:28:34 UTC",
+    "new_to_sheets": 7,
+    "older_than_60_days": 2878,
+    "pending_sheets_exports": 0,
+    "recognized": 6090,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1294,
+    "review_to_sheets": 5,
+    "run_attempt": "1",
+    "run_id": "46138864374",
+    "scan_profile": "remaining",
+    "source_retries_deferred": 23,
+    "source_retry_queue_pending": 60,
+    "sources": 328,
+    "started_at": "2026-11-28 11:16:04 UTC",
+    "successful_sources": 297,
+    "trigger": "push",
+    "unknown_date": 529
   }
 ]
