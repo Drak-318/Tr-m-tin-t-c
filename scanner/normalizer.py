@@ -134,7 +134,7 @@ def extract_doc_info(title):
     # cited later in the title. Require a substantive title so category links
     # such as "Văn bản mới" are not mistaken for documents.
     leading_type=re.match(
-        r"^\s*(Công văn|Thông báo|Kế hoạch|Báo cáo|Giấy mời|Hướng dẫn|"
+        r"^\s*(Công văn|Thông báo|Kế hoạch|Báo cáo|Giấy mời|Hướng dẫn|Nghị quyết|"
         r"Quyết định|Chỉ thị|Kết luận)\b",
         title,re.I
     )
