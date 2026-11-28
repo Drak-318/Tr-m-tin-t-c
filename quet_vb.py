@@ -479,7 +479,13 @@ def main():
         status=result["status"]
         if not result["error"] and result["items"]: status="Hoạt động" if recognized else "Đã truy cập, chưa nhận diện văn bản"
         if result.get("fallback_used"): status="Hoạt động qua nguồn dự phòng"
-        if source.get("row") is not None: source_status.append({"row":source["row"],"count":recognized,"status":status[:45]})
+        source_status.append({
+            "url": source.get("url", ""),
+            "name": source.get("name", ""),
+            "group": source.get("group", ""),
+            "count": recognized,
+            "status": status[:45],
+        })
 
     # Recheck a small, bounded batch of previously undated documents on their detail pages.
     # This is deliberately limited per run so source collection remains the priority.
