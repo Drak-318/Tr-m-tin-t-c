@@ -89,8 +89,11 @@ def extract_source_candidates(html, page_url, source_name="", source_group="Văn
         path = (parsed.path or "").lower()
         label_low = label.casefold()
         is_listing = (
-            any(term in path for term in LISTING_TERMS)
-            or any(term.replace("-", " ") in label_low for term in LISTING_TERMS)
+            (same_site or _official_host(host))
+            and (
+                any(term in path for term in LISTING_TERMS)
+                or any(term.replace("-", " ") in label_low for term in LISTING_TERMS)
+            )
         )
         is_agency_link = (
             not same_site and _official_host(host)
