@@ -88,7 +88,7 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
 
     permit_action = re.search(
         r"\b(?:cấp|cấp lại|gia hạn|điều chỉnh|thu hồi|hủy bỏ)\b.{0,100}"
-        r"\b(?:giấy phép|giấy chứng nhận đủ điều kiện|chứng chỉ hành nghề)\b",
+        r"\b(?:giấy phép|giấy chứng nhận|chứng chỉ hành nghề)\b",
         text, re.I
     )
     named_recipient = re.search(
