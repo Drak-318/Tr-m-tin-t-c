@@ -365,6 +365,31 @@ def document_identity(doc_number,title,agency="",link=""):
     return f"url:{canonicalize_url(link)}"
 
 
+CENTRAL_REFERENCE_REGEX = re.compile(
+    r"(?<![A-Z0-9])([0-9]{1,7}(?:/20[0-9]{2})?/"
+    r"(?:NĐ-CP|NQ-(?:CP|QH[0-9]+|UBTVQH[0-9]+)|"
+    r"TT-[A-ZĐ0-9-]+|QĐ-(?:TTg|[A-ZĐ0-9-]+)|QD-(?:TTg|[A-Z0-9-]+)|"
+    r"CT-(?:TTg|[A-ZĐ0-9-]+)|VBHN-[A-Z0-9-]+|QH[0-9]+|"
+    r"(?:VPCP|BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
+    r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)-[A-ZĐ0-9-]+)",
+    re.I
+)
+
+
+def extract_central_references(text, limit=20):
+    """Extract explicitly numbered central instruments cited in local material."""
+    found = []
+    seen = set()
+    for match in CENTRAL_REFERENCE_REGEX.finditer(clean_title(text)):
+        number = match.group(1).upper().rstrip(".,;:)")
+        if number not in seen:
+            seen.add(number)
+            found.append(number)
+        if len(found) >= max(0, int(limit)):
+            break
+    return found
+
+
 def make_fingerprint(doc_number,title):
     """Stable compact fingerprint; never used alone when an official number exists."""
     import hashlib
