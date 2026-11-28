@@ -22785,21 +22785,25 @@
     },
     "https://vanban.chinhphu.vn/?pageid=27160&docid=217973": {
       "agency": "Chính phủ",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 29-04-2026",
       "date_source": "DDGS search result; not an issuance date",
       "doc_number": "17/2026/NQ-CP",
       "exported_at": "2026-11-28T07:02:16+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T07:02:09+00:00",
       "identity": "number:17/2026/NQ-CP|issuer:NQ-CP|locality:",
-      "last_checked": "2026-11-28T07:02:16+00:00",
+      "last_checked": "2026-11-28T07:12:00+00:00",
+      "last_error": "",
       "last_seen": "2026-11-28T07:02:09+00:00",
       "link": "https://vanban.chinhphu.vn/?pageid=27160&docid=217973",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "pending",
-      "title": "Nghị quyết số 17/2026/NQ-CP của Chính phủ: Về cắt giảm, phân ..."
+      "status": "excluded_old",
+      "title": "Nghị quyết số 17/2026/NQ-CP của Chính phủ: Về cắt giảm, phân ...",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-04-29"
     },
     "https://vanban.chinhphu.vn/?pageid=27160&docid=218096&classid=1&orggroupid=1": {
       "agency": "Quốc hội",
@@ -24059,6 +24063,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T07:02:16+00:00",
+  "updated_at": "2026-11-28T07:12:00+00:00",
   "version": 1
 }
