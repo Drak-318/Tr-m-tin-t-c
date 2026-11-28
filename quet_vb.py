@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from scanner.config import load_source_config, config_for_source, WEB_APP_URL
 from scanner.collectors import (scan_source, verify_document_detail_date,
     search_central_reference_web, is_original_central_document_result)
-from scanner.normalizer import (
+from scanner.normalizer import is_local_central_rollout, (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
     is_local_scope, extract_central_references, document_type_from_number, issuer_from_document_number,
@@ -137,8 +137,10 @@ def main():
                 ):
                     continue
                 material=f"{_item.get('title','')} {_item.get('doc_number','')}"
-                refs=extract_central_references(material)
-                if local_source:
+                if local_source and is_local_central_rollout(
+                    _item.get("title",""), _item.get("doc_type",""), _item.get("doc_number","")
+                ):
+                    refs=extract_central_references(material)
                     local_references.extend(refs)
                 else:
                     known_central_references.update(refs)
