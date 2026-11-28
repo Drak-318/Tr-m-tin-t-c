@@ -393,7 +393,7 @@ def search_central_reference_web(reference,allowed_domains,max_results=8):
         return [],f"{type(exc).__name__}: {str(exc)[:300]}"
 
 
-def scan_source(source,config,fallback_fetcher=None):
+def scan_source(source,config):
     started=time.monotonic(); session=make_session(); config=dict(config or {})
     # Some official portals expose document tables on a dedicated subpage while
     # the registered source URL is the department homepage. Keep the registry
@@ -411,30 +411,6 @@ def scan_source(source,config,fallback_fetcher=None):
         except SourceFetchError as exc:
             errors.append(f"{exc.kind}: {exc}")
             http_status=exc.http_status
-            # Use Google's fetch infrastructure only after a real primary transport failure.
-            # An accessible page with zero matches is not treated as a network failure.
-            if fallback_fetcher and config.get("apps_script_fallback",True):
-                try:
-                    remote=fallback_fetcher(base_url,source.get("name",""))
-                    remote_status=int(remote.get("http_status",0))
-                    if remote.get("status")=="ok" and 200 <= remote_status < 300 and remote.get("body"):
-                        initial=SimpleNamespace(
-                            url=remote.get("final_url") or base_url,
-                            status_code=remote_status,
-                            headers={"Content-Type":remote.get("content_type","text/html")},
-                            text=remote["body"],
-                            content=remote["body"].encode("utf-8",errors="replace"),
-                        )
-                        items,page_count,http_status=_collect_primary(
-                            session,base_url,config,max_items,max_pages,initial_response=initial,discovery_sink=discovered_candidates
-                        )
-                        if items:
-                            fallback_used=True
-                            for item in items: item["retrieval_method"]="apps_script"
-                    else:
-                        errors.append(f"Apps Script: {remote.get('message') or 'Không lấy được nội dung'}")
-                except Exception as remote_exc:
-                    errors.append(f"Apps Script: {type(remote_exc).__name__}: {remote_exc}")
         # A dedicated Google News RSS discovery source is accepted only after
         # redirects resolve to explicitly allowed official domains. Its feed
         # timestamp is provenance, never an issuance date.
@@ -475,8 +451,7 @@ def scan_source(source,config,fallback_fetcher=None):
                     errors.append(f"Fallback {exc.kind}: {exc}")
         final_items=_deduplicate_items(items,max_items)
         if final_items:
-            methods={item.get("retrieval_method") for item in final_items if item.get("retrieval_method")}
-            status="Hoạt động qua Apps Script" if "apps_script" in methods else (
+            status=(
                 "Hoạt động + RSS bổ sung" if feed_supplement_used else
                 ("Hoạt động (dự phòng)" if fallback_used else "Hoạt động")
             )
@@ -484,7 +459,7 @@ def scan_source(source,config,fallback_fetcher=None):
                     "duration":round(time.monotonic()-started,2),"error":"; ".join(errors)[:500],
                     "fallback_used":fallback_used,"feed_supplement_used":feed_supplement_used,
                     "primary_item_count":primary_item_count,"discovered_candidates":discovered_candidates,
-                    "retrieval_method":"apps_script" if "apps_script" in methods else (
+                    "retrieval_method":(
                         "direct+aggregator" if feed_supplement_used else ("aggregator" if fallback_used else "direct")
                     )}
         if errors:
