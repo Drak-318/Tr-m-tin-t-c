@@ -129,6 +129,10 @@ def main():
         local_references=[]
         known_central_references=set()
         for _source,_result in results_by_index.values():
+            # Reset per item: refs only belongs to a local rollout item.
+            # Without this, non-rollout items can reuse an old value or raise
+            # UnboundLocalError when the first item is not a local rollout.
+            refs=[]
             local_source=is_local_scope(
                 _source.get("group",""),_source.get("name",""),_source.get("url","")
             )
