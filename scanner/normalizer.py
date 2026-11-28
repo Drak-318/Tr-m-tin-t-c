@@ -154,6 +154,7 @@ def extract_doc_info(title):
             "Quyết định":r"(?:QĐ|QD)-[A-ZĐƯƠĂÂÊÔ0-9-]+",
             "Chỉ thị":r"CT-[A-ZĐƯƠĂÂÊÔ0-9-]+",
             "Kết luận":r"KL(?:/TW|-[A-ZĐƯƠĂÂÊÔ0-9-]+)",
+            "Nghị quyết":r"NQ-(?:CP|QH[0-9]+|UBTVQH[0-9]+|HĐND|HDND)",
         }
         own_number=immediate_number.group(1) if immediate_number else ""
         expected=expected_codes.get(doc_label)
@@ -300,30 +301,45 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
         or bool(re.search(r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTG|/CT-TTG|/TT-[A-ZĐ0-9-]+|/QH[0-9]+|/VBHN-[A-Z0-9-]+)$", str(doc_number), re.I))
     )
     # Local portals are discovery channels, not a reason to ingest every
-    # provincial dispatch. A central instrument is accepted only when the
-    # item itself is titled as that instrument, not merely citing it.
+    # provincial dispatch. Accept a central instrument only when its own
+    # title, extracted type and central issuer number agree.
     if local_scope:
-        direct_central_title = bool(re.match(
-            r"^\s*(?:luật|nghị định|thông tư|nghị quyết|quyết định|chỉ thị|"
-            r"văn bản hợp nhất|pháp lệnh)\b", clean_title(title), re.I
-        ))
-        central_number = bool(re.search(
-            r"/(?:NĐ-CP|NQ-(?:CP|QH[0-9]+|UBTVQH[0-9]+)|QĐ-TTg|CT-TTg|TT-[A-ZĐ0-9-]+|VBHN-[A-Z0-9-]+|QH[0-9]+)$",
-            str(doc_number), re.I
-        ))
-        if direct_central_title and central_number and doc_type != "Công văn":
+        title_type_match = re.match(
+            r"^\s*(Luật|Nghị định|Thông tư|Nghị quyết|Quyết định|Chỉ thị|"
+            r"Văn bản hợp nhất|Công văn)\b", clean_title(title), re.I
+        )
+        central_refs_in_number = extract_central_references(doc_number, limit=1)
+        direct_central_title = bool(
+            title_type_match
+            and title_type_match.group(1).casefold() == clean_title(doc_type).casefold()
+            and central_refs_in_number
+        )
+        if direct_central_title:
             return True,10
+
         if not is_relevant_local_document(title,doc_type,doc_number):
             return False,97
-        central_reference = bool(re.search(
-            r"(?:/NĐ-CP|/NQ-CP|/QĐ-TTg|/CT-TTg|/TT-[A-ZĐ0-9-]+|/QH[0-9]+)",
-            clean_title(title), re.I
-        ))
+
+        central_references = extract_central_references(title)
+        central_reference = bool(central_references)
         rollout_language = bool(re.search(
-            r"\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện)\b",
+            r"\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện|"
+            r"phổ biến|quán triệt)\b",
             clean_title(title), re.I
         ))
-        if doc_type in {"Công văn","Thông báo","Kế hoạch","Hướng dẫn"} and central_reference and rollout_language:
+        has_local_issuing_number = bool(
+            re.search(r"\b[0-9]{1,7}/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
+            and not extract_central_references(doc_number)
+        )
+        if central_reference and (
+            doc_type == "Công văn"
+            or (
+                rollout_language
+                and doc_type in {"Thông báo","Kế hoạch","Hướng dẫn","Nghị định",
+                                 "Thông tư","Nghị quyết","Quyết định","Chỉ thị","Luật"}
+                and not has_local_issuing_number
+            )
+        ):
             return False,96
         return True,30
 
