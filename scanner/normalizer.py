@@ -271,7 +271,7 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
             r"văn bản hợp nhất|pháp lệnh)\b", clean_title(title), re.I
         ))
         central_number = bool(re.search(
-            r"/(?:NĐ-CP|NQ-CP|QĐ-TTg|CT-TTg|TT-[A-ZĐ0-9-]+|VBHN-[A-Z0-9-]+|QH[0-9]+)$",
+            r"/(?:NĐ-CP|NQ-(?:CP|QH[0-9]+|UBTVQH[0-9]+)|QĐ-TTg|CT-TTg|TT-[A-ZĐ0-9-]+|VBHN-[A-Z0-9-]+|QH[0-9]+)$",
             str(doc_number), re.I
         ))
         if direct_central_title and central_number and doc_type != "Công văn":
