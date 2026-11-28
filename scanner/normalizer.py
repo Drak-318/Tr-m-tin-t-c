@@ -212,7 +212,13 @@ def classify_document(title,agency="",doc_type="",doc_number="",source_url=""):
     if is_draft_title(title): return "Dự thảo"
     if any(x in s for x in ("dangcongsan.vn","dcs.vn","văn kiện đảng","ban chấp hành trung ương","ban bí thư","bộ chính trị","đảng cộng sản")) or re.search(r"(?:NQ|CT|KL|QD|HD)(?:-|/)TW",str(doc_number),re.I): return "Văn bản Đảng"
     if doc_type=="Công văn" or re.search(r"(?:^|/)CV-|/VPCP-|/BTC-|/BTP-|/BXD-",str(doc_number),re.I): return "Công văn"
-    if doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất","Nghị quyết liên tịch"}: return "Văn bản quy phạm pháp luật"
+    if doc_type in {"Luật","Nghị định","Thông tư","Văn bản hợp nhất","Nghị quyết liên tịch"}:
+        return "Văn bản quy phạm pháp luật"
+    if doc_type=="Nghị quyết" and (
+        re.search(r"(?:^|/)(?:NQ-(?:CP|QH|UBTVQH|HĐND|HDND|LT)|QH\d+)(?:$|/)",str(doc_number),re.I)
+        or any(x in s for x in ("quốc hội","chính phủ","ủy ban thường vụ quốc hội","hội đồng nhân dân","hđnd"))
+    ):
+        return "Văn bản quy phạm pháp luật"
     if any(x in s for x in LOCAL_KEYWORDS): return "Văn bản địa phương"
     return "Văn bản khác"
 
