@@ -114,6 +114,11 @@ def main():
                 _source.get("group",""),_source.get("name",""),_source.get("url","")
             )
             for _item in _result.get("items",[]):
+                if is_too_old(
+                    _item.get("title",""),_item.get("doc_number",""),
+                    MAX_AGE_DAYS,_item.get("published_date")
+                ):
+                    continue
                 material=f"{_item.get('title','')} {_item.get('doc_number','')}"
                 refs=extract_central_references(material)
                 if local_source:
