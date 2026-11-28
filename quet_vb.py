@@ -24,6 +24,7 @@ from scanner.source_discovery import record_candidates, pending_candidates, upda
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
     enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document, pending_source_retries, record_source_scan_result, filter_sources_due_for_retry)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
+from scanner.run_health import validate_run_outcome
 
 MAX_WORKERS=5  # Tổng ngân sách: priority 2 + full/remaining 3, tối đa 5 nguồn đồng thời.
 SAVE_BATCH_SIZE=50
@@ -73,8 +74,10 @@ def main():
         for deferred in deferred_sources[:5]:
             print(f"[RETRY-BACKOFF] {deferred.get('name')}: thử lại sau {deferred.get('retry_after')}")
     if not sources:
-        print("[RETRY-BACKOFF] Không có nguồn đến hạn trong lượt này; giữ nguyên danh sách và bộ nhớ.")
-        return
+        raise RuntimeError(
+            "[RETRY-BACKOFF] Không có nguồn đến hạn trong lượt này. "
+            "Không ghi nhận lượt quét rỗng là thành công; giữ nguyên danh sách và bộ nhớ."
+        )
 
     state=load_state()
     # Also consult the identities already persisted in the Google Sheets memory
@@ -649,7 +652,24 @@ def main():
             )
     for i in range(len(sources)):
         s,r=results_by_index[i]; report.append(f"| {s.get('name','')[:50]} | {len(r['items'])} | {recognized_by_source[i]} | {r['status']} |")
-    append_step_summary(report); print(f"[DONE] Hoàn tất trong {duration} giây.")
+    append_step_summary(report)
+    print(f"[DONE] Hoàn tất xử lý trong {duration} giây.")
+
+    # A scan is not successful merely because Python reached the end:
+    # require at least one source to respond and every queued Sheets export
+    # to be acknowledged before GitHub Actions can mark the job green.
+    pending_export_count = len(load_sheets_export_queue())
+    health_errors = validate_run_outcome(
+        total_sources=len(sources),
+        failed_sources=totals["failed"],
+        pending_exports=pending_export_count,
+        sheets_configured=bool(WEB_APP_URL),
+    )
+    if health_errors:
+        for message in health_errors:
+            print(f"[RUN-HEALTH-ERROR] {message}", file=sys.stderr)
+        raise RuntimeError("Lượt quét chưa đạt điều kiện thành công: " + "; ".join(health_errors))
+    print("[RUN-HEALTH] Đạt điều kiện: có nguồn phản hồi và hàng đợi Google Sheets đã được xác nhận.")
 
 if __name__=="__main__":
     try: main()
