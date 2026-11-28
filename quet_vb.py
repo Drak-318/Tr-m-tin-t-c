@@ -10,7 +10,7 @@ from urllib.parse import quote
 from datetime import datetime, timezone
 
 from scanner.config import load_source_config, config_for_source, WEB_APP_URL
-from scanner.collectors import scan_source, verify_document_detail_date
+from scanner.collectors import scan_source, verify_document_detail_date, search_central_reference_web
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
@@ -105,7 +105,7 @@ def main():
     # instrument numbers from local notices, then search only official central
     # domains for the original instrument. Never export the local rollout letter
     # as a substitute for the cited decree/circular.
-    central_reference_stats={"found":0,"queried":0,"matched":0,"limit":12}
+    central_reference_stats={"found":0,"queried":0,"matched":0,"ddgs_fallbacks":0,"limit":12}
     if profile in {"full","remaining"}:
         local_references=[]
         known_central_references=set()
@@ -147,7 +147,10 @@ def main():
         ]
         for ref in unique_references[:central_reference_stats["limit"]]:
             central_reference_stats["queried"]+=1
-            query=f'"{ref}" (site:quochoi.vn OR site:vanban.chinhphu.vn OR site:chinhphu.vn OR site:vbpl.vn OR site:phapluat.gov.vn OR site:moj.gov.vn OR site:mof.gov.vn OR site:moet.gov.vn OR site:moh.gov.vn OR site:mae.gov.vn OR site:moit.gov.vn OR site:sbv.gov.vn OR site:moha.gov.vn OR site:moc.gov.vn OR site:mps.gov.vn OR site:baochinhphu.vn) when:60d'
+            # Search the exact number broadly; final URLs are still restricted
+            # to central authorities below. Google News' multi-site OR query
+            # missed known official records in the live run.
+            query=f'"{ref}" when:60d'
             lookup_url="https://news.google.com/rss/search?q="+quote(query)+"&hl=vi&gl=VN&ceid=VN:vi"
             lookup_source={
                 "name":f"Tra cứu văn bản Trung ương theo số hiệu {ref}",
@@ -164,20 +167,38 @@ def main():
                 item for item in lookup_result.get("items",[])
                 if ref.casefold() in f"{item.get('title','')} {item.get('link','')}".casefold()
             ]
+            lookup_method="Google News RSS"
+            ddgs_error=""
+            if not matched:
+                web_items,ddgs_error=search_central_reference_web(
+                    ref,lookup_domains,max_results=8
+                )
+                if web_items:
+                    matched=web_items
+                    lookup_method="DDGS"
+                    central_reference_stats["ddgs_fallbacks"]+=1
             if matched:
                 lookup_result["items"]=matched
+                lookup_result["status"]=f"Hoạt động qua {lookup_method}"
+                lookup_result["error"]=""
                 sources.append(lookup_source)
                 results_by_index[len(sources)-1]=(lookup_source,lookup_result)
                 central_reference_stats["matched"]+=len(matched)
-                print(f"[CENTRAL-REFERENCE] {ref}: tìm thấy {len(matched)} kết quả từ nguồn Trung ương.")
+                print(f"[CENTRAL-REFERENCE] {ref}: tìm thấy {len(matched)} kết quả từ nguồn Trung ương qua {lookup_method}.")
             else:
-                print(f"[CENTRAL-REFERENCE] {ref}: chưa tìm thấy bản gốc trên các nguồn Trung ương đã cho phép.")
+                rss_detail=lookup_result.get("error") or lookup_result.get("status","không có kết quả")
+                fallback_detail=f" | DDGS: {ddgs_error}" if ddgs_error else ""
+                print(
+                    f"[CENTRAL-REFERENCE] {ref}: chưa tìm thấy bản gốc. "
+                    f"RSS: {rss_detail}; số mục RSS: {len(lookup_result.get('items',[]))}{fallback_detail}"
+                )
         if central_reference_stats["queried"]:
             print(
                 "[CENTRAL-REFERENCE] "
                 f"Phát hiện {central_reference_stats['found']} số hiệu; "
                 f"đã tra cứu {central_reference_stats['queried']}; "
-                f"nhận được {central_reference_stats['matched']} kết quả."
+                f"nhận được {central_reference_stats['matched']} kết quả; "
+                f"có {central_reference_stats['ddgs_fallbacks']} lượt dùng DDGS."
             )
 
     if profile in {"full","remaining"}:
