@@ -17,7 +17,8 @@ class GitHubControllerContractTests(unittest.TestCase):
         scheduler = Path("scripts/github_scheduler.js").read_text(encoding="utf-8")
         self.assertIn("job.completed_at", scheduler)
         self.assertIn("priorityAge >= 5", scheduler)
-        self.assertIn("Math.max(5, fullInterval)", scheduler)
+        self.assertIn("fullAge >= 30", scheduler)
+        self.assertIn("fullAge >= 5", scheduler)
         self.assertIn("globalCooldownAge < 5", scheduler)
         self.assertIn("latestAnyCompleted", scheduler)
 
