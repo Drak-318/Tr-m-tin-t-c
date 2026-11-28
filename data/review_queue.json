@@ -7981,7 +7981,7 @@
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -7989,19 +7989,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:38:58+00:00",
       "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm",
-      "last_checked": "2026-11-28T06:11:58+00:00",
+      "last_checked": "2026-11-28T06:31:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:38:58+00:00",
       "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo kết quả xét tài trợ, đặt hàng nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo bắt đầu thực hiện từ năm 2027 - Lĩnh vực Lâm nghiệp và Kiểm lâm",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -8009,15 +8009,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:38:58+00:00",
       "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm",
-      "last_checked": "2026-11-28T06:11:58+00:00",
+      "last_checked": "2026-11-28T06:31:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:38:58+00:00",
       "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Thông báo gia hạn kế hoạch đặt hàng nhiệm vụ nghiên cứu và phát triển CNCL đặt hàng thuộc Chương trình KHCN, ĐMST quốc gia đặc biệt về CNCL để tuyển chọn tổ chức chủ trì thực hiện",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
@@ -8561,7 +8561,7 @@
     },
     "https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx": {
       "agency": "Medinet TP.HCM",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -8569,15 +8569,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:38:58+00:00",
       "identity": "url:https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx",
-      "last_checked": "2026-11-28T06:11:58+00:00",
+      "last_checked": "2026-11-28T06:31:59+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:38:58+00:00",
       "link": "https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Địa phương",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Kế hoạch Triển khai Thực hành tốt bảo quản thuốc (GSP) tại các cơ sở khám bệnh, chữa bệnh, cơ sở tiêm chủng, cơ sở bảo quản vắc xin trong chương trình tiêm chủng mở rộng quốc gia tuyến huyện và tuyến tỉnh",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://medinet.hochiminhcity.gov.vn/media/huong-dan-ho-tro-nguoi-f0-an-uong-tai-giuong-tap-huan-cho-tnv-tham-gia-pcd-covi-c1020-52072.aspx": {
       "agency": "Medinet TP.HCM",
@@ -18662,7 +18662,7 @@
     },
     "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -18670,19 +18670,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:38:58+00:00",
       "identity": "url:https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-",
-      "last_checked": "2026-11-28T06:12:00+00:00",
+      "last_checked": "2026-11-28T06:32:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:38:58+00:00",
       "link": "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Báo cáo kết quả thực hiện các nhiệm vụ công ích và trách nhiệm xã hội khác (nếu có)",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -18690,15 +18690,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:38:58+00:00",
       "identity": "url:https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m",
-      "last_checked": "2026-11-28T06:12:00+00:00",
+      "last_checked": "2026-11-28T06:32:00+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:38:58+00:00",
       "link": "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Báo cáo tình hình thực hiện sắp xếp, đổi mới doanh nghiệp hằng năm",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://sbv.gov.vn/vi/bao-cao-danh-gia-ve-ket-qua-thuc-hien-ke-hoach-san-xuat-kinh-doanh-hang-nam-va-03-nam-gan-nhat-tinh-den-nam-bao-cao": {
       "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
@@ -24041,6 +24041,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T06:27:45+00:00",
+  "updated_at": "2026-11-28T06:32:00+00:00",
   "version": 1
 }
