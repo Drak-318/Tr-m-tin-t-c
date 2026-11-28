@@ -446,6 +446,38 @@
         "sav.gov.vn",
         "baohiemxahoi.gov.vn"
       ]
+    },
+    "https://ninhbinh.gov.vn/Default.aspx?pageid=27172": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://thuvienphapluat.vn/hoi-dap-phap-luat": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://thuvienphapluat.vn/lao-dong-tien-luong/": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
     }
   }
 }
