@@ -237,4 +237,33 @@ class NormalizerTests(unittest.TestCase):
         b=document_identity("12/2026/QĐ-UBND","Quyết định 12/2026/QĐ-UBND","UBND tỉnh Đồng Nai","https://b.gov.vn/doc")
         self.assertNotEqual(a,b)
 
+
+    def test_government_resolution_is_classified_as_legal_normative_document(self):
+        self.assertEqual(
+            classify_document(
+                "Nghị quyết 01/2026/NQ-CP về nhiệm vụ, giải pháp",
+                "Chính phủ", "Nghị quyết", "01/2026/NQ-CP"
+            ),
+            "Văn bản quy phạm pháp luật"
+        )
+
+    def test_local_hdn_d_resolution_is_classified_as_legal_normative_document(self):
+        title = "Nghị quyết 12/2026/NQ-HĐND quy định mức học phí"
+        self.assertEqual(
+            classify_document(title, "HĐND tỉnh An Giang", "Nghị quyết", "12/2026/NQ-HĐND"),
+            "Văn bản quy phạm pháp luật"
+        )
+        keep, _ = classify_and_score(
+            title, "HĐND tỉnh An Giang", "Nghị quyết", "12/2026/NQ-HĐND", "Địa phương"
+        )
+        self.assertTrue(keep)
+
+    def test_party_resolution_remains_party_document(self):
+        self.assertEqual(
+            classify_document("Nghị quyết 18-NQ/TW về công tác xây dựng Đảng",
+                              "Ban Chấp hành Trung ương", "Nghị quyết", "18-NQ/TW"),
+            "Văn bản Đảng"
+        )
+
+
 if __name__=="__main__": unittest.main()
