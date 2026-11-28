@@ -307,14 +307,17 @@ def _resolve_aggregator_links(session,items,config=None):
         except requests.exceptions.RequestException:
             pass
         return None
-    with ThreadPoolExecutor(max_workers=10) as pool:
+    with ThreadPoolExecutor(max_workers=5) as pool:
         for item in pool.map(resolve,aggregator_items):
             if item: resolved.append(item)
     return resolved
 
 def scan_source(source,config,fallback_fetcher=None):
-    started=time.monotonic(); session=make_session(); base_url=source["url"].strip()
-    config=dict(config or {})
+    started=time.monotonic(); session=make_session(); config=dict(config or {})
+    # Some official portals expose document tables on a dedicated subpage while
+    # the registered source URL is the department homepage. Keep the registry
+    # URL unchanged and let source_config.json select the actual listing page.
+    base_url=str(config.get("listing_url") or source["url"]).strip()
     config["_source_name"]=source.get("name","")
     config["_source_group"]=source.get("group","Văn Bản TW")
     max_items=max(1,int(config.get("max_items",200))); max_pages=max(1,min(int(config.get("max_pages",1)),10))
