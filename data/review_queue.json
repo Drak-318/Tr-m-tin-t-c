@@ -279,7 +279,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/cong-van-so-3470-ctcs-cua-cuc-thue-ve-thue-gia-tri-gia-tang-395185209-94263": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "3470/CT-CS",
@@ -287,7 +287,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:3470/CT-CS|issuer:CT-CS|locality:",
-      "last_checked": "2026-11-28T11:49:06+00:00",
+      "last_checked": "2026-11-28T12:17:11+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/cong-van-so-3470-ctcs-cua-cuc-thue-ve-thue-gia-tri-gia-tang-395185209-94263",
@@ -299,7 +299,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/nghi-dinh-so-417-2026-ndcp-cua-chinh-phu-quy-dinh-ve-quan-ly-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-qua-nen-tang-thuong-mai-dien-tu-2108502745-35448": {
       "agency": "Chính phủ",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "417/2026/NĐ-CP",
@@ -307,7 +307,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:417/2026/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-28T11:49:10+00:00",
+      "last_checked": "2026-11-28T12:17:12+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/nghi-dinh-so-417-2026-ndcp-cua-chinh-phu-quy-dinh-ve-quan-ly-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-qua-nen-tang-thuong-mai-dien-tu-2108502745-35448",
@@ -319,7 +319,7 @@
     },
     "https://baocaotaichinh.vn/thu-vien/nghi-quyet-so-85-nqhdnd-cua-hoi-dong-nhan-dan-thanh-pho-hai-phong-ban-hanh-bang-gia-dat-lan-dau-tren-dia-ban-thanh-pho-92510456-393110": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "85/NQ-HĐND",
@@ -327,7 +327,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:85/NQ-HĐND|issuer:NQ-HĐND|locality:hải phòng ban hành bảng giá đất lần đầu trên địa bàn thành phố báo cáo tài chính",
-      "last_checked": "2026-11-28T11:49:10+00:00",
+      "last_checked": "2026-11-28T12:17:12+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thu-vien/nghi-quyet-so-85-nqhdnd-cua-hoi-dong-nhan-dan-thanh-pho-hai-phong-ban-hanh-bang-gia-dat-lan-dau-tren-dia-ban-thanh-pho-92510456-393110",
@@ -339,7 +339,7 @@
     },
     "https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-1-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-381195": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -347,7 +347,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "url:https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-1-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-381195",
-      "last_checked": "2026-11-28T11:49:10+00:00",
+      "last_checked": "2026-11-28T12:17:12+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-1-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-381195",
@@ -359,7 +359,7 @@
     },
     "https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-2-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-203345": {
       "agency": "Báo cáo tài chính",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -367,7 +367,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "url:https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-2-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-203345",
-      "last_checked": "2026-11-28T11:49:10+00:00",
+      "last_checked": "2026-11-28T12:17:12+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/tin-tuc/huong-dan-cac-cong-viec-phai-lam-cua-hkd-nhom-2-ve-khai-thue-tinh-thue-va-so-sach-ke-toan-921043681-203345",
@@ -25046,6 +25046,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T12:07:22+00:00",
+  "updated_at": "2026-11-28T12:17:12+00:00",
   "version": 1
 }
