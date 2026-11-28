@@ -69,6 +69,7 @@ class PrioritySourceTests(unittest.TestCase):
             "https://nhandan.vn/",
         }
         registered = {row["url"].rstrip("/") for row in load_sources_from_csv()}
+        expected = {url.rstrip("/") for url in expected}
         self.assertTrue(expected.issubset(registered), expected - registered)
 
     def test_law_and_resolution_discovery_feeds_are_registered(self):
