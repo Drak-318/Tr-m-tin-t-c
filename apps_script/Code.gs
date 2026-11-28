@@ -533,7 +533,8 @@ const INSPECTOR_CONFIG = {
   AUDIT_SHEET: "Thanh tra he thong",
   PRIORITY_STALE_MINUTES: 12,
   FULL_STALE_MINUTES: 42,
-  DISPATCH_COOLDOWN_MINUTES: 10,
+  POST_COMPLETION_COOLDOWN_MINUTES: 5,
+  DISPATCH_ACK_TIMEOUT_MINUTES: 15,
   RUNS_TO_INSPECT: 18,
   AUDIT_MAX_ROWS: 5000
 };
@@ -594,28 +595,40 @@ function thanhTraTramTinTuc() {
 
     if (priorityActive || fullActive) {
       action = "SCAN_ACTIVE";
-      reason = "Co job dang queued/in_progress; khong gui them lenh trung.";
+      reason = "Co job dang queued/in_progress; chi theo doi, khong gui lenh moi.";
     } else if (fullStale) {
-      const cooldown = conTrongCooldown_(props, "LAST_FULL_DISPATCH_AT", now);
-      if (cooldown) {
-        action = "WAIT_FULL_DISPATCH";
-        reason = "Da gui lenh quet toan bo gan day; dang cho GitHub tiep nhan/hoan tat.";
+      const completionCooldown = conSauHoanTat_(full.lastCompletedAt, now);
+      const awaitingGitHub = conTrongCooldown_(props, "LAST_FULL_DISPATCH_AT", now,
+        INSPECTOR_CONFIG.DISPATCH_ACK_TIMEOUT_MINUTES);
+      if (completionCooldown) {
+        action = "WAIT_FULL_COOLDOWN";
+        reason = "Luot quet toan bo vua ket thuc; cho du 5 phut tinh tu thoi diem hoan tat.";
+      } else if (!full.lastCompletedAt && awaitingGitHub) {
+        action = "WAIT_FULL_ACK";
+        reason = "Da gui yeu cau; cho GitHub tao job, chua gui lai de tranh trung lenh.";
       } else {
         dispatchResult = guiLenhQuetGitHub_(token, "full");
         props.setProperty("LAST_FULL_DISPATCH_AT", String(now));
         action = "DISPATCH_FULL";
-        reason = "Khong co luot quet toan bo thanh cong trong " + Math.round(fullAge) + " phut.";
+        reason = "Khong co luot quet toan bo thanh cong trong " + Math.round(fullAge) +
+          " phut; khong con job hoat dong va da qua thoi gian cho an toan.";
       }
     } else if (priorityStale) {
-      const cooldown = conTrongCooldown_(props, "LAST_PRIORITY_DISPATCH_AT", now);
-      if (cooldown) {
-        action = "WAIT_PRIORITY_DISPATCH";
-        reason = "Da gui lenh quet uu tien gan day; dang cho GitHub tiep nhan/hoan tat.";
+      const completionCooldown = conSauHoanTat_(priority.lastCompletedAt, now);
+      const awaitingGitHub = conTrongCooldown_(props, "LAST_PRIORITY_DISPATCH_AT", now,
+        INSPECTOR_CONFIG.DISPATCH_ACK_TIMEOUT_MINUTES);
+      if (completionCooldown) {
+        action = "WAIT_PRIORITY_COOLDOWN";
+        reason = "Luot quet uu tien vua ket thuc; cho du 5 phut tinh tu thoi diem hoan tat.";
+      } else if (!priority.lastCompletedAt && awaitingGitHub) {
+        action = "WAIT_PRIORITY_ACK";
+        reason = "Da gui yeu cau uu tien; cho GitHub tao job, chua gui lai.";
       } else {
         dispatchResult = guiLenhQuetGitHub_(token, "priority");
         props.setProperty("LAST_PRIORITY_DISPATCH_AT", String(now));
         action = "DISPATCH_PRIORITY";
-        reason = "Khong co luot quet uu tien thanh cong trong " + Math.round(priorityAge) + " phut.";
+        reason = "Khong co luot quet uu tien thanh cong trong " + Math.round(priorityAge) +
+          " phut; khong con job hoat dong va da qua thoi gian cho an toan.";
       }
     } else {
       reason = "Priority: " + dinhDangTuoi_(priorityAge) + "; full: " + dinhDangTuoi_(fullAge) + ".";
@@ -696,17 +709,19 @@ function tinhTuoiJob_(jobs, jobName, now) {
   const active = matching.some(function(job) {
     return job.status === "queued" || job.status === "in_progress" || job.status === "pending";
   });
-  const successes = matching.filter(function(job) {
-    return job.conclusion === "success" && job.completed_at;
+  const completed = matching.filter(function(job) {
+    return job.completed_at && job.conclusion;
   }).sort(function(a, b) {
     return new Date(b.completed_at).getTime() - new Date(a.completed_at).getTime();
   });
-  if (!successes.length) return {active: active, ageMinutes: Infinity, lastSuccess: null};
-  const lastSuccess = successes[0].completed_at;
+  const successes = completed.filter(function(job) { return job.conclusion === "success"; });
+  const lastSuccess = successes.length ? successes[0].completed_at : null;
+  const lastCompletedAt = completed.length ? completed[0].completed_at : null;
   return {
     active: active,
-    ageMinutes: Math.max(0, (now - new Date(lastSuccess).getTime()) / 60000),
-    lastSuccess: lastSuccess
+    ageMinutes: lastSuccess ? Math.max(0, (now - new Date(lastSuccess).getTime()) / 60000) : Infinity,
+    lastSuccess: lastSuccess,
+    lastCompletedAt: lastCompletedAt
   };
 }
 
@@ -738,9 +753,17 @@ function kiemTraPhanHoiGitHub_(response, operation) {
   }
 }
 
-function conTrongCooldown_(props, key, now) {
+function conTrongCooldown_(props, key, now, minutes) {
   const last = Number(props.getProperty(key) || 0);
-  return last > 0 && (now - last) < INSPECTOR_CONFIG.DISPATCH_COOLDOWN_MINUTES * 60000;
+  const windowMinutes = Number(minutes || INSPECTOR_CONFIG.DISPATCH_ACK_TIMEOUT_MINUTES);
+  return last > 0 && (now - last) < windowMinutes * 60000;
+}
+
+function conSauHoanTat_(completedAt, now) {
+  if (!completedAt) return false;
+  const completedMs = new Date(completedAt).getTime();
+  if (!Number.isFinite(completedMs)) return false;
+  return (now - completedMs) < INSPECTOR_CONFIG.POST_COMPLETION_COOLDOWN_MINUTES * 60000;
 }
 
 function dinhDangTuoi_(age) {
