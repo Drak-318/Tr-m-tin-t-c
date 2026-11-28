@@ -90,5 +90,22 @@ class PrioritySourceTests(unittest.TestCase):
         self.assertNotIn("site%3Alamdong.gov.vn", central["url"])
         self.assertIn("site%3Alamdong.gov.vn", local["url"])
 
+
+    def test_central_rss_config_excludes_provincial_domains(self):
+        import json
+        from pathlib import Path
+
+        rows = load_sources_from_csv()
+        central = next(row for row in rows if row["name"] == "Tìm kiếm văn bản cấp Trung ương - RSS")
+        local = next(row for row in rows if row["name"] == "Dò tìm chính sách địa phương có tác động rộng - Google News RSS")
+        config = json.loads(Path("source_config.json").read_text(encoding="utf-8"))
+        central_domains = set(config["sources"][central["url"]]["allowed_final_domains"])
+        local_domains = set(config["sources"][local["url"]]["allowed_final_domains"])
+        self.assertIn("chinhphu.vn", central_domains)
+        self.assertIn("vbpl.vn", central_domains)
+        self.assertNotIn("lamdong.gov.vn", central_domains)
+        self.assertEqual(local_domains, {"lamdong.gov.vn"})
+
+
 if __name__ == "__main__":
     unittest.main()
