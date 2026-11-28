@@ -208,7 +208,7 @@ jobs:
             });
             const runs = response.data.workflow_runs
               .filter(run => run.id !== context.runId)
-              .slice(0, 16);
+              .slice(0, 30);
 
             // One GitHub controller owns both schedules. It never dispatches
             // while any scan job is queued/running, and measures cooldown from
