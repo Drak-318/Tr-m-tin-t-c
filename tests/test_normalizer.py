@@ -320,4 +320,14 @@ class NormalizerTests(unittest.TestCase):
         self.assertTrue(keep)
 
 
+
+    def test_local_dispatch_without_own_number_is_not_misread_as_cited_decree(self):
+        title = "Công văn hướng dẫn triển khai Nghị định 45/2026/NĐ-CP về đất đai"
+        self.assertEqual(extract_doc_info(title), ("Công văn", "Đang cập nhật"))
+        keep, _ = classify_and_score(
+            title, "Sở Tư pháp Lâm Đồng", "Công văn", "Đang cập nhật", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+
 if __name__=="__main__": unittest.main()
