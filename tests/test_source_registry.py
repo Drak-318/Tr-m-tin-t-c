@@ -1,6 +1,6 @@
 import unittest
 
-from scanner.source_registry import filter_priority_sources, filter_non_priority_sources
+from scanner.source_registry import filter_priority_sources, filter_non_priority_sources, load_sources_from_csv
 
 
 class PrioritySourceTests(unittest.TestCase):
