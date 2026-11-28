@@ -97,8 +97,8 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
         text, re.I
     )
     general_licensing_rule = re.search(
-        r"\\b(?:quy định|hướng dẫn|trình tự|thủ tục)\\b.{0,100}\\b(?:việc\\s+)?"
-        r"(?:cấp|điều chỉnh|thu hồi|gia hạn)\\b",
+        r"\b(?:quy định|hướng dẫn|trình tự|thủ tục)\b.{0,100}\b(?:việc\s+)?"
+        r"(?:cấp|điều chỉnh|thu hồi|gia hạn)\b",
         text, re.I
     )
     if permit_action and named_recipient and not general_licensing_rule:
