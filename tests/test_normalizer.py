@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime
 from scanner.normalizer import (
     canonicalize_url, extract_doc_info, classify_and_score,
-    classify_document, document_identity, is_too_old, make_fingerprint, has_document_date,
+    classify_document, document_identity, is_too_old, make_fingerprint, has_document_date, extract_central_references,
 )
 
 class NormalizerTests(unittest.TestCase):
@@ -362,6 +362,24 @@ class NormalizerTests(unittest.TestCase):
             title, "UBND tỉnh Lâm Đồng", "Quyết định", "12/2026/QĐ-UBND", "Địa phương"
         )
         self.assertTrue(keep)
+
+
+
+    def test_extract_central_instrument_references_from_local_dispatch(self):
+        title = (
+            "Công văn số 123/SNV-VP triển khai Nghị định 45/2026/NĐ-CP, "
+            "Thông tư 08/2026/TT-BNV và Quyết định 77/2026/QĐ-TTg"
+        )
+        self.assertEqual(
+            extract_central_references(title),
+            ["45/2026/NĐ-CP", "08/2026/TT-BNV", "77/2026/QĐ-TTG"]
+        )
+
+    def test_central_reference_extractor_ignores_local_instrument_numbers(self):
+        self.assertEqual(
+            extract_central_references("Quyết định 12/2026/QĐ-UBND và Công văn 45/SNV-VP"),
+            []
+        )
 
 
 if __name__=="__main__": unittest.main()
