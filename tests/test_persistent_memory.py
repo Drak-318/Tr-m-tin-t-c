@@ -108,6 +108,13 @@ class PersistentMemoryTests(unittest.TestCase):
         self.assertEqual(pending, 0)
         self.assertEqual(memory.pending_source_retries(), [])
         self.assertEqual(memory.load_source_retry_queue()["https://example.gov.vn/list"]["status"], "recovered")
+        # A new failure after recovery starts a fresh backoff streak.
+        memory.record_source_scan_result(source, {
+            "error":"HTTP 403","status":"Lỗi: HTTP","http_status":403,"items":[]
+        })
+        row = memory.load_source_retry_queue()["https://example.gov.vn/list"]
+        self.assertEqual(row["attempts"], 1)
+
 
     def test_run_seen_index_blocks_same_identity_from_second_source(self):
         index = memory.RunSeenIndex()
