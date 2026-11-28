@@ -22,7 +22,22 @@ const CONFIG = {
 
 // Exact official domains in the GitHub-managed priority registry that may not
 // yet exist in the legacy Google Sheets source tab.
-const EXTRA_ALLOWED_SOURCE_HOSTS = new Set(["vbpl.vn", "vbpq.mof.gov.vn"]);
+const EXTRA_ALLOWED_SOURCE_HOSTS = new Set([
+  "vbpl.vn",
+  "vbpq.mof.gov.vn",
+  "kiemtra-phapche.hcm.edu.vn",
+  "snv.lamdong.gov.vn",
+  "qppl.thanhhoa.gov.vn",
+  "syt.lamdong.gov.vn",
+  "stc.lamdong.gov.vn",
+  "stp.lamdong.gov.vn",
+  "songoaivu.lamdong.gov.vn",
+  "snnmt.lamdong.gov.vn",
+  "sxd.lamdong.gov.vn",
+  "sxd.quangngai.gov.vn",
+  "nhandan.vn",
+  "news.google.com"
+]);
 
 function jsonOutput_(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj))
@@ -30,7 +45,7 @@ function jsonOutput_(obj) {
 }
 
 function doGet() {
-  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.1"});
+  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.2"});
 }
 
 function doPost(e) {
