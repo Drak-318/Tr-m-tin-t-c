@@ -31,6 +31,40 @@ class SourceDiscoveryTests(unittest.TestCase):
         self.assertEqual(rows[0]["url"], "https://example.gov.vn/van-ban-phap-luat")
         self.assertEqual(rows[0]["status"], "pending")
 
+
+    def test_discovers_cross_agency_official_portal_as_hub_not_active_source(self):
+        html = '<a href="https://snv.lamdong.gov.vn/">Sở Nội vụ tỉnh Lâm Đồng</a>'
+        rows = discovery.extract_source_candidates(
+            html, "https://moha.gov.vn/", "Cơ quan Trung ương", "Văn Bản TW"
+        )
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["url"], "https://snv.lamdong.gov.vn")
+        self.assertEqual(rows[0]["group"], "Địa phương")
+        self.assertEqual(rows[0]["candidate_kind"], "portal_hub")
+        discovery.record_candidates(rows, path=self.path)
+        self.assertEqual(discovery.active_sources(path=self.path), [])
+        self.assertEqual(len(discovery.pending_candidates(path=self.path)), 1)
+
+    def test_discovers_central_ministry_from_local_portal_directory(self):
+        html = '<a href="https://moha.gov.vn/">Bộ Nội vụ</a>'
+        rows = discovery.extract_source_candidates(
+            html, "https://snv.lamdong.gov.vn/", "Sở Nội vụ Lâm Đồng", "Địa phương"
+        )
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["group"], "Văn Bản TW")
+        self.assertEqual(rows[0]["candidate_kind"], "portal_hub")
+
+    def test_ignores_cross_site_non_official_or_unlabelled_links(self):
+        html = '''
+        <a href="https://example.com/van-ban">Văn bản</a>
+        <a href="https://random.gov.vn/">Trang chủ</a>
+        <a href="https://facebook.com/example">Sở Nội vụ</a>
+        '''
+        rows = discovery.extract_source_candidates(
+            html, "https://moha.gov.vn/", "Bộ", "Văn Bản TW"
+        )
+        self.assertEqual(rows, [])
+
     def test_candidate_becomes_active_only_after_explicit_validation_update(self):
         rows = discovery.extract_source_candidates(
             '<a href="/van-ban">Văn bản</a>',
