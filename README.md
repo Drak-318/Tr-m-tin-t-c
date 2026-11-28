@@ -1,208 +1,148 @@
 # Trạm Tin Tức
 
-Bộ quét văn bản pháp luật tự động. GitHub quản lý danh sách nguồn tại `danh_sach_nguon.csv`; GitHub Actions tự động thu thập và xử lý website; Google Sheets tiếp tục nhận kết quả và lưu bộ nhớ chống trùng.
+Hệ thống tự động thu thập văn bản pháp luật, xác minh ngày, phân loại, chống trùng, lưu bộ nhớ bền vững và đồng bộ kết quả sang Google Sheets.
 
-## 1. Hệ thống có tự chạy không?
+## 1. Kiến trúc vận hành
 
-**Có.** Hệ thống có 3 lớp lịch chạy:
-- Quét nhanh nhóm nguồn ưu tiên mỗi 5 phút.
-- Trong chu kỳ 30 phút, quét nhóm ưu tiên trước; sau khi nhóm này hoàn tất mới quét các nguồn còn lại, không quét lặp nhóm ưu tiên.
-- Watchdog kiểm tra tình trạng và kích hoạt lượt quét bù mỗi 10 phút khi phát hiện lịch quét bị bỏ lỡ.
-- Trạng thái watchdog được ghi tại `data/scheduler_health.json`; lỗi từng nguồn được lưu trong `data/scan_history.json` và `data/source_retry_queue.json` để tự quét bù.
+**GitHub là trung tâm điều hành duy nhất. Google Sheets chỉ là nơi nhận kết quả.**
 
-GitHub Actions có thể bắt đầu trễ hơn lịch dự kiến; đây không phải bộ hẹn giờ chính xác từng giây.
+| Thành phần | Vai trò |
+|---|---|
+| `danh_sach_nguon.csv` | Danh sách nguồn chính, được quản lý trên GitHub |
+| `priority_sources.json` | Chọn nhóm nguồn cần quét ưu tiên |
+| `source_config.json` | Cấu hình riêng cho website, RSS, phân trang và bộ chọn HTML |
+| GitHub Actions | Lập lịch, điều phối, kiểm tra, hủy job treo và khởi động lượt quét |
+| Python `quet_vb.py` | Thu thập, chuẩn hóa, xác minh ngày, phân loại, chống trùng |
+| `data/*.json` | Bộ nhớ chống trùng, hàng đợi xuất Sheets, hồ sơ chưa rõ ngày, lịch sử và lỗi nguồn |
+| Apps Script `Code.gs` | API nhận kết quả đã xác thực và ghi vào Google Sheets |
+| Google Sheets | Hiển thị kết quả, hồ sơ cần xác minh, trạng thái nguồn và cảnh báo |
 
-Bạn không cần bấm `Run workflow` mỗi lần. Nút này chỉ dùng khi muốn chạy thử hoặc quét ngay.
+Apps Script không lập lịch, không gửi lệnh GitHub, không thu thập website và không quyết định nguồn nào được quét. Mã mới cũng tự vô hiệu hóa trigger thanh tra cũ khi GitHub gửi yêu cầu đồng bộ đầu tiên.
 
-## 2. Có quét toàn bộ nguồn không?
+## 2. Lịch chạy và thanh tra trên GitHub
 
-**Có. Không giới hạn tổng số nguồn ở 5.**
+Workflow: `.github/workflows/auto_scan.yml`
 
-Mỗi lượt chạy thực hiện:
-1. Đọc toàn bộ URL đang bật trong file `danh_sach_nguon.csv` trên GitHub.
-2. Đưa toàn bộ nguồn trong CSV vào hàng đợi quét.
-3. Chạy tối đa 5 nguồn cùng một thời điểm.
-4. Khi một nguồn hoàn tất, hệ thống tự lấy nguồn tiếp theo cho đến khi xử lý hết danh sách.
+GitHub chạy bộ điều phối theo lịch 5 phút/lần. Đây là lượt kiểm tra trạng thái, không phải cứ mỗi lần kiểm tra là gửi một lệnh quét.
 
-Ví dụ: sheet có 32 nguồn thì hệ thống vẫn xử lý cả 32 nguồn; chỉ có tối đa 5 nguồn hoạt động cùng lúc. Các nguồn còn lại chờ đến lượt.
+- **Quét ưu tiên:** chỉ khởi động khi không có lượt quét nào đang chờ/chạy và đã đủ ít nhất 5 phút kể từ lúc lượt quét trước hoàn thành.
+- **Quét các nguồn còn lại:** theo chu kỳ 30 phút tính từ lúc lượt quét toàn bộ trước hoàn thành. Nếu lượt toàn bộ thất bại, hệ thống có thể thử lại sau 5 phút.
+- **Chống gửi lệnh trùng:** nếu GitHub đã có job `queued`, `pending` hoặc `in_progress`, bộ điều phối chỉ theo dõi, không gửi lệnh mới.
+- **Phục hồi job treo:** job chờ quá 20 phút, quét ưu tiên chạy quá 15 phút hoặc quét toàn bộ chạy quá 50 phút sẽ bị xem xét là quá hạn. GitHub hủy workflow cũ rồi đánh giá lại ở vòng điều phối tiếp theo.
+- **Không chạy theo push mã nguồn:** commit và cập nhật code chỉ chạy workflow kiểm thử; không tự khởi động quét dữ liệu.
+- **Giới hạn xử lý:** Python dùng tối đa 2 luồng nguồn cho nhóm ưu tiên và 3 luồng cho nhóm còn lại. Bộ điều phối không cho hai lượt quét tự động chồng lên nhau.
 
-Mỗi website mặc định được đọc trang nguồn đã nhập. Việc quét nhiều trang phân trang của cùng một website cần cấu hình riêng trong `source_config.json`; quét toàn bộ nguồn không đồng nghĩa tự động đọc mọi trang con của mọi website.
+Lịch GitHub có thể khởi chạy trễ hơn giờ cron do hàng đợi của nền tảng. Cơ chế trên ưu tiên tính đúng trạng thái và tránh quét chồng lấn hơn là bảo đảm thời điểm chạy chính xác từng giây.
 
-## 3. Thêm nguồn mới có tự nhận không?
+## 3. Danh sách nguồn
 
-**Có.** Bạn thêm một dòng vào file `danh_sach_nguon.csv` trên GitHub, điền tên, URL, nhóm và để `enabled=true`. Ở lượt chạy theo lịch tiếp theo, hệ thống tự đọc file và nhận nguồn mới.
+GitHub là nơi duy nhất quyết định nguồn được quét.
 
-- Không cần sửa mã Python khi thêm một URL thông thường.
-- Không cần bấm Run workflow.
-- Muốn tạm ngừng nguồn, đổi `enabled=true` thành `enabled=false`.
-- Nguồn mới được quét ở lượt kế tiếp theo lịch tự động; GitHub có thể khởi chạy trễ do hàng đợi.
+- Thêm hoặc sửa nguồn trong `danh_sach_nguon.csv`.
+- `enabled=true`: cho phép quét; `enabled=false`: tạm ngừng.
+- Không xóa nguồn chỉ vì website đang lỗi.
+- Các URL khác nhau vẫn được giữ riêng, kể cả khi tên nguồn giống nhau.
+- Nguồn phát hiện tự động được lưu trong `data/discovered_sources.json`; chỉ kích hoạt sau khi qua bước kiểm tra.
+- Website đặc biệt được cấu hình riêng trong `source_config.json`; không tự đoán selector cho trang có cấu trúc riêng.
 
-## 4. Kết quả có tự ghi vào Google Sheets không?
+Google Sheets không còn là nơi cung cấp danh sách nguồn cho Python. Tab `Nguồn Quét Văn Bản` chỉ nhận cập nhật trạng thái theo URL đối với các dòng đã có, không quyết định lịch hoặc phạm vi quét.
 
-**Có, nếu GitHub Secret và Apps Script API đã được thiết lập đúng.**
+## 4. Quy tắc ngày và bộ lọc 60 ngày
 
-Quy trình tự động:
-1. Thu thập tiêu đề và đường dẫn từ website.
-2. Chuẩn hóa tiêu đề/URL.
-3. Nhận diện loại văn bản và số hiệu.
-4. Phân loại, chấm điểm và loại dữ liệu trùng.
-5. Gửi văn bản mới vào sheet `Văn Bản Mới`.
-6. Ghi URL/số hiệu vào `_Bộ Nhớ Văn Bản` để tránh thêm lại.
-7. Cập nhật số mục và trạng thái của từng nguồn trong `Nguồn Quét Văn Bản`.
+- Ưu tiên ngày ban hành/ngày ký được xác định rõ.
+- Chỉ dùng ngày đăng nguồn khi không tìm được ngày ban hành; phải lưu rõ căn cứ ngày là ngày đăng.
+- Không dùng ngày quét hoặc ngày đồng bộ làm ngày ban hành.
+- Không dùng ngày hiệu lực thay ngày ban hành.
+- Nếu không xác định được ngày đáng tin cậy, giữ hồ sơ trong `data/review_queue.json` và chuyển sang Google Sheets để xác minh; không tự loại vì thiếu ngày.
+- Hồ sơ chưa rõ ngày được hậu kiểm trang chi tiết theo từng lượt, giữ lại bằng chứng và trạng thái thử lại.
+- Chỉ loại theo bộ lọc 60 ngày khi có căn cứ ngày thực tế chứng minh văn bản đã cũ.
 
-Dữ liệu được gửi theo từng lô tối đa 10 văn bản và thời gian chờ phản hồi tối đa 90 giây để giảm nguy cơ timeout. Trạng thái nguồn vẫn được gửi kể cả khi lượt quét không tìm thấy văn bản mới.
+## 5. Phân loại và chống trùng
 
-## 5. Bảng Google Sheets có tự định dạng không?
+Nhóm phân loại tối thiểu:
+- Văn bản Đảng.
+- Dự thảo.
+- Công văn.
+- Văn bản quy phạm pháp luật.
+- Văn bản địa phương.
+- Văn bản khác.
 
-Mã Apps Script API hiện tại đã có hàm `formatBatchRows_` để định dạng các dòng mới được chèn vào `Văn Bản Mới`: font Times New Roman, cỡ chữ, màu nền xen kẽ, căn lề, xuống dòng và đường viền. Apps Script cũng gọi hàm này khi nhận dữ liệu từ GitHub.
+Công văn được nhận diện riêng, không tự động coi là văn bản quy phạm pháp luật.
 
-**Lưu ý:** Phần định dạng Google Sheets nằm trong mã Apps Script, không nằm trong Python/GitHub Actions. Việc thay đổi màu sắc, độ rộng cột, cố định hàng tiêu đề hoặc định dạng các dòng cũ cần chỉnh và triển khai lại Apps Script. GitHub không thể tự thay đổi giao diện Google Sheets chỉ bằng việc sửa workflow.
+Chống trùng:
+- Ưu tiên URL chuẩn hóa.
+- Định danh văn bản xét số hiệu và cơ quan ban hành.
+- Văn bản địa phương bổ sung địa danh/nguồn để phân biệt các tỉnh, thành phố và cơ quan.
+- Không dùng số hiệu đơn lẻ làm khóa duy nhất.
+- Khi chưa đủ căn cứ xác định trùng, giữ lại để xác minh thay vì xóa nhầm.
 
-## 6. Thiết lập bắt buộc một lần
+Bộ nhớ chính nằm trên GitHub:
+- `data/seen_documents.json`: văn bản và URL đã nhận diện.
+- `data/review_queue.json`: hồ sơ chưa rõ ngày và bằng chứng xác minh.
+- `data/source_retry_queue.json`: nguồn lỗi và lịch thử lại.
+- `data/sheets_export_queue.json`: các gói dữ liệu chờ Google Sheets xác nhận.
+- `data/scan_history.json`: lịch sử các lượt quét.
+- `data/document_relationships.json`: quan hệ/dẫn chiếu văn bản đã phát hiện.
 
-### A. GitHub Secret
+Các tệp bộ nhớ được hợp nhất và lưu lại trên nhánh `main` sau lượt chạy. Hàng đợi xuất Sheets chỉ được xóa sau khi API xác nhận đã nhận các lô dữ liệu.
 
-Vào repository → **Settings → Secrets and variables → Actions → New repository secret**:
-- Name: `SHEETS_WEB_APP_URL`
-- Value: URL Apps Script Web App đang dùng làm API đọc/ghi Google Sheets.
+## 6. Thu thập và chẩn đoán nguồn
 
-Không đưa URL API vào mã nguồn công khai. URL triển khai cũ từng xuất hiện trong lịch sử repository công khai, vì vậy nên tạo deployment mới và dùng URL mới trong Secret.
+Python thu thập trực tiếp từ GitHub runner. Khi website lỗi, hệ thống ghi nhận loại lỗi như HTTP, SSL, timeout, kết nối, parser hoặc lỗi dữ liệu; không đánh đồng website truy cập thành công nhưng không có văn bản với website không truy cập được.
 
-### B. Cập nhật Apps Script lên V13.0
+RSS/Atom và nguồn tổng hợp chỉ là phương án bổ sung. Ngày đăng từ RSS/nguồn tổng hợp được lưu làm dữ liệu nguồn, không tự biến thành ngày ban hành. Khi trang chính lỗi SSL hoặc không truy cập được, hệ thống ghi lỗi và đưa nguồn vào hàng đợi thử lại; không dùng Apps Script làm máy chủ thu thập thay thế.
 
-Mã Apps Script trong repository đã được nâng lên **V13.0**. Bản này bổ sung quyền fallback cho đúng hai tên miền nguồn ưu tiên đang thiếu trong danh sách nguồn cũ: `vbpl.vn` và `vbpq.mof.gov.vn`. Nếu vẫn dùng deployment V12.0, GitHub Actions sẽ tiếp tục nhận lỗi “Tên miền không nằm trong danh sách nguồn đã cấu hình” với hai nguồn này.
+## 7. Đồng bộ Google Sheets
 
-Cập nhật một lần:
+Apps Script hiện ở phiên bản **15.0** và chỉ nhận hành động `save_results`.
+
+- GitHub gửi văn bản và trạng thái nguồn theo từng lô.
+- API yêu cầu `SHEETS_API_TOKEN` hợp lệ; thiếu token hoặc sai token thì từ chối ghi.
+- Apps Script có khóa chống hai yêu cầu ghi cùng lúc.
+- Cơ chế ghi có thể sửa trạng thái ghi dở giữa bảng kết quả và bảng bộ nhớ khi GitHub gửi lại cùng dữ liệu.
+- Python giữ gói trong `data/sheets_export_queue.json` nếu đồng bộ thất bại; lượt sau thử gửi lại.
+- Bộ nhớ GitHub là nguồn dữ liệu chuẩn. Tab `_Bộ Nhớ Văn Bản` trong Sheets chỉ là lớp chống ghi lặp ở phía nhận và bản phản chiếu phục vụ bảng tính.
+
+## 8. Thiết lập một lần
+
+### GitHub Secrets
+
+Trong repository → **Settings → Secrets and variables → Actions**, cần có:
+
+- `SHEETS_WEB_APP_URL`: URL Web App Apps Script đang gắn với Google Sheets.
+- `SHEETS_API_TOKEN`: cùng giá trị với Script Property `SHEETS_API_TOKEN` trong Apps Script.
+
+Không đưa URL triển khai, token hoặc thông tin bí mật vào repository.
+
+### Cập nhật Apps Script
+
+Sau khi GitHub hoàn thiện kiểm thử:
+
 1. Mở dự án Apps Script đang gắn với Google Sheets.
-2. Thay nội dung file `Code.gs` bằng bản mới tại repository: `apps_script/Code.gs`.
-3. Chọn **Deploy → Manage deployments**.
-4. Chọn deployment Web App hiện tại → biểu tượng chỉnh sửa → **Version: New version** → **Deploy**.
-5. Mở URL Web App đang dùng và kiểm tra kết quả GET có `"version":"13.0"`.
-6. Giữ nguyên URL trong GitHub Secret nếu bạn đã cập nhật deployment hiện tại, không tạo URL mới không cần thiết.
+2. Thay toàn bộ nội dung `Code.gs` bằng bản tại `apps_script/Code.gs` trên nhánh `main`.
+3. Chọn **Deploy → Manage deployments → Edit → New version → Deploy**.
+4. Giữ URL Web App hiện tại nếu cập nhật đúng deployment; bảo đảm GitHub Secret `SHEETS_WEB_APP_URL` trỏ đến URL đó.
+5. Trong **Project Settings → Script Properties**, giữ `SHEETS_API_TOKEN` đúng với GitHub Secret.
+6. Mở URL Web App bằng trình duyệt; phản hồi GET phải có `"version":"15.0"`.
 
-### C. Tắt bộ quét Apps Script cũ
+Không cần tạo `GITHUB_PAT`, không cần cài trigger thanh tra và không cần chạy hàm cài lịch trong Apps Script. Khi GitHub gửi lần đồng bộ đầu tiên sau triển khai, mã mới sẽ thử xóa các trigger thanh tra cũ. Nếu quyền Apps Script không cho phép xóa tự động, trigger cũ chỉ còn gọi hàm tương thích không có chức năng gửi lệnh GitHub.
 
-GitHub không có quyền tự xóa trigger trong tài khoản Google Apps Script. Nếu trigger cũ `quetNhanhTrungUongTuSheet` còn hoạt động, nó sẽ tiếp tục quét độc lập và có thể ghi trùng với GitHub.
+## 9. Kiểm thử và theo dõi
 
-Chỉ cần kiểm tra và xóa trigger cũ một lần:
-1. Mở dự án Apps Script gắn với Google Sheets.
-2. Chọn mục **Triggers / Trình kích hoạt** (biểu tượng đồng hồ ở thanh bên trái).
-3. Tìm trigger có tên hàm `quetNhanhTrungUongTuSheet`.
-4. Nhấn dấu ba chấm ở dòng đó → **Delete trigger / Xóa trình kích hoạt**.
+- Workflow **Scanner Tests** chạy khi có commit: kiểm tra biên dịch Python, JSON, cú pháp JavaScript Apps Script và unit tests.
+- Workflow **Tram Tin Tuc - Auto Scanner** là quy trình vận hành dữ liệu.
+- Xem **Actions → Tram Tin Tuc - Auto Scanner → Summary** để kiểm tra số nguồn, mục thu thập, văn bản nhận diện, hồ sơ chưa rõ ngày, văn bản mới, nguồn lỗi và gói Sheets còn chờ.
+- Xem `data/scheduler_health.json` để kiểm tra quyết định của bộ điều phối GitHub.
+- Xem `data/scan_history.json` và `data/source_retry_queue.json` để phân tích kết quả theo lượt và lỗi từng nguồn.
 
-Không xóa hàm `doPost`: GitHub vẫn cần hàm này để đọc danh sách nguồn và ghi kết quả vào Sheets. Apps Script không còn quét văn bản độc lập; ngoài API nhận/gửi dữ liệu, nó sẽ chạy bộ Thanh tra độc lập nếu bạn cài trigger theo Mục 12.
+Workflow màu xanh chỉ chứng minh các bước của workflow đạt điều kiện kết thúc. Chất lượng và độ đầy đủ dữ liệu vẫn phải đánh giá bằng số nguồn phản hồi, số mục thu thập, danh sách lỗi, hàng đợi xác minh ngày và xác nhận đồng bộ Sheets.
 
-## 7. Chạy thử và theo dõi
+## 10. Chạy thủ công
 
-Sau khi đã thêm Secret:
-1. Mở tab **Actions** trong GitHub.
-2. Chọn workflow **Tram Tin Tuc - Auto Scanner**.
-3. Chọn **Run workflow** nếu muốn kiểm tra ngay.
-4. Mở lượt chạy vừa tạo → **Summary** để xem tổng nguồn, số nguồn xử lý xong, số mục thu thập, số văn bản nhận diện, số văn bản mới ghi và nguồn gặp lỗi.
+Trong GitHub → **Actions** → **Tram Tin Tuc - Auto Scanner** → **Run workflow**:
 
-Sau lần kiểm tra đầu tiên, nhóm ưu tiên tự chạy mỗi 5 phút; chu kỳ 30 phút sẽ tự chạy tiếp nhóm nguồn còn lại sau khi nhóm ưu tiên hoàn tất.
+- `priority`: chạy nhóm nguồn ưu tiên.
+- `full`: chạy ưu tiên trước, sau đó chạy các nguồn còn lại.
+- `priority_only` và `full_only`: dành cho bộ điều phối GitHub tự động.
 
-## 8. Cấu hình website đặc biệt
-
-Chế độ `auto` tự nhận diện RSS/Atom hoặc HTML thông thường. Một số website dùng JavaScript, cấu trúc HTML riêng hoặc phân trang đặc biệt có thể cần CSS selector.
-
-Ví dụ cấu hình trong `source_config.json`:
-
-```json
-{
-  "defaults": {
-    "mode": "auto",
-    "max_pages": 1,
-    "max_items": 200
-  },
-  "sources": {
-    "https://example.gov.vn/van-ban": {
-      "mode": "html",
-      "item_selector": ".document-item",
-      "title_selector": ".document-title",
-      "link_selector": "a",
-      "max_pages": 3,
-      "pagination_selector": "a.next"
-    }
-  }
-}
-```
-
-Danh sách `sources` hiện để trống vì chưa có bản xuất thực tế của sheet nguồn để kiểm tra từng website. Không nên tự đoán selector: website có cấu trúc đặc biệt mà chưa cấu hình có thể chỉ thu được một phần dữ liệu hoặc không nhận diện được văn bản.
-
-## 9. Giới hạn cần biết
-
-- Lịch GitHub có thể bị trễ do hàng đợi của GitHub.
-- Mỗi lượt chạy có giới hạn 25 phút. Nếu danh sách nguồn lớn hoặc nhiều website phản hồi chậm, cần xem Summary để xác định nguồn gây chậm.
-- Một nguồn lỗi không làm dừng các nguồn còn lại. Nếu lỗi ở trang phân trang sau khi đã lấy được một phần danh sách, các văn bản đã thu thập vẫn được xử lý và đồng bộ; lỗi nguồn được đưa vào `data/source_retry_queue.json` để các lượt ưu tiên sau tự thử lại. Khi nguồn hoạt động trở lại, trạng thái hàng đợi được đánh dấu đã phục hồi.
-- Văn bản nhận diện được nhưng thiếu ngày ban hành/ngày đăng đáng tin cậy vẫn được đưa sang Google Sheets và lưu trong `data/review_queue.json`; hệ thống hậu kiểm trang chi tiết, giữ lại bằng chứng và thử lại khi gặp lỗi. Không có ngày thì không áp dụng bộ lọc 60 ngày. Bộ nhớ URL/định danh ngăn văn bản đó bị xuất lặp ở các lượt sau.
-- Mặc định quét trang nguồn đã nhập; muốn đọc thêm trang phân trang phải cấu hình riêng.
-- Cơ chế chống trùng hiện tương thích với bộ nhớ số hiệu cũ. Trường hợp nhiều cơ quan dùng cùng số hiệu cần nâng cấp khóa chống trùng theo tổ hợp cơ quan + số hiệu.
-- Việc nhận diện phụ thuộc vào tiêu đề và cấu trúc website; không thể cam kết nhận diện đúng 100% mọi trang nếu chưa kiểm tra từng nguồn.
-
-## 10. Chạy tại máy (tùy chọn)
-
-```bash
-pip install -r requirements.txt
-export SHEETS_WEB_APP_URL="URL_WEB_APP_CUA_BAN"
-python quet_vb.py
-```
-
-
-## Quản lý danh sách nguồn bằng GitHub
-
-Danh sách nguồn chính hiện được lưu tại `danh_sach_nguon.csv` ở thư mục gốc repository. File đã được điền 64 URL do người dùng cung cấp.
-
-Các cột:
-- `name`: tên nguồn.
-- `url`: URL cần quét (bắt buộc).
-- `group`: nhóm nguồn, ví dụ `Văn Bản TW` hoặc `Văn Bản địa phương`.
-- `enabled`: `true` để quét; `false` để tạm bỏ qua.
-
-Khi CSV có ít nhất một URL hợp lệ, bộ quét dùng danh sách trong GitHub. Nếu CSV chưa có URL, hệ thống tạm dùng danh sách Google Sheets làm phương án dự phòng.
-
-Lưu ý: Google Sheets vẫn được dùng để lưu kết quả và bộ nhớ chống trùng. Vì API Apps Script hiện tại trả danh sách nguồn cùng bộ nhớ trong một phản hồi, lượt chạy vẫn gọi API để lấy bộ nhớ chống trùng; tuy nhiên, khi CSV đã được điền, danh sách CSV mới là danh sách quyết định nguồn nào được quét.
-
-Danh sách GitHub được quản lý tại `danh_sach_nguon.csv`; các nguồn trọng điểm được chọn riêng trong `priority_sources.json` để quét nhanh. Không xóa danh sách cũ trong Google Sheets; tiếp tục giữ làm bản đối chiếu dự phòng.
-
-
-## 11. Bộ nhớ chống trùng và nguyên tắc ngày tháng
-
-- `data/seen_documents.json` là bộ nhớ bền vững của GitHub, được cập nhật sau khi đồng bộ Google Sheets thành công. `data/scan_history.json` lưu lịch sử tối đa 1.000 lượt quét gần nhất.
-- Chống trùng theo URL chuẩn hóa và định danh số hiệu kèm ký hiệu cơ quan ban hành; với nhóm địa phương, bổ sung địa danh nhận diện được từ tiêu đề/tên nguồn. Không dùng số hiệu đơn lẻ làm khóa duy nhất.
-- Bộ lọc 60 ngày ưu tiên ngày ban hành ghi rõ trong tiêu đề; nếu không có thì dùng ngày đăng từ RSS/Atom hoặc ngày hiển thị cạnh bài trong danh sách nguồn. Ngày hiệu lực không được dùng thay ngày ban hành.
-- Một bài đăng lại có ngày đăng mới nhưng tiêu đề thể hiện ngày ban hành cũ sẽ bị loại. Nếu website không cung cấp ngày ban hành và ngày đăng đáng tin cậy, bộ lọc chưa thể xác định chắc chắn tuổi văn bản; trường hợp này cần cải thiện bộ đọc chi tiết riêng theo từng website.
-- Phân nhóm nhận diện gồm: Dự thảo, Văn bản Đảng, Công văn, Văn bản quy phạm pháp luật, Văn bản địa phương và Văn bản khác. Công văn được ưu tiên riêng; không coi công văn là văn bản quy phạm pháp luật.
-- Nhóm nguồn ưu tiên được quét theo lịch 5 phút/lần; toàn bộ nguồn được quét 30 phút/lần. Watchdog kiểm tra mỗi 10 phút và tự dispatch lượt bù nếu lần thành công gần nhất quá hạn. GitHub Actions vẫn có thể trì hoãn hoặc bỏ lỡ lịch; cần theo dõi lịch sử workflow và trường `scan_profile` trong `data/scan_history.json`.
-
-## 12. Thanh tra độc lập và tự khôi phục lịch quét
-
-Để không phụ thuộc hoàn toàn vào lịch GitHub Actions, Apps Script có thêm bộ **Thanh tra Trạm Tin Tức** chạy độc lập mỗi 5 phút. Bộ thanh tra đọc trạng thái workflow/jobs qua GitHub API, phân biệt riêng job `priority-scan` và `scan`, sau đó tự gửi `workflow_dispatch` khi phát hiện quá hạn.
-
-### Cài đặt một lần
-
-1. Mở Apps Script đang gắn với Google Sheets.
-2. Thay toàn bộ nội dung `Code.gs` bằng bản mới nhất tại `apps_script/Code.gs`.
-3. Chọn **Deploy → Manage deployments → Edit → New version → Deploy** để cập nhật Web App hiện tại.
-4. Mở URL Web App và kiểm tra GET trả về `"version":"13.1"`.
-5. Trong Apps Script, mở **Project Settings → Script properties → Add script property**:
-   - Property: `GITHUB_PAT`
-   - Value: Fine-grained Personal Access Token của repository này.
-6. Tạo token tại GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens:
-   - Repository access: **Only select repositories** → chọn `Tr-m-tin-t-c`.
-   - Repository permissions: **Actions = Read and write**.
-   - Không cần cấp quyền Contents.
-   - Đặt thời hạn token phù hợp và gia hạn khi hết hạn. Không gửi token qua tin nhắn hoặc đưa token vào mã nguồn.
-7. Trong Apps Script, chọn hàm `caiDatThanhTraDocLap` rồi nhấn **Run**. Chấp thuận các quyền Google yêu cầu.
-8. Chọn hàm `kiemTraThanhTraThuCong` rồi nhấn **Run** để kiểm tra ngay. Nếu thành công, Google Sheets sẽ có tab **Thanh tra he thong** ghi lịch sử.
-
-### Quy tắc tự khôi phục
-
-- Quét ưu tiên: coi là quá hạn nếu không có lượt thành công trong hơn 12 phút.
-- Quét toàn bộ: coi là quá hạn nếu không có lượt thành công trong hơn 42 phút.
-- Nếu có job đang xếp hàng hoặc chạy, thanh tra chờ và không gửi lệnh trùng.
-- Nếu cả hai phạm vi cùng quá hạn, chỉ gửi lệnh `full` vì lượt full đã bao gồm quét ưu tiên.
-- Sau khi gửi lệnh, thanh tra chờ tối thiểu 10 phút trước khi cân nhắc gửi lại; mỗi vòng tiếp theo đọc lại trạng thái job để xác minh.
-- Lỗi API/token được ghi vào **Nhật ký thực thi** của Apps Script và tab **Thanh tra he thong** (nếu ghi Sheets khả dụng).
-
-Lưu ý: thao tác cập nhật mã, thêm Script Property và chạy hàm cài đặt là bắt buộc. Chỉ commit mã lên GitHub **không tự cài được trigger trong tài khoản Google**. Bộ thanh tra cũng không thể bảo đảm tuyệt đối website nguồn luôn phản hồi hoặc mọi văn bản đều được nhận diện; nó bảo đảm giám sát và khôi phục việc kích hoạt lượt quét, không thay thế kiểm tra chất lượng dữ liệu.
+Không cần chạy thủ công trong vận hành bình thường.
