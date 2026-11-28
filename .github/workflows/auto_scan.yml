@@ -23,7 +23,6 @@ on:
     paths:
       - 'quet_vb.py'
       - 'scanner/**'
-      - 'tests/**'
       - 'requirements.txt'
       - 'source_config.json'
       - 'danh_sach_nguon.csv'
