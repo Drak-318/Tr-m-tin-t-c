@@ -216,7 +216,7 @@ class CollectorTests(unittest.TestCase):
           <td><a href="/files/9901.pdf">Tải về</a></td>
         </tr></tbody></table>"""
         items, _ = parse_html_items(html, "https://syt.lamdong.gov.vn/van-ban-quan-ly", {
-            "item_selector": "table tbody tr",
+            "item_selector": "table tr",
             "title_selector": "td:nth-child(3) a[href]",
             "link_selector": "td:nth-child(3) a[href]",
             "document_number_selector": "td:nth-child(1)",
@@ -234,7 +234,7 @@ class CollectorTests(unittest.TestCase):
           <td></td><td>Công văn</td><td></td>
         </tr></tbody></table>"""
         items, _ = parse_html_items(html, "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung", {
-            "item_selector": "table tbody tr",
+            "item_selector": "table tr",
             "title_selector": "td:nth-child(4) a[href]",
             "link_selector": "td:nth-child(4) a[href]",
             "document_number_selector": "td:nth-child(2)",
