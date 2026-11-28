@@ -2,7 +2,7 @@
 """Discover, validate and persist new document-listing sources.
 
 New URLs are never activated merely because they appear on a page. They must
-be same-site listing candidates and pass a live content validation first.
+discover same-site listings and clearly labelled cross-agency portal hubs. Only validated listing pages are activated.
 """
 import json
 import re
@@ -21,7 +21,21 @@ LISTING_TERMS = (
     "van-ban-phap-luat", "du-thao", "laws", "legal-documents",
     "document-list", "qlvb", "van-ban-quy-pham",
 )
+AGENCY_LINK_TERMS = (
+    "bộ ", "bộ,", "chính phủ", "quốc hội", "trung ương", "cơ quan trung ương",
+    "các bộ", "các ngành", "các tỉnh", "tỉnh thành", "địa phương",
+    "ủy ban nhân dân", "ubnd", "hội đồng nhân dân", "hđnd",
+    "sở ", "ban ngành", "cơ quan chuyên môn", "cục ", "tổng cục",
+    "tòa án", "viện kiểm sát", "công an", "bảo hiểm xã hội",
+)
+CENTRAL_HOSTS = {
+    "chinhphu.vn", "vanban.chinhphu.vn", "quochoi.vn", "dangcongsan.vn",
+    "moj.gov.vn", "mof.gov.vn", "moet.gov.vn", "moh.gov.vn", "mae.gov.vn",
+    "moit.gov.vn", "sbv.gov.vn", "moha.gov.vn", "moc.gov.vn", "mps.gov.vn",
+    "baochinhphu.vn", "baohiemxahoi.gov.vn", "vbpl.vn", "phapluat.gov.vn",
+}
 EXCLUDED_HOSTS = {"news.google.com", "news.googleusercontent.com"}
+ALLOWED_OFFICIAL_SUFFIXES = (".gov.vn", ".gov", ".edu.vn", ".mil.vn")
 MAX_CANDIDATES_PER_SOURCE = 12
 
 
@@ -31,40 +45,75 @@ def _same_site(candidate_url, origin_url):
     return bool(candidate and origin and (candidate == origin or candidate.endswith("." + origin)))
 
 
+def _official_host(host):
+    host = (host or "").lower().rstrip(".")
+    return host in CENTRAL_HOSTS or any(host.endswith(suffix) for suffix in ALLOWED_OFFICIAL_SUFFIXES)
+
+
+def _source_group_for_link(host, label, fallback_group):
+    host = (host or "").lower()
+    label_low = (label or "").casefold()
+    if host in CENTRAL_HOSTS or any(term in label_low for term in (
+        "chính phủ", "quốc hội", "bộ nội vụ", "bộ tài chính", "bộ tư pháp",
+        "bộ giáo dục", "bộ y tế", "bộ công an", "bộ xây dựng",
+        "bộ nông nghiệp", "bộ công thương", "trung ương", "tổng cục", "cục thuế",
+    )):
+        return "Văn Bản TW"
+    if host.endswith((".gov.vn", ".edu.vn", ".mil.vn")):
+        return "Địa phương"
+    return fallback_group or "Văn Bản TW"
+
+
 def extract_source_candidates(html, page_url, source_name="", source_group="Văn Bản TW",
                               limit=MAX_CANDIDATES_PER_SOURCE):
-    """Extract likely listing/category links, not individual document links."""
+    """Find same-site legal listings and cross-agency official portal hubs."""
+    from urllib.parse import urljoin
+
     soup = BeautifulSoup(html or "", "html.parser")
     found = {}
+    origin_host = (urlsplit(page_url).hostname or "").lower()
     for anchor in soup.find_all("a", href=True):
         href = str(anchor.get("href") or "").strip()
         label = clean_title(anchor.get("aria-label") or anchor.get("title") or anchor.get_text(" ", strip=True))
-        if not href or href.startswith(("#", "javascript:", "mailto:")):
+        if not href or href.startswith(("#", "javascript:", "mailto:", "tel:")):
             continue
-        from urllib.parse import urljoin
         url = canonicalize_url(urljoin(page_url, href))
         parsed = urlsplit(url)
-        if parsed.scheme not in {"http", "https"} or parsed.hostname in EXCLUDED_HOSTS:
+        host = (parsed.hostname or "").lower()
+        if (parsed.scheme not in {"http", "https"} or not host or host in EXCLUDED_HOSTS
+                or parsed.username or parsed.password or parsed.port not in {None, 80, 443}
+                or canonicalize_url(url) == canonicalize_url(page_url)):
             continue
-        if not _same_site(url, page_url) or canonicalize_url(url) == canonicalize_url(page_url):
-            continue
+
+        same_site = _same_site(url, page_url)
         path = (parsed.path or "").lower()
         label_low = label.casefold()
-        if not any(term in path for term in LISTING_TERMS) and not any(
-            term.replace("-", " ") in label_low for term in LISTING_TERMS
-        ):
+        is_listing = (
+            any(term in path for term in LISTING_TERMS)
+            or any(term.replace("-", " ") in label_low for term in LISTING_TERMS)
+        )
+        is_agency_link = (
+            not same_site and _official_host(host)
+            and any(term in label_low for term in AGENCY_LINK_TERMS)
+        )
+        if not is_listing and not is_agency_link:
             continue
-        # A link whose label is already a document title is a detail page, not
-        # a reusable source listing.
-        if extract_doc_info(label)[0] or re.search(r"\b(?:số|so)\s*\d", label_low):
+        if is_listing and (extract_doc_info(label)[0] or re.search(r"\b(?:số|so)\s*\d", label_low)):
             continue
-        if len(label) > 120:
+        if len(label) > 160:
             continue
-        found[url] = {
-            "name": clean_title(f"{source_name} - {label}")[:120] if label else f"{source_name} - Danh mục văn bản",
-            "url": url,
-            "group": source_group or "Văn Bản TW",
+
+        kind = "listing" if is_listing else "portal_hub"
+        group = source_group if same_site else _source_group_for_link(host, label, source_group)
+        key = canonicalize_url(url)
+        found[key] = {
+            "name": clean_title(f"{source_name} - {label}")[:120] if label else f"{source_name} - Cổng cơ quan",
+            "url": key,
+            "group": group,
             "origin_url": canonicalize_url(page_url),
+            "origin_host": origin_host,
+            "anchor_label": label[:160],
+            "candidate_kind": kind,
             "status": "pending",
         }
         if len(found) >= max(0, int(limit)):
