@@ -1,94 +1,5 @@
 [
   {
-    "collected": 475,
-    "discovered_source_candidates_added": 0,
-    "discovered_sources_activated": 0,
-    "discovered_sources_checked": 0,
-    "discovered_sources_pending": 500,
-    "duplicates": 159,
-    "duration_seconds": 74.89,
-    "failed_source_details": [
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/danh-sach-van-ban-qppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/danh-sach-van-ban-qppl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Pháp luật vừa ban hành",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Hỏi đáp",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Mã số thuế",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Lao động",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://vbpl.vn/; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - VBPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://vbpl.vn/"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/he-thong-van-ban-phap-luat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/he-thong-van-ban-phap-luat"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x7b6d140c6010>, 'Connection to vbpq.mo",
-        "http_status": null,
-        "name": "Cơ sở dữ liệu VBQPPL ngành Tài chính",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://vbpq.mof.gov.vn/"
-      }
-    ],
-    "failed_sources": 8,
-    "fallback_sources": 0,
-    "feed_supplements": 0,
-    "finished_at": "2026-11-21 06:47:50 UTC",
-    "new_to_sheets": 0,
-    "older_than_60_days": 3,
-    "pending_sheets_exports": 0,
-    "recognized": 166,
-    "relationship_ambiguous": 13,
-    "relationship_candidates": 164,
-    "relationship_matched_in_scan_index": 55,
-    "review_queue_total": 1044,
-    "review_to_sheets": 0,
-    "run_attempt": "1",
-    "run_id": "44877128621",
-    "scan_profile": "priority",
-    "source_retry_queue_pending": 30,
-    "sources": 17,
-    "started_at": "2026-11-21 06:46:35 UTC",
-    "successful_sources": 9,
-    "trigger": "workflow_dispatch",
-    "unknown_date": 4
-  },
-  {
     "collected": 474,
     "discovered_source_candidates_added": 0,
     "discovered_sources_activated": 0,
@@ -106017,5 +105928,46 @@
     "successful_sources": 16,
     "trigger": "push",
     "unknown_date": 16
+  },
+  {
+    "collected": 22450,
+    "discovered_source_candidates_added": 335,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 0,
+    "discovered_sources_pending": 0,
+    "duplicates": 1972,
+    "duration_seconds": 227.15,
+    "failed_source_details": [
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='hdnd.ninhbinh.gov.vn', port=443): Read timed out.",
+        "http_status": 200,
+        "name": "Đoàn ĐBQH và HĐND tỉnh Ninh Bình",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://hdnd.ninhbinh.gov.vn/kien-nghi-cu-tri/van-ban-tra-loi-cua-cac-bo-nganh-trung-uong"
+      }
+    ],
+    "failed_sources": 1,
+    "fallback_sources": 7,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-28 05:39:04 UTC",
+    "new_to_sheets": 28,
+    "older_than_60_days": 2893,
+    "pending_sheets_exports": 0,
+    "recognized": 6057,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1240,
+    "review_to_sheets": 14,
+    "run_attempt": "1",
+    "run_id": "46112706511",
+    "scan_profile": "remaining",
+    "source_retries_deferred": 30,
+    "source_retry_queue_pending": 37,
+    "sources": 295,
+    "started_at": "2026-11-28 05:35:17 UTC",
+    "successful_sources": 294,
+    "trigger": "push",
+    "unknown_date": 505
   }
 ]

@@ -499,6 +499,23 @@
       "title": "Click vào đây để xem danh sách góp ý - Dự thảo Tờ trình, Quyết định của Thủ tướng Chính phủ thành lập và quy định chức năng, nhiệm vụ, cơ cấu tổ chức và hoạt động của Hội đồng tiền lương quốc gia",
       "verification_status": "manual_review"
     },
+    "https://cm.pek.edu.vn/vi/laws/detail/Bao-cao-so-6914-BC-SGDDT-Ket-qua-khao-sat-do-luong-su-hai-long-cua-nguoi-dan-doi-voi-dich-vu-giao-duc-cong-tren-dia-ban-Thanh-pho-nam-2026-1208/": {
+      "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "6914/BC-SGDĐT",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "number:6914/BC-SGDĐT|issuer:BC-SGDĐT|locality:năm 2026 trường trung - tiểu học pétrus ký - văn bản",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://cm.pek.edu.vn/vi/laws/detail/Bao-cao-so-6914-BC-SGDDT-Ket-qua-khao-sat-do-luong-su-hai-long-cua-nguoi-dan-doi-voi-dich-vu-giao-duc-cong-tren-dia-ban-Thanh-pho-nam-2026-1208/",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản khác",
+      "status": "pending",
+      "title": "Báo cáo số 6914/BC-SGDĐT Kết quả khảo sát đo lường sự hài lòng của người dân đối với dịch vụ giáo dục công trên địa bàn Thành phố năm 2026"
+    },
     "https://cm.pek.edu.vn/vi/laws/detail/Huong-dan-3363-SGDDT-GDPT-V-v-huong-dan-trien-khai-hoat-dong-giao-duc-STEM-trong-cac-truong-trung-hoc-tu-nam-hoc-2025-2026-914/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
       "attempts": 1,
@@ -762,7 +779,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:11235/SGDĐT-KHTC|issuer:SGDĐT-KHTC|locality:unresolved-source:cm.pek.edu.vn",
-      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_checked": "2026-11-28T05:38:58+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-11235-SGDDT-KHTC-Ve-viec-thuc-hien-thu-thap-du-lieu-thong-tin-thong-ke-giao-duc-ky-dau-nam-hoc-2026-2027-don-vi-truc-thuoc-1337/",
@@ -1010,7 +1027,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:7451/SGDĐT-HSSV|issuer:SGDĐT-HSSV|locality:hồ chí minh trường trung - tiểu học pétrus ký - văn bản",
-      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_checked": "2026-11-28T05:38:58+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-7451-SGDDT-HSSV-Ve-viec-phoi-hop-tuyen-truyen-ve-Tuan-phim-Ky-niem-79-nam-Ngay-Thuong-binh-Liet-si-27-7-1947-27-7-2026-tren-dia-ban-Thanh-pho-Ho-Chi-Minh-1223/",
@@ -1031,7 +1048,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:869/SGDĐT-HSSV|issuer:SGDĐT-HSSV|locality:unresolved-source:cm.pek.edu.vn",
-      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_checked": "2026-11-28T05:38:58+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-869-SGDDT-HSSV-Ve-viec-huong-ung-Cuoc-thi-Viet-thu-Quoc-te-UPU-lan-thu-55-nam-2026-1054/",
@@ -2265,6 +2282,20 @@
       "status": "manual_review",
       "title": "Luật, nghị quyết ban hành tại các kỳ họp Quốc hội",
       "verification_status": "manual_review"
+    },
+    "https://ddbqhhdnd.hungyen.gov.vn/ban-van-hoa-xa-hoi/ke-hoach-khao-sat-viec-thuc-hien-chinh-sach-tro-giup-xa-hoi-doi-voi-cac-doi-tuong-bao-tro-xa-hoi.html": {
+      "agency": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://ddbqhhdnd.hungyen.gov.vn/ban-van-hoa-xa-hoi/ke-hoach-khao-sat-viec-thuc-hien-chinh-sach-tro-giup-xa-hoi-doi-voi-cac-doi-tuong-bao-tro-xa-hoi.html",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://ddbqhhdnd.hungyen.gov.vn/ban-van-hoa-xa-hoi/ke-hoach-khao-sat-viec-thuc-hien-chinh-sach-tro-giup-xa-hoi-doi-voi-cac-doi-tuong-bao-tro-xa-hoi.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Kế hoạch khảo sát việc thực hiện chính sách trợ giúp xã hội đối với các đối tượng bảo trợ xã hội"
     },
     "https://ddbqhhdnd.hungyen.gov.vn/van-ban-lay-y-kien-nhan-dan/du-thao-nghi-quyet-sua-doi-bo-sung-mot-so-dieu-cua-hien-phap-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam-nam-2013.html": {
       "agency": "Đoàn ĐBQH và HĐND tỉnh Hưng Yên",
@@ -7711,6 +7742,20 @@
       "verification_status": "needs_manual_review",
       "verified_date": "2026-10-20"
     },
+    "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/thanh-tra/ket-luan-ket-qua-xu-ly-ke-hoach-thuc-hien": {
+      "agency": "UBND xã Lý Sơn",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://lyson.quangngai.gov.vn/danh-muc-cot-phai/thanh-tra/ket-luan-ket-qua-xu-ly-ke-hoach-thuc-hien",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://lyson.quangngai.gov.vn/danh-muc-cot-phai/thanh-tra/ket-luan-ket-qua-xu-ly-ke-hoach-thuc-hien",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Kết luận, kết quả xử lý, kế hoạch thực hiện"
+    },
     "https://lyson.quangngai.gov.vn/upload/2006771/20261103/CV%20trien%20khai%20hướng%20dẫn%20đảm%20bảo%20chất%20lượng%20giáo%20dục,trường%20chuẩn%20quốc%20gia.pdf": {
       "agency": "UBND xã Lý Sơn",
       "attempts": 4,
@@ -7882,6 +7927,40 @@
       "status": "manual_review",
       "title": "Thông báo lịch tiếp công dân định kỳ tháng 10 năm 2026 của Bộ trưởng Bộ Nông nghiệp và Môi trường",
       "verification_status": "manual_review"
+    },
+    "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm": {
+      "agency": "Bộ Nông nghiệp và Môi trường",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1322.htm",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Thông báo kết quả xét tài trợ, đặt hàng nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo bắt đầu thực hiện từ năm 2027 - Lĩnh vực Lâm nghiệp và Kiểm lâm"
+    },
+    "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm": {
+      "agency": "Bộ Nông nghiệp và Môi trường",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1323.htm",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Thông báo gia hạn kế hoạch đặt hàng nhiệm vụ nghiên cứu và phát triển CNCL đặt hàng thuộc Chương trình KHCN, ĐMST quốc gia đặc biệt về CNCL để tuyển chọn tổ chức chủ trì thực hiện"
     },
     "https://mae.gov.vn/chi-tiet-thong-bao-bao-cao-1327.htm": {
       "agency": "Bộ Nông nghiệp và Môi trường",
@@ -8422,6 +8501,23 @@
       "title": "Bộ Nông nghiệp và Môi trường ban hành Thông tư số 38/2026/TT-BNNMT về công nhận tiến bộ kỹ thuật trong nông nghiệp và môi trường",
       "verification_status": "excluded_old",
       "verified_date": "2023-06-15"
+    },
+    "https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx": {
+      "agency": "Medinet TP.HCM",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://medinet.hochiminhcity.gov.vn/cau-hoi-thuong-gap/ke-hoach-trien-khai-thuc-hanh-tot-bao-quan-thuoc-gsp-tai-cac-co-so-kham-benh-ch-c4590-63577.aspx",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Kế hoạch Triển khai Thực hành tốt bảo quản thuốc (GSP) tại các cơ sở khám bệnh, chữa bệnh, cơ sở tiêm chủng, cơ sở bảo quản vắc xin trong chương trình tiêm chủng mở rộng quốc gia tuyến huyện và tuyến tỉnh"
     },
     "https://medinet.hochiminhcity.gov.vn/media/huong-dan-ho-tro-nguoi-f0-an-uong-tai-giuong-tap-huan-cho-tnv-tham-gia-pcd-covi-c1020-52072.aspx": {
       "agency": "Medinet TP.HCM",
@@ -18504,6 +18600,57 @@
       "title": "Các văn bản liên quan đến quy định báo cáo thống kê",
       "verification_status": "manual_review"
     },
+    "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-": {
+      "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-k%E1%BA%BFt-qu%E1%BA%A3-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-nhi%E1%BB%87m-v%E1%BB%A5-c%C3%B4ng-%C3%ADch-v%C3%A0-tr%C3%A1ch-nhi%E1%BB%87m-x%C3%A3-h%E1%BB%99i-kh%C3%A1c-n%E1%BA%BFu-c%C3%B3-",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Báo cáo kết quả thực hiện các nhiệm vụ công ích và trách nhiệm xã hội khác (nếu có)"
+    },
+    "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m": {
+      "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://sbv.gov.vn/vi/b%C3%A1o-c%C3%A1o-t%C3%ACnh-h%C3%ACnh-th%E1%BB%B1c-hi%E1%BB%87n-s%E1%BA%AFp-x%E1%BA%BFp-%C4%91%E1%BB%95i-m%E1%BB%9Bi-doanh-nghi%E1%BB%87p-h%E1%BA%B1ng-n%C4%83m",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Báo cáo tình hình thực hiện sắp xếp, đổi mới doanh nghiệp hằng năm"
+    },
+    "https://sbv.gov.vn/vi/bao-cao-danh-gia-ve-ket-qua-thuc-hien-ke-hoach-san-xuat-kinh-doanh-hang-nam-va-03-nam-gan-nhat-tinh-den-nam-bao-cao": {
+      "agency": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://sbv.gov.vn/vi/bao-cao-danh-gia-ve-ket-qua-thuc-hien-ke-hoach-san-xuat-kinh-doanh-hang-nam-va-03-nam-gan-nhat-tinh-den-nam-bao-cao",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://sbv.gov.vn/vi/bao-cao-danh-gia-ve-ket-qua-thuc-hien-ke-hoach-san-xuat-kinh-doanh-hang-nam-va-03-nam-gan-nhat-tinh-den-nam-bao-cao",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản TW",
+      "status": "pending",
+      "title": "Báo cáo đánh giá về kết quả thực hiện kế hoạch sản xuất, kinh doanh hằng năm và 03 năm gần nhất tính đến năm báo cáo"
+    },
     "https://sbv.gov.vn/vi/cac-van-ban-lien-quan-den-quy-dinh-bao-cao-thong-ke": {
       "agency": "Ngân hàng Nhà nước - Văn bản quy phạm pháp luật",
       "attempts": 4,
@@ -20131,6 +20278,37 @@
       "verification_status": "needs_manual_review",
       "verified_date": "2026-11-23"
     },
+    "https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-ket-qua-trien-khai-cong-tac-bau-cu-dinh-ky-hang-tuan-2502/": {
+      "agency": "Sở Nội vụ Gia Lai",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-ket-qua-trien-khai-cong-tac-bau-cu-dinh-ky-hang-tuan-2502/",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-ket-qua-trien-khai-cong-tac-bau-cu-dinh-ky-hang-tuan-2502/",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Báo cáo kết quả triển khai công tác bầu cử (định kỳ hàng tuần)"
+    },
+    "https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-tinh-hinh-ket-qua-thuc-hien-cong-tac-cai-cach-hanh-chinh-6-thang-dau-nam-va-ph-ong-h-ong-nhiem-vu-cong-tac-cai-cach-hanh-chinh-6-thang-cuoi-nam-nam-2026-cua-So-Noi-vu-2572/": {
+      "agency": "Sở Nội vụ Gia Lai",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-tinh-hinh-ket-qua-thuc-hien-cong-tac-cai-cach-hanh-chinh-6-thang-dau-nam-va-ph-ong-h-ong-nhiem-vu-cong-tac-cai-cach-hanh-chinh-6-thang-cuoi-nam-nam-2026-cua-So-Noi-vu-2572/",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://snv.gialai.gov.vn:/vi/laws/detail/Bao-cao-tinh-hinh-ket-qua-thuc-hien-cong-tac-cai-cach-hanh-chinh-6-thang-dau-nam-va-ph-ong-h-ong-nhiem-vu-cong-tac-cai-cach-hanh-chinh-6-thang-cuoi-nam-nam-2026-cua-So-Noi-vu-2572/",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Báo cáo tình hình, kết quả thực hiện công tác cải cách hành chính 6 tháng đầu năm và phƣơng hƣớng, nhiệm vụ công tác cải cách hành chính 6 tháng cuối năm năm 2026 của Sở Nội vụ"
+    },
     "https://snv.gialai.gov.vn:/vi/laws/detail/Ke-hoach-kiem-tra-cong-tac-cai-cach-hanh-chinh-nam-2026-cua-So-Noi-vu-2573/": {
       "agency": "Sở Nội vụ Gia Lai",
       "attempts": 1,
@@ -20620,6 +20798,23 @@
       "status": "manual_review",
       "title": "Kế hoạch phát triển kinh tế - xã hội giai đoạn 2026-2030 ngành Nông nghiệp và Môi trường",
       "verification_status": "manual_review"
+    },
+    "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-trien-khai-thi-hanh-luat-an-ninh-mang-linh-vuc-nong-nghiep-va-moi-truong-882149": {
+      "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Danh mục văn bản",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "exported_at": "2026-11-28T05:39:04+00:00",
+      "exported_to_sheets": true,
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-trien-khai-thi-hanh-luat-an-ninh-mang-linh-vuc-nong-nghiep-va-moi-truong-882149",
+      "last_checked": "2026-11-28T05:39:04+00:00",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/ke-hoach-trien-khai-thi-hanh-luat-an-ninh-mang-linh-vuc-nong-nghiep-va-moi-truong-882149",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Kế hoạch triển khai thi hành Luật An ninh mạng lĩnh vực nông nghiệp và môi trường"
     },
     "https://sonnmt.haiphong.gov.vn/van-ban-chi-dao-dieu-hanh/nghi-quyet-so-17-2026-nq-cp-cua-chinh-phu-ve-cat-giam-phan-cap-don-gian-hoa-thu-tuc-hanh-chinh-v-904160": {
       "agency": "Sở Nông nghiệp và Môi trường Hải Phòng - Văn bản chỉ đạo điều hành - Danh mục văn bản",
@@ -21263,6 +21458,20 @@
       "status": "manual_review",
       "title": "Lấy ý kiến góp ý đối với dự thảo Tờ trình và dự thảo Nghị quyết của HĐND Thành phố quy định chế độ chi hỗ trợ công tác xây dựng tổ chức đảng, tổ chức đoàn thanh niên và cộng tác viên trong doanh nghiệp ngoài khu vực nhà nước Lấy ý kiến dự thảo văn bản QPPL • Xây dựng Đảng, Đoàn thể Lấy ý kiến góp ý đối với dự thảo Tờ trình và dự thảo Nghị quyết của HĐND Thành phố quy định chế độ chi hỗ trợ công tác xây dựng tổ...",
       "verification_status": "manual_review"
+    },
+    "https://sonoivu.hochiminhcity.gov.vn/web/snv/-/thong-bao-moi-nha-thau-quan-tam-tham-gia-thuc-hien-goi-thau-tu-van-lap-bao-cao-kinh-te-ky-thuat-va-tham-dinh-gia-?inheritRedirect=true&redirect=%2Fweb%2Fsnv%2Ftrang-chu": {
+      "agency": "Sở Nội vụ TP.HCM",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://sonoivu.hochiminhcity.gov.vn/web/snv/-/thong-bao-moi-nha-thau-quan-tam-tham-gia-thuc-hien-goi-thau-tu-van-lap-bao-cao-kinh-te-ky-thuat-va-tham-dinh-gia-?inheritRedirect=true&redirect=%2Fweb%2Fsnv%2Ftrang-chu",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://sonoivu.hochiminhcity.gov.vn/web/snv/-/thong-bao-moi-nha-thau-quan-tam-tham-gia-thuc-hien-goi-thau-tu-van-lap-bao-cao-kinh-te-ky-thuat-va-tham-dinh-gia-?inheritRedirect=true&redirect=%2Fweb%2Fsnv%2Ftrang-chu",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Địa phương",
+      "status": "pending",
+      "title": "Thông báo mời nhà thầu quan tâm tham gia thực hiện gói thầu: \"Tư vấn lấp báo cáo kinh tế kỹ thuật\" và \"Thẩm định giá\""
     },
     "https://sonoivu.hochiminhcity.gov.vn/web/snv/-/thong-bao-ve-viec-moi-bao-gia-cung-cap-dich-vu-tu-van-lap-ho-so-moi-thau-va-danh-gia-ho-so-du-thau-to-chuc-lop-boi-duong-ve-quan-ly-cong-viec-tu-xa-ph?inheritRedirect=true&redirect=%2Fweb%2Fsnv%2Ftrang-chu": {
       "agency": "Sở Nội vụ TP.HCM",
@@ -22327,6 +22536,20 @@
       "title": "V/v triển khai các văn bản của Bộ Xây dựng về bảo đảm an toàn trong công tác đào tạo thực hành lái xe",
       "verification_status": "needs_manual_review",
       "verified_date": "2026-11-19"
+    },
+    "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/ket-luan-cua-bo-chinh-tri-ve-tinh-hinh-ket-qua-thuc-hien-ket-luan-so-107-kl-tw-tien-do-hoan-thien-co-so-du-lieu-vi-tri-v.html": {
+      "agency": "Tư liệu Văn kiện Đảng - Trang chủ",
+      "attempts": 0,
+      "date_basis": "unknown",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T05:38:58+00:00",
+      "identity": "url:https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/ket-luan-cua-bo-chinh-tri-ve-tinh-hinh-ket-qua-thuc-hien-ket-luan-so-107-kl-tw-tien-do-hoan-thien-co-so-du-lieu-vi-tri-v.html",
+      "last_seen": "2026-11-28T05:38:58+00:00",
+      "link": "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/ket-luan-cua-bo-chinh-tri-ve-tinh-hinh-ket-qua-thuc-hien-ket-luan-so-107-kl-tw-tien-do-hoan-thien-co-so-du-lieu-vi-tri-v.html",
+      "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
+      "source_group": "Văn Bản Đảng",
+      "status": "pending",
+      "title": "Kết luận của Bộ Chính trị về tình hình, kết quả thực hiện Kết luận số 107-KL/TW; tiến độ hoàn thiện cơ sở dữ liệu vị trí việc làm và phương án biên chế giai đoạn 2027 – 2031"
     },
     "https://tulieuvankien.dangcongsan.vn/chu-chuong-chinh-sach-moi/quy-dinh-cua-ban-bi-thu-ve-sinh-hoat-dang-truc-tuyen.html": {
       "agency": "Tư liệu Văn kiện Đảng - Trang chủ",
@@ -23683,6 +23906,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T05:34:53+00:00",
+  "updated_at": "2026-11-28T05:39:04+00:00",
   "version": 1
 }
