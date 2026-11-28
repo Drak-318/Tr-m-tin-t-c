@@ -1,6 +1,6 @@
 import unittest
 from scanner.collectors import SourceFetchError, _resolve_aggregator_links, _collect_primary
-from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items, search_central_reference_web
+from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items, search_central_reference_web, is_original_central_document_result
 from bs4 import BeautifulSoup
 
 class CollectorTests(unittest.TestCase):
@@ -267,6 +267,12 @@ class CollectorTests(unittest.TestCase):
                         "href": "https://snv.lamdong.gov.vn/van-ban/123",
                         "body": "151/2026/TT-BTC",
                     },
+
+                    {
+                        "title": "Triển khai Thông tư 151/2026/TT-BTC đến các đơn vị",
+                        "href": "https://chinhphu.vn/tin-tuc/trien-khai-thong-tu-151",
+                        "body": "151/2026/TT-BTC",
+                    },
                     {
                         "title": "Unrelated central page",
                         "href": "https://vanban.chinhphu.vn/?docid=1",
@@ -286,6 +292,9 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(items[0]["link"], "https://vanban.chinhphu.vn/?docid=219933&pageid=27160")
         self.assertIsNone(items[0]["published_date"])
         self.assertEqual(items[0]["source_published_date"], "2026-10-09")
+        self.assertEqual(items[0]["doc_type"], "Thông tư")
+        self.assertEqual(items[0]["doc_number"], "151/2026/TT-BTC")
+        self.assertEqual(items[0]["agency"], "Bộ Tài chính")
 
     def test_ddgs_reference_fallback_reports_missing_dependency(self):
         from unittest.mock import patch
@@ -305,6 +314,20 @@ class CollectorTests(unittest.TestCase):
 
         self.assertEqual(items, [])
         self.assertEqual(error, "DDGS_NOT_INSTALLED")
+
+
+
+    def test_original_central_result_validator_rejects_rollout_article(self):
+        self.assertTrue(is_original_central_document_result(
+            "Thông tư số 151/2026/TT-BTC của Bộ Tài chính",
+            "https://vanban.chinhphu.vn/?docid=219933",
+            "151/2026/TT-BTC"
+        ))
+        self.assertFalse(is_original_central_document_result(
+            "Triển khai Thông tư 151/2026/TT-BTC đến các đơn vị",
+            "https://chinhphu.vn/tin-tuc/trien-khai-thong-tu-151",
+            "151/2026/TT-BTC"
+        ))
 
 
 if __name__=="__main__": unittest.main()
