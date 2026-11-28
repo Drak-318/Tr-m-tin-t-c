@@ -142,6 +142,19 @@ class NormalizerTests(unittest.TestCase):
         self.assertFalse(keep)
 
 
+
+    def test_central_government_plan_reference_is_discovered(self):
+        from scanner.normalizer import extract_central_references, is_local_central_rollout
+        title = "V/v triển khai thực hiện Kế hoạch số 01/KH-TTg của Thủ tướng Chính phủ"
+        self.assertEqual(extract_central_references(title), ["01/KH-TTG"])
+        self.assertTrue(is_local_central_rollout(title, "Công văn", "123/SNV-VP"))
+
+    def test_local_provincial_plan_is_not_a_central_reference(self):
+        from scanner.normalizer import extract_central_references, is_local_central_rollout
+        title = "V/v triển khai thực hiện Kế hoạch số 439/KH-UBND của UBND tỉnh"
+        self.assertEqual(extract_central_references(title), [])
+        self.assertFalse(is_local_central_rollout(title, "Công văn", "123/SXD-VP"))
+
     def test_local_unrelated_rollout_of_provincial_plan_is_excluded(self):
         keep, _ = classify_and_score(
             "V/v triển khai thực hiện Kế hoạch số 439/KH-UBND về phòng chống hạn hán",
