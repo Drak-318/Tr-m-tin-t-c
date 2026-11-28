@@ -1,5 +1,5 @@
 /**
- * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V13.3
+ * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V14.0
  * Vai trò: API nhận dữ liệu duy nhất từ GitHub Actions.
  * Không chạy bộ quét nguồn độc lập tại Apps Script để tránh hai bộ quét ghi trùng.
  *
@@ -45,7 +45,7 @@ function jsonOutput_(obj) {
 }
 
 function doGet() {
-  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.3"});
+  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "14.0"});
 }
 
 function doPost(e) {
@@ -559,8 +559,9 @@ function kiemTraThanhTraThuCong() {
 }
 
 /**
- * Vong thanh tra chinh. Khong bao gio kich hoat them neu da co job
- * tuong ung dang queued/in_progress. Co cooldown de tranh dispatch lap.
+ * Vong thanh tra chinh. Khong gui lenh neu da co job queued/in_progress.
+ * Moi dispatch chi duoc gui lai khi het han xac nhan 15 phut; moi job moi
+ * phai hoan tat va qua cooldown 5 phut truoc khi duoc xem xet chay tiep.
  */
 function thanhTraTramTinTuc() {
   const lock = LockService.getScriptLock();
@@ -607,7 +608,7 @@ function thanhTraTramTinTuc() {
       if (completionCooldown) {
         action = "WAIT_FULL_COOLDOWN";
         reason = "Luot quet toan bo vua ket thuc; cho du 5 phut tinh tu thoi diem hoan tat.";
-      } else if (!full.lastCompletedAt && awaitingGitHub) {
+      } else if (awaitingGitHub) {
         action = "WAIT_FULL_ACK";
         reason = "Da gui yeu cau; cho GitHub tao job, chua gui lai de tranh trung lenh.";
       } else {
@@ -624,7 +625,7 @@ function thanhTraTramTinTuc() {
       if (completionCooldown) {
         action = "WAIT_PRIORITY_COOLDOWN";
         reason = "Luot quet uu tien vua ket thuc; cho du 5 phut tinh tu thoi diem hoan tat.";
-      } else if (!priority.lastCompletedAt && awaitingGitHub) {
+      } else if (awaitingGitHub) {
         action = "WAIT_PRIORITY_ACK";
         reason = "Da gui yeu cau uu tien; cho GitHub tao job, chua gui lai.";
       } else {
@@ -746,6 +747,17 @@ function phucHoiMocThoiGianJob_(state, props, prefix, now) {
   state.lastCompletedAt = newest(state.lastCompletedAt, storedCompleted);
   if (state.lastSuccess) props.setProperty(successKey, state.lastSuccess);
   if (state.lastCompletedAt) props.setProperty(completedKey, state.lastCompletedAt);
+
+  // A completed job newer than the last dispatch is the acknowledgement.
+  // Clear the pending-dispatch marker so a finished run is not mistaken for
+  // an unacknowledged request when the next cooldown expires.
+  const dispatchKey = "LAST_" + prefix + "_DISPATCH_AT";
+  const dispatchAt = Number(props.getProperty(dispatchKey) || 0);
+  const completedMs = state.lastCompletedAt ? new Date(state.lastCompletedAt).getTime() : 0;
+  if (dispatchAt > 0 && completedMs >= dispatchAt) {
+    props.deleteProperty(dispatchKey);
+  }
+
   state.ageMinutes = state.lastSuccess
     ? Math.max(0, (now - new Date(state.lastSuccess).getTime()) / 60000)
     : Infinity;
