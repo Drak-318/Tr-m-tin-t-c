@@ -77,7 +77,7 @@ class PrioritySourceTests(unittest.TestCase):
 
         names = {row["name"] for row in load_sources_from_csv()}
         self.assertIn("Dò tìm Luật mới - Google News RSS", names)
-        self.assertIn("Dò tìm Nghị quyết mới - Google News RSS", names)
+        self.assertIn("Dò tìm Nghị quyết cấp Trung ương - Google News RSS", names)
         self.assertIn("Tìm kiếm văn bản cấp Trung ương - RSS", names)
         self.assertIn("Dò tìm chính sách địa phương có tác động rộng - Google News RSS", names)
 
