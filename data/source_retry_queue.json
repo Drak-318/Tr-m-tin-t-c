@@ -134,7 +134,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Hệ thống Văn bản Chính phủ",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://chinhphu.vn/he-thong-van-ban"
     },
@@ -1011,7 +1011,7 @@
       "last_items_collected": 34,
       "last_status": "Hoạt động",
       "name": "Bộ Khoa học và Công nghệ - Văn bản pháp luật",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://mst.gov.vn/van-ban-phap-luat.htm"
     },
@@ -1025,7 +1025,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Tìm kiếm văn bản cấp Trung ương - RSS",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22+OR+%22K%E1%BA%BFt+lu%E1%BA%ADn%22+OR+%22C%C3%B4ng+%C4%91i%E1%BB%87n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1039,7 +1039,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Luật mới - Google News RSS",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Lu%E1%BA%ADt+s%E1%BB%91%22+OR+%22Lu%E1%BA%ADt+%C4%91%C6%B0%E1%BB%A3c+Qu%E1%BB%91c+h%E1%BB%99i+th%C3%B4ng+qua%22+OR+%22Lu%E1%BA%ADt+m%E1%BB%9Bi%22%29+%28site%3Aquochoi.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Achinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1053,7 +1053,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Nghị quyết các cấp trên .gov.vn - RSS tham chiếu",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-H%C4%90ND%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Agov.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1067,7 +1067,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Dò tìm Nghị quyết cấp Trung ương - Google News RSS",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22NQ-CP%22+OR+%22NQ-QH%22+OR+%22NQ-UBTVQH%22%29+%28site%3Aquochoi.vn+OR+site%3Achinhphu.vn+OR+site%3Avanban.chinhphu.vn+OR+site%3Avbpl.vn+OR+site%3Aphapluat.gov.vn+OR+site%3Amoj.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1081,7 +1081,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn, Dự thảo)",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22D%E1%BB%B1+th%E1%BA%A3o%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1095,7 +1095,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Bộ ngành - Google News (Thông tư, Công văn)",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=%28%22Th%C3%B4ng+t%C6%B0%22+OR+%22C%C3%B4ng+v%C4%83n%22+OR+%22Th%C3%B4ng+t%C6%B0+s%E1%BB%91%22+OR+%22C%C3%B4ng+v%C4%83n+s%E1%BB%91%22%29+%28site%3Amoj.gov.vn+OR+site%3Amof.gov.vn+OR+site%3Amoet.gov.vn+OR+site%3Amoh.gov.vn+OR+site%3Amae.gov.vn+OR+site%3Amoit.gov.vn+OR+site%3Asbv.gov.vn+OR+site%3Amoha.gov.vn+OR+site%3Amoc.gov.vn+OR+site%3Amps.gov.vn+OR+site%3Abaochinhphu.vn%29+when%3A60d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1109,7 +1109,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Cổng TTĐT Chính phủ - Google News",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Achinhphu.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh+c%E1%BB%A7a+Th%E1%BB%A7+t%C6%B0%E1%BB%9Bng%22%29+when%3A10d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1201,7 +1201,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "LuatVietnam - Google News",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Aluatvietnam.vn+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Ch%E1%BB%89+th%E1%BB%8B%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -1228,7 +1228,7 @@
       "last_items_collected": 0,
       "last_status": "Đã truy cập, chưa tìm thấy mục",
       "name": "Thư viện Pháp luật - Google News",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://news.google.com/rss/search?q=site%3Athuvienphapluat.vn%2Fvan-ban+%28%22Ngh%E1%BB%8B+%C4%91%E1%BB%8Bnh%22+OR+%22Th%C3%B4ng+t%C6%B0%22+OR+%22Quy%E1%BA%BFt+%C4%91%E1%BB%8Bnh%22+OR+%22Lu%E1%BA%ADt%22+OR+%22Ngh%E1%BB%8B+quy%E1%BA%BFt%22%29+when%3A14d&hl=vi&gl=VN&ceid=VN%3Avi"
     },
@@ -2084,7 +2084,7 @@
       "last_items_collected": 0,
       "last_status": "Hoạt động",
       "name": "Hệ thống văn bản Chính phủ - vanban.chinhphu.vn",
-      "recovered_at": "2026-11-28T14:52:06+00:00",
+      "recovered_at": "2026-11-28T15:02:22+00:00",
       "status": "recovered",
       "url": "https://vanban.chinhphu.vn/he-thong-van-ban?classid=1&mode=1&orggroupid=2"
     },
@@ -2387,6 +2387,6 @@
       "url": "https://yentrung.bacninh.gov.vn/van-ban"
     }
   },
-  "updated_at": "2026-11-28T14:52:06+00:00",
+  "updated_at": "2026-11-28T15:02:22+00:00",
   "version": 1
 }

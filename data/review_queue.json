@@ -59,7 +59,7 @@
     },
     "http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-phong-co-quan-don-v-c16609.aspx": {
       "agency": "Medinet TP.HCM - Công bố cơ sở thực hành",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -67,7 +67,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:49:48+00:00",
       "identity": "url:http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-phong-co-quan-don-v-c16609.aspx",
-      "last_checked": "2026-11-28T11:52:13+00:00",
+      "last_checked": "2026-11-28T15:02:24+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:49:48+00:00",
       "link": "http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-phong-co-quan-don-v-c16609.aspx",
@@ -79,7 +79,7 @@
     },
     "http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-trung-tam-y-te-tuye-c16598.aspx": {
       "agency": "Medinet TP.HCM - Công bố cơ sở thực hành",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "Đang cập nhật",
@@ -87,7 +87,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:49:48+00:00",
       "identity": "url:http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-trung-tam-y-te-tuye-c16598.aspx",
-      "last_checked": "2026-11-28T11:52:08+00:00",
+      "last_checked": "2026-11-28T15:02:24+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:49:48+00:00",
       "link": "http://tochuccanbo.medinet.gov.vn/quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cac-trung-tam-y-te-tuye-c16598.aspx",
@@ -99,7 +99,7 @@
     },
     "http://tochuccanbo.medinet.gov.vn/ve-co-so-thuc-hanh-c14539.aspx": {
       "agency": "Chính phủ",
-      "attempts": 1,
+      "attempts": 2,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "111/2017/NĐ-CP",
@@ -107,7 +107,7 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:49:48+00:00",
       "identity": "number:111/2017/NĐ-CP|issuer:NĐ-CP|locality:",
-      "last_checked": "2026-11-28T11:52:13+00:00",
+      "last_checked": "2026-11-28T15:02:24+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:49:48+00:00",
       "link": "http://tochuccanbo.medinet.gov.vn/ve-co-so-thuc-hanh-c14539.aspx",
@@ -139,7 +139,7 @@
     },
     "https://baocaotaichinh.vn/ma-chuong-tieu-muc/": {
       "agency": "Bộ Tài chính",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "324/2016/TT-BTC",
@@ -147,19 +147,19 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:324/2016/TT-BTC|issuer:TT-BTC|locality:",
-      "last_checked": "2026-11-28T11:49:48+00:00",
+      "last_checked": "2026-11-28T15:02:24+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/ma-chuong-tieu-muc/",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Mã chương, tiểu mục theo TT324/2016/TT-BTC",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://baocaotaichinh.vn/thong-tu-133": {
       "agency": "Bộ Tài chính",
-      "attempts": 2,
+      "attempts": 3,
       "date_basis": "unknown",
       "date_evidence": "",
       "doc_number": "133/2016/TT-BTC",
@@ -167,15 +167,15 @@
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T11:01:30+00:00",
       "identity": "number:133/2016/TT-BTC|issuer:TT-BTC|locality:",
-      "last_checked": "2026-11-28T11:49:48+00:00",
+      "last_checked": "2026-11-28T15:02:24+00:00",
       "last_error": "",
       "last_seen": "2026-11-28T11:01:30+00:00",
       "link": "https://baocaotaichinh.vn/thong-tu-133",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản TW",
-      "status": "not_found",
+      "status": "manual_review",
       "title": "Hạch toán theo TT133/2016/TT-BTC",
-      "verification_status": "not_found"
+      "verification_status": "manual_review"
     },
     "https://baocaotaichinh.vn/thong-tu-200": {
       "agency": "Bộ Tài chính",
@@ -25049,6 +25049,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T14:52:27+00:00",
+  "updated_at": "2026-11-28T15:02:24+00:00",
   "version": 1
 }
