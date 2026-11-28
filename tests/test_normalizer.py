@@ -330,4 +330,29 @@ class NormalizerTests(unittest.TestCase):
         self.assertFalse(keep)
 
 
+
+    def test_local_announcement_rolling_out_central_decree_is_excluded(self):
+        title = "Thông báo triển khai Nghị định 45/2026/NĐ-CP về chính sách đất đai"
+        keep, _ = classify_and_score(
+            title, "Sở Nội vụ Lâm Đồng", "Thông báo", "Đang cập nhật", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_central_national_assembly_resolution_is_recognized_on_local_portal(self):
+        title = "Nghị quyết 12/2026/NQ-QH16 về chính sách giáo dục"
+        keep, score = classify_and_score(
+            title, "Sở Giáo dục và Đào tạo Lâm Đồng", "Nghị quyết",
+            "12/2026/NQ-QH16", "Địa phương"
+        )
+        self.assertTrue(keep)
+        self.assertEqual(score, 10)
+
+    def test_local_company_certificate_case_is_excluded(self):
+        title = "Quyết định cấp giấy chứng nhận quyền sử dụng đất cho Công ty ABC"
+        keep, _ = classify_and_score(
+            title, "UBND tỉnh Lâm Đồng", "Quyết định", "123/QĐ-UBND", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+
 if __name__=="__main__": unittest.main()
