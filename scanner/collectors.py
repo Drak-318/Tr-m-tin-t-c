@@ -95,8 +95,14 @@ def parse_html_items(html,page_url,config):
                     item["doc_number"]=number
                     # Determine the instrument code before the issuing-agency
                     # suffix (e.g. 1488/KH-SYT vs 9901/SYT-TCCB).
-                    tail=number.upper().split("/")[-1]
-                    code=tail.split("-")[0]
+                    parts=number.upper().split("/")
+                    tail=parts[-1]
+                    if tail=="TW" and len(parts)>1:
+                        code=parts[-2].split("-")[-1]
+                    else:
+                        if tail.isdigit() and len(parts)>1:
+                            tail=parts[-2]
+                        code=tail.split("-")[0]
                     type_by_code={"KL":"Kết luận","NQ":"Nghị quyết","KH":"Kế hoạch","HD":"Hướng dẫn",
                                   "CT":"Chỉ thị","QD":"Quyết định","QĐ":"Quyết định","CV":"Công văn",
                                   "TB":"Thông báo","QC":"Quy chế","BC":"Báo cáo"}
