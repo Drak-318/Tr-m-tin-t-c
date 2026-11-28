@@ -6,6 +6,7 @@ from pathlib import Path
 import os
 import sys
 import time
+from urllib.parse import quote
 from datetime import datetime, timezone
 
 from scanner.config import load_source_config, config_for_source, WEB_APP_URL
@@ -13,6 +14,7 @@ from scanner.collectors import scan_source, verify_document_detail_date
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
+    is_local_scope, extract_central_references,
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
@@ -98,6 +100,74 @@ def main():
             fallback=" | Có dùng nguồn dự phòng" if result.get("fallback_used") else ""
             feed_note=" | Có bổ sung RSS" if result.get("feed_supplement_used") else ""
             print(f"[{i+1}/{len(sources)}] {s.get('name')}: {len(result['items'])} mục | {result['status']} | {result['duration']}s{fallback}{feed_note}{detail}")
+
+    # Use local portals as reference-discovery channels: extract exact central
+    # instrument numbers from local notices, then search only official central
+    # domains for the original instrument. Never export the local rollout letter
+    # as a substitute for the cited decree/circular.
+    central_reference_stats={"found":0,"queried":0,"matched":0,"limit":12}
+    if profile in {"full","remaining"}:
+        local_references=[]
+        known_central_references=set()
+        for _source,_result in results_by_index.values():
+            local_source=is_local_scope(
+                _source.get("group",""),_source.get("name",""),_source.get("url","")
+            )
+            for _item in _result.get("items",[]):
+                material=f"{_item.get('title','')} {_item.get('doc_number','')}"
+                refs=extract_central_references(material)
+                if local_source:
+                    local_references.extend(refs)
+                else:
+                    known_central_references.update(refs)
+        unique_references=[]
+        seen_references=set()
+        for ref in local_references:
+            if ref not in seen_references and ref not in known_central_references:
+                seen_references.add(ref)
+                unique_references.append(ref)
+        central_reference_stats["found"]=len(unique_references)
+        lookup_domains=[
+            "quochoi.vn","vanban.chinhphu.vn","chinhphu.vn","vbpl.vn",
+            "phapluat.gov.vn","moj.gov.vn","mof.gov.vn","moet.gov.vn",
+            "moh.gov.vn","mae.gov.vn","moit.gov.vn","sbv.gov.vn",
+            "moha.gov.vn","moc.gov.vn","mps.gov.vn","baochinhphu.vn",
+            "sav.gov.vn","baohiemxahoi.gov.vn"
+        ]
+        for ref in unique_references[:central_reference_stats["limit"]]:
+            central_reference_stats["queried"]+=1
+            query=f'"{ref}" (site:quochoi.vn OR site:vanban.chinhphu.vn OR site:chinhphu.vn OR site:vbpl.vn OR site:phapluat.gov.vn OR site:moj.gov.vn OR site:mof.gov.vn OR site:moet.gov.vn OR site:moh.gov.vn OR site:mae.gov.vn OR site:moit.gov.vn OR site:sbv.gov.vn OR site:moha.gov.vn OR site:moc.gov.vn OR site:mps.gov.vn OR site:baochinhphu.vn) when:60d'
+            lookup_url="https://news.google.com/rss/search?q="+quote(query)+"&hl=vi&gl=VN&ceid=VN:vi"
+            lookup_source={
+                "name":f"Tra cứu văn bản Trung ương theo số hiệu {ref}",
+                "url":lookup_url,"group":"Văn Bản TW","row":None
+            }
+            lookup_config={
+                "mode":"rss","max_items":10,"max_pages":1,
+                "timeout_connect":5,"timeout_read":12,
+                "allowed_final_domains":lookup_domains,
+                "apps_script_fallback":False
+            }
+            lookup_result=scan_source(lookup_source,lookup_config,None)
+            matched=[
+                item for item in lookup_result.get("items",[])
+                if ref.casefold() in f"{item.get('title','')} {item.get('link','')}".casefold()
+            ]
+            if matched:
+                lookup_result["items"]=matched
+                sources.append(lookup_source)
+                results_by_index[len(sources)-1]=(lookup_source,lookup_result)
+                central_reference_stats["matched"]+=len(matched)
+                print(f"[CENTRAL-REFERENCE] {ref}: tìm thấy {len(matched)} kết quả từ nguồn Trung ương.")
+            else:
+                print(f"[CENTRAL-REFERENCE] {ref}: chưa tìm thấy bản gốc trên các nguồn Trung ương đã cho phép.")
+        if central_reference_stats["queried"]:
+            print(
+                "[CENTRAL-REFERENCE] "
+                f"Phát hiện {central_reference_stats['found']} số hiệu; "
+                f"đã tra cứu {central_reference_stats['queried']}; "
+                f"nhận được {central_reference_stats['matched']} kết quả."
+            )
 
     if profile in {"full","remaining"}:
         # Learn new listing/category URLs from the pages already scanned. A URL
@@ -278,7 +348,7 @@ def main():
         backfilled_review_docs+=1
     if backfilled_review_docs:
         print(f"[BACKFILL] Đưa {backfilled_review_docs} hồ sơ chờ xác minh cũ vào bảng kết quả.")
-    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0,"feed_supplements":0}
+    totals={"items":0,"recognized":0,"old":0,"unknown_date":0,"duplicate":0,"kept":0,"failed":0,"fallback_sources":0,"feed_supplements":0,"central_reference_queries":central_reference_stats["queried"],"central_reference_hits":central_reference_stats["matched"]}
     recognized_by_source={}
     for i in range(len(sources)):
         source,result=results_by_index[i]; name=source.get("name","Nguồn không tên"); group=source.get("group","Văn Bản TW")
