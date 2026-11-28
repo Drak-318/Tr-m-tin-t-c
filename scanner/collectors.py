@@ -85,18 +85,32 @@ def parse_html_items(html,page_url,config):
                   "published_date":_date_from_container(container,soup)}
             number_selector=config.get("document_number_selector")
             issue_date_selector=config.get("issue_date_selector")
+            document_type_selector=config.get("document_type_selector")
             number_node=container.select_one(number_selector) if number_selector else None
             date_node=container.select_one(issue_date_selector) if issue_date_selector else None
+            type_node=container.select_one(document_type_selector) if document_type_selector else None
             if number_node:
                 number=clean_title(number_node.get_text(" ",strip=True))
                 if number:
                     item["doc_number"]=number
-                    suffix=re.search(r"-([A-ZĐƯƠĂÂÊÔ]+)(?:/|$)",number,re.I)
-                    type_by_suffix={"KL":"Kết luận","NQ":"Nghị quyết","KH":"Kế hoạch","HD":"Hướng dẫn",
-                                    "CT":"Chỉ thị","QD":"Quyết định","QĐ":"Quyết định","CV":"Công văn",
-                                    "TB":"Thông báo","QC":"Quy chế"}
-                    if suffix and suffix.group(1).upper() in type_by_suffix:
-                        item["doc_type"]=type_by_suffix[suffix.group(1).upper()]
+                    # Determine the instrument code before the issuing-agency
+                    # suffix (e.g. 1488/KH-SYT vs 9901/SYT-TCCB).
+                    tail=number.upper().split("/")[-1]
+                    code=tail.split("-")[0]
+                    type_by_code={"KL":"Kết luận","NQ":"Nghị quyết","KH":"Kế hoạch","HD":"Hướng dẫn",
+                                  "CT":"Chỉ thị","QD":"Quyết định","QĐ":"Quyết định","CV":"Công văn",
+                                  "TB":"Thông báo","QC":"Quy chế","BC":"Báo cáo"}
+                    if code in type_by_code:
+                        item["doc_type"]=type_by_code[code]
+                    elif len(number.split("/"))>1 and code in {
+                        "SYT","SXD","STC","SNV","STP","SNNMT","SNGV","SGD","SGDĐT",
+                        "UBND","VPUBND","HĐND","HDND","VPCP","BTC","BTP","BXD","BYT"
+                    }:
+                        item["doc_type"]="Công văn"
+            if type_node:
+                explicit_type=clean_title(type_node.get_text(" ",strip=True))
+                if explicit_type:
+                    item["doc_type"]=explicit_type
             if date_node:
                 issue_date=clean_title(date_node.get_text(" ",strip=True))
                 if issue_date:
