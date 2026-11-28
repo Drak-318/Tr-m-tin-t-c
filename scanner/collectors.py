@@ -332,6 +332,50 @@ def _resolve_aggregator_links(session,items,config=None):
             if item: resolved.append(item)
     return resolved
 
+def search_central_reference_web(reference,allowed_domains,max_results=8):
+    """Best-effort exact-reference search, restricted to approved central hosts.
+
+    Google News RSS remains the first search path. This metasearch fallback is
+    used only when RSS returns no verified central result; it never accepts a
+    provincial page merely because that page cites the central instrument.
+    """
+    try:
+        from ddgs import DDGS
+    except ImportError:
+        return [],"DDGS_NOT_INSTALLED"
+    allowed=tuple(str(x).lower().lstrip(".") for x in (allowed_domains or []))
+    try:
+        results=DDGS(timeout=10).text(
+            f'"{reference}"',region="vn-vi",safesearch="moderate",
+            max_results=max(1,min(int(max_results),12)),backend="auto"
+        )
+        items=[]
+        seen=set()
+        expected=re.sub(r"\s+","",str(reference)).upper()
+        for row in results or []:
+            title=clean_title(row.get("title",""))
+            link=canonicalize_url(row.get("href") or row.get("url") or "")
+            if not link or link in seen:
+                continue
+            host=(urlsplit(link).hostname or "").lower()
+            if not any(host==domain or host.endswith("."+domain) for domain in allowed):
+                continue
+            body=clean_title(row.get("body",""))
+            searchable=re.sub(r"\s+","",f"{title} {body} {link}").upper()
+            if expected not in searchable:
+                continue
+            seen.add(link)
+            items.append({
+                "title":title,"link":link,"published_date":None,
+                "source_published_date":row.get("date") or "",
+                "date_source":"DDGS search result; not an issuance date",
+                "source":"DDGS"
+            })
+        return items,""
+    except Exception as exc:
+        return [],f"{type(exc).__name__}: {str(exc)[:300]}"
+
+
 def scan_source(source,config,fallback_fetcher=None):
     started=time.monotonic(); session=make_session(); config=dict(config or {})
     # Some official portals expose document tables on a dedicated subpage while
