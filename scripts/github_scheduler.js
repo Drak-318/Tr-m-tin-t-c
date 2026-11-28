@@ -86,8 +86,8 @@ module.exports = async function runScheduler({ github, context, core }) {
     // Full retains its 30-minute cadence; after a failed full scan,
     // retry after a 5-minute post-completion cooldown.
     const priorityDue = priorityAge >= 5;
-    const fullInterval = fullLast && fullLast.job.conclusion !== "success" ? 5 : 30;
-    const fullDue = fullAge >= Math.max(5, fullInterval);
+    const fullRetryDue = Boolean(fullLast && fullLast.job.conclusion !== "success" && fullAge >= 5);
+    const fullDue = fullAge >= 30;
     const latestAnyCompleted = scanJobs
       .filter(row => row.job.completed_at)
       .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0] || null;
@@ -98,14 +98,18 @@ module.exports = async function runScheduler({ github, context, core }) {
     if (globalCooldownAge < 5) {
       action = "POST_COMPLETION_COOLDOWN";
       reason = `Last scan completed ${Math.round(globalCooldownAge)}m ago; wait until 5 minutes after completion`;
+    } else if (fullDue) {
+      dispatchedProfile = "full_only";
+      action = "DISPATCH_FULL";
+      reason = `30-minute full-scan cadence reached; last full completion: ${Number.isFinite(fullAge) ? Math.round(fullAge) + "m ago" : "not found"}`;
     } else if (priorityDue) {
       dispatchedProfile = "priority_only";
       action = "DISPATCH_PRIORITY";
       reason = `No active scan; last priority completion: ${Number.isFinite(priorityAge) ? Math.round(priorityAge) + "m ago" : "not found"}`;
-    } else if (fullDue) {
+    } else if (fullRetryDue) {
       dispatchedProfile = "full_only";
       action = "DISPATCH_FULL";
-      reason = `No active scan; last full completion: ${Number.isFinite(fullAge) ? Math.round(fullAge) + "m ago" : "not found"}`;
+      reason = `Retrying failed full scan after cooldown; last full completion: ${Math.round(fullAge)}m ago`;
     } else {
       action = "COOLDOWN";
       reason = `Priority completed ${Math.round(priorityAge)}m ago; full completed ${Math.round(fullAge)}m ago`;
