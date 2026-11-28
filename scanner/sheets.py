@@ -23,13 +23,25 @@ def _post(payload,timeout=90,attempts=3):
             except ValueError as exc: raise RuntimeError(f"Apps Script trả về dữ liệu không phải JSON: {response.text[:300]}") from exc
             if data.get("status")=="error": raise RuntimeError(data.get("message","Apps Script error"))
             return data
+        except requests.HTTPError as exc:
+            status = exc.response.status_code if exc.response is not None else None
+            if status not in {408, 425, 429} and not (status and 500 <= status < 600):
+                raise RuntimeError(
+                    f"Apps Script trả HTTP {status}: "
+                    f"{exc.response.text[:300] if exc.response is not None else str(exc)}"
+                ) from exc
+            last_error=exc
+            if attempt<max(1,int(attempts)):
+                wait=attempt*5
+                print(f"[SHEETS] Apps Script tạm lỗi HTTP {status}, lần {attempt}/{attempts}; thử lại sau {wait}s.")
+                time.sleep(wait)
         except (requests.Timeout,requests.ConnectionError) as exc:
             last_error=exc
             if attempt<max(1,int(attempts)):
                 wait=attempt*5
-                print(f"[SHEETS] Kết nối Google Sheets lỗi lần {attempt}/3; thử lại sau {wait}s.")
+                print(f"[SHEETS] Kết nối Google Sheets lỗi lần {attempt}/{attempts}; thử lại sau {wait}s.")
                 time.sleep(wait)
-    raise RuntimeError(f"Không thể kết nối Apps Script sau 3 lần thử: {last_error}")
+    raise RuntimeError(f"Không thể kết nối Apps Script sau {attempts} lần thử: {last_error}")
 
 def get_sources_and_memory():
     data=_post({"action":"get_sources"},timeout=90)
