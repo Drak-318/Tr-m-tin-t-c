@@ -126,13 +126,12 @@ class NormalizerTests(unittest.TestCase):
         self.assertTrue(keep)
 
 
-    def test_numbered_local_policy_not_matching_topic_is_kept_for_review(self):
+    def test_numbered_local_policy_outside_selected_topics_is_excluded(self):
         keep, priority = classify_and_score(
             "Quyết định 18/2026/QĐ-UBND về việc ban hành quy chế phối hợp liên ngành",
             "UBND tỉnh An Giang", "Quyết định", "18/2026/QĐ-UBND", "Địa phương"
         )
-        self.assertTrue(keep)
-        self.assertEqual(priority, 65)
+        self.assertFalse(keep)
 
     def test_local_dispatch_citing_central_instrument_is_not_exported_as_original(self):
         keep, _ = classify_and_score(
@@ -431,12 +430,12 @@ class NormalizerTests(unittest.TestCase):
 
 
 
-    def test_general_local_licensing_procedure_is_not_case_specific(self):
+    def test_general_local_licensing_procedure_outside_selected_topics_is_excluded(self):
         title = "Quyết định quy định trình tự, thủ tục hành chính cấp giấy phép xây dựng cho tổ chức"
         keep, _ = classify_and_score(
             title, "UBND tỉnh Lâm Đồng", "Quyết định", "12/2026/QĐ-UBND", "Địa phương"
         )
-        self.assertTrue(keep)
+        self.assertFalse(keep)
 
 
 
