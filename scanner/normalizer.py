@@ -31,7 +31,7 @@ LOCAL_RELEVANCE_TOPICS = (
     "lao động", "người lao động", "hợp đồng lao động", "tiền công",
     "bảo hiểm xã hội", "trợ cấp thất nghiệp", "an toàn lao động",
     # Đất đai, nhà ở và quy hoạch
-    "đất đai", "quyền sử dụng đất", "bồi thường", "tái định cư", "bảng giá đất",
+    "đất đai", "đất", "quyền sử dụng đất", "sử dụng đất", "giao đất", "thuê đất", "tiền thuê đất", "thu hồi đất", "bồi thường", "tái định cư", "bảng giá đất",
     "giá đất", "quy hoạch sử dụng đất", "kế hoạch sử dụng đất",
     "đấu giá quyền sử dụng đất", "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng",
     "quy hoạch đô thị", "quy hoạch tỉnh", "quy hoạch phân khu",
