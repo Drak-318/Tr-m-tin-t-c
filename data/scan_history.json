@@ -1,94 +1,5 @@
 [
   {
-    "collected": 474,
-    "discovered_source_candidates_added": 0,
-    "discovered_sources_activated": 0,
-    "discovered_sources_checked": 0,
-    "discovered_sources_pending": 500,
-    "duplicates": 158,
-    "duration_seconds": 79.25,
-    "failed_source_details": [
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/danh-sach-van-ban-qppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/danh-sach-van-ban-qppl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Pháp luật vừa ban hành",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Hỏi đáp",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Mã số thuế",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Lao động",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://vbpl.vn/; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - VBPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://vbpl.vn/"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/he-thong-van-ban-phap-luat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/he-thong-van-ban-phap-luat"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x7017cc9c2d50>, 'Connection to vbpq.mo",
-        "http_status": null,
-        "name": "Cơ sở dữ liệu VBQPPL ngành Tài chính",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://vbpq.mof.gov.vn/"
-      }
-    ],
-    "failed_sources": 8,
-    "fallback_sources": 0,
-    "feed_supplements": 0,
-    "finished_at": "2026-11-21 05:42:54 UTC",
-    "new_to_sheets": 0,
-    "older_than_60_days": 3,
-    "pending_sheets_exports": 0,
-    "recognized": 165,
-    "relationship_ambiguous": 13,
-    "relationship_candidates": 164,
-    "relationship_matched_in_scan_index": 55,
-    "review_queue_total": 1043,
-    "review_to_sheets": 0,
-    "run_attempt": "1",
-    "run_id": "44872040916",
-    "scan_profile": "priority",
-    "source_retry_queue_pending": 31,
-    "sources": 17,
-    "started_at": "2026-11-21 05:41:35 UTC",
-    "successful_sources": 9,
-    "trigger": "workflow_dispatch",
-    "unknown_date": 4
-  },
-  {
     "collected": 381,
     "discovered_source_candidates_added": 0,
     "discovered_sources_activated": 0,
@@ -106316,5 +106227,109 @@
     "successful_sources": 13,
     "trigger": "push",
     "unknown_date": 15
+  },
+  {
+    "collected": 22110,
+    "discovered_source_candidates_added": 329,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 0,
+    "discovered_sources_pending": 0,
+    "duplicates": 2085,
+    "duration_seconds": 256.5,
+    "failed_source_details": [
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='dbnd.cantho.gov.vn', port=443): Max retries exceeded with url: /?pageid=37010&p_agency=4533 (Caused by NewConnectionError(\"HTTPSConnection(host='dbnd.cantho.gov.vn', port=443): Failed to es",
+        "http_status": null,
+        "name": "Văn phòng Đoàn ĐBQH và HĐND TP Cần Thơ",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://dbnd.cantho.gov.vn/?pageid=37010&p_agency=4533"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='hdnd.ninhbinh.gov.vn', port=443): Read timed out.",
+        "http_status": 200,
+        "name": "Đoàn ĐBQH và HĐND tỉnh Ninh Bình",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://hdnd.ninhbinh.gov.vn/kien-nghi-cu-tri/van-ban-tra-loi-cua-cac-bo-nganh-trung-uong"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='snv.lamdong.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='snv.lamdong.gov.vn', port=443): Failed to esta",
+        "http_status": null,
+        "name": "Sở Nội vụ Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://snv.lamdong.gov.vn/van-ban-chi-dao-dieu-hanh"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='syt.lamdong.gov.vn', port=443): Max retries exceeded with url: /van-ban-quan-ly (Caused by NewConnectionError(\"HTTPSConnection(host='syt.lamdong.gov.vn', port=443): Failed to establish a ne",
+        "http_status": null,
+        "name": "Sở Y tế Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://syt.lamdong.gov.vn/van-ban-quan-ly"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='stc.lamdong.gov.vn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='stc.lamdong.gov.vn', port=443): Failed to establish a new connection: [",
+        "http_status": null,
+        "name": "Sở Tài chính Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://stc.lamdong.gov.vn/"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='stp.lamdong.gov.vn', port=443): Max retries exceeded with url: /van-ban-chi-dao-dieu-hanh (Caused by NewConnectionError(\"HTTPSConnection(host='stp.lamdong.gov.vn', port=443): Failed to esta",
+        "http_status": null,
+        "name": "Sở Tư pháp Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://stp.lamdong.gov.vn/van-ban-chi-dao-dieu-hanh"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='songoaivu.lamdong.gov.vn', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='songoaivu.lamdong.gov.vn', port=443): Failed to establish a new c",
+        "http_status": null,
+        "name": "Sở Ngoại vụ Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://songoaivu.lamdong.gov.vn/"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='snnmt.lamdong.gov.vn', port=443): Max retries exceeded with url: /he-thong-van-ban (Caused by NewConnectionError(\"HTTPSConnection(host='snnmt.lamdong.gov.vn', port=443): Failed to establish",
+        "http_status": null,
+        "name": "Sở Nông nghiệp và Môi trường Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://snnmt.lamdong.gov.vn/he-thong-van-ban"
+      },
+      {
+        "error": "CONNECTION: Lỗi kết nối: HTTPSConnectionPool(host='sxd.lamdong.gov.vn', port=443): Max retries exceeded with url: /van-ban (Caused by NewConnectionError(\"HTTPSConnection(host='sxd.lamdong.gov.vn', port=443): Failed to establish a new connec",
+        "http_status": null,
+        "name": "Sở Xây dựng Lâm Đồng",
+        "status": "Lỗi: CONNECTION",
+        "url": "https://sxd.lamdong.gov.vn/van-ban"
+      },
+      {
+        "error": "HTTP: Website trả HTTP 403: 403 Client Error: No server for url: https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_lifer",
+        "http_status": 403,
+        "name": "Ngân hàng Nhà nước - Trang chủ - Các văn bản liên quan đến quy định báo cáo thống kê - Văn bản CCHC - Page 1",
+        "status": "Lỗi: HTTP",
+        "url": "https://sbv.gov.vn/vi/van-ban-cchc?p_p_id=com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_redirect=%2Fvi%2Fvan-ban-cchc&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_delta=20&p_r_p_resetCur=false&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_pqor_cur=1"
+      }
+    ],
+    "failed_sources": 10,
+    "fallback_sources": 6,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-28 05:16:30 UTC",
+    "new_to_sheets": 41,
+    "older_than_60_days": 2950,
+    "pending_sheets_exports": 0,
+    "recognized": 6011,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1223,
+    "review_to_sheets": 1,
+    "run_attempt": "1",
+    "run_id": "46110944187",
+    "scan_profile": "remaining",
+    "source_retries_deferred": 21,
+    "source_retry_queue_pending": 37,
+    "sources": 307,
+    "started_at": "2026-11-28 05:12:14 UTC",
+    "successful_sources": 297,
+    "trigger": "push",
+    "unknown_date": 439
   }
 ]
