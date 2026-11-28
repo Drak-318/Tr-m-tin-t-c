@@ -355,4 +355,13 @@ class NormalizerTests(unittest.TestCase):
         self.assertFalse(keep)
 
 
+
+    def test_general_local_licensing_procedure_is_not_case_specific(self):
+        title = "Quyết định quy định trình tự, thủ tục hành chính cấp giấy phép xây dựng cho tổ chức"
+        keep, _ = classify_and_score(
+            title, "UBND tỉnh Lâm Đồng", "Quyết định", "12/2026/QĐ-UBND", "Địa phương"
+        )
+        self.assertTrue(keep)
+
+
 if __name__=="__main__": unittest.main()
