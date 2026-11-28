@@ -187,7 +187,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
-      actions: write
+      actions: read
       contents: write
     steps:
       - name: Check scan health and dispatch a catch-up run when needed
@@ -265,45 +265,24 @@ jobs:
             let action = "healthy";
             let reason = "";
 
+            // GitHub watchdog is observation-only. Apps Script is the sole
+            // dispatcher, avoiding two independent watchdogs racing to launch
+            // the same profile. The audit log records overdue/stale conditions.
             if (staleActive) {
-              action = "recover_stale";
-              reason = `${staleActive.profile} scan #${staleActive.run.run_number} stuck in ${staleActive.job.status}; cancelling after stale threshold`;
+              action = "stale_detected";
+              reason = `${staleActive.profile} scan #${staleActive.run.run_number} is stale in ${staleActive.job.status}; Apps Script inspector will recover it after its cooldown/ack checks`;
               core.warning(reason);
-              await github.rest.actions.cancelWorkflowRun({
-                owner, repo, run_id: staleActive.run.id
-              });
-              await github.rest.actions.createWorkflowDispatch({
-                owner,
-                repo,
-                workflow_id: "auto_scan.yml",
-                ref: "main",
-                inputs: { profile: staleActive.profile }
-              });
             } else if (active) {
               action = "scan_active";
               reason = `${active.profile} scan #${active.run.run_number} is ${active.job.status}`;
-            } else if (priorityAge > 15 && !recentFailure("priority")) {
-              action = "dispatch_priority";
-              reason = `Priority scan stale for ${Math.round(priorityAge)} minutes`;
+            } else if (priorityAge > 15) {
+              action = "priority_overdue";
+              reason = `Priority scan has no recent success for ${Math.round(priorityAge)} minutes; awaiting Apps Script inspector`;
               core.warning(reason);
-              await github.rest.actions.createWorkflowDispatch({
-                owner,
-                repo,
-                workflow_id: "auto_scan.yml",
-                ref: "main",
-                inputs: { profile: "priority" }
-              });
-            } else if (fullAge > 40 && !recentFailure("full")) {
-              action = "dispatch_full";
-              reason = `Full scan stale for ${Math.round(fullAge)} minutes`;
+            } else if (fullAge > 40) {
+              action = "full_overdue";
+              reason = `Full scan has no recent success for ${Math.round(fullAge)} minutes; awaiting Apps Script inspector`;
               core.warning(reason);
-              await github.rest.actions.createWorkflowDispatch({
-                owner,
-                repo,
-                workflow_id: "auto_scan.yml",
-                ref: "main",
-                inputs: { profile: "full" }
-              });
             } else {
               reason = `Priority age: ${Math.round(priorityAge)}m; full age: ${Math.round(fullAge)}m`;
               core.info(`Scan health OK. ${reason}.`);
