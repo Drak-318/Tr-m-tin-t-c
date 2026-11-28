@@ -125,6 +125,22 @@ class NormalizerTests(unittest.TestCase):
         )
         self.assertTrue(keep)
 
+
+    def test_numbered_local_policy_not_matching_topic_is_kept_for_review(self):
+        keep, priority = classify_and_score(
+            "Quyết định 18/2026/QĐ-UBND về việc ban hành quy chế phối hợp liên ngành",
+            "UBND tỉnh An Giang", "Quyết định", "18/2026/QĐ-UBND", "Địa phương"
+        )
+        self.assertTrue(keep)
+        self.assertEqual(priority, 65)
+
+    def test_local_dispatch_citing_central_instrument_is_not_exported_as_original(self):
+        keep, _ = classify_and_score(
+            "Công văn 123/SNV-VP về việc triển khai Nghị định 45/2026/NĐ-CP",
+            "Sở Nội vụ tỉnh Lâm Đồng", "Công văn", "123/SNV-VP", "Địa phương"
+        )
+        self.assertFalse(keep)
+
     def test_local_personal_land_recovery_is_excluded(self):
         keep, _ = classify_and_score(
             "Quyết định thu hồi đất của hộ ông Nguyễn Văn A để thực hiện dự án",
