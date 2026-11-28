@@ -96,7 +96,12 @@ def is_personal_or_one_off_document(title, doc_type="", doc_number=""):
         r"trung tâm|bệnh viện|trường|hợp tác xã)\b",
         text, re.I
     )
-    if permit_action and named_recipient:
+    general_licensing_rule = re.search(
+        r"\\b(?:quy định|hướng dẫn|trình tự|thủ tục)\\b.{0,100}\\b(?:việc\\s+)?"
+        r"(?:cấp|điều chỉnh|thu hồi|gia hạn)\\b",
+        text, re.I
+    )
+    if permit_action and named_recipient and not general_licensing_rule:
         return True
 
     return any(re.search(pattern, text, re.I) for pattern in PERSONAL_OR_ONE_OFF_PATTERNS)
@@ -318,7 +323,7 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
             r"\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện)\b",
             clean_title(title), re.I
         ))
-        if doc_type == "Công văn" and central_reference and rollout_language:
+        if doc_type in {"Công văn","Thông báo","Kế hoạch","Hướng dẫn"} and central_reference and rollout_language:
             return False,96
         return True,30
 
