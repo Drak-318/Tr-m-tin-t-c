@@ -239,7 +239,7 @@ def main():
             }
             candidate_config=config_for_source(candidate_source,config_data)
             candidate_config.update({"max_pages":2,"max_items":80,"follow_pagination":True})
-            validation=scan_source(candidate_source,candidate_config,None)
+            validation=scan_source(candidate_source,candidate_config)
             recognized_items=[]
             for candidate_item in validation.get("items",[]):
                 candidate_type=candidate_item.get("doc_type") or extract_doc_info(candidate_item.get("title",""))[0]
