@@ -79,7 +79,7 @@ def _article_text(html):
     return node.get_text(" ", strip=True)[:120000]
 
 
-def fetch_detail_text(url, fallback_fetcher=None, timeout=(8, 18)):
+def fetch_detail_text(url, timeout=(8, 18)):
     """Fetch a document detail page directly, then via the configured Apps Script proxy."""
     host = (urlsplit(url).hostname or "").lower()
     if not host or host in {"news.google.com", "news.googleusercontent.com"}:
@@ -93,18 +93,10 @@ def fetch_detail_text(url, fallback_fetcher=None, timeout=(8, 18)):
         response.raise_for_status()
         return _article_text(response.text)
     except requests.RequestException:
-        if not fallback_fetcher:
-            return ""
-    try:
-        remote = fallback_fetcher(url, "Trang chi tiết văn bản")
-        if remote.get("status") == "ok" and 200 <= int(remote.get("http_status", 0)) < 300:
-            return _article_text(remote.get("body", ""))
-    except Exception:
-        pass
-    return ""
+        return ""
 
 
-def collect_local_document_relations(candidates, fallback_fetcher=None, limit=8):
+def collect_local_document_relations(candidates, limit=8):
     """Inspect a small number of local-document detail pages per scan."""
     relations = []
     inspected = 0
@@ -115,7 +107,7 @@ def collect_local_document_relations(candidates, fallback_fetcher=None, limit=8)
         if not url:
             continue
         inspected += 1
-        body = fetch_detail_text(url, fallback_fetcher=fallback_fetcher)
+        body = fetch_detail_text(url)
         if not body:
             continue
         title = clean_title(candidate.get("title", ""))
