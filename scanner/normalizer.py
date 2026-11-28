@@ -12,24 +12,29 @@ LOCAL_KEYWORDS = ["ubnd","ủy ban nhân dân","hđnd","hội đồng nhân dân
 # broad public relevance. These are deliberately topic-based, not document-type
 # based: a local resolution or decision can still be important.
 LOCAL_RELEVANCE_TOPICS = (
-    # Đất đai, quy hoạch, nhà ở và hạ tầng có tác động rộng
-    "đất đai", "quyền sử dụng đất", "bồi thường", "tái định cư", "bảng giá đất", "giá đất",
-    "quy hoạch sử dụng đất", "kế hoạch sử dụng đất", "đấu giá quyền sử dụng đất",
-    "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng", "quy hoạch đô thị",
-    "đầu tư công", "giao thông", "hạ tầng", "đấu thầu", "lựa chọn nhà thầu",
-    "mua sắm công",
-    # Y tế, giáo dục, lao động và an sinh
+    # Giáo dục, đào tạo
+    "giáo dục", "đào tạo", "tuyển sinh", "học phí", "giáo viên", "nhà giáo",
+    "học sinh", "sinh viên", "trường học", "cơ sở giáo dục", "chương trình giáo dục",
+    # Cán bộ, công chức, viên chức và chế độ tiền lương
+    "cán bộ", "công chức", "viên chức", "cán bộ công chức", "cán bộ, công chức",
+    "vị trí việc làm", "biên chế", "tuyển dụng công chức", "tuyển dụng viên chức",
+    "bổ nhiệm công chức", "bổ nhiệm viên chức", "ngạch công chức", "chức danh nghề nghiệp",
+    "tiền lương", "xếp lương", "bảng lương", "phụ cấp", "chế độ đãi ngộ",
+    "nâng bậc lương", "nâng lương", "mức lương cơ sở",
+    # Y tế
     "y tế", "khám chữa bệnh", "khám bệnh", "chữa bệnh", "bảo hiểm y tế",
-    "viện phí", "giá dịch vụ y tế", "giá dịch vụ khám", "dược",
-    "giáo dục", "đào tạo", "tuyển sinh", "học phí", "giáo viên",
-    "học sinh", "trường học", "bảo hiểm xã hội", "người lao động",
-    "trợ cấp", "an sinh", "tiền lương", "phụ cấp", "vị trí việc làm",
-    "tuyển dụng viên chức", "tuyển dụng công chức",
-    # Thuế, phí, thủ tục và lĩnh vực công có phạm vi chung
-    "thuế", "phí", "lệ phí", "mức thu", "miễn giảm", "thủ tục hành chính",
-    "cải cách hành chính", "tổ chức bộ máy", "định mức kinh tế - kỹ thuật",
-    "định mức kinh tế kỹ thuật", "phòng chống thiên tai", "ứng phó thiên tai",
-    "môi trường", "ô nhiễm", "chất thải", "chuyển đổi số",
+    "viện phí", "giá dịch vụ y tế", "dược", "cơ sở khám bệnh",
+    # Thuế, hải quan, hóa đơn và chứng từ
+    "thuế", "hải quan", "hóa đơn", "hoá đơn", "chứng từ", "kê khai thuế",
+    "quản lý thuế", "lệ phí trước bạ", "thu ngân sách",
+    # Lao động và an sinh liên quan trực tiếp
+    "lao động", "người lao động", "hợp đồng lao động", "tiền công",
+    "bảo hiểm xã hội", "trợ cấp thất nghiệp", "an toàn lao động",
+    # Đất đai, nhà ở và quy hoạch
+    "đất đai", "quyền sử dụng đất", "bồi thường", "tái định cư", "bảng giá đất",
+    "giá đất", "quy hoạch sử dụng đất", "kế hoạch sử dụng đất",
+    "đấu giá quyền sử dụng đất", "nhà ở xã hội", "nhà ở", "quy hoạch xây dựng",
+    "quy hoạch đô thị", "quy hoạch tỉnh", "quy hoạch phân khu",
 )
 
 PERSONAL_OR_ONE_OFF_PATTERNS = (
@@ -317,27 +322,6 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
         if direct_central_title:
             return True,10
 
-        if not is_relevant_local_document(title,doc_type,doc_number):
-            # Recall-first safety net: a numbered local legal instrument may
-            # still be important even when its title misses the current topic
-            # keywords. Keep it at low priority for human review, unless it is
-            # clearly a one-off case or merely a local rollout of a central item.
-            has_own_local_number = bool(
-                re.search(r"\b[0-9]{1,7}(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
-                and not extract_central_references(doc_number)
-            )
-            local_policy_types = {
-                "Quyết định", "Nghị quyết", "Chỉ thị", "Kế hoạch",
-                "Thông báo", "Hướng dẫn", "Quy định", "Quy chế",
-                "Chương trình", "Công văn", "Kết luận"
-            }
-            cited_central = bool(extract_central_references(title))
-            if not (has_own_local_number and doc_type in local_policy_types):
-                return False,97
-            if doc_type == "Công văn" and cited_central:
-                return False,96
-            return True,65
-
         central_references = extract_central_references(title)
         central_reference = bool(central_references)
         rollout_language = bool(re.search(
@@ -345,6 +329,20 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
             r"phổ biến|quán triệt)\b",
             clean_title(title), re.I
         ))
+        local_rollout = bool(
+            rollout_language
+            and doc_type in {"Công văn", "Kế hoạch", "Thông báo", "Hướng dẫn"}
+            and re.search(r"\b(?:triển khai|thực hiện|hướng dẫn thực hiện|phổ biến|quán triệt)\b",
+                          clean_title(title), re.I)
+        )
+        # Do not collect a local dispatch merely because it implements another
+        # local plan/decision. A central reference is handled by the separate
+        # central-original lookup pipeline.
+        if local_rollout:
+            return False,96
+
+        if not is_relevant_local_document(title,doc_type,doc_number):
+            return False,97
         has_local_issuing_number = bool(
             re.search(r"\b[0-9]{1,7}(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
             and not extract_central_references(doc_number)
@@ -413,6 +411,20 @@ CENTRAL_REFERENCE_REGEX = re.compile(
     r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)-[A-ZĐ0-9-]+))",
     re.I
 )
+
+
+
+def is_local_central_rollout(title, doc_type="", doc_number=""):
+    """True only for local implementation notices citing a numbered central instrument."""
+    text = clean_title(title)
+    rollout = bool(re.search(
+        r"\\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện|"
+        r"phổ biến|quán triệt)\\b", text, re.I
+    ))
+    eligible_type = clean_title(doc_type).casefold() in {
+        "công văn", "kế hoạch", "thông báo", "hướng dẫn"
+    }
+    return bool(rollout and eligible_type and extract_central_references(text))
 
 
 def extract_central_references(text, limit=20):
