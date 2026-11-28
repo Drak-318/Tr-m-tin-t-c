@@ -56,6 +56,7 @@ jobs:
           python -m unittest discover -s tests -v
           cp apps_script/Code.gs /tmp/Code.js
           node --check /tmp/Code.js
+          node --check scripts/github_scheduler.js
 
       - name: Run non-priority source scanner
         env:
@@ -135,6 +136,7 @@ jobs:
           python -m unittest discover -s tests -v
           cp apps_script/Code.gs /tmp/Code.js
           node --check /tmp/Code.js
+          node --check scripts/github_scheduler.js
 
       - name: Run priority-source scanner
         env:
