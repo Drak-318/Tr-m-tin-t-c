@@ -188,4 +188,60 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["link"], "https://chinhphu.vn/van-ban/1")
 
+
+    def test_configured_listing_url_is_used_for_homepage_source(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        from scanner.collectors import scan_source
+
+        source = {"name": "Sở Xây dựng Quảng Ngãi", "url": "https://sxd.quangngai.gov.vn/"}
+        listing_url = "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung"
+        seen = {}
+
+        def fake_collect(session, url, config, max_items, max_pages, **kwargs):
+            seen["url"] = url
+            return ([{"title": "Công văn 1/SXD-VP về việc triển khai", "link": listing_url + "/1"}], 1, 200)
+
+        fake_session = SimpleNamespace(close=lambda: None)
+        with patch("scanner.collectors.make_session", return_value=fake_session), \\
+             patch("scanner.collectors._collect_primary", side_effect=fake_collect):
+            result = scan_source(source, {"listing_url": listing_url, "max_items": 20, "max_pages": 1})
+
+        self.assertEqual(seen["url"], listing_url)
+        self.assertEqual(len(result["items"]), 1)
+
+    def test_syt_lam_dong_table_selectors_extract_number_and_issue_date(self):
+        html = """<table><tbody><tr>
+          <td>9901/SYT-TCCB</td><td>25/11/2026</td>
+          <td><a href="/van-ban/9901">Báo cáo tình hình thực hiện nhiệm vụ</a></td>
+          <td><a href="/files/9901.pdf">Tải về</a></td>
+        </tr></tbody></table>"""
+        items, _ = parse_html_items(html, "https://syt.lamdong.gov.vn/van-ban-quan-ly", {
+            "item_selector": "table tbody tr",
+            "title_selector": "td:nth-child(3) a[href]",
+            "link_selector": "td:nth-child(3) a[href]",
+            "document_number_selector": "td:nth-child(1)",
+            "issue_date_selector": "td:nth-child(2)",
+        })
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["doc_number"], "9901/SYT-TCCB")
+        self.assertEqual(items[0]["published_date"], "25/11/2026")
+
+    def test_sxd_quang_ngai_table_selectors_extract_number_and_issue_date(self):
+        html = """<table><tbody><tr>
+          <td>1</td><td>9731/SXD-VP</td><td>27/11/2026</td>
+          <td><a href="/van-ban/9731">V/v báo cáo thực hiện nhiệm vụ công tác</a></td>
+          <td></td><td>Công văn</td><td></td>
+        </tr></tbody></table>"""
+        items, _ = parse_html_items(html, "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung", {
+            "item_selector": "table tbody tr",
+            "title_selector": "td:nth-child(4) a[href]",
+            "link_selector": "td:nth-child(4) a[href]",
+            "document_number_selector": "td:nth-child(2)",
+            "issue_date_selector": "td:nth-child(3)",
+        })
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["doc_number"], "9731/SXD-VP")
+        self.assertEqual(items[0]["published_date"], "27/11/2026")
+
 if __name__=="__main__": unittest.main()
