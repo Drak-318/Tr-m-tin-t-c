@@ -327,7 +327,8 @@
       "title_selector": "td:nth-child(4) a[href]",
       "link_selector": "td:nth-child(4) a[href]",
       "document_number_selector": "td:nth-child(2)",
-      "issue_date_selector": "td:nth-child(3)"
+      "issue_date_selector": "td:nth-child(3)",
+      "document_type_selector": "td:nth-child(6)"
     },
     "https://nhandan.vn": {
       "max_pages": 2,
