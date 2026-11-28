@@ -51,5 +51,32 @@ class PrioritySourceTests(unittest.TestCase):
         self.assertEqual(missing, [])
 
 
+
+    def test_all_user_requested_sources_are_registered(self):
+        from scanner.source_registry import load_sources_from_csv
+
+        expected = {
+            "https://kiemtra-phapche.hcm.edu.vn/van-ban/vbplus/41014/0/0/0",
+            "https://snv.lamdong.gov.vn/van-ban-chi-dao-dieu-hanh",
+            "https://qppl.thanhhoa.gov.vn/vbpq_thanhhoa.nsf",
+            "https://syt.lamdong.gov.vn/van-ban-quan-ly",
+            "https://stc.lamdong.gov.vn/",
+            "https://stp.lamdong.gov.vn/van-ban-chi-dao-dieu-hanh",
+            "https://songoaivu.lamdong.gov.vn/",
+            "https://snnmt.lamdong.gov.vn/he-thong-van-ban",
+            "https://sxd.lamdong.gov.vn/van-ban",
+            "https://sxd.quangngai.gov.vn/",
+            "https://nhandan.vn/",
+        }
+        registered = {row["url"].rstrip("/") for row in load_sources_from_csv()}
+        self.assertTrue(expected.issubset(registered), expected - registered)
+
+    def test_law_and_resolution_discovery_feeds_are_registered(self):
+        from scanner.source_registry import load_sources_from_csv
+
+        names = {row["name"] for row in load_sources_from_csv()}
+        self.assertIn("Dò tìm Luật mới - Google News RSS", names)
+        self.assertIn("Dò tìm Nghị quyết mới - Google News RSS", names)
+
 if __name__ == "__main__":
     unittest.main()
