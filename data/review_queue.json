@@ -754,20 +754,24 @@
     },
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-11235-SGDDT-KHTC-Ve-viec-thuc-hien-thu-thap-du-lieu-thong-tin-thong-ke-giao-duc-ky-dau-nam-hoc-2026-2027-don-vi-truc-thuoc-1337/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 19/10/2026",
       "doc_number": "11235/SGDĐT-KHTC",
       "exported_at": "2026-11-28T05:32:29+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:11235/SGDĐT-KHTC|issuer:SGDĐT-KHTC|locality:unresolved-source:cm.pek.edu.vn",
-      "last_checked": "2026-11-28T05:32:29+00:00",
+      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-11235-SGDDT-KHTC-Ve-viec-thuc-hien-thu-thap-du-lieu-thong-tin-thong-ke-giao-duc-ky-dau-nam-hoc-2026-2027-don-vi-truc-thuoc-1337/",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản khác",
-      "status": "pending",
-      "title": "Văn bản số 11235/SGDĐT-KHTC Về việc thực hiện thu thập dữ liệu thông tin thống kê giáo dục kỳ đầu năm học 2026-2027 (đơn vị trực thuộc)."
+      "status": "manual_review",
+      "title": "Văn bản số 11235/SGDĐT-KHTC Về việc thực hiện thu thập dữ liệu thông tin thống kê giáo dục kỳ đầu năm học 2026-2027 (đơn vị trực thuộc).",
+      "verification_status": "needs_manual_review",
+      "verified_date": "2026-10-19"
     },
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-1549-SGDDT-HSSV-V-v-tiep-tuc-thuc-hien-Khong-gian-van-hoa-Ho-Chi-Minh-tai-cac-co-so-giao-duc-tren-dia-ban-Thanh-pho-1083/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
@@ -998,37 +1002,45 @@
     },
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-7451-SGDDT-HSSV-Ve-viec-phoi-hop-tuyen-truyen-ve-Tuan-phim-Ky-niem-79-nam-Ngay-Thuong-binh-Liet-si-27-7-1947-27-7-2026-tren-dia-ban-Thanh-pho-Ho-Chi-Minh-1223/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 26/07/2026",
       "doc_number": "7451/SGDĐT-HSSV",
       "exported_at": "2026-11-28T05:32:29+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:7451/SGDĐT-HSSV|issuer:SGDĐT-HSSV|locality:hồ chí minh trường trung - tiểu học pétrus ký - văn bản",
-      "last_checked": "2026-11-28T05:32:29+00:00",
+      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-7451-SGDDT-HSSV-Ve-viec-phoi-hop-tuyen-truyen-ve-Tuan-phim-Ky-niem-79-nam-Ngay-Thuong-binh-Liet-si-27-7-1947-27-7-2026-tren-dia-ban-Thanh-pho-Ho-Chi-Minh-1223/",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản khác",
-      "status": "pending",
-      "title": "Văn bản số 7451/SGDĐT-HSSV Về việc phối hợp tuyên truyền về Tuần phim Kỷ niệm 79 năm Ngày Thương binh - Liệt sĩ (27/7/1947 - 27/7/2026) trên địa bàn Thành phố Hồ Chí Minh"
+      "status": "excluded_old",
+      "title": "Văn bản số 7451/SGDĐT-HSSV Về việc phối hợp tuyên truyền về Tuần phim Kỷ niệm 79 năm Ngày Thương binh - Liệt sĩ (27/7/1947 - 27/7/2026) trên địa bàn Thành phố Hồ Chí Minh",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-07-26"
     },
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-869-SGDDT-HSSV-Ve-viec-huong-ung-Cuoc-thi-Viet-thu-Quoc-te-UPU-lan-thu-55-nam-2026-1054/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
-      "attempts": 0,
-      "date_basis": "unknown",
+      "attempts": 1,
+      "date_basis": "issue_date_detail",
+      "date_evidence": "Ngày ban hành 26/01/2026",
       "doc_number": "869/SGDĐT-HSSV",
       "exported_at": "2026-11-28T05:32:29+00:00",
       "exported_to_sheets": true,
       "first_seen": "2026-11-28T05:32:23+00:00",
       "identity": "number:869/SGDĐT-HSSV|issuer:SGDĐT-HSSV|locality:unresolved-source:cm.pek.edu.vn",
-      "last_checked": "2026-11-28T05:32:29+00:00",
+      "last_checked": "2026-11-28T05:34:53+00:00",
+      "last_error": "",
       "last_seen": "2026-11-28T05:32:23+00:00",
       "link": "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-869-SGDDT-HSSV-Ve-viec-huong-ung-Cuoc-thi-Viet-thu-Quoc-te-UPU-lan-thu-55-nam-2026-1054/",
       "reason": "Chưa có ngày xác minh; giữ lại để hậu kiểm.",
       "source_group": "Văn Bản khác",
-      "status": "pending",
-      "title": "Văn bản số 869/SGDĐT-HSSV Về việc hưởng ứng Cuộc thi Viết thư Quốc tế UPU lần thứ 55 (năm 2026)"
+      "status": "excluded_old",
+      "title": "Văn bản số 869/SGDĐT-HSSV Về việc hưởng ứng Cuộc thi Viết thư Quốc tế UPU lần thứ 55 (năm 2026)",
+      "verification_status": "excluded_old",
+      "verified_date": "2026-01-26"
     },
     "https://cm.pek.edu.vn/vi/laws/detail/Van-ban-so-9962-SGDDT-TCCB-V-v-trien-khai-lap-danh-sach-nguoi-lam-cong-tac-chuyen-trach-ve-chuyen-doi-so-an-toan-thong-tin-mang-an-ninh-mang-1306/": {
       "agency": "Trường Trung - Tiểu học Pétrus Ký - Văn bản",
@@ -23671,6 +23683,6 @@
       "verification_status": "manual_review"
     }
   },
-  "updated_at": "2026-11-28T05:32:30+00:00",
+  "updated_at": "2026-11-28T05:34:53+00:00",
   "version": 1
 }
