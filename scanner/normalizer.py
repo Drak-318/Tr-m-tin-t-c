@@ -418,8 +418,8 @@ def is_local_central_rollout(title, doc_type="", doc_number=""):
     """True only for local implementation notices citing a numbered central instrument."""
     text = clean_title(title)
     rollout = bool(re.search(
-        r"\\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện|"
-        r"phổ biến|quán triệt)\\b", text, re.I
+        r"\b(?:triển khai|tổ chức thực hiện|hướng dẫn thực hiện|thực hiện|"
+        r"phổ biến|quán triệt)\b", text, re.I
     ))
     eligible_type = clean_title(doc_type).casefold() in {
         "công văn", "kế hoạch", "thông báo", "hướng dẫn"
