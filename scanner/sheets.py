@@ -43,20 +43,6 @@ def _post(payload,timeout=90,attempts=3):
                 time.sleep(wait)
     raise RuntimeError(f"Không thể kết nối Apps Script sau {attempts} lần thử: {last_error}")
 
-def get_sources_and_memory():
-    data=_post({"action":"get_sources"},timeout=90)
-    if data.get("status")!="ok": raise RuntimeError(f"Không lấy được danh sách nguồn: {data}")
-    sources=[]
-    for raw in data.get("sources") or []:
-        url=str(raw.get("url") or "").strip()
-        if not url: continue
-        row=raw.get("row"); name=str(raw.get("name") or "").strip() or f"Nguồn dòng {row or '?'}"
-        sources.append({**raw,"name":name,"url":url,"group":str(raw.get("group") or "Văn Bản TW").strip()})
-    links=set(str(v).strip() for v in data.get("existingLinks",[]) if v)
-    numbers=set(str(v).strip().upper() for v in data.get("existingNumbers",[]) if v)
-    identities=set(str(v).strip() for v in data.get("existingIdentities",[]) if v)
-    return sources,links,numbers,identities
-
 def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=None):
     review_docs=review_docs or []
     batches=[new_docs[i:i+batch_size] for i in range(0,len(new_docs),batch_size)]
@@ -79,10 +65,3 @@ def save_results_in_batches(new_docs,source_status,batch_size=10,review_docs=Non
               f"{int(result.get('sent_to_date_review',0))} hồ sơ cần xác minh ngày mới.")
     return {"added":added,"review_added":review_added}
 
-
-def fetch_source_via_apps_script(url, source_name=""):
-    """Fetch one configured source through Apps Script's Google-hosted UrlFetchApp."""
-    result = _post({"action":"fetch_source","url":url,"source_name":source_name},timeout=45,attempts=1)
-    if result.get("status") != "ok":
-        raise RuntimeError(result.get("message","Apps Script source fetch failed"))
-    return result
