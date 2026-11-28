@@ -368,8 +368,13 @@ def document_identity(doc_number,title,agency="",link=""):
 CENTRAL_REFERENCE_REGEX = re.compile(
     r"(?<![A-Z0-9])([0-9]{1,7}(?:/20[0-9]{2})?/"
     r"(?:NĐ-CP|NQ-(?:CP|QH[0-9]+|UBTVQH[0-9]+)|"
-    r"TT-[A-ZĐ0-9-]+|QĐ-(?:TTg|[A-ZĐ0-9-]+)|QD-(?:TTg|[A-Z0-9-]+)|"
-    r"CT-(?:TTg|[A-ZĐ0-9-]+)|VBHN-[A-Z0-9-]+|QH[0-9]+|"
+    r"TT-(?:BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
+    r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ|VPCP)|"
+    r"QĐ-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
+    r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)|"
+    r"QD-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BCA|BQP|BHXH|TTCP)|"
+    r"CT-(?:TTg|BTC|BTP|BYT|BXD|BCT|BNV|BCA|BQP|TTCP)|"
+    r"VBHN-[A-Z0-9-]+|QH[0-9]+|"
     r"(?:VPCP|BTC|BTP|BYT|BXD|BCT|BNV|BGDĐT|BCA|BQP|BHXH|TTCP|"
     r"BKHCN|BNNMT|BNN|BTNMT|BTTTT|TCT|TCHQ)-[A-ZĐ0-9-]+)",
     re.I
