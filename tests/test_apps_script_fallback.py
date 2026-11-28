@@ -1,81 +1,50 @@
 import unittest
 from unittest.mock import Mock, patch
 import requests
+from pathlib import Path
 
 from scanner.collectors import scan_source
 
-class AppsScriptFallbackTests(unittest.TestCase):
+
+class GitHubOnlyCollectionTests(unittest.TestCase):
     @patch("scanner.collectors.make_session")
-    def test_uses_apps_script_after_primary_ssl_failure(self, make_session):
+    def test_ssl_failure_is_recorded_without_apps_script_proxy(self, make_session):
         session = Mock()
         session.get.side_effect = requests.exceptions.SSLError("certificate verify failed")
         make_session.return_value = session
-        html = '<html><body><a href="/van-ban/1">Nghị định số 123/2026/NĐ-CP về hướng dẫn</a></body></html>'
-        fetcher = Mock(return_value={"status":"ok","http_status":200,"content_type":"text/html","body":html})
-        result = scan_source({"url":"https://example.gov.vn/van-ban","name":"Nguồn thử"},
-                             {"mode":"auto","max_pages":1,"max_items":20},fetcher)
-        self.assertEqual(result["retrieval_method"],"apps_script")
-        self.assertTrue(result["fallback_used"])
-        self.assertEqual(len(result["items"]),1)
-        self.assertEqual(result["items"][0]["retrieval_method"],"apps_script")
-        fetcher.assert_called_once()
+        result = scan_source(
+            {"url": "https://example.gov.vn/van-ban", "name": "Nguồn thử"},
+            {"mode": "auto", "max_pages": 1, "max_items": 20},
+        )
+        self.assertTrue(result["status"].startswith("Lỗi: SSL"))
+        self.assertIn("certificate verify failed", result["error"])
+        self.assertNotIn("apps_script", result.get("retrieval_method", ""))
 
     @patch("scanner.collectors.make_session")
-    def test_does_not_call_apps_script_when_primary_is_accessible_but_empty(self, make_session):
+    def test_accessible_empty_page_is_not_misreported_as_network_failure(self, make_session):
         response = Mock()
         response.status_code = 200
         response.url = "https://example.gov.vn/van-ban"
-        response.headers = {"Content-Type":"text/html"}
+        response.headers = {"Content-Type": "text/html"}
         response.text = "<html><body><p>Trang đang cập nhật</p></body></html>"
         response.content = response.text.encode()
         session = Mock()
         session.get.return_value = response
         make_session.return_value = session
-        fetcher = Mock()
-        result = scan_source({"url":response.url,"name":"Nguồn thử"},
-                             {"mode":"auto","max_pages":1,"max_items":20},fetcher)
-        self.assertEqual(result["status"],"Đã truy cập, chưa tìm thấy mục")
-        fetcher.assert_not_called()
+        result = scan_source(
+            {"url": response.url, "name": "Nguồn thử"},
+            {"mode": "auto", "max_pages": 1, "max_items": 20},
+        )
+        self.assertEqual(result["status"], "Đã truy cập, chưa tìm thấy mục")
 
-
-    def test_new_source_hosts_are_explicitly_allowlisted_in_apps_script(self):
-        from pathlib import Path
-
+    def test_apps_script_is_not_a_source_fetch_proxy_or_source_registry(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
-        hosts = [
-            "kiemtra-phapche.hcm.edu.vn",
-            "snv.lamdong.gov.vn",
-            "qppl.thanhhoa.gov.vn",
-            "syt.lamdong.gov.vn",
-            "stc.lamdong.gov.vn",
-            "stp.lamdong.gov.vn",
-            "songoaivu.lamdong.gov.vn",
-            "snnmt.lamdong.gov.vn",
-            "sxd.lamdong.gov.vn",
-            "sxd.quangngai.gov.vn",
-            "nhandan.vn",
-            "kcb.vn",
-            "baocaotaichinh.vn",
-            "tayninh.gov.vn",
-            "haiphong.baohiemxahoi.gov.vn",
-            "snn.quangngai.gov.vn",
-            "snnmt.bacninh.gov.vn",
-            "thuvienphapluat.vn",
-            "bacninh.gov.vn",
-            "snv.bacninh.gov.vn",
-            "stp.bacninh.gov.vn",
-            "stc.bacninh.gov.vn",
-            "syt.bacninh.gov.vn",
-            "sxd.bacninh.gov.vn",
-            "sgddt.bacninh.gov.vn",
-            "yentrung.bacninh.gov.vn",
-            "ninhbinh.gov.vn",
-            "news.google.com",
-        ]
-        for host in hosts:
-            with self.subTest(host=host):
-                self.assertIn('"' + host + '"', code)
-        self.assertIn('version: "14.0"', code)
+        self.assertNotIn("fetchSource_", code)
+        self.assertNotIn('data.action === "fetch_source"', code)
+        self.assertNotIn('data.action === "get_sources"', code)
+        self.assertNotIn("UrlFetchApp.fetch", code)
+        self.assertIn('version: "15.0"', code)
 
 
-if __name__ == "__main__": unittest.main()
+if __name__ == "__main__":
+    unittest.main()
