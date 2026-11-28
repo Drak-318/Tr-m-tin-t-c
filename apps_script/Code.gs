@@ -46,8 +46,7 @@ function doPost(e) {
     }
 
     // GitHub Actions owns scheduling, collection, classification and memory.
-    // This API only accepts result/source-status writes and returns source
-    // registry data when explicitly requested by the GitHub scanner.
+    // This API only accepts scan results and source-health updates from GitHub.
     xoaTriggerDieuPhoiCu_();
 
     if (!lock.tryLock(25000)) {
