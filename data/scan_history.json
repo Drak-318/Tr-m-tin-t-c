@@ -1,94 +1,5 @@
 [
   {
-    "collected": 474,
-    "discovered_source_candidates_added": 0,
-    "discovered_sources_activated": 0,
-    "discovered_sources_checked": 0,
-    "discovered_sources_pending": 500,
-    "duplicates": 159,
-    "duration_seconds": 75.92,
-    "failed_source_details": [
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/danh-sach-van-ban-qppl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - Văn bản QPPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/danh-sach-van-ban-qppl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Pháp luật vừa ban hành",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/phap-luat/phap-luat-vua-ban-hanh"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Hỏi đáp",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/hoi-dap-phap-luat-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Mã số thuế",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/ma-so-thue/phap-luat-thue/phap-luat-thue-moi-nhat"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Thư viện Pháp luật - Lao động",
-        "status": "Lỗi: HTTP",
-        "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/lao-dong-247?rel=banner_trangchu_tvpl"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://vbpl.vn/; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cơ sở dữ liệu quốc gia về pháp luật - VBPL",
-        "status": "Lỗi: HTTP",
-        "url": "https://vbpl.vn/"
-      },
-      {
-        "error": "HTTP: Website trả HTTP 403: 403 Client Error: Forbidden for url: https://phapluat.gov.vn/he-thong-van-ban-phap-luat; Apps Script: RuntimeError: Website nguồn trả HTTP 403",
-        "http_status": 403,
-        "name": "Cổng Pháp luật quốc gia - Hệ thống văn bản pháp luật",
-        "status": "Lỗi: HTTP",
-        "url": "https://phapluat.gov.vn/he-thong-van-ban-phap-luat"
-      },
-      {
-        "error": "TIMEOUT: Hết thời gian chờ: HTTPSConnectionPool(host='vbpq.mof.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vbpq.mof.gov.vn', port=443) at 0x7ad3e42dc990>, 'Connection to vbpq.mo",
-        "http_status": null,
-        "name": "Cơ sở dữ liệu VBQPPL ngành Tài chính",
-        "status": "Lỗi: TIMEOUT",
-        "url": "https://vbpq.mof.gov.vn/"
-      }
-    ],
-    "failed_sources": 8,
-    "fallback_sources": 0,
-    "feed_supplements": 0,
-    "finished_at": "2026-11-21 08:57:54 UTC",
-    "new_to_sheets": 0,
-    "older_than_60_days": 3,
-    "pending_sheets_exports": 0,
-    "recognized": 166,
-    "relationship_ambiguous": 13,
-    "relationship_candidates": 164,
-    "relationship_matched_in_scan_index": 55,
-    "review_queue_total": 1046,
-    "review_to_sheets": 0,
-    "run_attempt": "1",
-    "run_id": "44887195791",
-    "scan_profile": "priority",
-    "source_retry_queue_pending": 28,
-    "sources": 17,
-    "started_at": "2026-11-21 08:56:38 UTC",
-    "successful_sources": 9,
-    "trigger": "workflow_dispatch",
-    "unknown_date": 4
-  },
-  {
     "collected": 379,
     "discovered_source_candidates_added": 0,
     "discovered_sources_activated": 0,
@@ -104998,6 +104909,39 @@
     "source_retry_queue_pending": 37,
     "sources": 17,
     "started_at": "2026-11-28 07:12:20 UTC",
+    "successful_sources": 17,
+    "trigger": "push",
+    "unknown_date": 16
+  },
+  {
+    "collected": 508,
+    "discovered_source_candidates_added": 0,
+    "discovered_sources_activated": 0,
+    "discovered_sources_checked": 0,
+    "discovered_sources_pending": 422,
+    "duplicates": 165,
+    "duration_seconds": 13.58,
+    "failed_source_details": [],
+    "failed_sources": 0,
+    "fallback_sources": 2,
+    "feed_supplements": 0,
+    "finished_at": "2026-11-28 07:13:18 UTC",
+    "new_to_sheets": 0,
+    "older_than_60_days": 6,
+    "pending_sheets_exports": 0,
+    "recognized": 187,
+    "relationship_ambiguous": 13,
+    "relationship_candidates": 164,
+    "relationship_matched_in_scan_index": 55,
+    "review_queue_total": 1245,
+    "review_to_sheets": 0,
+    "run_attempt": "1",
+    "run_id": "46120117455",
+    "scan_profile": "priority",
+    "source_retries_deferred": 6,
+    "source_retry_queue_pending": 37,
+    "sources": 17,
+    "started_at": "2026-11-28 07:13:04 UTC",
     "successful_sources": 17,
     "trigger": "push",
     "unknown_date": 16
