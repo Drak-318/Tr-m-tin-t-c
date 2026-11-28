@@ -132,7 +132,7 @@ Không cần tạo `GITHUB_PAT`, không cần cài trigger thanh tra và không 
 - Workflow **Scanner Tests** chạy khi có commit: kiểm tra biên dịch Python, JSON, cú pháp JavaScript Apps Script và unit tests.
 - Workflow **Tram Tin Tuc - Auto Scanner** là quy trình vận hành dữ liệu.
 - Xem **Actions → Tram Tin Tuc - Auto Scanner → Summary** để kiểm tra số nguồn, mục thu thập, văn bản nhận diện, hồ sơ chưa rõ ngày, văn bản mới, nguồn lỗi và gói Sheets còn chờ.
-- Xem `data/scheduler_health.json` để kiểm tra quyết định của bộ điều phối GitHub.
+- Mở từng lượt `schedule-watchdog` trong GitHub Actions và xem **Summary** để kiểm tra quyết định điều phối, thời điểm hoàn thành và lý do chờ/gửi lệnh.
 - Xem `data/scan_history.json` và `data/source_retry_queue.json` để phân tích kết quả theo lượt và lỗi từng nguồn.
 
 Workflow màu xanh chỉ chứng minh các bước của workflow đạt điều kiện kết thúc. Chất lượng và độ đầy đủ dữ liệu vẫn phải đánh giá bằng số nguồn phản hồi, số mục thu thập, danh sách lỗi, hàng đợi xác minh ngày và xác nhận đồng bộ Sheets.
