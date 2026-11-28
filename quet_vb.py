@@ -10,11 +10,12 @@ from urllib.parse import quote
 from datetime import datetime, timezone
 
 from scanner.config import load_source_config, config_for_source, WEB_APP_URL
-from scanner.collectors import scan_source, verify_document_detail_date, search_central_reference_web
+from scanner.collectors import (scan_source, verify_document_detail_date,
+    search_central_reference_web, is_original_central_document_result)
 from scanner.normalizer import (
     extract_doc_info, classify_and_score, make_fingerprint, canonicalize_url,
     classify_document, document_identity, is_too_old, has_document_date, resolve_document_date,
-    is_local_scope, extract_central_references,
+    is_local_scope, extract_central_references, document_type_from_number, issuer_from_document_number,
 )
 from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
@@ -165,7 +166,9 @@ def main():
             lookup_result=scan_source(lookup_source,lookup_config,None)
             matched=[
                 item for item in lookup_result.get("items",[])
-                if ref.casefold() in f"{item.get('title','')} {item.get('link','')}".casefold()
+                if is_original_central_document_result(
+                    item.get("title",""),item.get("link",""),ref
+                )
             ]
             lookup_method="Google News RSS"
             ddgs_error=""
@@ -178,6 +181,10 @@ def main():
                     lookup_method="DDGS"
                     central_reference_stats["ddgs_fallbacks"]+=1
             if matched:
+                for item in matched:
+                    item.setdefault("doc_number",ref)
+                    item.setdefault("doc_type",document_type_from_number(ref))
+                    item.setdefault("agency",issuer_from_document_number(ref))
                 lookup_result["items"]=matched
                 lookup_result["status"]=f"Hoạt động qua {lookup_method}"
                 lookup_result["error"]=""
