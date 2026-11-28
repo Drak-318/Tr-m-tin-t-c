@@ -330,43 +330,60 @@ function saveResults_(ss, data) {
     });
   }
 
+  const resultLinks = new Set();
+  if (resultSheet.getLastRow() >= 2) {
+    resultSheet.getRange(2, 6, resultSheet.getLastRow() - 1, 1).getDisplayValues().forEach(row => {
+      const link = normalizeUrl_(row[0]);
+      if (link) resultLinks.add(link);
+    });
+  }
+
+  // Repair-safe two-table write: if a previous request wrote memory but failed
+  // before writing the visible result (or vice versa), a retry repairs only the
+  // missing side instead of losing the document or creating a duplicate row.
   const fresh = [];
   incoming.forEach(doc => {
     const link = normalizeUrl_(doc.link || "");
-    const identity = String(doc.identity || "").trim();
+    const identity = String(doc.identity || "").trim() || ("url:" + link);
     if (!link) return;
-    if (existingLinks.has(link) || (identity && existing.has(identity))) return;
-    fresh.push({
-      doc: doc,
-      link: link,
-      identity: identity || ("url:" + link)
-    });
-    existingLinks.add(link);
-    existing.add(identity || ("url:" + link));
+    const memoryHasLink = existingLinks.has(link);
+    const identityExistsElsewhere = existing.has(identity) && !memoryHasLink;
+    const addMemory = !memoryHasLink && !existing.has(identity);
+    const addResult = !resultLinks.has(link) && !identityExistsElsewhere;
+    if (!addMemory && !addResult) return;
+    fresh.push({doc: doc, link: link, identity: identity, addMemory: addMemory, addResult: addResult});
+    if (addMemory) {
+      existingLinks.add(link);
+      existing.add(identity);
+    }
+    if (addResult) resultLinks.add(link);
   });
 
   if (fresh.length) {
-    const resultRows = fresh.map(item => {
-      const d = item.doc;
-      return [now, String(d.doc_type || ""), cleanAgency_(d.agency), String(d.title || ""),
-        String(d.doc_number || ""), String(d.link || ""), String(d.fingerprint || ""),
-        String(d.category || "Văn bản khác")];
-    });
-    const memoryRows = fresh.map(item => {
-      const d = item.doc;
-      return [item.link, String(d.doc_number || ""), String(d.title || "").toLowerCase(),
-        String(d.fingerprint || ""), String(d.doc_type || ""), now, item.identity];
-    });
-
-    // Ghi bộ nhớ và bảng kết quả theo lô, không appendRow từng dòng.
-    const memStart = memory.getLastRow() + 1;
-    memory.getRange(memStart, 1, memoryRows.length, 7).setValues(memoryRows);
-
-    const previousBg = resultSheet.getLastRow() >= 2 ? resultSheet.getRange(2, 1).getBackground() : "#cfe2f3";
-    const batchIndex = previousBg === "#d9ead3" ? 1 : 0;
-    resultSheet.insertRowsAfter(1, resultRows.length);
-    resultSheet.getRange(2, 1, resultRows.length, 8).setValues(resultRows);
-    formatBatchRows_(resultSheet, 2, resultRows.length, batchIndex);
+    const resultItems = fresh.filter(item => item.addResult);
+    const memoryItems = fresh.filter(item => item.addMemory);
+    if (memoryItems.length) {
+      const memoryRows = memoryItems.map(item => {
+        const d = item.doc;
+        return [item.link, String(d.doc_number || ""), String(d.title || "").toLowerCase(),
+          String(d.fingerprint || ""), String(d.doc_type || ""), now, item.identity];
+      });
+      const memStart = memory.getLastRow() + 1;
+      memory.getRange(memStart, 1, memoryRows.length, 7).setValues(memoryRows);
+    }
+    if (resultItems.length) {
+      const resultRows = resultItems.map(item => {
+        const d = item.doc;
+        return [now, String(d.doc_type || ""), cleanAgency_(d.agency), String(d.title || ""),
+          String(d.doc_number || ""), String(d.link || ""), String(d.fingerprint || ""),
+          String(d.category || "Văn bản khác")];
+      });
+      const previousBg = resultSheet.getLastRow() >= 2 ? resultSheet.getRange(2, 1).getBackground() : "#cfe2f3";
+      const batchIndex = previousBg === "#d9ead3" ? 1 : 0;
+      resultSheet.insertRowsAfter(1, resultRows.length);
+      resultSheet.getRange(2, 1, resultRows.length, 8).setValues(resultRows);
+      formatBatchRows_(resultSheet, 2, resultRows.length, batchIndex);
+    }
   }
 
   const sourceStatus = Array.isArray(data.source_status) ? data.source_status : [];
@@ -383,7 +400,11 @@ function saveResults_(ss, data) {
   const reviewAdded = saveReviewDocs_(ss, reviewDocs, now);
   if (data.refresh_radar === true && fresh.length) updateMissingDocumentRadar_(ss);
   SpreadsheetApp.flush();
-  return {status: "saved", added: fresh.length, skipped_duplicates: incoming.length - fresh.length, sent_to_date_review: reviewAdded};
+  return {status: "saved", added: fresh.filter(item => item.addResult).length,
+    repaired_memory_only: fresh.filter(item => item.addMemory && !item.addResult).length,
+    repaired_result_only: fresh.filter(item => item.addResult && !item.addMemory).length,
+    skipped_duplicates: incoming.length - fresh.filter(item => item.addResult).length,
+    sent_to_date_review: reviewAdded};
 }
 
 
