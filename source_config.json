@@ -358,6 +358,20 @@
         "sav.gov.vn",
         "baohiemxahoi.gov.vn"
       ]
+    },
+    "https://news.google.com/rss/search?q=(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22NQ-CP%22%20OR%20%22NQ-QH%22%20OR%20%22NQ-UBTVQH%22)%20(site%3Aquochoi.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Amoj.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 100,
+      "max_pages": 1,
+      "allowed_final_domains": [
+        "quochoi.vn",
+        "chinhphu.vn",
+        "vanban.chinhphu.vn",
+        "vbpl.vn",
+        "phapluat.gov.vn",
+        "moj.gov.vn",
+        "baochinhphu.vn"
+      ]
     }
   }
 }
