@@ -107,5 +107,17 @@ class PrioritySourceTests(unittest.TestCase):
         self.assertEqual(local_domains, {"lamdong.gov.vn"})
 
 
+
+    def test_original_rss_source_urls_are_preserved(self):
+        rows = load_sources_from_csv()
+        registered = {row["url"] for row in rows}
+        original_urls = {
+            "https://news.google.com/rss/search?q=site%3Agov.vn%20(%22Ngh%E1%BB%8B%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22K%E1%BA%BFt%20lu%E1%BA%ADn%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi",
+            "https://news.google.com/rss/search?q=(%22Ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22NQ-CP%22%20OR%20%22NQ-H%C4%90ND%22)%20(site%3Aquochoi.vn%20OR%20site%3Achinhphu.vn%20OR%20site%3Avanban.chinhphu.vn%20OR%20site%3Avbpl.vn%20OR%20site%3Aphapluat.gov.vn%20OR%20site%3Agov.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi",
+            "https://news.google.com/rss/search?q=site%3Alamdong.gov.vn%20(%22v%C4%83n%20b%E1%BA%A3n%22%20OR%20%22quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%22%20OR%20%22ngh%E1%BB%8B%20quy%E1%BA%BFt%22%20OR%20%22c%C3%B4ng%20v%C4%83n%22%20OR%20%22th%C3%B4ng%20t%C6%B0%22)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi",
+        }
+        self.assertTrue(original_urls.issubset(registered), original_urls - registered)
+
+
 if __name__ == "__main__":
     unittest.main()
