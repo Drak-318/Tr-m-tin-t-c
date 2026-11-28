@@ -3768,6 +3768,15 @@
       "link": "https://www.dongthap.gov.vn/web/cong-thong-tin-dtp/chi-tiet?id=12320540",
       "title": "Triển khai thực hiện Quyết định số 1956/QĐ-TTg ngày 09 tháng 10 năm 2026 của Thủ tướng Chính phủ về việc ban hành Kế hoạch triển khai thực hiện Thông báo số 156-TB/VPTW ngày 26 tháng 8 năm 2026 của Văn phòng Trung ương Đảng thông báo ý kiến chỉ đạo của đồng chí Tổng Bí thư, Chủ tịch nước Tô Lâm làm việc với Bộ Văn hoá, Thể thao và Du lịch về công tác bảo tồn, bảo tàng trên địa bàn tỉnh Đồng Tháp"
     },
+    "number:196/TB-HTĐTMT|issuer:TB-HTĐTMT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản địa phương",
+      "doc_number": "196/TB-HTĐTMT",
+      "first_seen": "2026-11-28T05:03:28+00:00",
+      "last_seen": "2026-11-28T05:03:28+00:00",
+      "link": "https://luatvietnam.vn/thue/thong-bao-196-tb-htdtmt-ha-noi-2026-thay-doi-thong-tin-quy-phong-chong-thien-tai-xuan-phuong-458240-d2.html",
+      "title": "Thông báo 196/TB-HTĐTMT của Phòng Hạ tầng - Đô thị và Môi trường Ủy ban nhân dân phường Xuân Phương về việc thay đổi thông tin Quỹ phòng, chống thiên tai phường Xuân Phương, Hà Nội"
+    },
     "number:1966/QĐ-TTG|issuer:QĐ-TTG|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản pháp quy",
       "category": "Văn bản khác",
@@ -14675,6 +14684,7 @@
     "https://luatvietnam.vn/thue/quyet-dinh-18849-qd-han-ktr2-2026-ban-hanh-noi-quy-tiep-cong-dan-tai-co-quan-thue-ha-noi-457333-d1.html": "number:18849/QĐ-HAN-KTR2|issuer:QĐ-HAN-KTR2|locality:",
     "https://luatvietnam.vn/thue/quyet-dinh-3318-qd-btc-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-khong-phu-thuoc-dia-gioi-hanh-chinh-456244-d1.html": "legacy_sheet_url:https://luatvietnam.vn/thue/quyet-dinh-3318-qd-btc-2026-cong-bo-danh-muc-thu-tuc-hanh-chinh-khong-phu-thuoc-dia-gioi-hanh-chinh-456244-d1.html",
     "https://luatvietnam.vn/thue/quyet-dinh-95-2026-qd-ubnd-ha-tinh-sua-doi-bang-gia-tinh-le-phi-truoc-ba-458226-d2.html": "number:95/2026/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
+    "https://luatvietnam.vn/thue/thong-bao-196-tb-htdtmt-ha-noi-2026-thay-doi-thong-tin-quy-phong-chong-thien-tai-xuan-phuong-458240-d2.html": "number:196/TB-HTĐTMT|issuer:TB-HTĐTMT|locality:",
     "https://luatvietnam.vn/thue/thong-tu-149-2026-tt-btc-sua-doi-bo-sung-quy-dinh-ve-phi-le-phi-cua-bo-tai-chinh-450308-d1.html": "number:149/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/thue/thong-tu-152-2026-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-phi-va-le-phi-an-ninh-mang-450795-d1.html": "number:152/2026/TT-BTC|issuer:TT-BTC|locality:",
     "https://luatvietnam.vn/thue/thong-tu-154-2026-tt-btc-sua-doi-thong-tu-80-2019-tt-btc-ve-thu-tuc-hai-quan-452011-d1.html": "number:154/2026/TT-BTC|issuer:TT-BTC|locality:",
