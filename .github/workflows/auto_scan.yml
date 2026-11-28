@@ -1,7 +1,7 @@
 name: Tram Tin Tuc - Auto Scanner
 
-# Priority sources run every 5 minutes. On the 30-minute cycle, the remaining
-# sources run only after the priority job has completed. The watchdog repairs missed cycles.
+# GitHub-only controller: priority scan no sooner than 5 minutes after the
+# previous completion; full scan on a 30-minute cadence with safe catch-up.
 
 on:
   schedule:
