@@ -65,6 +65,118 @@ function doPost(e) {
   }
 }
 
+/**
+ * Create or reuse the Sheets-side idempotency mirror. GitHub remains the
+ * authoritative deduplication store; this sheet only protects receiver retries.
+ */
+function ensureMemorySheet_(ss) {
+  let sheet = ss.getSheetByName(CONFIG.SHEET_MEMORY);
+  if (!sheet) sheet = ss.insertSheet(CONFIG.SHEET_MEMORY);
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1, 1, 1, CONFIG.MEMORY_HEADERS.length)
+      .setValues([CONFIG.MEMORY_HEADERS])
+      .setFontWeight("bold")
+      .setBackground("#d9ead3")
+      .setWrap(true);
+    sheet.setFrozenRows(1);
+  }
+  return sheet;
+}
+
+/**
+ * Add legacy result rows to the receiver-side memory without deleting or
+ * changing any historical rows. URL and issuer-aware identity are retained.
+ */
+function backfillLegacyMemory_(ss, memory) {
+  const resultSheet = ss.getSheetByName(CONFIG.SHEET_RESULTS);
+  if (!resultSheet || resultSheet.getLastRow() < 2) return 0;
+
+  const knownLinks = new Set();
+  const knownIdentities = new Set();
+  if (memory.getLastRow() >= 2) {
+    memory.getRange(2, 1, memory.getLastRow() - 1, 7).getDisplayValues().forEach(row => {
+      const link = normalizeUrl_(row[0]);
+      const identity = String(row[6] || "").trim();
+      if (link) knownLinks.add(link);
+      if (identity) knownIdentities.add(identity);
+    });
+  }
+
+  const rows = resultSheet.getRange(2, 1, resultSheet.getLastRow() - 1, 8).getDisplayValues();
+  const now = Utilities.formatDate(new Date(), CONFIG.TIMEZONE, "dd/MM/yyyy HH:mm:ss");
+  const additions = [];
+  rows.forEach(row => {
+    const docType = String(row[1] || "").trim();
+    const agency = cleanAgency_(row[2]);
+    const title = String(row[3] || "").trim();
+    const number = String(row[4] || "").trim();
+    const link = normalizeUrl_(row[5]);
+    const fingerprint = String(row[6] || "").trim();
+    if (!link || knownLinks.has(link)) return;
+    const identity = legacyDocumentIdentity_(number, title, agency, link);
+    additions.push([link, number, title.toLowerCase(), fingerprint, docType, now, identity]);
+    knownLinks.add(link);
+    knownIdentities.add(identity);
+  });
+
+  if (additions.length) {
+    memory.getRange(memory.getLastRow() + 1, 1, additions.length, 7).setValues(additions);
+  }
+  return additions.length;
+}
+
+/** Keep legacy identity aligned with Python's issuer/locality-aware key. */
+function legacyDocumentIdentity_(number, title, agency, link) {
+  const n = String(number || "").trim().toUpperCase();
+  if (n && n !== "ĐANG CẬP NHẬT" && /\/[A-ZĐƯƠĂÂÊÔ]{1,}/.test(n)) {
+    const parts = n.split("/");
+    let issuer = parts[parts.length - 1] || "";
+    issuer = issuer.replace(/\d{4}/g, "").replace(/^-+|-+$/g, "");
+    const agencyClean = String(agency || "").replace(/\s+/g, " ").trim().toLowerCase();
+    const localAuthority = /(UBND|HĐND|SNV|STC|SXD|SGD|SYT|CAT|CA)/.test(issuer) ||
+      /^(ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\s|công an )/.test(agencyClean);
+    let locality = "";
+    if (localAuthority) {
+      const context = String(title || "") + " " + String(agency || "");
+      const match = context.match(/(?:tỉnh|thành phố|TP[.]?|quận|huyện|thị xã)[ ]+([^,;()]+)/i);
+      if (match) locality = match[1].replace(/\s+/g, " ").trim().toLowerCase();
+      if (!locality) {
+        let host = "";
+        try { host = new URL(link).hostname; } catch (ignored) {}
+        locality = "unresolved-source:" + (host || agencyClean || "unknown").toLowerCase();
+      }
+    }
+    if (!issuer) issuer = agencyClean || String(title || "").trim().toLowerCase().slice(0, 90);
+    return "number:" + n + "|issuer:" + issuer + "|locality:" + locality;
+  }
+  return "url:" + link;
+}
+
+function formatBatchRows_(sheet, startRow, numRows, batchIndex) {
+  if (!sheet || numRows <= 0) return;
+  const range = sheet.getRange(startRow, 1, numRows, 8);
+  range.setFontFamily("Times New Roman").setFontSize(11).setFontWeight("normal")
+    .setFontColor("#000000").setBackground("#ffffff").setVerticalAlignment("middle")
+    .setWrap(true).setBorder(true, true, true, true, true, true, "#d9d9d9", SpreadsheetApp.BorderStyle.SOLID);
+
+  const isEven = batchIndex % 2 === 0;
+  const timeBg = isEven ? "#d9ead3" : "#cfe2f3";
+  const agencyBg = isEven ? "#fce8e6" : "#ede7f6";
+  const colA = sheet.getRange(startRow, 1, numRows, 1);
+  colA.setBackground(timeBg).setHorizontalAlignment("center");
+  if (numRows > 1) {
+    colA.breakApart();
+    colA.mergeVertically();
+  }
+  sheet.getRange(startRow, 2, numRows, 1).setHorizontalAlignment("left");
+  sheet.getRange(startRow, 3, numRows, 1).setBackground(agencyBg).setFontColor("#1155cc").setHorizontalAlignment("center");
+  sheet.getRange(startRow, 4, numRows, 1).setHorizontalAlignment("left");
+  sheet.getRange(startRow, 5, numRows, 1).setHorizontalAlignment("center");
+  sheet.getRange(startRow, 6, numRows, 1).setFontColor("#1155cc").setHorizontalAlignment("left").setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP);
+  sheet.getRange(startRow, 7, numRows, 1).setHorizontalAlignment("left").setFontSize(9);
+  sheet.getRange(startRow, 8, numRows, 1).setHorizontalAlignment("center").setFontSize(10);
+}
+
 function saveResults_(ss, data) {
   const resultSheet = ss.getSheetByName(CONFIG.SHEET_RESULTS);
   if (!resultSheet) throw new Error('Không tìm thấy sheet "' + CONFIG.SHEET_RESULTS + '".');
