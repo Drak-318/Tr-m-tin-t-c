@@ -6,8 +6,6 @@ name: Tram Tin Tuc - Auto Scanner
 on:
   schedule:
     - cron: "*/5 * * * *"
-    - cron: "7,37 * * * *"
-    - cron: "2,12,22,32,42,52 * * * *"
   workflow_dispatch:
     inputs:
       profile:
@@ -18,14 +16,17 @@ on:
         options:
           - full
           - priority
+          - priority_only
+          - full_only
 
 permissions:
+  actions: write
   contents: write
 
 jobs:
   scan:
     needs: priority-scan
-    if: ${{ always() && needs.priority-scan.result == 'success' && ((github.event_name == 'workflow_dispatch' && inputs.profile == 'full') || (github.event_name == 'schedule' && github.event.schedule == '7,37 * * * *')) }}
+    if: ${{ always() && ((needs.priority-scan.result == 'success' && github.event_name == 'workflow_dispatch' && inputs.profile == 'full') || (github.event_name == 'workflow_dispatch' && inputs.profile == 'full_only')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 40
     concurrency:
@@ -104,7 +105,7 @@ jobs:
           fi
 
   priority-scan:
-    if: ${{ (github.event_name == 'schedule' && (github.event.schedule == '*/5 * * * *' || github.event.schedule == '7,37 * * * *')) || (github.event_name == 'workflow_dispatch' && (inputs.profile == 'priority' || inputs.profile == 'full')) }}
+    if: ${{ github.event_name == 'workflow_dispatch' && (inputs.profile == 'priority' || inputs.profile == 'full' || inputs.profile == 'priority_only') }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
@@ -183,11 +184,14 @@ jobs:
           fi
 
   schedule-watchdog:
-    if: ${{ github.event_name == 'schedule' && github.event.schedule == '2,12,22,32,42,52 * * * *' }}
+    if: ${{ github.event_name == 'schedule' && github.event.schedule == '*/5 * * * *' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    concurrency:
+      group: tram-tin-tuc-scheduler-controller
+      cancel-in-progress: false
     permissions:
-      actions: read
+      actions: write
       contents: write
     steps:
       - name: Check scan health and dispatch a catch-up run when needed
@@ -206,86 +210,106 @@ jobs:
               .filter(run => run.id !== context.runId)
               .slice(0, 16);
 
-            // Inspect only recent runs in parallel. Watchdog-only runs have no
-            // "scan" or "priority-scan" job and are ignored.
+            // One GitHub controller owns both schedules. It never dispatches
+            // while any scan job is queued/running, and measures cooldown from
+            // the job's completed_at timestamp (not the dispatch/start time).
             const jobResults = await Promise.all(runs.map(async run => {
               const result = await github.rest.actions.listJobsForWorkflowRun({
-                owner,
-                repo,
-                run_id: run.id,
-                per_page: 20
+                owner, repo, run_id: run.id, per_page: 30
               });
               return { run, jobs: result.data.jobs };
             }));
 
-            const scanRuns = [];
+            const scanJobs = [];
             for (const entry of jobResults) {
-              const fullJob = entry.jobs.find(job => job.name === "scan");
-              const priorityJob = entry.jobs.find(job => job.name === "priority-scan");
-              if (fullJob) scanRuns.push({ run: entry.run, job: fullJob, profile: "full" });
-              if (priorityJob) scanRuns.push({ run: entry.run, job: priorityJob, profile: "priority" });
+              for (const job of entry.jobs) {
+                if (job.name === "priority-scan" || job.name === "scan") {
+                  scanJobs.push({
+                    run: entry.run,
+                    job,
+                    profile: job.name === "priority-scan" ? "priority" : "full"
+                  });
+                }
+              }
             }
 
             const now = Date.now();
-            const activeRows = scanRuns.filter(({ job }) =>
+            const activeJobs = scanJobs.filter(({ job }) =>
               ["queued", "pending", "in_progress"].includes(job.status)
             );
-            const staleActive = activeRows.find(({ run, job, profile }) => {
-              const referenceTime = job.status === "in_progress"
+            const stale = activeJobs.find(({ run, job, profile }) => {
+              const reference = job.status === "in_progress"
                 ? (job.started_at || run.run_started_at || run.created_at)
                 : run.created_at;
-              const age = (now - Date.parse(referenceTime)) / 60000;
+              const age = (now - Date.parse(reference)) / 60000;
               const limit = job.status === "in_progress"
                 ? (profile === "priority" ? 15 : 50)
                 : 20;
               return Number.isFinite(age) && age > limit;
             });
-            const active = activeRows.find(row => row !== staleActive);
-            const latestFor = (profile, conclusion) => scanRuns
-              .filter(row => row.profile === profile && row.job.conclusion === conclusion)
-              .sort((a, b) => Date.parse(b.run.updated_at) - Date.parse(a.run.updated_at))[0];
 
-            const ageMinutes = profile => {
-              const success = latestFor(profile, "success");
-              return success
-                ? (now - Date.parse(success.run.updated_at)) / 60000
-                : Number.POSITIVE_INFINITY;
-            };
-
-            const recentFailure = profile => {
-              const failure = ["failure", "cancelled", "timed_out"]
-                .map(conclusion => latestFor(profile, conclusion))
-                .filter(Boolean)
-                .sort((a, b) => Date.parse(b.run.updated_at) - Date.parse(a.run.updated_at))[0];
-              return Boolean(failure && (now - Date.parse(failure.run.updated_at)) / 60000 < 10);
-            };
-
-            const priorityAge = ageMinutes("priority");
-            const fullAge = ageMinutes("full");
-            let action = "healthy";
+            let action = "WAIT_ACTIVE";
             let reason = "";
-
-            // GitHub watchdog is observation-only. Apps Script is the sole
-            // dispatcher, avoiding two independent watchdogs racing to launch
-            // the same profile. The audit log records overdue/stale conditions.
-            if (staleActive) {
-              action = "stale_detected";
-              reason = `${staleActive.profile} scan #${staleActive.run.run_number} is stale in ${staleActive.job.status}; Apps Script inspector will recover it after its cooldown/ack checks`;
+            let dispatchedProfile = "";
+            let priorityAge = null;
+            let fullAge = null;
+            let priorityLastSuccess = null;
+            let fullLastSuccess = null;
+            if (stale) {
+              await github.rest.actions.cancelWorkflowRun({
+                owner, repo, run_id: stale.run.id
+              });
+              action = "CANCEL_STALE";
+              reason = `Cancelled stale ${stale.profile} run #${stale.run.run_number}; re-evaluate on next controller tick`;
               core.warning(reason);
-            } else if (active) {
-              action = "scan_active";
-              reason = `${active.profile} scan #${active.run.run_number} is ${active.job.status}`;
-            } else if (priorityAge > 15) {
-              action = "priority_overdue";
-              reason = `Priority scan has no recent success for ${Math.round(priorityAge)} minutes; awaiting Apps Script inspector`;
-              core.warning(reason);
-            } else if (fullAge > 40) {
-              action = "full_overdue";
-              reason = `Full scan has no recent success for ${Math.round(fullAge)} minutes; awaiting Apps Script inspector`;
-              core.warning(reason);
+            } else if (activeJobs.length) {
+              const active = activeJobs[0];
+              action = "WAIT_ACTIVE";
+              reason = `${active.profile} run #${active.run.run_number} is ${active.job.status}; no duplicate dispatch`;
+              core.info(reason);
             } else {
-              reason = `Priority age: ${Math.round(priorityAge)}m; full age: ${Math.round(fullAge)}m`;
-              core.info(`Scan health OK. ${reason}.`);
+              const latestCompleted = profile => scanJobs
+                .filter(row => row.profile === profile && row.job.completed_at)
+                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0] || null;
+
+              const priorityLast = latestCompleted("priority");
+              const fullLast = latestCompleted("full");
+              priorityAge = priorityLast ? (now - Date.parse(priorityLast.job.completed_at)) / 60000 : Number.POSITIVE_INFINITY;
+              fullAge = fullLast ? (now - Date.parse(fullLast.job.completed_at)) / 60000 : Number.POSITIVE_INFINITY;
+              priorityLastSuccess = scanJobs
+                .filter(row => row.profile === "priority" && row.job.conclusion === "success" && row.job.completed_at)
+                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0];
+              fullLastSuccess = scanJobs
+                .filter(row => row.profile === "full" && row.job.conclusion === "success" && row.job.completed_at)
+                .sort((a, b) => Date.parse(b.job.completed_at) - Date.parse(a.job.completed_at))[0];
+
+              // Priority repeats no sooner than 5 minutes after completion.
+              // Full retains its 30-minute cadence; after a failed full scan,
+              // retry after a 5-minute post-completion cooldown.
+              const priorityDue = priorityAge >= 5;
+              const fullInterval = fullLast && fullLast.job.conclusion !== "success" ? 5 : 30;
+              const fullDue = fullAge >= Math.max(5, fullInterval);
+
+              if (priorityDue) {
+                dispatchedProfile = "priority_only";
+                action = "DISPATCH_PRIORITY";
+                reason = `No active scan; last priority completion: ${Number.isFinite(priorityAge) ? Math.round(priorityAge) + "m ago" : "not found"}`;
+              } else if (fullDue) {
+                dispatchedProfile = "full_only";
+                action = "DISPATCH_FULL";
+                reason = `No active scan; last full completion: ${Number.isFinite(fullAge) ? Math.round(fullAge) + "m ago" : "not found"}`;
+              } else {
+                action = "COOLDOWN";
+                reason = `Priority completed ${Math.round(priorityAge)}m ago; full completed ${Math.round(fullAge)}m ago`;
+              }
+
+              if (dispatchedProfile) {
+                await github.rest.actions.createWorkflowDispatch({
+                  owner, repo, workflow_id: "auto_scan.yml", ref: "main",
+                  inputs: { profile: dispatchedProfile }
+                });
+                core.info(`GitHub accepted ${dispatchedProfile}; next controller tick verifies job creation.`);
+              }
             }
 
             // Persist a heartbeat so a missing scheduler run can be distinguished
@@ -298,10 +322,11 @@ jobs:
               workflow_run_id: context.runId,
               action,
               reason,
+              dispatched_profile: dispatchedProfile,
               priority_age_minutes: Number.isFinite(priorityAge) ? Math.round(priorityAge) : null,
               full_age_minutes: Number.isFinite(fullAge) ? Math.round(fullAge) : null,
-              last_priority_success_at: latestFor("priority", "success")?.run.updated_at || null,
-              last_full_success_at: latestFor("full", "success")?.run.updated_at || null
+              last_priority_success_at: priorityLastSuccess?.job.completed_at || null,
+              last_full_success_at: fullLastSuccess?.job.completed_at || null
             };
             let healthSha;
             try {
