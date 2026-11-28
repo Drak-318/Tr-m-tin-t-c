@@ -120,6 +120,12 @@ def main():
                     local_references.extend(refs)
                 else:
                     known_central_references.update(refs)
+        # Persistent memory prevents repeated lookups for central instruments
+        # already collected successfully in an earlier run.
+        for stored_document in (state.get("documents") or {}).values():
+            known_central_references.update(extract_central_references(
+                f"{stored_document.get('title','')} {stored_document.get('doc_number','')}"
+            ))
         unique_references=[]
         seen_references=set()
         for ref in local_references:
