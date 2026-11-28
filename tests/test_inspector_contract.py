@@ -16,6 +16,8 @@ class GitHubControllerContractTests(unittest.TestCase):
         self.assertIn("job.completed_at", workflow)
         self.assertIn("priorityAge >= 5", workflow)
         self.assertIn("Math.max(5, fullInterval)", workflow)
+        self.assertIn("globalCooldownAge < 5", workflow)
+        self.assertIn("latestAnyCompleted", workflow)
 
     def test_controller_prevents_duplicate_and_recovers_stale_runs(self):
         workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
