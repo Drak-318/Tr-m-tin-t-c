@@ -57,10 +57,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Validate Python modules
+      - name: Validate Python, tests, configuration and Apps Script syntax
         run: |
           python -m compileall -q scanner quet_vb.py
+          python -m json.tool source_config.json > /dev/null
+          python -m json.tool priority_sources.json > /dev/null
           python -m unittest discover -s tests -v
+          cp apps_script/Code.gs /tmp/Code.js
+          node --check /tmp/Code.js
 
       - name: Run non-priority source scanner
         env:
@@ -132,8 +136,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Validate Python modules
-        run: python -m compileall -q scanner quet_vb.py
+      - name: Validate Python, tests, configuration and Apps Script syntax
+        run: |
+          python -m compileall -q scanner quet_vb.py
+          python -m json.tool source_config.json > /dev/null
+          python -m json.tool priority_sources.json > /dev/null
+          python -m unittest discover -s tests -v
+          cp apps_script/Code.gs /tmp/Code.js
+          node --check /tmp/Code.js
 
       - name: Run priority-source scanner
         env:
