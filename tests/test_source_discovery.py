@@ -27,9 +27,12 @@ class SourceDiscoveryTests(unittest.TestCase):
         rows = discovery.extract_source_candidates(
             html, "https://example.gov.vn/", "Cổng thông tin", "Văn Bản TW"
         )
-        self.assertEqual(len(rows), 1)
-        self.assertEqual(rows[0]["url"], "https://example.gov.vn/van-ban-phap-luat")
-        self.assertEqual(rows[0]["status"], "pending")
+        self.assertEqual(len(rows), 2)
+        by_url = {row["url"]: row for row in rows}
+        self.assertIn("https://example.gov.vn/van-ban-phap-luat", by_url)
+        self.assertIn("https://other.gov.vn/van-ban", by_url)
+        self.assertEqual(by_url["https://example.gov.vn/van-ban-phap-luat"]["status"], "pending")
+        self.assertEqual(by_url["https://other.gov.vn/van-ban"]["group"], "Địa phương")
 
 
     def test_discovers_cross_agency_official_portal_as_hub_not_active_source(self):
