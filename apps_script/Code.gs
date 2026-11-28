@@ -576,8 +576,12 @@ function thanhTraTramTinTuc() {
 
     const snapshot = docTrangThaiGitHub_(token);
     const now = Date.now();
-    const priority = tinhTuoiJob_(snapshot.jobs, "priority-scan", now);
-    const full = tinhTuoiJob_(snapshot.jobs, "scan", now);
+    const priority = phucHoiMocThoiGianJob_(
+      tinhTuoiJob_(snapshot.jobs, "priority-scan", now), props, "PRIORITY", now
+    );
+    const full = phucHoiMocThoiGianJob_(
+      tinhTuoiJob_(snapshot.jobs, "scan", now), props, "FULL", now
+    );
 
     const priorityActive = priority.active;
     const fullActive = full.active;
@@ -723,6 +727,29 @@ function tinhTuoiJob_(jobs, jobName, now) {
     lastSuccess: lastSuccess,
     lastCompletedAt: lastCompletedAt
   };
+}
+
+function phucHoiMocThoiGianJob_(state, props, prefix, now) {
+  // Keep the last observed timestamps in Script Properties. The inspector
+  // reads only the latest N workflow runs; frequent priority/push runs can
+  // otherwise push an older full-scan completion out of that window.
+  const successKey = "INSPECTOR_" + prefix + "_LAST_SUCCESS_AT";
+  const completedKey = "INSPECTOR_" + prefix + "_LAST_COMPLETED_AT";
+  const storedSuccess = props.getProperty(successKey);
+  const storedCompleted = props.getProperty(completedKey);
+  const newest = function(a, b) {
+    if (!a) return b || null;
+    if (!b) return a;
+    return new Date(a).getTime() >= new Date(b).getTime() ? a : b;
+  };
+  state.lastSuccess = newest(state.lastSuccess, storedSuccess);
+  state.lastCompletedAt = newest(state.lastCompletedAt, storedCompleted);
+  if (state.lastSuccess) props.setProperty(successKey, state.lastSuccess);
+  if (state.lastCompletedAt) props.setProperty(completedKey, state.lastCompletedAt);
+  state.ageMinutes = state.lastSuccess
+    ? Math.max(0, (now - new Date(state.lastSuccess).getTime()) / 60000)
+    : Infinity;
+  return state;
 }
 
 function guiLenhQuetGitHub_(token, profile) {
