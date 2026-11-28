@@ -5878,6 +5878,15 @@
       "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3418-qd-btc-2026-quy-dinh-tieu-chuan-hieu-truong-pho-hieu-truong-cac-co-so-giao-duc-dai-hoc-457828-d1.html",
       "title": "Quyết định 3418/QĐ-BTC 2026 về việc quy định tiêu chuẩn Hiệu trưởng, Phó Hiệu trưởng của các cơ sở giáo dục đại học trực thuộc Bộ Tài chính"
     },
+    "number:3425/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3425/QĐ-BGDĐT",
+      "first_seen": "2026-11-28T02:47:58+00:00",
+      "last_seen": "2026-11-28T02:47:58+00:00",
+      "link": "https://luatvietnam.vn/khoa-hoc/quyet-dinh-3425-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-cong-nghe-loi-duong-sat-do-thi-458210-d1.html",
+      "title": "Quyết định 3425/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc phê duyệt Khung chương trình khoa học và công nghệ “Nghiên cứu, giải mã công nghệ lõi hệ thống cung cấp điện sức kéo, điều khiển, thông tin tín hiệu trong lĩnh vực đường sắt đô thị” và Ban Chủ nhiệm Chương trình thực hiện từ năm 2027"
+    },
     "number:3426/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
       "agency": "LuatVietnam - Văn bản mới",
       "category": "Văn bản khác",
@@ -5886,6 +5895,15 @@
       "last_seen": "2026-11-28T02:28:08+00:00",
       "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3426-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-phat-trien-vat-lieu-nano-458209-d1.html",
       "title": "Quyết định 3426/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc phê duyệt Khung chương trình khoa học và công nghệ “Nghiên cứu phát triển vật liệu nano thấp chiều (0D - 2D) cho cảm biến thông minh và linh kiện bán dẫn” và Ban Chủ nhiệm Chương trình thực hiện từ năm 2027"
+    },
+    "number:3427/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
+      "agency": "LuatVietnam - Văn bản mới",
+      "category": "Văn bản khác",
+      "doc_number": "3427/QĐ-BGDĐT",
+      "first_seen": "2026-11-28T02:47:58+00:00",
+      "last_seen": "2026-11-28T02:47:58+00:00",
+      "link": "https://luatvietnam.vn/giao-duc/quyet-dinh-3427-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-vat-lieu-nano-da-chuc-nang-458208-d1.html",
+      "title": "Quyết định 3427/QĐ-BGDĐT của Bộ Giáo dục và Đào tạo về việc phê duyệt Khung chương trình khoa học và công nghệ “Nghiên cứu phát triển và tối ưu hóa các vật liệu nano đa chức năng dạng M-LnxOy/C.dots/chitosan (M = Cu, Ag; Ln = Pr, Nd, La, Ce) bằng trí tuệ nhân tạo để tổng hợp một số sản phẩm theo hướng xanh phục vụ nông nghiệp bền vững và bảo vệ môi trường” và Ban Chủ nhiệm Chương trình thực hiện từ năm 2027"
     },
     "number:3434/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:": {
       "agency": "LuatVietnam - Văn bản mới",
@@ -14177,6 +14195,7 @@
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3413-qd-bgddt-2026-cong-bo-thu-tuc-hanh-chinh-moi-linh-vuc-van-bang-chung-chi-457759-d1.html": "number:3413/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3418-qd-btc-2026-quy-dinh-tieu-chuan-hieu-truong-pho-hieu-truong-cac-co-so-giao-duc-dai-hoc-457828-d1.html": "number:3418/QĐ-BTC|issuer:QĐ-BTC|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3426-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-phat-trien-vat-lieu-nano-458209-d1.html": "number:3426/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
+    "https://luatvietnam.vn/giao-duc/quyet-dinh-3427-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-vat-lieu-nano-da-chuc-nang-458208-d1.html": "number:3427/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-3434-qd-bgddt-2026-thanh-lap-phan-hieu-truong-cao-dang-thuy-san-va-cong-nghe-thuc-pham-tai-bac-ninh-457985-d1.html": "number:3434/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-6292-qd-ubnd-ha-noi-2026-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-truong-cao-dang-dien-tu-dien-lanh-456825-d2.html": "number:6292/QĐ-UBND|issuer:QĐ-UBND|locality:hà nội về việc quy định vị trí",
     "https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html": "legacy_sheet_url:https://luatvietnam.vn/giao-duc/quyet-dinh-7581-qd-ubnd-tp-ho-chi-minh-2026-ke-hoach-bien-soan-chinh-sua-cap-nhat-tai-lieu-giao-duc-dia-phuong-456397-d2.html",
@@ -14317,6 +14336,7 @@
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-136-2026-qd-ubnd-thanh-hoa-quy-che-xet-tang-giai-thuong-khcn-va-doi-moi-sang-tao-456691-d2.html": "number:136/2026/QĐ-UBND|issuer:QĐ-UBND|locality:thanh hóa ban hành quy chế xét tặng giải thưởng khoa học",
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-2032-qd-bxd-2026-ke-hoach-phat-trien-nhan-luc-tri-tue-nhan-tao-den-2030-458203-d1.html": "number:2032/QĐ-BXD|issuer:QĐ-BXD|locality:",
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-212-2026-qd-ubnd-ca-mau-phan-cap-quan-ly-hoat-dong-khoa-hoc-cong-nghe-doi-moi-sang-tao-458039-d2.html": "number:212/2026/QĐ-UBND|issuer:QĐ-UBND|locality:cà mau phân cấp quản lý hoạt động khoa học",
+    "https://luatvietnam.vn/khoa-hoc/quyet-dinh-3425-qd-bgddt-2026-phe-duyet-khung-chuong-trinh-nghien-cuu-cong-nghe-loi-duong-sat-do-thi-458210-d1.html": "number:3425/QĐ-BGDĐT|issuer:QĐ-BGDĐT|locality:",
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-3542-qd-ubnd-dong-thap-2026-uy-quyen-giam-doc-so-khcn-thuc-hien-nhiem-vu-cong-nghiep-cong-nghe-so-456284-d2.html": "legacy_sheet_url:https://luatvietnam.vn/khoa-hoc/quyet-dinh-3542-qd-ubnd-dong-thap-2026-uy-quyen-giam-doc-so-khcn-thuc-hien-nhiem-vu-cong-nghiep-cong-nghe-so-456284-d2.html",
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-3794-qd-ubnd-dak-lak-2026-phe-duyet-quy-trinh-noi-bo-lien-thong-thu-tuc-an-toan-buc-xa-hat-nhan-457681-d2.html": "number:3794/QĐ-UBND|issuer:QĐ-UBND|locality:unresolved-source:luatvietnam.vn",
     "https://luatvietnam.vn/khoa-hoc/quyet-dinh-4508-qd-bkhcn-2026-cong-bo-thu-tuc-hanh-chinh-moi-va-bai-bo-trong-linh-vuc-khoa-hoc-cong-nghe-457211-d1.html": "number:4508/QĐ-BKHCN|issuer:QĐ-BKHCN|locality:",
