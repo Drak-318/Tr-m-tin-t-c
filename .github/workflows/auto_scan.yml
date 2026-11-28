@@ -226,10 +226,21 @@ jobs:
               if (priorityJob) scanRuns.push({ run: entry.run, job: priorityJob, profile: "priority" });
             }
 
-            const active = scanRuns.find(({ job }) =>
+            const now = Date.now();
+            const activeRows = scanRuns.filter(({ job }) =>
               ["queued", "pending", "in_progress"].includes(job.status)
             );
-            const now = Date.now();
+            const staleActive = activeRows.find(({ run, job, profile }) => {
+              const referenceTime = job.status === "in_progress"
+                ? (job.started_at || run.run_started_at || run.created_at)
+                : run.created_at;
+              const age = (now - Date.parse(referenceTime)) / 60000;
+              const limit = job.status === "in_progress"
+                ? (profile === "priority" ? 15 : 50)
+                : 20;
+              return Number.isFinite(age) && age > limit;
+            });
+            const active = activeRows.find(row => row !== staleActive);
             const latestFor = (profile, conclusion) => scanRuns
               .filter(row => row.profile === profile && row.job.conclusion === conclusion)
               .sort((a, b) => Date.parse(b.run.updated_at) - Date.parse(a.run.updated_at))[0];
@@ -254,7 +265,21 @@ jobs:
             let action = "healthy";
             let reason = "";
 
-            if (active) {
+            if (staleActive) {
+              action = "recover_stale";
+              reason = `${staleActive.profile} scan #${staleActive.run.run_number} stuck in ${staleActive.job.status}; cancelling after stale threshold`;
+              core.warning(reason);
+              await github.rest.actions.cancelWorkflowRun({
+                owner, repo, run_id: staleActive.run.id
+              });
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: "auto_scan.yml",
+                ref: "main",
+                inputs: { profile: staleActive.profile }
+              });
+            } else if (active) {
               action = "scan_active";
               reason = `${active.profile} scan #${active.run.run_number} is ${active.job.status}`;
             } else if (priorityAge > 15 && !recentFailure("priority")) {
