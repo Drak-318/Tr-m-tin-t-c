@@ -40,6 +40,13 @@ class GitHubControllerContractTests(unittest.TestCase):
         self.assertNotIn("function getSources_(", code)
         self.assertNotIn("function fetchSource_(", code)
 
+    def test_apps_script_requires_api_token_and_matches_source_status_by_url(self):
+        code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
+        self.assertIn("if (!expectedToken)", code)
+        self.assertIn('String(data.token || "") !== expectedToken', code)
+        self.assertIn("rowByUrl.get(key)", code)
+        self.assertIn('st.url || ""', code)
+
     def test_sheets_write_has_retry_repair_logic(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
         self.assertIn("Repair-safe two-table write", code)
