@@ -18,7 +18,7 @@ from scanner.sheets import save_results_in_batches, fetch_source_via_apps_script
 from scanner.source_registry import load_sources_from_csv, filter_priority_sources, filter_non_priority_sources
 from scanner.source_discovery import record_candidates, pending_candidates, update_candidate
 from scanner.persistent_memory import (load_state, RunSeenIndex, record_documents, append_history,
-    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document, pending_source_retries, record_source_scan_result)
+    enqueue_review_documents, enqueue_sheets_export, load_sheets_export_queue, clear_sheets_export_queue, load_review_queue, pending_review_documents, update_review_document, pending_source_retries, record_source_scan_result, filter_sources_due_for_retry)
 from scanner.relationship_tracer import collect_local_document_relations, merge_relationships, resolve_reference_candidates
 
 MAX_WORKERS=5
@@ -59,6 +59,18 @@ def main():
         sources=filter_non_priority_sources(sources,priority_urls)
         if not sources:
             raise RuntimeError("Không còn nguồn ngoài nhóm ưu tiên để quét.")
+
+    # Keep every source registered, but throttle repeated failures so 403,
+    # timeout and SSL endpoints are not hammered on every 5/30-minute cycle.
+    sources,deferred_sources=filter_sources_due_for_retry(sources)
+    if deferred_sources:
+        print(f"[RETRY-BACKOFF] Tạm hoãn {len(deferred_sources)} nguồn lỗi chưa đến hạn thử lại.")
+        for deferred in deferred_sources[:5]:
+            print(f"[RETRY-BACKOFF] {deferred.get('name')}: thử lại sau {deferred.get('retry_after')}")
+    if not sources:
+        print("[RETRY-BACKOFF] Không có nguồn đến hạn trong lượt này; giữ nguyên danh sách và bộ nhớ.")
+        return
+
     state=load_state()
     seen_index=RunSeenIndex(state)
     output_index=RunSeenIndex()
@@ -450,6 +462,7 @@ def main():
              "collected":totals["items"],"recognized":totals["recognized"],
              "older_than_60_days":totals["old"],"unknown_date":totals["unknown_date"],"duplicates":totals["duplicate"],
              "new_to_sheets":saved,"review_to_sheets":review_saved,"pending_sheets_exports":len(load_sheets_export_queue()),"review_queue_total":review_total,"source_retry_queue_pending":len(pending_source_retries(limit=10000)),
+             "source_retries_deferred":len(deferred_sources),
              "failed_sources":totals["failed"],"fallback_sources":totals["fallback_sources"],"feed_supplements":totals["feed_supplements"],
              "relationship_candidates":len(relation_rows),"relationship_matched_in_scan_index":relation_matched,
              "relationship_ambiguous":relation_ambiguous,
@@ -470,6 +483,7 @@ def main():
              f"- Gói chờ xuất sang Sheets trên GitHub: **{len(load_sheets_export_queue())}**",
              f"- Hồ sơ chờ xác minh ngày trên GitHub: **{review_total}**",
             f"- Nguồn đang chờ quét bù: **{len(pending_source_retries(limit=10000))}**",
+            f"- Nguồn tạm hoãn theo lịch thử lại: **{len(deferred_sources)}**",
             f"- Bộ nhớ GitHub: **{len(state['documents'])} văn bản**",f"- Nguồn lỗi: **{totals['failed']}/{len(sources)}**",
             f"- Nguồn có dùng dự phòng: **{totals['fallback_sources']}**",
             f"- Nguồn mới phát hiện: **{discovered_added}**",
