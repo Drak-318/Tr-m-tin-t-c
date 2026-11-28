@@ -34,6 +34,20 @@ class GitHubControllerContractTests(unittest.TestCase):
         self.assertIn("xoaTriggerDieuPhoiCu_", code)
         self.assertIn('version: "15.0"', code)
 
+    def test_python_source_registry_and_memory_are_github_owned(self):
+        code = Path("quet_vb.py").read_text(encoding="utf-8")
+        self.assertIn("load_sources_from_csv()", code)
+        self.assertNotIn("get_sources_and_memory", code)
+        self.assertNotIn("fetch_source_via_apps_script", code)
+        sheets = Path("scanner/sheets.py").read_text(encoding="utf-8")
+        self.assertNotIn("def get_sources_and_memory", sheets)
+        self.assertNotIn("def fetch_source_via_apps_script", sheets)
+
+    def test_controller_checks_thirty_recent_runs_for_long_running_jobs(self):
+        workflow = Path(".github/workflows/auto_scan.yml").read_text(encoding="utf-8")
+        self.assertIn(".slice(0, 30)", workflow)
+        self.assertIn("timeout-minutes: 40", workflow)
+
     def test_apps_script_is_only_a_result_receiver(self):
         code = Path("apps_script/Code.gs").read_text(encoding="utf-8")
         self.assertIn('data.action === "save_results"', code)
