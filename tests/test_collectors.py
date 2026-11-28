@@ -225,6 +225,7 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["doc_number"], "9901/SYT-TCCB")
         self.assertEqual(items[0]["published_date"], "25/11/2026")
+        self.assertEqual(items[0]["doc_type"], "Công văn")
 
     def test_sxd_quang_ngai_table_selectors_extract_number_and_issue_date(self):
         html = """<table><tbody><tr>
@@ -238,9 +239,11 @@ class CollectorTests(unittest.TestCase):
             "link_selector": "td:nth-child(4) a[href]",
             "document_number_selector": "td:nth-child(2)",
             "issue_date_selector": "td:nth-child(3)",
+            "document_type_selector": "td:nth-child(6)",
         })
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["doc_number"], "9731/SXD-VP")
         self.assertEqual(items[0]["published_date"], "27/11/2026")
+        self.assertEqual(items[0]["doc_type"], "Công văn")
 
 if __name__=="__main__": unittest.main()
