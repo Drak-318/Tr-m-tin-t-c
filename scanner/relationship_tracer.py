@@ -80,7 +80,7 @@ def _article_text(html):
 
 
 def fetch_detail_text(url, timeout=(8, 18)):
-    """Fetch a document detail page directly, then via the configured Apps Script proxy."""
+    """Fetch a document detail page directly from the GitHub runner."""
     host = (urlsplit(url).hostname or "").lower()
     if not host or host in {"news.google.com", "news.googleusercontent.com"}:
         return ""
