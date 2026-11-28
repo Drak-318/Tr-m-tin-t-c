@@ -203,8 +203,7 @@ class CollectorTests(unittest.TestCase):
             return ([{"title": "Công văn 1/SXD-VP về việc triển khai", "link": listing_url + "/1"}], 1, 200)
 
         fake_session = SimpleNamespace(close=lambda: None)
-        with patch("scanner.collectors.make_session", return_value=fake_session), \\
-             patch("scanner.collectors._collect_primary", side_effect=fake_collect):
+        with patch("scanner.collectors.make_session", return_value=fake_session), patch("scanner.collectors._collect_primary", side_effect=fake_collect):
             result = scan_source(source, {"listing_url": listing_url, "max_items": 20, "max_pages": 1})
 
         self.assertEqual(seen["url"], listing_url)
