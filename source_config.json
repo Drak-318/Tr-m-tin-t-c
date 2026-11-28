@@ -478,6 +478,142 @@
       "timeout_connect": 8,
       "timeout_read": 18,
       "follow_pagination": true
+    },
+    "https://kcb.vn/tin-tuc": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://baocaotaichinh.vn/": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://tayninh.gov.vn/van-ban-chi-dao-dieu-hanh": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://haiphong.baohiemxahoi.gov.vn/vanban/pages/default.aspx": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://snn.quangngai.gov.vn/van-ban-quy-pham-phap-luat": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://snnmt.bacninh.gov.vn/vanbanchidaodieuhanh": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://thuvienphapluat.vn/van-ban-moi": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://thuvienphapluat.vn/van-ban-moi/Cong-van": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://bacninh.gov.vn/van-ban-tinh-bac-ninh": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://snv.bacninh.gov.vn/van-ban-chi-dao": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://stp.bacninh.gov.vn/van-ban-chi-dao": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://stc.bacninh.gov.vn/van-ban-chi-dao": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://syt.bacninh.gov.vn/v%C4%83n-b%E1%BA%A3n-ch%E1%BB%89-%C4%91%E1%BA%A1o-%C4%91i%E1%BB%81u-h%C3%A0nh": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://sxd.bacninh.gov.vn/van-ban-chi-dao": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://sgddt.bacninh.gov.vn/van-ban-qppl": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://sgddt.bacninh.gov.vn/van-ban-chi-dao": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
+    },
+    "https://yentrung.bacninh.gov.vn/van-ban": {
+      "mode": "auto",
+      "max_pages": 5,
+      "max_items": 200,
+      "timeout_connect": 8,
+      "timeout_read": 18,
+      "follow_pagination": true
     }
   }
 }
