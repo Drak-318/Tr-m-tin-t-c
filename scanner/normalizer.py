@@ -411,6 +411,65 @@ def extract_central_references(text, limit=20):
     return found
 
 
+
+def document_type_from_number(doc_number):
+    number=str(doc_number or "").strip().upper()
+    if not number or number=="ĐANG CẬP NHẬT":
+        return ""
+    suffix=number.split("/")[-1]
+    if suffix.startswith("VBHN-"): return "Văn bản hợp nhất"
+    if suffix=="NĐ-CP": return "Nghị định"
+    if suffix.startswith("TT-"): return "Thông tư"
+    if suffix.startswith("NQ-"): return "Nghị quyết"
+    if suffix.startswith(("QĐ-","QD-")): return "Quyết định"
+    if suffix.startswith("CT-"): return "Chỉ thị"
+    if suffix.startswith("TB-"): return "Thông báo"
+    if suffix.startswith("BC-"): return "Báo cáo"
+    if suffix.startswith("KH-"): return "Kế hoạch"
+    if suffix.startswith("HD-"): return "Hướng dẫn"
+    if suffix.startswith(("CD-","CĐ-")): return "Công điện"
+    if re.fullmatch(r"QH[0-9]+",suffix): return "Luật"
+    if suffix.split("-")[0] in {
+        "VPCP","BTC","BTP","BYT","BXD","BCT","BNV","BGDĐT","BCA","BQP",
+        "BHXH","TTCP","BKHCN","BNNMT","BNN","BTNMT","BTTTT","TCT","TCHQ",
+        "NHNN","KTNN","BDTTG"
+    }:
+        return "Công văn"
+    return ""
+
+
+def issuer_from_document_number(doc_number):
+    number=str(doc_number or "").strip().upper()
+    if not number:
+        return ""
+    suffix=number.split("/")[-1]
+    if suffix=="NĐ-CP" or suffix=="NQ-CP":
+        return "Chính phủ"
+    if suffix.startswith("NQ-UBTVQH"):
+        return "Ủy ban Thường vụ Quốc hội"
+    if suffix.startswith("NQ-QH") or re.fullmatch(r"QH[0-9]+",suffix):
+        return "Quốc hội"
+    if suffix.endswith("-TTG") or suffix=="QĐ-TTG" or suffix=="CT-TTG":
+        return "Thủ tướng Chính phủ"
+    if suffix.startswith("VBHN-"):
+        suffix=suffix[len("VBHN-"):]
+    parts=suffix.split("-")
+    issuer=parts[1] if parts[0] in {"TT","QĐ","QD","CT","TB","BC","KH","HD","CD","CĐ","CV"} and len(parts)>1 else parts[0]
+    agencies={
+        "BTC":"Bộ Tài chính","BTP":"Bộ Tư pháp","BYT":"Bộ Y tế",
+        "BXD":"Bộ Xây dựng","BCT":"Bộ Công Thương","BNV":"Bộ Nội vụ",
+        "BGDĐT":"Bộ Giáo dục và Đào tạo","BCA":"Bộ Công an","BQP":"Bộ Quốc phòng",
+        "BHXH":"Bảo hiểm xã hội Việt Nam","TTCP":"Thanh tra Chính phủ",
+        "BKHCN":"Bộ Khoa học và Công nghệ","BNNMT":"Bộ Nông nghiệp và Môi trường",
+        "BNN":"Bộ Nông nghiệp và Phát triển nông thôn","BTNMT":"Bộ Tài nguyên và Môi trường",
+        "BTTTT":"Bộ Thông tin và Truyền thông","TCT":"Tổng cục Thuế",
+        "TCHQ":"Tổng cục Hải quan","VPCP":"Văn phòng Chính phủ",
+        "NHNN":"Ngân hàng Nhà nước Việt Nam","KTNN":"Kiểm toán Nhà nước",
+        "BDTTG":"Bộ Dân tộc và Tôn giáo"
+    }
+    return agencies.get(issuer,"")
+
+
 def make_fingerprint(doc_number,title):
     """Stable compact fingerprint; never used alone when an official number exists."""
     import hashlib
