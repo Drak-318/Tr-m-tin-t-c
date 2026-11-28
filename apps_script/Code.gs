@@ -45,7 +45,7 @@ function jsonOutput_(obj) {
 }
 
 function doGet() {
-  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.2"});
+  return jsonOutput_({status: "ok", service: "Tram Tin Tuc API", version: "13.3"});
 }
 
 function doPost(e) {
@@ -186,16 +186,103 @@ function getSources_(ss) {
   }
 
   const memory = ensureMemorySheet_(ss);
+  const migrated = backfillLegacyMemory_(ss, memory);
+  if (migrated) Logger.log("Đã khôi phục " + migrated + " bản ghi cũ vào bộ nhớ chống trùng.");
   const links = [];
+  const numbers = [];
   const identities = [];
   if (memory.getLastRow() >= 2) {
     const rows = memory.getRange(2, 1, memory.getLastRow() - 1, 7).getDisplayValues();
     rows.forEach(row => {
       if (row[0]) links.push(String(row[0]).trim());
+      if (row[1]) numbers.push(String(row[1]).trim().toUpperCase());
       if (row[6]) identities.push(String(row[6]).trim());
     });
   }
-  return {status: "ok", sources: sources, existingLinks: links, existingIdentities: identities};
+  return {status: "ok", sources: sources, existingLinks: links, existingNumbers: numbers, existingIdentities: identities, legacyMemoryBackfilled: migrated || 0};
+}
+
+
+/**
+ * Rebuild the anti-duplicate memory from the existing results sheet.
+ * This is additive only: it never deletes or edits historical result rows.
+ */
+function backfillLegacyMemory_(ss, memory) {
+  const resultSheet = ss.getSheetByName(CONFIG.SHEET_RESULTS);
+  if (!resultSheet || resultSheet.getLastRow() < 2) return 0;
+
+  const knownLinks = new Set();
+  const knownIdentities = new Set();
+  if (memory.getLastRow() >= 2) {
+    memory.getRange(2, 1, memory.getLastRow() - 1, 7).getDisplayValues().forEach(row => {
+      const link = normalizeUrl_(row[0]);
+      const identity = String(row[6] || "").trim();
+      if (link) knownLinks.add(link);
+      if (identity) knownIdentities.add(identity);
+    });
+  }
+
+  const lastRow = resultSheet.getLastRow();
+  const rows = resultSheet.getRange(2, 1, lastRow - 1, 8).getDisplayValues();
+  const now = Utilities.formatDate(new Date(), CONFIG.TIMEZONE, "dd/MM/yyyy HH:mm:ss");
+  const additions = [];
+  rows.forEach(row => {
+    const docType = String(row[1] || "").trim();
+    const agency = cleanAgency_(row[2]);
+    const title = String(row[3] || "").trim();
+    const number = String(row[4] || "").trim();
+    const link = normalizeUrl_(row[5]);
+    const fingerprint = String(row[6] || "").trim();
+    if (!link || knownLinks.has(link)) return;
+    const identity = legacyDocumentIdentity_(number, title, agency, link);
+    if (knownIdentities.has(identity)) {
+      // Preserve the additional URL as an alias so the same legacy item
+      // cannot be imported again through another portal.
+      additions.push([link, number, title.toLowerCase(), fingerprint, docType, now, identity]);
+      knownLinks.add(link);
+      return;
+    }
+    additions.push([link, number, title.toLowerCase(), fingerprint, docType, now, identity]);
+    knownLinks.add(link);
+    knownIdentities.add(identity);
+  });
+
+  if (additions.length) {
+    const start = memory.getLastRow() + 1;
+    memory.getRange(start, 1, additions.length, 7).setValues(additions);
+  }
+  return additions.length;
+}
+
+/**
+ * Keep this identity format aligned with scanner.normalizer.document_identity.
+ * Local issuer numbers include locality; uncertain locality falls back to
+ * the source host, avoiding unsafe merges across provinces.
+ */
+function legacyDocumentIdentity_(number, title, agency, link) {
+  const n = String(number || "").trim().toUpperCase();
+  if (n && n !== "ĐANG CẬP NHẬT" && /\/[A-ZĐƯƠĂÂÊÔ]{1,}/.test(n)) {
+    const parts = n.split("/");
+    let issuer = parts[parts.length - 1] || "";
+    issuer = issuer.replace(/\d{4}/g, "").replace(/^-+|-+$/g, "");
+    const agencyClean = String(agency || "").replace(/\s+/g, " ").trim().toLowerCase();
+    const localAuthority = /(UBND|HĐND|SNV|STC|SXD|SGD|SYT|CAT|CA)/.test(issuer) ||
+      /^(ubnd|ủy ban nhân dân|hđnd|hội đồng nhân dân|sở\s|công an )/.test(agencyClean);
+    let locality = "";
+    if (localAuthority) {
+      const context = String(title || "") + " " + String(agency || "");
+      const match = context.match(/(?:tỉnh|thành phố|TP[.]?|quận|huyện|thị xã)[ ]+([^,;()]+)/i);
+      if (match) locality = match[1].replace(/\s+/g, " ").trim().toLowerCase();
+      if (!locality) {
+        let host = "";
+        try { host = new URL(link).hostname; } catch (ignored) {}
+        locality = "unresolved-source:" + (host || agencyClean || "unknown").toLowerCase();
+      }
+    }
+    if (!issuer) issuer = agencyClean || String(title || "").trim().toLowerCase().slice(0, 90);
+    return "number:" + n + "|issuer:" + issuer + "|locality:" + locality;
+  }
+  return "url:" + link;
 }
 
 function formatBatchRows_(sheet, startRow, numRows, batchIndex) {
@@ -228,6 +315,8 @@ function saveResults_(ss, data) {
   if (!resultSheet) throw new Error('Không tìm thấy sheet "' + CONFIG.SHEET_RESULTS + '".');
   if (!String(resultSheet.getRange(1, 8).getDisplayValue() || "").trim()) resultSheet.getRange(1, 8).setValue("Nhóm văn bản");
   const memory = ensureMemorySheet_(ss);
+  const migrated = backfillLegacyMemory_(ss, memory);
+  if (migrated) Logger.log("Đã khôi phục " + migrated + " bản ghi cũ trước khi chống trùng.");
   const now = Utilities.formatDate(new Date(), CONFIG.TIMEZONE, "dd/MM/yyyy HH:mm:ss");
   const incoming = Array.isArray(data.new_docs) ? data.new_docs : [];
   const existing = new Set();
