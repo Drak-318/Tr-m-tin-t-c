@@ -238,3 +238,37 @@ def pending_source_retries(limit=20):
     rows=[row for row in items.values() if row.get("status")=="retry_pending"]
     rows.sort(key=lambda row:(str(row.get("last_failed_at","")),int(row.get("attempts",0))))
     return rows[:max(0,int(limit))]
+
+def filter_sources_due_for_retry(sources, now=None):
+    """Throttle repeated failures with exponential backoff without deleting sources.
+
+    Healthy/new sources are always scanned. Failed sources are retried after
+    5m, 15m, 30m, 1h, 2h, then at most every 6h.
+    """
+    current=now or datetime.now(timezone.utc)
+    retry_items=load_source_retry_queue()
+    delays=[5,15,30,60,120,360]
+    due=[]
+    deferred=[]
+    for source in sources:
+        url=canonicalize_url(source.get("url",""))
+        record=retry_items.get(url,{})
+        if record.get("status")!="retry_pending":
+            due.append(source)
+            continue
+        try:
+            attempts=max(1,int(record.get("attempts",1)))
+            delay=delays[min(attempts-1,len(delays)-1)]
+            failed_at=datetime.fromisoformat(str(record.get("last_failed_at","")).replace("Z","+00:00"))
+            if failed_at.tzinfo is None:
+                failed_at=failed_at.replace(tzinfo=timezone.utc)
+            ready_at=failed_at+timedelta(minutes=delay)
+            if current >= ready_at:
+                due.append(source)
+            else:
+                deferred.append({**source,"retry_after":ready_at.isoformat(timespec="seconds"),
+                                 "retry_delay_minutes":delay,"retry_attempts":attempts})
+        except (TypeError,ValueError,OverflowError):
+            # Corrupt or legacy retry metadata must never block a source forever.
+            due.append(source)
+    return due,deferred
