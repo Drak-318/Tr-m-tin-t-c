@@ -68,6 +68,8 @@ class GitHubControllerContractTests(unittest.TestCase):
         self.assertIn("Repair-safe two-table write", code)
         self.assertIn("repaired_memory_only", code)
         self.assertIn("repaired_result_only", code)
+        for helper in ("ensureMemorySheet_", "backfillLegacyMemory_", "legacyDocumentIdentity_", "formatBatchRows_"):
+            self.assertIn("function " + helper, code)
 
 
 if __name__ == "__main__":
