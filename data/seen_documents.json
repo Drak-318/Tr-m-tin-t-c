@@ -437,6 +437,15 @@
       "link": "https://luatvietnam.vn/nong-nghiep/van-ban-hop-nhat-100-2026-vbhn-tt-bnnmt-2026-danh-muc-doi-tuong-kiem-dich-thuc-vat-viet-nam-451842-d5.html",
       "title": "Văn bản hợp nhất 100/2026/VBHN-TT-BNNMT do Bộ Nông nghiệp và Môi trường ban hành hợp nhất Thông tư ban hành Danh mục đối tượng kiểm dịch thực vật của nước Cộng hòa xã hội chủ nghĩa Việt Nam"
     },
+    "number:10014/SYT-NVY|issuer:SYT-NVY|locality:unresolved-source:syt.lamdong.gov.vn": {
+      "agency": "Sở Y tế Lâm Đồng",
+      "category": "Công văn",
+      "doc_number": "10014/SYT-NVY",
+      "first_seen": "2026-11-28T11:01:30+00:00",
+      "last_seen": "2026-11-28T11:01:30+00:00",
+      "link": "https://syt.lamdong.gov.vn/?pageid=52444&p_steering=646506",
+      "title": "xác minh thông tin hành nghề khám bệnh, chữa bệnh của bà Đỗ Thị Mai, ông Nguyễn Văn Bình ngày 27/11/2026"
+    },
     "number:10065/VPCP-KGVX|issuer:VPCP-KGVX|locality:": {
       "agency": "Bộ Văn hóa, Thể thao và Du lịch - Văn bản quản lý - Văn bản pháp quy",
       "category": "Công văn",
@@ -13838,6 +13847,15 @@
     },
     "url:https://bdttg.gov.vn/ctmtqg/van-ban-hop-nhat-cua-bo-nnmt-v-v-ho-tro-to-chuc-don-vi-su-dung-lao-dong-la-nguoi-dan-toc-thieu-so-tai-khu-vuc-mien-nui-vung-dac-biet-kho-khan.htm": {},
     "url:https://bdttg.gov.vn/thong-bao/du-thao-thong-tu-quy-dinh-he-thong-chi-tieu-thong-ke-cong-tac-dan-toc.htm": {},
+    "url:https://bdttg.gov.vn/thong-bao/ke-hoach-dat-hang-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-thuc-hien-tu-nam-2027-dot-2.htm": {
+      "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin",
+      "category": "Văn bản khác",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T11:01:30+00:00",
+      "last_seen": "2026-11-28T11:01:30+00:00",
+      "link": "https://bdttg.gov.vn/thong-bao/ke-hoach-dat-hang-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-thuc-hien-tu-nam-2027-dot-2.htm",
+      "title": "THÔNG BÁO: Kế hoạch đặt hàng nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo thực hiện từ năm 2027 (đợt 2)"
+    },
     "url:https://bdttg.gov.vn/thong-bao/thong-bao-ket-qua-ra-soat-tinh-hop-le-cua-ho-so-dang-ky-xet-dat-hang-tuyen-chon-cac-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-cap-bo-thuc-hien-tu-nam-2027-dot-1.htm": {
       "agency": "Bộ Dân tộc và Tôn giáo - Cổng thông tin",
       "category": "Văn bản khác",
@@ -16382,6 +16400,15 @@
       "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/5151733984A8CDFE47258EB30031B048",
       "title": "Giấy mời họp nghe báo cáo, chỉ đạo giải ngân kế hoạch vốn đầu tư công năm 2026"
     },
+    "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/8E2F1C195DCA240647258EA8002D19AD": {
+      "agency": "Cổng QPPL Hà Tĩnh - UBND tỉnh",
+      "category": "Văn bản địa phương",
+      "doc_number": "Đang cập nhật",
+      "first_seen": "2026-11-28T11:01:30+00:00",
+      "last_seen": "2026-11-28T11:01:30+00:00",
+      "link": "https://qppl.hatinh.gov.vn/vbpq.nsf/str/8E2F1C195DCA240647258EA8002D19AD",
+      "title": "Giấy mời gặp mặt truyền thống kỷ niệm 44 năm ngày nhà giáo Việt Nam ( 20/11/1982 - 20/11/2026)"
+    },
     "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/A4F09C5DFF4D99D247258EB40026F2FB": {
       "agency": "Cổng QPPL Hà Tĩnh - Trang chủ",
       "category": "Văn bản quy phạm pháp luật",
@@ -16641,6 +16668,15 @@
     "url:https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-ve-cong-tac-tu-tuong-thuc-hien-sua-doi-bo-sung-hien-phap-nam-1992-420713": {},
     "url:https://soxaydung.haiphong.gov.vn/van-ban/thong-tri-cua-ban-thuong-vu-thanh-uy-ve-viec-to-chuc-lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-420714": {},
     "url:https://soxaydung.haiphong.gov.vn/van-ban/toan-van-du-thao-sua-doi-hien-phap-nam-1992-420716": {},
+    "url:https://stc.lamdong.gov.vn/?pageid=52487&p_steering=646946": {
+      "agency": "Sở Tài chính Lâm Đồng",
+      "category": "Dự thảo",
+      "doc_number": "11/2026",
+      "first_seen": "2026-11-28T11:01:30+00:00",
+      "last_seen": "2026-11-28T11:01:30+00:00",
+      "link": "https://stc.lamdong.gov.vn/?pageid=52487&p_steering=646946",
+      "title": "V/v đăng tải Báo cáo tiếp thu, giải trình ý kiến góp ý dự thảo Quyết định quy định giá tính lệ phí trước bạ đối với nhà và tỷ lệ (%) chất lượng còn lại của nhà chịu lệ phí trước bạ trên địa bàn tỉnh Lâm Đồng"
+    },
     "url:https://stp.angiang.gov.vn/index.php/cuc-hanh-chinh-tu-phap-bo-tu-phap-khao-sat-huong-dan-trien-khai-chuong-trinh-hanh-dong-quoc-gia-cua-viet-nam-ve-dang-ky-va-thong-ke-ho-tich-giai-doan": {},
     "url:https://stp.angiang.gov.vn/index.php/ke-hoach-truyen-thong-festival-dong-xanh-an-giang-lan-thu-i-nam-2026-huong-ung-ngay-van-hoa-viet-nam-gan-voi-ngay-hoi-dai-doan-ket-toan-dan-toc-nam": {},
     "url:https://stp.angiang.gov.vn/index.php/khong-co-tien-thue-luat-su-ban-van-duoc-phap-luat-bao-ve-mien-phi-100": {
@@ -17030,6 +17066,7 @@
     "https://baomoi.com/du-thao-luat-buu-chinh-sua-doi-bao-dam-nguoi-dan-duoc-tiep-can-dich-vu-buu-chinh-thiet-yeu-c56506224.epi": "legacy_sheet_url:https://baomoi.com/du-thao-luat-buu-chinh-sua-doi-bao-dam-nguoi-dan-duoc-tiep-can-dich-vu-buu-chinh-thiet-yeu-c56506224.epi",
     "https://bdttg.gov.vn/ctmtqg/van-ban-hop-nhat-cua-bo-nnmt-v-v-ho-tro-to-chuc-don-vi-su-dung-lao-dong-la-nguoi-dan-toc-thieu-so-tai-khu-vuc-mien-nui-vung-dac-biet-kho-khan.htm": "sheets-memory",
     "https://bdttg.gov.vn/thong-bao/du-thao-thong-tu-quy-dinh-he-thong-chi-tieu-thong-ke-cong-tac-dan-toc.htm": "sheets-memory",
+    "https://bdttg.gov.vn/thong-bao/ke-hoach-dat-hang-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-thuc-hien-tu-nam-2027-dot-2.htm": "url:https://bdttg.gov.vn/thong-bao/ke-hoach-dat-hang-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-thuc-hien-tu-nam-2027-dot-2.htm",
     "https://bdttg.gov.vn/thong-bao/thong-bao-ket-qua-ra-soat-tinh-hop-le-cua-ho-so-dang-ky-xet-dat-hang-tuyen-chon-cac-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-cap-bo-thuc-hien-tu-nam-2027-dot-1.htm": "url:https://bdttg.gov.vn/thong-bao/thong-bao-ket-qua-ra-soat-tinh-hop-le-cua-ho-so-dang-ky-xet-dat-hang-tuyen-chon-cac-nhiem-vu-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-cap-bo-thuc-hien-tu-nam-2027-dot-1.htm",
     "https://bdttg.gov.vn/thong-bao/xin-y-kien-ho-so-du-thao-nghi-dinh-ve-cong-tac-dan-toc-thay-the-nghi-dinh-so-05-2011-nd-cp.htm": "sheets-memory",
     "https://bdttg.gov.vn/trang-chu-backup/bo-truong-nguyen-dinh-khang-chu-tri-hop-ban-soan-thao-to-bien-tap-de-an-tong-ket-xay-dung-nghi-quyet-moi-thay-the-nghi-quyet-so-24-nq-tw.htm": "sheets-memory",
@@ -19629,6 +19666,7 @@
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/6FC9EDF5788E2F2A47258E9D00234C02": "number:35/NQ-HĐND|issuer:NQ-HĐND|locality:hà tĩnh tại nghị quyết số 35/nq-hđnd ngày 26 tháng 6 năm 2026 của hội đồng nhân dân tỉnh cổng qppl hà tĩnh - hđnd tỉnh",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/7011575757EFD39947258EBC002E8F46": "number:216-QĐ/TWC|issuer:TWC|locality:",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/71227C074F318EB847258EA600039580": "number:1039/QĐ-TTG|issuer:QĐ-TTG|locality:",
+    "https://qppl.hatinh.gov.vn/vbpq.nsf/str/8E2F1C195DCA240647258EA8002D19AD": "url:https://qppl.hatinh.gov.vn/vbpq.nsf/str/8E2F1C195DCA240647258EA8002D19AD",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/905B5D8CF50DD1C447258EBC00331816": "number:143/2026/CV-DP|issuer:CV-DP|locality:",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/91C65336C88BC93E47258EB2002F4661": "number:53/NQ-HĐND|issuer:NQ-HĐND|locality:unresolved-source:qppl.hatinh.gov.vn",
     "https://qppl.hatinh.gov.vn/vbpq.nsf/str/92A4C9D828B319B547258E83000DCD01": "number:25/2026/QĐ-UBND|issuer:QĐ-UBND|locality:hà tĩnh cổng qppl hà tĩnh - hđnd tỉnh",
@@ -19883,6 +19921,7 @@
     "https://soxaydung.haiphong.gov.vn/van-ban/ke-hoach-ve-cong-tac-tu-tuong-thuc-hien-sua-doi-bo-sung-hien-phap-nam-1992-420713": "sheets-memory",
     "https://soxaydung.haiphong.gov.vn/van-ban/thong-tri-cua-ban-thuong-vu-thanh-uy-ve-viec-to-chuc-lay-y-kien-nhan-dan-ve-du-thao-sua-doi-hien-420714": "sheets-memory",
     "https://soxaydung.haiphong.gov.vn/van-ban/toan-van-du-thao-sua-doi-hien-phap-nam-1992-420716": "sheets-memory",
+    "https://stc.lamdong.gov.vn/?pageid=52487&p_steering=646946": "url:https://stc.lamdong.gov.vn/?pageid=52487&p_steering=646946",
     "https://stp.angiang.gov.vn/Quan-ly-xu-ly-vi-pham-hanh-chinh-va-theo-doi-thi-hanh-phap-luat": "legacy_sheet_url:https://stp.angiang.gov.vn/Quan-ly-xu-ly-vi-pham-hanh-chinh-va-theo-doi-thi-hanh-phap-luat",
     "https://stp.angiang.gov.vn/Xay-dung-kiem-tra-va-theo-doi-thi-hanh-phap-luat": "legacy_sheet_url:https://stp.angiang.gov.vn/Xay-dung-kiem-tra-va-theo-doi-thi-hanh-phap-luat",
     "https://stp.angiang.gov.vn/cong-van-ve-viec-trien-khai-thuc-hien-thong-bao-so-583tb-vpcp-ngay-12112026-cua-van-phong-chinh-phu": "number:583/TB-VPCP|issuer:TB-VPCP|locality:và ch",
@@ -20018,6 +20057,7 @@
     "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung/v-v-trien-khai-thuc-hien-quyet-dinh-so-1986-qd-bxd-ngay-18-11-2026-cua-bo-xay-dung.html": "number:9596/SXD-HĐXD|issuer:SXD-HĐXD|locality:unresolved-source:sxd.quangngai.gov.vn",
     "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung/v-v-y-kien-dieu-chinh-chu-truong-dau-tu-du-an-cau-va-duong-dt.623b-quang-ngai-thach-nham-doan-qua-dap-thach-nham.html": "number:9087/SXD-HĐXD|issuer:SXD-HĐXD|locality:unresolved-source:sxd.quangngai.gov.vn",
     "https://sxd.quangngai.gov.vn/chi-dao-dieu-hanh/van-ban-so-xay-dung/v-v-y-kien-doi-voi-cong-trinh-nha-tho-liet-si-tai-ntls-kon-tum.html": "number:9039/SXD-HĐXD|issuer:SXD-HĐXD|locality:unresolved-source:sxd.quangngai.gov.vn",
+    "https://syt.lamdong.gov.vn/?pageid=52444&p_steering=646506": "number:10014/SYT-NVY|issuer:SYT-NVY|locality:unresolved-source:syt.lamdong.gov.vn",
     "https://thankhe.hungyen.gov.vn/bao-cao-so-265bc-ubnd-ngay-25092026-cua-ubnd-xa-than-khe-ve-viec-tong-ket-viec-trien-khai-mot-so-van-c21276.html": "legacy_sheet_url:https://thankhe.hungyen.gov.vn/bao-cao-so-265bc-ubnd-ngay-25092026-cua-ubnd-xa-than-khe-ve-viec-tong-ket-viec-trien-khai-mot-so-van-c21276.html",
     "https://thankhe.hungyen.gov.vn/chuyen-muc-chinh-sach-phap-luat-ve-tro-giup-phap-ly-c223-1.html": "legacy_sheet_url:https://thankhe.hungyen.gov.vn/chuyen-muc-chinh-sach-phap-luat-ve-tro-giup-phap-ly-c223-1.html",
     "https://thankhe.hungyen.gov.vn/cong-van-so-1068attp-nv-ngay-27112026-cua-chi-cuc-an-toan-ve-sinh-thuc-pham-so-y-te-tinh-hung-yen-ve-c21349.html": "number:1068/ATTP-NV|issuer:ATTP-NV|locality:",
