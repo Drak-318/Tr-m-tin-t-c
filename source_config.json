@@ -308,6 +308,56 @@
       "allowed_final_domains": [
         "lamdong.gov.vn"
       ]
+    },
+    "https://news.google.com/rss/search?q=(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22%20OR%20%22Th%C3%B4ng%20t%C6%B0%20s%E1%BB%91%22%20OR%20%22C%C3%B4ng%20v%C4%83n%20s%E1%BB%91%22)%20(site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Amoha.gov.vn%20OR%20site%3Amoc.gov.vn%20OR%20site%3Amps.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 80,
+      "max_pages": 1,
+      "allowed_final_domains": [
+        "quochoi.vn",
+        "vanban.chinhphu.vn",
+        "chinhphu.vn",
+        "vbpl.vn",
+        "phapluat.gov.vn",
+        "moj.gov.vn",
+        "mof.gov.vn",
+        "moet.gov.vn",
+        "moh.gov.vn",
+        "mae.gov.vn",
+        "moit.gov.vn",
+        "sbv.gov.vn",
+        "moha.gov.vn",
+        "moc.gov.vn",
+        "mps.gov.vn",
+        "baochinhphu.vn",
+        "sav.gov.vn",
+        "baohiemxahoi.gov.vn"
+      ]
+    },
+    "https://news.google.com/rss/search?q=(%22Th%C3%B4ng%20t%C6%B0%22%20OR%20%22C%C3%B4ng%20v%C4%83n%22%20OR%20%22D%E1%BB%B1%20th%E1%BA%A3o%22)%20(site%3Amoj.gov.vn%20OR%20site%3Amof.gov.vn%20OR%20site%3Amoet.gov.vn%20OR%20site%3Amoh.gov.vn%20OR%20site%3Amae.gov.vn%20OR%20site%3Amoit.gov.vn%20OR%20site%3Asbv.gov.vn%20OR%20site%3Amoha.gov.vn%20OR%20site%3Amoc.gov.vn%20OR%20site%3Amps.gov.vn%20OR%20site%3Abaochinhphu.vn)%20when%3A60d&hl=vi&gl=VN&ceid=VN:vi": {
+      "mode": "rss",
+      "max_items": 80,
+      "max_pages": 1,
+      "allowed_final_domains": [
+        "quochoi.vn",
+        "vanban.chinhphu.vn",
+        "chinhphu.vn",
+        "vbpl.vn",
+        "phapluat.gov.vn",
+        "moj.gov.vn",
+        "mof.gov.vn",
+        "moet.gov.vn",
+        "moh.gov.vn",
+        "mae.gov.vn",
+        "moit.gov.vn",
+        "sbv.gov.vn",
+        "moha.gov.vn",
+        "moc.gov.vn",
+        "mps.gov.vn",
+        "baochinhphu.vn",
+        "sav.gov.vn",
+        "baohiemxahoi.gov.vn"
+      ]
     }
   }
 }
