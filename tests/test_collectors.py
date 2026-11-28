@@ -1,6 +1,6 @@
 import unittest
 from scanner.collectors import SourceFetchError, _resolve_aggregator_links, _collect_primary
-from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items
+from scanner.collectors import parse_feed, _deduplicate_items, find_next_page, parse_html_items, search_central_reference_web
 from bs4 import BeautifulSoup
 
 class CollectorTests(unittest.TestCase):
@@ -245,5 +245,66 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(items[0]["doc_number"], "9731/SXD-VP")
         self.assertEqual(items[0]["published_date"], "27/11/2026")
         self.assertEqual(items[0]["doc_type"], "Công văn")
+
+
+    def test_ddgs_reference_fallback_accepts_only_exact_central_domain_results(self):
+        from unittest.mock import patch
+
+        class FakeDDGS:
+            def __init__(self, timeout=10):
+                self.timeout = timeout
+
+            def text(self, query, **kwargs):
+                return [
+                    {
+                        "title": "Thông tư số 151/2026/TT-BTC của Bộ Tài chính",
+                        "href": "https://vanban.chinhphu.vn/?docid=219933&pageid=27160",
+                        "body": "Số ký hiệu 151/2026/TT-BTC",
+                        "date": "2026-10-09",
+                    },
+                    {
+                        "title": "Công văn triển khai Thông tư 151/2026/TT-BTC",
+                        "href": "https://snv.lamdong.gov.vn/van-ban/123",
+                        "body": "151/2026/TT-BTC",
+                    },
+                    {
+                        "title": "Unrelated central page",
+                        "href": "https://vanban.chinhphu.vn/?docid=1",
+                        "body": "No matching reference",
+                    },
+                ]
+
+        with patch("ddgs.DDGS", FakeDDGS):
+            items, error = search_central_reference_web(
+                "151/2026/TT-BTC",
+                ["vanban.chinhphu.vn", "chinhphu.vn"],
+                max_results=8,
+            )
+
+        self.assertEqual(error, "")
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["link"], "https://vanban.chinhphu.vn/?docid=219933&pageid=27160")
+        self.assertIsNone(items[0]["published_date"])
+        self.assertEqual(items[0]["source_published_date"], "2026-10-09")
+
+    def test_ddgs_reference_fallback_reports_missing_dependency(self):
+        from unittest.mock import patch
+        import builtins
+
+        real_import = builtins.__import__
+
+        def import_without_ddgs(name, *args, **kwargs):
+            if name == "ddgs":
+                raise ImportError("not installed")
+            return real_import(name, *args, **kwargs)
+
+        with patch("builtins.__import__", side_effect=import_without_ddgs):
+            items, error = search_central_reference_web(
+                "151/2026/TT-BTC", ["vanban.chinhphu.vn"]
+            )
+
+        self.assertEqual(items, [])
+        self.assertEqual(error, "DDGS_NOT_INSTALLED")
+
 
 if __name__=="__main__": unittest.main()
