@@ -1,5 +1,5 @@
 /**
- * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V13.2
+ * TRẠM VĂN BẢN PHÁP LUẬT - CỔNG ĐỒNG BỘ V13.3
  * Vai trò: API nhận dữ liệu duy nhất từ GitHub Actions.
  * Không chạy bộ quét nguồn độc lập tại Apps Script để tránh hai bộ quét ghi trùng.
  *
@@ -427,7 +427,23 @@ function cleanAgency_(value) {
 }
 
 function normalizeUrl_(value) {
-  return String(value || "").trim().replace(/#.*$/, "").replace(/\/$/, "");
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  try {
+    const parsed = new URL(raw);
+    parsed.hash = "";
+    Array.from(parsed.searchParams.keys()).forEach(key => {
+      const lower = key.toLowerCase();
+      if (lower.indexOf("utm_") === 0 || ["fbclid", "gclid", "ref", "source"].indexOf(lower) !== -1) {
+        parsed.searchParams.delete(key);
+      }
+    });
+    const path = parsed.pathname.replace(/\/+$/, "") || "/";
+    return parsed.protocol.toLowerCase() + "//" + parsed.host.toLowerCase() +
+      path + (parsed.searchParams.toString() ? "?" + parsed.searchParams.toString() : "");
+  } catch (ignored) {
+    return raw.replace(/#.*$/, "").replace(/\/$/, "");
+  }
 }
 
 function updateMissingDocumentRadar_(ss) {
