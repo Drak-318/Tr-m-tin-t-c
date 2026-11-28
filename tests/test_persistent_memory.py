@@ -1,6 +1,7 @@
 import json
 import tempfile
 import unittest
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from unittest.mock import patch
 
@@ -120,6 +121,50 @@ class PersistentMemoryTests(unittest.TestCase):
         index = memory.RunSeenIndex()
         index.add("id-1", "https://example.gov.vn/doc?utm_source=one")
         self.assertTrue(index.contains("different-id", "https://example.gov.vn/doc?utm_source=two"))
+
+
+    def test_source_retry_backoff_defers_until_due_then_retries(self):
+        now = datetime(2026, 11, 28, 12, 0, tzinfo=timezone.utc)
+        recent_url = "https://recent.gov.vn/list"
+        overdue_url = "https://overdue.gov.vn/list"
+        memory._write_json(memory.SOURCE_RETRY_QUEUE_PATH, {
+            "version": 1,
+            "items": {
+                recent_url: {
+                    "status": "retry_pending", "attempts": 3,
+                    "last_failed_at": (now - timedelta(minutes=20)).isoformat()
+                },
+                overdue_url: {
+                    "status": "retry_pending", "attempts": 3,
+                    "last_failed_at": (now - timedelta(minutes=40)).isoformat()
+                }
+            }
+        })
+        sources = [
+            {"name": "Recent", "url": recent_url},
+            {"name": "Overdue", "url": overdue_url},
+            {"name": "New", "url": "https://new.gov.vn/list"},
+        ]
+
+        due, deferred = memory.filter_sources_due_for_retry(sources, now=now)
+
+        self.assertEqual([row["name"] for row in due], ["Overdue", "New"])
+        self.assertEqual([row["name"] for row in deferred], ["Recent"])
+        self.assertEqual(deferred[0]["retry_delay_minutes"], 30)
+
+    def test_invalid_retry_timestamp_does_not_block_source_forever(self):
+        url = "https://legacy.gov.vn/list"
+        memory._write_json(memory.SOURCE_RETRY_QUEUE_PATH, {
+            "version": 1,
+            "items": {url: {"status": "retry_pending", "attempts": 100, "last_failed_at": "bad-date"}}
+        })
+        due, deferred = memory.filter_sources_due_for_retry(
+            [{"name": "Legacy", "url": url}],
+            now=datetime(2026, 11, 28, 12, 0, tzinfo=timezone.utc)
+        )
+        self.assertEqual(len(due), 1)
+        self.assertEqual(deferred, [])
+
 
 if __name__ == "__main__":
     unittest.main()
