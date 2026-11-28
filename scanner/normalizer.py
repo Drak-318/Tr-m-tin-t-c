@@ -323,7 +323,7 @@ def classify_and_score(title,agency,doc_type,doc_number,group,published_date=Non
             # keywords. Keep it at low priority for human review, unless it is
             # clearly a one-off case or merely a local rollout of a central item.
             has_own_local_number = bool(
-                re.search(r"\\b[0-9]{1,7}/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
+                re.search(r"\\b[0-9]{1,7}(?:/[0-9]{4})?/[A-ZĐƯƠĂÂÊÔ0-9-]+", str(doc_number), re.I)
                 and not extract_central_references(doc_number)
             )
             local_policy_types = {
