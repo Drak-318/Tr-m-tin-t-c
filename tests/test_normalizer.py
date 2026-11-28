@@ -141,6 +141,37 @@ class NormalizerTests(unittest.TestCase):
         )
         self.assertFalse(keep)
 
+
+    def test_local_unrelated_rollout_of_provincial_plan_is_excluded(self):
+        keep, _ = classify_and_score(
+            "V/v triển khai thực hiện Kế hoạch số 439/KH-UBND về phòng chống hạn hán",
+            "UBND xã Lý Sơn", "Công văn", "15543/VPUBND-KT", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_rollout_of_central_decree_is_excluded_from_local_rows(self):
+        from scanner.normalizer import is_local_central_rollout
+        title = "V/v triển khai thực hiện Nghị định 45/2026/NĐ-CP"
+        self.assertTrue(is_local_central_rollout(title, "Công văn", "123/SNV-VP"))
+        keep, _ = classify_and_score(
+            title, "Sở Nội vụ tỉnh Lâm Đồng", "Công văn", "123/SNV-VP", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_flood_response_letter_is_excluded(self):
+        keep, _ = classify_and_score(
+            "V/v tập trung phòng, tránh, ứng phó mưa lớn, ngập lụt, lũ quét",
+            "Sở Xây dựng Quảng Ngãi", "Công văn", "9124/SXD-KCHT", "Địa phương"
+        )
+        self.assertFalse(keep)
+
+    def test_local_invoice_policy_is_kept(self):
+        keep, _ = classify_and_score(
+            "Quyết định về quản lý hóa đơn, chứng từ trên địa bàn tỉnh",
+            "UBND tỉnh An Giang", "Quyết định", "18/2026/QĐ-UBND", "Địa phương"
+        )
+        self.assertTrue(keep)
+
     def test_local_personal_land_recovery_is_excluded(self):
         keep, _ = classify_and_score(
             "Quyết định thu hồi đất của hộ ông Nguyễn Văn A để thực hiện dự án",
